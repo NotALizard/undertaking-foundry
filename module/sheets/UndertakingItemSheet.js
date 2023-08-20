@@ -9,12 +9,17 @@ export default class UndertakingItemSheet extends ItemSheet {
 
     context.config = CONFIG.undertaking1e;
 
+    if(!item.system.description.value){
+      item.system.description.value = '&nbsp;';
+    }
+
     context.descriptionHTML = await TextEditor.enrichHTML(item.system.description.value, {
       secrets: item.isOwner,
       async: true,
       relativeTo: this.item,
       rollData: context.rollData
     });
+
     return context;
   }
 
