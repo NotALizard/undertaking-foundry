@@ -1,0 +1,21 @@
+{
+  "name": "Later Humanitarian",
+  "type": "background",
+  "img": "icons/skills/social/peace-luck-insult.webp",
+  "system": {
+    "description": {
+      "value": "<p>For some time you decided to meet the world&rsquo;s cries for help. Either venturing out or laying roots in a place of turmoil, you have spent time helping and supporting those in need as an adventurer or other paid help. Though your name may not be widely known, your experience in this has given you a positive influence with those you have helped.</p>\n<hr />\n<p><strong>Skill Proficiency:</strong> Insight or Medicine</p>\n<p><strong>Tool Proficiency:</strong> Pick one of the following: Alchemy Kit, Brewing Kit, or Medical Kit.</p>\n<p><strong>Equipment: </strong>Common clothes, a two-person tent, a hooded lantern, 2 flasks of oil, two sets of manacles, 50ft of hempen rope, a simple melee weapon, and a buckler.</p>\n<p><strong>Coinage:</strong> 1d6 gp</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules"
+  },
+  "effects": [],
+  "folder": "Later Backgrounds",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "N9WZ6LM0HMWTB526"
+}

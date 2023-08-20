@@ -1,0 +1,27 @@
+{
+  "id":"undertaking1e",
+  "title":"Undertaking RPG",
+  "description":"Core rules for the Undertaking system",
+  "version":"0.0.0",
+  "esmodules": [
+    "undertaking1e.js"
+  ],
+  "packs": [
+    {
+      "name": "backgrounds",
+      "label": "Backgrounds",
+      "system": "undertaking1e",
+      "path": "./packs/backgrounds.db",
+      "entity": "Item",
+      "type": "Item"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
+  ]
+}
