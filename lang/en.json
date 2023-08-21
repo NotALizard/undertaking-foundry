@@ -1,5 +1,8 @@
 {
-  "undertaking1e": {
-    "Name": "Name"
+  "undertaking": {
+    "Name": "Name",
+    "Description": "Description",
+    "Quickstart": "Quickstart",
+    "Details": "Details"
   }
 }

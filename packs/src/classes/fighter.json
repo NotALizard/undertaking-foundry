@@ -1,0 +1,40 @@
+{
+  "name": "Fighter",
+  "type": "class",
+  "img": "icons/skills/melee/sword-shield-stylized-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>Fighters, at their core, are those trained and specialized in a form of martial combat.  A Fighter might be a warrior, guard, mercenary, or knight, or just a commoner or spellcaster trained in the blade.  No matter their designation, or lack thereof, Fighters have learned the core methods, techniques, and stances necessary to become specialists in their weapons and fighting styles of choice.  </p><p>While anyone can be proficient in the blade, only Fighters start to understand the core tenets of weapon, body, and field control.  Changing their stance, weapons, and positioning to match any situation, Fighters are always moving and always looking for ways to get the upper hand.  </p><p>In combat, Fighters have the potential to be extremely versatile.  Their focus on weapon switching can make them solid front-line damage sponges one turn, a high-damage attacker the next, and a back-row sniper after that.  This means that Fighters can fit whatever role is necessary in a fight.  However, their naturally high Hit Points and a general lack of diminishing abilities makes them great for longer battles than spellcasters who are limited by Mana, and their improved desperate actions and weapon abilities gives them more opportunities to save the party than almost any other class.  Fighters can use any weapon effectively, so pick your favorite and build your character around that choice. </p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "identifier": "fighter",
+    "restDice": "d10",
+    "saves": "Strength or Dexterity, Constitution",
+    "skills": {
+      "number": 2,
+      "choices": ["acrobatics","athletics","craft","insight","instinct","intimidation","perception"],
+      "value": []
+    },
+    "categorization":{
+      "martial":{
+        "progression": "full"
+      },
+      "spellcaster": {
+        "progression": "none",
+        "attribute": ""
+      }
+    },
+    "quickStart": "<p>If you are looking to play a Fighter as quickly as possible, consider the following:</p><ul><li>Fighters can excel at any type of martiality.  Make one or both of your highest Attributes Strength or Dexterity.</li><li>Fighters are survivors, as much as they are combatants.  Make one of your next highest Attributes Constitution, especially for a melee Fighter.</li><li>If you focus on Strength:<ul><li>Take chain mail.</li><li>Take a greataxe and shield.</li><li>Take knuckles and a midsword.</li><li>Take a set of 10 darts.</li><li>Choose weapon proficiencies to match.</li><li>Choose the Boxer Stance and either the One-Handed Stance or the Two-Handed Stance as your starting Fighting Stances.</li></ul></li><li>If you focus on Dexterity:<ul><li>Take leather armor, a longbow, and 20 arrows.</li><li>Take a rapier, a dagger, and a buckler.</li><li>Take a scimitar and whip.</li><li>Take a heavy crossbow with 20 bolts.</li><li>Choose weapon proficiencies to match.</li><li>Choose the Finesse Stance and Ammunition Stance as your starting Fighting Stances.</li></ul></li></ul>",
+    "classDetails": "<p>Fighter at 1st level</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "V29B5QR22SYWVP8K"
+}

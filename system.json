@@ -1,17 +1,92 @@
 {
-  "id":"undertaking1e",
+  "id":"undertaking",
   "title":"Undertaking RPG",
   "description":"Core rules for the Undertaking system",
   "version":"0.0.0",
   "esmodules": [
-    "undertaking1e.js"
+    "undertaking.js"
+  ],
+  "packFolders": [
+    {
+      "name": "Classes",
+      "sorting": "m",
+      "packs": [
+        "classes"
+      ],
+      "folders": [
+        {
+          "name": "Sub-classes",
+          "sorting": "m",
+          "packs": [
+            "archetypes-fighter"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Backgrounds",
+      "sorting": "m",
+      "packs": [
+        "backgrounds"
+      ],
+      "folders": [
+        {
+          "name": "Background Features",
+          "sorting": "m",
+          "packs": [
+            "backgrounds-early",
+            "backgrounds-later"
+          ]
+        }
+      ]
+    }
   ],
   "packs": [
     {
+      "name": "classes",
+      "label": "Classes",
+      "system": "undertaking",
+      "path": "./packs/classes.db",
+      "entity": "Item",
+      "type": "Item"
+    },
+    {
+      "name": "archetypes-fighter",
+      "label": "Fighter: Martial Archetypes",
+      "system": "undertaking",
+      "path": "./packs/archetypes-fighter.db",
+      "entity": "Item",
+      "type": "Item"
+    },
+    {
       "name": "backgrounds",
       "label": "Backgrounds",
-      "system": "undertaking1e",
+      "system": "undertaking",
       "path": "./packs/backgrounds.db",
+      "entity": "Item",
+      "type": "Item"
+    },
+    {
+      "name": "backgrounds-early",
+      "label": "Early Backgrounds",
+      "system": "undertaking",
+      "path": "./packs/backgrounds-early.db",
+      "entity": "Item",
+      "type": "Item"
+    },
+    {
+      "name": "backgrounds-later",
+      "label": "Later Backgrounds",
+      "system": "undertaking",
+      "path": "./packs/backgrounds-later.db",
+      "entity": "Item",
+      "type": "Item"
+    },
+    {
+      "name": "abilities",
+      "label": "Abilities",
+      "system": "undertaking",
+      "path": "./packs/abilities.db",
       "entity": "Item",
       "type": "Item"
     }

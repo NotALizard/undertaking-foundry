@@ -1,0 +1,27 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}"/></h1>
+    </header>
+
+    {{!-- Item Sheet Navigation --}}
+    <nav class="sheet-navigation tabs" data-group="primary">
+        <a class="item active" data-tab="description">{{ localize "undertaking.Description" }}</a>
+        <a class="item" data-tab="details">{{ localize "undertaking.Details" }}</a>
+    </nav>
+
+    {{!-- Item Sheet Body --}}
+    <section class="sheet-body">
+        {{!-- Description Tab --}}
+        <div class="tab flexrow active" data-group="primary" data-tab="description">
+          {{editor descriptionHTML target="system.description.value" button=true editable=editable engine="prosemirror"
+                   collaborate=false}}
+        </div>
+
+        {{!-- Details Tab --}}
+        <div class="tab flexrow" data-group="primary" data-tab="details">
+          {{editor classDetails target="item.system.classDetails" button=true editable=editable engine="prosemirror"
+                   collaborate=false}}
+        </div>
+     </section>
+</form>

@@ -1,0 +1,22 @@
+{
+  "name": "Later Scoundrel",
+  "type": "background",
+  "img": "icons/commodities/currency/coin-engraved-skull-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>There are years in your past that were filled with activities akin to fast talking, pickpocketing, browbeating, or any number of things that society would consider &lsquo;shady&rsquo;.  Though, while you may not have been seen as an upstanding citizen, you had connections with others of a shady sort, and still maintain them.  You know who to talk to, and how to get things done when it comes to the underbelly of civilization or bending the rules.  Whether the fact that such a thing follows you nowadays is a good thing, is up for debate.</p>\n<hr />\n<p><strong>Skill Proficiency:</strong> Deception, Intimidation, Persuasion, Stealth, or Sleight of Hand.</p>\n<p><strong>Tool Proficiency:</strong> Pick one of the following: Disguise Kit, Forgery Kit, or Thievery Kit.</p>\n<p><strong>Equipment: </strong>Common clothes, a burglary pack.</p>\n<p><strong>Coinage:</strong> 4d4 gp</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "later"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "5GVB8Q7QSTC3C8UG"
+}

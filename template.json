@@ -636,7 +636,7 @@
     "htmlFields": ["description.value", "description.chat", "description.unidentified"],
     "background": {
       "templates": ["itemDescription"],
-      "advancement": []
+      "portion": ""
     },
     "backpack": {
       "templates": ["itemDescription", "physicalItem"],
@@ -657,10 +657,13 @@
       "templates": ["itemDescription"],
       "identifier": "",
       "levels": 1,
-      "hitDice": "d6",
-      "hitDiceUsed": 0,
+      "restDice": "d6",
+      "restDiceUsed": 0,
+      "manaAtFirstLevel": 0,
+      "manaPerLevel": 0,
       "advancement": [],
-      "saves": [],
+      "requirements": "",
+      "saves": "",
       "skills": {
         "number": 2,
         "choices": [],
@@ -674,7 +677,16 @@
           "progression": "none",
           "attribute": ""
         }
-      }
+      },
+      "quickStart": "",
+      "classDetails": ""
+    },
+    "archetype": {
+      "templates": ["itemDescription"],
+      "identifier": "",
+      "classIdentifier": "",
+      "advancement": [],
+      "classDetails": ""
     },
     "consumable": {
       "templates": ["itemDescription", "physicalItem", "activatedEffect", "action"],
@@ -747,21 +759,6 @@
       "scaling": {
         "mode": "none",
         "formula": null
-      }
-    },
-    "archetype": {
-      "templates": ["itemDescription"],
-      "identifier": "",
-      "classIdentifier": "",
-      "advancement": [],
-      "categorization":{
-        "martial":{
-          "progression": "none"
-        },
-        "spellcaster": {
-          "progression": "none",
-          "attribute": ""
-        }
       }
     },
     "weapon": {

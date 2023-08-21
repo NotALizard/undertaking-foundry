@@ -1,0 +1,21 @@
+{
+  "name": "Scoundrel",
+  "type": "background",
+  "img": "icons/skills/social/theft-pickpocket-bribery-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>There are years in your past that were filled with activities akin to fast talking, pickpocketing, browbeating, or any number of things that society would consider &lsquo;shady&rsquo;.  Though, while you may not have been seen as an upstanding citizen, you had connections with others of a shady sort, and still maintain them.  You know who to talk to, and how to get things done when it comes to the underbelly of civilization or bending the rules.  Whether the fact that such a thing follows you nowadays is a good thing, is up for debate.</p>\n<hr />\n<p>Choose @Compendium[undertaking.backgrounds-early.BAK4S6GZ491AVDD0]{Early} and/or @Compendium[undertaking.backgrounds-later.5GVB8Q7QSTC3C8UG]{Later}</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "5KN5NY0LKXT9CH3I"
+}

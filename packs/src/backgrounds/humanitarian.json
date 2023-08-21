@@ -1,0 +1,21 @@
+{
+  "name": "Humanitarian",
+  "type": "background",
+  "img": "icons/skills/social/diplomacy-unity-alliance.webp",
+  "system": {
+    "description": {
+      "value": "<p>For some time you decided to meet the world&rsquo;s cries for help. Either venturing out or laying roots in a place of turmoil, you have spent time helping and supporting those in need as an adventurer or other paid help. Though your name may not be widely known, your experience in this has given you a positive influence with those you have helped.</p>\n<hr />\n<p>Choose @Compendium[undertaking.backgrounds-early.0OFA1VWYCF0NS8V4]{Early} and/or @Compendium[undertaking.backgrounds-later.N9WZ6LM0HMWTB526]{Later}</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "71YP4JN03QH1PR6M"
+}

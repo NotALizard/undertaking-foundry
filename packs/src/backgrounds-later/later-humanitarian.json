@@ -8,10 +8,11 @@
       "chat": "",
       "unidentified": ""
     },
-    "source": "Core Rules"
+    "source": "Core Rules",
+    "portion": "later"
   },
   "effects": [],
-  "folder": "Later Backgrounds",
+  "folder": null,
   "sort": 0,
   "ownership": {
     "default": 0

@@ -7,7 +7,6 @@ def merge_JsonFiles(filename, dir):
     env = ''
     with open('env.json', 'r') as infile:
         env = json.load(infile)
-    print(env)
 
     result = ''
     for f1 in filename:
@@ -18,10 +17,17 @@ def merge_JsonFiles(filename, dir):
 
     with open('../' + dir + '.db', 'w') as output_file:
         output_file.write(result)
+    print('Built ' + dir + '.db')
 
 def doWork():
-    dir = sys.argv[1]
-    json_files = [pos_json for pos_json in os.listdir(dir+'/') if pos_json.endswith('.json')]
-    merge_JsonFiles(json_files,dir)
+    dir_input = sys.argv[1]
+    dirs = [];
+    if dir_input == '*':
+        dirs = next(os.walk('.'))[1]
+    else:
+        dirs.append(dir_input)
+    for dir in dirs:
+        json_files = [pos_json for pos_json in os.listdir(dir+'/') if pos_json.endswith('.json')]
+        merge_JsonFiles(json_files,dir)
 
 doWork()
