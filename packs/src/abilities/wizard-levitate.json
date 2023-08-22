@@ -1,0 +1,24 @@
+{
+  "name": "Levitate",
+  "type": "ability",
+  "img": "icons/magic/control/buff-flight-wings-runes-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>You gain a Hover Speed of 15 feet.&nbsp; This speed cannot be increased by any means, and you cannot use this ability to ascend past a height equal to half your wizard levels x 10 feet. This height is calculated with your take off point as the base.&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;Should you exceed this height limit, you will begin falling at a rate of 30 feet a round until you reach your maximum height limit again, at which point you return to hovering. You cannot ascend while over your height limit, and you cannot accelerate your falling speed without breaking Levitate.&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;This effect takes a minor action to activate. This acts as a concentration spell, so concentration must be used while hovering.&nbsp; Should concentration be broken or stopped, you immediately start falling. This ability can only be activated while standing on a surface stable enough to walk on. </p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "adept"
+    },
+    "requirements": "6th level overall and 3rd level Wizard",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "ZG3FXZY4IZX4LH6N"
+}

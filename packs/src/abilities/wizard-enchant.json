@@ -1,0 +1,24 @@
+{
+  "name": "Enchant",
+  "type": "ability",
+  "img": "icons/magic/symbols/cog-glowing-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have gained the ability to temporarily enchant a non-living, non-sentient item, or a 5ft x 5ft space on a solid surface with the effects of a spell.&nbsp; Doing this places the spell on said object or space, that can then be &lsquo;cast&rsquo; upon being triggered.&nbsp; A spell that has been laid as an Enchant in this way can be triggered in one of two ways:</p><p><i>&nbsp;&nbsp;&nbsp;&nbsp;On Contact: </i>The spell casts when the next living creature, or appropriate target, comes into contact with the Enchanted item or space.&nbsp;&nbsp;</p><p><i>&nbsp;&nbsp;&nbsp;&nbsp;On Command: </i>The spell casts when the Wizard who Enchanted the item or space gives a command word and it effects the closest living creature, or appropriate target, that is in range, or the first one to come in range.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;Spells that are Enchanted onto a space or object in this way have a few restrictions based on their range, area of effect, and target:</p><ul><li><i>Area of Effect Spells</i> that require an origin, use the object or space as the origin point for a spell.</li><li><i>Area of Effect Spells</i> that require an origin and direction, such as a line or cone spell, use the object or space as the origin and you set the direction upon Enchanting the object or space</li><li><i>Touch or Self Spells</i> effect either the living creature, or appropriate target, that came into contact with it for a spell that is triggered On Contact; or the next living creature, or appropriate target, to come in contact with it if the spell is set off On Command</li><li><i>A spell that has a range</i> and affects a target, will affect either the first living creature, or appropriate target, that comes into contact with it, or the next living creature, or appropriate target, that comes in contact with it after being triggered by a command.&nbsp;&nbsp;</li></ul><p>The Mana that a spell would take to cast it is spent upon the spell being Enchanted on the object or space when using this ability.&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;A Wizard must be within 100 feet of the space or object that has been Enchanted for it to be triggered.<br>&nbsp;&nbsp;&nbsp;&nbsp;The number of objects or spaces a Wizard can have Enchanted at one time is equal to their Intelligence modifier.&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;An Enchanted spell stays active until it is either triggered, in which case the spell is the cast and fades afterwards, or the Wizard that laid the Enchant(s) takes a long rest, at which point all untriggered Enchanted spells fade away.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "adept"
+    },
+    "requirements": "6th level overall and 3rd level Wizard",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "DNKUZOHBFP8JQ80N"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Spell Transference",
+  "type": "ability",
+  "img": "icons/sundries/books/book-open-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>At first level Wizards gain the ability to copy down spells from other spellcasters spellbooks, and scrolls.  This involves deciphering the script, experimenting with the spell and its components, and finally copying it over into your own book.<br>&nbsp;&nbsp;&nbsp;&nbsp;This process can be done through taking a short rest for Level 1 through 5 spells, though Level 6 and 7 spells can only be learned this way over a long rest.  However, you can learn 2 spells of 6th or 7th level over this time.<br>&nbsp;&nbsp;&nbsp;&nbsp;In addition to taking a short or long rest, it costs 50 gold per level of the spell, to cover the components used to experiment with the spell.<br>&nbsp;&nbsp;&nbsp;&nbsp;The Wizard must be able to cast the level of spell that they are transferring for this to work.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "starter"
+    },
+    "requirements": "Wizard",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "UW8VXK0Y7JQIINFY"
+}

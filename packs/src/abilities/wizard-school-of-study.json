@@ -1,0 +1,24 @@
+{
+  "name": "School of Study",
+  "type": "ability",
+  "img": "icons/sundries/books/book-stack.webp",
+  "system": {
+    "description": {
+      "value": "<p>Choosing this ability allows a Wizard to specialize in a school of magic. Pick one school of magic from the list below:</p><ul><li><i>Abjuration</i></li><li><i>Conjuration</i></li><li><i>Divination</i></li><li><i>Enchantment</i></li><li><i>Evocation</i></li><li><i>Illusion</i></li><li><i>Necromancy</i></li><li><i>Transmutation</i></li></ul><p></p><p>&nbsp;&nbsp;&nbsp;&nbsp;Each time you cast a spell from your chosen school of magic you can choose to add one of the following effects to that spell:</p><ul><li>Gain a +2 bonus on your spell attack modifier.</li><li>Gain a +1 bonus on one of the spell save DCs for that spell.</li><li>Increase the duration of the spell by half.</li><li>Increase the range by 5 feet x your Intelligence modifier.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "novice"
+    },
+    "requirements": "Must have the Wizard Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "RFBX1FZ2ALJA5G3Z"
+}

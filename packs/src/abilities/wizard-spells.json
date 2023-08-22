@@ -1,0 +1,24 @@
+{
+  "name": "Wizard Spells",
+  "type": "ability",
+  "img": "icons/sundries/scrolls/scroll-runed-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>1st level Wizards get access to Wizard Magic, which consists of 1st through 7th level spells.  However, you do not have access to all of them right away.  These spell levels become accessible as follows:</p><p><i>Wizard Spell Levels</i></p><table><tr><th>Spell Level</th><th>Unlock Requirements</th></tr><tr><td>Level 1 Spells</td><td>1st Level Wizard.</td></tr><tr><td>Level 2 Spells</td><td>2nd Level Wizard;<br>3rd Level Overall.</td></tr><tr><td>Level 3 Spells</td><td>3rd Level Wizard;<br>5th Level Overall<br>(At least 4 of these levels must be in Spellcaster classes).</td></tr><tr><td>Level 4 Spells</td><td>4th Level Wizard;<br>7th Level Overall<br>(At least 6 of these levels must be in Spellcaster classes).</td></tr><tr><td>Level 5 Spells</td><td>5th Level Wizard;<br>9th Level Overall<br>(At least 8 of these levels must be in Spellcaster classes).</td></tr><tr><td>Level 6 Spells</td><td>6th Level Wizard;<br>11th Level Overall<br>(At least 10 of these levels must be in Spellcaster classes).</td></tr><tr><td>Level 7 Spells</td><td>7th Level Wizard;<br>13th Level Overall<br>(At least 12 of these levels must be in Spellcaster classes).</td></tr></table>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "starter"
+    },
+    "requirements": "Wizard",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "U2NS38QP7TBT6SMG"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Meditative Rest",
+  "type": "ability",
+  "img": "icons/sundries/survival/bedroll-blue-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Whenever a Wizard that has this ability takes a short rest, they regain Mana equal to their caster level divided by 2, instead of the normal divided by 4.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "novice"
+    },
+    "requirements": "Must have the Wizard Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "L4TCBW3PWUZVSULN"
+}
