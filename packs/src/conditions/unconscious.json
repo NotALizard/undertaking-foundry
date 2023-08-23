@@ -1,0 +1,37 @@
+{
+  "name": "Unconscious",
+  "pages": [
+    {
+      "name": "Unconscious",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Unconscious</p><ul><li>Unconscious creatures are @Compendium[undertaking.conditions.3CQC3JEY2C3Y721F]{Incapacitated}, cannot move or speak, and are unaware of their surroundings.</li><li>The creature drops whatever it&rsquo;s holding and falls @Compendium[undertaking.conditions.RK3DF56CKMQUV6DM]{Prone}.</li><li>The creature automatically fails Strength (Save) and Dexterity (Save) checks.</li><li>Attack rolls against the creature have advantage.</li><li>Any attack that hits the creature is a critical hit if the attacker is within 5ft of the creature.</li></ul>",
+        "markdown": ""
+      },
+      "_id": "CZ8MOC9HZ8ODJ0VV",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "9KB959MRZ0H4IT4C"
+}

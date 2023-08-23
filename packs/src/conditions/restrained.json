@@ -1,0 +1,37 @@
+{
+  "name": "Restrained",
+  "pages": [
+    {
+      "name": "Restrained",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Restrained</p><ul><li>Restrained creatures have a speed of 0, and cannot benefit from bonuses to speed.</li><li>Attack rolls against the creature have advantage, and the creature&rsquo;s attack rolls have disadvantage.</li><li>The creature has disadvantage on Dexterity (Save) checks.</li></ul>",
+        "markdown": ""
+      },
+      "_id": "20XPS930Y47WJR28",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "1EK5V6KTYAWC6S69"
+}

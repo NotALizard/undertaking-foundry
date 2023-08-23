@@ -1,0 +1,24 @@
+{
+  "name": "Toxin Caster",
+  "type": "ability",
+  "img": "icons/magic/unholy/orb-smoking-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>When you cast a spell that has one of the following damage types in the description: acid, cold, fire, lightning, radiant, poison, or necrotic, you can replace it, and instead cast the spell to deal either poison or necrotic damage. The spell&rsquo;s appearance changes to accommodate.<br>As well, should you cast a spell with an effect that would cause the target to be @Compendium[undertaking.conditions.9X088PM7H5U2S1HQ]{Sickened} or @Compendium[undertaking.conditions.SRRBLPRSJWGUR551]{Poisoned}, the DC for that spell gets a +1 or your spell attack modifier gets a +1.<br>Lastly, should a spell cast by the Plague Doctor inflict a creature with a @Compendium[undertaking.conditions.9YPWLY1IHQV3MRLO]{Disease}, that disease lasts twice its normal duration.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Must have the Wizard Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "T5L5BTJ144AVI7MQ"
+}

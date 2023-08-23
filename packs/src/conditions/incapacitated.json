@@ -1,0 +1,37 @@
+{
+  "name": "Incapacitated",
+  "pages": [
+    {
+      "name": "Incapacitated",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Incapacitated</p><ul><li>Incapacitated creatures cannot take Actions, Minor Actions, Desperate Actions, or Reactions.</li></ul>",
+        "markdown": ""
+      },
+      "_id": "MRNOW5GZC4X9ZER4",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "3CQC3JEY2C3Y721F"
+}

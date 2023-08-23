@@ -1,0 +1,24 @@
+{
+  "name": "Healing Fingers",
+  "type": "ability",
+  "img": "icons/magic/unholy/hand-claw-fire-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>You can relieve a creature of some of what ails it.  You can touch a single target and either remove the @Compendium[undertaking.conditions.R54LQEKSDXNQ3N75]{Bleeding} or @Compendium[undertaking.conditions.9X088PM7H5U2S1HQ]{Sickened} condition, or reduce the @Compendium[undertaking.conditions.9YPWLY1IHQV3MRLO]{Diseased} condition to @Compendium[undertaking.conditions.9X088PM7H5U2S1HQ]{Sickened}.  In addition, this ability bestows a number of temporary Hit Points to the target equal to your Wizard level + your Intelligence Modifier.  <br>&nbsp;&nbsp;&nbsp;&nbsp;You can only use this ability a number of times equal to 2 + half your Intelligence modifier (minimum 1) before needing a long rest to be able to use it again.  A long rest gives you back all your uses of this ability.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Must have the Wizard Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "THVRD6HWAO00WVVK"
+}

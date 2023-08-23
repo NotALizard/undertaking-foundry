@@ -1,0 +1,37 @@
+{
+  "name": "Suffocating",
+  "pages": [
+    {
+      "name": "Suffocating",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Suffocating</p><ul><li>When a creature runs out of breath and starts suffocating, the creature has a number of rounds equal to its Constitution modifier (minimum of 1 round) to reach air before dropping to 0 hit points.</li><li>While suffocating, the creature automatically fails all death throws. </li></ul>",
+        "markdown": ""
+      },
+      "_id": "2WL4LEJIDJ15HPJK",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "JCWGEKZSDQWLCE3O"
+}

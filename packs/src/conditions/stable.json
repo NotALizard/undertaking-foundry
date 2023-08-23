@@ -1,0 +1,37 @@
+{
+  "name": "Stable",
+  "pages": [
+    {
+      "name": "Stable",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Stable</p><ul><li>Stable creatures do not make Death Throws while at 0 hit points.</li><li>A creature resets all Death Throw successes and failures when it becomes Stable.</li><li>The condition ends when the Stable creature takes damage or is at 0 hit points.</li><li>A Stable creature regains 1 hit point after 1d4 hours of remaining Stable. </li></ul>",
+        "markdown": ""
+      },
+      "_id": "94J9KZ00A0Q3U5K3",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "HFC5771FPBA3Z870"
+}

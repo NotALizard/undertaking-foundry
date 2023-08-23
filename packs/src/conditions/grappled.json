@@ -1,0 +1,37 @@
+{
+  "name": "Grappled",
+  "pages": [
+    {
+      "name": "Grappled",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Grappled</p><ul><li>Grappled creatures have a speed of 0, and cannot benefit from bonuses to speed.</li><li>The condition ends if the grappler releases the target, is incapacitated, or is removed from the reach of the target.</li></ul>",
+        "markdown": ""
+      },
+      "_id": "3KQF05ZZT870OIQA",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "FGVFFYGPAFQGZ5RP"
+}

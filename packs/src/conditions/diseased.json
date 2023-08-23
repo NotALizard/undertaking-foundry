@@ -1,0 +1,37 @@
+{
+  "name": "Diseased",
+  "pages": [
+    {
+      "name": "Diseased",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Diseased</p><ul><li>Diseases are numerous, and their effects vary.</li><li>Creatures can contract more than one disease as long as each disease is different.</li></ul>",
+        "markdown": ""
+      },
+      "_id": "CNDFQ8D5THU9JRI0",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "9YPWLY1IHQV3MRLO"
+}

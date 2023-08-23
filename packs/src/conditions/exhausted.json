@@ -1,0 +1,37 @@
+{
+  "name": "Exhausted",
+  "pages": [
+    {
+      "name": "Exhausted",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Exhausted</p><ul><li>Exhaustion comes in levels, with each level keeping the detriments of the previous level.</li><li>A <b>long rest</b> with food and drink reduces a creature&rsquo;s exhaustion by 1 level.</li><li>Consequently, skipping a <b>long rest</b> can cause exhaustion to worsen.</li><li>When a creature&rsquo;s exhaustion level decreases to 0, the condition is removed.</li><li>Level 1: Disadvantage on Skill Checks</li><li>Level 2: Speed halved</li><li>Level 3: Disadvantage on attack rolls and save checks</li><li>Level 4: Hit point maximum halved</li><li>Level 5: Speed reduced to 0</li><li>Level 6: Incapacitated</li><li>Level 7: Death</li></ul>",
+        "markdown": ""
+      },
+      "_id": "YQTTS8E7ELZ4JKBR",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "ERBR3AG01H4N1L91"
+}

@@ -4,14 +4,14 @@
   "img": "icons/equipment/head/mask-plague-grey.webp",
   "system": {
     "description": {
-      "value": "<p>Archetype for the @Compendium[undertaking.classes.KWLWHMDBZ3NK1FAV]{Wizard} class.</p><p>Gladiators are combatants that fight their greatest when witnessed. They feed off of the passion and excitement of being seen in combat, and use that as motivation to push themselves further than ever before.</p>",
+      "value": "Wizards that have spent their time studying sickness and the means to cure, and by consequence cause, disease and maladies take up the role of Plague Doctors.  Not always as malintented as their name may give off, these Wizards are known for their understanding of medicine and toxins. ",
       "chat": "",
       "unidentified": ""
     },
     "source": "Core Rules",
     "identifier": "wizard-plague-doctor",
     "classIdentifier": "wizard",
-    "classDetails": "<h2>&#x1f193; <b>Given Ability: Performer</b> &#x1f193;</h2>"
+    "classDetails": "<h3>Arcane Archetype: Plague Doctor</h3><p><i>Unlock:</i> Have the Wizard Starter Abilities.</p><hr/><p>&#x1F193; Given Ability: @Compendium[undertaking.abilities.J9PP4XL4PRMTZQGO]{Practitioner}</p><hr/><h3>Plague Doctor Abilities</h3><p>When taking a level in Plague Doctor, you may choose from the following abilities: </p><hr/><p>Options: @Compendium[undertaking.abilities.T5L5BTJ144AVI7MQ]{Toxin Caster}, @Compendium[undertaking.abilities.G87DSOTGHURFHYOM]{Resilient}, @Compendium[undertaking.abilities.9HKEMEMRG2UX5NSR]{Sickly Touch}, @Compendium[undertaking.abilities.THVRD6HWAO00WVVK]{Healing Fingers}</p>"
   },
   "effects": [],
   "folder": null,

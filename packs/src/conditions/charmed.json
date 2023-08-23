@@ -1,0 +1,37 @@
+{
+  "name": "Charmed",
+  "pages": [
+    {
+      "name": "Charmed",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Charmed</p><ul><li>Charmed creatures cannot attack the charmer or target the charmer with harmful abilities or spells.</li><li>The charmer has advantage on social skill checks with the charmed creature.</li></ul>",
+        "markdown": ""
+      },
+      "_id": "G92KOXJOD136RJUR",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "KJXJ0T5RPNC51N4V"
+}

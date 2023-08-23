@@ -40,6 +40,22 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Rules",
+      "sorting": "m",
+      "packs": [
+        "rules"
+      ],
+      "folders": [
+        {
+          "name": "References",
+          "sorting": "m",
+          "packs": [
+            "conditions"
+          ]
+        }
+      ]
     }
   ],
   "packs": [
@@ -48,6 +64,22 @@
       "label": "Classes",
       "system": "undertaking",
       "path": "./packs/classes.db",
+      "entity": "Item",
+      "type": "Item"
+    },
+    {
+      "name": "races-core",
+      "label": "Core Races",
+      "system": "undertaking",
+      "path": "./packs/races-core.db",
+      "entity": "Item",
+      "type": "Item"
+    },
+    {
+      "name": "races-branch",
+      "label": "Branch Races",
+      "system": "undertaking",
+      "path": "./packs/races-branch.db",
       "entity": "Item",
       "type": "Item"
     },
@@ -98,6 +130,24 @@
       "path": "./packs/abilities.db",
       "entity": "Item",
       "type": "Item"
+    },
+    {
+      "name": "rules",
+      "label": "Chapters",
+      "system": "dnd5e",
+      "path": "packs/rules.db",
+      "type": "JournalEntry",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "conditions",
+      "label": "Conditions",
+      "system": "dnd5e",
+      "path": "packs/conditions.db",
+      "type": "JournalEntry",
+      "private": false,
+      "flags": {}
     }
   ],
   "languages": [

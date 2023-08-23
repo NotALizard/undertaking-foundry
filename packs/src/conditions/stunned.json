@@ -1,0 +1,37 @@
+{
+  "name": "Stunned",
+  "pages": [
+    {
+      "name": "Stunned",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Stunned</p><ul><li>Stunned creatures are @Compendium[undertaking.conditions.3CQC3JEY2C3Y721F]{Incapacitated}, cannot move, and can only speak falteringly.</li><li>The creature automatically fails Strength (Save) and Dexterity (Save) checks.</li><li>Attack rolls against the creature have advantage.</li></ul>",
+        "markdown": ""
+      },
+      "_id": "UKBEVOSXD4SBBSTW",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "PEDR1J13VZXKUF3C"
+}

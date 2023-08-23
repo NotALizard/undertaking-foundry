@@ -1,0 +1,79 @@
+{
+  "name": "Elemental Spit",
+  "type": "ability",
+  "img": "icons/creatures/reptiles/dragon-horned-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Unlike your brethren, you have to the ability to use a lesser version of the dragon&rsquo;s mighty breath weapon.&nbsp; Using an action, you can infuse your spit with elemental power and fire it at your foes.&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;When you use this ability, select a single target within 30ft of you that you can see.&nbsp; Roll a ranged attack with proficiency.&nbsp; On a hit, the creature takes 2d6 damage.&nbsp; This damage increases to 3d6 at overall level 6, 4d6 at overall level 11, and 5d6 at overall level 16.&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;The type of damage dealt with this attack matches the element that you are resistant to with Draconic Resilience.&nbsp; You can use this ability a number of times equal to your proficiency modifier per short or long rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "attribute": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "attribute": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "UVQHH4CUD3D9PVZR"
+}

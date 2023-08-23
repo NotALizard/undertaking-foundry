@@ -1,0 +1,37 @@
+{
+  "name": "Frightened",
+  "pages": [
+    {
+      "name": "Frightened",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Frightened</p><ul><li>Frightened creatures have disadvantage on skill checks and attack rolls while the source of fear is within line of sight.</li><li>Frightened creatures cannot willingly move closer to the source of their fear.</li></ul>",
+        "markdown": ""
+      },
+      "_id": "IMHTRAMMHVTQV7DG",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "UK95BQ45TGSD5Q3V"
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Paralyzed",
+  "pages": [
+    {
+      "name": "Paralyzed",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Paralyzed</p><ul><li>Paralyzed creatures are @Compendium[undertaking.conditions.3CQC3JEY2C3Y721F]{Incapacitated} and cannot move or speak.</li><li>The creature automatically fails Strength (Save) and Dexterity (Save) checks.</li><li>Attack rolls against the creature have advantage.</li><li>Any attack that hits the creature is a critical hit if the attacker is within 5ft of the creature.</li></ul>",
+        "markdown": ""
+      },
+      "_id": "F08NY6EFDM9B8OEP",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "OBTES08D2XC130IG"
+}

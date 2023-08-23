@@ -1,0 +1,37 @@
+{
+  "name": "Prone",
+  "pages": [
+    {
+      "name": "Prone",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Prone</p><ul><li>Prone creatures can crawl at half speed, and must use half their movement to stand up.</li><li>The creature has disadvantage on attack rolls.</li><li>An attack roll against the creature has advantage if the attacker is within 5ft of the creature. Otherwise, the attack roll has disadvantage.</li><li>A creature can drop prone as a non-action on its turn.</li></ul>",
+        "markdown": ""
+      },
+      "_id": "J3FPNMPHPR47Y6XZ",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "RK3DF56CKMQUV6DM"
+}

@@ -33,7 +33,7 @@ export default class UndertakingItemSheet extends ItemSheet {
       rollData: context.rollData
     });
 
-    if(item.type == 'class' || item.type == 'archetype'){
+    if(item.type == 'class' || item.type == 'archetype' || item.type == 'race'){
       context.classDetails = await TextEditor.enrichHTML(item.system.classDetails, {
         secrets: item.isOwner,
         async: true,

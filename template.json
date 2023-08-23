@@ -545,7 +545,7 @@
     }
   },
   "Item": {
-    "types": ["weapon", "equipment", "consumable", "tool", "treasure", "background", "class", "archetype", "spell", "ability", "backpack"],
+    "types": ["weapon", "equipment", "consumable", "tool", "treasure", "background", "class", "archetype", "spell", "ability", "backpack", "race"],
     "templates": {
       "itemDescription": {
         "description": {
@@ -637,6 +637,11 @@
     "background": {
       "templates": ["itemDescription"],
       "portion": ""
+    },
+    "race": {
+      "templates": ["itemDescription"],
+      "portion": "",
+      "classDetails": ""
     },
     "backpack": {
       "templates": ["itemDescription", "physicalItem"],

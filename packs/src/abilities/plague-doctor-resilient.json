@@ -1,0 +1,24 @@
+{
+  "name": "Resilient",
+  "type": "ability",
+  "img": "icons/skills/wounds/blood-cells-disease-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have Resistance to Poison and Necrotic damage, and have advantage on save checks related to becoming @Compendium[undertaking.conditions.R54LQEKSDXNQ3N75]{Sickened} and @Compendium[undertaking.conditions.9YPWLY1IHQV3MRLO]{Diseased}.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Must have the Wizard Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "G87DSOTGHURFHYOM"
+}

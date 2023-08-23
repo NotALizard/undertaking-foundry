@@ -1,0 +1,37 @@
+{
+  "name": "Petrified",
+  "pages": [
+    {
+      "name": "Petrified",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Petrified</p><ul><li>A petrified creature, and any non-magical objects that it is carrying or wearing, is transformed into a solid inanimate substance (usually stone). Its weight is multiplied by 10, and it ceases aging.</li><li>The creature is @Compendium[undertaking.conditions.3CQC3JEY2C3Y721F]{Incapacitated}, cannot move or speak, and is unaware of its surroundings.</li><li>Attack rolls against the creature have advantage.</li><li>The creature automatically fails Strength (Save) and Dexterity (Save) checks.</li><li>The creature has resistance to all damage.</li><li>The creature is immune to bleeding, diseased, poisoned, and sickened, although any current conditions are suspended for the duration, not neutralized.</li><li>The creature is immune to psychic and poison damage, and is considered a structure. </li></ul>",
+        "markdown": ""
+      },
+      "_id": "JEJE5AMQEYCMD14B",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "AKLQGCY7ULVB4B64"
+}

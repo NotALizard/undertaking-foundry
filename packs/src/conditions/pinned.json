@@ -1,0 +1,37 @@
+{
+  "name": "Pinned",
+  "pages": [
+    {
+      "name": "Pinned",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Pinned</p><ul><li>Like @Compendium[undertaking.conditions.1EK5V6KTYAWC6S69]{Restrained}, but both the restrainer and the restrainee are @Compendium[undertaking.conditions.1EK5V6KTYAWC6S69]{Restrained}.</li><li>The restrainer can end the Pinned status effect as a non-action.</li></ul>",
+        "markdown": ""
+      },
+      "_id": "GXG7EGJEDJLLNNZB",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "EUHT2SOTAZ1MXEDB"
+}

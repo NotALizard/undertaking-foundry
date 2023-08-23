@@ -1,0 +1,23 @@
+{
+  "name": "Core Kobold",
+  "type": "race",
+  "img": "icons/creatures/reptiles/dragon-horned-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Kobolds are small reptilian creatures that walk and move like a humanoid but bear resemblance to the mighty dragons. These small creatures are very community based and are devoted to the betterment of their race and tribes as a whole. Every kobold has a place, a job to do, and they enjoy filling that role.<br />&nbsp;&nbsp;&nbsp;&nbsp;They are rumored to be distantly related to dragons, and have been known to serve the mighty creatures in exchange for protection; because, while there is strength in numbers, there are still many things out there that are stronger. Thus, they look for those that will protect them from such beasts.<br />&nbsp;&nbsp;&nbsp;&nbsp;While kobolds tend to stick together, it is not too uncommon to find them out adventuring, as their curiosity is only matched by their devotion to their race.<br />&nbsp;&nbsp;&nbsp;&nbsp;Kobolds have scale colors that match the color of their dragon ancestry, spanning both the chromatic and metallic spectrum. In this regard, kobolds of matching scale colors tend to live in tribes together, though it is not unheard of to have more than one scale color among a tribe. Eye colors are normally either amber, red, or violet.<br />&nbsp;&nbsp;&nbsp;&nbsp;It should also be noted that kobold naming conventions are generally not those of the other races. Kobolds have only a first name, normally consisting of no more than one or two syllables, sometimes three if it is a name that consists of two hyphenated words, like the names of their racial branches. There are times where formally they will use their first name and their tribe name however, such as Zeke of Trostok.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "core",
+    "classDetails": "<p>Core Kobold Traits</p><ul><li><b>Compatibility: </b>Reptile</li><li><b>Attribute Increase: </b>Your Dexterity increases by 2.</li><li><b>Lifespan: </b>Kobolds reach their age of maturity at 7 years old, and can live up to 125 years old.</li><li><b>Size: </b>Small; Kobolds stand between 2 to 3 feet tall and weigh between 25 to 35 pounds.</li><li><b>Speed: </b>Your base ground speed is 30 feet.</li><li><b>Darkvision: </b>Kobolds have superior vision in the dark, and can see in dim light within 60 feet of you as if it were in bright conditions, and can see in darkness as if it were dim conditions up to the same distance.</li><li><b>Strength in Numbers:</b> @Compendium[undertaking.abilities.XOU10R2EBHUGDPCQ]{Strength in Numbers}</li><li><b>Languages: </b>You can speak, read, and write Common and Draconic.</li></ul>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "FKL170P16WQV8I25"
+}
