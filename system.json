@@ -6,6 +6,9 @@
   "esmodules": [
     "undertaking.js"
   ],
+  "styles": [
+    "undertaking.css"
+  ],
   "packFolders": [
     {
       "name": "Classes",
@@ -23,6 +26,15 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Races",
+      "sorting": "m",
+      "packs": [
+        "races-core",
+        "races-branch"
+      ],
+      "folders": []
     },
     {
       "name": "Backgrounds",

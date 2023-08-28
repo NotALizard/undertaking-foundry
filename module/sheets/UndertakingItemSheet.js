@@ -13,7 +13,7 @@ export default class UndertakingItemSheet extends ItemSheet {
   }
 
   get template(){
-    return `systems/undertaking/templates/sheets/${this.item.type}-sheet.html`;
+    return `systems/undertaking/templates/sheets/${this.item.type}-sheet.hbs`;
   }
 
   async getData(){

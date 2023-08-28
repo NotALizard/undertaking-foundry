@@ -1,0 +1,193 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <h1>{{item.name}}</h1>
+    </header>
+
+    {{!-- Character Sheet Navigation --}}
+    <nav class="sheet-navigation tabs" data-group="primary">
+        <a class="item active" data-tab="overview">{{ localize "undertaking.Overview" }}</a>
+        <a class="item" data-tab="classAbilities">{{ localize "undertaking.ClassAbilities" }}</a>
+        <a class="item" data-tab="biography">{{ localize "undertaking.Biography" }}</a>
+        <a class="item" data-tab="spells">{{ localize "undertaking.Spellcasting" }}</a>
+    </nav>
+    <hr/>
+    {{!-- Item Sheet Body --}}
+    <section class="sheet-body">
+        <div class="tab flexcolumn active character-overview" data-group="primary" data-tab="overview">
+            <div class="character-header frow">
+                <div class="playerinfo-left fcol">
+                    <div class="char-name-container">
+                        <label>{{localize "undertaking.CharacterName"}}</label>
+                        <input name="data.name" type="text" value="{{data.name}}" data-dtype="String" />
+                    </div>
+                    <div class="level-bar frow">
+                        <div class="char-level-container">
+                            <label>{{ localize "undertaking.OverallLevel" }}: </label><label>{{actor.system.details.overallLevel}}</label>
+                        </div>
+                        <div class="desperate-container frow">
+                            <input type="hidden" class="input-desperate" name="system.stats.desperate" value="{{actor.system.stats.desperate}}" data-dtype="Boolean">
+                            <label>Desperate:</label>
+                            <a class="desperate-toggle {{#ifCond actor.system.stats.desperate '==' true}}desperate{{/ifCond}}">
+                            {{#ifCond actor.system.stats.desperate '==' true}}<img src="icons/svg/clockwork.svg"/>{{/ifCond}}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="playerinfo-right fcol">
+                    <div class="race-row frow">
+                        <div class="race-core-container">
+                            <input name="system.details.raceCore" type="text" value="{{actor.system.details.raceCore}}" data-dtype="String" />
+                            <label>{{localize "undertaking.CoreRace"}}</label>
+                        </div>
+                        <div class="race-branch-container">
+                            <input name="system.details.raceBranch" type="text" value="{{actor.system.details.raceBranch}}" data-dtype="String" />
+                            <label>{{localize "undertaking.BranchRace"}}</label>
+                        </div>
+                        <div class="size-container">
+                            <input name="system.traits.size" type="text" value="{{actor.system.traits.size}}" data-dtype="String" />
+                            <label>{{localize "undertaking.Size"}}</label>
+                        </div>
+                        <div class="exp-container">
+                            <input name="system.details.xp.value" type="number" value="{{actor.system.details.xp.value}}" placeholder="0" data-dtype="Number" />
+                            <label>{{localize "undertaking.Experience"}}</label>
+                        </div>
+                    </div>
+                    <div class="speed-row frow">
+                        <div class="walk-speed-container">
+                            <input name="system.stats.movement.walk" type="text" value="{{actor.system.stats.movement.walk}}" placeholder="30" data-dtype="String" />
+                            <label>{{localize "undertaking.Movement.Walk"}}</label>
+                        </div>
+                        <div class="climb-speed-container">
+                            <input name="system.stats.movement.climb" type="text" value="{{actor.system.stats.movement.climb}}" data-dtype="String" />
+                            <label>{{localize "undertaking.Movement.Climb"}}</label>
+                        </div>
+                        <div class="swim-speed-container">
+                            <input name="system.stats.movement.swim" type="text" value="{{actor.system.stats.movement.swim}}" data-dtype="String" />
+                            <label>{{localize "undertaking.Movement.Swim"}}</label>
+                        </div>
+                        <div class="fly-speed-container">
+                            <input name="system.stats.movement.fly" type="text" value="{{actor.system.stats.movement.fly}}" data-dtype="String" />
+                            <label>{{localize "undertaking.Movement.Fly"}}</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="char-info-body frow">
+                <div class="stats-body-left-col fcol">
+                    <div class="glance-vals fcol">
+                        <div class="glance-row-container frow">
+                            <div class="val-bubble bubble-left">
+                                <h4 class="bubble-pb">{{actor.system.stats.profBonus}}</h4>
+                            </div>
+                            <div class="glance-label-container fcol">
+                                <div class="glance-label-container2">
+                                    <label>{{ localize "undertaking.ProfBonus" }}</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glance-row-container frow">
+                            <div class="val-bubble bubble-right">
+                                <input name="system.stats.luck.value" type="number" value="{{actor.system.stats.luck.value}}" placeholder="0" data-dtype="Number" />
+                            </div>
+                            <div class="glance-label-container fcol">
+                                <div class="glance-label-container2">
+                                    <label>{{ localize "undertaking.Luck" }}</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glance-row-container frow">
+                            <div class="val-bubble bubble-left">
+                                <h4 class="bubble-aware">{{actor.system.skills.perception.passive}}</h4>
+                            </div>
+                            <div class="glance-label-container fcol">
+                                <div class="glance-label-container2">
+                                    <label>{{ localize "undertaking.Awareness" }}</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glance-row-container frow">
+                            <div class="val-bubble bubble-right">
+                                <h4 class="bubble-carry">{{actor.system.stats.carryCapacity}}</h4>
+                            </div>
+                            <div class="glance-label-container fcol">
+                                <div class="glance-label-container2">
+                                    <label>{{ localize "undertaking.CarryCapacity" }}</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="attributes-col frow">
+                        {{!-- Ability Scores --}}
+                        <div class="attributes-scores fcol">
+                        {{#each actor.system.attributes as |attribute attr_id|}}
+                            <div class="attribute frow" data-attribute="{{attr_id}}">
+                                <div class="attr-nums-container fcol">
+                                    <div class="attr-nums-col fcol">
+                                        <div class="attribute-modifiers frow">
+                                            <span class="attribute-mod" data-tooltip="">
+                                                {{numberFormat attribute.mod decimals=0 sign=true}}
+                                            </span>
+                                        </div>
+                                        <input type="text" name="system.attributes.{{attr_id}}.value" value="{{attribute.value}}"
+                                            class="attribute-score" placeholder="10" data-dtype="Number">
+                                    </div>
+                                </div>
+                                <div class="attr-prof-col fcol">
+                                    <div class="attr-name-container">
+                                        <h4 class="attribute-name box-title rollable">{{localize attribute.label}}</h4>
+                                    </div>
+                                    <div class="prof-row frow">
+                                        <input type="hidden" class="input-save-prof" name="system.attributes.{{attr_id}}.proficient" value="{{attribute.proficient}}" data-dtype="Number">
+                                        <div class="prof-radio-container frow">
+                                            <a class="profcheck save-check {{#ifCond attribute.proficient '>=' 1}}checked{{/ifCond}}" id="{{attr_id}}-save"></a>
+                                        </div>
+                                        <div class="prof-num-container">
+                                            </label>{{numberFormat attribute.save decimals=0 sign=true}}</label>
+                                        </div>
+                                        <div class="prof-name-container rollable">
+                                            <label>{{localize "undertaking.SaveCheck"}}</label>
+                                        </div>
+                                    </div>
+                                    {{#each ../actor.system.skills as |skill skill_id|}}
+                                        {{#ifequal skill.attribute attr_id}}
+                                            <div class="prof-row frow">
+                                                <input type="hidden" class="input-skill-prof" name="system.skills.{{skill_id}}.value" value="{{skill.value}}" data-dtype="Number">
+                                                <div class="prof-radio-container frow">
+                                                    <a class="profcheck skill-check {{#ifCond skill.value '>=' 1}}checked{{/ifCond}}" id="{{skill_id}}-prof"></a>
+                                                    <a class="profcheck skill-expert {{#ifCond skill.value '>=' 2}}checked{{/ifCond}}" id="{{skill_id}}-expert"></a>
+                                                </div>
+                                                <div class="prof-num-container frow"></label>{{numberFormat skill.total decimals=0 sign=true}}</label></div>
+                                                <div class="prof-name-container frow">{{localize skill.label}}</div>
+                                            </div>
+                                        {{/ifequal}}
+                                    {{/each}}
+                                </div>
+                            </div>
+                        {{/each}}
+                        </div>
+                    </div>
+                </div>
+                <div class="res-equip-atk-col fcol">
+                    <div class="res-equip-row frow">
+                        <div class="res-col fcol"></div>
+                        <div class="equip-col fcol"></div>
+                    </div>
+                    <div class="atk-row frow"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab flexrow active" data-group="primary" data-tab="classAbilities">
+            <p>Class Levels</p>
+            <p>Abilities</p>
+        </div>
+
+        <div class="tab flexrow active" data-group="primary" data-tab="biography">
+            <p>Biography</p>
+        </div>
+
+        <div class="tab flexrow active" data-group="primary" data-tab="spells">
+            <p>Spells</p>
+        </div>
+    </section>
+</form>

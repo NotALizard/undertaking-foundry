@@ -5,59 +5,75 @@
       "common": {
         "attributes": {
           "str": {
+            "label":"undertaking.Attributes.Strength",
             "value": 10,
             "proficient": 0,
             "bonuses": {
               "check": {
-                "all": "",
-                "save": "",
-                "skill": ""
+                "all": 0,
+                "save": 0,
+                "skill": 0
               }
             }
           },
           "dex": {
+            "label":"undertaking.Attributes.Dexterity",
             "value": 10,
             "proficient": 0,
             "bonuses": {
-              "check": "",
-              "save": "",
-              "skill": ""
+              "check": {
+                "all": 0,
+                "save": 0,
+                "skill": 0
+              }
             }
           },
           "con": {
+            "label":"undertaking.Attributes.Constitution",
             "value": 10,
             "proficient": 0,
             "bonuses": {
-              "check": "",
-              "save": "",
-              "skill": ""
+              "check": {
+                "all": 0,
+                "save": 0,
+                "skill": 0
+              }
             }
           },
           "int": {
+            "label":"undertaking.Attributes.Intelligence",
             "value": 10,
             "proficient": 0,
             "bonuses": {
-              "check": "",
-              "save": "",
-              "skill": ""
+              "check": {
+                "all": 0,
+                "save": 0,
+                "skill": 0
+              }
             }
           },
           "wis": {
+            "label":"undertaking.Attributes.Wisdom",
             "value": 10,
             "proficient": 0,
             "bonuses": {
-              "check": "",
-              "save": "",
-              "skill": ""
+              "check": {
+                "all": 0,
+                "save": 0,
+                "skill": 0
+              }
             }
           },
           "pre": {
+            "label":"undertaking.Attributes.Presence",
             "value": 10,
             "proficient": 0,
             "bonuses": {
-              "check": "",
-              "save": "",
-              "skill": ""
+              "check": {
+                "all": 0,
+                "save": 0,
+                "skill": 0
+              }
             }
           }
         },
@@ -72,6 +88,33 @@
             "max": null,
             "temp": 0,
             "tempmax": 0
+          },
+          "restDice":{
+            "d4": {
+              "value": 0,
+              "max": null,
+              "temp": 0
+            },
+            "d6": {
+              "value": 0,
+              "max": null,
+              "temp": 0
+            },
+            "d8": {
+              "value": 0,
+              "max": null,
+              "temp": 0
+            },
+            "d10": {
+              "value": 0,
+              "max": null,
+              "temp": 0
+            },
+            "d12": {
+              "value": 0,
+              "max": null,
+              "temp": 0
+            }
           },
           "init": {
             "attribute": "",
@@ -126,7 +169,7 @@
       "creature": {
         "stats": {
           "attunement": {
-            "max": 3
+            "max": 5
           },
           "senses": {
             "darkvision": 0,
@@ -139,151 +182,170 @@
           "spellcasting": "int"
         },
         "details": {
-          "race": ""
+          "raceCore": "Kobold",
+          "raceBranch": "Bright-Hide Kobold"
         },
         "skills": {
           "acrobatics": {
+            "label":"undertaking.Skills.Acrobatics",
             "value": 0,
             "attribute": "dex",
             "bonuses": {
-              "check": "",
-              "passive": ""
+              "check": 0,
+              "passive": 0
             }
           },
           "arcana": {
+            "label":"undertaking.Skills.Arcana",
             "value": 0,
             "attribute": "int",
             "bonuses": {
-              "check": "",
-              "passive": ""
+              "check": 0,
+              "passive": 0
             }
           },
           "athletics": {
+            "label":"undertaking.Skills.Athletics",
             "value": 0,
             "attribute": "str",
             "bonuses": {
-              "check": "",
-              "passive": ""
+              "check": 0,
+              "passive": 0
             }
           },
           "craft": {
+            "label":"undertaking.Skills.Craft",
             "value": 0,
             "attribute": "int",
             "bonuses": {
-              "check": "",
-              "passive": ""
+              "check": 0,
+              "passive": 0
             }
           },
           "culture": {
+            "label":"undertaking.Skills.Culture",
             "value": 0,
             "attribute": "int",
             "bonuses": {
-              "check": "",
-              "passive": ""
+              "check": 0,
+              "passive": 0
             }
           },
           "deception": {
+            "label":"undertaking.Skills.Deception",
             "value": 0,
             "attribute": "pre",
             "bonuses": {
-              "check": "",
-              "passive": ""
+              "check": 0,
+              "passive": 0
             }
           },
           "insight": {
+            "label":"undertaking.Skills.Insight",
             "value": 0,
             "attribute": "wis",
             "bonuses": {
-              "check": "",
-              "passive": ""
+              "check": 0,
+              "passive": 0
             }
           },
           "instinct": {
+            "label":"undertaking.Skills.Instinct",
             "value": 0,
             "attribute": "wis",
             "bonuses": {
-              "check": "",
-              "passive": ""
+              "check": 0,
+              "passive": 0
             }
           },
           "intimidation": {
+            "label":"undertaking.Skills.Intimidation",
             "value": 0,
             "attribute": "pre",
             "bonuses": {
-              "check": "",
-              "passive": ""
+              "check": 0,
+              "passive": 0
             }
           },
           "investigation": {
+            "label":"undertaking.Skills.Investigation",
             "value": 0,
             "attribute": "int",
             "bonuses": {
-              "check": "",
-              "passive": ""
+              "check": 0,
+              "passive": 0
             }
           },
           "medicine": {
+            "label":"undertaking.Skills.Medicine",
             "value": 0,
             "attribute": "wis",
             "bonuses": {
-              "check": "",
-              "passive": ""
+              "check": 0,
+              "passive": 0
             }
           },
           "nature": {
+            "label":"undertaking.Skills.Nature",
             "value": 0,
             "attribute": "int",
             "bonuses": {
-              "check": "",
-              "passive": ""
+              "check": 0,
+              "passive": 0
             }
           },
           "perception": {
+            "label":"undertaking.Skills.Perception",
             "value": 0,
             "attribute": "wis",
             "bonuses": {
-              "check": "",
-              "passive": ""
+              "check": 0,
+              "passive": 0
             }
           },
           "perform": {
+            "label":"undertaking.Skills.Perform",
             "value": 0,
             "attribute": "pre",
             "bonuses": {
-              "check": "",
-              "passive": ""
+              "check": 0,
+              "passive": 0
             }
           },
           "persuasion": {
+            "label":"undertaking.Skills.Persuasion",
             "value": 0,
             "attribute": "pre",
             "bonuses": {
-              "check": "",
-              "passive": ""
+              "check": 0,
+              "passive": 0
             }
           },
           "sleight": {
+            "label":"undertaking.Skills.Sleight",
             "value": 0,
             "attribute": "dex",
             "bonuses": {
-              "check": "",
-              "passive": ""
+              "check": 0,
+              "passive": 0
             }
           },
           "stealth": {
+            "label":"undertaking.Skills.Stealth",
             "value": 0,
             "attribute": "dex",
             "bonuses": {
-              "check": "",
-              "passive": ""
+              "check": 0,
+              "passive": 0
             }
           },
           "theology": {
+            "label":"undertaking.Skills.Theology",
             "value": 0,
             "attribute": "wis",
             "bonuses": {
-              "check": "",
-              "passive": ""
+              "check": 0,
+              "passive": 0
             }
           }
         },
@@ -363,12 +425,10 @@
               }
             }
           },
-          "attributes": {
-            "check":{
-              "all": "",
-              "save": "",
-              "skill": ""
-            }
+          "check":{
+            "all": 0,
+            "save": 0,
+            "skill": 0
           },
           "spell":  {
             "dc": ""

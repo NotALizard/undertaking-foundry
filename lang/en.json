@@ -4,6 +4,55 @@
     "Description": "Description",
     "Progression": "Progression",
     "Details": "Details",
-    "Traits": "Traits"
+    "Traits": "Traits",
+    "Overview": "Overview",
+    "ClassAbilities": "Class Abilities",
+    "Biography": "Biography",
+    "Spellcasting": "Spellcasting",
+    "CharacterName": "Character Name",
+    "CoreRace": "Core Race",
+    "BranchRace": "Branch Race",
+    "Size": "Size",
+    "Experience": "Experience",
+    "OverallLevel": "Overall Level",
+    "ProfBonus": "Proficiency Bonus",
+    "Luck": "Luck",
+    "Awareness": "Awareness",
+    "CarryCapacity": "Carry Capacity",
+    "Movement": {
+      "Walk": "Walk Speed",
+      "Climb": "Climb",
+      "Swim": "Swim",
+      "Fly": "Fly"
+    },
+    "SaveCheck":"Save Check",
+    "Attributes":{
+      "Strength": "Strength",
+      "Dexterity": "Dexterity",
+      "Constitution": "Constitution",
+      "Intelligence": "Intelligence",
+      "Wisdom": "Wisdom",
+      "Presence": "Presence"
+    },
+    "Skills":{
+      "Acrobatics": "Acrobatics",
+      "Arcana": "Arcana",
+      "Athletics": "Athletics",
+      "Craft": "Craft",
+      "Culture": "Culture",
+      "Deception": "Deception",
+      "Insight": "Insight",
+      "Instinct": "Instinct",
+      "Intimidation": "Intimidation",
+      "Investigation": "Investigation",
+      "Medicine": "Medicine",
+      "Nature": "Nature",
+      "Perception": "Perception",
+      "Perform": "Perform",
+      "Persuasion": "Persuasion",
+      "Sleight": "Sleight of Hand",
+      "Stealth": "Stealth",
+      "Theology": "Theology"
+    }
   }
 }
