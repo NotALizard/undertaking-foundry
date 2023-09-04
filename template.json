@@ -81,13 +81,19 @@
           "ac": {
             "flat": null,
             "calc": "default",
-            "formula": ""
+            "formula": "",
+            "useShield": 1,
+            "shield": 2
           },
           "hp": {
             "value": 10,
-            "max": null,
-            "temp": 0,
-            "tempmax": 0
+            "max": 10,
+            "temp": null,
+            "tempmax": null
+          },
+          "mana": {
+            "value": 0,
+            "bonus": 0
           },
           "restDice":{
             "d4": {
@@ -117,8 +123,8 @@
             }
           },
           "init": {
-            "attribute": "",
-            "bonus": ""
+            "attribute": "dex",
+            "bonus": 0
           },
           "movement": {
             "burrow": 0,
@@ -137,7 +143,7 @@
           }
         },
         "traits": {
-          "size": "med",
+          "size": "",
           "damageImmune": {
             "value": [],
             "bypasses": [],
@@ -182,8 +188,8 @@
           "spellcasting": "int"
         },
         "details": {
-          "raceCore": "Kobold",
-          "raceBranch": "Bright-Hide Kobold"
+          "raceCore": "",
+          "raceBranch": ""
         },
         "skills": {
           "acrobatics": {
@@ -465,91 +471,94 @@
         "xp": {
           "value": 0
         },
-        "appearance": ""
+        "appearance": "",
+        "conditions": "",
+        "resistances": "",
+        "resourceRows": 2
       },
       "resources": {
         "01": {
           "value": 0,
           "max": 0,
-          "sr": false,
-          "lr": false,
+          "recharge": "N",
+          "type": "count",
           "label": ""
         },
         "02": {
           "value": 0,
           "max": 0,
-          "sr": false,
-          "lr": false,
+          "recharge": "N",
+          "type": "count",
           "label": ""
         },
         "03": {
           "value": 0,
           "max": 0,
-          "sr": false,
-          "lr": false,
+          "recharge": "N",
+          "type": "count",
           "label": ""
         },
         "04": {
           "value": 0,
           "max": 0,
-          "sr": false,
-          "lr": false,
+          "recharge": "N",
+          "type": "count",
           "label": ""
         },
         "05": {
           "value": 0,
           "max": 0,
-          "sr": false,
-          "lr": false,
+          "recharge": "N",
+          "type": "count",
           "label": ""
         },
         "06": {
           "value": 0,
           "max": 0,
-          "sr": false,
-          "lr": false,
+          "recharge": "N",
+          "type": "count",
           "label": ""
         },
         "07": {
           "value": 0,
           "max": 0,
-          "sr": false,
-          "lr": false,
+          "recharge": "N",
+          "type": "count",
           "label": ""
         },
         "08": {
           "value": 0,
           "max": 0,
-          "sr": false,
-          "lr": false,
+          "recharge": "N",
+          "type": "count",
           "label": ""
         },
         "09": {
           "value": 0,
           "max": 0,
-          "sr": false,
-          "lr": false,
+          "recharge": "N",
+          "type": "count",
           "label": ""
         },
         "10": {
           "value": 0,
           "max": 0,
-          "sr": false,
-          "lr": false,
+          "recharge": "N",
+          "type": "count",
           "label": ""
         },
         "11": {
           "value": 0,
           "max": 0,
-          "sr": false,
-          "lr": false,
+          "recharge": "N",
+          "type": "count",
           "label": ""
         },
         "12": {
           "value": 0,
           "max": 0,
-          "sr": false,
-          "lr": false,
+          "recharge": "N",
+          "type": "count",
           "label": ""
         }
       },

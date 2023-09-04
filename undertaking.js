@@ -5,6 +5,12 @@ import UndertakingActor from "./module/documents/UndertakingActor.js";
 import UndertakingItemSheet from "./module/sheets/UndertakingItemSheet.js";
 import UndertakingCharacterSheet from "./module/sheets/UndertakingCharacterSheet.js";
 
+async function preloadHandlebarsTemplates(){
+  const templatePaths = [];
+
+  return loadTemplates(templatePaths);
+}
+
 Hooks.once("init",function(){
   console.log("Undertaking | Initializing the system");
 
@@ -52,7 +58,7 @@ Hooks.once("init",function(){
         default:
             return options.inverse(this);
     }
-});
+  });
 
   Handlebars.registerHelper('json', function(context) {
     return JSON.stringify(context);

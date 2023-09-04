@@ -3,6 +3,7 @@
     --bg-blue: #596772;
     --fg-brown: #6C6869;
     --off-white: #FBFCFE;
+    --bg-gray: gray;
 }
 
 .frow{
@@ -233,11 +234,107 @@ a.profcheck.skill-expert {
 }
 .res-col{
     padding:4px;
-    width:50%;
+    width:300px;
+}
+.ac-container {
+    width: 100px;
+    font-size: 12px;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 6px;
+    background: white;
+}
+.shield-container {
+    padding-top: 12px;
+    margin-left: -16px;
+}
+.shield-info {
+    z-index: 3;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    padding-top: 4px;
+    margin-bottom: -60px;
+    font-size: 12px;
+}
+.shield-info input {
+    font-size: 24px;
+    border: none;
+    background: none;
+    padding-right: 0;
+}
+a.shield-toggle {
+    width: 12px;
+    height: 12px;
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 25%;
+    margin: auto;
+    background: white;
+}
+a.shield-toggle.checked{
+    background-color: var(--bg-blue);
+}
+.shield-vis div.equipped{
+    background: white !important;
+}
+.shield-top {
+    width: 60px;
+    height: 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 6px;
+    background: var(--bg-gray);
+    z-index: 1;
+}
+.shield-middle {
+    width: 60px;
+    height: 30px;
+    border-left: solid;
+    border-right:solid;
+    border-width: 3px;
+    background: var(--bg-gray);
+    z-index: 2;
+    margin-top: -10px;
+}
+.shield-bottom {
+    width: 60px;
+    height: 60px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 50%;
+    background: var(--bg-gray);
+    z-index: 1;
+    margin-top: -30px;
+}
+.total-ac h4 {
+    font-size: 44px;
+    margin-bottom: -8px;
+    margin-top: -4px;
+}
+.base-ac h4 {
+    font-size: 16px;
+    margin: 0;
+}
+.initiative-container {
+    width: 100px;
+    font-size: 12px;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 6px;
+    background: white;
+    margin-left: auto;
+}
+.initiative-container h4 {
+    font-size: 44px;
+    margin-top: 4px;
 }
 .equip-col{
     padding:4px;
-    width:50%;
+    flex:1;
 }
 .atk-row{
     padding:4px;
@@ -269,4 +366,248 @@ a.profcheck.skill-expert {
     height: 28px !important;
     width: 28px !important;
     max-width: none;
+}
+.hp-mana {
+    margin-top:4px;
+}
+.hp-death-container {
+    width: 180px;
+    height: 94px;
+    font-size: 12px;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 6px;
+    background: white;
+}
+.hp-container {
+    border-bottom: solid;
+    border-width: 3px;
+}
+.hp-container input {
+    background: none;
+    border: none;
+}
+input.hp-big {
+    font-size: 32px;
+}
+input.hp-small {
+    font-size: 12px;
+    margin: 0px;
+    height: 16px;
+}
+.hp-current-col {
+    flex: 1.5;
+}
+.hp-max-col {
+    flex: 1;
+    padding-left: 6px;
+}
+.hp-divider {
+    background: black;
+    width: 3px;
+    transform: rotate(30deg);
+    height: 67px;
+    margin: -6px 0px;
+}
+.death-container{
+    height: 30px;
+}
+.death-progress {
+    flex: 1;
+}
+.death-console {
+    flex: 30px;
+}
+.death-save {
+    width: 10px !important;
+    height: 10px !important;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid var(--fg-brown);
+    margin: auto auto;
+}
+.death-save.checked{
+    background-color: var(--bg-blue);
+}
+.death-save .cross {
+    width: 1px;
+    background: black;
+    height: 100%;
+    margin: auto;
+    transform: rotate(45deg);
+}
+a.death-reset-button {
+    flex: 1;
+}
+img.death-button {
+    border: none;
+    filter: invert(1);
+    width: 12px;
+    height: 12px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+.mana-container {
+    width: 100px;
+    margin-left: auto;
+    font-size: 12px;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 6px;
+    background: white;
+}
+.mana-vals {
+    margin: auto 0;
+}
+input.mana-val{
+    background: none;
+    border: none;
+}
+.mana-val {
+    font-size: 30px !important;
+    height: auto !important;
+    flex: 1;
+    padding: 0 !important;
+    font-weight: bold;
+}
+.mana-val.divider{
+    flex: 0;
+}
+.mana-charge{
+    margin-top: auto;
+}
+.rest-dice{
+    margin-top: 4px;
+}
+.rest-labels{
+    width: 14px;
+}
+.rest-label {
+    transform: rotate(-90deg);
+    height: 12px;
+    transform-origin: top left;
+}
+.rest-label.max {
+    flex: 1;
+    margin-top: 40px;
+}
+.rest-label.val {
+    margin-top: 55px;
+    margin-bottom: -15px;
+    flex: 2;
+    white-space: nowrap;
+}
+.rest-status-container {
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 6px;
+    background: white;
+    flex: 1;
+}
+.rest-container {
+    width: 50%;
+}
+.rest-die-col {
+    flex: 1;
+    border-right: solid;
+}
+.rest-die.max {
+    flex: 1;
+}
+.rest-die input {
+    background: none;
+    border: none;
+}
+.rest-die.val {
+    border-top: solid;
+    flex: 2;
+    justify-content: center;
+}
+.status-container {
+    flex: 1;
+}
+.status-container .fcol {
+    flex: 1;
+}
+.condition-container {
+    border-top: solid;
+}
+.status-container textarea {
+    flex: 1;
+    border: none;
+    background: none;
+    resize: none;
+    min-height: 0px;
+    padding: 0px;
+    padding-left: 2px;
+}
+.res-row {
+    margin-top: 4px;
+}
+.res-container {
+    flex: 1;
+    text-align: center;
+}
+.res-border {
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 6px;
+    background: white;
+    height: 50px;
+}
+.res-values {
+    flex: 1;
+    font-size: 24px;
+}
+.res-values input {
+    border: none;
+    background: none;
+    flex: 1;
+    padding: 0px;
+    margin: auto;
+}
+.res-values label {
+    margin: auto;
+}
+.res-spacer {
+    width: 2px;
+}
+.res-label {
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+.res-label input {
+    border: none;
+    background: none;
+    padding: 0px;
+    font-size: 16px;
+    line-height: 16px;
+    height: 14px;
+}
+.res-buttons {
+    font-size: 12px;
+    justify-content: space-between;
+    margin-bottom: -8px;
+}
+img.res-button {
+    border: none;
+    filter: invert(1);
+    width: 12px;
+    height: 12px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+.res-count-buttons {
+    justify-content: right;
+    font-size: 24px;
+}
+a.res-button.remove {
+    margin-right: 8px;
+    margin-top: -10px;
+    font-size: 36px;
 }

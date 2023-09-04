@@ -25,6 +25,11 @@ export default class UndertakingActor extends Actor {
     const level = 1;
     system.details.overallLevel = level
 
+    //calc spellcaster stats
+    system.stats.mana.max = 0 + system.stats.mana.bonus;
+    system.stats.mana.chargeLimit = 1;
+    system.stats.mana.shortRestGain = 1;
+
     //calc pb
     system.stats.profBonus = Math.floor((level + 7) / 4);
 
@@ -55,7 +60,12 @@ export default class UndertakingActor extends Actor {
 
     //calc misc vals
     system.stats.carryCapacity = 15 * system.attributes.str.value;
+    system.stats.init.total = system.attributes[system.stats.init.attribute].mod + system.stats.init.bonus;
 
     //calc AC
+    let unshielded = 10 + system.attributes.dex.mod;
+    let shield = system.stats.ac.shield;
+    system.stats.ac.unshielded = unshielded;
+    system.stats.ac.total = unshielded + (system.stats.ac.useShield * shield);
   }
 }

@@ -169,8 +169,668 @@
                 </div>
                 <div class="res-equip-atk-col fcol">
                     <div class="res-equip-row frow">
-                        <div class="res-col fcol"></div>
-                        <div class="equip-col fcol"></div>
+                        <div class="res-col fcol">
+                            <div class="ac-init frow">
+                                <div class="ac-container fcol">
+                                    <div class="total-ac">
+                                        <label>{{ localize "undertaking.ArmorClass" }}</label>
+                                        <h4>{{actor.system.stats.ac.total}}</h4>
+                                    </div>
+                                    <div class="base-ac">
+                                        <h4>({{actor.system.stats.ac.unshielded}})</h4>
+                                        <label>({{ localize "undertaking.WithoutShield" }})</label>
+                                    </div>
+                                </div>
+                                <div class="shield-container fcol">
+                                    <div class="shield-info fcol">
+                                        <input type="hidden" class="input-shield-equip" name="system.stats.ac.useShield" value="{{actor.system.stats.ac.useShield}}" data-dtype="Number">
+                                        <label>{{ localize "undertaking.Shield" }}</label>
+                                        <input name="system.stats.ac.shield" type="number" value="{{actor.system.stats.ac.shield}}" placeholder="0" data-dtype="Number" />
+                                        <a class="shield-toggle {{#ifCond actor.system.stats.ac.useShield '==' 1}}checked{{/ifCond}}"></a>
+                                    </div>
+                                    <div class="shield-vis fcol">
+                                        <div class="shield-top {{#ifCond actor.system.stats.ac.useShield '==' 1}}equipped{{/ifCond}}"></div>
+                                        <div class="shield-middle {{#ifCond actor.system.stats.ac.useShield '==' 1}}equipped{{/ifCond}}"></div>
+                                        <div class="shield-bottom {{#ifCond actor.system.stats.ac.useShield '==' 1}}equipped{{/ifCond}}"></div>
+                                    </div>
+                                </div>
+                                <div class="initiative-container">
+                                    <label>{{ localize "undertaking.Initiative" }}</label>
+                                    <h4>{{numberFormat actor.system.stats.init.total decimals=0 sign=true}}</h4>
+                                </div>
+                            </div>
+                            <div class="hp-mana frow">
+                                <div class="hp-death-container fcol">
+                                    <div class="hp-container frow">
+                                        <div class="hp-current-col fcol">
+                                            <label class="hp-current-label">{{ localize "undertaking.HitPoints" }}</label>
+                                            <input class="hp-big" name="system.stats.hp.value" type="number" value="{{actor.system.stats.hp.value}}" placeholder="0" data-dtype="Number" />
+                                            <input class="hp-small" name="system.stats.hp.temp" type="number" value="{{actor.system.stats.hp.temp}}" placeholder="{{ localize "undertaking.TempHpPlaceholder" }}" title="{{ localize "undertaking.TempHpTip" }}" data-dtype="Number" />
+                                        </div>
+                                        <div class="hp-divider"></div>
+                                        <div class="hp-max-col fcol">
+                                            <label class="hp-current-label">{{ localize "undertaking.Max" }}</label>
+                                            <input class="hp-big" name="system.stats.hp.max" type="number" value="{{actor.system.stats.hp.max}}" placeholder="0" data-dtype="Number" />
+                                            <input class="hp-small" name="system.stats.hp.tempmax" type="number" value="{{actor.system.stats.hp.tempmax}}" placeholder="{{ localize "undertaking.TempMaxHpPlaceholder" }}" title="{{ localize "undertaking.TempMaxHpTip" }}" data-dtype="Number" />
+                                        </div>
+                                    </div>
+                                    <div class="death-container frow">
+                                        <div class="death-progress success frow">
+                                            <div class="death-save success {{#ifCond actor.system.stats.death.success '>=' 3}}checked{{/ifCond}}"></div>
+                                            <div class="death-save success {{#ifCond actor.system.stats.death.success '>=' 2}}checked{{/ifCond}}"></div>
+                                            <div class="death-save success {{#ifCond actor.system.stats.death.success '>=' 1}}checked{{/ifCond}}"></div>
+                                        </div>
+                                        <div class="death-console fcol">
+                                            <label>{{ localize "undertaking.DeathSaves" }}</label>
+                                            <div class="death-buttons frow">
+                                                <input type="hidden" class="input-death-success" name="system.stats.death.success" value="{{actor.system.stats.death.success}}" data-dtype="Number">
+                                                <input type="hidden" class="input-death-fail" name="system.stats.death.failure" value="{{actor.system.stats.death.failure}}" data-dtype="Number">
+                                                <a><img class="death-button success" src="icons/svg/upgrade.svg" title="{{ localize "undertaking.Success" }}"/></a>
+                                                <a class="death-reset-button">{{ localize "undertaking.Reset" }}</a>
+                                                <a><img class="death-button fail" src="icons/svg/downgrade.svg" title="{{ localize "undertaking.Failure" }}"/></a>
+                                            </div>
+                                        </div>
+                                        <div class="death-progress fail frow">
+                                            <div class="death-save fail {{#ifCond actor.system.stats.death.failure '>=' 1}}checked{{/ifCond}}"><div class="cross"></div></div>
+                                            <div class="death-save fail {{#ifCond actor.system.stats.death.failure '>=' 2}}checked{{/ifCond}}"><div class="cross"></div></div>
+                                            <div class="death-save fail {{#ifCond actor.system.stats.death.failure '>=' 3}}checked{{/ifCond}}"><div class="cross"></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mana-container fcol">
+                                    <label>{{ localize "undertaking.Mana" }}</label>
+                                    <div class="mana-vals frow">
+                                        <input class="mana-val" name="system.stats.mana.value" type="number" value="{{actor.system.stats.mana.value}}" placeholder="0" data-dtype="Number" />
+                                        <label class="mana-val divider">/</label>
+                                        <label class="mana-val">{{actor.system.stats.mana.max}}</label>
+                                    </div>
+                                    <label style="mana-charge">{{ localize "undertaking.ChargeLimit" }}: {{actor.system.stats.mana.chargeLimit}}</label>
+                                    <label>{{ localize "undertaking.ShortRest" }}: {{numberFormat actor.system.stats.mana.shortRestGain decimals=0 sign=true}}</label>
+                                </div>
+                            </div>
+                            <div class="rest-dice frow">
+                                <div class="rest-labels fcol">
+                                    <label class="rest-label max">{{ localize "undertaking.Max" }}</label>
+                                    <label class="rest-label val">{{ localize "undertaking.RestDice" }}</label>
+                                </div>
+                                <div class="rest-status-container frow">
+                                    <div class="rest-container frow">
+                                        <div class="rest-die-col fcol">
+                                            <div class="rest-die max fcol">
+                                                <input name="system.stats.restDice.d6.max" type="number" value="{{actor.system.stats.restDice.d6.max}}" placeholder="0" data-dtype="Number" />
+                                                <label>{{ localize "undertaking.DicePrefix" }}6</label>
+                                            </div>
+                                            <div class="rest-die val fcol">
+                                                <input name="system.stats.restDice.d6.value" type="number" value="{{actor.system.stats.restDice.d6.value}}" placeholder="0" data-dtype="Number" />
+                                            </div>
+                                        </div>
+                                        <div class="rest-die-col fcol">
+                                            <div class="rest-die max fcol">
+                                                <input name="system.stats.restDice.d8.max" type="number" value="{{actor.system.stats.restDice.d8.max}}" placeholder="0" data-dtype="Number" />
+                                                <label>{{ localize "undertaking.DicePrefix" }}8</label>
+                                            </div>
+                                            <div class="rest-die val fcol">
+                                                <input name="system.stats.restDice.d8.value" type="number" value="{{actor.system.stats.restDice.d8.value}}" placeholder="0" data-dtype="Number" />
+                                            </div>
+                                        </div>
+                                        <div class="rest-die-col fcol">
+                                            <div class="rest-die max fcol">
+                                                <input name="system.stats.restDice.d10.max" type="number" value="{{actor.system.stats.restDice.d10.max}}" placeholder="0" data-dtype="Number" />
+                                                <label>{{ localize "undertaking.DicePrefix" }}10</label>
+                                            </div>
+                                            <div class="rest-die val fcol">
+                                                <input name="system.stats.restDice.d10.value" type="number" value="{{actor.system.stats.restDice.d10.value}}" placeholder="0" data-dtype="Number" />
+                                            </div>
+                                        </div>
+                                        <div class="rest-die-col fcol">
+                                            <div class="rest-die max fcol">
+                                                <input name="system.stats.restDice.d12.max" type="number" value="{{actor.system.stats.restDice.d12.max}}" placeholder="0" data-dtype="Number" />
+                                                <label>{{ localize "undertaking.DicePrefix" }}12</label>
+                                            </div>
+                                            <div class="rest-die val fcol">
+                                                <input name="system.stats.restDice.d12.value" type="number" value="{{actor.system.stats.restDice.d12.value}}" placeholder="0" data-dtype="Number" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="status-container fcol">
+                                        <div class="resistances-container fcol">
+                                            <label>{{ localize "undertaking.Resistances" }}</label>
+                                            <textarea name="system.details.resistances" data-dtype="String">{{actor.system.details.resistances}}</textarea>
+                                        </div>
+                                        <div class="condition-container fcol">
+                                            <label>{{ localize "undertaking.Conditions" }}</label>
+                                            <textarea name="system.details.conditions" data-dtype="String">{{actor.system.details.conditions}}</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="resources fcol">
+                                <div class="res-row frow">
+                                    <div class="res-container fcol">
+                                        <div class="res-border fcol">
+                                            <div class="res-buttons frow">
+                                                <input type="hidden" class="input-res-type" name="system.resources.01.type" value="{{actor.system.resources.01.type}}" data-dtype="String">
+                                                <input type="hidden" class="input-res-recharge" name="system.resources.01.recharge" value="{{actor.system.resources.01.recharge}}" data-dtype="String">
+                                                <a class="res-type-button">
+                                                    {{#ifCond actor.system.resources.01.type '==' 'count'}}
+                                                        <img class="res-button" src="icons/svg/lightning.svg" />
+                                                    {{/ifCond}}
+                                                    {{#ifCond actor.system.resources.01.type '==' 'target'}}
+                                                        <img class="res-button" src="icons/svg/dice-target.svg" />
+                                                    {{/ifCond}}
+                                                </a>
+                                                {{#ifCond actor.system.resources.01.type '==' 'count'}}
+                                                    <a class="res-recharge-button">
+                                                        {{#ifCond actor.system.resources.01.recharge '==' 'SR'}}
+                                                            <label title="{{ localize "undertaking.ShortRestRecharge" }}">{{ localize "undertaking.ShortRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                        {{#ifCond actor.system.resources.01.recharge '==' 'LR'}}
+                                                            <label title="{{ localize "undertaking.LongRestRecharge" }}">{{ localize "undertaking.LongRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                        {{#ifCond actor.system.resources.01.recharge '==' 'N'}}
+                                                            <label title="{{ localize "undertaking.NoRecharge" }}">{{ localize "undertaking.NoRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                    </a>
+                                                {{/ifCond}}
+                                            </div>
+                                            <div class="res-values frow">
+                                                <input class="res-val" name="system.resources.01.value" type="number" value="{{actor.system.resources.01.value}}" placeholder="0" data-dtype="Number" />
+                                                {{#ifCond actor.system.resources.01.type '==' 'count'}}
+                                                <label>/</label>
+                                                <input class="res-max" name="system.resources.01.max" type="number" value="{{actor.system.resources.01.max}}" placeholder="0" data-dtype="Number" />
+                                                {{/ifCond}}
+                                            </div>
+                                        </div>
+                                        <div class="res-label frow">
+                                            <input name="system.resources.01.label" type="text" value="{{actor.system.resources.01.label}}" data-dtype="String" 
+                                                {{#ifCond actor.system.resources.01.type '==' 'count'}}placeholder="Resource"{{/ifCond}}
+                                                {{#ifCond actor.system.resources.01.type '==' 'target'}}placeholder="DC"{{/ifCond}}/>
+                                        </div>
+                                    </div>
+                                    <div class="res-spacer"></div>
+                                    <div class="res-container fcol">
+                                        <div class="res-border fcol">
+                                            <div class="res-buttons frow">
+                                                <input type="hidden" class="input-res-type" name="system.resources.02.type" value="{{actor.system.resources.02.type}}" data-dtype="String">
+                                                <input type="hidden" class="input-res-recharge" name="system.resources.02.recharge" value="{{actor.system.resources.02.recharge}}" data-dtype="String">
+                                                <a class="res-type-button">
+                                                    {{#ifCond actor.system.resources.02.type '==' 'count'}}
+                                                        <img class="res-button" src="icons/svg/lightning.svg" />
+                                                    {{/ifCond}}
+                                                    {{#ifCond actor.system.resources.02.type '==' 'target'}}
+                                                        <img class="res-button" src="icons/svg/dice-target.svg" />
+                                                    {{/ifCond}}
+                                                </a>
+                                                {{#ifCond actor.system.resources.02.type '==' 'count'}}
+                                                    <a class="res-recharge-button">
+                                                        {{#ifCond actor.system.resources.02.recharge '==' 'SR'}}
+                                                            <label title="{{ localize "undertaking.ShortRestRecharge" }}">{{ localize "undertaking.ShortRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                        {{#ifCond actor.system.resources.02.recharge '==' 'LR'}}
+                                                            <label title="{{ localize "undertaking.LongRestRecharge" }}">{{ localize "undertaking.LongRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                        {{#ifCond actor.system.resources.02.recharge '==' 'N'}}
+                                                            <label title="{{ localize "undertaking.NoRecharge" }}">{{ localize "undertaking.NoRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                    </a>
+                                                {{/ifCond}}
+                                            </div>
+                                            <div class="res-values frow">
+                                                <input class="res-val" name="system.resources.02.value" type="number" value="{{actor.system.resources.02.value}}" placeholder="0" data-dtype="Number" />
+                                                {{#ifCond actor.system.resources.02.type '==' 'count'}}
+                                                <label>/</label>
+                                                <input class="res-max" name="system.resources.02.max" type="number" value="{{actor.system.resources.02.max}}" placeholder="0" data-dtype="Number" />
+                                                {{/ifCond}}
+                                            </div>
+                                        </div>
+                                        <div class="res-label frow">
+                                            <input name="system.resources.02.label" type="text" value="{{actor.system.resources.02.label}}" data-dtype="String" 
+                                                {{#ifCond actor.system.resources.02.type '==' 'count'}}placeholder="Resource"{{/ifCond}}
+                                                {{#ifCond actor.system.resources.02.type '==' 'target'}}placeholder="DC"{{/ifCond}}/>
+                                        </div>
+                                    </div>
+                                    <div class="res-spacer"></div>
+                                    <div class="res-container fcol">
+                                        <div class="res-border fcol">
+                                            <div class="res-buttons frow">
+                                                <input type="hidden" class="input-res-type" name="system.resources.03.type" value="{{actor.system.resources.03.type}}" data-dtype="String">
+                                                <input type="hidden" class="input-res-recharge" name="system.resources.03.recharge" value="{{actor.system.resources.03.recharge}}" data-dtype="String">
+                                                <a class="res-type-button">
+                                                    {{#ifCond actor.system.resources.03.type '==' 'count'}}
+                                                        <img class="res-button" src="icons/svg/lightning.svg" />
+                                                    {{/ifCond}}
+                                                    {{#ifCond actor.system.resources.03.type '==' 'target'}}
+                                                        <img class="res-button" src="icons/svg/dice-target.svg" />
+                                                    {{/ifCond}}
+                                                </a>
+                                                {{#ifCond actor.system.resources.03.type '==' 'count'}}
+                                                    <a class="res-recharge-button">
+                                                        {{#ifCond actor.system.resources.03.recharge '==' 'SR'}}
+                                                            <label title="{{ localize "undertaking.ShortRestRecharge" }}">{{ localize "undertaking.ShortRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                        {{#ifCond actor.system.resources.03.recharge '==' 'LR'}}
+                                                            <label title="{{ localize "undertaking.LongRestRecharge" }}">{{ localize "undertaking.LongRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                        {{#ifCond actor.system.resources.03.recharge '==' 'N'}}
+                                                            <label title="{{ localize "undertaking.NoRecharge" }}">{{ localize "undertaking.NoRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                    </a>
+                                                {{/ifCond}}
+                                            </div>
+                                            <div class="res-values frow">
+                                                <input class="res-val" name="system.resources.03.value" type="number" value="{{actor.system.resources.03.value}}" placeholder="0" data-dtype="Number" />
+                                                {{#ifCond actor.system.resources.03.type '==' 'count'}}
+                                                <label>/</label>
+                                                <input class="res-max" name="system.resources.03.max" type="number" value="{{actor.system.resources.03.max}}" placeholder="0" data-dtype="Number" />
+                                                {{/ifCond}}
+                                            </div>
+                                        </div>
+                                        <div class="res-label frow">
+                                            <input name="system.resources.03.label" type="text" value="{{actor.system.resources.03.label}}" data-dtype="String" 
+                                                {{#ifCond actor.system.resources.03.type '==' 'count'}}placeholder="Resource"{{/ifCond}}
+                                                {{#ifCond actor.system.resources.03.type '==' 'target'}}placeholder="DC"{{/ifCond}}/>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{#ifCond actor.system.details.resourceRows '>=' 2}}
+                                <div class="res-row frow">
+                                    <div class="res-container fcol">
+                                        <div class="res-border fcol">
+                                            <div class="res-buttons frow">
+                                                <input type="hidden" class="input-res-type" name="system.resources.04.type" value="{{actor.system.resources.04.type}}" data-dtype="String">
+                                                <input type="hidden" class="input-res-recharge" name="system.resources.04.recharge" value="{{actor.system.resources.04.recharge}}" data-dtype="String">
+                                                <a class="res-type-button">
+                                                    {{#ifCond actor.system.resources.04.type '==' 'count'}}
+                                                        <img class="res-button" src="icons/svg/lightning.svg" />
+                                                    {{/ifCond}}
+                                                    {{#ifCond actor.system.resources.04.type '==' 'target'}}
+                                                        <img class="res-button" src="icons/svg/dice-target.svg" />
+                                                    {{/ifCond}}
+                                                </a>
+                                                {{#ifCond actor.system.resources.04.type '==' 'count'}}
+                                                    <a class="res-recharge-button">
+                                                        {{#ifCond actor.system.resources.04.recharge '==' 'SR'}}
+                                                            <label title="{{ localize "undertaking.ShortRestRecharge" }}">{{ localize "undertaking.ShortRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                        {{#ifCond actor.system.resources.04.recharge '==' 'LR'}}
+                                                            <label title="{{ localize "undertaking.LongRestRecharge" }}">{{ localize "undertaking.LongRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                        {{#ifCond actor.system.resources.04.recharge '==' 'N'}}
+                                                            <label title="{{ localize "undertaking.NoRecharge" }}">{{ localize "undertaking.NoRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                    </a>
+                                                {{/ifCond}}
+                                            </div>
+                                            <div class="res-values frow">
+                                                <input class="res-val" name="system.resources.04.value" type="number" value="{{actor.system.resources.04.value}}" placeholder="0" data-dtype="Number" />
+                                                {{#ifCond actor.system.resources.04.type '==' 'count'}}
+                                                <label>/</label>
+                                                <input class="res-max" name="system.resources.04.max" type="number" value="{{actor.system.resources.04.max}}" placeholder="0" data-dtype="Number" />
+                                                {{/ifCond}}
+                                            </div>
+                                        </div>
+                                        <div class="res-label frow">
+                                            <input name="system.resources.04.label" type="text" value="{{actor.system.resources.04.label}}" data-dtype="String" 
+                                                {{#ifCond actor.system.resources.04.type '==' 'count'}}placeholder="Resource"{{/ifCond}}
+                                                {{#ifCond actor.system.resources.04.type '==' 'target'}}placeholder="DC"{{/ifCond}}/>
+                                        </div>
+                                    </div>
+                                    <div class="res-spacer"></div>
+                                    <div class="res-container fcol">
+                                        <div class="res-border fcol">
+                                            <div class="res-buttons frow">
+                                                <input type="hidden" class="input-res-type" name="system.resources.05.type" value="{{actor.system.resources.05.type}}" data-dtype="String">
+                                                <input type="hidden" class="input-res-recharge" name="system.resources.05.recharge" value="{{actor.system.resources.05.recharge}}" data-dtype="String">
+                                                <a class="res-type-button">
+                                                    {{#ifCond actor.system.resources.05.type '==' 'count'}}
+                                                        <img class="res-button" src="icons/svg/lightning.svg" />
+                                                    {{/ifCond}}
+                                                    {{#ifCond actor.system.resources.05.type '==' 'target'}}
+                                                        <img class="res-button" src="icons/svg/dice-target.svg" />
+                                                    {{/ifCond}}
+                                                </a>
+                                                {{#ifCond actor.system.resources.05.type '==' 'count'}}
+                                                    <a class="res-recharge-button">
+                                                        {{#ifCond actor.system.resources.05.recharge '==' 'SR'}}
+                                                            <label title="{{ localize "undertaking.ShortRestRecharge" }}">{{ localize "undertaking.ShortRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                        {{#ifCond actor.system.resources.05.recharge '==' 'LR'}}
+                                                            <label title="{{ localize "undertaking.LongRestRecharge" }}">{{ localize "undertaking.LongRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                        {{#ifCond actor.system.resources.05.recharge '==' 'N'}}
+                                                            <label title="{{ localize "undertaking.NoRecharge" }}">{{ localize "undertaking.NoRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                    </a>
+                                                {{/ifCond}}
+                                            </div>
+                                            <div class="res-values frow">
+                                                <input class="res-val" name="system.resources.05.value" type="number" value="{{actor.system.resources.05.value}}" placeholder="0" data-dtype="Number" />
+                                                {{#ifCond actor.system.resources.05.type '==' 'count'}}
+                                                <label>/</label>
+                                                <input class="res-max" name="system.resources.05.max" type="number" value="{{actor.system.resources.05.max}}" placeholder="0" data-dtype="Number" />
+                                                {{/ifCond}}
+                                            </div>
+                                        </div>
+                                        <div class="res-label frow">
+                                            <input name="system.resources.05.label" type="text" value="{{actor.system.resources.05.label}}" data-dtype="String" 
+                                                {{#ifCond actor.system.resources.05.type '==' 'count'}}placeholder="Resource"{{/ifCond}}
+                                                {{#ifCond actor.system.resources.05.type '==' 'target'}}placeholder="DC"{{/ifCond}}/>
+                                        </div>
+                                    </div>
+                                    <div class="res-spacer"></div>
+                                    <div class="res-container fcol">
+                                        <div class="res-border fcol">
+                                            <div class="res-buttons frow">
+                                                <input type="hidden" class="input-res-type" name="system.resources.06.type" value="{{actor.system.resources.06.type}}" data-dtype="String">
+                                                <input type="hidden" class="input-res-recharge" name="system.resources.06.recharge" value="{{actor.system.resources.06.recharge}}" data-dtype="String">
+                                                <a class="res-type-button">
+                                                    {{#ifCond actor.system.resources.06.type '==' 'count'}}
+                                                        <img class="res-button" src="icons/svg/lightning.svg" />
+                                                    {{/ifCond}}
+                                                    {{#ifCond actor.system.resources.06.type '==' 'target'}}
+                                                        <img class="res-button" src="icons/svg/dice-target.svg" />
+                                                    {{/ifCond}}
+                                                </a>
+                                                {{#ifCond actor.system.resources.06.type '==' 'count'}}
+                                                    <a class="res-recharge-button">
+                                                        {{#ifCond actor.system.resources.06.recharge '==' 'SR'}}
+                                                            <label title="{{ localize "undertaking.ShortRestRecharge" }}">{{ localize "undertaking.ShortRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                        {{#ifCond actor.system.resources.06.recharge '==' 'LR'}}
+                                                            <label title="{{ localize "undertaking.LongRestRecharge" }}">{{ localize "undertaking.LongRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                        {{#ifCond actor.system.resources.06.recharge '==' 'N'}}
+                                                            <label title="{{ localize "undertaking.NoRecharge" }}">{{ localize "undertaking.NoRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                    </a>
+                                                {{/ifCond}}
+                                            </div>
+                                            <div class="res-values frow">
+                                                <input class="res-val" name="system.resources.06.value" type="number" value="{{actor.system.resources.06.value}}" placeholder="0" data-dtype="Number" />
+                                                {{#ifCond actor.system.resources.06.type '==' 'count'}}
+                                                <label>/</label>
+                                                <input class="res-max" name="system.resources.06.max" type="number" value="{{actor.system.resources.06.max}}" placeholder="0" data-dtype="Number" />
+                                                {{/ifCond}}
+                                            </div>
+                                        </div>
+                                        <div class="res-label frow">
+                                            <input name="system.resources.06.label" type="text" value="{{actor.system.resources.06.label}}" data-dtype="String" 
+                                                {{#ifCond actor.system.resources.06.type '==' 'count'}}placeholder="Resource"{{/ifCond}}
+                                                {{#ifCond actor.system.resources.06.type '==' 'target'}}placeholder="DC"{{/ifCond}}/>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{/ifCond}}
+                                {{#ifCond actor.system.details.resourceRows '>=' 3}}
+                                <div class="res-row frow">
+                                    <div class="res-container fcol">
+                                        <div class="res-border fcol">
+                                            <div class="res-buttons frow">
+                                                <input type="hidden" class="input-res-type" name="system.resources.07.type" value="{{actor.system.resources.07.type}}" data-dtype="String">
+                                                <input type="hidden" class="input-res-recharge" name="system.resources.07.recharge" value="{{actor.system.resources.07.recharge}}" data-dtype="String">
+                                                <a class="res-type-button">
+                                                    {{#ifCond actor.system.resources.07.type '==' 'count'}}
+                                                        <img class="res-button" src="icons/svg/lightning.svg" />
+                                                    {{/ifCond}}
+                                                    {{#ifCond actor.system.resources.07.type '==' 'target'}}
+                                                        <img class="res-button" src="icons/svg/dice-target.svg" />
+                                                    {{/ifCond}}
+                                                </a>
+                                                {{#ifCond actor.system.resources.07.type '==' 'count'}}
+                                                    <a class="res-recharge-button">
+                                                        {{#ifCond actor.system.resources.07.recharge '==' 'SR'}}
+                                                            <label title="{{ localize "undertaking.ShortRestRecharge" }}">{{ localize "undertaking.ShortRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                        {{#ifCond actor.system.resources.07.recharge '==' 'LR'}}
+                                                            <label title="{{ localize "undertaking.LongRestRecharge" }}">{{ localize "undertaking.LongRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                        {{#ifCond actor.system.resources.07.recharge '==' 'N'}}
+                                                            <label title="{{ localize "undertaking.NoRecharge" }}">{{ localize "undertaking.NoRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                    </a>
+                                                {{/ifCond}}
+                                            </div>
+                                            <div class="res-values frow">
+                                                <input class="res-val" name="system.resources.07.value" type="number" value="{{actor.system.resources.07.value}}" placeholder="0" data-dtype="Number" />
+                                                {{#ifCond actor.system.resources.07.type '==' 'count'}}
+                                                <label>/</label>
+                                                <input class="res-max" name="system.resources.07.max" type="number" value="{{actor.system.resources.07.max}}" placeholder="0" data-dtype="Number" />
+                                                {{/ifCond}}
+                                            </div>
+                                        </div>
+                                        <div class="res-label frow">
+                                            <input name="system.resources.07.label" type="text" value="{{actor.system.resources.07.label}}" data-dtype="String" 
+                                                {{#ifCond actor.system.resources.07.type '==' 'count'}}placeholder="Resource"{{/ifCond}}
+                                                {{#ifCond actor.system.resources.07.type '==' 'target'}}placeholder="DC"{{/ifCond}}/>
+                                        </div>
+                                    </div>
+                                    <div class="res-spacer"></div>
+                                    <div class="res-container fcol">
+                                        <div class="res-border fcol">
+                                            <div class="res-buttons frow">
+                                                <input type="hidden" class="input-res-type" name="system.resources.08.type" value="{{actor.system.resources.08.type}}" data-dtype="String">
+                                                <input type="hidden" class="input-res-recharge" name="system.resources.08.recharge" value="{{actor.system.resources.08.recharge}}" data-dtype="String">
+                                                <a class="res-type-button">
+                                                    {{#ifCond actor.system.resources.08.type '==' 'count'}}
+                                                        <img class="res-button" src="icons/svg/lightning.svg" />
+                                                    {{/ifCond}}
+                                                    {{#ifCond actor.system.resources.08.type '==' 'target'}}
+                                                        <img class="res-button" src="icons/svg/dice-target.svg" />
+                                                    {{/ifCond}}
+                                                </a>
+                                                {{#ifCond actor.system.resources.08.type '==' 'count'}}
+                                                    <a class="res-recharge-button">
+                                                        {{#ifCond actor.system.resources.08.recharge '==' 'SR'}}
+                                                            <label title="{{ localize "undertaking.ShortRestRecharge" }}">{{ localize "undertaking.ShortRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                        {{#ifCond actor.system.resources.08.recharge '==' 'LR'}}
+                                                            <label title="{{ localize "undertaking.LongRestRecharge" }}">{{ localize "undertaking.LongRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                        {{#ifCond actor.system.resources.08.recharge '==' 'N'}}
+                                                            <label title="{{ localize "undertaking.NoRecharge" }}">{{ localize "undertaking.NoRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                    </a>
+                                                {{/ifCond}}
+                                            </div>
+                                            <div class="res-values frow">
+                                                <input class="res-val" name="system.resources.08.value" type="number" value="{{actor.system.resources.08.value}}" placeholder="0" data-dtype="Number" />
+                                                {{#ifCond actor.system.resources.08.type '==' 'count'}}
+                                                <label>/</label>
+                                                <input class="res-max" name="system.resources.08.max" type="number" value="{{actor.system.resources.08.max}}" placeholder="0" data-dtype="Number" />
+                                                {{/ifCond}}
+                                            </div>
+                                        </div>
+                                        <div class="res-label frow">
+                                            <input name="system.resources.08.label" type="text" value="{{actor.system.resources.08.label}}" data-dtype="String" 
+                                                {{#ifCond actor.system.resources.08.type '==' 'count'}}placeholder="Resource"{{/ifCond}}
+                                                {{#ifCond actor.system.resources.08.type '==' 'target'}}placeholder="DC"{{/ifCond}}/>
+                                        </div>
+                                    </div>
+                                    <div class="res-spacer"></div>
+                                    <div class="res-container fcol">
+                                        <div class="res-border fcol">
+                                            <div class="res-buttons frow">
+                                                <input type="hidden" class="input-res-type" name="system.resources.09.type" value="{{actor.system.resources.09.type}}" data-dtype="String">
+                                                <input type="hidden" class="input-res-recharge" name="system.resources.09.recharge" value="{{actor.system.resources.09.recharge}}" data-dtype="String">
+                                                <a class="res-type-button">
+                                                    {{#ifCond actor.system.resources.09.type '==' 'count'}}
+                                                        <img class="res-button" src="icons/svg/lightning.svg" />
+                                                    {{/ifCond}}
+                                                    {{#ifCond actor.system.resources.09.type '==' 'target'}}
+                                                        <img class="res-button" src="icons/svg/dice-target.svg" />
+                                                    {{/ifCond}}
+                                                </a>
+                                                {{#ifCond actor.system.resources.09.type '==' 'count'}}
+                                                    <a class="res-recharge-button">
+                                                        {{#ifCond actor.system.resources.09.recharge '==' 'SR'}}
+                                                            <label title="{{ localize "undertaking.ShortRestRecharge" }}">{{ localize "undertaking.ShortRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                        {{#ifCond actor.system.resources.09.recharge '==' 'LR'}}
+                                                            <label title="{{ localize "undertaking.LongRestRecharge" }}">{{ localize "undertaking.LongRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                        {{#ifCond actor.system.resources.09.recharge '==' 'N'}}
+                                                            <label title="{{ localize "undertaking.NoRecharge" }}">{{ localize "undertaking.NoRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                    </a>
+                                                {{/ifCond}}
+                                            </div>
+                                            <div class="res-values frow">
+                                                <input class="res-val" name="system.resources.09.value" type="number" value="{{actor.system.resources.09.value}}" placeholder="0" data-dtype="Number" />
+                                                {{#ifCond actor.system.resources.09.type '==' 'count'}}
+                                                <label>/</label>
+                                                <input class="res-max" name="system.resources.09.max" type="number" value="{{actor.system.resources.09.max}}" placeholder="0" data-dtype="Number" />
+                                                {{/ifCond}}
+                                            </div>
+                                        </div>
+                                        <div class="res-label frow">
+                                            <input name="system.resources.09.label" type="text" value="{{actor.system.resources.09.label}}" data-dtype="String" 
+                                                {{#ifCond actor.system.resources.09.type '==' 'count'}}placeholder="Resource"{{/ifCond}}
+                                                {{#ifCond actor.system.resources.09.type '==' 'target'}}placeholder="DC"{{/ifCond}}/>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{/ifCond}}
+                                {{#ifCond actor.system.details.resourceRows '>=' 4}}
+                                <div class="res-row frow">
+                                    <div class="res-container fcol">
+                                        <div class="res-border fcol">
+                                            <div class="res-buttons frow">
+                                                <input type="hidden" class="input-res-type" name="system.resources.10.type" value="{{actor.system.resources.10.type}}" data-dtype="String">
+                                                <input type="hidden" class="input-res-recharge" name="system.resources.10.recharge" value="{{actor.system.resources.10.recharge}}" data-dtype="String">
+                                                <a class="res-type-button">
+                                                    {{#ifCond actor.system.resources.10.type '==' 'count'}}
+                                                        <img class="res-button" src="icons/svg/lightning.svg" />
+                                                    {{/ifCond}}
+                                                    {{#ifCond actor.system.resources.10.type '==' 'target'}}
+                                                        <img class="res-button" src="icons/svg/dice-target.svg" />
+                                                    {{/ifCond}}
+                                                </a>
+                                                {{#ifCond actor.system.resources.10.type '==' 'count'}}
+                                                    <a class="res-recharge-button">
+                                                        {{#ifCond actor.system.resources.10.recharge '==' 'SR'}}
+                                                            <label title="{{ localize "undertaking.ShortRestRecharge" }}">{{ localize "undertaking.ShortRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                        {{#ifCond actor.system.resources.10.recharge '==' 'LR'}}
+                                                            <label title="{{ localize "undertaking.LongRestRecharge" }}">{{ localize "undertaking.LongRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                        {{#ifCond actor.system.resources.10.recharge '==' 'N'}}
+                                                            <label title="{{ localize "undertaking.NoRecharge" }}">{{ localize "undertaking.NoRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                    </a>
+                                                {{/ifCond}}
+                                            </div>
+                                            <div class="res-values frow">
+                                                <input class="res-val" name="system.resources.10.value" type="number" value="{{actor.system.resources.10.value}}" placeholder="0" data-dtype="Number" />
+                                                {{#ifCond actor.system.resources.10.type '==' 'count'}}
+                                                <label>/</label>
+                                                <input class="res-max" name="system.resources.10.max" type="number" value="{{actor.system.resources.10.max}}" placeholder="0" data-dtype="Number" />
+                                                {{/ifCond}}
+                                            </div>
+                                        </div>
+                                        <div class="res-label frow">
+                                            <input name="system.resources.10.label" type="text" value="{{actor.system.resources.10.label}}" data-dtype="String" 
+                                                {{#ifCond actor.system.resources.10.type '==' 'count'}}placeholder="Resource"{{/ifCond}}
+                                                {{#ifCond actor.system.resources.10.type '==' 'target'}}placeholder="DC"{{/ifCond}}/>
+                                        </div>
+                                    </div>
+                                    <div class="res-spacer"></div>
+                                    <div class="res-container fcol">
+                                        <div class="res-border fcol">
+                                            <div class="res-buttons frow">
+                                                <input type="hidden" class="input-res-type" name="system.resources.11.type" value="{{actor.system.resources.11.type}}" data-dtype="String">
+                                                <input type="hidden" class="input-res-recharge" name="system.resources.11.recharge" value="{{actor.system.resources.11.recharge}}" data-dtype="String">
+                                                <a class="res-type-button">
+                                                    {{#ifCond actor.system.resources.11.type '==' 'count'}}
+                                                        <img class="res-button" src="icons/svg/lightning.svg" />
+                                                    {{/ifCond}}
+                                                    {{#ifCond actor.system.resources.11.type '==' 'target'}}
+                                                        <img class="res-button" src="icons/svg/dice-target.svg" />
+                                                    {{/ifCond}}
+                                                </a>
+                                                {{#ifCond actor.system.resources.11.type '==' 'count'}}
+                                                    <a class="res-recharge-button">
+                                                        {{#ifCond actor.system.resources.11.recharge '==' 'SR'}}
+                                                            <label title="{{ localize "undertaking.ShortRestRecharge" }}">{{ localize "undertaking.ShortRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                        {{#ifCond actor.system.resources.11.recharge '==' 'LR'}}
+                                                            <label title="{{ localize "undertaking.LongRestRecharge" }}">{{ localize "undertaking.LongRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                        {{#ifCond actor.system.resources.11.recharge '==' 'N'}}
+                                                            <label title="{{ localize "undertaking.NoRecharge" }}">{{ localize "undertaking.NoRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                    </a>
+                                                {{/ifCond}}
+                                            </div>
+                                            <div class="res-values frow">
+                                                <input class="res-val" name="system.resources.11.value" type="number" value="{{actor.system.resources.11.value}}" placeholder="0" data-dtype="Number" />
+                                                {{#ifCond actor.system.resources.11.type '==' 'count'}}
+                                                <label>/</label>
+                                                <input class="res-max" name="system.resources.11.max" type="number" value="{{actor.system.resources.11.max}}" placeholder="0" data-dtype="Number" />
+                                                {{/ifCond}}
+                                            </div>
+                                        </div>
+                                        <div class="res-label frow">
+                                            <input name="system.resources.11.label" type="text" value="{{actor.system.resources.11.label}}" data-dtype="String" 
+                                                {{#ifCond actor.system.resources.11.type '==' 'count'}}placeholder="Resource"{{/ifCond}}
+                                                {{#ifCond actor.system.resources.11.type '==' 'target'}}placeholder="DC"{{/ifCond}}/>
+                                        </div>
+                                    </div>
+                                    <div class="res-spacer"></div>
+                                    <div class="res-container fcol">
+                                        <div class="res-border fcol">
+                                            <div class="res-buttons frow">
+                                                <input type="hidden" class="input-res-type" name="system.resources.12.type" value="{{actor.system.resources.12.type}}" data-dtype="String">
+                                                <input type="hidden" class="input-res-recharge" name="system.resources.12.recharge" value="{{actor.system.resources.12.recharge}}" data-dtype="String">
+                                                <a class="res-type-button">
+                                                    {{#ifCond actor.system.resources.12.type '==' 'count'}}
+                                                        <img class="res-button" src="icons/svg/lightning.svg" />
+                                                    {{/ifCond}}
+                                                    {{#ifCond actor.system.resources.12.type '==' 'target'}}
+                                                        <img class="res-button" src="icons/svg/dice-target.svg" />
+                                                    {{/ifCond}}
+                                                </a>
+                                                {{#ifCond actor.system.resources.12.type '==' 'count'}}
+                                                    <a class="res-recharge-button">
+                                                        {{#ifCond actor.system.resources.12.recharge '==' 'SR'}}
+                                                            <label title="{{ localize "undertaking.ShortRestRecharge" }}">{{ localize "undertaking.ShortRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                        {{#ifCond actor.system.resources.12.recharge '==' 'LR'}}
+                                                            <label title="{{ localize "undertaking.LongRestRecharge" }}">{{ localize "undertaking.LongRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                        {{#ifCond actor.system.resources.12.recharge '==' 'N'}}
+                                                            <label title="{{ localize "undertaking.NoRecharge" }}">{{ localize "undertaking.NoRechargeAbbrev" }}</label>
+                                                        {{/ifCond}}
+                                                    </a>
+                                                {{/ifCond}}
+                                            </div>
+                                            <div class="res-values frow">
+                                                <input class="res-val" name="system.resources.12.value" type="number" value="{{actor.system.resources.12.value}}" placeholder="0" data-dtype="Number" />
+                                                {{#ifCond actor.system.resources.12.type '==' 'count'}}
+                                                <label>/</label>
+                                                <input class="res-max" name="system.resources.12.max" type="number" value="{{actor.system.resources.12.max}}" placeholder="0" data-dtype="Number" />
+                                                {{/ifCond}}
+                                            </div>
+                                        </div>
+                                        <div class="res-label frow">
+                                            <input name="system.resources.12.label" type="text" value="{{actor.system.resources.12.label}}" data-dtype="String" 
+                                                {{#ifCond actor.system.resources.12.type '==' 'count'}}placeholder="Resource"{{/ifCond}}
+                                                {{#ifCond actor.system.resources.12.type '==' 'target'}}placeholder="DC"{{/ifCond}}/>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{/ifCond}}
+                                <div class="res-count-buttons frow">
+                                    <input type="hidden" class="res-row-count" name="system.details.resourceRows" value="{{actor.system.details.resourceRows}}" data-dtype="Number">
+                                    <a class="res-button remove" title="{{ localize "undertaking.RemoveRow" }}">-</a>
+                                    <a class="res-button add" title="{{ localize "undertaking.AddRow" }}">+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="equip-col fcol">
+                            <label>Equipment</label>
+                            <div class="equip-container fcol"></div>
+                            <div class="money frow"></div>
+                        </div>
                     </div>
                     <div class="atk-row frow"></div>
                 </div>
