@@ -3,7 +3,7 @@
     --bg-blue: #596772;
     --fg-brown: #6C6869;
     --off-white: #FBFCFE;
-    --bg-gray: gray;
+    --bg-gray: rgb(180, 180, 180);
 }
 
 .frow{
@@ -17,6 +17,32 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
+}
+input.no-bg{
+    border: none;
+    background: none;
+}
+input.short{
+    width: 40px;
+}
+.item-row label{
+    margin: auto 0;
+    margin-right: 4px;
+    font-weight: bold;
+}
+.item-row input{
+    margin: auto 0;
+}
+.item-row input.right{
+    text-align: right;
+}
+hr.blue {
+    border: 0;
+    display: block;
+    width: 100%;
+    background-color: var(--bg-blue);
+    height: 2px;
+    margin: 0;
 }
 
 .character.sheet{
@@ -286,7 +312,7 @@ a.shield-toggle.checked{
     border-style: solid;
     border-width: 3px;
     border-radius: 6px;
-    background: var(--bg-gray);
+    background: repeating-linear-gradient(45deg, var(--bg-gray),var(--bg-gray) 10px,white 10px,white 20px);
     z-index: 1;
 }
 .shield-middle {
@@ -295,7 +321,7 @@ a.shield-toggle.checked{
     border-left: solid;
     border-right:solid;
     border-width: 3px;
-    background: var(--bg-gray);
+    background: repeating-linear-gradient(45deg, var(--bg-gray) 16.5px,var(--bg-gray) 26.5px,white 26.5px,white 36.5px);
     z-index: 2;
     margin-top: -10px;
 }
@@ -305,7 +331,7 @@ a.shield-toggle.checked{
     border-style: solid;
     border-width: 3px;
     border-radius: 50%;
-    background: var(--bg-gray);
+    background: repeating-linear-gradient(45deg, var(--bg-gray) 15.5px,var(--bg-gray) 25.5px,white 25.5px,white 35.5px);
     z-index: 1;
     margin-top: -30px;
 }
@@ -606,8 +632,60 @@ img.res-button {
     justify-content: right;
     font-size: 24px;
 }
-a.res-button.remove {
-    margin-right: 8px;
-    margin-top: -10px;
-    font-size: 36px;
+a.res-button.add {
+    margin-left: 8px;
+}
+.equip-header label {
+    flex: 1;
+    text-align: center;
+    margin-right: -13px;
+}
+.equip-container{
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 6px;
+    background: var(--bg-tan);
+    padding-bottom: 16px;
+    height: 400px;
+}
+.scroll-container {
+    overflow-y: scroll;
+    flex: 1;
+}
+.money-container {
+    height: 30px;
+    padding: 0px 4px;
+    text-align: center;
+    margin-top: -18px;
+}
+.money-col {
+    flex: 1;
+}
+.money-val-container {
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 6px;
+    background: white;
+    margin: 0 2px;
+}
+.money-val-container input {
+    border: none;
+    background: none;
+    padding: 0;
+}
+.equipment-card {
+    background-color: var(--bg-tan);
+    border: solid;
+    border-width: 1px;
+    border-color: var(--bg-blue);
+}
+.equipment-img{
+    max-width: 15%;
+}
+.equipment-name {
+    padding-left: 4px;
+    flex: 1;
+}
+.equipment-buttons {
+    justify-content: center;
 }

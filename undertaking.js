@@ -6,7 +6,10 @@ import UndertakingItemSheet from "./module/sheets/UndertakingItemSheet.js";
 import UndertakingCharacterSheet from "./module/sheets/UndertakingCharacterSheet.js";
 
 async function preloadHandlebarsTemplates(){
-  const templatePaths = [];
+  const templatePaths = [
+    "systems/undertaking/templates/partials/character-resources.hbs",
+    "systems/undertaking/templates/partials/equipment-card.hbs"
+  ];
 
   return loadTemplates(templatePaths);
 }
@@ -69,4 +72,6 @@ Hooks.once("init",function(){
 
   Actors.unregisterSheet("core", ActorSheet);
   Actors.registerSheet("undertaking", UndertakingCharacterSheet, { makeDefault: true});
+
+  preloadHandlebarsTemplates();
 });

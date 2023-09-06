@@ -146,7 +146,7 @@
     {
       "name": "rules",
       "label": "Chapters",
-      "system": "dnd5e",
+      "system": "undertaking",
       "path": "packs/rules.db",
       "type": "JournalEntry",
       "private": false,
@@ -155,9 +155,18 @@
     {
       "name": "conditions",
       "label": "Conditions",
-      "system": "dnd5e",
+      "system": "undertaking",
       "path": "packs/conditions.db",
       "type": "JournalEntry",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "adventuring-gear",
+      "label": "Adventuring Gear",
+      "system": "undertaking",
+      "path": "packs/adventuring-gear.db",
+      "type": "Item",
       "private": false,
       "flags": {}
     }

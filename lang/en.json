@@ -48,6 +48,19 @@
     "LongRechargeAbbrev": "LR",
     "NoRecharge": "Does not recharge",
     "NoRechargeAbbrev": "NO",
+    "Equipment": "Equipment",
+    "AddItem": "Add Item",
+    "DeleteItem": "Delete Item",
+    "Weight": "Weight",
+    "PoundsAbbrev": "lbs",
+    "Value": "Value",
+    "Currency": {
+      "PP": "PP",
+      "GP": "GP",
+      "SP": "SP",
+      "CP": "CP",
+      "Other": "Other"
+    },
     "Movement": {
       "Walk": "Walk Speed",
       "Climb": "Climb",

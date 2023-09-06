@@ -168,8 +168,8 @@
           "pp": 0,
           "gp": 0,
           "sp": 0,
-          "mp": 0,
-          "cp": 0
+          "cp": 0,
+          "other": 0
         }
       },
       "creature": {
@@ -671,7 +671,7 @@
         }
       },
       "action": {
-        "ability": null,
+        "attribute": null,
         "actionType": null,
         "attackBonus": "",
         "chatFlavor": "",
@@ -688,7 +688,8 @@
           "attribute": "",
           "dc": null,
           "scaling": "spell"
-        }
+        },
+        "showInAttacks": false
       },
       "mountable": {
         "armor": {
@@ -721,10 +722,10 @@
       },
       "currency": {
         "cp": 0,
-        "mp": 0,
         "sp": 0,
         "gp": 0,
-        "pp": 0
+        "pp": 0,
+        "other": 0
       }
     },
     "class": {

@@ -9,7 +9,10 @@ export default class UndertakingCharacterSheet extends ActorSheet {
       resizable: true,
       scrollY: [".tab.details"],
       tabs: [{navSelector: ".tabs", contentSelector: ".sheet-body", initial: "features"}],
-      dragDrop: []
+      dragDrop: [{
+        dragSelector: ".items-list .item .item-drag",
+        dropSelector: ".items-list"
+      }]
     });
   }
 
@@ -17,8 +20,10 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     const context = super.getData();
     context.config = CONFIG.undertaking;
 
-    context.weapons = context.items.filter(function (item) { return item.type == "weapon"})
-    context.equipment = context.items.filter(function (item) { return item.type == "equipment"})
+    context.weapons = context.items.filter(function (item) { return item.type == "weapon"});
+    context.equipment = context.items.filter(function (item) { return item.type == "equipment"});
+
+    console.log(context.equipment);
 
     return context;
   }
@@ -60,7 +65,73 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     html.find(".res-button.add").on("click", event => {
       this._addResourceRow(event);
     });
+
+    html.find(".item-create").on("click", event => {
+      this._onItemCreate(event);
+    });
+    html.find(".item-open").on("click", event => {
+      this._onItemOpen(event);
+    });
+    html.find(".item-delete").on("click", event => {
+      this._onItemDelete(event);
+    });
+    html.find(".inline-edit").on("change", event => {
+      this._onItemEdit(event);
+    });
+
+    this._fixElementSizes(html);
+
     super.activateListeners(html);
+  }
+
+  _fixElementSizes(html){
+    try{
+      let targetHeight = html.find(".res-col")[0].offsetHeight;
+      let equipCol = html.find(".equip-container")[0];
+      equipCol.style.height = (targetHeight-36) + "px";
+    }
+    catch(err){
+      console.log("Error fixing equipment height: " + err);
+    }
+  }
+
+  _onItemCreate(event){
+    event.preventDefault();
+    let element = event.currentTarget;
+
+    let itemData = {
+      name: "New Item",
+      type: element.dataset.type
+    };
+
+    return this.actor.createEmbeddedDocuments("Item", [itemData]);
+  }
+
+  _onItemDelete(event){
+    event.preventDefault();
+    let element = event.currentTarget;
+    console.log(element.closest(".item").dataset)
+    let itemId = element.closest(".item").dataset.itemId;
+    return this.actor.deleteEmbeddedDocuments("Item", [itemId]);
+  }
+
+  _onItemOpen(event){
+    event.preventDefault();
+    let element = event.currentTarget;
+    let itemId = element.closest(".item").dataset.itemId;
+    let item = this.actor.items.get(itemId);
+
+    item.sheet.render(true);
+  }
+
+  _onItemEdit(event){
+    event.preventDefault();
+    let element = event.currentTarget;
+    let itemId = element.closest(".item").dataset.itemId;
+    let item = this.actor.items.get(itemId);
+    let field = element.dataset.field;
+
+    return item.update({[field]: element.value});
   }
 
   _toggleSaveProficiency(event){
