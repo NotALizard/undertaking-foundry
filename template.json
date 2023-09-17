@@ -447,7 +447,6 @@
       "templates": ["common", "creature"],
       "stats": {
         "hp": {
-          "value": 0,
           "bonuses": {
             "level": "",
             "overall": ""
@@ -465,8 +464,19 @@
         "desperate": false
       },
       "details": {
+        "editLock": false,
         "backgroundEarly": "",
         "backgroundLater": "",
+        "age": "",
+        "eyes": "",
+        "height": "",
+        "weight": "",
+        "skin": "",
+        "hair": "",
+        "backstory": "",
+        "personality": "",
+        "orgs": "",
+        "notes": "",
         "originalClass": "",
         "xp": {
           "value": 0
@@ -683,6 +693,7 @@
           "parts": [],
           "versatile": ""
         },
+        "range": null,
         "formula": "",
         "save": {
           "attribute": "",
@@ -839,7 +850,7 @@
       "templates": ["itemDescription", "physicalItem" ,"activatedEffect", "action", "mountable"],
       "weaponType": "simpleM",
       "baseItem": "",
-      "properties": {},
+      "properties": [],
       "proficient": true
     }
   },

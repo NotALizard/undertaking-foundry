@@ -20,8 +20,8 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     const context = super.getData();
     context.config = CONFIG.undertaking;
 
-    context.weapons = context.items.filter(function (item) { return item.type == "weapon"});
-    context.equipment = context.items.filter(function (item) { return item.type == "equipment"});
+    context.attacks = context.items.filter(function (item) { return item.type == "weapon"});
+    context.equipment = context.items.filter(function (item) { return item.type == "equipment" || item.type == "weapon"});
 
     console.log(context.equipment);
 
@@ -65,6 +65,9 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     html.find(".res-button.add").on("click", event => {
       this._addResourceRow(event);
     });
+    html.find(".toggle-lock").on("click", event => {
+      this._toggleEditLock(event);
+    });
 
     html.find(".item-create").on("click", event => {
       this._onItemCreate(event);
@@ -93,6 +96,19 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     catch(err){
       console.log("Error fixing equipment height: " + err);
     }
+  }
+
+  _toggleEditLock(event){
+    event.preventDefault();
+    const parent = event.currentTarget.closest(".sheet-body");
+    const field = parent.querySelector('.input-edit-lock');
+    if(field.value == 'true'){
+      field.value = false;
+    }
+    else{
+      field.value = true;
+    }
+    return this._onSubmit(event);
   }
 
   _onItemCreate(event){

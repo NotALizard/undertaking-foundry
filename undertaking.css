@@ -6,17 +6,41 @@
     --bg-gray: rgb(180, 180, 180);
 }
 
+.window-app .window-content {
+    overflow-x: auto;
+}
+.sheet-body{
+    height: calc(100% - 30px);
+}
+.sheet-navigation.tabs .gear {
+    flex: none !important;
+    width: auto !important;
+}
+.sheet-navigation.tabs a.item {
+    flex: 1;
+    display: block;
+    width: 25%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tab.biography {
+    height: 100%;
+}
 .frow{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: flex-start;
 }
 .fcol{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: flex-start;
+}
+.fill-space{
+    flex: 1;
 }
 input.no-bg{
     border: none;
@@ -53,13 +77,16 @@ hr.blue {
     background-blend-mode: lighten;
     background-color: rgba(255,255,255,.3);
 }
-.character-header{
-    width:100%;
+
+.overview-container {
+    min-width: 720px;
 }
-.playerinfo-left{
-    flex:1;
-    margin: 0px;
-    margin: 0.5%;
+.bio-container {
+    min-width: 720px;
+}
+.playerinfo-left {
+    flex: 4;
+    margin: 2px;
 }
 .char-name-container{
     border-style: solid;
@@ -79,13 +106,12 @@ hr.blue {
     background:none;
     font-size: 24px;
 }
-.playerinfo-right{
+.playerinfo-right {
     background-color: var(--bg-tan);
-    width:60%;
-    margin: 0px;
     padding: 4px;
-    margin: 0.5%;
+    margin: 2px;
     border-radius: 4px;
+    flex: 6;
 }
 .playerinfo-right label{
     color: var(--fg-brown);
@@ -111,6 +137,7 @@ hr.blue {
 }
 .stats-body-left-col{
     width: 220px;
+    min-width: 220px;
 }
 .glance-vals{
     width:100%;
@@ -165,6 +192,8 @@ hr.blue {
     width: 100%;
     background-color:var(--bg-tan);
     border-radius:4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .attributes-scores{
     width:100%;
@@ -253,10 +282,12 @@ a.profcheck.skill-expert {
 }
 .res-equip-atk-col{
     padding:4px;
+    padding-right: 0px;
     flex:1;
 }
 .res-equip-row{
     padding:4px;
+    padding-right: 0px;
 }
 .res-col{
     padding:4px;
@@ -360,13 +391,18 @@ a.shield-toggle.checked{
 }
 .equip-col{
     padding:4px;
+    padding-right: 0px;
     flex:1;
+    min-width: 190px
 }
 .atk-row{
     padding:4px;
 }
 .window-content:has(.desperate){
     box-shadow: 0 0 200px rgb(0 0 0 / 90%) inset;
+}
+.window-content:has(.downed){
+    box-shadow: 0 0 200px rgb(255 0 0 / 90%) inset;
 }
 .desperate-container{
     margin-top: 2px;
@@ -635,10 +671,14 @@ img.res-button {
 a.res-button.add {
     margin-left: 8px;
 }
+a.toggle-lock {
+    width: 16px;
+    text-align: center;
+}
 .equip-header label {
     flex: 1;
     text-align: center;
-    margin-right: -13px;
+    margin-right: -29px;
 }
 .equip-container{
     border-style: solid;
@@ -679,13 +719,84 @@ a.res-button.add {
     border-width: 1px;
     border-color: var(--bg-blue);
 }
-.equipment-img{
-    max-width: 15%;
+.equipment-img {
+    width: 40px;
+    height: auto;
+    margin: auto 0px;
 }
 .equipment-name {
     padding-left: 4px;
     flex: 1;
+    display: flex;
+}
+.equipment-name a{
+    margin: auto 0;
+}
+.equipment-name p{
+    margin: 0px;
 }
 .equipment-buttons {
     justify-content: center;
+    padding: 0px 4px;
 }
+
+/* classes */
+
+.bio-container {
+    height: 100%;
+}
+.bio-body {
+    flex: 1;
+}
+.bio-block {
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+}
+.bio-block label {
+    text-align: center;
+}
+.bio-border {
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 6px;
+    background: white;
+    flex: 1;
+}
+.bio-block textarea {
+    height: 100%;
+    background: none;
+    resize: none;
+    border: none;
+}
+.bio-header {
+    background-color: var(--bg-tan);
+    padding: 4px;
+    margin: 0.5%;
+    border-radius: 4px;
+}
+.bio-header-block label {
+    color: var(--fg-brown);
+}
+.bio-header-block input {
+    background: white;
+}
+.short {
+    flex: 1;
+}
+.long {
+    flex: 2;
+}
+img.portrait {
+    width: 180px;
+    height: 240px;
+    border: none;
+    margin: 0px;
+    margin-bottom: -4px;
+    object-fit: cover;
+    object-position: top;
+}
+.relations-col {
+    width: 190px;
+}
+

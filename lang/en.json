@@ -1,5 +1,7 @@
 {
   "undertaking": {
+    "LockEdit": "Lock Editing",
+    "UnlockEdit": "Unlock Editing",
     "Name": "Name",
     "Description": "Description",
     "Progression": "Progression",
@@ -9,6 +11,7 @@
     "ClassAbilities": "Class Abilities",
     "Biography": "Biography",
     "Spellcasting": "Spellcasting",
+    "Config": "Config",
     "CharacterName": "Character Name",
     "CoreRace": "Core Race",
     "BranchRace": "Branch Race",
@@ -95,6 +98,23 @@
       "Sleight": "Sleight of Hand",
       "Stealth": "Stealth",
       "Theology": "Theology"
-    }
+    },
+    "BackgroundEarly": "Early Background",
+    "BackgroundLater": "Later Background",
+    "Age": "Age",
+    "Eyes": "Eyes",
+    "Height": "Height",
+    "BodyWeight": "Weight",
+    "Skin": "Skin",
+    "Hair": "Hair",
+    "Portrait": "Portrait",
+    "Personality": "Personality Traits & Flaws",
+    "Organizations": "Characters & Organizations",
+    "Backstory": "Backstory",
+    "Notes": "Notes",
+    "Proficiencies": "Profieciencies",
+    "Trades": "Trades",
+    "OtherProficiencies": "Other Profieciencies",
+    "Languages": "Languages"
   }
 }
