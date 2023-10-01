@@ -1,0 +1,51 @@
+{
+  "name": "Jolt",
+  "type": "spell",
+  "img": "icons/magic/lightning/bolt-strike-streak-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>A quick jolt of electricity leaps from your finger towards a visible target within range.  Make a ranged spell attack against the target, and if it hits, this spell deals 1d10 electricity damage.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "level": 0,
+    "school": "evo",
+    "components": {
+      "somatic": true
+    },
+    "actionType": "rsak",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "inst"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 60,
+      "long": null,
+      "units": "ft"
+    },
+    "damage": {
+      "parts": [
+        [
+          "1d10",
+          "lightning"
+        ]
+      ],
+      "versatile": ""
+    },
+    "showInAttacks": true
+  },
+  "folder": null,
+  "_id": "0JWJ9J7A2AMSNDK0"
+}

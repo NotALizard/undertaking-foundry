@@ -9,8 +9,11 @@
 .window-app .window-content {
     overflow-x: auto;
 }
-.sheet-body{
+.sheet-body.character{
     height: calc(100% - 30px);
+}
+.sheet-body.other{
+    height: calc(100% - 73px);
 }
 .sheet-navigation.tabs .gear {
     flex: none !important;
@@ -24,7 +27,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.tab.biography {
+.tab.full-page {
     height: 100%;
 }
 .frow{
@@ -41,6 +44,9 @@
 }
 .fill-space{
     flex: 1;
+}
+.fcol hr{
+    margin: 3px 0px;
 }
 input.no-bg{
     border: none;
@@ -84,6 +90,10 @@ hr.blue {
 .bio-container {
     min-width: 720px;
 }
+.classes-container {
+    height: 100%;
+    min-width: 400px;
+}
 .playerinfo-left {
     flex: 4;
     margin: 2px;
@@ -97,7 +107,7 @@ hr.blue {
 }
 .char-level-container{
     height: 30%;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: normal;
     flex: 1;
 }
@@ -407,6 +417,9 @@ a.shield-toggle.checked{
 .desperate-container{
     margin-top: 2px;
 }
+.desperate-container label {
+    margin: auto 0px;
+}
 .desperate-toggle{
     width: 24px;
     height: 24px;
@@ -675,16 +688,23 @@ a.toggle-lock {
     width: 16px;
     text-align: center;
 }
-.equip-header label {
+.list-header label {
     flex: 1;
     text-align: center;
+    margin-right: -16px;
+}
+.list-header.addable label {
     margin-right: -29px;
 }
-.equip-container{
+.list-container{
     border-style: solid;
     border-width: 3px;
     border-radius: 6px;
     background: var(--bg-tan);
+    display: flex;
+    height: 100%;
+}
+.list-container.equipment{
     padding-bottom: 16px;
     height: 400px;
 }
@@ -713,34 +733,59 @@ a.toggle-lock {
     background: none;
     padding: 0;
 }
-.equipment-card {
+.item-card {
     background-color: var(--bg-tan);
     border: solid;
     border-width: 1px;
     border-color: var(--bg-blue);
 }
-.equipment-img {
+.item-img {
     width: 40px;
     height: auto;
     margin: auto 0px;
 }
-.equipment-name {
+.item-name {
     padding-left: 4px;
     flex: 1;
     display: flex;
 }
-.equipment-name a{
+.item-name a{
     margin: auto 0;
 }
-.equipment-name p{
+.item-name p{
     margin: 0px;
 }
-.equipment-buttons {
+.item-buttons {
     justify-content: center;
     padding: 0px 4px;
 }
+.class-level{
+    display: flex;
+    padding-right: 4px;
+}
+.class-level label{
+    margin: auto 0;
+}
 
-/* classes */
+.classes-container {
+    height: 100%;
+    min-width: 400px;
+}
+.class-subclass-row {
+    flex: 1;
+    min-height: 120px;
+}
+.abilities-row {
+    margin: 2px;
+    flex: 4;
+    min-height: 140px;
+}
+.class-col {
+    margin: 2px;
+}
+.subclass-col {
+    margin: 2px;
+}
 
 .bio-container {
     height: 100%;
@@ -800,3 +845,88 @@ img.portrait {
     width: 190px;
 }
 
+.spells-container {
+    height: 100%;
+}
+.mana-stats {
+    font-size: 16px;
+    background-color: var(--bg-tan);
+    padding: 4px;
+    border-radius: 4px;
+    margin-top: -5px;
+}
+.mana-stats div {
+    justify-content: center;
+    display: flex;
+}
+.mana-stats label {
+    margin: auto 0px;
+}
+.caster-stat h4 {
+    font-size: 20px;
+    margin: 2px 0px;
+    font-weight: bold;
+}
+input.spells-mana-val {
+    width: 3ch;
+    height: auto;
+    padding: 0px;
+    margin-left: 2px;
+    border: none;
+    background: none;
+    font-weight: bold;
+    text-align: center;
+}
+.caster-stats {
+    margin-bottom: 3px;
+}
+.cantrips-row {
+    margin: 2px;
+    flex: 2;
+    min-height: 140px;
+}
+.spells-row {
+    margin: 2px;
+    flex: 5;
+    min-height: 140px;
+}
+.spell-details-col{
+    padding: 0px 2px;
+}
+.spell-detail-row {
+    margin: auto;
+}
+.spell-detail-row p {
+    margin: auto;
+}
+.spell-detail-row img{
+    border: none;
+    width:20px;
+    height: 20px;
+}
+
+.config-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.config-group {
+    width: 33%;
+    border: solid;
+    border-width: 3px;
+    border-radius: 6px;
+    padding: 4px;
+}
+.config-header {
+    justify-content: center;
+}
+.config-input {
+    margin: 2px 0;
+}
+.config-input label {
+    margin: auto 0;
+    flex: 3;
+}
+.config-input input {
+    flex: 1;
+}

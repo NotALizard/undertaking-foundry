@@ -3,8 +3,10 @@
         <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}"/></h1>
     </header>
-    {{!-- Description Tab --}}
-    <div class="tab flexrow active" data-group="primary" data-tab="description">
-      {{editor descriptionHTML target="system.description.value" button=true editable=editable engine="prosemirror" collaborate=false}}
-    </div>
+    <section class="sheet-body other">
+      {{!-- Description Tab --}}
+      <div class="tab full-page flexrow active" data-group="primary" data-tab="description">
+        {{editor descriptionHTML target="system.description.value" button=true editable=editable engine="prosemirror" collaborate=false}}
+      </div>
+    </section>
 </form>

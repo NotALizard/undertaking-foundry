@@ -93,7 +93,14 @@
           },
           "mana": {
             "value": 0,
-            "bonus": 0
+            "bonus": 0,
+            "chargeLimit": {
+              "bonus": 0
+            },
+            "shortRestGain": {
+              "bonus": 0,
+              "divisor": 4
+            }
           },
           "restDice":{
             "d4": {
@@ -175,7 +182,7 @@
       "creature": {
         "stats": {
           "attunement": {
-            "max": 5
+            "max": 3
           },
           "senses": {
             "darkvision": 0,
@@ -362,72 +369,34 @@
             "custom": ""
           }
         },
-        "spells": {
-          "spell1": {
-            "value": 0,
-            "override": null
-          },
-          "spell2": {
-            "value": 0,
-            "override": null
-          },
-          "spell3": {
-            "value": 0,
-            "override": null
-          },
-          "spell4": {
-            "value": 0,
-            "override": null
-          },
-          "spell5": {
-            "value": 0,
-            "override": null
-          },
-          "spell6": {
-            "value": 0,
-            "override": null
-          },
-          "spell7": {
-            "value": 0,
-            "override": null
-          },
-          "spell8": {
-            "value": 0,
-            "override": null
-          },
-          "spell9": {
-            "value": 0,
-            "override": null
-          }
-        },
         "bonuses": {
           "attack":{
             "weapon":{
               "all":{
-                "attack": "",
-                "damage": ""
+                "attack": 0,
+                "damage": 0
               },
               "melee":{
-                "attack": "",
-                "damage": ""
+                "attack": 0,
+                "damage": 0
               },
               "ranged":{
-                "attack": "",
-                "damage": ""
+                "attack": 0,
+                "damage": 0
               }
             },
             "spell":{
               "all":{
-                "attack": "",
-                "damage": ""
+                "attack": 0,
+                "damage": 0
               },
               "melee":{
-                "attack": "",
-                "damage": ""
+                "attack": 0,
+                "damage": 0
               },
               "ranged":{
-                "attack": "",
-                "damage": ""
+                "attack": 0,
+                "damage": 0
               }
             }
           },
@@ -437,7 +406,7 @@
             "skill": 0
           },
           "spell":  {
-            "dc": ""
+            "dc": 0
           }
         }
       }
@@ -761,7 +730,8 @@
         },
         "spellcaster": {
           "progression": "none",
-          "attribute": ""
+          "attribute": "",
+          "preparation": false
         }
       },
       "classDetails": ""
@@ -823,6 +793,7 @@
     "spell": {
       "templates": ["itemDescription", "activatedEffect", "action"],
       "level": 1,
+      "charge": false,
       "school": "",
       "components": {
         "vocal": false,
@@ -839,7 +810,8 @@
       },
       "preparation": {
         "mode": "prepared",
-        "prepared": false
+        "prepared": false,
+        "always": false
       },
       "scaling": {
         "mode": "none",

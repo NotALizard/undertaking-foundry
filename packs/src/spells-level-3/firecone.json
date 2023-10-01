@@ -1,0 +1,59 @@
+{
+  "name": "Firecone",
+  "type": "spell",
+  "img": "icons/magic/fire/explosion-fireball-large-red-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>Choose a space within range that you can see.  Each creature within a 20 foot radius sphere centered on the space you chose must make a Dexterity (Save) check.  On a failed save the creature takes 8d6 points of fire damage, or half damage on a successful save.</p><p>This fire spreads around corners and ignities unattended and non-worn objects that are flammable.</p><p>Charge: This spell can be Charged to do extra damage.</p><ul><li>4 Mana: 2d6 extra fire damage</li><li>8 Mana: 4d6 extra fire damage</li><li>16 Mana: 6d6 extra fire damage</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "level": 3,
+    "school": "evo",
+    "components": {
+      "somatic": true,
+      "verbal": true,
+      "material": true
+    },
+    "materials": {
+      "value": "A tiny cloth filled with sulfur and tar",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "actionType": "save",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "inst"
+    },
+    "target": {
+      "value": 40,
+      "width": null,
+      "units": "ft",
+      "type": "cone"
+    },
+    "range": {
+      "value": 150,
+      "long": null,
+      "units": "ft"
+    },
+    "damage": {
+      "parts": [
+        [
+          "8d6",
+          "fire"
+        ]
+      ],
+      "versatile": ""
+    },
+    "showInAttacks": false
+  },
+  "folder": null,
+  "_id": "0LAEONLUQPK1NA4C"
+}

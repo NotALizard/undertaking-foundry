@@ -8,10 +8,10 @@ export default class UndertakingCharacterSheet extends ActorSheet {
       classes: ["undertaking", "sheet", "character"],
       resizable: true,
       scrollY: [".tab.details"],
-      tabs: [{navSelector: ".tabs", contentSelector: ".sheet-body", initial: "features"}],
+      tabs: [{navSelector: ".sheet-navigation.tabs", contentSelector: ".sheet-body", initial: "features"}],
       dragDrop: [{
-        dragSelector: ".items-list .item .item-drag",
-        dropSelector: ".items-list"
+        dragSelector: ".item-list .item",
+        dropSelector: null
       }]
     });
   }
@@ -22,11 +22,56 @@ export default class UndertakingCharacterSheet extends ActorSheet {
 
     context.attacks = context.items.filter(function (item) { return item.type == "weapon"});
     context.equipment = context.items.filter(function (item) { return item.type == "equipment" || item.type == "weapon"});
+    context.classes = context.items.filter(function (item) { return item.type == "class"});
+    context.archetypes = context.items.filter(function (item) { return item.type == "archetype"});
+    context.abilities = context.items.filter(function (item) { return item.type == "ability"});
 
-    console.log(context.equipment);
+    context.cantrips = context.items.filter(function (item) { return item.type == "spell" && item.system.level == 0});
+    context.spells = context.items.filter(function (item) { return item.type == "spell" && item.system.level != 0});
+    const filter = context.actor.system.details.classFilter;
+    if(filter != 'all'){
+      context.cantrips = context.cantrips.filter(function (item) { return item.system.classIdentifier == filter});
+      context.spells = context.spells.filter(function (item) { return item.system.classIdentifier == filter});
+    }
+
+    context.casters = context.classes.filter(function(item){ return item.system.categorization.spellcaster.progression && item.system.categorization.spellcaster.progression != 'none'});
 
     return context;
   }
+
+  /*
+  _onDrop(event){
+    super._onDrop(event);
+  }
+  */
+
+  async _onDropItem(event, data){
+    if(!this.actor.isOwner) return false;
+    const item = await Item.implementation.fromDropData(data);
+    const itemData = item.toObject();
+
+    const actor = this.actor;
+    console.log(actor);
+    console.log(item);
+    let sameActor = (item.actor && item.actor.id === actor.id);
+
+    if(sameActor) return this._onSortItem(event, itemData);
+
+    if(item.type == 'class'){
+      let id = item.system.identifier
+      let existingClass = actor.items.filter(function(item){return item.type == "class" && item.system.identifier == id})[0];
+      if(existingClass){
+        console.log('found class');
+        let newLevel = existingClass.system.levels+1;
+        console.log(newLevel);
+        //let classItem = actor.items.get(itemId);
+        return existingClass.update({['system.levels']: newLevel});
+      }
+    }
+
+    super._onDropItem(event, data);
+  }
+
 
   activateListeners(html){
     html.find(".profcheck.save-check").on("click", event => {
@@ -82,6 +127,16 @@ export default class UndertakingCharacterSheet extends ActorSheet {
       this._onItemEdit(event);
     });
 
+    html.find(".item.class-filter").on("click", event => {
+      this._changeClassFilter(event);
+    });
+    html.find(".input-dropdown").on("change", event => {
+      this._changeDropdown(event);
+    });
+    html.find(".duplicate-input").on("change", event => {
+      this._duplicateInput(event);
+    });
+
     this._fixElementSizes(html);
 
     super.activateListeners(html);
@@ -90,12 +145,34 @@ export default class UndertakingCharacterSheet extends ActorSheet {
   _fixElementSizes(html){
     try{
       let targetHeight = html.find(".res-col")[0].offsetHeight;
-      let equipCol = html.find(".equip-container")[0];
+      let equipCol = html.find(".list-container.equipment")[0];
       equipCol.style.height = (targetHeight-36) + "px";
     }
     catch(err){
       console.log("Error fixing equipment height: " + err);
     }
+  }
+
+  _changeDropdown(event){
+    event.preventDefault();
+    const dropdown = event.currentTarget.closest(".input-dropdown");
+    const target = dropdown.dataset.for;
+    const root = event.currentTarget.closest(".sheet-body");
+    const field = root.querySelector(target);
+
+    field.value = dropdown.value;
+    return this._onSubmit(event);
+  }
+
+  _duplicateInput(event){
+    event.preventDefault();
+    const dupe = event.currentTarget.closest(".duplicate-input");
+    const target = dupe.dataset.for;
+    const root = event.currentTarget.closest(".sheet-body");
+    const field = root.querySelector(target);
+
+    field.value = dupe.value;
+    return this._onSubmit(event);
   }
 
   _toggleEditLock(event){
@@ -115,8 +192,17 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     event.preventDefault();
     let element = event.currentTarget;
 
+    let name;
+    switch(element.dataset.type){
+      case 'ability':
+        name = 'New Ability';
+        break;
+      default:
+        name = "New Item";
+        break;
+    }
     let itemData = {
-      name: "New Item",
+      name: name,
       type: element.dataset.type
     };
 
@@ -126,7 +212,6 @@ export default class UndertakingCharacterSheet extends ActorSheet {
   _onItemDelete(event){
     event.preventDefault();
     let element = event.currentTarget;
-    console.log(element.closest(".item").dataset)
     let itemId = element.closest(".item").dataset.itemId;
     return this.actor.deleteEmbeddedDocuments("Item", [itemId]);
   }
@@ -296,6 +381,16 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     if(field.value > 1){
       field.value = +field.value-1;
     }
+    return this._onSubmit(event);
+  }
+
+  _changeClassFilter(event){
+    const element = event.currentTarget;
+    const value = element.closest(".item").dataset.tab;
+
+    const parent = event.currentTarget.closest(".spells-container");
+    const field = parent.querySelector('#input-class-filter');
+    field.value = value;
     return this._onSubmit(event);
   }
 }

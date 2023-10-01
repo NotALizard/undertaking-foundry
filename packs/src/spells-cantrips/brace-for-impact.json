@@ -1,0 +1,41 @@
+{
+  "name": "Brace for Impact",
+  "type": "spell",
+  "img": "icons/magic/defensive/barrier-shield-dome-deflect-teal.webp",
+  "system": {
+    "description": {
+      "value": "<p>Extending your hands in front of you, you erect a thin, malleable barrier around yourself to help absorb the impact of incoming weapon attacks.  This grants you resistance against the physical aspects of weapon damage (bludgeoning, piercing, and slashing) until the end of your next turn.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "level": 0,
+    "school": "abj",
+    "components": {
+      "somatic": true
+    },
+    "actionType": "util",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "round"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "self"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "self"
+    }
+  },
+  "folder": null,
+  "_id": "P8AYYAYOXXDCGM9B"
+}

@@ -1,0 +1,49 @@
+{
+  "name": "Revivify",
+  "type": "spell",
+  "img": "icons/magic/life/heart-cross-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>You touch a creature that has died within the last minute, diamonds in hand.  That creature returns to life with 1 hit point, remaining @Compendium[undertaking.conditions.RK3DF56CKMQUV6DM]{Prone}.</p><p>This spell fails if the creature has died of old age, and it does not restore any missing body parts.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "level": 3,
+    "school": "nec",
+    "components": {
+      "somatic": true,
+      "verbal": true,
+      "material": true
+    },
+    "materials": {
+      "value": "Diamonds worth 300gp, which the spell consumes.",
+      "consumed": true,
+      "cost": 100,
+      "supply": 0
+    },
+    "actionType": "heal",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "touch"
+    }
+  },
+  "folder": null,
+  "_id": "QQW3EPJ5JVRQ69HW"
+}

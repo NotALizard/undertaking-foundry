@@ -1,0 +1,41 @@
+{
+  "name": "Luminescence",
+  "type": "spell",
+  "img": "icons/magic/light/light-lantern-lit-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your form glows with light at the casting of this spell.  You shed bright light in a radius of 15 feet and dim light for an additional 15 feet.  This light can be colored to your liking.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "level": 0,
+    "school": "evo",
+    "components": {
+      "somatic": true
+    },
+    "actionType": "util",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "self"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "self"
+    }
+  },
+  "folder": null,
+  "_id": "NTGJ71IJ1VDA3GS9"
+}

@@ -12,21 +12,21 @@
     </nav>
 
     {{!-- Item Sheet Body --}}
-    <section class="sheet-body">
+    <section class="sheet-body other">
         {{!-- Description Tab --}}
-        <div class="tab flexrow active" data-group="primary" data-tab="description">
+        <div class="tab full-page flexrow active" data-group="primary" data-tab="description">
           {{editor descriptionHTML target="system.description.value" button=true editable=editable engine="prosemirror"
                    collaborate=false}}
         </div>
 
         {{!-- Progression Tab --}}
-        <div class="tab flexrow active" data-group="primary" data-tab="progression">
+        <div class="tab full-page flexrow" data-group="primary" data-tab="progression">
           {{editor classDetails target="system.classDetails" button=true editable=editable engine="prosemirror"
                    collaborate=false}}
         </div>
 
         {{!-- Details Tab --}}
-        <div class="tab flexrow active" data-group="primary" data-tab="details">
+        <div class="tab flexrow" data-group="primary" data-tab="details">
         </div>
      </section>
 </form>

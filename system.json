@@ -54,6 +54,16 @@
       ]
     },
     {
+      "name": "Spells",
+      "sorting": "m",
+      "packs": [
+        "spells-cantrips",
+        "spells-level-1",
+        "spells-level-3"
+      ],
+      "folders": []
+    },
+    {
       "name": "Rules",
       "sorting": "m",
       "packs": [
@@ -166,6 +176,33 @@
       "label": "Adventuring Gear",
       "system": "undertaking",
       "path": "packs/adventuring-gear.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "spells-cantrips",
+      "label": "Cantrips",
+      "system": "undertaking",
+      "path": "packs/spells-cantrips.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "spells-level-1",
+      "label": "1st Level Spells",
+      "system": "undertaking",
+      "path": "packs/spells-level-1.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "spells-level-3",
+      "label": "3rd Level Spells",
+      "system": "undertaking",
+      "path": "packs/spells-level-3.db",
       "type": "Item",
       "private": false,
       "flags": {}

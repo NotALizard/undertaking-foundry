@@ -1,0 +1,16 @@
+<div class="item-card class item frow" data-item-id="{{_id}}">
+    <img class="item-img class" src="{{img}}"/>
+    <div class="item-name class">
+        <a class="item-open"><p>{{name}}</p></a>
+    </div>
+    <div class="class-level">
+        <label>{{ localize "undertaking.Level" }}: {{system.levels}}</label>
+    </div>
+    <div class="item-buttons class fcol">
+        {{#ifCond lockEdit '==' 0}}                        
+            <a class="item-delete" title="{{ localize "undertaking.DeleteItem" }}">
+                <i class="fas fa-trash"></i>
+            </a>
+        {{/ifCond}}
+    </div>
+</div>

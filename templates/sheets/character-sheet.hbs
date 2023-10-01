@@ -13,7 +13,7 @@
     </nav>
     <hr/>
     {{!-- Item Sheet Body --}}
-    <section class="sheet-body">
+    <section class="sheet-body character">
         <input type="hidden" class="input-edit-lock" name="system.details.editLock" value="{{actor.system.details.editLock}}" data-dtype="Boolean">
         <div class="tab active character-overview" data-group="primary" data-tab="overview">
             <div class="overview-container fcol">
@@ -80,7 +80,7 @@
                         <div class="glance-vals fcol">
                             <div class="glance-row-container frow">
                                 <div class="val-bubble bubble-left">
-                                    <h4 class="bubble-pb">{{actor.system.stats.profBonus}}</h4>
+                                    <h4 class="bubble-pb">{{numberFormat actor.system.stats.profBonus decimals=0 sign=true}}</h4>
                                 </div>
                                 <div class="glance-label-container fcol">
                                     <div class="glance-label-container2">
@@ -243,12 +243,12 @@
                                     <div class="mana-container fcol">
                                         <label>{{ localize "undertaking.Mana" }}</label>
                                         <div class="mana-vals frow">
-                                            <input class="mana-val" name="system.stats.mana.value" type="number" value="{{actor.system.stats.mana.value}}" placeholder="0" data-dtype="Number" />
+                                            <input class="mana-val" id="mana-val" name="system.stats.mana.value" type="number" value="{{actor.system.stats.mana.value}}" placeholder="0" data-dtype="Number" />
                                             <label class="mana-val divider">/</label>
                                             <label class="mana-val">{{actor.system.stats.mana.max}}</label>
                                         </div>
-                                        <label style="mana-charge">{{ localize "undertaking.ChargeLimit" }}: {{actor.system.stats.mana.chargeLimit}}</label>
-                                        <label>{{ localize "undertaking.ShortRest" }}: {{numberFormat actor.system.stats.mana.shortRestGain decimals=0 sign=true}}</label>
+                                        <label style="mana-charge">{{ localize "undertaking.ChargeLimit" }}: {{actor.system.stats.mana.chargeLimit.value}}</label>
+                                        <label>{{ localize "undertaking.ShortRest" }}: {{numberFormat actor.system.stats.mana.shortRestGain.value decimals=0 sign=true}}</label>
                                     </div>
                                 </div>
                                 <div class="rest-dice frow">
@@ -307,11 +307,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                {{> "systems/undertaking/templates/partials/character-resources.hbs"}}
+                                {{> "systems/undertaking/templates/partials/character/character-resources.hbs"}}
                             </div>
                             <div class="equip-col">
-                                <div class="equip-container items-list fcol">
-                                    <div class="equip-header frow">
+                                <div class="list-container equipment item-list fcol">
+                                    <div class="list-header equipment frow">
                                         <label>{{ localize "undertaking.Equipment" }}</label>
                                         {{#ifCond actor.system.details.editLock '==' 1}}
                                             <a class="toggle-lock" title="{{ localize "undertaking.UnlockEdit" }}"><i class="fas fa-lock"></i></a>
@@ -324,7 +324,7 @@
                                     <div class="scroll-container">
                                         <div class="equip-scroll">
                                             {{#each equipment as |equip id|}}
-                                            {{> "systems/undertaking/templates/partials/equipment-card.hbs" equip lockEdit=../actor.system.details.editLock}}
+                                            {{> "systems/undertaking/templates/partials/character/equipment-card.hbs" equip lockEdit=../actor.system.details.editLock}}
                                             {{/each}}
                                         </div>
                                     </div>
@@ -373,7 +373,7 @@
                                     <div class="attack-scroll">
                                         {{#each attacks as |attack id|}}
                                             {{#ifCond attack.type '==' 'weapon'}}
-                                                {{> "systems/undertaking/templates/partials/attack-weapon-card.hbs" attack}}
+                                                {{> "systems/undertaking/templates/partials/character/attack-weapon-card.hbs" attack}}
                                             {{/ifCond}}
                                         {{/each}}
                                     </div>
@@ -385,12 +385,75 @@
             </div>
         </div>
 
-        <div class="tab flexrow active" data-group="primary" data-tab="classAbilities">
-            <p>Class Levels</p>
-            <p>Abilities</p>
+        <div class="tab full-page classes" data-group="primary" data-tab="classAbilities">
+            <div class="classes-container fcol">
+                <div class="class-subclass-row frow">
+                    <div class="class-col fcol fill-space">
+                        <div class="list-container classes item-list fcol fill-space">
+                            <div class="list-header classes frow">
+                                <label>{{ localize "undertaking.Classes" }}</label>
+                                {{#ifCond actor.system.details.editLock '==' 1}}
+                                    <a class="toggle-lock" title="{{ localize "undertaking.UnlockEdit" }}"><i class="fas fa-lock"></i></a>
+                                {{/ifCond}}
+                                {{#ifCond actor.system.details.editLock '==' 0}}
+                                    <a class="toggle-lock" title="{{ localize "undertaking.LockEdit" }}"><i class="fas fa-lock-open"></i></a>
+                                {{/ifCond}}
+                            </div>
+                            <div class="scroll-container fill-space">
+                                <div class="scroll-area classes">
+                                    {{#each classes as |class id|}}
+                                    {{> "systems/undertaking/templates/partials/character/class-card.hbs" class lockEdit=../actor.system.details.editLock}}
+                                    {{/each}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subclass-col fcol fill-space">
+                        <div class="list-container subclasses item-list fcol fill-space">
+                            <div class="list-header subclasses frow">
+                                <label>{{ localize "undertaking.SubClasses" }}</label>
+                                {{#ifCond actor.system.details.editLock '==' 1}}
+                                    <a class="toggle-lock" title="{{ localize "undertaking.UnlockEdit" }}"><i class="fas fa-lock"></i></a>
+                                {{/ifCond}}
+                                {{#ifCond actor.system.details.editLock '==' 0}}
+                                    <a class="toggle-lock" title="{{ localize "undertaking.LockEdit" }}"><i class="fas fa-lock-open"></i></a>
+                                {{/ifCond}}
+                            </div>
+                            <div class="scroll-container fill-space">
+                                <div class="scroll-area subclasses">
+                                    {{#each archetypes as |archetype id|}}
+                                    {{> "systems/undertaking/templates/partials/character/archetype-card.hbs" archetype lockEdit=../actor.system.details.editLock}}
+                                    {{/each}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="abilities-row frow">
+                    <div class="list-container abilities item-list fcol fill-space">
+                        <div class="list-header abilities frow addable">
+                            <label>{{ localize "undertaking.Abilities" }}</label>
+                            {{#ifCond actor.system.details.editLock '==' 1}}
+                                <a class="toggle-lock" title="{{ localize "undertaking.UnlockEdit" }}"><i class="fas fa-lock"></i></a>
+                            {{/ifCond}}
+                            {{#ifCond actor.system.details.editLock '==' 0}}
+                                <a class="toggle-lock" title="{{ localize "undertaking.LockEdit" }}"><i class="fas fa-lock-open"></i></a>
+                            {{/ifCond}}
+                            <a class="item-create" data-type="ability" title="{{ localize "undertaking.AddAbility" }}"><i class="fas fa-plus"></i></a>
+                        </div>
+                        <div class="scroll-container fill-space">
+                            <div class="scroll-area abilities">
+                                {{#each abilities as |ability id|}}
+                                {{> "systems/undertaking/templates/partials/character/ability-card.hbs" ability lockEdit=../actor.system.details.editLock}}
+                                {{/each}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="tab biography active" data-group="primary" data-tab="biography">
+        <div class="tab full-page biography" data-group="primary" data-tab="biography">
             <div class="bio-container fcol">
                 <div class="bio-header frow">
                     <div class="bio-header-block long bg-early">
@@ -497,12 +560,199 @@
             </div>
         </div>
 
-        <div class="tab spells" data-group="primary" data-tab="spells">
-            <p>Spells</p>
+        <div class="tab full-page spells" data-group="primary" data-tab="spells">
+            <div class="spells-container fcol">
+                <input type="hidden" id="input-class-filter" name="system.details.classFilter" value="{{actor.system.details.classFilter}}" data-dtype="String">
+                <input type="hidden" id="input-casting-attribute" name="system.stats.spellcasting" value="{{actor.system.stats.spellcasting}}" data-dtype="String">
+                <div class="mana-stats frow">
+                    <div class="mana-count short frow">
+                        <label>{{ localize "undertaking.Mana" }}: </label>
+                        <input class="spells-mana-val duplicate-input" data-for="#mana-val" type="number" value="{{actor.system.stats.mana.value}}" placeholder="0" data-dtype="Number" />
+                        <label>/ {{actor.system.stats.mana.max}}</label>
+                    </div>
+                    <div class="charge-limit short">
+                        <label>{{ localize "undertaking.ChargeLimit" }}: {{actor.system.stats.mana.chargeLimit.value}}</label>
+                    </div>
+                    <div class="mana-gain short">
+                        <label>{{ localize "undertaking.ShortRest" }}: {{numberFormat actor.system.stats.mana.shortRestGain.value decimals=0 sign=true}}</label>
+                    </div>
+                </div>
+                <hr/>
+                {{!-- Class Filter --}}
+                <nav class="tabs" data-group="primary">
+                    <a class="item class-filter {{#ifCond actor.system.details.classFilter '==' 'all'}}active{{/ifCond}}" data-tab="all">{{ localize "undertaking.All" }}</a>
+                    {{#each casters as |caster id|}}
+                        <a class="item class-filter {{#ifCond ../actor.system.details.classFilter '==' caster.system.identifier}}active{{/ifCond}}" data-tab="{{caster.system.identifier}}">{{ caster.name }}</a>
+                    {{/each}}
+                </nav>
+                <hr/>
+                <div class="caster-stats frow">
+                    {{#ifCond actor.system.details.classFilter '==' 'all'}}
+                        <div class="caster-stat attribute frow fill-space">
+                            <!-- <h4>{{localize "undertaking.Attribute"}}: </h4> -->
+                            <select data-for="#input-casting-attribute" class="input-dropdown">
+                                {{#each actor.system.attributes as |attribute attr_id|}}
+                                    <option value="{{attr_id}}" {{#ifCond ../actor.system.stats.spellcasting '==' attr_id}}selected{{/ifCond}}>{{localize attribute.label}}</option>
+                                {{/each}}
+                            </select>
+                        </div>
+                    {{/ifCond}}
+                    {{#ifCond actor.system.details.classFilter '!=' 'all'}}
+                        <div class="caster-stat attribute  fill-space">
+                            <h4><!--{{localize "undertaking.Attribute"}}: -->{{localize actor.system.stats.spellcastingAttribute.label}}</h4>
+                        </div>
+                    {{/ifCond}}
+                    <div class="caster-stat modifier fill-space">
+                        <h4>{{localize "undertaking.Modifier"}}: {{numberFormat actor.system.stats.spellcastingAttribute.mod decimals=0 sign=true}}</h4>
+                    </div>
+                    <div class="caster-stat attack-bonus fill-space">
+                        <h4>{{localize "undertaking.SpellAttack"}}: {{numberFormat actor.system.stats.spellcastingAttribute.attack decimals=0 sign=true}}</h4>
+                    </div>
+                    <div class="caster-stat save-dc fill-space">
+                        <h4>{{localize "undertaking.SpellSaveDC"}}: {{numberFormat actor.system.stats.spellcastingAttribute.dc decimals=0 sign=false}}</h4>
+                    </div>
+                </div>
+                <div class="cantrips-row frow">
+                    <div class="list-container cantrips item-list fcol fill-space">
+                        <div class="list-header cantrips frow">
+                            <label>{{ localize "undertaking.Cantrips" }}</label>
+                            {{#ifCond actor.system.details.editLock '==' 1}}
+                                <a class="toggle-lock" title="{{ localize "undertaking.UnlockEdit" }}"><i class="fas fa-lock"></i></a>
+                            {{/ifCond}}
+                            {{#ifCond actor.system.details.editLock '==' 0}}
+                                <a class="toggle-lock" title="{{ localize "undertaking.LockEdit" }}"><i class="fas fa-lock-open"></i></a>
+                            {{/ifCond}}
+                        </div>
+                        <div class="scroll-container fill-space">
+                            <div class="scroll-area cantrips">
+                                {{#each cantrips as |cantrip id|}}
+                                {{> "systems/undertaking/templates/partials/character/spell-card.hbs" cantrip lockEdit=../actor.system.details.editLock}}
+                                {{/each}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="spells-row frow">
+                    <div class="list-container spells item-list fcol fill-space">
+                        <div class="list-header spells frow">
+                            <label>{{ localize "undertaking.Spells" }}</label>
+                            {{#ifCond actor.system.details.editLock '==' 1}}
+                                <a class="toggle-lock" title="{{ localize "undertaking.UnlockEdit" }}"><i class="fas fa-lock"></i></a>
+                            {{/ifCond}}
+                            {{#ifCond actor.system.details.editLock '==' 0}}
+                                <a class="toggle-lock" title="{{ localize "undertaking.LockEdit" }}"><i class="fas fa-lock-open"></i></a>
+                            {{/ifCond}}
+                        </div>
+                        <div class="scroll-container fill-space">
+                            <div class="scroll-area spells">
+                                {{#each spells as |spell id|}}
+                                {{> "systems/undertaking/templates/partials/character/spell-card.hbs" spell lockEdit=../actor.system.details.editLock}}
+                                {{/each}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="tab config" data-group="primary" data-tab="config">
-            <p>Config</p>
+            <div class="config-container">
+                <!-- Checks Settings -->
+                <div class="config-group fcol">
+                    <div class="config-header frow">
+                        <label>Checks</label>
+                    </div>
+                    <div class="config-input frow">
+                        <label>Global Check Bonus</label>
+                        <input name="system.bonuses.check.all" type="number" placeholder="0" value="{{actor.system.bonuses.check.all}}" data-dtype="Number" />
+                    </div>
+                    <div class="config-input frow">
+                        <label>Global Skill Check Bonus</label>
+                        <input name="system.bonuses.check.skill" type="number" placeholder="0" value="{{actor.system.bonuses.check.skill}}" data-dtype="Number" />
+                    </div>
+                    <div class="config-input frow">
+                        <label>Global Save Check Bonus</label>
+                        <input name="system.bonuses.check.save" type="number" placeholder="0" value="{{actor.system.bonuses.check.save}}" data-dtype="Number" />
+                    </div>
+                    {{#each actor.system.attributes as |attribute attr_id|}}
+                        <hr/>
+                        <div class="config-input frow">
+                            <label>{{localize attribute.label}} Check Bonus</label>
+                            <input name="system.attributes.{{attr_id}}.bonuses.check.all" type="number" placeholder="0" value="{{attribute.bonuses.check.all}}" data-dtype="Number" />
+                        </div>
+                        <div class="config-input frow">
+                            <label>{{localize attribute.label}} Save Check Bonus</label>
+                            <input name="system.attributes.{{attr_id}}.bonuses.check.save" type="number" placeholder="0" value="{{attribute.bonuses.check.save}}" data-dtype="Number" />
+                        </div>
+                        <div class="config-input frow">
+                            <label>{{localize attribute.label}} Skill Check Bonus</label>
+                            <input name="system.attributes.{{attr_id}}.bonuses.check.skill" type="number" placeholder="0" value="{{attribute.bonuses.check.skill}}" data-dtype="Number" />
+                        </div>
+                    {{/each}}
+
+                </div>
+
+                <!-- Skills Settings -->
+                <div class="config-group fcol">
+                    <div class="config-header frow">
+                        <label>Skills</label>
+                    </div>
+                    <div class="config-input frow">
+                        <label>Awareness Bonus</label>
+                        <input name="system.skills.perception.bonuses.passive" type="number" placeholder="0" value="{{actor.system.skills.perception.bonuses.passive}}" data-dtype="Number" />
+                    </div>
+                    <hr/>
+                    {{#each actor.system.skills as |skill skill_id|}}
+                        <div class="config-input frow">
+                            <label>{{localize skill.label}} Bonus</label>
+                            <input name="system.skills.{{skill_id}}.bonuses.check" type="number" placeholder="0" value="{{skill.bonuses.check}}" data-dtype="Number" />
+                        </div>
+                    {{/each}}
+                </div>
+
+                <!-- Mana Settings -->
+                <div class="config-group fcol">
+                    <div class="config-header frow">
+                        <label>Spells &amp; Mana</label>
+                    </div>
+                    <div class="config-input frow">
+                        <label>Max Mana Bonus</label>
+                        <input name="system.stats.mana.bonus" type="number" placeholder="0" value="{{actor.system.stats.mana.bonus}}" data-dtype="Number" />
+                    </div>
+                    <div class="config-input frow">
+                        <label>Charge Limit Bonus</label>
+                        <input name="system.stats.mana.chargeLimit.bonus" type="number" placeholder="0" value="{{actor.system.stats.mana.chargeLimit.bonus}}" data-dtype="Number" />
+                    </div>
+                    <div class="config-input frow">
+                        <label>Short Rest Mana Gain Bonus</label>
+                        <input name="system.stats.mana.shortRestGain.bonus" type="number" placeholder="0" value="{{actor.system.stats.mana.shortRestGain.bonus}}" data-dtype="Number" />
+                    </div>
+                    <div class="config-input frow">
+                        <label>Short Rest Mana Gain Divisor</label>
+                        <input name="system.stats.mana.shortRestGain.divisor" type="number" placeholder="4" value="{{actor.system.stats.mana.shortRestGain.divisor}}" data-dtype="Number" />
+                    </div>
+                    <hr/>
+                    <div class="config-input frow">
+                        <label>Spell Attack Bonus</label>
+                        <input name="system.bonuses.attack.spell.all.attack" type="number" placeholder="0" value="{{actor.system.bonuses.attack.spell.all.attack}}" data-dtype="Number" />
+                    </div>
+                    <div class="config-input frow">
+                        <label>Spell Save DC Bonus</label>
+                        <input name="system.bonuses.spell.dc" type="number" placeholder="0" value="{{actor.system.bonuses.spell.dc}}" data-dtype="Number" />
+                    </div>
+                </div>
+
+                <!-- Misc Settings -->
+                <div class="config-group fcol">
+                    <div class="config-header frow">
+                        <label>Misc</label>
+                    </div>
+                    <div class="config-input frow">
+                        <label>Maximum Luck</label>
+                        <input name="system.stats.luck.max" type="number" placeholder="3" value="{{actor.system.stats.luck.max}}" data-dtype="Number" />
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </form>

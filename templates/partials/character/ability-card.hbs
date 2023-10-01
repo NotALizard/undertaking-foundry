@@ -1,9 +1,9 @@
-<div class="equipment-card item frow" data-item-id="{{_id}}">
-    <img class="equipment-img" src="{{img}}"/>
-    <div class="equipment-name">
+<div class="item-card ability item frow" data-item-id="{{_id}}">
+    <img class="item-img ability" src="{{img}}"/>
+    <div class="item-name ability">
         <a class="item-open"><p>{{name}}</p></a>
     </div>
-    <div class="equipment-buttons fcol">
+    <div class="item-buttons ability fcol">
         {{#ifCond lockEdit '==' 0}}                        
             <a class="item-delete" title="{{ localize "undertaking.DeleteItem" }}">
                 <i class="fas fa-trash"></i>

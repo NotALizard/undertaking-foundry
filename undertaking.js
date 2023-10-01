@@ -7,8 +7,12 @@ import UndertakingCharacterSheet from "./module/sheets/UndertakingCharacterSheet
 
 async function preloadHandlebarsTemplates(){
   const templatePaths = [
-    "systems/undertaking/templates/partials/character-resources.hbs",
-    "systems/undertaking/templates/partials/equipment-card.hbs"
+    "systems/undertaking/templates/partials/character/character-resources.hbs",
+    "systems/undertaking/templates/partials/character/equipment-card.hbs",
+    "systems/undertaking/templates/partials/character/class-card.hbs",
+    "systems/undertaking/templates/partials/character/archetype-card.hbs",
+    "systems/undertaking/templates/partials/character/ability-card.hbs",
+    "systems/undertaking/templates/partials/character/spell-card.hbs"
   ];
 
   return loadTemplates(templatePaths);
@@ -60,6 +64,64 @@ Hooks.once("init",function(){
             return (v1 || v2) ? options.fn(this) : options.inverse(this);
         default:
             return options.inverse(this);
+    }
+  });
+
+  Handlebars.registerHelper('switch', function(value, options) {
+    this.switch_value = value;
+    this.switch_result = false;
+    return options.fn(this);
+  });
+  
+  Handlebars.registerHelper('case', function(value, options) {
+    if (value == this.switch_value) {
+      this.switch_result = true;
+      return options.fn(this);
+    }
+  });
+  
+  Handlebars.registerHelper('default', function(options) {
+    if(this.switch_result == false) {
+      this.switch_result = true;
+      return options.fn(this);
+    }
+  });
+
+  Handlebars.registerHelper('time', function(value, unit, options) {
+    switch(unit){
+      case 'inst':
+        return game.i18n.localize("undertaking.Time.Instant");
+      case 'indef':
+        return game.i18n.localize("undertaking.Time.Indefinite");
+      case 'round':
+        return `${value} ` + game.i18n.localize(`undertaking.Time.Round${value > 1 ? 's' : ''}`);
+      case 'second':
+        return `${value} ` + game.i18n.localize(`undertaking.Time.Second${value > 1 ? 's' : ''}`);
+      case 'minute':
+        return `${value} ` + game.i18n.localize(`undertaking.Time.Minute${value > 1 ? 's' : ''}`);
+      case 'hour':
+        return `${value} ` + game.i18n.localize(`undertaking.Time.Hour${value > 1 ? 's' : ''}`);
+      case 'day':
+        return `${value} ` + game.i18n.localize(`undertaking.Time.Day${value > 1 ? 's' : ''}`);
+      case 'year':
+        return `${value} ` + game.i18n.localize(`undertaking.Time.Year${value > 1 ? 's' : ''}`);
+      case 'action':
+        return `${value} ` + game.i18n.localize("undertaking.Time.Action");
+      case 'minor':
+        return `${value} ` + game.i18n.localize("undertaking.Time.MinorAction");
+      case 'reaction':
+        return `${value} ` + game.i18n.localize("undertaking.Time.Reaction");
+      case 'desperate':
+        return `${value} ` + game.i18n.localize("undertaking.Time.DesperateAction");
+    }
+  });
+
+  Handlebars.registerHelper('plural', function(value, unit, options) {
+    switch(unit){
+      case 'creature':
+        return `${value} ` + game.i18n.localize(`undertaking.Creature${value > 1 ? 's' : ''}`);
+      case 'object':
+        return `${value} ` + game.i18n.localize(`undertaking.Object${value > 1 ? 's' : ''}`);
     }
   });
 

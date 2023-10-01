@@ -1,0 +1,77 @@
+<div class="item-card spell item frow" data-item-id="{{_id}}">
+    <img class="item-img spell" src="{{img}}"/>
+    <div class="item-name spell short">
+        <a class="item-open"><p>{{name}}</p></a>
+    </div>
+    <div class="spell-details-col fcol short">
+        <div class="spell-detail-row level-school frow">
+            {{#ifCond system.level '==' 0}}
+                <p>{{localize (concat "undertaking.SpellSchools." system.school)}} {{localize "undertaking.Cantrip"}}</p>
+            {{/ifCond}}
+            {{#ifCond system.level '!=' 0}}
+                <p>{{#switch system.level}} 
+                    {{#case 1}}1st{{/case}} 
+                    {{#case 2}}2nd{{/case}}
+                    {{#case 3}}3rd{{/case}}
+                    {{#case 4}}4th{{/case}}
+                    {{#case 5}}5th{{/case}}
+                    {{#case 6}}6th{{/case}}
+                    {{#case 7}}7th{{/case}}
+                    {{#case 8}}8th{{/case}}
+                    {{#case 9}}9th{{/case}}
+                {{/switch}} {{localize "undertaking.Level"}} {{localize (concat "undertaking.SpellSchools." system.school)}}</p>
+            {{/ifCond}}
+        </div>
+        <div class="spell-detail-row mana-cost frow">
+            <p title="{{#ifCond system.charge '==' true}}{{localize "undertaking.CanBeCharged"}}{{/ifCond}}">{{#switch system.level}}{{#case 0}}0{{/case}}{{#case 1}}1{{/case}}{{#case 2}}2{{/case}}{{#case 3}}4{{/case}}{{#case 4}}6{{/case}}{{#case 5}}8{{/case}}{{#case 6}}10{{/case}}{{#case 7}}12{{/case}}{{#case 8}}15{{/case}}{{#case 9}}25{{/case}}{{/switch}}{{#ifCond system.charge '==' true}}+{{/ifCond}} {{localize "undertaking.Mana"}}</p>
+        </div>
+    </div>
+    <div class="spell-details-col fcol short">
+        <div class="spell-detail-row cast-time frow">
+            <p>{{localize "undertaking.Cast"}}: {{#time system.activation.cost system.activation.type}}{{/time}}</p>{{#ifCond system.components.ritual '==' true}}<p title="{{localize "undertaking.CanRitual"}}">&nbsp;(R)</p>{{/ifCond}}
+        </div>
+        <div class="spell-detail-row spell-duration frow">
+            <p>{{localize "undertaking.DurationShort"}}: {{#time system.duration.value system.duration.units}}{{/time}}</p>{{#ifCond system.components.concentration '==' true}}<p title="{{localize "undertaking.RequiresConcentration"}}">&nbsp;(C)</p>{{/ifCond}}
+        </div>
+    </div>
+    <div class="spell-details-col fcol short">
+        <div class="spell-detail-row components frow">
+            {{#ifCond system.components.somatic '==' true}}<p title="{{localize "undertaking.Somatic"}}">&nbsp;S</p>{{/ifCond}}{{#ifCond system.components.verbal '==' true}}<p title="{{localize "undertaking.Verbal"}}">&nbsp;V</p>{{/ifCond}}{{#ifCond system.components.material '==' true}}<p title="{{localize "undertaking.Material"}}">&nbsp;M</p>{{/ifCond}}<p>&nbsp;</p>
+        </div>
+        <div class="spell-detail-row material-details frow">
+            <p>&nbsp;{{#ifCond system.materials.cost '!=' 0}}{{system.materials.cost}} gp{{/ifCond}} {{#ifCond system.materials.consumed '==' true}}&nbsp;</p><p title="{{localize "undertaking.Consumed"}}">&#10060;</p>{{/ifCond}}
+        </div>
+    </div>
+    <div class="spell-details-col fcol short">
+        <div class="spell-detail-row range frow">
+            <p>{{localize "undertaking.Range"}}:
+                {{#switch system.range.units}} 
+                    {{#case 'self'}}{{ localize "undertaking.Self" }}{{/case}} 
+                    {{#case 'touch'}}{{ localize "undertaking.Touch" }}{{/case}}
+                    {{#case 'ft'}}{{system.range.value}}{{system.range.units}}{{/case}}
+                    {{#default}}Default{{/default}}
+                {{/switch}}
+            </p>
+        </div>
+        <div class="spell-detail-row targets frow">
+            {{#switch system.target.type}} 
+                    {{#case 'self'}}<p>{{ localize "undertaking.Self" }}</p><img src="systems/undertaking/images/icons/self.svg"/>{{/case}} 
+                    {{#case 'creature'}}<p>{{#plural system.target.value 'creature'}}{{/plural}}</p><img src="systems/undertaking/images/icons/creature.svg"/>{{/case}}
+                    {{#case 'object'}}<p>{{#plural system.target.value 'object'}}{{/plural}}</p><img src="systems/undertaking/images/icons/object.svg"/>{{/case}}
+                    {{#case 'cone'}}<p>{{system.target.value}}{{system.target.units}} {{localize (concat "undertaking.Shapes." system.target.type)}}</p><img src="systems/undertaking/images/icons/cone.svg"/>{{/case}}
+                    {{#case 'cube'}}<p>{{system.target.value}}{{system.target.units}} {{localize (concat "undertaking.Shapes." system.target.type)}}</p><img src="systems/undertaking/images/icons/cube.svg"/>{{/case}}
+                    {{#case 'cylinder'}}<p>{{system.target.value}}{{system.target.units}} {{localize (concat "undertaking.Shapes." system.target.type)}}</p><img src="systems/undertaking/images/icons/cylinder.svg"/>{{/case}}
+                    {{#case 'line'}}<p>{{system.target.value}}{{system.target.units}} {{localize (concat "undertaking.Shapes." system.target.type)}}</p><img src="systems/undertaking/images/icons/line.svg"/>{{/case}}
+                    {{#case 'sphere'}}<p>{{system.target.value}}{{system.target.units}} {{localize (concat "undertaking.Shapes." system.target.type)}}</p><img src="systems/undertaking/images/icons/sphere.svg"/>{{/case}}
+                {{/switch}}
+            <p>{{#ifCond system.target.units '==' true}}{{/ifCond}}</p>
+        </div>
+    </div>
+    <div class="item-buttons spell fcol">
+        {{#ifCond lockEdit '==' 0}}                        
+            <a class="item-delete" title="{{ localize "undertaking.DeleteItem" }}">
+                <i class="fas fa-trash"></i>
+            </a>
+        {{/ifCond}}
+    </div>
+</div>
