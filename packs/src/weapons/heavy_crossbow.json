@@ -1,25 +1,25 @@
 {
-    "name": "Dagger",
+    "name": "Heavy Crossbow",
     "type": "weapon",
-    "img": "icons/weapons/daggers/dagger-black.webp",
+    "img": "icons/weapons/crossbows/crossbow-heavy-black.webp",
     "system": {
         "description": {
-            "value": "Encompasses all daggers, knives, kunai, screwdrivers, shivs, sais, tantos, tekpis, and other short, sharp objects.",
+            "value": "Encompasses any heavy-duty, high-propulsion crossbow.",
             "chat": "",
             "unidentified": ""
         },
         "source": "Core Rules",
-        "weight": "1",
+        "weight": "18",
         "price": {
-            "value": "2",
+            "value": "50",
             "denomination": "gp"
         },
-        "weaponType": "simpleM",
+        "weaponType": "martialR",
         "attribute": "dex",
-        "actionType": "mwak",
+        "actionType": "rwak",
         "range": {
-            "value": "20",
-            "long": "60",
+            "value": "100",
+            "long": "400",
             "units": "ft"
         },
         "critical": {
@@ -29,7 +29,7 @@
         "damage": {
             "parts": [
                 [
-                    "1d4 + @mod",
+                    "1d10 + @mod",
                     "piercing"
                 ]
             ],
@@ -42,20 +42,20 @@
             "scaling": "spell"
         },
         "properties": {
-            "amm": false,
-            "fin": true,
+            "amm": true,
+            "fin": false,
             "foc": false,
-            "hvy": false,
-            "lgt": true,
-            "lod": false,
+            "hvy": true,
+            "lgt": false,
+            "lod": true,
             "rch": false,
             "spc": false,
-            "thr": true,
-            "two": false,
+            "thr": false,
+            "two": true,
             "una": false,
             "ver": false
         },
         "showInAttacks": true
     },
-    "_id": "4XDEFIHFNG2WNIOR"
+    "_id": "99BO24KFE0HAZEAK"
 }

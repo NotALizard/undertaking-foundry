@@ -1,25 +1,25 @@
 {
-    "name": "Dagger",
+    "name": "Sickle",
     "type": "weapon",
-    "img": "icons/weapons/daggers/dagger-black.webp",
+    "img": "icons/weapons/sickles/sickle-curved.webp",
     "system": {
         "description": {
-            "value": "Encompasses all daggers, knives, kunai, screwdrivers, shivs, sais, tantos, tekpis, and other short, sharp objects.",
+            "value": "Encompasses all billhooks, kamas, kais, hand saws, sickles, and other one-handed slicing farming implements.",
             "chat": "",
             "unidentified": ""
         },
         "source": "Core Rules",
-        "weight": "1",
+        "weight": "2",
         "price": {
-            "value": "2",
+            "value": "1",
             "denomination": "gp"
         },
         "weaponType": "simpleM",
-        "attribute": "dex",
+        "attribute": "str",
         "actionType": "mwak",
         "range": {
-            "value": "20",
-            "long": "60",
+            "value": "0",
+            "long": "0",
             "units": "ft"
         },
         "critical": {
@@ -30,7 +30,7 @@
             "parts": [
                 [
                     "1d4 + @mod",
-                    "piercing"
+                    "slashing"
                 ]
             ],
             "versatile": ""
@@ -43,19 +43,19 @@
         },
         "properties": {
             "amm": false,
-            "fin": true,
+            "fin": false,
             "foc": false,
             "hvy": false,
             "lgt": true,
             "lod": false,
             "rch": false,
             "spc": false,
-            "thr": true,
+            "thr": false,
             "two": false,
             "una": false,
             "ver": false
         },
         "showInAttacks": true
     },
-    "_id": "4XDEFIHFNG2WNIOR"
+    "_id": "4SHZ7Y8QLKRH1I4J"
 }

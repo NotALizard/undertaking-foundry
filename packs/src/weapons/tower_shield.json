@@ -1,25 +1,25 @@
 {
-    "name": "Dagger",
+    "name": "Tower Shield",
     "type": "weapon",
-    "img": "icons/weapons/daggers/dagger-black.webp",
+    "img": "icons/equipment/shield/wardoor-wooden-boss-brown.webp",
     "system": {
         "description": {
-            "value": "Encompasses all daggers, knives, kunai, screwdrivers, shivs, sais, tantos, tekpis, and other short, sharp objects.",
+            "value": "AC +2, Versatile (AC +3).",
             "chat": "",
             "unidentified": ""
         },
         "source": "Core Rules",
-        "weight": "1",
+        "weight": "22",
         "price": {
-            "value": "2",
+            "value": "40",
             "denomination": "gp"
         },
-        "weaponType": "simpleM",
-        "attribute": "dex",
-        "actionType": "mwak",
+        "weaponType": "shield",
+        "attribute": "str",
+        "actionType": "other",
         "range": {
-            "value": "20",
-            "long": "60",
+            "value": "0",
+            "long": "0",
             "units": "ft"
         },
         "critical": {
@@ -29,8 +29,8 @@
         "damage": {
             "parts": [
                 [
-                    "1d4 + @mod",
-                    "piercing"
+                    "",
+                    ""
                 ]
             ],
             "versatile": ""
@@ -43,19 +43,19 @@
         },
         "properties": {
             "amm": false,
-            "fin": true,
+            "fin": false,
             "foc": false,
-            "hvy": false,
-            "lgt": true,
+            "hvy": true,
+            "lgt": false,
             "lod": false,
             "rch": false,
             "spc": false,
-            "thr": true,
+            "thr": false,
             "two": false,
             "una": false,
-            "ver": false
+            "ver": true
         },
         "showInAttacks": true
     },
-    "_id": "4XDEFIHFNG2WNIOR"
+    "_id": "HVTHJFPEV3UQZLM1"
 }

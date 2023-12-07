@@ -904,6 +904,19 @@ input.spells-mana-val {
     width:20px;
     height: 20px;
 }
+a.damage-control.delete-damage {
+    margin: auto 4px;
+}
+.between-txt {
+    margin: auto 4px;
+    white-space: nowrap;
+}
+.nowrap{
+    white-space: nowrap;
+}
+.item-row {
+    margin-bottom:4px;
+}
 
 .config-container {
     display: flex;
@@ -929,4 +942,12 @@ input.spells-mana-val {
 }
 .config-input input {
     flex: 1;
+}
+.traits-grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-row-gap: 4px;
+}
+.editor{
+    min-height: 30px;
 }

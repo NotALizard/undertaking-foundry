@@ -15,6 +15,7 @@
       "somatic": true
     },
     "actionType": "rsak",
+    "attribute": "spell",
     "activation": {
       "type": "action",
       "cost": 1,

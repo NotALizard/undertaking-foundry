@@ -593,7 +593,7 @@
     }
   },
   "Item": {
-    "types": ["weapon", "equipment", "consumable", "tool", "treasure", "background", "class", "archetype", "spell", "ability", "backpack", "race"],
+    "types": ["weapon", "equipment", "consumable", "tool", "treasure", "background", "class", "archetype", "spell", "ability", "backpack", "race", "customAttack"],
     "templates": {
       "itemDescription": {
         "description": {
@@ -662,7 +662,6 @@
           "parts": [],
           "versatile": ""
         },
-        "range": null,
         "formula": "",
         "save": {
           "attribute": "",
@@ -777,6 +776,10 @@
         "value": null,
         "charged": false
       }
+    },
+    "customAttack": {
+      "templates": ["itemDescription", "activatedEffect", "action"],
+      "showInAttacks": false
     },
     "treasure": {
       "templates": ["itemDescription", "physicalItem"]

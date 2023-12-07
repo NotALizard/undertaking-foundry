@@ -9,10 +9,12 @@ async function preloadHandlebarsTemplates(){
   const templatePaths = [
     "systems/undertaking/templates/partials/character/character-resources.hbs",
     "systems/undertaking/templates/partials/character/equipment-card.hbs",
+    "systems/undertaking/templates/partials/character/attack-card.hbs",
     "systems/undertaking/templates/partials/character/class-card.hbs",
     "systems/undertaking/templates/partials/character/archetype-card.hbs",
     "systems/undertaking/templates/partials/character/ability-card.hbs",
-    "systems/undertaking/templates/partials/character/spell-card.hbs"
+    "systems/undertaking/templates/partials/character/spell-card.hbs",
+    "systems/undertaking/templates/partials/item/edit-attack.hbs"
   ];
 
   return loadTemplates(templatePaths);
@@ -123,6 +125,14 @@ Hooks.once("init",function(){
       case 'object':
         return `${value} ` + game.i18n.localize(`undertaking.Object${value > 1 ? 's' : ''}`);
     }
+  });
+
+  Handlebars.registerHelper('school', function(value, options) {
+    const schools = ["abj","con","div","enc","evo","ill","nec","tra"];
+    if(schools.includes(value)){
+      return game.i18n.localize(`undertaking.SpellSchools.${value}`);
+    }
+    return value;
   });
 
   Handlebars.registerHelper('json', function(context) {

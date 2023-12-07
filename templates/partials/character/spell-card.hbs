@@ -6,7 +6,7 @@
     <div class="spell-details-col fcol short">
         <div class="spell-detail-row level-school frow">
             {{#ifCond system.level '==' 0}}
-                <p>{{localize (concat "undertaking.SpellSchools." system.school)}} {{localize "undertaking.Cantrip"}}</p>
+                <p>{{#school system.school}}system.school{{/school}} {{localize "undertaking.Cantrip"}}</p>
             {{/ifCond}}
             {{#ifCond system.level '!=' 0}}
                 <p>{{#switch system.level}} 
@@ -19,7 +19,8 @@
                     {{#case 7}}7th{{/case}}
                     {{#case 8}}8th{{/case}}
                     {{#case 9}}9th{{/case}}
-                {{/switch}} {{localize "undertaking.Level"}} {{localize (concat "undertaking.SpellSchools." system.school)}}</p>
+                    {{#default}}{{system.level}}{{/default}}
+                {{/switch}} {{localize "undertaking.Level"}} {{#school system.school}}system.school{{/school}}</p>
             {{/ifCond}}
         </div>
         <div class="spell-detail-row mana-cost frow">
@@ -49,7 +50,6 @@
                     {{#case 'self'}}{{ localize "undertaking.Self" }}{{/case}} 
                     {{#case 'touch'}}{{ localize "undertaking.Touch" }}{{/case}}
                     {{#case 'ft'}}{{system.range.value}}{{system.range.units}}{{/case}}
-                    {{#default}}Default{{/default}}
                 {{/switch}}
             </p>
         </div>
@@ -63,6 +63,7 @@
                     {{#case 'cylinder'}}<p>{{system.target.value}}{{system.target.units}} {{localize (concat "undertaking.Shapes." system.target.type)}}</p><img src="systems/undertaking/images/icons/cylinder.svg"/>{{/case}}
                     {{#case 'line'}}<p>{{system.target.value}}{{system.target.units}} {{localize (concat "undertaking.Shapes." system.target.type)}}</p><img src="systems/undertaking/images/icons/line.svg"/>{{/case}}
                     {{#case 'sphere'}}<p>{{system.target.value}}{{system.target.units}} {{localize (concat "undertaking.Shapes." system.target.type)}}</p><img src="systems/undertaking/images/icons/sphere.svg"/>{{/case}}
+                    {{#default}}{{system.target.value}}{{system.target.units}} {{system.target.type}}{{/default}}
                 {{/switch}}
             <p>{{#ifCond system.target.units '==' true}}{{/ifCond}}</p>
         </div>

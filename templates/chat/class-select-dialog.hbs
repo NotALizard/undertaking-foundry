@@ -1,0 +1,17 @@
+<form>
+    <div class="form-group">
+        <div class="fcol">
+            <div>
+                <label>{{localize "undertaking.Class"}}</label>
+            </div>
+            <div>
+                <input type="radio" name="class" value="" {{#ifequal "all" filter}}checked{{/ifequal}}> {{localize "undertaking.None"}} <br>
+            </div>
+            {{#each classes as |class class_id|}}
+                <div>
+                    <input type="radio" name="class" value="{{class.system.identifier}}" {{#ifequal class.system.identifier ../filter}}checked{{/ifequal}}> {{class.name}} <br>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</form>

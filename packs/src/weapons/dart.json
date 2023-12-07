@@ -1,22 +1,22 @@
 {
-    "name": "Dagger",
+    "name": "Dart",
     "type": "weapon",
-    "img": "icons/weapons/daggers/dagger-black.webp",
+    "img": "icons/weapons/thrown/dart-feathered.webp",
     "system": {
         "description": {
-            "value": "Encompasses all daggers, knives, kunai, screwdrivers, shivs, sais, tantos, tekpis, and other short, sharp objects.",
+            "value": "Encompasses all bo shuriken, gypsy arrows, martiobarbuli, plumbatas, and other handheld darts. <br>Special: You can use either your Dexterity or Strength modifiers for attack and damage rolls.",
             "chat": "",
             "unidentified": ""
         },
         "source": "Core Rules",
-        "weight": "1",
+        "weight": "0.25",
         "price": {
-            "value": "2",
-            "denomination": "gp"
+            "value": "5",
+            "denomination": "cp"
         },
-        "weaponType": "simpleM",
+        "weaponType": "simpleR",
         "attribute": "dex",
-        "actionType": "mwak",
+        "actionType": "rwak",
         "range": {
             "value": "20",
             "long": "60",
@@ -43,13 +43,13 @@
         },
         "properties": {
             "amm": false,
-            "fin": true,
+            "fin": false,
             "foc": false,
             "hvy": false,
-            "lgt": true,
+            "lgt": false,
             "lod": false,
             "rch": false,
-            "spc": false,
+            "spc": true,
             "thr": true,
             "two": false,
             "una": false,
@@ -57,5 +57,5 @@
         },
         "showInAttacks": true
     },
-    "_id": "4XDEFIHFNG2WNIOR"
+    "_id": "AP9UNR3YUOFQX2KQ"
 }

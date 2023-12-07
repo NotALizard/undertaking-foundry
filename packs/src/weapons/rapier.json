@@ -1,25 +1,25 @@
 {
-    "name": "Dagger",
+    "name": "Rapier",
     "type": "weapon",
-    "img": "icons/weapons/daggers/dagger-black.webp",
+    "img": "icons/weapons/swords/greatsword-crossguard-curved.webp",
     "system": {
         "description": {
-            "value": "Encompasses all daggers, knives, kunai, screwdrivers, shivs, sais, tantos, tekpis, and other short, sharp objects.",
+            "value": "Encompasses all fencing swords, including rapiers and backswords.",
             "chat": "",
             "unidentified": ""
         },
         "source": "Core Rules",
-        "weight": "1",
+        "weight": "3",
         "price": {
-            "value": "2",
+            "value": "25",
             "denomination": "gp"
         },
-        "weaponType": "simpleM",
+        "weaponType": "martialM",
         "attribute": "dex",
         "actionType": "mwak",
         "range": {
-            "value": "20",
-            "long": "60",
+            "value": "0",
+            "long": "0",
             "units": "ft"
         },
         "critical": {
@@ -29,7 +29,7 @@
         "damage": {
             "parts": [
                 [
-                    "1d4 + @mod",
+                    "1d8 + @mod",
                     "piercing"
                 ]
             ],
@@ -46,16 +46,16 @@
             "fin": true,
             "foc": false,
             "hvy": false,
-            "lgt": true,
+            "lgt": false,
             "lod": false,
             "rch": false,
             "spc": false,
-            "thr": true,
+            "thr": false,
             "two": false,
             "una": false,
             "ver": false
         },
         "showInAttacks": true
     },
-    "_id": "4XDEFIHFNG2WNIOR"
+    "_id": "5F1QULOS79OIBBQD"
 }

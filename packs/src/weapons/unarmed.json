@@ -1,25 +1,25 @@
 {
-    "name": "Dagger",
+    "name": "Unarmed",
     "type": "weapon",
-    "img": "icons/weapons/daggers/dagger-black.webp",
+    "img": "icons/skills/melee/unarmed-punch-fist.webp",
     "system": {
         "description": {
-            "value": "Encompasses all daggers, knives, kunai, screwdrivers, shivs, sais, tantos, tekpis, and other short, sharp objects.",
+            "value": "Special: Every creature has some form of unarmed attack as this is attacking without a weapon.  Unless stated otherwise, the damage dealt is 1 bludgeoning damage.    Any and all abilities that grant weapon proficiency of choice can also grant proficiency in Unarmed attacks, and is treated the same, adding your Strength Modifier and Proficiency to attack rolls, and Strength Modifier to damage rolls.",
             "chat": "",
             "unidentified": ""
         },
         "source": "Core Rules",
-        "weight": "1",
+        "weight": "0",
         "price": {
-            "value": "2",
+            "value": "0",
             "denomination": "gp"
         },
         "weaponType": "simpleM",
-        "attribute": "dex",
+        "attribute": "str",
         "actionType": "mwak",
         "range": {
-            "value": "20",
-            "long": "60",
+            "value": "0",
+            "long": "0",
             "units": "ft"
         },
         "critical": {
@@ -29,8 +29,8 @@
         "damage": {
             "parts": [
                 [
-                    "1d4 + @mod",
-                    "piercing"
+                    "1",
+                    "bludgeoning"
                 ]
             ],
             "versatile": ""
@@ -43,19 +43,19 @@
         },
         "properties": {
             "amm": false,
-            "fin": true,
+            "fin": false,
             "foc": false,
             "hvy": false,
-            "lgt": true,
+            "lgt": false,
             "lod": false,
             "rch": false,
-            "spc": false,
-            "thr": true,
+            "spc": true,
+            "thr": false,
             "two": false,
-            "una": false,
+            "una": true,
             "ver": false
         },
         "showInAttacks": true
     },
-    "_id": "4XDEFIHFNG2WNIOR"
+    "_id": "NAOVEWINMSCXM04L"
 }

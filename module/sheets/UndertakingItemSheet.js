@@ -18,9 +18,16 @@ export default class UndertakingItemSheet extends ItemSheet {
 
   async getData(){
     const context = super.getData();
+    context.config = CONFIG.undertaking;
     const item = context.item;
 
-    context.config = CONFIG.undertaking;
+    if(context.item.actor){
+      context.hasOwner = true;
+      context.casters = context.item.actor.items.filter(function(item){ return item.type == "class" && item.system.categorization.spellcaster.progression && item.system.categorization.spellcaster.progression != 'none'});
+    }
+    else{
+      context.hasOwner = false;
+    }
 
     if(!item.system.description.value){
       item.system.description.value = '&nbsp;';
@@ -42,7 +49,87 @@ export default class UndertakingItemSheet extends ItemSheet {
       });
     }
 
+    const typesWithAction = ["consumable", "equipment", "ability", "customAttack", "spell", "weapon"];
+    const typesWithAttack = ["mwak", "rwak", "msak", "rsak"];
+    if(typesWithAction.includes(item.type)){
+      let hasAttack = typesWithAttack.includes(item.system.actionType);
+      item.system.hasAttack = hasAttack;
+    }
+
     return context;
+  }
+
+  _getSubmitData(updateData={}){
+    const formData = foundry.utils.expandObject(super._getSubmitData(updateData));
+
+    // Handle Damage array
+    const damage = formData.system?.damage;
+    if ( damage ) damage.parts = Object.values(damage?.parts || {}).map(d => [d[0] || "", d[1] || ""]);
+
+    // Return the flattened submission data
+    return foundry.utils.flattenObject(formData);
+  }
+
+  activateListeners(html){
+    html.find(".input-dropdown").on("change", event => {
+      this._changeDropdown(event);
+    });
+    html.find(".input-checkbox").on("change", event => {
+      this._changeCheckbox(event);
+    });
+    html.find(".damage-control.add-damage").on("click", event => {
+      this._addDamagePart(event);
+    });
+    html.find(".damage-control.delete-damage").on("click", event => {
+      this._removeDamagePart(event);
+    });
+
+    super.activateListeners(html);
+  }
+
+  _changeDropdown(event){
+    event.preventDefault();
+    const dropdown = event.currentTarget.closest(".input-dropdown");
+    const target = dropdown.dataset.for;
+    const root = event.currentTarget.closest(".sheet-body");
+    const field = root.querySelector(target);
+
+    field.value = dropdown.value;
+    return this._onSubmit(event);
+  }
+
+  _changeCheckbox(event){
+    event.preventDefault();
+    const dropdown = event.currentTarget.closest(".input-checkbox");
+    const target = dropdown.dataset.for;
+    const root = event.currentTarget.closest(".sheet-body");
+    const field = root.querySelector(target);
+
+    if(field.value == 'true'){
+      field.value = false;
+    }
+    else{
+      field.value = true;
+    }
+    return this._onSubmit(event);
+  }
+
+  _addDamagePart(event){
+    event.preventDefault();
+    const item = this.item;
+    const damage = item.system.damage;
+    item.update({['system.damage.parts']: damage.parts.concat([["",""]])});
+  }
+
+  async _removeDamagePart(event){
+    event.preventDefault();
+    const parent = event.currentTarget.closest(".damage-part");
+    const index = parent.dataset.damagePart;
+    const item = this.item;
+    await this._onSubmit(event);
+    const damage = foundry.utils.deepClone(item.system.damage);
+    damage.parts.splice(Number(index), 1);
+    item.update({['system.damage.parts']: damage.parts});
   }
 
 }

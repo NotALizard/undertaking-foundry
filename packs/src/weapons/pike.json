@@ -1,25 +1,25 @@
 {
-    "name": "Dagger",
+    "name": "Pike",
     "type": "weapon",
-    "img": "icons/weapons/daggers/dagger-black.webp",
+    "img": "icons/weapons/polearms/pike-flared-red.webp",
     "system": {
         "description": {
-            "value": "Encompasses all daggers, knives, kunai, screwdrivers, shivs, sais, tantos, tekpis, and other short, sharp objects.",
+            "value": "Encompasses all spears and poles longer than 8ft. <br>Special: You have disadvantage when you use a pike to attack a target within 5ft of you.",
             "chat": "",
             "unidentified": ""
         },
         "source": "Core Rules",
-        "weight": "1",
+        "weight": "18",
         "price": {
-            "value": "2",
+            "value": "5",
             "denomination": "gp"
         },
-        "weaponType": "simpleM",
-        "attribute": "dex",
+        "weaponType": "martialM",
+        "attribute": "str",
         "actionType": "mwak",
         "range": {
-            "value": "20",
-            "long": "60",
+            "value": "0",
+            "long": "0",
             "units": "ft"
         },
         "critical": {
@@ -29,7 +29,7 @@
         "damage": {
             "parts": [
                 [
-                    "1d4 + @mod",
+                    "1d10 + @mod",
                     "piercing"
                 ]
             ],
@@ -43,19 +43,19 @@
         },
         "properties": {
             "amm": false,
-            "fin": true,
+            "fin": false,
             "foc": false,
-            "hvy": false,
-            "lgt": true,
+            "hvy": true,
+            "lgt": false,
             "lod": false,
-            "rch": false,
-            "spc": false,
-            "thr": true,
-            "two": false,
+            "rch": true,
+            "spc": true,
+            "thr": false,
+            "two": true,
             "una": false,
             "ver": false
         },
         "showInAttacks": true
     },
-    "_id": "4XDEFIHFNG2WNIOR"
+    "_id": "SKIGM412C4DRCVMW"
 }

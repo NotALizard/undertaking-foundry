@@ -1,0 +1,125 @@
+{{!-- Action Type --}}
+<div class="item-row frow">
+    <label class="nowrap">{{ localize "undertaking.ActionType" }}:</label>
+    <input name="system.actionType" id="input-actionType" type="hidden" value="{{item.system.actionType}}" data-dtype="String" />
+    <select class="input-dropdown" data-for="#input-actionType">
+        <option value="mwak" {{#ifCond item.system.actionType '==' "mwak"}}selected{{/ifCond}}>{{ localize "undertaking.MeleeWeaponAtk" }}</option>
+        <option value="rwak" {{#ifCond item.system.actionType '==' "rwak"}}selected{{/ifCond}}>{{ localize "undertaking.RangedWeaponAtk" }}</option>
+        <option value="msak" {{#ifCond item.system.actionType '==' "msak"}}selected{{/ifCond}}>{{ localize "undertaking.MeleeSpellAtk" }}</option>
+        <option value="rsak" {{#ifCond item.system.actionType '==' "rsak"}}selected{{/ifCond}}>{{ localize "undertaking.RangedSpellAtk" }}</option>
+        <option value="save" {{#ifCond item.system.actionType '==' "save"}}selected{{/ifCond}}>{{ localize "undertaking.Save" }}</option>
+        <option value="heal" {{#ifCond item.system.actionType '==' "heal"}}selected{{/ifCond}}>{{ localize "undertaking.Heal" }}</option>
+        <option value="abil" {{#ifCond item.system.actionType '==' "abil"}}selected{{/ifCond}}>{{ localize "undertaking.Ability" }}</option>
+        <option value="util" {{#ifCond item.system.actionType '==' "util"}}selected{{/ifCond}}>{{ localize "undertaking.Utility" }}</option>
+        <option value="other" {{#ifCond item.system.actionType '==' "other"}}selected{{/ifCond}}>{{ localize "undertaking.Other" }}</option>
+    </select>
+</div>
+
+{{#if item.system.actionType}}
+
+{{!-- Attribute --}}
+<div class="item-row frow">
+    <label class="nowrap">{{ localize "undertaking.Attribute" }}:</label>
+    <input name="system.attribute" id="input-attribute" type="hidden" value="{{item.system.attribute}}" data-dtype="String" />
+    <select class="input-dropdown" data-for="#input-attribute">
+        <option value="" {{#ifCond item.system.attribute '==' ""}}selected{{/ifCond}}>{{ localize "undertaking.None" }}</option>
+        <option value="spell" {{#ifCond item.system.attribute '==' "spell"}}selected{{/ifCond}}>{{ localize "undertaking.Spellcasting" }}</option>
+        <option value="str" {{#ifCond item.system.attribute '==' "str"}}selected{{/ifCond}}>{{ localize "undertaking.Attributes.Strength" }}</option>
+        <option value="dex" {{#ifCond item.system.attribute '==' "dex"}}selected{{/ifCond}}>{{ localize "undertaking.Attributes.Dexterity" }}</option>
+        <option value="con" {{#ifCond item.system.attribute '==' "con"}}selected{{/ifCond}}>{{ localize "undertaking.Attributes.Constitution" }}</option>
+        <option value="int" {{#ifCond item.system.attribute '==' "int"}}selected{{/ifCond}}>{{ localize "undertaking.Attributes.Intelligence" }}</option>
+        <option value="wis" {{#ifCond item.system.attribute '==' "wis"}}selected{{/ifCond}}>{{ localize "undertaking.Attributes.Wisdom" }}</option>
+        <option value="pre" {{#ifCond item.system.attribute '==' "pre"}}selected{{/ifCond}}>{{ localize "undertaking.Attributes.Presence" }}</option>
+    </select>
+</div>
+{{#if item.system.hasAttack}}
+{{!-- Attack Roll Bonus --}}
+<div class="item-row frow">
+    <label class="nowrap">{{ localize "undertaking.AttackBonus" }}</label>
+    <input type="text" name="system.attackBonus" value="{{item.system.attackBonus}}" data-formula-editor/>
+</div>
+
+{{!-- Critical Hit Threshold --}}
+<div class="item-row frow">
+    <label class="nowrap">{{ localize "undertaking.CriticalHitThreshold" }}</label>
+    <input type="number" name="system.critical.threshold" value="{{item.system.critical.threshold}}" placeholder="20" max="20" min="1" step="1" data-dtype="Number"/>
+</div>
+
+
+{{!-- Critical Hit Damage --}}
+<div class="item-row frow">
+    <label class="nowrap">{{ localize "undertaking.CriticalHitDamage" }}</label>
+    <input type="text" name="system.critical.damage" value="{{item.system.critical.damage}}">
+</div>
+{{/if}}
+
+{{!-- Damage Formula --}}
+<div class="item-row frow">
+    <label class="nowrap">{{#ifCond item.system.actionType '!=' "heal"}}{{ localize "undertaking.Damage" }}{{/ifCond}}{{#ifCond item.system.actionType '==' "heal"}}{{ localize "undertaking.Healing" }}{{/ifCond}} {{ localize "undertaking.Formula" }}</label>
+    <a class="damage-control add-damage"><i class="fas fa-plus"></i></a>
+</div>
+<div class="item-row frow">
+    <ol class="damage-parts fcol">
+        {{#each item.system.damage.parts as |part i| }}
+        <li class="damage-part frow" data-damage-part="{{i}}">
+            <input type="text" name="system.damage.parts.{{i}}.0" value="{{lookup this "0"}}" data-formula-editor/>
+            <input type="text" name="system.damage.parts.{{i}}.1" value="{{lookup this "1"}}" data-dtype="String"/>
+            <a class="damage-control delete-damage"><i class="fas fa-minus"></i></a>
+        </li>
+        {{/each}}
+    </ol>
+</div>
+
+{{!-- Versatile Damage --}}
+{{#if item.system.damage.parts.length }}
+<div class="item-row frow">
+    <label class="nowrap">{{ localize "undertaking.VersatileDamage" }}</label>
+    <input type="text" name="system.damage.versatile" value="{{item.system.damage.versatile}}" data-formula-editor>
+</div>
+{{/if}}
+
+{{!-- Other Formula --}}
+<div class="item-row frow">
+    <label class="nowrap">{{ localize "undertaking.Other" }} {{ localize "undertaking.Formula" }}</label>
+    <input type="text" name="system.formula" value="{{item.system.formula}}" data-formula-editor>
+</div>
+
+{{!-- Saving Throw --}}
+<div class="item-row frow">
+    <label class="nowrap">{{ localize "undertaking.Save" }}</label>
+</div>
+<div class="item-row frow">
+    <div class="frow">
+        <input name="system.save.ability" id="input-save-attribute" type="hidden" value="{{item.system.save.ability}}" data-dtype="String" />
+        <select class="input-dropdown" data-for="#input-save-attribute">
+            <option value="" {{#ifCond item.system.save.ability '==' ""}}selected{{/ifCond}}></option>
+            <option value="str" {{#ifCond item.system.save.ability '==' "str"}}selected{{/ifCond}}>{{ localize "undertaking.Attributes.Strength" }}</option>
+            <option value="dex" {{#ifCond item.system.save.ability '==' "dex"}}selected{{/ifCond}}>{{ localize "undertaking.Attributes.Dexterity" }}</option>
+            <option value="con" {{#ifCond item.system.save.ability '==' "con"}}selected{{/ifCond}}>{{ localize "undertaking.Attributes.Constitution" }}</option>
+            <option value="int" {{#ifCond item.system.save.ability '==' "int"}}selected{{/ifCond}}>{{ localize "undertaking.Attributes.Intelligence" }}</option>
+            <option value="wis" {{#ifCond item.system.save.ability '==' "wis"}}selected{{/ifCond}}>{{ localize "undertaking.Attributes.Wisdom" }}</option>
+            <option value="pre" {{#ifCond item.system.save.ability '==' "pre"}}selected{{/ifCond}}>{{ localize "undertaking.Attributes.Presence" }}</option>
+        </select>
+        <span class="between-txt">{{ localize "undertaking.VSDC" }}</span>
+        <input name="system.save.scaling" id="input-save-scaling" type="hidden" value="{{item.system.save.scaling}}" data-dtype="String" />
+        <select class="input-dropdown" data-for="#input-save-scaling">
+            <option value="flat" {{#ifCond item.system.save.scaling '==' "flat"}}selected{{/ifCond}}>{{ localize "undertaking.Flat" }}</option>
+            <option value="spell" {{#ifCond item.system.save.scaling '==' "spell"}}selected{{/ifCond}}>{{ localize "undertaking.SpellSaveDC" }}</option>
+            <option value="str" {{#ifCond item.system.save.scaling '==' "str"}}selected{{/ifCond}}>{{ localize "undertaking.Attributes.Strength" }}</option>
+            <option value="dex" {{#ifCond item.system.save.scaling '==' "dex"}}selected{{/ifCond}}>{{ localize "undertaking.Attributes.Dexterity" }}</option>
+            <option value="con" {{#ifCond item.system.save.scaling '==' "con"}}selected{{/ifCond}}>{{ localize "undertaking.Attributes.Constitution" }}</option>
+            <option value="int" {{#ifCond item.system.save.scaling '==' "int"}}selected{{/ifCond}}>{{ localize "undertaking.Attributes.Intelligence" }}</option>
+            <option value="wis" {{#ifCond item.system.save.scaling '==' "wis"}}selected{{/ifCond}}>{{ localize "undertaking.Attributes.Wisdom" }}</option>
+            <option value="pre" {{#ifCond item.system.save.scaling '==' "pre"}}selected{{/ifCond}}>{{ localize "undertaking.Attributes.Presence" }}</option>
+        </select>
+        <input type="number" step="any" name="system.save.dc" value="{{#if item.system.save.dc}}{{item.system.save.dc}}{{/if}}" {{#ifCond item.system.save.scaling "!=" "flat"}}style="display:none" disabled{{/ifCond}}>
+    </div>
+</div>
+
+{{!-- Chat Message Flavor --}}
+<div class="form-group stacked">
+    <label class="nowrap">{{ localize "undertaking.ChatFlavor" }}</label>
+    <input type="text" name="system.chatFlavor" value="{{item.system.chatFlavor}}"/>
+</div>
+
+{{/if}}

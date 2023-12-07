@@ -51,25 +51,57 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     const itemData = item.toObject();
 
     const actor = this.actor;
-    console.log(actor);
-    console.log(item);
     let sameActor = (item.actor && item.actor.id === actor.id);
 
     if(sameActor) return this._onSortItem(event, itemData);
 
-    if(item.type == 'class'){
-      let id = item.system.identifier
+    if(itemData.type == 'class'){
+      let id = itemData.system.identifier
       let existingClass = actor.items.filter(function(item){return item.type == "class" && item.system.identifier == id})[0];
       if(existingClass){
-        console.log('found class');
         let newLevel = existingClass.system.levels+1;
-        console.log(newLevel);
         //let classItem = actor.items.get(itemId);
         return existingClass.update({['system.levels']: newLevel});
       }
     }
+    else if(itemData.type == 'spell'){
+      let classes = this.actor.items.filter(function (item) { return item.type == "class" && item.system.categorization.spellcaster.progression && item.system.categorization.spellcaster.progression != 'none'});
+      let filter = this.actor.system.details.classFilter;
+      let assignedClass = await this._getClassSelectOptions(classes, filter);
+      itemData.system.classIdentifier = assignedClass;
+      return this.actor.createEmbeddedDocuments("Item", [itemData]);
+    }
 
     super._onDropItem(event, data);
+  }
+
+  async _getClassSelectOptions(classes, filter){
+    const template = "systems/undertaking/templates/chat/class-select-dialog.hbs"
+    const html = await renderTemplate(template, {classes: classes, filter: filter});
+
+    return new Promise(resolve => {
+      const data = {
+        title: game.i18n.localize("undertaking.Chat.ForClass"),
+        content: html,
+        buttons: {
+          normal: {
+            label: game.i18n.localize("undertaking.Chat.Confirm"),
+            callback: html => resolve(this._processClassSelectOptions(html[0].querySelector("form")))
+          },
+          cancel:{
+            label: game.i18n.localize("undertaking.Chat.Cancel"),
+            callback: html => resolve('')
+          }
+        },
+        default: "normal",
+        close: () => resolve('')
+      }
+      new Dialog(data, null).render(true);
+    });
+  }
+
+  _processClassSelectOptions(form){
+    return form.class.value;
   }
 
 
@@ -191,6 +223,8 @@ export default class UndertakingCharacterSheet extends ActorSheet {
   _onItemCreate(event){
     event.preventDefault();
     let element = event.currentTarget;
+
+    console.log(element.dataset.type);
 
     let name;
     switch(element.dataset.type){

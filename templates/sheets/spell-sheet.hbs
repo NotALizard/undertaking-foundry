@@ -1,0 +1,155 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}"/></h1>
+    </header>
+
+    {{!-- Item Sheet Navigation --}}
+    <nav class="sheet-navigation tabs" data-group="primary">
+        <a class="item active" data-tab="description">{{ localize "undertaking.Description" }}</a>
+        <a class="item" data-tab="details">{{ localize "undertaking.Details" }}</a>
+    </nav>
+
+    <section class="sheet-body other">
+      <input type="hidden" id="input-class" name="system.classIdentifier" value="{{item.system.classIdentifier}}" data-dtype="String">
+      <input type="hidden" id="input-somatic" name="system.components.somatic" value="{{item.system.components.somatic}}" data-dtype="Boolean">
+      <input type="hidden" id="input-verbal" name="system.components.verbal" value="{{item.system.components.verbal}}" data-dtype="Boolean">
+      <input type="hidden" id="input-material" name="system.components.material" value="{{item.system.components.material}}" data-dtype="Boolean">
+      <input type="hidden" id="input-ritual" name="system.components.ritual" value="{{item.system.components.ritual}}" data-dtype="Boolean">
+      <input type="hidden" id="input-concentration" name="system.components.concentration" value="{{item.system.components.concentration}}" data-dtype="Boolean">
+      <input type="hidden" id="input-consumed" name="system.materials.consumed" value="{{item.system.materials.consumed}}" data-dtype="Boolean">
+      <input type="hidden" id="input-actiontype" name="system.activation.type" value="{{item.system.activation.type}}" data-dtype="String">
+      <input type="hidden" id="input-duration" name="system.duration.units" value="{{item.system.duration.units}}" data-dtype="String">
+      <input type="hidden" id="input-range" name="system.range.units" value="{{item.system.range.units}}" data-dtype="String">
+      <input type="hidden" id="input-target-units" name="system.target.units" value="{{item.system.target.units}}" data-dtype="String">
+      <input type="hidden" id="input-target-type" name="system.target.type" value="{{item.system.target.type}}" data-dtype="String">
+      <input type="hidden" id="input-charge" name="system.charge" value="{{item.system.charge}}" data-dtype="Boolean">
+      {{!-- Description Tab --}}
+      <div class="tab full-page flexrow active" data-group="primary" data-tab="description">
+        <div class="fcol">
+          <div class="description-container">
+            {{editor descriptionHTML target="system.description.value" button=true editable=editable engine="prosemirror" collaborate=false}}
+          </div>
+        </div>
+      </div>
+
+      {{!-- Details Tab --}}
+      <div class="tab full-page flexrow" data-group="primary" data-tab="details">
+        <div class="fcol">
+          {{#ifCond hasOwner '==' 1}}
+          <div class="item-row frow">
+            <label>{{ localize "undertaking.Class" }}:</label>
+            <select class="input-dropdown" data-for="#input-class">
+              <option value="" {{#ifCond item.system.classIdentifier '==' ""}}selected{{/ifCond}}>{{localize "undertaking.None"}}</option>
+              {{#each casters as |class class_id|}}
+                <option value="{{class.system.identifier}}" {{#ifCond ../item.system.classIdentifier '==' class.system.identifier}}selected{{/ifCond}}>{{class.name}}</option>
+              {{/each}}
+            </select>
+          </div>
+          {{/ifCond}}
+          <div class="item-row frow">
+            <label>{{ localize "undertaking.Level" }}:</label>
+            <input class="short" name="system.level" type="number" value="{{item.system.level}}" placeholder="0" data-dtype="Number" />
+            <label>{{ localize "undertaking.Charge" }}:</label>
+            <input type="checkbox" class="input-checkbox" data-for="#input-charge" {{#ifCond item.system.charge '==' true}}checked{{/ifCond}}/>
+          </div>
+          <div class="item-row frow">
+            <label>{{ localize "undertaking.School" }}:</label>
+            <input id="input-school" name="system.school" type="hidden" value="{{item.system.school}}" data-dtype="String" />
+            <select class="input-dropdown" data-for="#input-school">
+                <option value="abj" {{#ifCond item.system.school '==' "abj"}}selected{{/ifCond}}>{{ localize "undertaking.SpellSchools.abj" }}</option>
+                <option value="con" {{#ifCond item.system.school '==' "con"}}selected{{/ifCond}}>{{ localize "undertaking.SpellSchools.con" }}</option>
+                <option value="div" {{#ifCond item.system.school '==' "div"}}selected{{/ifCond}}>{{ localize "undertaking.SpellSchools.div" }}</option>
+                <option value="enc" {{#ifCond item.system.school '==' "enc"}}selected{{/ifCond}}>{{ localize "undertaking.SpellSchools.enc" }}</option>
+                <option value="evo" {{#ifCond item.system.school '==' "evo"}}selected{{/ifCond}}>{{ localize "undertaking.SpellSchools.evo" }}</option>
+                <option value="ill" {{#ifCond item.system.school '==' "ill"}}selected{{/ifCond}}>{{ localize "undertaking.SpellSchools.ill" }}</option>
+                <option value="nec" {{#ifCond item.system.school '==' "nec"}}selected{{/ifCond}}>{{ localize "undertaking.SpellSchools.nec" }}</option>
+                <option value="tra" {{#ifCond item.system.school '==' "tra"}}selected{{/ifCond}}>{{ localize "undertaking.SpellSchools.tra" }}</option>
+            </select>
+          </div>
+          <div class="item-row frow">
+            <div class="frow short">
+              <label>{{ localize "undertaking.Somatic" }}:</label>
+              <input type="checkbox" class="input-checkbox" data-for="#input-somatic" {{#ifCond item.system.components.somatic '==' true}}checked{{/ifCond}}/>
+            </div>
+            <div class="frow short">
+              <label>{{ localize "undertaking.Verbal" }}:</label>
+              <input type="checkbox" class="input-checkbox" data-for="#input-verbal" {{#ifCond item.system.components.verbal '==' true}}checked{{/ifCond}}/>
+            </div>
+            <div class="frow short">
+              <label>{{ localize "undertaking.Material" }}:</label>
+              <input type="checkbox" class="input-checkbox" data-for="#input-material" {{#ifCond item.system.components.material '==' true}}checked{{/ifCond}}/>
+            </div>
+          </div>
+          {{#ifCond item.system.components.material '==' true}}
+          <div class="item-row frow">
+            <label>{{ localize "undertaking.Material" }}:</label>
+            <input class="no-bg short" name="system.materials.value" type="text" value="{{item.system.materials.value}}" data-dtype="String" />
+            <label>{{ localize "undertaking.Consumed" }}:</label>
+            <input type="checkbox" class="input-checkbox" data-for="#input-consumed" {{#ifCond item.system.materials.consumed '==' true}}checked{{/ifCond}}/>
+            <label>{{ localize "undertaking.Cost" }}:</label>
+            <input class="no-bg" name="system.materials.cost" style="width:8ch" type="number" value="{{item.system.materials.cost}}" placeholder="0" data-dtype="Number" />
+            <label>{{ localize "undertaking.Supply" }}:</label>
+            <input class="no-bg" name="system.materials.supply" style="width:6ch" type="number" value="{{item.system.materials.supply}}" placeholder="0" data-dtype="Number" />
+          </div>
+          {{/ifCond}}
+          <div class="item-row frow">
+            <label>{{ localize "undertaking.Cast" }}:</label>
+            <input class="no-bg" name="system.activation.cost" style="width:6ch" type="number" value="{{item.system.activation.cost}}" placeholder="0" data-dtype="Number" />
+            <select class="input-dropdown" data-for="#input-actiontype">
+              <option value="action" {{#ifCond item.system.activation.type '==' "action"}}selected{{/ifCond}}>{{ localize "undertaking.Time.Action" }}</option>
+              <option value="minor" {{#ifCond item.system.activation.type '==' "minor"}}selected{{/ifCond}}>{{ localize "undertaking.Time.MinorAction" }}</option>
+              <option value="reaction" {{#ifCond item.system.activation.type '==' "reaction"}}selected{{/ifCond}}>{{ localize "undertaking.Time.Reaction" }}</option>
+              <option value="desperate" {{#ifCond item.system.activation.type '==' "desperate"}}selected{{/ifCond}}>{{ localize "undertaking.Time.DesperateAction" }}</option>
+            </select>
+            <label>{{ localize "undertaking.Ritual" }}:</label>
+            <input type="checkbox" class="input-checkbox" data-for="#input-ritual" {{#ifCond item.system.components.ritual '==' true}}checked{{/ifCond}}/>
+          </div>
+          <div class="item-row frow">
+            <label>{{ localize "undertaking.Duration" }}:</label>
+            <input class="no-bg" name="system.duration.value" style="width:6ch" type="number" value="{{item.system.duration.value}}" placeholder="0" data-dtype="Number" />
+            <select class="input-dropdown" data-for="#input-duration">
+              <option value="inst" {{#ifCond item.system.duration.units '==' "inst"}}selected{{/ifCond}}>{{ localize "undertaking.Time.Instant" }}</option>
+              <option value="round" {{#ifCond item.system.duration.units '==' "round"}}selected{{/ifCond}}>{{ localize "undertaking.Time.Rounds" }}</option>
+              <option value="second" {{#ifCond item.system.duration.units '==' "second"}}selected{{/ifCond}}>{{ localize "undertaking.Time.Seconds" }}</option>
+              <option value="minute" {{#ifCond item.system.duration.units '==' "minute"}}selected{{/ifCond}}>{{ localize "undertaking.Time.Minutes" }}</option>
+              <option value="hour" {{#ifCond item.system.duration.units '==' "hour"}}selected{{/ifCond}}>{{ localize "undertaking.Time.Hours" }}</option>
+              <option value="day" {{#ifCond item.system.duration.units '==' "day"}}selected{{/ifCond}}>{{ localize "undertaking.Time.Days" }}</option>
+              <option value="year" {{#ifCond item.system.duration.units '==' "year"}}selected{{/ifCond}}>{{ localize "undertaking.Time.Years" }}</option>
+              <option value="indef" {{#ifCond item.system.duration.units '==' "indef"}}selected{{/ifCond}}>{{ localize "undertaking.Time.Indefinite" }}</option>
+            </select>
+            <label>{{ localize "undertaking.Concentration" }}:</label>
+            <input type="checkbox" class="input-checkbox" data-for="#input-concentration" {{#ifCond item.system.components.concentration '==' true}}checked{{/ifCond}}/>
+          </div>
+          <div class="item-row frow">
+            <label>{{ localize "undertaking.Range" }}:</label>
+            <input class="no-bg" name="system.range.value" style="width:8ch" type="number" value="{{item.system.range.value}}" placeholder="0" data-dtype="Number" />
+            <select class="input-dropdown" data-for="#input-range">
+              <option value="self" {{#ifCond item.system.range.units '==' "self"}}selected{{/ifCond}}>{{ localize "undertaking.Self" }}</option>
+              <option value="touch" {{#ifCond item.system.range.units '==' "touch"}}selected{{/ifCond}}>{{ localize "undertaking.Touch" }}</option>
+              <option value="ft" {{#ifCond item.system.range.units '==' "ft"}}selected{{/ifCond}}>Ft</option>
+            </select>
+          </div>
+          <div class="item-row frow">
+            <label>{{ localize "undertaking.Target" }}:</label>
+            <input class="no-bg" name="system.target.value" style="width:8ch" type="number" value="{{item.system.target.value}}" placeholder="0" data-dtype="Number" />
+            <select class="input-dropdown" data-for="#input-target-units">
+              <option value="" {{#ifCond item.system.target.units '==' ""}}selected{{/ifCond}}>{{ localize "undertaking.None" }}</option>
+              <option value="ft" {{#ifCond item.system.target.units '==' "ft"}}selected{{/ifCond}}>Ft</option>
+            </select>
+            <select class="input-dropdown" data-for="#input-target-type">
+              <option value="self" {{#ifCond item.system.target.type '==' "self"}}selected{{/ifCond}}>{{ localize "undertaking.Self" }}</option>
+              <option value="creature" {{#ifCond item.system.target.type '==' "creature"}}selected{{/ifCond}}>{{ localize "undertaking.Creature" }}</option>
+              <option value="object" {{#ifCond item.system.target.type '==' "object"}}selected{{/ifCond}}>{{ localize "undertaking.Object" }}</option>
+              <option value="cone" {{#ifCond item.system.target.type '==' "cone"}}selected{{/ifCond}}>{{ localize "undertaking.Shapes.cone" }}</option>
+              <option value="cube" {{#ifCond item.system.target.type '==' "cube"}}selected{{/ifCond}}>{{ localize "undertaking.Shapes.cube" }}</option>
+              <option value="cylinder" {{#ifCond item.system.target.type '==' "cylinder"}}selected{{/ifCond}}>{{ localize "undertaking.Shapes.cylinder" }}</option>
+              <option value="line" {{#ifCond item.system.target.type '==' "line"}}selected{{/ifCond}}>{{ localize "undertaking.Shapes.line" }}</option>
+              <option value="sphere" {{#ifCond item.system.target.type '==' "sphere"}}selected{{/ifCond}}>{{ localize "undertaking.Shapes.sphere" }}</option>
+            </select>
+          </div>
+          {{> "systems/undertaking/templates/partials/item/edit-attack.hbs"}}
+        </div>
+      </div>
+    </section>
+</form>
