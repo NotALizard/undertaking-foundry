@@ -1,0 +1,19 @@
+{
+    "name": "Poison Vial (Basic)",
+    "type": "equipment",
+    "img": "icons/consumables/potions/potion-bottle-skull-label-poison-teal.webp",
+    "system": {
+        "description": {
+            "value": "A small glass vial of poison that can be used to coat on a slashing or piercing weapon, or up to three pieces of ammunition.  Applying this poison takes an action, and a creature hit by the poisoned weapon or ammunition must make a DC 10 Constitution (Save) Check or take 1d4 poison damage.  Once applied, the poison retains potency for 1 minute before drying.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "100",
+            "denomination": "gp"
+        }
+    },
+    "_id": "T8M18LMDWKJUAV2R"
+}

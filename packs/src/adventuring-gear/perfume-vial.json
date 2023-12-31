@@ -1,0 +1,19 @@
+{
+    "name": "Perfume Vial",
+    "type": "equipment",
+    "img": "icons/consumables/potions/flask-decorated-label-pink.webp",
+    "system": {
+        "description": {
+            "value": "A small glass bottle that holds 4 ounces of a scented liquid that can be applied to make other things smell similarly.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "5",
+            "denomination": "gp"
+        }
+    },
+    "_id": "AM8H367NRINTHOFA"
+}

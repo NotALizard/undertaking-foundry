@@ -1,19 +1,19 @@
 {
-    "name": "Grappling Hook",
+    "name": "Iron Pot",
     "type": "equipment",
-    "img": "icons/tools/fasteners/chain-hook-grey.webp",
+    "img": "icons/consumables/food/pot-soup-white.webp",
     "system": {
         "description": {
-            "value": "A multiple hooked metal tip that can be attached to the end of rope to aid in climbing.",
+            "value": "A well made iron pot used for cooking and carrying liquids.  Holds up to 1 gallon of liquid.  ",
             "chat": "",
             "unidentified": ""
         },
         "source": "Core Rules",
-        "weight": "4",
+        "weight": "10",
         "price": {
             "value": "2",
             "denomination": "gp"
         }
     },
-    "_id": "12FKKFZXQEAFL2IP"
+    "_id": "K53JLXJ2M07IE6AP"
 }

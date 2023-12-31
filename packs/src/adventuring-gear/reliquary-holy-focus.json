@@ -1,0 +1,19 @@
+{
+    "name": "Reliquary (Holy focus)",
+    "type": "equipment",
+    "img": "icons/commodities/treasure/puzzle-pyramid.webp",
+    "system": {
+        "description": {
+            "value": "A small holy box that might hold a fragment or piece of a sacred relic.  These relics are rare and unique, and give a great connection to the deity or deities it represents.  A reliquary is often not meant to be opened under normal circumstances.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "2",
+        "price": {
+            "value": "5",
+            "denomination": "gp"
+        }
+    },
+    "_id": "QSO4ZBY0LNOX22B4"
+}

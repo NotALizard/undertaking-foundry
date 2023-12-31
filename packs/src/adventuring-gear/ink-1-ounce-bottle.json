@@ -1,0 +1,19 @@
+{
+    "name": "Ink (1 ounce bottle)",
+    "type": "equipment",
+    "img": "icons/tools/scribal/ink-quill-red.webp",
+    "system": {
+        "description": {
+            "value": "A small bottle filled with ink, normally used in concert with an ink quill to write out messages on parchment of some kind.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "10",
+            "denomination": "gp"
+        }
+    },
+    "_id": "005XC95QJK19SF73"
+}

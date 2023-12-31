@@ -1,0 +1,19 @@
+{
+    "name": "Torch Harness",
+    "type": "equipment",
+    "img": "icons/equipment/waist/belt-buckle-square-red.webp",
+    "system": {
+        "description": {
+            "value": "A torch holder that straps over the shoulder to hold a torch without using a hand.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "5",
+            "denomination": "gp"
+        }
+    },
+    "_id": "Q5P1SVXYUEUQFT9H"
+}

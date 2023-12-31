@@ -1,0 +1,19 @@
+{
+    "name": "Bell",
+    "type": "equipment",
+    "img": "icons/tools/instruments/bell-brass-brown.webp",
+    "system": {
+        "description": {
+            "value": "Rings clear and with perfect tone when shaken.  Gives disadvantage to Dexterity (Stealth) checks while not stowed.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "1",
+            "denomination": "gp"
+        }
+    },
+    "_id": "70BP4EBPW1LA5ZBO"
+}

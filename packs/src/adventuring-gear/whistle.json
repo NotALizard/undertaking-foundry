@@ -1,0 +1,19 @@
+{
+    "name": "Whistle",
+    "type": "equipment",
+    "img": "icons/tools/instruments/pipe-flute-yellow.webp",
+    "system": {
+        "description": {
+            "value": "A small contraption, usually made of wood or metal, that when blown into issues a sharp, piercing noise that can generally be heard in a radius of 700 feet.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "5",
+            "denomination": "cp"
+        }
+    },
+    "_id": "2TKY16XML6NEVYNL"
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Lock",
+    "type": "equipment",
+    "img": "icons/sundries/misc/lock-steel-blue.webp",
+    "system": {
+        "description": {
+            "value": "A simple lock that is used to lock chests doors, etc.  A key is provided with the lock normally, but without it a creature proficient in thieves\u2019 tools can pick this lock with a successful DC of 15.  Though your GM may decide that there are better locks available as well.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "10",
+            "denomination": "gp"
+        }
+    },
+    "_id": "R0USDHSSWKCUQ0PI"
+}

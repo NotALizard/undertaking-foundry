@@ -1,0 +1,19 @@
+{
+    "name": "Quiver",
+    "type": "equipment",
+    "img": "icons/containers/ammunition/arrows-quiver-brown-grey.webp",
+    "system": {
+        "description": {
+            "value": "A long, tube shaped container with one open end that is normally made of hide or leather for the purpose of carrying arrows.  A single quiver can carry 20 arrows.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "1",
+            "denomination": "gp"
+        }
+    },
+    "_id": "EZJ5B98OXWP48F3V"
+}

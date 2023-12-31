@@ -1,0 +1,19 @@
+{
+    "name": "Ink Quill",
+    "type": "equipment",
+    "img": "icons/commodities/materials/feather-white.webp",
+    "system": {
+        "description": {
+            "value": "A writing implement with a wooden handle, metal tip, and a feathered end, used for writing in concert with ink.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "2",
+            "denomination": "cp"
+        }
+    },
+    "_id": "YNKMW8N1NGPJSW9F"
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Candle",
+    "type": "equipment",
+    "img": "icons/sundries/lights/candle-unlit-grey.webp",
+    "system": {
+        "description": {
+            "value": "Lasts for 1 hour once lit.  Candles shed bright light in a 5ft radius, and dim light for an additional 5ft.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "1",
+            "denomination": "cp"
+        }
+    },
+    "_id": "M51F9RMIENUU7RHH"
+}

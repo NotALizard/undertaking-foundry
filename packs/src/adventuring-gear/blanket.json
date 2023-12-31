@@ -1,0 +1,19 @@
+{
+    "name": "Blanket",
+    "type": "equipment",
+    "img": "icons/commodities/cloth/cloth-roll-tan.webp",
+    "system": {
+        "description": {
+            "value": "A comfortable blanket to wrap around or lay over a creature to give some amount of warmth.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "3",
+        "price": {
+            "value": "5",
+            "denomination": "sp"
+        }
+    },
+    "_id": "VU5HQJGSE1W56WSE"
+}

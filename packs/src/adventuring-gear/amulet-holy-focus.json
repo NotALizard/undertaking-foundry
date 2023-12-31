@@ -1,0 +1,19 @@
+{
+    "name": "Amulet (Holy focus)",
+    "type": "equipment",
+    "img": "icons/equipment/neck/amulet-round-engraved-spiral-gold.webp",
+    "system": {
+        "description": {
+            "value": "An amulet that depicts a specific god or pantheon through symbology, and can help focus the holder\u2019s connection to the deity or deities.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "5",
+            "denomination": "gp"
+        }
+    },
+    "_id": "JV7ZDXUGK6XRLS3E"
+}

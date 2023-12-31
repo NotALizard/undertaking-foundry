@@ -1,0 +1,19 @@
+{
+    "name": "Magnifying Glass",
+    "type": "equipment",
+    "img": "icons/tools/scribal/magnifying-glass.webp",
+    "system": {
+        "description": {
+            "value": "A specialized lens that is used to get a closer look at objects and minute details.  Incidentally, it is also a way to light fires as long as there is a strong enough light source for it to focus; this is also assuming that you have material to light as well.  A magnifying class provides advantage on any skill check made to appraise or inspect an item that is small or highly detailed.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "100",
+            "denomination": "gp"
+        }
+    },
+    "_id": "DIDPBYYUWP42JP5O"
+}

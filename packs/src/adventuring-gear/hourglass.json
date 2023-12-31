@@ -1,0 +1,19 @@
+{
+    "name": "Hourglass",
+    "type": "equipment",
+    "img": "icons/sundries/misc/hourglass-wood.webp",
+    "system": {
+        "description": {
+            "value": "A pair of glass bulbs filled with sand encased in a wooden guard.  Used to measure 1 hour of time.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "25",
+            "denomination": "gp"
+        }
+    },
+    "_id": "62M3UWGNLU9B7BK3"
+}

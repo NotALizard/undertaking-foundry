@@ -1,0 +1,19 @@
+{
+    "name": "Leather Gloves",
+    "type": "equipment",
+    "img": "icons/equipment/hand/glove-frayed-cloth-grey.webp",
+    "system": {
+        "description": {
+            "value": "Protective gloves, useful at keeping your hands clean, especially when dealing with acids and poisons.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "1",
+            "denomination": "gp"
+        }
+    },
+    "_id": "O9K3J48N355WZI9K"
+}

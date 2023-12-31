@@ -1,0 +1,19 @@
+{
+    "name": "Backpack",
+    "type": "equipment",
+    "img": "icons/containers/bags/pack-leather-tan.webp",
+    "system": {
+        "description": {
+            "value": "A bag made of sturdy material with straps so that it can be carried on one\u2019s back.  A backpack can carry up to 30 pounds of gear, and you can also strap items to the outside of the pack, such as a bedroll, pup tent, or coil of rope.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "5",
+        "price": {
+            "value": "2",
+            "denomination": "gp"
+        }
+    },
+    "_id": "8UM8I7BM5O8XZPVW"
+}

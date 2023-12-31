@@ -1,0 +1,19 @@
+{
+    "name": "Holy Water Flask",
+    "type": "equipment",
+    "img": "icons/consumables/potions/potion-flask-corked-labeled-pink.webp",
+    "system": {
+        "description": {
+            "value": "Flasked water that has been blessed in some way.  As an action, you can splash the contents or throw the flask at a creature up to 20ft away as a thrown ranged attack.  On hit, if the creature is a fiend or undead, it takes 2d6 radiant damage.  Holy water can also be applied to weapons to bless them temporarily, allowing the next hit they make to deal 1d4 radiant damage if the target is a fiend or undead.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "25",
+            "denomination": "gp"
+        }
+    },
+    "_id": "I3JOQP3SF6TP6H4Q"
+}

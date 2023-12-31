@@ -1,0 +1,19 @@
+{
+    "name": "Idol (Holy focus)",
+    "type": "equipment",
+    "img": "icons/commodities/treasure/figurine-goddess.webp",
+    "system": {
+        "description": {
+            "value": "An intricate, hand-held idol or statue of a deity, often helpful in telling stories or giving examples of a deity or deities and their exploits.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "2",
+        "price": {
+            "value": "7",
+            "denomination": "gp"
+        }
+    },
+    "_id": "Y7P5W3JOAEKSOS81"
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Oil Lamp",
+    "type": "equipment",
+    "img": "icons/sundries/lights/lantern-steel.webp",
+    "system": {
+        "description": {
+            "value": "A basic lamp that burns oil to give off light.  Casts a bright light in a 15 foot radius and dim light for an additional 30 feet.  Once lit, a lamp burns for 6 hours on a flask (1 pint) of oil.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "5",
+            "denomination": "sp"
+        }
+    },
+    "_id": "Z446FFCUZLH75ZZU"
+}

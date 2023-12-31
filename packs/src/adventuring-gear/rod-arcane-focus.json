@@ -1,0 +1,19 @@
+{
+    "name": "Rod (Arcane focus)",
+    "type": "equipment",
+    "img": "icons/weapons/staves/staff-ornate-purple.webp",
+    "system": {
+        "description": {
+            "value": "A heavy cylinder made of metal, wood, or bone.  Normally about 2 to 3 feet long, 1 inch thick, and 2 to 5 pounds.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "2",
+        "price": {
+            "value": "10",
+            "denomination": "gp"
+        }
+    },
+    "_id": "LS1PXE0M9NH5PBWH"
+}

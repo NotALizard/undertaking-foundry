@@ -1,0 +1,19 @@
+{
+    "name": "Spellpage",
+    "type": "equipment",
+    "img": "icons/commodities/materials/parchment-secrets.webp",
+    "system": {
+        "description": {
+            "value": "A high quality sheet of paper with a fascinating texture that is well suited to recording spells.  More resilient to heat, water, wear and tear than those often made by Wizards on their own, but only by so much.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "5",
+            "denomination": "gp"
+        }
+    },
+    "_id": "LEOSW5HLB2Z1ZH1P"
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Pouch",
+    "type": "equipment",
+    "img": "icons/containers/bags/pouch-leather-gold-red.webp",
+    "system": {
+        "description": {
+            "value": "A handy cloth container carried when the need to store gear or small trinkets is needed.  Can be attached to straps and belts easily.  Carries up to ? of a cubic foot of material, or 6 pounds of gear.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "5",
+            "denomination": "sp"
+        }
+    },
+    "_id": "3UTGPVMW33MJYETH"
+}

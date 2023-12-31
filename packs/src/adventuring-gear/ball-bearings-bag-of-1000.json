@@ -1,0 +1,19 @@
+{
+    "name": "Ball Bearings (bag of 1,000)",
+    "type": "equipment",
+    "img": "icons/commodities/tech/bearing-steel-green.webp",
+    "system": {
+        "description": {
+            "value": "Tiny metal balls that can be spilled across an area of a 10ft square as an action.  Creatures that move in the area must succeed on a DC 10 Dexterity (Save) check or fall prone.  A creature moving at half speed automatically succeeds this save check.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "2",
+        "price": {
+            "value": "1",
+            "denomination": "gp"
+        }
+    },
+    "_id": "3KV4S1X801JG69S0"
+}

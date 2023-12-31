@@ -1,0 +1,19 @@
+{
+    "name": "Common Clothes",
+    "type": "equipment",
+    "img": "icons/equipment/chest/shirt-collared-brown.webp",
+    "system": {
+        "description": {
+            "value": "The clothing that you would find on the average peasant.  Normally consists of a shirt, pants, a belt, and foot coverings of some type.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "3",
+        "price": {
+            "value": "5",
+            "denomination": "sp"
+        }
+    },
+    "_id": "5L6UTBVNPCM4STUL"
+}

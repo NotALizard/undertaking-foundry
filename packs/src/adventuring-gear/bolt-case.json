@@ -1,0 +1,19 @@
+{
+    "name": "Bolt Case",
+    "type": "equipment",
+    "img": "icons/weapons/ammunition/arrows-war-red.webp",
+    "system": {
+        "description": {
+            "value": "A wooden case that stores up to 20 crossbow bolts.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "1",
+            "denomination": "gp"
+        }
+    },
+    "_id": "EMXLK2LL5IILHBWJ"
+}

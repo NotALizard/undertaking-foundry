@@ -1,0 +1,19 @@
+{
+    "name": "Boot Tips",
+    "type": "equipment",
+    "img": "icons/equipment/feet/boots-collared-leather-brown.webp",
+    "system": {
+        "description": {
+            "value": "Metal boot tips that can be strapped or nailed to one\u2019s shoes to assist with climbing.  With boot tips, you have a +1 to climbing checks.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "5",
+            "denomination": "sp"
+        }
+    },
+    "_id": "3XMI6PIA33QWNHXV"
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Wooden Staff (Druidic focus)",
+    "type": "equipment",
+    "img": "icons/weapons/staves/staff-simple-spiral-green.webp",
+    "system": {
+        "description": {
+            "value": "A staff made from special wood, often created whole from a living tree.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "4",
+        "price": {
+            "value": "5",
+            "denomination": "gp"
+        }
+    },
+    "_id": "ZNV3JBKK3D6GD2RG"
+}

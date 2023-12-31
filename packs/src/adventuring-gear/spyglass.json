@@ -1,0 +1,19 @@
+{
+    "name": "Spyglass",
+    "type": "equipment",
+    "img": "icons/tools/navigation/spyglass-telescope-brass.webp",
+    "system": {
+        "description": {
+            "value": "A specialized tool that consists of a long metal tube with a series of specialized disks of glass inside it.  Objects viewed through a spyglass are magnified to twice their size.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "1000",
+            "denomination": "gp"
+        }
+    },
+    "_id": "6YBOHFOANZ001LO5"
+}

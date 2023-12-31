@@ -1,0 +1,19 @@
+{
+    "name": "Costume",
+    "type": "equipment",
+    "img": "icons/equipment/head/mask-horned-brown.webp",
+    "system": {
+        "description": {
+            "value": "Comes in a wide variety, costumes are clothes that are made to make the wearer look similar to a person, creature, or object.  Normally made out of materials a lot better than common clothes, but not quite as expensive as fine clothes.  ",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "4",
+        "price": {
+            "value": "5",
+            "denomination": "gp"
+        }
+    },
+    "_id": "IY4GZOQS0840UVXO"
+}

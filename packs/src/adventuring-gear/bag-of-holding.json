@@ -1,0 +1,19 @@
+{
+    "name": "Bag of Holding",
+    "type": "equipment",
+    "img": "icons/containers/bags/pack-silver-purple.webp",
+    "system": {
+        "description": {
+            "value": "A magical bag that has considerably more space on the inside than it appears to have.  It is roughly 2 feet in diameter at the mouth, 4 feet deep, and can hold up to 500 pounds in weight but cannot exceed a volume of 64 cubic feet.  This bag weighs 15 pounds regardless of its contents, however, retrieving an item from the bag requires an action.<br>          Should the bag be overloaded, pierced, or torn, it ruptures and is destroyed, all of the contents then being scattered into the Astral Plane.  If the bag is turned inside out, everything inside falls out, unharmed, but the bag has to be righted before it functions again.  Breathing creatures inside the bag can survive for a number of minutes equal to 10 divided by the number of creatures (minimum of 1 minute) after which time they begin suffocating.<br>           Placing a Bag of Holding inside another Bag of Holding instantly destroys both items and rips open a gate to the Astral Plane.  This gate originates at the point where the one item was placed inside the other.  Any creatures within 10 feet of the gate are sucked inside it to a random location on the Astral Plane, after which the gate closes.  This gate is one-way and cannot be reopened.  ",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "15",
+        "price": {
+            "value": "200",
+            "denomination": "gp"
+        }
+    },
+    "_id": "ZP24KTV8Z3QA1DIU"
+}

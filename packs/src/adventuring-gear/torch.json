@@ -1,0 +1,19 @@
+{
+    "name": "Torch",
+    "type": "equipment",
+    "img": "icons/sundries/lights/torch-black.webp",
+    "system": {
+        "description": {
+            "value": "A sizable wooden stick with cloth wrapped around one end.  A torch burns for 1 hour, giving off bright light in a 20 foot radius and dim light for an additional 20 feet.  Should you use a lit torch to make a melee attack, it deals 1 fire damage.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "1",
+            "denomination": "cp"
+        }
+    },
+    "_id": "F34U8M0Y1XIIM1OM"
+}

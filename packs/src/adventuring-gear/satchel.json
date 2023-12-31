@@ -1,0 +1,19 @@
+{
+    "name": "Satchel",
+    "type": "equipment",
+    "img": "icons/containers/bags/satchel-leather-brown.webp",
+    "system": {
+        "description": {
+            "value": "A bag used to hold gear or items of some kind, about half the size of a backpack that is held by a strap that is worn across the shoulder.  Holds up to 20 pounds of gear.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "4",
+        "price": {
+            "value": "2",
+            "denomination": "gp"
+        }
+    },
+    "_id": "5IYR0BKWNDA9RSZW"
+}

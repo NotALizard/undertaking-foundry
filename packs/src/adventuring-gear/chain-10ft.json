@@ -1,0 +1,19 @@
+{
+    "name": "Chain (10ft)",
+    "type": "equipment",
+    "img": "icons/tools/fasteners/chain-steel-grey.webp",
+    "system": {
+        "description": {
+            "value": "A simple iron chain.  Has 10 Hit Points, or can be broken with a DC 20 Strength check.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "10",
+        "price": {
+            "value": "5",
+            "denomination": "gp"
+        }
+    },
+    "_id": "0446N1GGYU0PFWOH"
+}

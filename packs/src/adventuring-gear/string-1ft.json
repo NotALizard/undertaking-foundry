@@ -1,0 +1,19 @@
+{
+    "name": "String (1ft)",
+    "type": "equipment",
+    "img": "icons/tools/fishing/reel-simple-string-tan.webp",
+    "system": {
+        "description": {
+            "value": "A spool that holds up 1 foot of thin string.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "1",
+            "denomination": "cp"
+        }
+    },
+    "_id": "D1TH4OF8ME03A4RP"
+}

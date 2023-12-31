@@ -1,0 +1,19 @@
+{
+    "name": "Leather Helmet",
+    "type": "equipment",
+    "img": "icons/equipment/head/cap-leather-brown.webp",
+    "system": {
+        "description": {
+            "value": "A protective helmet that, when worn, reduces bludgeoning damage from falling objects by 1.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "2",
+        "price": {
+            "value": "3",
+            "denomination": "gp"
+        }
+    },
+    "_id": "P8R9P47OUO0XXCWM"
+}

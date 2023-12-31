@@ -1,0 +1,19 @@
+{
+    "name": "Orb (Arcane focus)",
+    "type": "equipment",
+    "img": "icons/commodities/gems/pearl-blue-gold.webp",
+    "system": {
+        "description": {
+            "value": "A crystal orb that fits comfortably in a single hand.  Perfectly round, made of glass or crystal, and transparent.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "3",
+        "price": {
+            "value": "20",
+            "denomination": "gp"
+        }
+    },
+    "_id": "W9CE0R0M4QNM91LJ"
+}

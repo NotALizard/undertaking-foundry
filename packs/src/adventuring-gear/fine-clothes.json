@@ -1,0 +1,19 @@
+{
+    "name": "Fine Clothes",
+    "type": "equipment",
+    "img": "icons/equipment/chest/coat-collared-red-gold.webp",
+    "system": {
+        "description": {
+            "value": "Clothing that you would find on a noble, merchant, or a person with a decent amount wealth.  Normally made out of finer, more expensive materials, and consist of more colorful garb than common clothes.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "6",
+        "price": {
+            "value": "15",
+            "denomination": "gp"
+        }
+    },
+    "_id": "5G2UAJCNYN6QNHDD"
+}

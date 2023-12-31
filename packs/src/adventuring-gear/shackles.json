@@ -1,0 +1,19 @@
+{
+    "name": "Shackles",
+    "type": "equipment",
+    "img": "icons/commodities/metal/clasp-steel.webp",
+    "system": {
+        "description": {
+            "value": "Works like manacles with a single difference: shackles are curved pieces of iron that are hammered together and have no lock.  Thus, shackles cannot be picked open.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "7",
+        "price": {
+            "value": "2",
+            "denomination": "gp"
+        }
+    },
+    "_id": "XQWYLD6JN3A0W2TD"
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Whetstone",
+    "type": "equipment",
+    "img": "icons/weapons/swords/swords-sharp-worn.webp",
+    "system": {
+        "description": {
+            "value": "A specialized stone that, when wet, is used to sharpen an edge on a blade.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "1",
+            "denomination": "cp"
+        }
+    },
+    "_id": "MLOULSA3II9OXD81"
+}

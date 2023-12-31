@@ -1,0 +1,19 @@
+{
+    "name": "Portable Ram",
+    "type": "equipment",
+    "img": "icons/weapons/maces/mace-skull-ram.webp",
+    "system": {
+        "description": {
+            "value": "A sturdy, transportable battering ram.  Can be used to break down doors and barricades.  When doing so, you gain a +4 bonus on the Strength check made to use the ram.  One other character can help you use this ram, which results in you getting advantage on the roll.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "35",
+        "price": {
+            "value": "4",
+            "denomination": "gp"
+        }
+    },
+    "_id": "Z8CKJ4TCSRJRJW9N"
+}

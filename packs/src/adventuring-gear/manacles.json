@@ -1,0 +1,19 @@
+{
+    "name": "Manacles",
+    "type": "equipment",
+    "img": "icons/sundries/survival/cuffs-shackles-steel.webp",
+    "system": {
+        "description": {
+            "value": "Metal manacles used to restrain a Small or Medium creature.  A creature must succeed on a DC 20 Dexterity save to escape the manacles, or they can be broken with a DC 20 Strength check.  Each set of manacles comes with a single key, and without it a creature proficient with Thieves\u2019 Tools can pick the manacles\u2019 lock with a successful DC 15 Dexterity check.  Manacles have 15 Hit Points.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "6",
+        "price": {
+            "value": "2",
+            "denomination": "gp"
+        }
+    },
+    "_id": "CUQI2QX3OZP9FBXY"
+}

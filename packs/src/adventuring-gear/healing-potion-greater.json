@@ -1,0 +1,19 @@
+{
+    "name": "Healing Potion (Greater)",
+    "type": "equipment",
+    "img": "icons/consumables/potions/bottle-round-corked-red.webp",
+    "system": {
+        "description": {
+            "value": "A creature that ingests this potion regains 4d4 + 4 hit points.  Drinking or administering this potion takes an action.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0.5",
+        "price": {
+            "value": "200",
+            "denomination": "gp"
+        }
+    },
+    "_id": "5NW7KEOTV30PY2IW"
+}

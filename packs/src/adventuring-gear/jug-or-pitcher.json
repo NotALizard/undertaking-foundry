@@ -1,0 +1,19 @@
+{
+    "name": "Jug or Pitcher",
+    "type": "equipment",
+    "img": "icons/containers/kitchenware/jug-clay-brown-sealed.webp",
+    "system": {
+        "description": {
+            "value": "A container normally made of clay or glass, used to carry liquids.  Can carry up to 1 gallon of liquid.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "4",
+        "price": {
+            "value": "2",
+            "denomination": "cp"
+        }
+    },
+    "_id": "S1133KLPCWXCQUMP"
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Empty Book",
+    "type": "equipment",
+    "img": "icons/sundries/books/book-plain-orange.webp",
+    "system": {
+        "description": {
+            "value": "An empty book of 20 pages, just waiting to be filled.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "5",
+        "price": {
+            "value": "5",
+            "denomination": "gp"
+        }
+    },
+    "_id": "V3UNW6GSBC3K5SCJ"
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Crystal (Arcane focus)",
+    "type": "equipment",
+    "img": "icons/commodities/gems/gem-cluster-purple.webp",
+    "system": {
+        "description": {
+            "value": "A small, clear crystal of varying shape and color that is normally put on the top of a staff, in the pommel of a weapon, or worn in some adornment.  Or simply carried.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "10",
+            "denomination": "gp"
+        }
+    },
+    "_id": "SR97YGXPBWT7ZVOV"
+}

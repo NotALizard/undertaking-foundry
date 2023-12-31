@@ -1,0 +1,19 @@
+{
+    "name": "Hempen Rope (50ft)",
+    "type": "equipment",
+    "img": "icons/sundries/survival/rope-wrapped-brown.webp",
+    "system": {
+        "description": {
+            "value": "A sturdy, commonplace rope that can be found in most cities and villages for purchase.  Has 2 Hit Points and can be burst with a DC 17 Strength check.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "10",
+        "price": {
+            "value": "1",
+            "denomination": "gp"
+        }
+    },
+    "_id": "QOUY769A8LEKM4NV"
+}

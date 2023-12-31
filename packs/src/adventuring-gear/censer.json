@@ -1,0 +1,19 @@
+{
+    "name": "Censer",
+    "type": "equipment",
+    "img": "icons/sundries/lights/lantern-iron-yellow.webp",
+    "system": {
+        "description": {
+            "value": "A censer used to burn incense.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "1",
+            "denomination": "gp"
+        }
+    },
+    "_id": "SFXHJWK03FEQVHJT"
+}

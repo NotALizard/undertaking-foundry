@@ -1,0 +1,19 @@
+{
+    "name": "Religious Text (Holy focus)",
+    "type": "equipment",
+    "img": "icons/sundries/books/book-symbol-yellow-grey.webp",
+    "system": {
+        "description": {
+            "value": "A sacred book filled with holy information about one\u2019s religion.  Each page is filled with wisdoms of the religion it speaks of, and has a great connection to the god or gods it represents.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "5",
+        "price": {
+            "value": "10",
+            "denomination": "gp"
+        }
+    },
+    "_id": "2ZUMOJBLJ4Y4ARIP"
+}

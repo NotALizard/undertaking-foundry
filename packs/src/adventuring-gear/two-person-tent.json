@@ -1,19 +1,19 @@
 {
-    "name": "Grappling Hook",
+    "name": "Two-Person Tent",
     "type": "equipment",
-    "img": "icons/tools/fasteners/chain-hook-grey.webp",
+    "img": "icons/environment/settlement/tent.webp",
     "system": {
         "description": {
-            "value": "A multiple hooked metal tip that can be attached to the end of rope to aid in climbing.",
+            "value": "A simple, portable canvas shelter that sleeps two people inside.",
             "chat": "",
             "unidentified": ""
         },
         "source": "Core Rules",
-        "weight": "4",
+        "weight": "20",
         "price": {
             "value": "2",
             "denomination": "gp"
         }
     },
-    "_id": "12FKKFZXQEAFL2IP"
+    "_id": "5XS944QJM0KOFRJZ"
 }

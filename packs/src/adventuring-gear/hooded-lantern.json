@@ -1,0 +1,19 @@
+{
+    "name": "Hooded Lantern",
+    "type": "equipment",
+    "img": "icons/sundries/lights/lantern-bullseye-signal-copper.webp",
+    "system": {
+        "description": {
+            "value": "A lantern made with a hood to dim the light cast when not needed.  The lantern casts bright light in a 30 foot radius and dim light for an additional 30 feet.  Once lit, this lantern burns for 6 hours on a flask (pint) of oil.  As an action, the hood can be lowered, reducing the light to dim light in a 5 foot radius. ",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "2",
+        "price": {
+            "value": "5",
+            "denomination": "gp"
+        }
+    },
+    "_id": "X3CTWXLIS3MGQ0GP"
+}

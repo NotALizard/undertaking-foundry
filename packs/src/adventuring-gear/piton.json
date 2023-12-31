@@ -1,0 +1,19 @@
+{
+    "name": "Piton",
+    "type": "equipment",
+    "img": "icons/tools/fasteners/pin-spiked.webp",
+    "system": {
+        "description": {
+            "value": "A metal climbing tool that resembles a slightly thicker dagger or spike with a ring on its pommel.  Used in climbing kits for securing ropes along the climbing surface and safety catches should one slip and fall while climbing.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0.25",
+        "price": {
+            "value": "5",
+            "denomination": "cp"
+        }
+    },
+    "_id": "PSWYLF5UIWE5IFJE"
+}

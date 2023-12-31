@@ -67,7 +67,7 @@ def doWork():
                 "_id": line[24]
             }
             wstr = json.dumps(w, indent=4)
-            fname = line[0].lower().replace(" ", "_")
+            fname = line[0].lower().replace(" ", "-")
             with open('weapons/' + fname + '.json', 'w') as output_file:
                 output_file.write(wstr)
 

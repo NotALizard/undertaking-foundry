@@ -1,0 +1,19 @@
+{
+    "name": "Empty Vial",
+    "type": "equipment",
+    "img": "icons/consumables/potions/vial-cork-empty.webp",
+    "system": {
+        "description": {
+            "value": "A small glass vial, normally used for collecting samples or storing alchemical ingredients and liquids.  Can hold up to 4 ounces of liquid.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "1",
+            "denomination": "gp"
+        }
+    },
+    "_id": "57R1261RZ0Y3EPWD"
+}

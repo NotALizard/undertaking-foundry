@@ -1,0 +1,19 @@
+{
+    "name": "Glass Bottle",
+    "type": "equipment",
+    "img": "icons/consumables/potions/bottle-corked-empty.webp",
+    "system": {
+        "description": {
+            "value": "A bottle made of glass that can come in a variety of shapes, sizes, and colors.  However, a standard bottle carries about 1 \u00bd pints of liquid.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "2",
+        "price": {
+            "value": "2",
+            "denomination": "gp"
+        }
+    },
+    "_id": "3GYRUXXLFY8WEFP8"
+}

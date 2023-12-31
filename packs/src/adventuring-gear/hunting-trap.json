@@ -1,0 +1,19 @@
+{
+    "name": "Hunting Trap",
+    "type": "equipment",
+    "img": "icons/environment/traps/trap-jaw-green.webp",
+    "system": {
+        "description": {
+            "value": "A tooth-filled metal jaw spring-locked open into a circle of teeth that snap shut on a creature when stepped on.  A heavy 3ft chain is attached to its base, and is often attached or tied to an immobile object like a pole, tree, or spike in the ground.  A creature caught in the trap must make a Dexterity (Save) Check of DC 13 or take 1d4 piercing damage and stop moving.  As long as the creature is within the trap, the creature cannot move further than the chain\u2019s length away from the immobile object.  If the object that the trap is attached to is heavy but can be moved, the creature moves at half movement speed while caught.  As an action a creature can make a DC 14 Strength check to free itself or another creature within its reach.  Each failed check deals an extra 1d4 piercing damage to the trapped creature.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "25",
+        "price": {
+            "value": "5",
+            "denomination": "gp"
+        }
+    },
+    "_id": "OWP94MMKUUTRL8HD"
+}

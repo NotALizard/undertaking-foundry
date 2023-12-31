@@ -1,0 +1,19 @@
+{
+    "name": "Bucket",
+    "type": "equipment",
+    "img": "icons/containers/misc/bucket-steel.webp",
+    "system": {
+        "description": {
+            "value": "Either a wooden or metal bucket that can be used to haul various things.  Much like a basket, but can carry liquids.  A basket can hold up to 3 gallons of liquid or \u00bd a cubic foot of solid material.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "2",
+        "price": {
+            "value": "5",
+            "denomination": "cp"
+        }
+    },
+    "_id": "R9SQVIHY2T9CKC7T"
+}

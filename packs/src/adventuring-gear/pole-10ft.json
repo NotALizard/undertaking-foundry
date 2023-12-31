@@ -1,0 +1,19 @@
+{
+    "name": "Pole (10ft)",
+    "type": "equipment",
+    "img": "icons/commodities/wood/wood-pole.webp",
+    "system": {
+        "description": {
+            "value": "A long, wooden pole.  About 1 \u00bd inches in diameter, weighs 2 pounds.  ",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "7",
+        "price": {
+            "value": "5",
+            "denomination": "cp"
+        }
+    },
+    "_id": "QYYDS9O3L0WDLVA6"
+}

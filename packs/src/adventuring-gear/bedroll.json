@@ -1,0 +1,19 @@
+{
+    "name": "Bedroll",
+    "type": "equipment",
+    "img": "icons/sundries/survival/bedroll-grey.webp",
+    "system": {
+        "description": {
+            "value": "Rolled out and used to sleep within.  Allows a creature to sleep soundly on the ground.  ",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "7",
+        "price": {
+            "value": "1",
+            "denomination": "gp"
+        }
+    },
+    "_id": "VL8VMA950A7U4B64"
+}

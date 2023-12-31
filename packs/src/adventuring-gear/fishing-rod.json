@@ -1,0 +1,19 @@
+{
+    "name": "Fishing Rod",
+    "type": "equipment",
+    "img": "icons/tools/fishing/rod-simple-stick.webp",
+    "system": {
+        "description": {
+            "value": "A long fishing rod, fully featured with a silk line, a steel hook and sinker, and a cork bobber.  Allows the user to attempt to fish using Wisdom (Instinct).  One piece of fishing bait required.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "1",
+            "denomination": "sp"
+        }
+    },
+    "_id": "CZ8HJ72W4FPANI8N"
+}

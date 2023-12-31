@@ -1,0 +1,19 @@
+{
+    "name": "Waterskin",
+    "type": "equipment",
+    "img": "icons/sundries/survival/wetskin-leather-tan.webp",
+    "system": {
+        "description": {
+            "value": "A container specifically made to contain liquids, normally water.  Can carry up to 4 pints of liquid",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "5",
+        "price": {
+            "value": "2",
+            "denomination": "sp"
+        }
+    },
+    "_id": "NC5KBZXAW46HR0EH"
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Fishing Bait",
+    "type": "equipment",
+    "img": "icons/creatures/invertebrates/centipede-brown.webp",
+    "system": {
+        "description": {
+            "value": "Used with a fishing rod to be able to fish. ",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "1",
+            "denomination": "cp"
+        }
+    },
+    "_id": "W5YKJZ4ROL2LNOZE"
+}

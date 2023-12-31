@@ -1,0 +1,19 @@
+{
+    "name": "Glass Mirror",
+    "type": "equipment",
+    "img": "icons/tools/scribal/lens-grey-brown.webp",
+    "system": {
+        "description": {
+            "value": "A finely made mirror made of glass with a fine wooden handle.  Its surface is reflective and can be used as a mirror normally would be.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0.5",
+        "price": {
+            "value": "20",
+            "denomination": "gp"
+        }
+    },
+    "_id": "7Y2BLY532JQWPSQ7"
+}

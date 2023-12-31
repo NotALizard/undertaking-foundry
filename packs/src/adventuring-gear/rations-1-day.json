@@ -1,0 +1,19 @@
+{
+    "name": "Rations (1 day)",
+    "type": "equipment",
+    "img": "icons/consumables/food/berries-ration-round-red.webp",
+    "system": {
+        "description": {
+            "value": "A meal consisting of dry foods suitable for extended travels, usually including dried fruit, jerky, hardtack, nuts, and other such edibles that can take years to go bad.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "2",
+        "price": {
+            "value": "5",
+            "denomination": "sp"
+        }
+    },
+    "_id": "0K9ZLO6XAN2ZM34O"
+}

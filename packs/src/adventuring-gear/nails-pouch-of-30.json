@@ -1,19 +1,19 @@
 {
-    "name": "Grappling Hook",
+    "name": "Nails (Pouch of 30)",
     "type": "equipment",
-    "img": "icons/tools/fasteners/chain-hook-grey.webp",
+    "img": "icons/tools/fasteners/nails-steel-blue.webp",
     "system": {
         "description": {
-            "value": "A multiple hooked metal tip that can be attached to the end of rope to aid in climbing.",
+            "value": "A leather pouch of straight nails of mediocre quality.",
             "chat": "",
             "unidentified": ""
         },
         "source": "Core Rules",
-        "weight": "4",
+        "weight": "1",
         "price": {
             "value": "2",
             "denomination": "gp"
         }
     },
-    "_id": "12FKKFZXQEAFL2IP"
+    "_id": "SI4YUQ5PCNA8WJU9"
 }

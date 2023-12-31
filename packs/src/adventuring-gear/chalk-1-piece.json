@@ -1,0 +1,19 @@
+{
+    "name": "Chalk (1 piece)",
+    "type": "equipment",
+    "img": "icons/commodities/stone/rock-chunk-pumice-white.webp",
+    "system": {
+        "description": {
+            "value": "Used for leaving temporary drawings on rough surfaces.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "1",
+            "denomination": "cp"
+        }
+    },
+    "_id": "K48XT37F5817E5AP"
+}

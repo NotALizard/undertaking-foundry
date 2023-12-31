@@ -1,0 +1,19 @@
+{
+    "name": "Basket",
+    "type": "equipment",
+    "img": "icons/containers/misc/basket-handle-woven-yellow.webp",
+    "system": {
+        "description": {
+            "value": "A basket made of wood or plant fiber that one can carry along with them.  Holds up to 2 cubic feet of solid material or 40 pounds of gear.  Takes a hand to carry normally.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "2",
+        "price": {
+            "value": "4",
+            "denomination": "sp"
+        }
+    },
+    "_id": "MNVMC5VNO2EW6ZX2"
+}

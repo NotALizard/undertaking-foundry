@@ -1,0 +1,19 @@
+{
+    "name": "Scroll Case",
+    "type": "equipment",
+    "img": "icons/commodities/treasure/case-red-silver.webp",
+    "system": {
+        "description": {
+            "value": "A cylindrical leather tube with a removable cap at one end that can hold up to 10 rolled-up papers or 5 rolled-up parchments.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "1",
+            "denomination": "gp"
+        }
+    },
+    "_id": "O6RMIYQVY13GZSL0"
+}

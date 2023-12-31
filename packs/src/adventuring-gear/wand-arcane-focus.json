@@ -1,0 +1,19 @@
+{
+    "name": "Wand (Arcane focus)",
+    "type": "equipment",
+    "img": "icons/weapons/wands/wand-gem-blue.webp",
+    "system": {
+        "description": {
+            "value": "Usually has a straight cylindrical shape, but not always, and is made of either metal, bone, or wood.  Has a length of about 15 inches and weighs about a pound.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "10",
+            "denomination": "gp"
+        }
+    },
+    "_id": "O52WGH0IU5GZFAQS"
+}

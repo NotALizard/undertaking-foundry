@@ -1,0 +1,19 @@
+{
+    "name": "Ladder (10ft)",
+    "type": "equipment",
+    "img": "icons/sundries/misc/ladder.webp",
+    "system": {
+        "description": {
+            "value": "An implement used for ease of climbing.  Used to scale heights no higher than 10 feet.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "25",
+        "price": {
+            "value": "1",
+            "denomination": "sp"
+        }
+    },
+    "_id": "G0UZ3DRX10UXJWKX"
+}

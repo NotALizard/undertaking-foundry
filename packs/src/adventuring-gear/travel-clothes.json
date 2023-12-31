@@ -1,0 +1,19 @@
+{
+    "name": "Travel Clothes",
+    "type": "equipment",
+    "img": "icons/equipment/chest/vest-leather-tattered-white.webp",
+    "system": {
+        "description": {
+            "value": "Clothing made to endure the conditions of traveling.  Has more layers than common clothing and is made with sturdier material than fine clothing.  Normally includes a shirt, pants, boots, gloves, a vest, and a heavy cloak.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "4",
+        "price": {
+            "value": "2",
+            "denomination": "gp"
+        }
+    },
+    "_id": "UT2OGD8BHM2NQWSL"
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Steel Mirror",
+    "type": "equipment",
+    "img": "icons/sundries/survival/mirror-plain.webp",
+    "system": {
+        "description": {
+            "value": "A handheld piece of polished steel that\u2019s surface is reflective enough to work as a decent mirror. ",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0.5",
+        "price": {
+            "value": "5",
+            "denomination": "gp"
+        }
+    },
+    "_id": "3Y6J2CT8ZYJZZOTS"
+}

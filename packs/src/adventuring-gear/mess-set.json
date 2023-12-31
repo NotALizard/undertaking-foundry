@@ -1,0 +1,19 @@
+{
+    "name": "Mess Set",
+    "type": "equipment",
+    "img": "icons/tools/cooking/fork-steel-tan.webp",
+    "system": {
+        "description": {
+            "value": "A tin box that contains a cup and simple cutlery for on-the-go meals.  It clamps together neatly, and one side can actually be used as a cooking pan while the other can be a plate or bowl if necessary.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "2",
+            "denomination": "sp"
+        }
+    },
+    "_id": "S4FPLGGKC25XDSH9"
+}

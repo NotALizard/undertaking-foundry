@@ -1,0 +1,19 @@
+{
+    "name": "Sack",
+    "type": "equipment",
+    "img": "icons/containers/bags/sack-simple-leather-brown.webp",
+    "system": {
+        "description": {
+            "value": "A sack, normally made of burlap, that can carry up to 1 cubic foot of material or 30 pounds of gear.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0.5",
+        "price": {
+            "value": "1",
+            "denomination": "cp"
+        }
+    },
+    "_id": "7IFD7A1BD9BGMK9K"
+}

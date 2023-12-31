@@ -1,0 +1,19 @@
+{
+    "name": "Signet Ring",
+    "type": "equipment",
+    "img": "icons/equipment/finger/ring-signet-tech.webp",
+    "system": {
+        "description": {
+            "value": "A ring with a specific symbol that stands in relief on top.  This ring is used as way of identification for guilds, nobles, and other such people, so the specific symbol on it varies.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "5",
+            "denomination": "gp"
+        }
+    },
+    "_id": "TP360O8J6NS78EC9"
+}

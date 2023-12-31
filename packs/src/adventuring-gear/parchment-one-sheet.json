@@ -1,0 +1,19 @@
+{
+    "name": "Parchment (One sheet)",
+    "type": "equipment",
+    "img": "icons/sundries/documents/parchment-plain-tan.webp",
+    "system": {
+        "description": {
+            "value": "A writing surface, much like paper, made of animal hide, normally sheep\u2019s skin.  Used for writing messages, scribing scrolls, posters, and religious texts.  Interchangeable with paper in most cases.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "1",
+            "denomination": "sp"
+        }
+    },
+    "_id": "POS6K3GG6NQ7YHIZ"
+}

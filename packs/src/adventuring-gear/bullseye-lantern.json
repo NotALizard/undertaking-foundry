@@ -1,0 +1,19 @@
+{
+    "name": "Bullseye Lantern",
+    "type": "equipment",
+    "img": "icons/sundries/lights/lantern-bullseye-signal-copper.webp",
+    "system": {
+        "description": {
+            "value": "A shaped lantern that casts a more concentrated light.  Gives off bright light in a 60 foot cone and dim light for an additional 30 feet.  Once lit, this lantern burns for 6 hours on a flask (pint) of oil. ",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "2",
+        "price": {
+            "value": "10",
+            "denomination": "gp"
+        }
+    },
+    "_id": "GWIPBGL1RL75WA7N"
+}

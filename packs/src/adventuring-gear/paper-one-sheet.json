@@ -1,0 +1,19 @@
+{
+    "name": "Paper (One sheet)",
+    "type": "equipment",
+    "img": "icons/sundries/documents/paper-plain-white.webp",
+    "system": {
+        "description": {
+            "value": "A sheet of paper is a wood based product used for messages, letters, and spellbooks.  Interchangeable with parchment in most cases.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "2",
+            "denomination": "sp"
+        }
+    },
+    "_id": "MUW443DCO8IP1QUB"
+}

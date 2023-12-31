@@ -1,0 +1,19 @@
+{
+    "name": "Totem (Druidic focus)",
+    "type": "equipment",
+    "img": "icons/weapons/wands/wand-totem.webp",
+    "system": {
+        "description": {
+            "value": "A totem that incorporates fur, feathers, teeth, and foliage from sacred animals and plants.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "1",
+            "denomination": "gp"
+        }
+    },
+    "_id": "BBUT1110082UFVGK"
+}

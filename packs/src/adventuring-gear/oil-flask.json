@@ -1,0 +1,19 @@
+{
+    "name": "Oil Flask",
+    "type": "equipment",
+    "img": "icons/consumables/potions/potion-flask-capped-yellow-green.webp",
+    "system": {
+        "description": {
+            "value": "A flask that holds 1 pint of oil.  As an action you can also splash the oil onto a creature within 5 feet of you or throw the flask itself up to 20 feet causing it to shatter on impact.  Throwing it is a ranged attack against the target treats it as an improvised weapon.  On hit the target becomes covered in oil, and should the target take any fire damage before the oil dries (after 1 minute) then they take an additional 5 fire damage from the now-burning oil.  This oil can also be poured on the ground to cover up to a 5 foot square area.  If lit, the oil burns for 2 rounds and deals 2 fire damage to any creature that enters the area or ends their turn there.  A creature can only take damage this way once per turn.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "1",
+            "denomination": "sp"
+        }
+    },
+    "_id": "0LBQXP194EUXUAXW"
+}

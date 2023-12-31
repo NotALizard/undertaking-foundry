@@ -1,0 +1,19 @@
+{
+    "name": "Burn-Oil Flask",
+    "type": "equipment",
+    "img": "icons/consumables/potions/potion-flask-corked-orange.webp",
+    "system": {
+        "description": {
+            "value": "A sticky fluid that is difficult to remove once applied, igniting when exposed to the air.  The flask can be flung as a thrown ranged attack up to 20ft.  On hit, the flask shatters on impact and the target takes 1d4 fire damage at the start of each of its turns until it puts the fire out as a DC 10 Dexterity check to extinguish the flames.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "50",
+            "denomination": "gp"
+        }
+    },
+    "_id": "VLCF18CHSVUAQZXA"
+}

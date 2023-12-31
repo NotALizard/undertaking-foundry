@@ -1,0 +1,19 @@
+{
+    "name": "Staff (Arcane focus)",
+    "type": "equipment",
+    "img": "icons/weapons/staves/staff-simple-gold.webp",
+    "system": {
+        "description": {
+            "value": "Staffs vary widely in appearance, some being straight and cylindrical with an even diameter all the way through, while others are twisted and gnarled branches.  Most are made of wood, polished metal, or crystal.  While it depends on the materials that they are made of, staffs weigh between 2 to 7 pounds.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "4",
+        "price": {
+            "value": "5",
+            "denomination": "gp"
+        }
+    },
+    "_id": "TSB1CL3P4GYRU85R"
+}

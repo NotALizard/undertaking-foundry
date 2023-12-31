@@ -1,0 +1,19 @@
+{
+    "name": "Merchant\u2019s Scale",
+    "type": "equipment",
+    "img": "icons/tools/hand/scale-balances-merchant-brown.webp",
+    "system": {
+        "description": {
+            "value": "A scale that includes a small balance, pans, and a suitable assortment of weights up to 2 pounds.  With this you can measure the exact weight of small objects, such as raw precious metals or trade goods, which can help determine their worth.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "3",
+        "price": {
+            "value": "5",
+            "denomination": "gp"
+        }
+    },
+    "_id": "FV2QYDSKA33VFWW3"
+}

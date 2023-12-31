@@ -1,0 +1,19 @@
+{
+    "name": "Sealing Wax",
+    "type": "equipment",
+    "img": "icons/sundries/documents/envelope-sealed-red-white.webp",
+    "system": {
+        "description": {
+            "value": "A block of hard wax.  It is used to close letters, scrolls, and the like with a seal of some kind, usually being heated up, placed on the object that is being sealed, and pressing the stamp or signet ring in it to leave the symbol on its surface.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "5",
+            "denomination": "sp"
+        }
+    },
+    "_id": "JS6FLMM8RRJ421LH"
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Vestments",
+    "type": "equipment",
+    "img": "icons/equipment/chest/robe-layered-white.webp",
+    "system": {
+        "description": {
+            "value": "A set of liturgical garments and articles created and worn for religious purposes.  Can be placed over common clothes, robes, or light armors.  Generally expected to be clean for religious purposes.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "5",
+        "price": {
+            "value": "10",
+            "denomination": "gp"
+        }
+    },
+    "_id": "P74Y95LV5368WJ9O"
+}

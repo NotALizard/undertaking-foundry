@@ -1,0 +1,19 @@
+{
+    "name": "Tinderbox",
+    "type": "equipment",
+    "img": "icons/tools/smithing/furnace-fire-metal-orange.webp",
+    "system": {
+        "description": {
+            "value": "A small container with flint, fire steel, and tinder of some kind used to kindle a fire on the inside.  Actually using this to light a torch, or anything else with abundant, exposed fuel, will take an action.  Using it to light a fire otherwise takes 1 minute.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "5",
+            "denomination": "sp"
+        }
+    },
+    "_id": "NSD8EIX33YF2VG6P"
+}

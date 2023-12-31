@@ -1,0 +1,19 @@
+{
+    "name": "Spellbook",
+    "type": "equipment",
+    "img": "icons/sundries/books/book-symbol-triangle-silver-brown.webp",
+    "system": {
+        "description": {
+            "value": "A leather bound tome with 100 blank vellum pages that are suitable for recording spells.  An essential for wizards.  More resilient to heat, water, wear and tear than those often made by Wizards on their own, but only by so much.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "3",
+        "price": {
+            "value": "50",
+            "denomination": "gp"
+        }
+    },
+    "_id": "V22FF305SXF7DYLF"
+}

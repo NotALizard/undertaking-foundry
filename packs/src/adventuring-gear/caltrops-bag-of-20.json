@@ -1,0 +1,19 @@
+{
+    "name": "Caltrops (bag of 20)",
+    "type": "equipment",
+    "img": "icons/environment/traps/metal-spikes.webp",
+    "system": {
+        "description": {
+            "value": "Small spikes that can be spread across a 5ft square area as an action.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "2",
+        "price": {
+            "value": "1",
+            "denomination": "gp"
+        }
+    },
+    "_id": "MG4SALOHXG2Q5SF9"
+}

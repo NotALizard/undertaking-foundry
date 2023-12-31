@@ -1,0 +1,19 @@
+{
+    "name": "Shovel",
+    "type": "equipment",
+    "img": "icons/tools/hand/shovel-spade-steel-grey.webp",
+    "system": {
+        "description": {
+            "value": "A piece of metal shaped specifically for digging with a long wooden handle attached to it.  Can also be used as an improvised weapon if necessary.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "5",
+        "price": {
+            "value": "2",
+            "denomination": "gp"
+        }
+    },
+    "_id": "5GO43PS0V7KUS596"
+}

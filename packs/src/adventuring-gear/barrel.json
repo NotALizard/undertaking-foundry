@@ -1,0 +1,19 @@
+{
+    "name": "Barrel",
+    "type": "equipment",
+    "img": "icons/containers/barrels/barrel-oak-steel-brown.webp",
+    "system": {
+        "description": {
+            "value": "A wooden barrel with metal straps made to transport and hold cargo.  Can hold up to 40 gallons of liquid, or 4 cubic feet of solid material.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "70",
+        "price": {
+            "value": "2",
+            "denomination": "gp"
+        }
+    },
+    "_id": "Q1BF2P9C8FNJJHPN"
+}

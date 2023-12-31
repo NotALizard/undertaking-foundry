@@ -1,0 +1,19 @@
+{
+    "name": "Yew Wand (Druidic focus)",
+    "type": "equipment",
+    "img": "icons/weapons/wands/wand-gem-green.webp",
+    "system": {
+        "description": {
+            "value": "A wand made out of yew or another special or sacred wood.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "10",
+            "denomination": "gp"
+        }
+    },
+    "_id": "KI42P6Q38K1M2XYT"
+}

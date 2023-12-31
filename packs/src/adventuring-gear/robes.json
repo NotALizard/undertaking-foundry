@@ -1,19 +1,19 @@
 {
-    "name": "Grappling Hook",
+    "name": "Robes",
     "type": "equipment",
-    "img": "icons/tools/fasteners/chain-hook-grey.webp",
+    "img": "icons/equipment/chest/robe-layered-teal.webp",
     "system": {
         "description": {
-            "value": "A multiple hooked metal tip that can be attached to the end of rope to aid in climbing.",
+            "value": "A set of robes of decent quality that are normally about ankle length.",
             "chat": "",
             "unidentified": ""
         },
         "source": "Core Rules",
         "weight": "4",
         "price": {
-            "value": "2",
+            "value": "1",
             "denomination": "gp"
         }
     },
-    "_id": "12FKKFZXQEAFL2IP"
+    "_id": "M41Z66F306N85DQZ"
 }

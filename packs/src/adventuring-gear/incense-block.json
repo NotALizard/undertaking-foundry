@@ -1,0 +1,19 @@
+{
+    "name": "Incense Block",
+    "type": "equipment",
+    "img": "icons/commodities/materials/bowl-powder-yellow.webp",
+    "system": {
+        "description": {
+            "value": "A block of incense used for fragrant burning.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "2",
+            "denomination": "sp"
+        }
+    },
+    "_id": "NQIM8Y0A7O366BTY"
+}

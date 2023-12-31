@@ -1,0 +1,19 @@
+{
+    "name": "Acid Vial",
+    "type": "equipment",
+    "img": "icons/consumables/potions/vial-cork-green.webp",
+    "system": {
+        "description": {
+            "value": "Can be splashed on or applied to a target within 5ft, or thrown up to 20ft, as a thrown ranged attack.  On hit or application the target takes 2d6 acid damage.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "25",
+            "denomination": "gp"
+        }
+    },
+    "_id": "DZZBDW50AC0WLWUO"
+}

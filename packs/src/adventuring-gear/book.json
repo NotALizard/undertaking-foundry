@@ -1,0 +1,19 @@
+{
+    "name": "Book",
+    "type": "equipment",
+    "img": "icons/sundries/books/book-backed-wood-tan.webp",
+    "system": {
+        "description": {
+            "value": "May contain all sorts of information depending on the book\u2019s contents.  Reading a specialized book grants advantage on harmless rolls related to the subject for 1d4 days afterward.  The reader cannot gain this advantage again until a month has passed since the book\u2019s completion.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "5",
+        "price": {
+            "value": "25",
+            "denomination": "gp"
+        }
+    },
+    "_id": "2X4O4QMWO18GTVQW"
+}
