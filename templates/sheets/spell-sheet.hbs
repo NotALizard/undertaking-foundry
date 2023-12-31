@@ -24,6 +24,7 @@
       <input type="hidden" id="input-target-units" name="system.target.units" value="{{item.system.target.units}}" data-dtype="String">
       <input type="hidden" id="input-target-type" name="system.target.type" value="{{item.system.target.type}}" data-dtype="String">
       <input type="hidden" id="input-charge" name="system.charge" value="{{item.system.charge}}" data-dtype="Boolean">
+      <input type="hidden" id="input-show-attack" name="system.showInAttacks" value="{{item.system.showInAttacks}}" data-dtype="Boolean">
       {{!-- Description Tab --}}
       <div class="tab full-page flexrow active" data-group="primary" data-tab="description">
         <div class="fcol">
@@ -149,6 +150,12 @@
             </select>
           </div>
           {{> "systems/undertaking/templates/partials/item/edit-attack.hbs"}}
+          <div class="item-row frow">
+            <div class="frow short">
+              <label>{{ localize "undertaking.ShowInAttacks" }}:</label>
+              <input type="checkbox" class="input-checkbox" data-for="#input-show-attack" {{#ifCond item.system.showInAttacks '==' true}}checked{{/ifCond}}/>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -406,7 +406,11 @@ a.shield-toggle.checked{
     min-width: 190px
 }
 .atk-row{
+    max-height: 300px;
     padding:4px;
+}
+.item-card.attack.item p{
+    margin: 1px 0px;
 }
 .window-content:has(.desperate){
     box-shadow: 0 0 200px rgb(0 0 0 / 90%) inset;
@@ -916,6 +920,16 @@ a.damage-control.delete-damage {
 }
 .item-row {
     margin-bottom:4px;
+}
+.item-roll-container.attack{
+    font-size: 28px;
+    padding: 4px;
+    margin: auto 0px;
+}
+.item-props{
+    padding-left: 4px;
+    flex: 1;
+    display: flex;
 }
 
 .config-container {

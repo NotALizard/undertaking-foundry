@@ -79,11 +79,38 @@
         },
         "stats": {
           "ac": {
+            "base": 10,
             "flat": null,
             "calc": "default",
             "formula": "",
             "useShield": 1,
-            "shield": 2
+            "shield": 2,
+            "attributes": {
+              "dex":{
+                "enabled": true,
+                "limit": null
+              },
+              "str":{
+                "enabled": false,
+                "limit": null
+              },
+              "con":{
+                "enabled": false,
+                "limit": null
+              },
+              "int":{
+                "enabled": false,
+                "limit": null
+              },
+              "wis":{
+                "enabled": false,
+                "limit": null
+              },
+              "pre":{
+                "enabled": false,
+                "limit": null
+              }
+            }
           },
           "hp": {
             "value": 10,
@@ -819,7 +846,8 @@
       "scaling": {
         "mode": "none",
         "formula": null
-      }
+      },
+      "attribute": "spell"
     },
     "weapon": {
       "templates": ["itemDescription", "physicalItem" ,"activatedEffect", "action", "mountable"],

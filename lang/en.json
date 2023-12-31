@@ -1,6 +1,7 @@
 {
   "undertaking": {
     "None": "None",
+    "Edit": "Edit",
     "LockEdit": "Lock Editing",
     "UnlockEdit": "Unlock Editing",
     "Name": "Name",
@@ -78,6 +79,8 @@
     },
     "SaveCheck":"Save Check",
     "Attribute": "Attribute",
+    "MainAttribute": "Main Attribute",
+    "ByClass": "By Class",
     "Modifier": "Modifier",
     "Attributes":{
       "Strength": "Strength",
@@ -86,6 +89,14 @@
       "Intelligence": "Intelligence",
       "Wisdom": "Wisdom",
       "Presence": "Presence"
+    },
+    "AttributesAbbrev":{
+      "str": "STR",
+      "dex": "DEX",
+      "con": "CON",
+      "int": "INT",
+      "wis": "WIS",
+      "pre": "PRE"
     },
     "Skills":{
       "Acrobatics": "Acrobatics",
@@ -125,6 +136,7 @@
     "Backstory": "Backstory",
     "Notes": "Notes",
     "Proficiencies": "Profieciencies",
+    "Proficient": "Proficient",
     "Trades": "Trades",
     "OtherProficiencies": "Other Profieciencies",
     "Languages": "Languages",
@@ -196,6 +208,7 @@
       "line": "Line",
       "sphere": "Sphere"
     },
+    "ShowInAttacks": "ShowInAttacks",
     "WeaponType": "Weapon Type",
     "ActionType": "Action Type",
     "MeleeWeaponAtk": "Melee Weapon Attack",
@@ -234,6 +247,7 @@
       "una": "Unarmed",
       "ver": "Versatile"
     },
+    "Roll": "Roll",
     "Chat": {
       "Confirm": "Confirm",
       "Cancel": "Cancel",

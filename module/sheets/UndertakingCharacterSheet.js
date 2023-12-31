@@ -20,7 +20,7 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     const context = super.getData();
     context.config = CONFIG.undertaking;
 
-    context.attacks = context.items.filter(function (item) { return item.type == "weapon"});
+    context.attacks = context.items.filter(function (item) { return (item.type == "weapon" && item.system.showInAttacks ) || (item.type == "spell" && item.system.showInAttacks )});
     context.equipment = context.items.filter(function (item) { return item.type == "equipment" || item.type == "weapon"});
     context.classes = context.items.filter(function (item) { return item.type == "class"});
     context.archetypes = context.items.filter(function (item) { return item.type == "archetype"});
@@ -106,6 +106,9 @@ export default class UndertakingCharacterSheet extends ActorSheet {
 
 
   activateListeners(html){
+    html.find(".input-checkbox").on("change", event => {
+      this._changeCheckbox(event);
+    });
     html.find(".profcheck.save-check").on("click", event => {
       this._toggleSaveProficiency(event);
     });
@@ -172,6 +175,22 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     this._fixElementSizes(html);
 
     super.activateListeners(html);
+  }
+
+  _changeCheckbox(event){
+    event.preventDefault();
+    const dropdown = event.currentTarget.closest(".input-checkbox");
+    const target = dropdown.dataset.for;
+    const root = event.currentTarget.closest(".sheet-body");
+    const field = root.querySelector(target);
+
+    if(field.value == 'true'){
+      field.value = false;
+    }
+    else{
+      field.value = true;
+    }
+    return this._onSubmit(event);
   }
 
   _fixElementSizes(html){

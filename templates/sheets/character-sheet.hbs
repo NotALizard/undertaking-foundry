@@ -378,7 +378,7 @@
                                 <div class="scroll-container fill-space">
                                     <div class="scroll-area attacks">
                                         {{#each attacks as |attack id|}}
-                                        {{> "systems/undertaking/templates/partials/character/attack-card.hbs" attack lockEdit=../actor.system.details.editLock}}
+                                        {{> "systems/undertaking/templates/partials/character/attack-card.hbs" attack lockEdit=../actor.system.details.editLock actor=..}}
                                         {{/each}}
                                     </div>
                                 </div>
@@ -716,33 +716,81 @@
 
                 <!-- Mana Settings -->
                 <div class="config-group fcol">
-                    <div class="config-header frow">
-                        <label>Spells &amp; Mana</label>
+                    <div class="fcol">
+                        <div class="config-header frow">
+                            <label>Armor Class</label>
+                        </div>
+                        <div class="config-input frow">
+                            <label>Base AC</label>
+                            <input name="system.stats.ac.base" type="number" placeholder="10" value="{{actor.system.stats.ac.base}}" data-dtype="Number" />
+                        </div>
+                        <div class="config-input frow">
+                            <input type="hidden" id="input-ac-dex" name="system.stats.ac.attributes.dex.enabled" value="{{actor.system.stats.ac.attributes.dex.enabled}}" data-dtype="Boolean">
+                            <input type="checkbox" class="input-checkbox" data-for="#input-ac-dex" {{#ifCond actor.system.stats.ac.attributes.dex.enabled '==' true}}checked{{/ifCond}}/>
+                            <label>Add Dex. Limit:</label>
+                            <input name="system.stats.ac.attributes.dex.limit" type="number" value="{{actor.system.stats.ac.attributes.dex.limit}}" data-dtype="Number" />
+                        </div>
+                        <div class="config-input frow">
+                            <input type="hidden" id="input-ac-str" name="system.stats.ac.attributes.str.enabled" value="{{actor.system.stats.ac.attributes.str.enabled}}" data-dtype="Boolean">
+                            <input type="checkbox" class="input-checkbox" data-for="#input-ac-str" {{#ifCond actor.system.stats.ac.attributes.str.enabled '==' true}}checked{{/ifCond}}/>
+                            <label>Add Str. Limit:</label>
+                            <input name="system.stats.ac.attributes.str.limit" type="number" value="{{actor.system.stats.ac.attributes.str.limit}}" data-dtype="Number" />
+                        </div>
+                        <div class="config-input frow">
+                            <input type="hidden" id="input-ac-con" name="system.stats.ac.attributes.con.enabled" value="{{actor.system.stats.ac.attributes.con.enabled}}" data-dtype="Boolean">
+                            <input type="checkbox" class="input-checkbox" data-for="#input-ac-con" {{#ifCond actor.system.stats.ac.attributes.con.enabled '==' true}}checked{{/ifCond}}/>
+                            <label>Add Con. Limit:</label>
+                            <input name="system.stats.ac.attributes.con.limit" type="number" value="{{actor.system.stats.ac.attributes.con.limit}}" data-dtype="Number" />
+                        </div>
+                        <div class="config-input frow">
+                            <input type="hidden" id="input-ac-int" name="system.stats.ac.attributes.int.enabled" value="{{actor.system.stats.ac.attributes.int.enabled}}" data-dtype="Boolean">
+                            <input type="checkbox" class="input-checkbox" data-for="#input-ac-int" {{#ifCond actor.system.stats.ac.attributes.int.enabled '==' true}}checked{{/ifCond}}/>
+                            <label>Add Int. Limit:</label>
+                            <input name="system.stats.ac.attributes.int.limit" type="number" value="{{actor.system.stats.ac.attributes.int.limit}}" data-dtype="Number" />
+                        </div>
+                        <div class="config-input frow">
+                            <input type="hidden" id="input-ac-wis" name="system.stats.ac.attributes.wis.enabled" value="{{actor.system.stats.ac.attributes.wis.enabled}}" data-dtype="Boolean">
+                            <input type="checkbox" class="input-checkbox" data-for="#input-ac-wis" {{#ifCond actor.system.stats.ac.attributes.wis.enabled '==' true}}checked{{/ifCond}}/>
+                            <label>Add Wis. Limit:</label>
+                            <input name="system.stats.ac.attributes.wis.limit" type="number" value="{{actor.system.stats.ac.attributes.wis.limit}}" data-dtype="Number" />
+                        </div>
+                        <div class="config-input frow">
+                            <input type="hidden" id="input-ac-pre" name="system.stats.ac.attributes.pre.enabled" value="{{actor.system.stats.ac.attributes.pre.enabled}}" data-dtype="Boolean">
+                            <input type="checkbox" class="input-checkbox" data-for="#input-ac-pre" {{#ifCond actor.system.stats.ac.attributes.pre.enabled '==' true}}checked{{/ifCond}}/>
+                            <label>Add Pre. Limit:</label>
+                            <input name="system.stats.ac.attributes.pre.limit" type="number" value="{{actor.system.stats.ac.attributes.pre.limit}}" data-dtype="Number" />
+                        </div>
+                        
                     </div>
-                    <div class="config-input frow">
-                        <label>Max Mana Bonus</label>
-                        <input name="system.stats.mana.bonus" type="number" placeholder="0" value="{{actor.system.stats.mana.bonus}}" data-dtype="Number" />
-                    </div>
-                    <div class="config-input frow">
-                        <label>Charge Limit Bonus</label>
-                        <input name="system.stats.mana.chargeLimit.bonus" type="number" placeholder="0" value="{{actor.system.stats.mana.chargeLimit.bonus}}" data-dtype="Number" />
-                    </div>
-                    <div class="config-input frow">
-                        <label>Short Rest Mana Gain Bonus</label>
-                        <input name="system.stats.mana.shortRestGain.bonus" type="number" placeholder="0" value="{{actor.system.stats.mana.shortRestGain.bonus}}" data-dtype="Number" />
-                    </div>
-                    <div class="config-input frow">
-                        <label>Short Rest Mana Gain Divisor</label>
-                        <input name="system.stats.mana.shortRestGain.divisor" type="number" placeholder="4" value="{{actor.system.stats.mana.shortRestGain.divisor}}" data-dtype="Number" />
-                    </div>
-                    <hr/>
-                    <div class="config-input frow">
-                        <label>Spell Attack Bonus</label>
-                        <input name="system.bonuses.attack.spell.all.attack" type="number" placeholder="0" value="{{actor.system.bonuses.attack.spell.all.attack}}" data-dtype="Number" />
-                    </div>
-                    <div class="config-input frow">
-                        <label>Spell Save DC Bonus</label>
-                        <input name="system.bonuses.spell.dc" type="number" placeholder="0" value="{{actor.system.bonuses.spell.dc}}" data-dtype="Number" />
+                    <div class="fcol" style="border-top: solid; padding-top: 4px; margin-top: 4px;">
+                        <div class="config-header frow">
+                            <label>Spells &amp; Mana</label>
+                        </div>
+                        <div class="config-input frow">
+                            <label>Max Mana Bonus</label>
+                            <input name="system.stats.mana.bonus" type="number" placeholder="0" value="{{actor.system.stats.mana.bonus}}" data-dtype="Number" />
+                        </div>
+                        <div class="config-input frow">
+                            <label>Charge Limit Bonus</label>
+                            <input name="system.stats.mana.chargeLimit.bonus" type="number" placeholder="0" value="{{actor.system.stats.mana.chargeLimit.bonus}}" data-dtype="Number" />
+                        </div>
+                        <div class="config-input frow">
+                            <label>Short Rest Mana Gain Bonus</label>
+                            <input name="system.stats.mana.shortRestGain.bonus" type="number" placeholder="0" value="{{actor.system.stats.mana.shortRestGain.bonus}}" data-dtype="Number" />
+                        </div>
+                        <div class="config-input frow">
+                            <label>Short Rest Mana Gain Divisor</label>
+                            <input name="system.stats.mana.shortRestGain.divisor" type="number" placeholder="4" value="{{actor.system.stats.mana.shortRestGain.divisor}}" data-dtype="Number" />
+                        </div>
+                        <hr/>
+                        <div class="config-input frow">
+                            <label>Spell Attack Bonus</label>
+                            <input name="system.bonuses.attack.spell.all.attack" type="number" placeholder="0" value="{{actor.system.bonuses.attack.spell.all.attack}}" data-dtype="Number" />
+                        </div>
+                        <div class="config-input frow">
+                            <label>Spell Save DC Bonus</label>
+                            <input name="system.bonuses.spell.dc" type="number" placeholder="0" value="{{actor.system.bonuses.spell.dc}}" data-dtype="Number" />
+                        </div>
                     </div>
                 </div>
 

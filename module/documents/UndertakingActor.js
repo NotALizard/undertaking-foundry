@@ -143,8 +143,52 @@ export default class UndertakingActor extends Actor {
     system.stats.init.total = system.attributes[system.stats.init.attribute].mod + system.stats.init.bonus;
 
     //calc AC
-    let unshielded = 10 + system.attributes.dex.mod;
+    let unshielded = system.stats.ac.base;
     let shield = system.stats.ac.shield;
+    if(system.stats.ac.attributes.dex.enabled){
+      let dex = system.attributes.dex.mod;
+      if(system.stats.ac.attributes.dex.limit){
+        dex = Math.min(dex, system.stats.ac.attributes.dex.limit);
+      }
+      unshielded += dex;
+    }
+    if(system.stats.ac.attributes.str.enabled){
+      let str = system.attributes.str.mod;
+      if(system.stats.ac.attributes.str.limit){
+        str = Math.min(str, system.stats.ac.attributes.str.limit);
+      }
+      unshielded += str;
+    }
+    if(system.stats.ac.attributes.con.enabled){
+      let con = system.attributes.con.mod;
+      if(system.stats.ac.attributes.con.limit){
+        con = Math.min(con, system.stats.ac.attributes.con.limit);
+      }
+      unshielded += con;
+    }
+    if(system.stats.ac.attributes.int.enabled){
+      let int = system.attributes.int.mod;
+      if(system.stats.ac.attributes.int.limit){
+        int = Math.min(int, system.stats.ac.attributes.int.limit);
+      }
+      unshielded += int;
+    }
+    if(system.stats.ac.attributes.wis.enabled){
+      let wis = system.attributes.wis.mod;
+      if(system.stats.ac.attributes.wis.limit){
+        wis = Math.min(wis, system.stats.ac.attributes.wis.limit);
+      }
+      unshielded += wis;
+    }
+    if(system.stats.ac.attributes.pre.enabled){
+      let pre = system.attributes.pre.mod;
+      if(system.stats.ac.attributes.pre.limit){
+        pre = Math.min(pre, system.stats.ac.attributes.pre.limit);
+      }
+      unshielded += pre;
+    }
+
+
     system.stats.ac.unshielded = unshielded;
     system.stats.ac.total = unshielded + (system.stats.ac.useShield * shield);
   }

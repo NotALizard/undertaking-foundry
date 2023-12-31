@@ -1,12 +1,37 @@
 <div class="item-card attack item frow" data-item-id="{{_id}}">
-    <div class="item-name attack">
-        <a class="item-open"><p>{{name}}</p></a>
+    <div class="item-roll-container attack">
+        <a class="item-roll attack" title="{{ localize "undertaking.Roll" }}">
+            <i class="fa-solid fa-dice-d20"></i>
+        </a>
+    </div>
+    <div class="fcol fill-space">
+        <div class="frow">
+            <div class="item-name attack long">
+                <a class="item-open" title="{{ localize "undertaking.Edit" }}"><p>{{name}}</p></a>
+            </div>
+            <div class="short">
+                <p>{{#hitDC . actor}}{{/hitDC}}</p>
+            </div>
+            <div class="long">
+                <p>{{#attackDamage . actor}}{{/attackDamage}}</p>
+            </div>
+        </div>
+        <div class="frow item-props long">
+            {{#ifCond type '==' 'weapon'}} 
+                <p>{{#weaponTraits .}}{{/weaponTraits}}</p>
+            {{/ifCond}}
+            {{#ifCond type '==' 'spell'}} 
+                <p>{{#spellTraits .}}{{/spellTraits}}</p>
+            {{/ifCond}}
+        </div>
     </div>
     <div class="item-buttons attack fcol">
-        {{#ifCond lockEdit '==' 0}}                        
-            <a class="item-delete" title="{{ localize "undertaking.DeleteItem" }}">
-                <i class="fas fa-trash"></i>
-            </a>
+        {{#ifCond type '==' 'attack'}}  
+            {{#ifCond lockEdit '==' 0}}                        
+                <a class="item-delete" title="{{ localize "undertaking.DeleteItem" }}">
+                    <i class="fas fa-trash"></i>
+                </a>
+            {{/ifCond}}
         {{/ifCond}}
     </div>
 </div>

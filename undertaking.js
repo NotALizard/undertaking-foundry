@@ -135,6 +135,259 @@ Hooks.once("init",function(){
     return value;
   });
 
+  Handlebars.registerHelper('weaponTraits', function(item, options) {
+    let props = [];
+    if(item.system.range && (item.system.range.value > 0 || item.system.range.long > 0 )){
+      props.push(`Range: ${item.system.range.value || 0} / ${item.system.range.long || 0} ${item.system.range.units ? item.system.range.units : ""}`);
+    }
+    for (const [key, value] of Object.entries(item.system.properties)) {
+      if(value){
+        switch(key){
+          case 'ver':
+            console.log('vers');
+            let die = item.system.damage.versatile || " ";
+            die = die.split('+')[0].trim();
+            let localName = game.i18n.localize(`undertaking.WeaponTraits.${key}`);
+            props.push(`${localName} (${die})`);
+            break;
+          default:
+            props.push(game.i18n.localize(`undertaking.WeaponTraits.${key}`));
+            break;
+        }
+      }
+    }
+    let propsStr = props.join(', ');
+    let chatStr = item.system.chatFlavor;
+    if(propsStr && propsStr != "" && chatStr && chatStr != ""){
+      return `${propsStr}; ${chatStr}`;
+    }
+    else if (propsStr && propsStr != ""){
+      return propsStr;
+    }
+    else if (chatStr && chatStr != ""){
+      return chatStr;
+    }
+    return "";
+  });
+
+  Handlebars.registerHelper('hitDC', function(item, sheet, options) {
+    if(item.name == "Deposition"){
+      console.log(item);
+    }
+    let toHit = "";
+    let aType = item.system.actionType;
+    if(["mwak","rwak","msak","rsak"].includes(aType)){
+      let mod = 0;
+      let prof = 0;
+      let attr = item.system.attribute;
+      if(attr == "spell"){
+        for (let c of sheet.casters){
+          if(c.system.identifier == item.system.classIdentifier){
+            attr = c.system.categorization.spellcaster.attribute;
+          }
+        }
+      }
+      switch(attr){
+        case "dex":
+          mod = sheet.actor.system.attributes.dex.mod;
+          break;
+        case "str":
+          mod = sheet.actor.system.attributes.str.mod;
+          break;
+        case "con":
+          mod = sheet.actor.system.attributes.con.mod;
+          break;
+        case "int":
+          mod = sheet.actor.system.attributes.int.mod;
+          break;
+        case "wis":
+          mod = sheet.actor.system.attributes.wis.mod;
+          break;
+        case "pre":
+          mod = sheet.actor.system.attributes.str.mod;
+          break;
+      }
+      if(aType == "msak" || aType == "rsak" || item.system.proficient){
+        prof = sheet.actor.system.stats.profBonus;
+      }
+
+      let bonus = 0;
+      bonus = +(item.system.attackBonus)  || 0;
+      let bonusAll = 0;
+      let bonusSome = 0;
+      if(aType == "mwak" || aType == "rwak"){
+        bonusAll = +(sheet.actor.system.bonuses.attack.weapon.all) || 0;
+        if(aType == "mwak"){
+          bonusSome = +(sheet.actor.system.bonuses.attack.weapon.melee) || 0;
+        }
+        if(aType == "rwak"){
+          bonusSome = +(sheet.actor.system.bonuses.attack.weapon.ranged) || 0;
+        }
+      }
+      if(aType == "msak" || aType == "rsak"){
+        bonusAll = +(sheet.actor.system.bonuses.attack.spell.all) || 0;
+        if(aType == "msak"){
+          bonusSome = +(sheet.actor.system.bonuses.attack.spell.melee) || 0;
+        }
+        if(aType == "rsak"){
+          bonusSome = +(sheet.actor.system.bonuses.attack.spell.ranged) || 0;
+        }
+      }
+      let hitTot = 0 + mod + prof + bonus + bonusAll + bonusSome;
+      toHit = `Hit: ${hitTot >= 0 ? "+" : ""}${hitTot}`;
+    }
+    let dc = "";
+    if(item.system.save && item.system.save.attribute){
+      let mod = 0;
+      let prof = 0;
+      let dcTot = 0;
+      let bonus = 0;
+      let attr = item.system.save.scaling;
+      if(attr == "flat"){
+        dcTot = +item.system.save.dc;
+      }
+      else{
+        if(attr == "spell"){
+          for (let c of sheet.casters){
+            if(c.system.identifier == item.system.classIdentifier){
+              attr = c.system.categorization.spellcaster.attribute;
+            }
+          }
+        }
+        switch(attr){
+          case "dex":
+            mod = sheet.actor.system.attributes.dex.mod;
+            break;
+          case "str":
+            mod = sheet.actor.system.attributes.str.mod;
+            break;
+          case "con":
+            mod = sheet.actor.system.attributes.con.mod;
+            break;
+          case "int":
+            mod = sheet.actor.system.attributes.int.mod;
+            break;
+          case "wis":
+            mod = sheet.actor.system.attributes.wis.mod;
+            break;
+          case "pre":
+            mod = sheet.actor.system.attributes.str.mod;
+            break;
+        }
+        prof = sheet.actor.system.stats.profBonus;
+        bonus = +(sheet.actor.system.bonuses.spell.dc) || 0;
+        dcTot = 8 + prof + mod + bonus;
+      }
+      dc = `DC ${dcTot} ${game.i18n.localize(`undertaking.AttributesAbbrev.${item.system.save.attribute}`)}`;
+    }
+    if(toHit && toHit != "" && dc && dc != ""){
+      return `${toHit}<br>${dc}`;
+    }
+    else if (toHit && toHit != ""){
+      return toHit;
+    }
+    else if (dc && dc != ""){
+      return dc;
+    }
+    return "";
+  });
+
+  Handlebars.registerHelper('attackDamage', function(item, sheet, options) {
+    let mod = 0;
+    let attr = item.system.attribute;
+    if(attr == "spell"){
+      for (let c of sheet.casters){
+        if(c.system.identifier == item.system.classIdentifier){
+          attr = c.system.categorization.spellcaster.attribute;
+        }
+      }
+    }
+    switch(attr){
+      case "dex":
+        mod = sheet.actor.system.attributes.dex.mod;
+        break;
+      case "str":
+        mod = sheet.actor.system.attributes.str.mod;
+        break;
+      case "con":
+        mod = sheet.actor.system.attributes.con.mod;
+        break;
+      case "int":
+        mod = sheet.actor.system.attributes.int.mod;
+        break;
+      case "wis":
+        mod = sheet.actor.system.attributes.wis.mod;
+        break;
+      case "pre":
+        mod = sheet.actor.system.attributes.str.mod;
+        break;
+    }
+
+    let parts = [];
+
+    for(let dmg of item.system.damage.parts){
+      let dstr = dmg.join(" ");
+      dstr = dstr.replaceAll("@mod", mod);
+      dstr = dstr.replaceAll("@dex", sheet.actor.system.attributes.dex.mod);
+      dstr = dstr.replaceAll("@str", sheet.actor.system.attributes.str.mod);
+      dstr = dstr.replaceAll("@con", sheet.actor.system.attributes.con.mod);
+      dstr = dstr.replaceAll("@int", sheet.actor.system.attributes.int.mod);
+      dstr = dstr.replaceAll("@wis", sheet.actor.system.attributes.wis.mod);
+      dstr = dstr.replaceAll("@pre", sheet.actor.system.attributes.pre.mod);
+      parts.push(dstr);
+    }
+    return parts.join(", ");
+  });
+
+  Handlebars.registerHelper('spellTraits', function(item, options) {
+    let spellStr = "";
+    let parts = [];
+    if(item.system.range.units == 'ft'){
+      parts.push(`Range: ${item.system.range.value} ft`);
+    }
+    else if(item.system.range.units == 'touch'){
+      parts.push(`Range: ${game.i18n.localize(`undertaking.Touch`)}`);
+    }
+    else if(item.system.range.units == 'self'){
+      parts.push(`Range: ${game.i18n.localize(`undertaking.Self`)}`);
+    }
+
+    if(item.system.level == 0){
+      //parts.push(`${game.i18n.localize(`undertaking.SpellSchools.${item.system.school}`)} ${game.i18n.localize(`undertaking.Cantrip`)}`);
+      parts.push(`${game.i18n.localize(`undertaking.Cantrip`)}`);
+    }
+    else{
+      //parts.push(`${game.i18n.localize(`undertaking.Level`)} ${item.system.level} ${game.i18n.localize(`undertaking.SpellSchools.${item.system.school}`)}`);
+      parts.push(`${game.i18n.localize(`undertaking.Level`)} ${item.system.level}`);
+    }
+
+    let components = [];
+    if(item.system.components.somatic){
+      components.push('S');
+    }
+    if(item.system.components.verbal){
+      components.push('V');
+    }
+    if(item.system.components.material){
+      components.push('M');
+    }
+    if(components.length > 0){
+      parts.push(components.join(' '));
+    }
+
+    if(item.system.components.concentration){
+      parts.push(game.i18n.localize(`undertaking.Concentration`));
+    }
+
+
+    let chatStr = item.system.chatFlavor;
+    if (chatStr && chatStr != ""){
+      parts.push(chatStr);
+    }
+    spellStr = parts.join(", ");
+    return spellStr;
+  });
+
   Handlebars.registerHelper('json', function(context) {
     return JSON.stringify(context);
   });
