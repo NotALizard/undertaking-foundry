@@ -1,0 +1,62 @@
+{
+    "name": "Stability",
+    "type": "spell",
+    "img": "icons/environment/settlement/columned-forum.webp",
+    "system": {
+        "description": {
+            "value": "<p>A living creature you touch begins to feel a solidarity and control in their system.  Choose two of the following effects to happen:</p><ul><li>If the creature has 0 hit points, the creature becomes stabilized.</li><li>The creature cannot be unwillingly moved from its spot for the duration.  This effect ends if the target chooses to move more than 5ft.</li><li>The creature is immune to being knocked @Compendium[undertaking.conditions.RK3DF56CKMQUV6DM]{Prone} for the duration.</li>  </li></ul><p>The effects of this spell cannot be stacked.  This spell has no effect on undead or constructs</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "0",
+        "charge": false,
+        "school": "enc",
+        "components": {
+            "somatic": true,
+            "verbal": false,
+            "material": false,
+            "ritual": false,
+            "concentration": true
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "0",
+            "long": null,
+            "units": "touch"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "0UML5AJIEZESNC56"
+}

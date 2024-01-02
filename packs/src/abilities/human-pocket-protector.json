@@ -1,0 +1,25 @@
+{
+  "name": "Pocket Protector",
+  "type": "ability",
+  "img": "icons/skills/social/theft-pickpocket-bribery-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>You automatically have a +5 Awareness toward creatures using Dexterity (Sleight of Hand) on you.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "I7IHUKZI8GA0BZ11"
+}

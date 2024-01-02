@@ -1,0 +1,62 @@
+{
+    "name": "See the Unseen",
+    "type": "spell",
+    "img": "icons/creatures/eyes/humanoid-single-blind.webp",
+    "system": {
+        "description": {
+            "value": "<p>For the duration of this spell you have the ability to see @Compendium[undertaking.conditions.YE63H7VLOHW7NFHO]{Invisible} creatures and objects as if they were visible, and you can see into the Ethereal Plane.  Ethereal creatures and objects still seem ghostly and translucent.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "2",
+        "charge": false,
+        "school": "div",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "A pinch of Talc and a small sprinkling of powdered silver",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "hour"
+        },
+        "range": {
+            "value": "0",
+            "long": null,
+            "units": "self"
+        },
+        "target": {
+            "value": "",
+            "width": null,
+            "units": "",
+            "type": "self"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "7EL61XWDFFTIOO4S"
+}

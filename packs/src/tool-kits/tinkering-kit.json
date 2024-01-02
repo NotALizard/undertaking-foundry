@@ -1,0 +1,19 @@
+{
+    "name": "Tinkering Kit",
+    "type": "equipment",
+    "img": "icons/tools/hand/screwdriver-flat-steel-black.webp",
+    "system": {
+        "description": {
+            "value": "(Artisan Kit) Identify mundane objects age, origins, and how they were damaged and when, if they have been.  Allows the repair of mundane items.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "10",
+        "price": {
+            "value": "50",
+            "denomination": "gp"
+        }
+    },
+    "_id": "L9HHJPJ48CPSV7CS"
+}

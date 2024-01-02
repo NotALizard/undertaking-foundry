@@ -1,0 +1,25 @@
+{
+  "name": "Darkvision (30ft)",
+  "type": "ability",
+  "img": "icons/magic/perception/eye-tendrils-web-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have superior vision in the dark, and can see in dim light within 30 feet of you as if it were in bright conditions, and can see in darkness as if it were dim conditions up to the same distance.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "K2R4176S4B99TO6R"
+}

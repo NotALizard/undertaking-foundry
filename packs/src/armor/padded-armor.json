@@ -1,0 +1,24 @@
+{
+    "name": "Padded Armor",
+    "type": "equipment",
+    "img": "icons/equipment/chest/breastplate-collared-leather-grey.webp",
+    "system": {
+        "description": {
+            "value": "AC 11 + Dex modifier",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "8",
+        "price": {
+            "value": "5",
+            "denomination": "gp"
+        },
+        "armor": {
+            "type": "light",
+            "value": "11",
+            "dex": ""
+        }
+    },
+    "_id": "J1OJN64I84SZNIHY"
+}

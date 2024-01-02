@@ -1,0 +1,25 @@
+{
+  "name": "Flutter Fall",
+  "type": "ability",
+  "img": "icons/commodities/biological/wing-insect-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>While conscious, you flutter your wings to prevent yourself from taking falling damage.  This does not apply while wearing heavy armor.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "XQVA2ZE3HFJHJ8Z4"
+}

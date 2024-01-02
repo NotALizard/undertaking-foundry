@@ -1,0 +1,23 @@
+{
+  "name": "Core Elf",
+  "type": "race",
+  "img": "icons/creatures/eyes/human-single-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Elves are beings of lithe builds and swift action.  Moving faster than most of their counterparts in other races, elves tend to be quite dexterous and have an innate connection to the Fey that imparts minor magical properties unto them.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "core",
+    "classDetails": "<p>Core Elf Traits</p><ul><li><b>Compatibility: </b>Hominoid</li><li><b>Attribute Increase: </b>Your Dexterity increases by 2.</li><li><b>Lifespan: </b>Elves actually reach physical maturity about the same time that humans do.  However, elves also live to be upwards of 700 years old, and thus have a different approach as to what truly makes you an adult.  Incidentally, most elves do not culturally have acceptance as adults until around 100 years of age, as they are judged by experience and knowledge, not years lived.</li><li><b>Size: </b>Medium; Elves are similar to humans, but are slightly smaller in stature.  They range from being a bit below 5 feet to just over 6 feet tall, and generally weigh within the range of 90 to 145 pounds.</li><li><b>Speed: </b>Your base ground speed is 30 feet.</li><li><b>Skill Proficiency: </b>You have proficiency in the Wisdom (Perception) skill.</li><li><b>Languages: </b>You can speak, read, and write Common, Elven, and one language of your choice.</li></ul>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "EKY72M95PVXII7DV"
+}

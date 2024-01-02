@@ -11,9 +11,13 @@ def merge_JsonFiles(filename, dir):
     result = ''
     for f1 in filename:
         with open(dir + '/' + f1, 'r') as infile:
-            j = json.load(infile)
-            j['_stats'] = env['stats']
-            result = result + json.dumps(j)+'\n';
+            try:
+                j = json.load(infile)
+                j['_stats'] = env['stats']
+                result = result + json.dumps(j)+'\n';
+            except:
+                print("Error in file " + f1);
+                raise
 
     with open('../' + dir + '.db', 'w') as output_file:
         output_file.write(result)

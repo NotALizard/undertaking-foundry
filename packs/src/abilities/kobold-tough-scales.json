@@ -4,7 +4,7 @@
   "img": "icons/creatures/reptiles/dragon-horned-blue.webp",
   "system": {
     "description": {
-      "value": "<p>You have natural armor equal to 13 + your Dexterity Modifier while not wearing armor.</p>",
+      "value": "<p>You have natural armor equal to 12 + your Dexterity Modifier while not wearing armor.</p>",
       "chat": "",
       "unidentified": ""
     },

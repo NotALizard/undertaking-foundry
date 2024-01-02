@@ -1,0 +1,25 @@
+{
+  "name": "Blending In",
+  "type": "ability",
+  "img": "icons/creatures/reptiles/chameleon-camouflage-green-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have advantage on Dexterity (Stealth) rolls when in dense foliage, smoke, or in dim or darker light.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "PK3LAXCYY6043RY5"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Night Owl",
+  "type": "ability",
+  "img": "icons/creatures/birds/raptor-owl-flying-moon.webp",
+  "system": {
+    "description": {
+      "value": "<p>You can sleep for 1 hour less than normal during a long rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "1G46RNQC5EFYGSXM"
+}

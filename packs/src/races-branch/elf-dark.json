@@ -1,0 +1,23 @@
+{
+  "name": "Dark Elf",
+  "type": "race",
+  "img": "icons/creatures/eyes/human-single-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>In the same way that night mirrors the day, Dark Elves are a mirror to Light Elves.  Dark Elves, too, have more powerful innate magic than Dusk and Dawn elves.  They were born powerful, gifted with magic, and their continued usage of their innate gifts have nurtured that power to continue to be passed down through their bloodlines.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Dark Elves, however, do not see magic as just a tool or second nature.  Their heritage and magical natures are something that they embrace fully, and believe that it is their way to bettering themselves.  Magic is how they define themselves and express who they are to the world.  It is a power given to them to nurture and grow, and they put all of their faith and zeal into their magic.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Most Dark Elves have a standard height and weight for their race, but they are greatly differentiated by their colors.  Their skin is all shades of gray and black, with eyes that span most hues of red and violet, and occasional pairs of gold, silver, or amber.  Their hair stays within a spectrum of white, blond, and silver.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "core",
+    "classDetails": "<p>Dark Elf Traits</p><ul><li><b>Compatibility: </b>Hominoid</li><li><b>Attribute Increase: </b>Your Wisdom increases by 1.</li><li><b>Skill Proficiency: </b>You have proficiency in the Wisdom (Theology) skill.</li><li><b>Fey Ancestry: </b>@Compendium[undertaking.abilities.B6D7U0WZJRIXIX5O]{Fey Ancestry}</li><li><b>Darkvision: </b>@Compendium[undertaking.abilities.1F3VSNLQTVMYA4PE]{Darkvision (60ft)}</li><li><b>Cantrip: </b>You know one Cantrip of your choice from the cleric spell list.  Wisdom is your spellcasting ability for it. </li></ul>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "UMQ2LIKAJ3Q5UYIM"
+}

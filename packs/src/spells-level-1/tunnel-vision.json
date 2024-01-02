@@ -1,0 +1,62 @@
+{
+    "name": "Tunnel Vision",
+    "type": "spell",
+    "img": "icons/environment/wilderness/cave-entrance-dwarven-hill.webp",
+    "system": {
+        "description": {
+            "value": "<p>When you cast this spell you pick a single creature within range that you can see.  They must make a Wisdom (Save) check, and should they succeed, there is no effect.  <br>&nbsp;&nbsp;&nbsp;&nbsp;If the target fails, pick a second target.  The second target is now the only creature that the target affected by this spell can take hostile action against, for the duration of the spell.  <br>&nbsp;&nbsp;&nbsp;&nbsp;The creature affected by Tunnel Vision is compelled to attack and take aggressive action towards the second target while they are under the spell\u2019s effects.  Should the second target die, the spell ends for the affected creature.  <br>&nbsp;&nbsp;&nbsp;&nbsp;A creature affected by this spell can repeat the (Save) check at the end of its turn if the spell persists.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "1",
+        "charge": false,
+        "school": "enc",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": false,
+            "ritual": false,
+            "concentration": true
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "60",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "wis",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "3XZ089KFBQMQUFK5"
+}

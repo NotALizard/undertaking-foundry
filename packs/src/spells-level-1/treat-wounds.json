@@ -1,0 +1,67 @@
+{
+    "name": "Treat Wounds",
+    "type": "spell",
+    "img": "icons/magic/life/heart-cross-blue.webp",
+    "system": {
+        "description": {
+            "value": "<p>A creature you touch regains 1d8 + your spellcasting ability modifier in hit points.  This does not affect undead or constructs.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Charge: This is a spell that can be Charged, increasing the healing done with this spell.  For every 2 extra Mana you spend, you can increase the healing by 1d8 up to your charge limit.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "1",
+        "charge": true,
+        "school": "evo",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": false,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "heal",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "range": {
+            "value": "0",
+            "long": null,
+            "units": "touch"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "1d8+@mod",
+                    "healing"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "F5AZB1SJ4LAXZNXV"
+}

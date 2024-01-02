@@ -74,6 +74,9 @@ hr.blue {
     height: 2px;
     margin: 0;
 }
+.red{
+    color: #795159;
+}
 
 .character.sheet{
     font-family: Garamond, serif;

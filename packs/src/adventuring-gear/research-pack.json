@@ -1,0 +1,19 @@
+{
+    "name": "Research Pack",
+    "type": "equipment",
+    "img": "icons/containers/bags/pack-leather-gold-pink.webp",
+    "system": {
+        "description": {
+            "value": "A @Compendium[undertaking.adventuring-gear.5IYR0BKWNDA9RSZW]{satchel}, a @Compendium[undertaking.adventuring-gear.O6RMIYQVY13GZSL0]{scroll case}, 5 @Compendium[undertaking.adventuring-gear.POS6K3GG6NQ7YHIZ]{empty scrolls}, an @Compendium[undertaking.adventuring-gear.V3UNW6GSBC3K5SCJ]{empty book}, a filled 1 ounce @Compendium[undertaking.adventuring-gear.005XC95QJK19SF73]{ink well}, an @Compendium[undertaking.adventuring-gear.W9VPHRBPDRWML49S]{ink pen}, and a @Compendium[undertaking.adventuring-gear.DIDPBYYUWP42JP5O]{magnifying glass}.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "20",
+            "denomination": "gp"
+        }
+    },
+    "_id": "RH3WCZ112HVOKT3P"
+}

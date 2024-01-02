@@ -10,8 +10,8 @@
     },
     "source": "Core Rules",
     "activation": {
-      "type": "",
-      "cost": null,
+      "type": "action",
+      "cost": 1,
       "condition": ""
     },
     "duration": {
@@ -26,9 +26,9 @@
       "type": ""
     },
     "range": {
-      "value": null,
-      "long": null,
-      "units": ""
+      "value": 30,
+      "long": 30,
+      "units": "ft"
     },
     "uses": {
       "value": null,
@@ -42,7 +42,7 @@
       "amount": null
     },
     "attribute": null,
-    "actionType": "",
+    "actionType": "rwak",
     "attackBonus": "",
     "chatFlavor": "",
     "critical": {
@@ -50,7 +50,12 @@
       "damage": ""
     },
     "damage": {
-      "parts": [],
+      "parts": [
+        [
+            "2d6",
+            "varies"
+        ]
+      ],
       "versatile": ""
     },
     "formula": "",

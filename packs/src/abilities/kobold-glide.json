@@ -1,0 +1,25 @@
+{
+  "name": "Glide",
+  "type": "ability",
+  "img": "icons/commodities/biological/wing-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>As an action, you can choose to enter a Glide while you are airborne that lasts until you land.  While gliding: <ul><li>You may choose how far you fall at the end of each round, to a minimum of 10 feet.  You do not fall on the turn that you enter Glide.  </li><li>You can only use your movement to descend.  </li><li>For every 5 feet you fall or descend while gliding, you can move 10 feet horizontally.  </li><li>If you land while gliding, you don't take fall damage.</li></ul></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "8O5WZBNA6CHJTPSE"
+}

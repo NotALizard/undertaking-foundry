@@ -1,0 +1,25 @@
+{
+  "name": "Blade Arms",
+  "type": "ability",
+  "img": "icons/commodities/claws/claw-insect-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have two pairs of arms, with the 2nd set located beneath the first.  The forearms of your upper limbs are a pair of sharp chitin blades.  These limbs are considered natural weapons equivalent to shortswords.  You are proficient with these blades, and can use them as if dual-wielding.  <br>&nbsp;&nbsp;&nbsp;&nbsp;You do not gain extra attacks, actions or minor actions with these limbs.  Additionally, while wearing any armor, shields only grant bonuses when held in 2 hands due to limited mobility.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "BX78MZPVZ495PPDG"
+}

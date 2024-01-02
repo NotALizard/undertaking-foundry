@@ -1,0 +1,19 @@
+{
+    "name": "Alchemy Kit",
+    "type": "equipment",
+    "img": "icons/tools/laboratory/alembic-glass-ball-blue.webp",
+    "system": {
+        "description": {
+            "value": "(Artisan Kit) Identifying potions, poisons, chemicals, and similar substances in objects or otherwise.  Creating elixirs or potions.  Handle chemicals or poisons without risk of exposure.  Treat poisoned creatures.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "8",
+        "price": {
+            "value": "50",
+            "denomination": "gp"
+        }
+    },
+    "_id": "8GCSWHROZUJQOKZR"
+}

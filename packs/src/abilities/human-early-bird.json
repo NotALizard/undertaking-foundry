@@ -1,0 +1,25 @@
+{
+  "name": "Early Bird",
+  "type": "ability",
+  "img": "icons/magic/time/day-night-sunset-sunrise.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your first ability check after a long rest has advantage.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "JQVEQW294G49HFD8"
+}

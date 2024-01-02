@@ -1,0 +1,24 @@
+{
+    "name": "Half Plate Armor",
+    "type": "equipment",
+    "img": "icons/equipment/chest/breastplate-gorget-steel-purple.webp",
+    "system": {
+        "description": {
+            "value": "AC 15 + Dex modifier (Max 2)<br>Noisy",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "40",
+        "price": {
+            "value": "750",
+            "denomination": "gp"
+        },
+        "armor": {
+            "type": "medium",
+            "value": "15",
+            "dex": "2"
+        }
+    },
+    "_id": "ONMRQL8FK7IADSGK"
+}

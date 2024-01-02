@@ -1,0 +1,19 @@
+{
+    "name": "Brewing Kit",
+    "type": "equipment",
+    "img": "icons/containers/barrels/barrel-hogshead-cask-oak-brown.webp",
+    "system": {
+        "description": {
+            "value": "(Artisan Kit) Identifying drinks, impurities, and alcohol contents.  Recognizing types, materials, and origins of drinks.  Purifying water and creating alcohol.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "9",
+        "price": {
+            "value": "20",
+            "denomination": "gp"
+        }
+    },
+    "_id": "WR36M7VRUO0D3B62"
+}

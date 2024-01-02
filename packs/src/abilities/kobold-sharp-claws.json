@@ -1,0 +1,25 @@
+{
+  "name": "Sharp Claws",
+  "type": "ability",
+  "img": "icons/creatures/claws/claw-hooked-curved.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your claws are strong enough to do lethal damage.  They deals 1d4 slashing damage and are considered Finesse weapons.  You have proficiency for these natural weapons, and can use them to attack when you are holding nothing in them.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "1AW2E5YMMC1IGGP9"
+}

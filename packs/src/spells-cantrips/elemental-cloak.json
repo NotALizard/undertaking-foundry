@@ -1,0 +1,62 @@
+{
+    "name": "Elemental Cloak",
+    "type": "spell",
+    "img": "icons/magic/fire/dagger-rune-enchant-flame-strong-orange.webp",
+    "system": {
+        "description": {
+            "value": "<p>Your weapon surrounds itself with an aura of the element of your choice from the following list: Fire, Cold, Lightning, or Force.  You can only choose one per casting, and it cannot be changed during the spell\u2019s duration.<br>&nbsp;&nbsp;&nbsp;&nbsp;For the duration of the spell, the target weapon deals an extra 1d4 of the damage type chosen, on top of its normal damage.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "0",
+        "charge": true,
+        "school": "tra",
+        "components": {
+            "somatic": false,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": true
+        },
+        "materials": {
+            "value": "weapon",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "indef"
+        },
+        "range": {
+            "value": "0",
+            "long": null,
+            "units": "touch"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "object"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "AH9WKC83KALKQQ19"
+}

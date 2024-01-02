@@ -1,0 +1,24 @@
+{
+    "name": "Breastplate",
+    "type": "equipment",
+    "img": "icons/equipment/chest/breastplate-gorget-steel-white.webp",
+    "system": {
+        "description": {
+            "value": "AC 14 + Dex modifier (Max 2)",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "20",
+        "price": {
+            "value": "400",
+            "denomination": "gp"
+        },
+        "armor": {
+            "type": "medium",
+            "value": "14",
+            "dex": "2"
+        }
+    },
+    "_id": "U7KUU9TA22JAASWW"
+}

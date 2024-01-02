@@ -1,0 +1,67 @@
+{
+    "name": "Burst Into Flames",
+    "type": "spell",
+    "img": "icons/magic/fire/explosion-flame-lightning-strike.webp",
+    "system": {
+        "description": {
+            "value": "<p>With a snap of the fingers, a small spark of energy flairs up and attempts to ignite a target that you can see.  You make a ranged spell attack against the target.  On a hit, the target takes 2d6 fire damage, and must make a Dexterity (Save) check.  <br>&nbsp;&nbsp;&nbsp;&nbsp;On a fail, the target is now on fire and must make a Dexterity (Save) check at the start of each of their turns to put it out.  Every time they fail, the target takes 1d6 points of fire damage.  A successful save avoids being set on fire.<br><br>Charge: This spell can be Charged, increasing the spell\u2019s damage.  Costs and increase are as follow: <ul><li>3 Mana: Initial damage increases by 1d6</li><li>7 Mana: Initial damage increases by 2d6, and damage taken from being on fire increases by 1d6</li></ul></p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "1",
+        "charge": true,
+        "school": "evo",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "a pinch of ash",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "rsak",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "range": {
+            "value": "10",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "2d6",
+                    "fire"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "dex",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "LO6PLV28RA6CBCLU"
+}

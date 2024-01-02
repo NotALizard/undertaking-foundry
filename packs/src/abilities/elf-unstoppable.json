@@ -1,0 +1,25 @@
+{
+  "name": "Unstoppable",
+  "type": "ability",
+  "img": "icons/skills/movement/figure-running-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have advantage on rolls against effects that would keep you from moving.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "LZ84NS4W5BKFFEI8"
+}

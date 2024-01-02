@@ -1,0 +1,61 @@
+{
+    "name": "Heavy Crossbow",
+    "type": "weapon",
+    "img": "icons/weapons/crossbows/crossbow-heavy-black.webp",
+    "system": {
+        "description": {
+            "value": "Encompasses any heavy-duty, high-propulsion crossbow.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "18",
+        "price": {
+            "value": "50",
+            "denomination": "gp"
+        },
+        "weaponType": "martialR",
+        "attribute": "dex",
+        "actionType": "rwak",
+        "range": {
+            "value": "100",
+            "long": "400",
+            "units": "ft"
+        },
+        "critical": {
+            "threshold": null,
+            "damage": ""
+        },
+        "damage": {
+            "parts": [
+                [
+                    "1d10 + @mod",
+                    "piercing"
+                ]
+            ],
+            "versatile": ""
+        },
+        "formula": "",
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "properties": {
+            "amm": true,
+            "fin": false,
+            "foc": false,
+            "hvy": true,
+            "lgt": false,
+            "lod": true,
+            "rch": false,
+            "spc": false,
+            "thr": false,
+            "two": true,
+            "una": false,
+            "ver": false
+        },
+        "showInAttacks": true
+    },
+    "_id": "99BO24KFE0HAZEAK"
+}

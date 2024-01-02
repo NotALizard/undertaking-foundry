@@ -1,0 +1,23 @@
+{
+  "name": "Country Human",
+  "type": "race",
+  "img": "icons/creatures/eyes/human-single-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>While humans are social creatures, many humans need little more than a village of people to fill that need.  Country humans were born into a lifestyle that felt no need for city luxuries or a fast-paced lifestyle.  Raised instead to focus on family, friends, and hard work, country humans have a different view on life.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "core",
+    "classDetails": "<p>Country Human Traits</p><ul><li><b>Compatibility: </b>Hominoid</li><li><b>Skill Proficiency: </b>You have proficiency in one skill from the following list: Athletics, Craft, Nature, Instinct.</li><li><b>Weapon Proficiency: </b>You have proficiency in sickles, scythes, tridents, and whips. </li><li><b>Farmer's Advantage: </b>@Compendium[undertaking.abilities.1GWNHHDFP2B30LUH]{Farmer's Advantage}</li><li><b>Pet Pal: </b>@Compendium[undertaking.abilities.BX9VETXWGYCFYBBD]{Pet Pal}</li><li><b>Early Bird: </b>@Compendium[undertaking.abilities.JQVEQW294G49HFD8]{Early Bird}</li></ul>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "CDYRKY4P7OPN6YV4"
+}

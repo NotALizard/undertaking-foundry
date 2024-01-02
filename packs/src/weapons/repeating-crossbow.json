@@ -1,0 +1,61 @@
+{
+    "name": "Repeating Crossbow",
+    "type": "weapon",
+    "img": "icons/weapons/crossbows/crossbow-golden-bolt.webp",
+    "system": {
+        "description": {
+            "value": "Encompasses any magazine-based crossbow.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "6",
+        "price": {
+            "value": "85",
+            "denomination": "gp"
+        },
+        "weaponType": "martialR",
+        "attribute": "dex",
+        "actionType": "rwak",
+        "range": {
+            "value": "30",
+            "long": "120",
+            "units": "ft"
+        },
+        "critical": {
+            "threshold": null,
+            "damage": ""
+        },
+        "damage": {
+            "parts": [
+                [
+                    "1d6 + @mod",
+                    "piercing"
+                ]
+            ],
+            "versatile": ""
+        },
+        "formula": "",
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "properties": {
+            "amm": true,
+            "fin": false,
+            "foc": false,
+            "hvy": false,
+            "lgt": false,
+            "lod": false,
+            "rch": false,
+            "spc": false,
+            "thr": false,
+            "two": true,
+            "una": false,
+            "ver": false
+        },
+        "showInAttacks": true
+    },
+    "_id": "UHB421TO262RTXGB"
+}

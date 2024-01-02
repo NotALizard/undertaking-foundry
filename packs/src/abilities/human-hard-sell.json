@@ -1,0 +1,25 @@
+{
+  "name": "Hard Sell",
+  "type": "ability",
+  "img": "icons/commodities/currency/coin-inset-crown-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Add your proficiency twice when using Wisdom (Insight), Presence (Persuasion), or Presence (Deception) checks in relation to bartering if you are already proficient in these skills.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "AGC864XWZMAXOUFX"
+}

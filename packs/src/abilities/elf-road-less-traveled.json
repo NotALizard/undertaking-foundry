@@ -1,0 +1,25 @@
+{
+  "name": "Road Less Traveled",
+  "type": "ability",
+  "img": "icons/environment/wilderness/terrain-river-road-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>You are unhindered by non-magical rough terrain.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "FLXLXLGUDQ22W74S"
+}

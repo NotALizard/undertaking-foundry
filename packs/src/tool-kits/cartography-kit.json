@@ -1,0 +1,19 @@
+{
+    "name": "Cartography Kit",
+    "type": "equipment",
+    "img": "icons/tools/navigation/map-chart-tan.webp",
+    "system": {
+        "description": {
+            "value": "(Artisan Kit) Identifying maps\u2019 ages, the area it depicts, and possible hidden messages within it.  Allows you to tell directions when traveling, aids in identifying your current location, and you can craft a map of your location and continue to fill it out as you travel.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "6",
+        "price": {
+            "value": "15",
+            "denomination": "gp"
+        }
+    },
+    "_id": "SGYR45WRCKK2UR47"
+}

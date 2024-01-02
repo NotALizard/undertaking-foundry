@@ -1,0 +1,23 @@
+{
+  "name": "City Human",
+  "type": "race",
+  "img": "icons/creatures/eyes/human-single-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Humans are social creatures, drawn to others with whom they can socialize.  Humans build numerous cities for socialization, convenience, and dependency, but many grow even further past that.  Many cities form where humans live are deeply complex social and dependent hives of buildings and trades and gatherings.  Especially in larger cities, humans must balance a deeply complex and fast-moving social and economical environment, keeping on top of constantly changing luxury trends while the exponentially growing bills and social requirements keep them on their toes.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "core",
+    "classDetails": "<p>City Human Traits</p><ul><li><b>Compatibility: </b>Hominoid</li><li><b>Skill Proficiency: </b>You have proficiency in one skill from the following list: Culture, Insight, Persuasion, Deception.</li><li><b>Language: </b>You can speak, read, and write in one extra language of your choice. </li><li><b>Fast-Walker: </b>Your base ground speed is 35ft. </li><li><b>Night Owl: </b>@Compendium[undertaking.abilities.1G46RNQC5EFYGSXM]{Night Owl}</li><li><b>Hard Sell: </b>@Compendium[undertaking.abilities.AGC864XWZMAXOUFX]{Hard Sell}</li><li><b>Pocket Protector: </b>@Compendium[undertaking.abilities.I7IHUKZI8GA0BZ11]{Pocket Protector}</li></ul>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "CDYRKY4P7OPN6YV4"
+}

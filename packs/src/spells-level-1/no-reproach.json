@@ -1,0 +1,62 @@
+{
+    "name": "No Reproach",
+    "type": "spell",
+    "img": "icons/magic/holy/meditation-chi-focus-blue.webp",
+    "system": {
+        "description": {
+            "value": "<p>With a flick of your wrist and a magic word, you cast a ward on a creature or object.  While in effect, an attack roll made against the warded target causes the attacker to first make a Wisdom (Save) check.  On failure, the attacker must change the target of its attack or else the attack fails.  <br>&nbsp;&nbsp;&nbsp;&nbsp;If the warded target harms or attacks another creature, or casts a spell on an enemy creature, this spell ends.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "1",
+        "charge": false,
+        "school": "abj",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": false,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "minor",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "30",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "wis",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "MRQUPL1D078DKFR2"
+}

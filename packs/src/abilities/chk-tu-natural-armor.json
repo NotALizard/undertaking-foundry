@@ -1,0 +1,25 @@
+{
+  "name": "Natural Armor",
+  "type": "ability",
+  "img": "icons/commodities/claws/claw-insect-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your chitin exoskeleton is comparably tough.  While not wearing armor, your Armor Class is 11 + your Dexterity Modifier.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "2S9EWQFOXT06P29E"
+}

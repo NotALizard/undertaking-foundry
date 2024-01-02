@@ -1,0 +1,67 @@
+{
+    "name": "Discombobulate",
+    "type": "spell",
+    "img": "icons/magic/sonic/bell-alarm-red-purple.webp",
+    "system": {
+        "description": {
+            "value": "<p>You bombard a creature's senses with a deafening and unexpected noise.  One target within range must make a Constitution (Save) Check.  On a failed save, the creature takes 2d8 force damage, is @Compendium[undertaking.conditions.WK17M9FZR08DRUP1]{Deafened} until the end of your next turn, and is moved back by one slot in the initiative order.  On a successful save, it takes half damage and suffers none of the other effects.<br>&nbsp;&nbsp;&nbsp;&nbsp;If you target a Surprised creature, it makes the save check with disadvantage.  This spell has no effect on creatures that are @Compendium[undertaking.conditions.WK17M9FZR08DRUP1]{Deafened} or are immune to the @Compendium[undertaking.conditions.WK17M9FZR08DRUP1]{Deafened} condition.<br><br>Charge: This is a spell that can be Charged, modifying its effects.  Costs and effects are as follow:<ul><li>2 Mana: Move the creature back an additional space in initiative.</li><li>2 Mana: The sonic damage is increased to 5d8.</li></ul></p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "2",
+        "charge": true,
+        "school": "evo",
+        "components": {
+            "somatic": true,
+            "verbal": false,
+            "material": true,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "a small cymbal or firecracker",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "range": {
+            "value": "60",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "2d8",
+                    "force"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "con",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "FZ8CHP8N6M0PGLI1"
+}

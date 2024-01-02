@@ -1,0 +1,25 @@
+{
+  "name": "Flutter Jump",
+  "type": "ability",
+  "img": "icons/commodities/biological/wing-insect-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your fluttering wings add a +10ft to your vertical and horizontal jump distance.  This distance is halved while wearing heavy armor.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "3RN1CJEJ8YBYOC14"
+}

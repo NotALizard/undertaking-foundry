@@ -1,0 +1,23 @@
+{
+  "name": "Assimilant Human",
+  "type": "race",
+  "img": "icons/creatures/eyes/human-single-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Humans are social creatures, drawn to others with whom they can socialize.  Humans build numerous cities for socialization, convenience, and dependency, but many grow even further past that.  Many cities form where humans live are deeply complex social and dependent hives of buildings and trades and gatherings.  Especially in larger cities, humans must balance a deeply complex and fast-moving social and economical environment, keeping on top of constantly changing luxury trends while the exponentially growing bills and social requirements keep them on their toes.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "core",
+    "classDetails": "<p>Assimilant Human Traits</p><ul><li><b>Compatibility: </b>Hominoid</li><li><b>Adopted Race: </b>Choose one race other than your core race.  You were adopted into this race's culture or have otherwise come to know the race as if you were one of their own.  As such, your knowledge of this race is comparable to a member of the race itself.</li><li><b>Adopted Attribute Increase: </b>Choose one of the attributes increased by your adopted race's core traits.  You increase that attribute by 1.</li><li><b>Adopted Language: </b>You can speak, read, and write one language listed under your adopted race.  If you already know all the languages of your adopted race, then choose one other language to know. </li><li><b>Adopted Weapon Proficiency: </b>You are proficient in the same weapons as your adopted race's core race.  Alternatively, you are proficient in the weapon proficiencies as one of your adopted race's branches.  If the adopted race has natural armor or natural weaponry, you can gain proficiency in all armors or unarmed attacks instead respectively.  <br>&nbsp;&nbsp;&nbsp;&nbsp;If the adopted race and its branches have no weapon proficiencies, then you are proficient in 2 weapons and 1 armor of your choice.</li><li><b>Behavioral Experience: </b>@Compendium[undertaking.abilities.IRC2M1N62DQTFVBH]{Behavioral Experience}</li><li><b>Cultural Osmosis: </b>@Compendium[undertaking.abilities.5WJE2EYK49R6V2YW]{Cultural Osmosis}</li></ul>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "UP1SP915S0SY961A"
+}

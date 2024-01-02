@@ -1,0 +1,24 @@
+{
+    "name": "Hardened Leather Armor",
+    "type": "equipment",
+    "img": "icons/equipment/chest/breastplate-layered-leather-studded-brown.webp",
+    "system": {
+        "description": {
+            "value": "AC 12 + Dex modifier",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "13",
+        "price": {
+            "value": "40",
+            "denomination": "gp"
+        },
+        "armor": {
+            "type": "light",
+            "value": "12",
+            "dex": ""
+        }
+    },
+    "_id": "K60QIHKO06GT65WV"
+}

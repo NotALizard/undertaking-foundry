@@ -1,0 +1,37 @@
+{
+  "name": "Invisible",
+  "pages": [
+    {
+      "name": "Invisible",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Invisible</p><ul><li>Invisible creatures are impossible to see without the use of magic or special senses.  For the purpose of hiding, the creature is heavily obscured to other creatures.  This means that the creature can only be detected through the noises and tracks it makes.</li><li>Attack rolls against invisible creatures have disadvantage, and the creature's attack rolls have advantage.</li></ul>",
+        "markdown": ""
+      },
+      "_id": "KOL0W89MGEYSJ1PZ",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "YE63H7VLOHW7NFHO"
+}

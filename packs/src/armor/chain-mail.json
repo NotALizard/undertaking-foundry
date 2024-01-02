@@ -1,0 +1,24 @@
+{
+    "name": "Chain Mail",
+    "type": "equipment",
+    "img": "icons/commodities/metal/mail-chain-steel.webp",
+    "system": {
+        "description": {
+            "value": "AC 16<br>Noisy, Weighty 13",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "55",
+        "price": {
+            "value": "75",
+            "denomination": "gp"
+        },
+        "armor": {
+            "type": "heavy",
+            "value": "16",
+            "dex": "0"
+        }
+    },
+    "_id": "24260F2SZYTV4NZF"
+}

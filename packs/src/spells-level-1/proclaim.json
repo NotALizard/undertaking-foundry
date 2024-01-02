@@ -1,0 +1,67 @@
+{
+    "name": "Proclaim",
+    "type": "spell",
+    "img": "icons/magic/light/explosion-beam-impact-silhouette.webp",
+    "system": {
+        "description": {
+            "value": "<p>Holding out your holy symbol, you speak a holy word and the symbol begins shining light momentarily.  All other creatures within a 20ft radius of you must make a Dexterity (Save) check or take 2d4 radiant damage.  On a success, the creature takes half damage.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "1",
+        "charge": false,
+        "school": "evo",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "a holy symbol or focus",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "range": {
+            "value": "0",
+            "long": null,
+            "units": "self"
+        },
+        "target": {
+            "value": "20",
+            "width": null,
+            "units": "ft",
+            "type": "sphere"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "2d4",
+                    "radiant"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "dex",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "XGGRB00TO6WCQRWR"
+}

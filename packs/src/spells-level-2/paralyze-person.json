@@ -1,0 +1,62 @@
+{
+    "name": "Paralyze Person",
+    "type": "spell",
+    "img": "icons/magic/control/debuff-chains-shackles-movement-blue.webp",
+    "system": {
+        "description": {
+            "value": "<p>Designate one humanoid within range of your spell that you can see.  That target must make a Wisdom (Save) check and succeed, or be @Compendium[undertaking.conditions.OBTES08D2XC130IG]{Paralyzed} for the duration of this spell.  The target gets a chance to make another Wisdom (Save) check at the end of each of their turns, and on a success, they break free and the spell ends.<br><br>Charge: This is a spell that can be Charged, increasing the damage done with this spell.  Costs and increase are as follow: <ul><li>4 Mana: Cast on an additional target</li><li>8 Mana: Cast on two additional targets </li></ul><br><br>Note: Additional targets must be within 30 feet of each other when you target them.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "2",
+        "charge": true,
+        "school": "enc",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": true
+        },
+        "materials": {
+            "value": "a small, straight piece of iron",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "60",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "wis",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "M9E56UNAIUGH9J1U"
+}

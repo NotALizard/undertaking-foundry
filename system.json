@@ -59,7 +59,11 @@
       "packs": [
         "spells-cantrips",
         "spells-level-1",
-        "spells-level-3"
+        "spells-level-2",
+        "spells-level-3",
+        "spells-level-4",
+        "spells-level-5",
+        "spells-level-6"
       ],
       "folders": []
     },
@@ -68,7 +72,9 @@
       "sorting": "m",
       "packs": [
         "weapons",
-        "adventuring-gear"
+        "armor",
+        "adventuring-gear",
+        "tool-kits"
       ],
       "folders": []
     },
@@ -198,6 +204,24 @@
       "flags": {}
     },
     {
+      "name": "tool-kits",
+      "label": "Tool Kits",
+      "system": "undertaking",
+      "path": "packs/tool-kits.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "armor",
+      "label": "Armor",
+      "system": "undertaking",
+      "path": "packs/armor.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
       "name": "spells-cantrips",
       "label": "Cantrips",
       "system": "undertaking",
@@ -216,10 +240,46 @@
       "flags": {}
     },
     {
+      "name": "spells-level-2",
+      "label": "2nd Level Spells",
+      "system": "undertaking",
+      "path": "packs/spells-level-2.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
       "name": "spells-level-3",
       "label": "3rd Level Spells",
       "system": "undertaking",
       "path": "packs/spells-level-3.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "spells-level-4",
+      "label": "4th Level Spells",
+      "system": "undertaking",
+      "path": "packs/spells-level-4.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "spells-level-5",
+      "label": "5th Level Spells",
+      "system": "undertaking",
+      "path": "packs/spells-level-5.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "spells-level-6",
+      "label": "6th Level Spells",
+      "system": "undertaking",
+      "path": "packs/spells-level-6.db",
       "type": "Item",
       "private": false,
       "flags": {}

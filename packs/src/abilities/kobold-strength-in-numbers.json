@@ -4,7 +4,7 @@
   "img": "icons/creatures/reptiles/dragon-horned-blue.webp",
   "system": {
     "description": {
-      "value": "<p>You gain a +1 to Wisdom (Save), Intelligence (Save), and Presence (Save) checks for each ally that you can see, excluding yourself in any form, that isn’t @Compendium[undertaking.conditions.3CQC3JEY2C3Y721F]{Incapacitated}, up to a maximum of +3.  </p>",
+      "value": "<p>You gain a +1 to Wisdom (Save), Intelligence (Save), and Presence (Save) checks for each ally that you can see, excluding yourself in any form, that isn't @Compendium[undertaking.conditions.3CQC3JEY2C3Y721F]{Incapacitated}, up to a maximum of +3.  </p>",
       "chat": "",
       "unidentified": ""
     },

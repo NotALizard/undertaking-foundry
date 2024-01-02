@@ -1,0 +1,25 @@
+{
+  "name": "Pet Pal",
+  "type": "ability",
+  "img": "icons/commodities/treasure/figurine-dog.webp",
+  "system": {
+    "description": {
+      "value": "<p>Add your proficiency twice to Wisdom (Instinct) checks toward domesticated beasts, such as pets and mounts, if you are already proficient in Wisdom (Instinct).",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "BX9VETXWGYCFYBBD"
+}

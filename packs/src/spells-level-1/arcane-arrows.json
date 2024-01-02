@@ -1,0 +1,67 @@
+{
+    "name": "Arcane Arrows",
+    "type": "spell",
+    "img": "icons/weapons/ammunition/arrowhead-glowing-blue.webp",
+    "system": {
+        "description": {
+            "value": "<p>Drawing your arms as if drawing a bow, three arrows of raw magic appear as if nocked in an unseen weapon.  With a flick of the hand, you send these three magic arrows outward and towards your foes.  These arrows hunt unerringly for their target and deal 1d4+1 chaos damage each.  <br>&nbsp;&nbsp;&nbsp;&nbsp;You have to be able to see the target for an arrow to hit them.  You can direct these arrows to hit one or several targets, and they all strike simultaneously.  However, a single arrow can only hit one target.<br><br>Charge: This spell can be Charged, increasing the spell\u2019s damage.  Costs and effects are as follow: <ul><li>2 Mana: Casts an additional bolt</li><li>4 Mana: Casts two additional bolts</li></ul></p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "1",
+        "charge": true,
+        "school": "evo",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": false,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "other",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "range": {
+            "value": "120",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "1d4+1",
+                    "chaos"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "7N5KBCOM40ZX65EO"
+}

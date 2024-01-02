@@ -1,0 +1,25 @@
+{
+  "name": "Lesser Fey Ancestry",
+  "type": "ability",
+  "img": "icons/consumables/fruit/apple-red-tree-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have advantage on save checks against magically being put to sleep.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "N3YTNUP9KU47ZSZV"
+}

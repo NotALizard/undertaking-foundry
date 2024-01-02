@@ -1,0 +1,19 @@
+{
+    "name": "Glassblowing Kit",
+    "type": "equipment",
+    "img": "icons/consumables/potions/bottle-round-empty-glass.webp",
+    "system": {
+        "description": {
+            "value": "(Artisan Kit) Creation of glass or crystal objects.  Identifying contents behind glass or crystal.  Identify weaknesses or flaws in glass or crystal objects.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "5",
+        "price": {
+            "value": "30",
+            "denomination": "gp"
+        }
+    },
+    "_id": "HM7RN2ME5TMSDXVB"
+}

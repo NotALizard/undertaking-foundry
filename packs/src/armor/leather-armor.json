@@ -1,0 +1,24 @@
+{
+    "name": "Leather Armor",
+    "type": "equipment",
+    "img": "icons/equipment/chest/breastplate-collared-leather-brown.webp",
+    "system": {
+        "description": {
+            "value": "AC 11 + Dex modifier",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "10",
+        "price": {
+            "value": "10",
+            "denomination": "gp"
+        },
+        "armor": {
+            "type": "light",
+            "value": "11",
+            "dex": ""
+        }
+    },
+    "_id": "F3F4NK1XB820809Y"
+}

@@ -102,6 +102,10 @@
               <option value="minor" {{#ifCond item.system.activation.type '==' "minor"}}selected{{/ifCond}}>{{ localize "undertaking.Time.MinorAction" }}</option>
               <option value="reaction" {{#ifCond item.system.activation.type '==' "reaction"}}selected{{/ifCond}}>{{ localize "undertaking.Time.Reaction" }}</option>
               <option value="desperate" {{#ifCond item.system.activation.type '==' "desperate"}}selected{{/ifCond}}>{{ localize "undertaking.Time.DesperateAction" }}</option>
+              <option value="minute" {{#ifCond item.system.activation.type '==' "minute"}}selected{{/ifCond}}>{{ localize "undertaking.Time.Minutes" }}</option>
+              <option value="hour" {{#ifCond item.system.activation.type '==' "hour"}}selected{{/ifCond}}>{{ localize "undertaking.Time.Hours" }}</option>
+              <option value="day" {{#ifCond item.system.activation.type '==' "day"}}selected{{/ifCond}}>{{ localize "undertaking.Time.Days" }}</option>
+              <option value="year" {{#ifCond item.system.activation.type '==' "year"}}selected{{/ifCond}}>{{ localize "undertaking.Time.Years" }}</option>
             </select>
             <label>{{ localize "undertaking.Ritual" }}:</label>
             <input type="checkbox" class="input-checkbox" data-for="#input-ritual" {{#ifCond item.system.components.ritual '==' true}}checked{{/ifCond}}/>

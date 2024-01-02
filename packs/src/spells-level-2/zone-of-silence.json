@@ -1,0 +1,62 @@
+{
+    "name": "Zone of Silence",
+    "type": "spell",
+    "img": "icons/magic/sonic/explosion-shock-sound-wave.webp",
+    "system": {
+        "description": {
+            "value": "<p>For the duration of the spell, no sound can be created or heard within a 20ft radius sphere centered on a point that you pick within range.  All creatures and objects entirely within the sphere are @Compendium[undertaking.conditions.WK17M9FZR08DRUP1]{Deafened}, immune to force damage, and all verbal components from creatures within range cannot be fulfilled.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "2",
+        "charge": false,
+        "school": "ill",
+        "components": {
+            "somatic": true,
+            "verbal": false,
+            "material": false,
+            "ritual": true,
+            "concentration": true
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "10",
+            "units": "minute"
+        },
+        "range": {
+            "value": "120",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "20",
+            "width": null,
+            "units": "ft",
+            "type": "sphere"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "368MKMZOJIFZ7TPS"
+}

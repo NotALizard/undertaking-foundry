@@ -160,7 +160,14 @@
                                                         <a class="profcheck skill-expert {{#ifCond skill.value '>=' 2}}checked{{/ifCond}}" id="{{skill_id}}-expert"></a>
                                                     </div>
                                                     <div class="prof-num-container frow"></label>{{numberFormat skill.total decimals=0 sign=true}}</label></div>
-                                                    <div class="prof-name-container frow">{{localize skill.label}}</div>
+                                                    <div class="prof-name-container frow">{{localize skill.label}}
+                                                        {{#ifCond skill_id '==' 'stealth'}}
+                                                            {{#ifCond ../../actor.system.stats.ac.noisy '==' true}}
+                                                                <i class="fa-solid fa-triangle-exclamation red" title="{{localize "undertaking.Disadvantage"}} - {{localize "undertaking.Noisy"}}" style="margin-left: 4px;"></i>
+                                                            {{/ifCond}}
+                                                        {{/ifCond}}
+                                                    </div>
+                                                    
                                                 </div>
                                             {{/ifequal}}
                                         {{/each}}
@@ -759,6 +766,11 @@
                             <input type="checkbox" class="input-checkbox" data-for="#input-ac-pre" {{#ifCond actor.system.stats.ac.attributes.pre.enabled '==' true}}checked{{/ifCond}}/>
                             <label>Add Pre. Limit:</label>
                             <input name="system.stats.ac.attributes.pre.limit" type="number" value="{{actor.system.stats.ac.attributes.pre.limit}}" data-dtype="Number" />
+                        </div>
+                        <div class="config-input frow">
+                            <input type="hidden" id="input-noisy" name="system.stats.ac.noisy" value="{{actor.system.stats.ac.noisy}}" data-dtype="Boolean">
+                            <input type="checkbox" class="input-checkbox" data-for="#input-noisy" {{#ifCond actor.system.stats.ac.noisy '==' true}}checked{{/ifCond}}/>
+                            <label>Noisy</label>
                         </div>
                         
                     </div>

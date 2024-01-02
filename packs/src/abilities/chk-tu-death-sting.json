@@ -1,0 +1,25 @@
+{
+  "name": "Death Sting",
+  "type": "ability",
+  "img": "icons/commodities/biological/stinger-insect-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have a stinger on your abdomen that is bred to kill.  If you attempt to sting a creature with it, make a melee weapon attack with proficiency.  On hit, the target takes 1d10 piercing damage, and you take 1d10 chaos damage as the stinger rips out.  On critical hit, the target becomes poisoned.  Otherwise the target must make a Constitution (Save) Check of DC 10 + your proficiency bonus.  On failure, the creature takes 1d6 poison damage and is sickened until the end of your next turn.  You cannot use this racial trait again until you take a long rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "W2JOTIASQTIRW3IA"
+}

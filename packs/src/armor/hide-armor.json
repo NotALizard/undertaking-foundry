@@ -1,0 +1,24 @@
+{
+    "name": "Hide Armor",
+    "type": "equipment",
+    "img": "icons/equipment/leg/tasset-fur-studded-leather.webp",
+    "system": {
+        "description": {
+            "value": "AC 12 + Dex modifier (Max 2)",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "12",
+        "price": {
+            "value": "10",
+            "denomination": "gp"
+        },
+        "armor": {
+            "type": "medium",
+            "value": "12",
+            "dex": "2"
+        }
+    },
+    "_id": "4VFNM4JUI5JYZDX9"
+}

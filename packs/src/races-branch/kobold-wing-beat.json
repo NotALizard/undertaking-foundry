@@ -1,0 +1,23 @@
+{
+  "name": "Wing-Beat Kobold",
+  "type": "race",
+  "img": "icons/creatures/reptiles/dragon-horned-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>While not considered wholly scarce, kobolds that are born with wings are rarer than any of their brethren.  They are hailed as having been gifted by their draconic ancestry, and are held in both awe and resentment in equal parts for this gift.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Wing-beat kobolds share most physical traits with their kin, with the single exception of two large, leathery, dragon-like wings sprouting from their shoulder blades.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Within their own society, wing-beat kobolds tend to find themselves filling roles as scouts, perimeter guards, or hunter-gatherers.  Their access to flight, even if it is limited, gives them a great advantage when looking for possible dangers and allows them to get to places where others do not have access, which grants them the boon of expanded hunting grounds.<br>&nbsp;&nbsp;&nbsp;&nbsp;However, more times than not most wing-beat kobolds work with other wing-beat kobolds.  This is to avoid any jealousies from their brethren while working.  Most kobolds with wings would rather work with others of their own unique breed or alone if they have a say in it.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "core",
+    "classDetails": "<p>Wing-Beat Kobold Traits</p><ul><li><b>Compatibility: </b>Reptile</li><li><b>Attribute Increase: </b>Your Wisdom increases by 1.</li><li><b>Skill Proficiency: </b>Choose either Dexterity (Acrobatics) or Wisdom (Perception).</li><li><b>Lesser Flight: </b>@Compendium[undertaking.abilities.IX6N1K5PUGT3QCMV]{Lesser Flight}</li><li><b>Glide: </b>@Compendium[undertaking.abilities.8O5WZBNA6CHJTPSE]{Glide}</li></ul>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "2VY82EAMZ8W3GIQ2"
+}

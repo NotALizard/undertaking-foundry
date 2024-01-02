@@ -1,0 +1,19 @@
+{
+    "name": "Weaving Kit",
+    "type": "equipment",
+    "img": "icons/commodities/cloth/yarn-balls.webp",
+    "system": {
+        "description": {
+            "value": "(Artisan Kit) Identify cloth material, properties, if it is magic, origin, and craft cloth items.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "5",
+        "price": {
+            "value": "1",
+            "denomination": "gp"
+        }
+    },
+    "_id": "UIHAEE3AGR6WCS9D"
+}

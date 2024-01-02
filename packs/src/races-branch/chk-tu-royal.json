@@ -1,0 +1,23 @@
+{
+  "name": "Royal Chk'tu",
+  "type": "race",
+  "img": "icons/environment/creatures/bug-tick-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Despite their name, Royal Chk'tu, are not inherently leaders or royalty.  However, their comparably extreme lifespan gives them a long-term perspective that others of their kind necessarily lack.  This makes them the natural pick for chk'tu leadership, almost always being the senior officer or eldest boss in any room of chk'tu.  Royal chk'tu's comparative rarity helps this, often having offspring of different branches before giving birth to another royal chk'tu.  <br>&nbsp;&nbsp;&nbsp;&nbsp;While not always the case, royal chk'tu are often put off by non-chk'tu.  Being used to the pampered and obedient treatment of other chk'tu makes interactions with those outside their hive seem disrespectful or brash.  On the other hand, some royal chk'tu, especially those with non-essential roles, tend to want external interactions, preferring the equal treatment they receive.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "core",
+    "classDetails": "<p>Royal Chk'tu Traits</p><ul><li><b>Compatibility: </b>Insectoid</li><li><b>Attribute Increase: </b>Your Wisdom and Presence each increase by 1.</li><li><b>Expanded Lifespan: </b>Royal chk'tu can live up to 50 years old. </li><li><b>Royal Piping: </b>@Compendium[undertaking.abilities.6LMVQ9ZOP41IHVCP]{Royal Piping}</li><li><b>Flutter Jump: </b>@Compendium[undertaking.abilities.3RN1CJEJ8YBYOC14]{Flutter Jump}</li><li><b>Flutter Fall: </b>@Compendium[undertaking.abilities.XQVA2ZE3HFJHJ8Z4]{Flutter Fall}</li></ul>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "VAHAFXTXKJMFUPA6"
+}

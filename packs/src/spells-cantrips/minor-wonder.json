@@ -1,0 +1,62 @@
+{
+    "name": "Minor Wonder",
+    "type": "spell",
+    "img": "icons/magic/holy/prayer-hands-glowing-yellow-green.webp",
+    "system": {
+        "description": {
+            "value": "<p>With a spoken word, you invoke a minor, supernatural wonder.  You create one of the following effects within range:<ul><li>Your face or body glows with a faint light.  You faintly glow in the dark and cast dim light 5ft from you while glowing in this way.</li>  <li>Your voice booms and becomes three times as loud for 1 minute.</li>  <li>Harmless tremors shake the ground within range for 1 minute.</li>  <li>You can cause one ration to feed up to 5 people for a day.</li>  <li>You can cause up to 1 liter of water to turn into 1 liter of cheap wine or vice versa.</li><li>You create an instantaneous sound from a point within range, such as a rumble of thunder, rustling trees, the caw of a raven, or ominous whispers.  This cannot be used to mimic coherent voices or long-lasting, linear sounds, like music.</li>  <li>When used in a freshwater pond or river populated with fish, the first fish caught within the duration has 1gp in its mouth.  This can only be done once per long rest.</li></ul></p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "0",
+        "charge": false,
+        "school": "tra",
+        "components": {
+            "somatic": false,
+            "verbal": true,
+            "material": false,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "30",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "",
+            "width": null,
+            "units": "",
+            "type": ""
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "1UP8YL8Z33NMUI5P"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Dawn Elf",
+  "type": "race",
+  "img": "icons/creatures/eyes/human-single-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>While elves may be magical in nature, not all of them hinge their lifestyles on it.  Dawn elves, while they accept their Fey heritage, find that it is not a central part of who they are.  The world is too vast to spend one’s whole life focused on one’s origins and ancestry, and they intend to prove that.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Dawn elves do retain a few traces of their magical nature, but have left it to the wayside over the centuries.  It has dwindled in its intensity and left dawn elves to develop as a more physically powerful race.  <br>&nbsp;&nbsp;&nbsp;&nbsp;So instead of magic, dawn elves are built for exploring and traveling, having more endurance and a greater stride than Light and Dark Elves.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Compared to other elves, dawn elves are taller, slightly more muscular, and have sharper, more rugged features.  They find themselves more adept at moving around their environment and interacting with others rather than casting magic.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Their skin color ranges across the shades of bronze and copper tones, with darker reds and browns as well.  They have eyes of brown, green, and hazel, tending towards darker hues, and hair that comes commonly in the colors of black or shades of green.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "core",
+    "classDetails": "<p>Dawn Elf Traits</p><ul><li><b>Compatibility: </b>Hominoid</li><li><b>Attribute Increase: </b>Your Presence increases by 1.</li><li><b>Skill Proficiency: </b>You have proficiency in one skill from the following list: Arcana, Culture, Nature, or Theology.</li><li><b>Extra Language: </b>You can speak, read, and write one extra language of your choice.</li><li><b>Weapon Proficiency: </b>You have proficiency in Quarterstaffs, Scimitars, and Longbows.</li><li><b>Navigator: </b>@Compendium[undertaking.abilities.OXY335G1JVFPRA6V]{Navigator}</li><li><b>Road Less Traveled: </b>@Compendium[undertaking.abilities.FLXLXLGUDQ22W74S]{Road Less Traveled}</li><li><b>Lesser Fey Ancestry: </b>@Compendium[undertaking.abilities.N3YTNUP9KU47ZSZV]{Lesser Fey Ancestry}</li></ul>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "Y2O2XJF9VIX3K9AR"
+}

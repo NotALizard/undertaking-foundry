@@ -1,0 +1,19 @@
+{
+    "name": "Delving Pack",
+    "type": "equipment",
+    "img": "icons/containers/bags/pack-leather-red.webp",
+    "system": {
+        "description": {
+            "value": "A @Compendium[undertaking.adventuring-gear.8UM8I7BM5O8XZPVW]{backpack}, a @Compendium[undertaking.weapons.5XTN3WTBZ7UPQ91K]{crowbar (hammer)}, a @Compendium[undertaking.weapons.5XTN3WTBZ7UPQ91K]{hammer}, 10 @Compendium[undertaking.adventuring-gear.PSWYLF5UIWE5IFJE]{pitons}, 10 @Compendium[undertaking.adventuring-gear.F34U8M0Y1XIIM1OM]{torches}, a @Compendium[undertaking.adventuring-gear.NSD8EIX33YF2VG6P]{tinderbox}, 10 days of @Compendium[undertaking.adventuring-gear.0K9ZLO6XAN2ZM34O]{rations}, a @Compendium[undertaking.adventuring-gear.NC5KBZXAW46HR0EH]{waterskin}, @Compendium[undertaking.adventuring-gear.QOUY769A8LEKM4NV]{50ft of hempen rope}, and a @Compendium[undertaking.adventuring-gear.12FKKFZXQEAFL2IP]{grappling hook}.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "15",
+            "denomination": "gp"
+        }
+    },
+    "_id": "4Q4BZMK59LRFDKEJ"
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Jeweler Kit",
+    "type": "equipment",
+    "img": "icons/equipment/neck/necklace-jeweled-gold-red.webp",
+    "system": {
+        "description": {
+            "value": "(Artisan Kit) Appraise and identify gems and jewels and any magic within them.  Inset jewels in jewelry.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "2",
+        "price": {
+            "value": "25",
+            "denomination": "gp"
+        }
+    },
+    "_id": "1A6MYX9CHPGAO7XE"
+}

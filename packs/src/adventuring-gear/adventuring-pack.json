@@ -1,0 +1,19 @@
+{
+    "name": "Adventuring Pack",
+    "type": "equipment",
+    "img": "icons/containers/bags/pack-simple-leather-fur-tan.webp",
+    "system": {
+        "description": {
+            "value": "A @Compendium[undertaking.adventuring-gear.8UM8I7BM5O8XZPVW]{backpack}, a @Compendium[undertaking.adventuring-gear.VL8VMA950A7U4B64]{bedroll}, a @Compendium[undertaking.adventuring-gear.S4FPLGGKC25XDSH9]{mess set}, a @Compendium[undertaking.adventuring-gear.NSD8EIX33YF2VG6P]{tinderbox}, 5 @Compendium[undertaking.adventuring-gear.F34U8M0Y1XIIM1OM]{torches}, 10 days of @Compendium[undertaking.adventuring-gear.0K9ZLO6XAN2ZM34O]{rations}, a @Compendium[undertaking.adventuring-gear.NC5KBZXAW46HR0EH]{waterskin}, a @Compendium[undertaking.tool-kits.GJM0RMS60GY1X423]{cooking kit}, a @Compendium[undertaking.weapons.4XDEFIHFNG2WNIOR]{utility knife (dagger)}, and @Compendium[undertaking.adventuring-gear.QOUY769A8LEKM4NV]{50ft of hempen rope}.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "11",
+            "denomination": "gp"
+        }
+    },
+    "_id": "26BV2WINPG19J7QH"
+}

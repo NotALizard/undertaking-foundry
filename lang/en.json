@@ -28,6 +28,7 @@
     "ArmorClass": "Armor Class",
     "WithoutShield": "Without Shield",
     "Shield": "Shield",
+    "Noisy": "Noisy",
     "Initiative": "Initiative",
     "HitPoints": "Current Hit Points",
     "Max": "Max",
@@ -77,6 +78,8 @@
       "Swim": "Swim",
       "Fly": "Fly"
     },
+    "Advantage": "Advantage",
+    "Disadvantage": "Disadvantage",
     "SaveCheck":"Save Check",
     "Attribute": "Attribute",
     "MainAttribute": "Main Attribute",

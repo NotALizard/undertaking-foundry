@@ -1,0 +1,23 @@
+{
+  "name": "Gifted Human",
+  "type": "race",
+  "img": "icons/creatures/eyes/human-single-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Things come easy to gifted humans.  Humans, in general, are uniquely capable at most things, but gifted humans are often even more capable on average.  Be it through genes, luck, or divine intervention, gifted humans are a cut above the common folk, and are often picked on for this.  However, as with most gifts, those who rely upon their natural talent are quickly surpassed by those who work hard.  Gifted humans who really work at it, though, are capable of almost anything.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "core",
+    "classDetails": "<p>Gifted Human Traits</p><ul><li><b>Compatibility: </b>Hominoid</li><li><b>Attribute Increase: </b>Pick three <i>different</i> attributes that you did not increase as part of your core traits.  Increase each of these attributes by 1.</li><li><b>Skill Proficiency: </b>You learn one skill proficiency of your choice.</li></ul>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "7C21QRNJ9UNGWPO1"
+}

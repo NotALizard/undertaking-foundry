@@ -1,0 +1,19 @@
+{
+    "name": "Construction Pack",
+    "type": "equipment",
+    "img": "icons/containers/bags/pack-leather-stitched-tan.webp",
+    "system": {
+        "description": {
+            "value": "A @Compendium[undertaking.adventuring-gear.5IYR0BKWNDA9RSZW]{satchel}, a @Compendium[undertaking.weapons.5XTN3WTBZ7UPQ91K]{hammer}, a @Compendium[undertaking.weapons.5XTN3WTBZ7UPQ91K]{wrench (hammer)}, a @Compendium[undertaking.weapons.4XDEFIHFNG2WNIOR]{screwdriver (dagger)}, a @Compendium[undertaking.adventuring-gear.SI4YUQ5PCNA8WJU9]{sack of 20 nails}, @Compendium[undertaking.adventuring-gear.O9K3J48N355WZI9K]{leather gloves}, a @Compendium[undertaking.adventuring-gear.P8R9P47OUO0XXCWM]{leather helmet}, a @Compendium[undertaking.weapons.4SHZ7Y8QLKRH1I4J]{saw (sickle)}, a @Compendium[undertaking.adventuring-gear.NC5KBZXAW46HR0EH]{waterskin}, 4 days of @Compendium[undertaking.adventuring-gear.0K9ZLO6XAN2ZM34O]{rations}, 5 @Compendium[undertaking.adventuring-gear.F34U8M0Y1XIIM1OM]{torches}, a @Compendium[undertaking.adventuring-gear.5GO43PS0V7KUS596]{shovel}, @Compendium[undertaking.adventuring-gear.QOUY769A8LEKM4NV]{50ft of hempen rope}, 3 rolls of @Compendium[undertaking.adventuring-gear.POS6K3GG6NQ7YHIZ]{parchment}, a @Compendium[undertaking.adventuring-gear.O6RMIYQVY13GZSL0]{parchment case}, an @Compendium[undertaking.adventuring-gear.YNKMW8N1NGPJSW9F]{ink quill}, and an @Compendium[undertaking.adventuring-gear.005XC95QJK19SF73]{ink well}.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "30",
+            "denomination": "gp"
+        }
+    },
+    "_id": "N2ZW5CESP53IBVBZ"
+}

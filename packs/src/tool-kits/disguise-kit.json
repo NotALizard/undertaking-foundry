@@ -1,0 +1,19 @@
+{
+    "name": "Disguise Kit",
+    "type": "equipment",
+    "img": "icons/equipment/head/hood-leather-orange-mask.webp",
+    "system": {
+        "description": {
+            "value": "Allows the creation of a disguise which can be used to more easily deceive, persuade, enthrall, or intimidate others.  Can allow you to pass for someone else.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "3",
+        "price": {
+            "value": "25",
+            "denomination": "gp"
+        }
+    },
+    "_id": "8RRVDG3OJMU71FXS"
+}

@@ -1,7 +1,7 @@
 {
     "name": "Climbing Harness",
     "type": "equipment",
-    "img": "icons/equipment/waist/belt-buckle-square-red.webp",
+    "img": "icons/sundries/survival/leather-strap-brown.webp",
     "system": {
         "description": {
             "value": "When used with rope, you cannot fall or climb more than 25ft. from the point where you anchored yourself to the rope without undoing the anchor.",

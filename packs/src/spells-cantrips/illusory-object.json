@@ -1,0 +1,62 @@
+{
+    "name": "Illusory Object",
+    "type": "spell",
+    "img": "icons/consumables/drinks/clay-jar-glowing-orange-blue.webp",
+    "system": {
+        "description": {
+            "value": "<p>Picturing something that you've seen or imagined, you wave your hand and use your magic to visualize it within the world itself.  <br>You can do one of the following:</p><ul><li> Create up to three simple illusions that fit within 1 square foot.  So long as you can see the illusory object unobstructed, then you can re-form the image as a minor action, or move it up to a total of 30 feet per round, shared between each of your illusory objects, as a free action.  <ul><li>Simple illusions do not have intricate carvings, textures, or multiple parts.  A pocket watch might be a simple illusion, but no gears could be showing and it might lack a chain or any intricate designs.  </li></ul></li><li>Create one complex illusion that fits within 5 square feet.  So long as you can see the illusory object unobstructed, then you can re-form the image as an action, or move it up to a total of 15 feet per round as a minor action.  </li></ul><p><br>&nbsp;&nbsp;&nbsp;&nbsp;These illusory objects cannot give off light, sound, smell, or any other sensory effect, and are revealed as illusions when physically interacted with since objects pass through them.  If a creature examines an illusion, it can succeed in determining that it\u2019s an illusion with a successful Intelligence (Investigation) check against your Spell Save DC.  Reduce the Spell Save DC by 3 for this roll if the illusory object is complex.  Attempting to simulate living creatures causes it to appear obviously illusory without the need to make a check.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "0",
+        "charge": false,
+        "school": "ill",
+        "components": {
+            "somatic": true,
+            "verbal": false,
+            "material": true,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "a pinch of malleable material",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "30",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "",
+            "width": null,
+            "units": "",
+            "type": "object"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "4XTJQ4LL9IHP54SB"
+}

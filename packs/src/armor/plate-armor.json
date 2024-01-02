@@ -1,0 +1,24 @@
+{
+    "name": "Plate Armor",
+    "type": "equipment",
+    "img": "icons/equipment/chest/breastplate-cuirass-steel-grey.webp",
+    "system": {
+        "description": {
+            "value": "AC 18<br>Noisy, Weighty 15",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "65",
+        "price": {
+            "value": "1500",
+            "denomination": "gp"
+        },
+        "armor": {
+            "type": "heavy",
+            "value": "18",
+            "dex": "0"
+        }
+    },
+    "_id": "ODETR6GRSUI4XEDL"
+}

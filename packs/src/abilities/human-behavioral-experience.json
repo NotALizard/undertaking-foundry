@@ -1,0 +1,25 @@
+{
+  "name": "Behavioral Experience",
+  "type": "ability",
+  "img": "icons/skills/social/diplomacy-handshake.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have advantage on Presence (Insight) checks directed at members of your adopted race.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "IRC2M1N62DQTFVBH"
+}

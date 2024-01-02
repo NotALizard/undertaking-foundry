@@ -1,0 +1,25 @@
+{
+  "name": "Helping Hand",
+  "type": "ability",
+  "img": "icons/skills/social/diplomacy-handshake-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>You can use a minor action to give an ally advantage on the next attack roll that they make.  You must end your turn adjacent to the target to do this.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "2H84NPVAS7007JRB"
+}

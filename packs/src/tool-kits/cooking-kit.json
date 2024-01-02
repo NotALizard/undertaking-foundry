@@ -1,0 +1,19 @@
+{
+    "name": "Cooking Kit",
+    "type": "equipment",
+    "img": "icons/tools/cooking/bowl-steaming-brown.webp",
+    "system": {
+        "description": {
+            "value": "(Artisan Kit) Prepare a meal.  Duplicate a meal.  Identify impurities or poisons in food.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "8",
+        "price": {
+            "value": "1",
+            "denomination": "gp"
+        }
+    },
+    "_id": "GJM0RMS60GY1X423"
+}

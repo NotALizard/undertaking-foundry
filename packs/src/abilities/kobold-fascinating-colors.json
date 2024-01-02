@@ -1,0 +1,25 @@
+{
+  "name": "Fascinating Colors",
+  "type": "ability",
+  "img": "icons/magic/control/buff-luck-fortune-rainbow.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have advantage on Presence (Persuasion) and Presence (Deception) checks when trying to convince someone to seem less threatening.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "ZNZV2MPB10KLX45B"
+}

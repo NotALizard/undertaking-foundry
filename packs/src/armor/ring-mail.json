@@ -1,0 +1,24 @@
+{
+    "name": "Ring Mail",
+    "type": "equipment",
+    "img": "icons/equipment/waist/belt-ring-steel.webp",
+    "system": {
+        "description": {
+            "value": "AC 14",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "40",
+        "price": {
+            "value": "30",
+            "denomination": "gp"
+        },
+        "armor": {
+            "type": "heavy",
+            "value": "14",
+            "dex": "0"
+        }
+    },
+    "_id": "15LIQPMBXX4PN8UO"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Warrior Chk'tu",
+  "type": "race",
+  "img": "icons/environment/creatures/bug-tick-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>To many not used to chk'tu hives, the warrior chk'tu are the variation that most stand out the most amongst a swarm.  Warrior chk'tu are covered in a more distinct, angular chitin exoskeleton, with a pair of bladed arms above a usual set.  A heavy swollen abdomen hangs almost to the floor beneath and behind the chk'tu, revealing a remarkably sharp regenerative sting when threatened.  To those who have survived war against chk'tu, the fast, fluttering, high-pitched movement of these bladed warrior chk'tu are horrors that they dare not to recall.  <br>&nbsp;&nbsp;&nbsp;&nbsp;To their allies, however, warrior chk'tu are often safe and caring protectors.  Their almost unnaturally safe control of their blades and stingers makes them shining knights to young chk'tu, and indeed to any ally with which a warrior chk'tu chooses to side.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "core",
+    "classDetails": "<p>Warrior Chk'tu Traits</p><ul><li><b>Compatibility: </b>Insectoid</li><li><b>Attribute Increase: </b>Your Strength and Constitution each increase by 1.</li><li><b>Natural Armor: </b>@Compendium[undertaking.abilities.2S9EWQFOXT06P29E]{Natural Armor}</li><li><b>Blade Arms: </b>@Compendium[undertaking.abilities.BX78MZPVZ495PPDG]{Blade Arms}</li><li><b>Death Sting: </b>@Compendium[undertaking.abilities.W2JOTIASQTIRW3IA]{Death Sting}</li><li><b>Flutter Jump: </b>@Compendium[undertaking.abilities.3RN1CJEJ8YBYOC14]{Flutter Jump}</li><li><b>Flutter Fall: </b>@Compendium[undertaking.abilities.XQVA2ZE3HFJHJ8Z4]{Flutter Fall}</li></ul>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "6ERTR13JIVRUPXA3"
+}

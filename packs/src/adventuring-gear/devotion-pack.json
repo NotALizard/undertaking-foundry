@@ -1,0 +1,19 @@
+{
+    "name": "Devotion Pack",
+    "type": "equipment",
+    "img": "icons/containers/bags/pack-engraved-leather-blue.webp",
+    "system": {
+        "description": {
+            "value": "A @Compendium[undertaking.adventuring-gear.8UM8I7BM5O8XZPVW]{backpack}, a @Compendium[undertaking.adventuring-gear.VU5HQJGSE1W56WSE]{blanket}, 10 @Compendium[undertaking.adventuring-gear.M51F9RMIENUU7RHH]{candles}, a @Compendium[undertaking.adventuring-gear.NSD8EIX33YF2VG6P]{tinderbox}, a holy focus (see below), 2 @Compendium[undertaking.adventuring-gear.NQIM8Y0A7O366BTY]{blocks of incense}, a @Compendium[undertaking.adventuring-gear.SFXHJWK03FEQVHJT]{censer}, @Compendium[undertaking.adventuring-gear.P74Y95LV5368WJ9O]{vestments}, 3 days of @Compendium[undertaking.adventuring-gear.0K9ZLO6XAN2ZM34O]{rations}, and a @Compendium[undertaking.adventuring-gear.NC5KBZXAW46HR0EH]{waterskin}.<br><br>Holy focus options include: @Compendium[undertaking.adventuring-gear.JV7ZDXUGK6XRLS3E]{amulet}, @Compendium[undertaking.adventuring-gear.TU9X25JEFO91SBLU]{emblem}, @Compendium[undertaking.adventuring-gear.Y7P5W3JOAEKSOS81]{idol}, @Compendium[undertaking.adventuring-gear.QSO4ZBY0LNOX22B4]{reliquary}, or @Compendium[undertaking.adventuring-gear.2ZUMOJBLJ4Y4ARIP]{religious text}",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "21",
+            "denomination": "gp"
+        }
+    },
+    "_id": "BNVNGMJMOJ3L58KY"
+}

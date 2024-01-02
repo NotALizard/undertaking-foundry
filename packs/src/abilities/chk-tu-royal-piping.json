@@ -1,0 +1,25 @@
+{
+  "name": "Royal Piping",
+  "type": "ability",
+  "img": "icons/tools/instruments/megaphone.webp",
+  "system": {
+    "description": {
+      "value": "<p>As a minor action, you can let loose a loud piping or horn noise like a howl that radiates up to 120ft.  All sleeping creatures that hear it are awoken, and up to 5 allied creatures of your choice that hear it gain temporary hit points equal to 5 or your level, whichever is higher.  Temporary hit points gained this way can be stacked.  You can use this racial ability once per long or short rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "6LMVQ9ZOP41IHVCP"
+}

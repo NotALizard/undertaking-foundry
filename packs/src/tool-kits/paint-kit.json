@@ -1,0 +1,19 @@
+{
+    "name": "Paint Kit",
+    "type": "equipment",
+    "img": "icons/tools/hand/brush-paint-pink.webp",
+    "system": {
+        "description": {
+            "value": "(Artisan Kit) Identifying whether a work of art is original or fake, magical, its age, who might have made it, and where it is from.  Also allows the creation of art.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "5",
+        "price": {
+            "value": "10",
+            "denomination": "gp"
+        }
+    },
+    "_id": "FE8ZCSBLXZD50D4E"
+}

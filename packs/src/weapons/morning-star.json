@@ -1,0 +1,61 @@
+{
+    "name": "Morning Star",
+    "type": "weapon",
+    "img": "icons/weapons/maces/mace-round-spiked-grey.webp",
+    "system": {
+        "description": {
+            "value": "Encompasses all spiked clubs.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "4",
+        "price": {
+            "value": "15",
+            "denomination": "gp"
+        },
+        "weaponType": "martialM",
+        "attribute": "str",
+        "actionType": "mwak",
+        "range": {
+            "value": "0",
+            "long": "0",
+            "units": "ft"
+        },
+        "critical": {
+            "threshold": null,
+            "damage": ""
+        },
+        "damage": {
+            "parts": [
+                [
+                    "1d8 + @mod",
+                    "piercing"
+                ]
+            ],
+            "versatile": ""
+        },
+        "formula": "",
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "properties": {
+            "amm": false,
+            "fin": false,
+            "foc": false,
+            "hvy": false,
+            "lgt": false,
+            "lod": false,
+            "rch": false,
+            "spc": false,
+            "thr": false,
+            "two": false,
+            "una": false,
+            "ver": false
+        },
+        "showInAttacks": true
+    },
+    "_id": "WQKPLEYF5O0363TE"
+}

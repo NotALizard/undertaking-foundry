@@ -1,0 +1,67 @@
+{
+    "name": "Open Wound",
+    "type": "spell",
+    "img": "icons/magic/unholy/hand-fire-skeleton-pink.webp",
+    "system": {
+        "description": {
+            "value": "<p>You reach your hand out and make a melee spell attack against a creature you can reach.  On hit, the creature takes 3d10 necrotic damage as their skin and tendons open up where you touch.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "1",
+        "charge": false,
+        "school": "nec",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": false,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "msak",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "range": {
+            "value": "0",
+            "long": null,
+            "units": "touch"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "3d10",
+                    "necrotic"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "V4RW5MFB4N243CDA"
+}

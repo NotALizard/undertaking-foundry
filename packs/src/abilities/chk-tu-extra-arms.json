@@ -1,0 +1,25 @@
+{
+  "name": "Extra Arms",
+  "type": "ability",
+  "img": "icons/commodities/claws/claw-insect-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have two pairs of arms, with the 2nd set located beneath the first.  You can choose either set of arms to complete actions with, can carry or hold things in up to all four hands, can carry up to 2 two-handed objects, and can reload up to 2 loading weapons at once without penalty.<br>&nbsp;&nbsp;&nbsp;&nbsp;However, you do not gain extra attacks, actions, or minor actions with these limbs.  If you hold more than two shields, you only gain the Armor Class bonuses of the first two, as more than two becomes unwieldy and unhelpful.  Additionally, while wearing any armor, shields only grant bonuses when held in 2 hands due to limited mobility.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "5QYD3QFDLZO2NKCD"
+}

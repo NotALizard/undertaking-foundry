@@ -1,0 +1,25 @@
+{
+  "name": "Navigator",
+  "type": "ability",
+  "img": "icons/tools/navigation/compass-brass-blue-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>You always know the cardinal direction that you are facing.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "OXY335G1JVFPRA6V"
+}

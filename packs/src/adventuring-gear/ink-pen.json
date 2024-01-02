@@ -1,0 +1,19 @@
+{
+    "name": "Ink Pen",
+    "type": "equipment",
+    "img": "icons/tools/scribal/pen-steel-grey-brown.webp",
+    "system": {
+        "description": {
+            "value": "The more expensive version of a quill that has a long hollow handle instead of a feather, which is filled with ink allowing it to write without the need to constantly dip it in an ink bottle.  Still takes an ink bottle to refill it however.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "1",
+            "denomination": "sp"
+        }
+    },
+    "_id": "W9VPHRBPDRWML49S"
+}

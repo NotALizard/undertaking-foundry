@@ -1,0 +1,25 @@
+{
+  "name": "Magic Means Nothing",
+  "type": "ability",
+  "img": "icons/skills/movement/figure-running-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>If you would be reduced to 0 hit points by a magical source, you can choose to instead be at 1.  This ability can only be used once per long rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "B5HHGGP9E3Z81TY8"
+}

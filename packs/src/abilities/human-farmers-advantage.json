@@ -1,0 +1,25 @@
+{
+  "name": "Farmer's Advantage",
+  "type": "ability",
+  "img": "icons/skills/trades/farming-planet-bulb-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>You add your proficiency twice to Wisdom (Nature) and Intelligence (Craft) checks in relation to farming or cooking if you are already proficient in either skill.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "1GWNHHDFP2B30LUH"
+}

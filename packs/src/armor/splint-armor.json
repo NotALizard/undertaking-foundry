@@ -1,0 +1,24 @@
+{
+    "name": "Splint Armor",
+    "type": "equipment",
+    "img": "icons/equipment/chest/breastplate-banded-steel-gold.webp",
+    "system": {
+        "description": {
+            "value": "AC 17<br>Noisy, Weighty 15",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "60",
+        "price": {
+            "value": "200",
+            "denomination": "gp"
+        },
+        "armor": {
+            "type": "heavy",
+            "value": "17",
+            "dex": "0"
+        }
+    },
+    "_id": "5W0W7PLJELBAY3II"
+}

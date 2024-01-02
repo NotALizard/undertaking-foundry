@@ -1,0 +1,25 @@
+{
+  "name": "Fey Ancestry",
+  "type": "ability",
+  "img": "icons/consumables/fruit/apple-red-tree-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have advantage on save checks against being @Compendium[undertaking.conditions.KJXJ0T5RPNC51N4V]{Charmed}, and magic can't put you to sleep.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "B6D7U0WZJRIXIX5O"
+}

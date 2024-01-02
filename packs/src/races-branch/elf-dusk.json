@@ -1,0 +1,23 @@
+{
+  "name": "Dusk Elf",
+  "type": "race",
+  "img": "icons/creatures/eyes/human-single-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Not all elves care for being a descendant of the Fey.  In fact, there are those that are trying to distance themselves as much as possible from said heritage.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Dusk Elves, unlike their brethren, have almost no connection to their ancient ancestors or their Fey heritage.  They have taken a collective step to limit their spellcasting, causing their fey ancestry to dwindle over time to the point where it now has little to no effect on their physical beings.  There are, at times, some dusk elves that take up spellcasting, it is not a common practice.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Instead, dusk elves are valuers of hard work and put stock in what can be seen and can be done with your own two hands.  Actions speak louder than words to dusk elves, and, overtime, they have become physically separate from their brethren.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Dusk elves are shorter than their counterparts, but stockier and physically bulkier as well, with more muscular forms than the stereotypical elf.  <br>&nbsp;&nbsp;&nbsp;&nbsp;They have skin colors of dark blues and violets, and hair colors of white, deep brown, silver, and blond.  Their eye colors are normally greens, blues, and darker browns, with occasional ambers.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "core",
+    "classDetails": "<p>Dusk Elf Traits</p><ul><li><b>Compatibility: </b>Hominoid</li><li><b>Attribute Increase: </b>Your Strength increases by 1.</li><li><b>Weapon Proficiency: </b>You have proficiency in Rapiers, Midswords, and Longbows.</li><li><b>Darkvision 30ft: </b>@Compendium[undertaking.abilities.K2R4176S4B99TO6R]{Darkvision (30ft)}</li><li><b>Unstoppable: </b>@Compendium[undertaking.abilities.LZ84NS4W5BKFFEI8]{Unstoppable}</li><li><b>Magic Means Nothing: </b>@Compendium[undertaking.abilities.B5HHGGP9E3Z81TY8]{Magic Means Nothing}</li></ul>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "4DRVDHD3H8WD22IS"
+}

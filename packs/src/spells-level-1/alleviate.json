@@ -1,0 +1,62 @@
+{
+    "name": "Alleviate",
+    "type": "spell",
+    "img": "icons/magic/holy/barrier-shield-winged-cross.webp",
+    "system": {
+        "description": {
+            "value": "<p>Gently laying your hands upon a creature, one condition of your choice on the target is temporarily disabled for the duration.  @Compendium[undertaking.conditions.FGVFFYGPAFQGZ5RP]{Grappled}, @Compendium[undertaking.conditions.RK3DF56CKMQUV6DM]{Prone}, @Compendium[undertaking.conditions.1EK5V6KTYAWC6S69]{Restrained}, and @Compendium[undertaking.conditions.JCWGEKZSDQWLCE3O]{Suffocating} cannot be alleviated.<br>&nbsp;&nbsp;&nbsp;&nbsp;Should the creature receive the condition again, you must make a concentration check at disadvantage.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Should the removed condition be @Compendium[undertaking.conditions.9KB959MRZ0H4IT4C]{Unconscious}, the creature awakes and is able to act as normal, but has 0 hit points, still makes death throws at the beginning of its turn, and takes damage as death throw fails.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "1",
+        "charge": false,
+        "school": "nec",
+        "components": {
+            "somatic": true,
+            "verbal": false,
+            "material": false,
+            "ritual": true,
+            "concentration": true
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "0",
+            "long": null,
+            "units": "touch"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "NY714SIJXYY024UD"
+}

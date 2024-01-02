@@ -1,0 +1,19 @@
+{
+    "name": "Burglary Pack",
+    "type": "equipment",
+    "img": "icons/containers/bags/pack-leather-black-brown.webp",
+    "system": {
+        "description": {
+            "value": "A @Compendium[undertaking.adventuring-gear.8UM8I7BM5O8XZPVW]{backpack}, a @Compendium[undertaking.adventuring-gear.O9K3J48N355WZI9K]{pair of leather gloves}, a @Compendium[undertaking.adventuring-gear.3KV4S1X801JG69S0]{bag of 1,000 ball bearings}, @Compendium[undertaking.adventuring-gear.D1TH4OF8ME03A4RP]{10ft of string}, a @Compendium[undertaking.adventuring-gear.70BP4EBPW1LA5ZBO]{bell}, a @Compendium[undertaking.adventuring-gear.VU5HQJGSE1W56WSE]{blanket}, a @Compendium[undertaking.adventuring-gear.R0USDHSSWKCUQ0PI]{lock}, a @Compendium[undertaking.weapons.5XTN3WTBZ7UPQ91K]{crowbar (hammer)}, 5 days of @Compendium[undertaking.adventuring-gear.0K9ZLO6XAN2ZM34O]{rations}, 5 @Compendium[undertaking.adventuring-gear.M51F9RMIENUU7RHH]{candles}, a @Compendium[undertaking.adventuring-gear.GWIPBGL1RL75WA7N]{bullseye lantern}, 2 @Compendium[undertaking.adventuring-gear.0LBQXP194EUXUAXW]{flasks of oil}, a @Compendium[undertaking.adventuring-gear.NC5KBZXAW46HR0EH]{waterskin}, a @Compendium[undertaking.adventuring-gear.NSD8EIX33YF2VG6P]{tinderbox}, and @Compendium[undertaking.adventuring-gear.QOUY769A8LEKM4NV]{50ft of hempen rope}.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "20",
+            "denomination": "gp"
+        }
+    },
+    "_id": "7PSXCP1FXU0T1SLH"
+}

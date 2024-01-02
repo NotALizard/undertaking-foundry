@@ -1,0 +1,62 @@
+{
+    "name": "Force of Will",
+    "type": "spell",
+    "img": "icons/magic/unholy/strike-hand-glow-pink.webp",
+    "system": {
+        "description": {
+            "value": "<p>Using a minor form of telekinesis, you force your will outward and find yourself able to manipulate objects for a short amount of time.<br>&nbsp;&nbsp;&nbsp;&nbsp;Anything you can see within 30 feet of you can be affected by this spell, and you can manipulate any object as you would with your own hand.  You can open a jar or unlocked door, pour a glass of tea, retrieve something from a bag that\u2019s too far away, or put something back in it without having to get up.<br>&nbsp;&nbsp;&nbsp;&nbsp;This ability can only affect things that you could physically grab and move with your own hands.  <br>&nbsp;&nbsp;&nbsp;&nbsp;This effect lasts until the duration runs out, or it is dismissed.  You cannot use this ability to use a weapon to attack, activate magical items, and it has a carry limit of 5 pounds. </p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "0",
+        "charge": false,
+        "school": "con",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": false,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "30",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "",
+            "width": null,
+            "units": "",
+            "type": "object"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "IJ97BYFB2ANTKOSW"
+}

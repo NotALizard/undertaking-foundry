@@ -1,0 +1,19 @@
+{
+    "name": "Carpentry Kit",
+    "type": "equipment",
+    "img": "icons/skills/trades/construction-carpentry-hammer.webp",
+    "system": {
+        "description": {
+            "value": "(Artisan Kit) Fortifying windows and doors, making barricades, and putting up temporary shelters.  Raw materials must be available for use however.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "6",
+        "price": {
+            "value": "8",
+            "denomination": "gp"
+        }
+    },
+    "_id": "9YBVQA8VWQ255QLS"
+}

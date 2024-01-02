@@ -1,0 +1,23 @@
+{
+  "name": "Core Chk'tu",
+  "type": "race",
+  "img": "icons/environment/creatures/bug-tick-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Chk'tu are tall, bipedal, insectoid vertebrates with sharp chitin-covered features, their exoskeleton covering their bodies like armor.  Most chk'tu feature chitin formations across their heads like helmets.  From spikes to horns to arches, these serve as hardened sensory antennae, and help regulate temperatures in their exoskeletal bodies.  Beneath these formations are two pairs of bead-like eyes and a set of vertically-split mandibles.  Their extra set of eyes grant them greater depth perception while fluttering, but their bead-like composition means that their four eyes are generally just as effective as a human's two.  Their mandibles hide both a tongue and internal chitin teeth that allows them to chew, drink, and, with practice, speak non-insectoid languages.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Chk'tu feature two to four arms, most of which are tipped with thin, four-fingered hands.  Along the backs of most chk'tu are a set of four wings between 3ft to 5ft in length that, when inactive, lay low like a cape behind them.  These wings give them limited fluttering or flight when vibrated, and are unhindered by rain and water when doing so thanks to their surprisingly soft, water-resistant exoskeleton.  Chk'tu have long, thin, digitigrade legs capped with four-pronged talon-like grippers at their base.  At the base of their torsos is a thin, tail-like abdomen that runs about 2ft long.  Generally, this \"tail\" is stiff and has a spiked appearance, and is primarily used for balance when jumping or fluttering.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Chk'tu come in a range of different colors, and rarely deviate heavily from the colors of their hive.  However, chk'tu that break ties with their birth hive often paint or stain their chitin to show individuality.  Chk'tu exoskeletons often feature a heavy solid coloring with contrasting accents or markings across their bodies.  Most chk'tu feature color palettes of blacks, purple-blues, greens, oranges, and browns, with eyes of black, green, red, or blue.  While other natural colors and color mixes exist, they tend to be much less common.  Chk'tu have viscous semi-clear blood that changes hue based on diet.  This usually ends up with semi-clear blood between dark green, pink, and yellow from diets primarily of vegetables, meat, or fruit.  The deeper the blood color, the less diversified the diet.<br>&nbsp;&nbsp;&nbsp;&nbsp;Chk'tu gather around royal chk'tu and create hives; massive singular complexes with winding pathways and numerous rooms meant for both housing and protection.  With few exceptions, chk'tu culture is utilitarian in nature.  Most hives being led by the long-living royal chk'tu means that the naturally short-lived are often given a static role to play, dedicating their life to their birth job.  Perhaps naturally, about 1 in 10 chk'tu abscond to find a new hive, to start their own, or to find some alternative form of living.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Chk'tu can appear very detached from the world at first, but many are passionate about their work, and quick to learn from their mistakes.  Other races consider their mental flexibility to be a necessity due to the chk'tu's short lifespan, while others point out that this simply serves to help chk'tu spread and create new hives faster than any other major race.  However, this is also why so many chk'tu abscond from hives, as their passionate nature means that a typical chk'tu is proud and curious, if defensive and unprepared, for what they will find in taking their true first steps alone from their hive.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "core",
+    "classDetails": "<p>Core Chk'tu Traits</p><ul><li><b>Compatibility: </b>Insectoid</li><li><b>Attribute Increase: </b>Your Constitution increases by 1.</li><li><b>Lifespan: </b>Chk'tu reach maturity at around 1 year old, and live about 5 to 10 years on average.</li><li><b>Size: </b>Medium; Chk'tu stand between 5 to 7 feet tall and weigh between 100 to 200 pounds.</li><li><b>Speed: </b>Your base ground speed is 30 feet.</li><li><b>Languages: </b>You can speak, read, and write Common and Chitter.</li><li><b>Insectoid Creature: </b>@Compendium[undertaking.abilities.2ZY5QMOZSWWLGX2V]{Insectoid Creature}</li></ul>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "M3S4OQLNOGHX7W5U"
+}

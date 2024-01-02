@@ -1,0 +1,62 @@
+{
+    "name": "Verminize",
+    "type": "spell",
+    "img": "icons/creatures/amphibians/frog-water-teal.webp",
+    "system": {
+        "description": {
+            "value": "<p>Targeting a creature that you can see within range, you cast this spell in an attempt to transform the target into a harmless creature.  The target must make a Presence (Save) check to resist the change. <br>&nbsp;&nbsp;&nbsp;&nbsp;On failure, you decide if the target transforms into a Chicken, Golop, Pig, or Toad.  The target assumes the form and game statistics of the chosen creature, and all attributes except Intelligence are replaced by the statistics of the chosen form.  <br>&nbsp;&nbsp;&nbsp;&nbsp;The target's hit points, however, remain the same, and any damage to the target is retained after reverting back.  <br>&nbsp;&nbsp;&nbsp;&nbsp;The creature is limited in the actions that it can perform by the nature of its new form: it can\u2019t speak, cast spells, or take any action that requires hands or speech.  The target's gear melds into the new form and they cannot activate, use, wield, or otherwise benefit from any of its equipment.  <br>&nbsp;&nbsp;&nbsp;&nbsp;At the end of each turn in this form, the target repeats the Presence (Save) check until they succeed, ending this spell.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "2",
+        "charge": false,
+        "school": "tra",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": true
+        },
+        "materials": {
+            "value": "a lily pad",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "60",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "pre",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "81P4RRS5TYCIYIDI"
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Insane",
+  "pages": [
+    {
+      "name": "Insane",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Insane</p><ul><li>Insanity can be short-term, long-term, or indefinite.</li><li>Short-term insanity lasts for 1d10 minutes.</li><li>Long-term insanity lasts for 1d10 x 10 hours.</li><li>Indefinite insanity gains a new character flaw until cured.</li></ul><i><u>Short-Term Insanity</u></i><table><tbody><tr><td><p><strong>d100</strong></p></td><td><p><strong>Effect (lasts 1d10 minutes)</strong></p></td></tr><tr><td><p>01-10</p></td><td><p>The character falls unconscious.</p></td></tr><tr><td><p>11-20</p></td><td><p>The character retreats into its mind and becomes paralyzed. The effect ends if the character takes any damage.</p></td></tr><tr><td><p>21-30</p></td><td><p>The character becomes deathly frightened, and must use its action and movement to flee from the source of the fear.</p></td></tr><tr><td><p>31-40</p></td><td><p>The character begins babbling uncontrollably and cannot speak or cast spells with vocal components.</p></td></tr><tr><td><p>41-50</p></td><td><p>The character must use his or her action each round to attack the nearest creature.</p></td></tr><tr><td><p>51-60</p></td><td><p>The character begins seeing vivid hallucinations and has disadvantage on skill checks.</p></td></tr><tr><td><p>61-70</p></td><td><p>The character&rsquo;s mind partially shuts down and just does whatever anyone tells it.</p></td></tr><tr><td><p>71-80</p></td><td><p>The character is stunned.</p></td></tr><tr><td><p>81-90</p></td><td><p>The character becomes incapacitated and spends the duration babbling, weeping, laughing, or screaming.</p></td></tr><tr><td><p>91-100</p></td><td><p>The creature feels drained of energy and depressed, falling prone and becoming restrained.</p></td></tr></tbody></table><i><u>Long-Term Insanity</u></i><table><tbody><tr><td><p><strong>d100</strong></p></td><td><p><strong>Effect (lasts 1d10 x 10 hours)</strong></p></td></tr><tr><td><p>01-10</p></td><td><p>The character cannot understand language.</p></td></tr><tr><td><p>11-20</p></td><td><p>The character retreats into its mind and becomes paralyzed. The effect ends if the character takes any damage.</p></td></tr><tr><td><p>21-30</p></td><td><p>The character becomes deathly frightened, and must use its action and movement to flee from the source of the fear.</p></td></tr><tr><td><p>31-40</p></td><td><p>The character begins babbling uncontrollably and cannot speak or cast spells with vocal components.</p></td></tr><tr><td><p>41-50</p></td><td><p>The character must use his or her action each round to attack the nearest creature.</p></td></tr><tr><td><p>51-60</p></td><td><p>The character begins seeing vivid hallucinations and has disadvantage on skill checks.</p></td></tr><tr><td><p>61-70</p></td><td><p>The character&rsquo;s mind partially shuts down and just does whatever anyone tells it.</p></td></tr><tr><td><p>71-80</p></td><td><p>The character is stunned.</p></td></tr><tr><td><p>81-90</p></td><td><p>The character becomes incapacitated and spends the duration babbling, weeping, laughing, or screaming.</p></td></tr><tr><td><p>91-100</p></td><td><p>The creature feels drained of energy and depressed, falling prone and becoming restrained.</p></td></tr></tbody></table>",
+        "markdown": ""
+      },
+      "_id": "KNCHWCBGDRFCJY8X",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "JHOXE7HCCBCD8MSK"
+}

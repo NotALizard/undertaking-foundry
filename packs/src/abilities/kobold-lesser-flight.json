@@ -1,0 +1,25 @@
+{
+  "name": "Lesser Flight",
+  "type": "ability",
+  "img": "icons/commodities/biological/wing-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have a pair of leathery dragon wings sprouting from your shoulder blades.  Your wings give you a flying speed of 30 feet.  This benefit works only in short bursts, however.  You fall if you end your turn in the air and nothing else is holding you aloft, such as Glide.  Between Limited Flight and Glide, your total horizontal movement each turn cannot exceed twice your flying speed.  You cannot fly in heavy armor.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "IX6N1K5PUGT3QCMV"
+}

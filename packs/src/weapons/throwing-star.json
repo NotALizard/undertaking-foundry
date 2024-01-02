@@ -1,0 +1,61 @@
+{
+    "name": "Throwing Star",
+    "type": "weapon",
+    "img": "icons/weapons/thrown/shuriken-double-red.webp",
+    "system": {
+        "description": {
+            "value": "Encompasses all chakrams, shuriken, hira shuriken, and throwing stars.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0.25",
+        "price": {
+            "value": "1",
+            "denomination": "gp"
+        },
+        "weaponType": "martialR",
+        "attribute": "dex",
+        "actionType": "rwak",
+        "range": {
+            "value": "20",
+            "long": "60",
+            "units": "ft"
+        },
+        "critical": {
+            "threshold": null,
+            "damage": ""
+        },
+        "damage": {
+            "parts": [
+                [
+                    "1d6 + @mod",
+                    "piercing"
+                ]
+            ],
+            "versatile": ""
+        },
+        "formula": "",
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "properties": {
+            "amm": false,
+            "fin": false,
+            "foc": false,
+            "hvy": false,
+            "lgt": true,
+            "lod": false,
+            "rch": false,
+            "spc": false,
+            "thr": true,
+            "two": false,
+            "una": false,
+            "ver": false
+        },
+        "showInAttacks": true
+    },
+    "_id": "UKGED83MX8FMNAIK"
+}

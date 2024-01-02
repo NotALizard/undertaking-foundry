@@ -1,0 +1,23 @@
+{
+  "name": "Drone Chk'tu",
+  "type": "race",
+  "img": "icons/environment/creatures/bug-tick-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Born with an extra set of arms, drones are especially skilled with their hands.  Their hand-eye coordination and nearly doubled arm strength makes them exceptional builders, workers, and tenders.  Meanwhile, their four-armed approach to fighting makes them a force to reckoned with in battle.  <br>&nbsp;&nbsp;&nbsp;&nbsp;However, drones are born with stunted, useless wings if any at all, leaving them without any form of vertical movement.  This makes spotting a drone chk'tu far from its home or hive unlikely.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "core",
+    "classDetails": "<p>Drone Chk'tu Traits</p><ul><li><b>Compatibility: </b>Insectoid</li><li><b>Attribute Increase: </b>Your Strength increases by 2.</li><li><b>Skill Proficiency: </b>You are proficient in Dexterity (Sleight of Hand).</li><li><b>Extra Arms: </b>@Compendium[undertaking.abilities.5QYD3QFDLZO2NKCD]{Extra Arms}</li><li><b>Handsy: </b>@Compendium[undertaking.abilities.ND986T2ORMSDKFYJ]{Handsy}</li></ul>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "Q1W0MAQPZO74ZO48"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Strong-Claw Kobold",
+  "type": "race",
+  "img": "icons/creatures/reptiles/dragon-horned-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Strong-claw kobolds are what makes up most of a kobold population, along with bright-hide kobolds.  Strong-claws are the workers, the warriors, and the laborers of kobold society and they play a crucial role in keeping their tribes safe.  <br>&nbsp;&nbsp;&nbsp;&nbsp;As their name suggests, these kobolds are born with powerful claws capable of being used as digging tools to make tunnels and deal lethal damage to enemies.  This makes them prime candidates for tunnelers, builders, and warriors of their tribes.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Physically, these kobolds' unique feature is their claws, which stand out as being larger, sharper, and don't wear down as fast as other kobolds' claws do.  While that may not seem like much to other races, among kobolds it is a thing of pride.  Because of their tendency to be warriors and builders, strong-claw kobolds tend to have a slightly keener mind for tactics than other kobolds.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "core",
+    "classDetails": "<p>Strong-Claw Kobold Traits</p><ul><li><b>Compatibility: </b>Reptile</li><li><b>Attribute Increase: </b>Your Strength increases by 1.</li><li><b>Helping Hand: </b>@Compendium[undertaking.abilities.2H84NPVAS7007JRB]{Helping Hand}</li><li><b>Sharp Claws: </b>@Compendium[undertaking.abilities.1AW2E5YMMC1IGGP9]{Sharp Claws}</li></ul>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "NR2TN3OPH4LCBYZ3"
+}

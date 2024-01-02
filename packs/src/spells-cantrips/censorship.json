@@ -1,0 +1,62 @@
+{
+    "name": "Censorship",
+    "type": "spell",
+    "img": "icons/skills/social/wave-halt-stop.webp",
+    "system": {
+        "description": {
+            "value": "<p>Pick up to two words or one combination of words up to five words long and speak them.  One creature that you can see within range must make a Presence (Save) check.  On failure, the creature cannot speak, write, or mentally communicate the chosen words or phrase for the duration.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "0",
+        "charge": false,
+        "school": "enc",
+        "components": {
+            "somatic": false,
+            "verbal": true,
+            "material": false,
+            "ritual": false,
+            "concentration": true
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "minor",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "hour"
+        },
+        "range": {
+            "value": "60",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "pre",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "127S65EU6LNRMM6M"
+}

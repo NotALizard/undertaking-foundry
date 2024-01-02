@@ -1,0 +1,25 @@
+{
+  "name": "Handsy",
+  "type": "ability",
+  "img": "icons/commodities/claws/claw-insect-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Whenever you make a Strength (Athletics) check to grapple a creature of equal or smaller size using more than one arm, you are considered proficient in the Athletics skill.<br>&nbsp;&nbsp;&nbsp;&nbsp;If you use four arms, then you also gain advantage.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "ND986T2ORMSDKFYJ"
+}

@@ -1,0 +1,67 @@
+{
+    "name": "Stone Shot",
+    "type": "spell",
+    "img": "icons/magic/earth/projectile-stone-ball-brown.webp",
+    "system": {
+        "description": {
+            "value": "<p>With a quick contact with the closest surface made of, or containing stone, you give a harsh word and a sizable stone projectile fires off at a single selected target.  Make a ranged spell attack against a single target.  If this attack hits, it deals 2d10 bludgeoning damage.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "1",
+        "charge": false,
+        "school": "evo",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": false,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "rsak",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "range": {
+            "value": "60",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "2d10",
+                    "bludgeoning"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "MD8DUOG1SKTK0VAC"
+}

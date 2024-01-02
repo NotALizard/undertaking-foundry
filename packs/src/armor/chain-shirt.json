@@ -1,0 +1,24 @@
+{
+    "name": "Chain Shirt",
+    "type": "equipment",
+    "img": "icons/commodities/metal/mail-chain-steel.webp",
+    "system": {
+        "description": {
+            "value": "AC 13 + Dex modifier (Max 2)",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "20",
+        "price": {
+            "value": "50",
+            "denomination": "gp"
+        },
+        "armor": {
+            "type": "medium",
+            "value": "13",
+            "dex": "2"
+        }
+    },
+    "_id": "9MAZ5666I2Z9MX78"
+}

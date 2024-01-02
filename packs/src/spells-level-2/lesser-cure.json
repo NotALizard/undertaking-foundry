@@ -1,0 +1,62 @@
+{
+    "name": "Lesser Cure",
+    "type": "spell",
+    "img": "icons/magic/life/heart-hand-gold-green.webp",
+    "system": {
+        "description": {
+            "value": "<p>You touch a creature and cure it of either one disease or one condition.  The conditions this spell can cure are @Compendium[undertaking.conditions.ADW4EH0NKRDCRCA4]{Blinded}, @Compendium[undertaking.conditions.WK17M9FZR08DRUP1]{Deafened}, @Compendium[undertaking.conditions.OBTES08D2XC130IG]{Paralyzed}, or @Compendium[undertaking.conditions.9X088PM7H5U2S1HQ]{Sickened}.  Assume that any @Compendium[undertaking.conditions.9YPWLY1IHQV3MRLO]{Disease} can be cured by Lesser Cure unless the disease states otherwise.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "2",
+        "charge": false,
+        "school": "abj",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": false,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "range": {
+            "value": "0",
+            "long": null,
+            "units": "touch"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "N04H7KQXVXSTATL9"
+}

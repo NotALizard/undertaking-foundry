@@ -1,0 +1,23 @@
+{
+  "name": "Core Human",
+  "type": "race",
+  "img": "icons/creatures/eyes/human-single-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Humans are bipedal, partially-haired mammals.  Each human’s skin generally falls within a range of deep brown to light pale or peach, with different hues affecting this range.  Similarly, human hair has a wide range of browns, blacks, whites, reds, pale yellows, and anything between.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Generally, humans are broadly skilled and versatile creatures.  Their amount is numerous, and their styles are moreso.  They make homes in almost any climate, rely on tools to complete any task that they cannot, and have a wide range of cultural, political, and religious beliefs.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "core",
+    "classDetails": "<p>Core Human Traits</p><ul><li><b>Compatibility: </b>Hominoid</li><li><b>Attribute Increase: </b>Pick three <i>different</i> Attributes, you increase each of these by 1.</li><li><b>Lifespan: </b>Humans reach adulthood in their late teens and live less than a century.</li><li><b>Size: </b>Medium; Humans are various when it comes to height and build.  Human height in feet can be anywhere from the low 5s to the high 6s on average, and their weight ranges from below 100 lb. to 200 lb. or more.</li><li><b>Speed: </b>Your base ground speed is 30 feet.</li><li><b>Languages: </b>You can speak, read, and write Common and one extra language of your choice.  Humans can, and do, live across many different lands and with many different peoples, and often learn the languages of those they live or work with, no matter the obscurity or difficulty.  Humans often spice up their own speech patterns with words from a multitude of languages as well, especially languages they know. </li></ul>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "6CJ7HA3IA7H2NW7O"
+}

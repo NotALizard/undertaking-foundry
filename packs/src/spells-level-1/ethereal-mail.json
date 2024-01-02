@@ -1,43 +1,62 @@
 {
-  "name": "Ethereal Mail",
-  "type": "spell",
-  "img": "icons/magic/defensive/shield-barrier-blue.webp",
-  "system": {
-    "description": {
-      "value": "<p>Touching a willing creature who isn't wearing armor, you wreath them in a protective set of ghostly mail.  The target's base AC is now: </p><p>13 + Dexterity modifier</p><p>This spell ends if the target dons armor or if you dismiss the spell with an action.</p>",
-      "chat": "",
-      "unidentified": ""
+    "name": "Ethereal Mail",
+    "type": "spell",
+    "img": "icons/magic/defensive/shield-barrier-blue.webp",
+    "system": {
+        "description": {
+            "value": "<p>Touching a willing creature who isn\u2019t wearing armor, you wreath them in a protective set of ghostly mail.  The target\u2019s base AC is now:<br><br>13 + Dexterity modifier<br><br>This spell ends if the target dons armor or if you dismiss the spell with an action.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "1",
+        "charge": false,
+        "school": "abj",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "a piece of cured leather",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "8",
+            "units": "hour"
+        },
+        "range": {
+            "value": "0",
+            "long": null,
+            "units": "touch"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
     },
-    "source": "Core Rules",
-    "level": 1,
-    "school": "abj",
-    "components": {
-      "somatic": true,
-      "verbal": true,
-      "material": true
-    },
-    "actionType": "util",
-    "activation": {
-      "type": "action",
-      "cost": 1,
-      "condition": ""
-    },
-    "duration": {
-      "value": "8",
-      "units": "hour"
-    },
-    "target": {
-      "value": 1,
-      "width": null,
-      "units": "",
-      "type": "creature"
-    },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": "touch"
-    }
-  },
-  "folder": null,
-  "_id": "5F78LN7YILWPNJL2"
+    "_id": "5F78LN7YILWPNJL2"
 }

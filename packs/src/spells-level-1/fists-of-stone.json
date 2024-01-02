@@ -1,0 +1,62 @@
+{
+    "name": "Fists of Stone",
+    "type": "spell",
+    "img": "icons/magic/earth/strike-fist-stone-gray.webp",
+    "system": {
+        "description": {
+            "value": "<p>This spell hardens the fists of a single target touched.  For as long as this spell is active, the target is treated as if they have proficiency in unarmed strikes, and the damage of their unarmed strikes increase.  <br>&nbsp;&nbsp;&nbsp;&nbsp;If their damage was a base of 1, it is now 1d4.  If the damage for their unarmed strikes is already a die (such as 1d4, 1d8, etc) then that damage is one step larger.  (Refer to the 'Steps in Damage Size Table' in \"Chapter 6: How to Play\")</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "1",
+        "charge": false,
+        "school": "tra",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": false,
+            "ritual": false,
+            "concentration": true
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "0",
+            "long": null,
+            "units": "touch"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "4952YYFV3OJ53IKQ"
+}

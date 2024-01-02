@@ -1,0 +1,71 @@
+{
+    "name": "Biting Wind",
+    "type": "spell",
+    "img": "icons/magic/air/wind-weather-snow-gusts.webp",
+    "system": {
+        "description": {
+            "value": "<p>Throwing your hands out, you bring forth a sharp blast of cold wind outwards from yourself in a 15 foot diameter sphere centered on you.  <br>&nbsp;&nbsp;&nbsp;&nbsp;When you cast the spell, any creature within the sphere, except you, must succeed on a Dexterity (Save) check.  A failed throw results in being knocked back 10 feet and taking 1d6 cold damage and 1d6 slashing damage.  A successful save negates the push, and the creature takes half damage.  <br>&nbsp;&nbsp;&nbsp;&nbsp;On each of your turns until the spell ends or concentration is broken, you can use your action to cast the effects of this spell again at no extra cost.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "1",
+        "charge": false,
+        "school": "evo",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": false,
+            "ritual": false,
+            "concentration": true
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "0",
+            "long": null,
+            "units": "self"
+        },
+        "target": {
+            "value": "15",
+            "width": null,
+            "units": "ft",
+            "type": "sphere"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "1d6",
+                    "cold"
+                ],
+                [
+                    "1d6",
+                    "slashing"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "dex",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "N4PE33ACTOXHF3FJ"
+}

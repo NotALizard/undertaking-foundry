@@ -1,0 +1,62 @@
+{
+    "name": "Eleemosynary",
+    "type": "spell",
+    "img": "icons/containers/boxes/box-gift-green.webp",
+    "system": {
+        "description": {
+            "value": "<p>Sprinkling holy water on another creature, you move one positive 1st level spell effect currently affecting you to your target, dispelling the effect from you.  The effect picks up where it left off on the other creature\u2019s next turn, ignoring the turn that this spell was cast.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Charge: This spell can be Charged to move spells of 2nd level or higher by spending Mana equal to the cost of the spell that you are moving.  This spell cannot move 8th or 9th level spell effects.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "1",
+        "charge": true,
+        "school": "abj",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "a sprinkle of holy water",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "range": {
+            "value": "0",
+            "long": null,
+            "units": "touch"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "AH3FXOM907Z8TW25"
+}

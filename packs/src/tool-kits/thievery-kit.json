@@ -1,0 +1,19 @@
+{
+    "name": "Thievery Kit",
+    "type": "equipment",
+    "img": "icons/tools/hand/lockpicks-steel-grey.webp",
+    "system": {
+        "description": {
+            "value": "Make, set, and disable traps.  Pick locks.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "25",
+            "denomination": "gp"
+        }
+    },
+    "_id": "CSP5SSMV6PCZ76DO"
+}

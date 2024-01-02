@@ -1,0 +1,19 @@
+{
+    "name": "Herbalism Kit",
+    "type": "equipment",
+    "img": "icons/tools/cooking/mortar-herbs-yellow.webp",
+    "system": {
+        "description": {
+            "value": "Identify plants and their properties.  Treating and caring for plants or nature.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "3",
+        "price": {
+            "value": "5",
+            "denomination": "gp"
+        }
+    },
+    "_id": "M8FNH0YQ2LE2ZFX4"
+}

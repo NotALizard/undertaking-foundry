@@ -1,0 +1,62 @@
+{
+    "name": "Disuse Atrophy",
+    "type": "spell",
+    "img": "icons/magic/unholy/hand-marked-pink.webp",
+    "system": {
+        "description": {
+            "value": "<p>The target living creature is affected by one of the following effects: </p><ul><li>The target has disadvantage on either Strength (Save) or Constitution (Save) checks for the duration.</li><li>If the creature has 0 hit points, the creature gains one level of @Compendium[undertaking.conditions.ERBR3AG01H4N1L91]{Exhaustion}.</li></ul><p>The effects of this spell cannot be stacked.  This spell has no effect on undead or constructs.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "0",
+        "charge": false,
+        "school": "nec",
+        "components": {
+            "somatic": true,
+            "verbal": false,
+            "material": false,
+            "ritual": false,
+            "concentration": true
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "0",
+            "long": null,
+            "units": "touch"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "44UXH5FVH6EK2UI9"
+}

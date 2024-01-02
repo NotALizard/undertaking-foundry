@@ -1,0 +1,23 @@
+{
+  "name": "Shimmer-Scale Kobold",
+  "type": "race",
+  "img": "icons/creatures/reptiles/dragon-horned-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>While not as rare as wings, shimmer-scale kobolds are still on the uncommon side of the population.  Their unique abilities tends to be fairly useful when it comes to blending in with their surroundings to sneak around danger or ambushing an invader.  This gift can also be used for fascinating others, looking more appealing, and presenting themselves as less threatening.  <br>&nbsp;&nbsp;&nbsp;&nbsp;These kobolds have more reflective and shinier scales than their counterparts and possess the ability to change both the color of their scales and how shiny their scales are to fit the needs of the situation at hand.  Their ability to blend in allows them to perform better in their duties by staying out of sight and luring enemies into a false sense of security.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Shimmer-scale kobolds normally find their speciality in things that either have them staying out of sight, or being the center of attention. There are even some that instead become diplomats of sorts, and act as representatives for their tribes when dealing with others.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "core",
+    "classDetails": "<p>Shimmer-Scale Kobold Traits</p><ul><li><b>Compatibility: </b>Reptile</li><li><b>Attribute Increase: </b>Your Presence increases by 1.</li><li><b>Fascinating Colors: </b>@Compendium[undertaking.abilities.ZNZV2MPB10KLX45B]{Fascinating Colors}</li><li><b>Blending In: </b>@Compendium[undertaking.abilities.PK3LAXCYY6043RY5]{Blending In}</li></ul>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "27H8Q6WAYU8F0OMO"
+}
