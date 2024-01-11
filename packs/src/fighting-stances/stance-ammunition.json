@@ -1,0 +1,25 @@
+{
+  "name": "Fighting Stance: Ammunition",
+  "type": "ability",
+  "img": "icons/skills/ranged/arrows-triple-yellow-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><i>Requirement:</i> A weapon with the Ammunition trait.</p><hr><p>Planting your knee on the ground or weapon on a solid object, you stabilize yourself, and take a deep breath, prepared to take the shot.</p><hr><u>Pros</u><p><b>Piercing Shot</b><ul><li>If a creature is 20ft or less in a line behind a target that you are attacking, then you can make an attack against that target as well.  If you hit the front target, then the back creature takes damage equal to one level smaller damage dice.</li></ul><b>Death From Above</b><ul><li>If you are at a higher elevation from the target, you gain the following effects:<ul><li>Your attacks gain a +1 to hit.</li><li>Your attacks deal an additional 1d4 or 3 damage.</li></ul></li></ul></p><hr><u>Cons</u><p><b>Planted</b><ul><li>Your movement speed becomes 0 until the beginning of your next turn, and you cannot attack if you have already moved this turn.</li><li>You have disadvantage on Dexterity (Save) checks.</li></ul><b>Slow Stow</b><ul><li>Switching out of this stance always takes a minor action.</li></ul></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "stance"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "AQKR36ORJ8UW7M7O"
+}

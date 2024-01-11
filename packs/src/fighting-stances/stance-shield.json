@@ -1,0 +1,25 @@
+{
+  "name": "Fighting Stance: Shield",
+  "type": "ability",
+  "img": "icons/equipment/shield/heater-steel-crystal-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><i>Requirement:</i> A shield in one hand with or without a weapon in your other hand.</p><hr><p>You move your weapon to your side and push your shield out in front of you.  With a bent arm and a wide stance, you brace for blows from any angle.</p><hr><u>Pros</u><p><b>Shielded</b><ul><li>Your AC increases by +1.</li></ul><b>Damage Sponge</b><ul><li>When you need to make a Dexterity (Save) check, you can choose to make a Constitution (Save) check instead.</li></ul><b>Savior</b><ul><li>If you use a desperate action to Save a Target, the attack redirects to you instead of automatically hitting you.  So if the previous attack roll is lower than your AC, then you manage to block the attack.</li></ul><b>Defense Over Offense</b><ul><li>You can make a Lesser Off-Hand Attack with your weapon while in Self-Defense.</li></ul></p><hr><u>Cons</u><p><b>Limited Offense</b><ul><li>All of your damage dice are decreased by one size.</li></ul><b>Limited Defense</b><ul><li>If you leave this stance, you cannot re-enter this stance this turn.</li></ul></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "stance"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "5TS3VRP8JKUPXU0Z"
+}

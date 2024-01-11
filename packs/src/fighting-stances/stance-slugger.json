@@ -1,0 +1,25 @@
+{
+  "name": "Fighting Stance: Slugger",
+  "type": "ability",
+  "img": "icons/skills/melee/unarmed-punch-fist-yellow-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><i>Requirement:</i> Unarmed or a weapon with the Unarmed trait.</p><hr><p>You put yourself into a wide, stable stance and ready your fists for punching rather than defending.  This stance cares only about you hitting hard; taking a few hits is worth the trouble.</p><hr><u>Pros</u><p><b>Fist Fighter</b><ul><li>Your unarmed damage die is 1d6.</li></ul><b>Slug</b><ul><li>Your first unarmed attack each turn deals 1d10 bludgeoning damage.</li></ul><b>Haymaker</b><ul><li>A creature within reach must make a Strength (Save) check of DC 10 + your Proficiency Bonus or take 1d12 bludgeoning damage.  The creature takes half damage on success.</li></ul><b>Punching Bag</b><ul><li>You are resistant to bludgeoning damage.</li></ul></p><hr><u>Cons</u><p><b>Un-dodging</b><ul><li>Your AC is reduced by -2.</li></ul><b>Sluggish</b><ul><li>Your movement speed is 5ft slower.</li></ul></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "stance"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "4IQUGM1GK28XR39P"
+}

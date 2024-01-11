@@ -1,0 +1,25 @@
+{
+  "name": "Fighting Stance: Two-Handed",
+  "type": "ability",
+  "img": "icons/weapons/axes/axe-double-white-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><i>Requirement:</i> A melee weapon with the Two-Handed trait.</p><hr><p>Both hands on your weapon, you rest it on your shoulder.  You widen your stance to support full-body swings, tightening your grip in anticipation.</p><hr><u>Pros</u><p><b>Cleave</b><ul><li>Once per turn, during your attack action, if a creature other than your target is within reach of you and within 5ft of your target, then you can make an attack against that target as well.</li></ul><b>Called Shot</b><ul><li>You take an action to prepare a strike, ending your turn.  At the beginning of your next turn, you can choose to attack a target within range.  This attack takes up an action, but automatically hits and is a critical hit.  If you take an action or a desperate action before this, your strike is no longer prepared.</li></ul><b>Fulcrum-Free</b><ul><li>As an action, you make an attack with one hand at disadvantage, despite using a two-handed weapon.</li></ul></p><hr><u>Cons</u><p><b>Full Swing</b><ul><li>Attack actions take up both your action and minor action.</li></ul><b>Grasp-Free</b><ul><li>If you roll a critical fail on a Fulcrum-Free attack, you drop your weapon and exit this stance.</li></ul></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "stance"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "CAIFAC3V8NQRCZUQ"
+}

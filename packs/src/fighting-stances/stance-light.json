@@ -1,0 +1,25 @@
+{
+  "name": "Fighting Stance: Light",
+  "type": "ability",
+  "img": "icons/skills/melee/weapons-crossed-swords-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><i>Requirement:</i> A weapon with the Light trait.</p><hr><p>Foregoing heavier and more damaging weapons, you flourish your lighter weapons in your hands.  You lower your body as if preparing to move, and loosen your hands in preparation for quicker strikes. </p><hr><u>Pros</u><p><b>Wail</b><ul><li>If you hit with an Off-Hand attack as a minor action, you can immediately make a Lesser Off-Hand attack as a non-action.</li></ul><b>Five-Foot Step</b><ul><li>After an attack, you can move 5ft.  You cannot be attacked by an opportunity attack as part of this movement, but cannot move further this turn.</li></ul><b>Unburdened</b><ul><li>You are proficient in Dexterity (Save).  If you are already proficient in Dexterity (Save), then you can add your proficiency bonus twice.</li></ul></p><hr><u>Cons</u><p><b>Split Offensive</b><ul><li>You have a -1 to your Strength and Dexterity Modifiers.</li></ul><b>Inoffensive Defense</b><ul><li>You cannot use desperate actions to attack.</li><li>You cannot use opportunity attacks.</li></ul></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "stance"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "QEDI2ZY7AFB0GFXY"
+}

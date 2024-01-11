@@ -1,0 +1,25 @@
+{
+  "name": "Fighting Stance: Throwing",
+  "type": "ability",
+  "img": "icons/skills/ranged/shuriken-thrown-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><i>Requirement:</i> A weapon with the Thrown trait.</p><hr><p>Lifting your arm above your shoulder and contorting your wrist, you pull back to best propell your weapon with the most velocity and precision.</p><hr><u>Pros</u><p><b>Catch</b><ul><li>As a desperate action, if you are being attacked or attempt to Save a Target from a ranged weapon attack, you can make a Dexterity (Sleight of Hand) check to catch the projectile and take no damage.  The DC for the check is the projectile’s attack roll.  You have advantage if the projectile is a thrown weapon.</li></ul><b>Return Shot</b><ul><li>If you Catch a projectile as part of a desperate action, you can throw the projectile up to 60ft immediately as a non-action as if using the Thrown trait.  The attack does one damage die lower than before.  If the target is the creature whose attack you caught, your attack roll has Advantage.</li></ul><b>Run-Up</b><ul><li>If you do a run-up of 15ft before making a thrown attack, the throw’s range increases by 30ft and the damage dice increase by two sizes.</li></ul><b>Anchoring Shot</b><ul><li>If a thrown attack hits a flying, swimming, or riding creature, then it must make a Dexterity (Save) check of DC 10 + your Strength Modifier.  On a failure:<ul><li>A flying creature falls 10ft and repeats the check until it hits something or succeeds the save.</li><li>A swimming creature falls 10ft.</li><li>A riding creature is dismounted and falls @Compendium[undertaking.conditions.RK3DF56CKMQUV6DM]{Prone}.</li></ul></li></ul><b>Weapon Pickup</b><ul><li>You have advantage on Wisdom (Perception) checks to find your weapons, and you can pickup and stow or brandish weapons as a non-action.</li></ul></p><hr><u>Cons</u><p><b>Fumble</b><ul><li>If you fail a Catch attempt, you take 1d4 extra damage from the attack and it disables your primary hand until the end of your next turn.</li></ul><b>High-Velocity Miss</b><ul><li>Upon missing an attack, the thrown weapon flies 10ft past the target before hitting the ground.  This increases to 20ft on a critical fail.  Weapons thrown this way do not stick into walls, floors, or objects.</li></ul></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "stance"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "XK4PEQX6RYXIKTZ6"
+}

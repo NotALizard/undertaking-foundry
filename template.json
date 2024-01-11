@@ -570,11 +570,65 @@
       },
       "traits": {
         "weaponProf": {
-          "value": [],
+          "simpleM": {
+            "club": 0,
+            "dagger": 0,
+            "greatclub": 0,
+            "hammer": 0,
+            "hatchet": 0,
+            "javelin": 0,
+            "mace": 0,
+            "quarterstaff": 0,
+            "scythe": 0,
+            "sickle": 0,
+            "spear": 0,
+            "unarmed": 0
+          },
+          "simpleR": {
+            "lightcrossbow": 0,
+            "dart": 0,
+            "shortbow": 0,
+            "sling": 0,
+            "slingshot": 0
+          },
+          "martialM": {
+            "battleaxe": 0,
+            "chainwhip": 0,
+            "flail": 0,
+            "glaive": 0,
+            "greataxe": 0,
+            "greatsword": 0,
+            "knuckles": 0,
+            "lance": 0,
+            "maul": 0,
+            "midsword": 0,
+            "morningstart": 0,
+            "pickaxe": 0,
+            "pike": 0,
+            "rapier": 0,
+            "scimitar": 0,
+            "shortsword": 0,
+            "trident": 0,
+            "warhammer": 0,
+            "whip": 0
+          },
+          "martialR": {
+            "blowgun": 0,
+            "handcrossbow": 0,
+            "heavycrossbow": 0,
+            "repeatingcrossbow": 0,
+            "longbow": 0,
+            "throwingstar": 0
+          },
           "custom": ""
         },
         "armorProf": {
-          "value": [],
+          "armor": {
+            "light": 0,
+            "medium": 0,
+            "heavy": 0,
+            "shields": 0
+          },
           "custom": ""
         },
         "toolProf": {
@@ -620,7 +674,7 @@
     }
   },
   "Item": {
-    "types": ["weapon", "equipment", "consumable", "tool", "treasure", "background", "class", "archetype", "spell", "ability", "backpack", "race", "customAttack"],
+    "types": ["weapon", "equipment", "consumable", "tool", "treasure", "background", "class", "archetype", "spell", "ability", "backpack", "race", "customAttack", "language"],
     "templates": {
       "itemDescription": {
         "description": {

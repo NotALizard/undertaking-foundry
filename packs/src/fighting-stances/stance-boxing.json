@@ -1,0 +1,25 @@
+{
+  "name": "Fighting Stance: Boxing",
+  "type": "ability",
+  "img": "icons/skills/melee/unarmed-punch-fist-yellow-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><i>Requirement:</i> Unarmed or a weapon with the Unarmed trait.</p><hr><p>Twisting your off-hand to your front and sliding your dominant foot backward, you pull your fists in front of your face in a defensive stance and stand on your toes.</p><hr><u>Pros</u><p><b>Fist Fighter</b><ul><li>Your unarmed damage die is 1d6.</li></ul><b>1-2 Punch</b><ul><li>Unarmed attacks have the Light trait.</li></ul><b>Uppercut</b><ul><li>As an action, you attack a creature with an uppercut.  If the attack lands on a creature of at most 1 size larger than you, the creature must make a Strength (Save) check of DC 8 + your Strength Modifier + your Proficiency Bonus.  On failure, the creature is knocked 10ft into the air and falls prone when landing.  For each attack that hits the target while it is in the air, such as from a reaction or desperate action, it takes an additional 1d4 bludgeoning damage when it lands.</li></ul><b>Jab & Weave</b><ul><li>If you use the Self-Defense action, you can make an off-hand attack as a minor action.</li></ul></p><hr><u>Cons</u><p><b>Misdressed</b><ul><li>Your armor grants an AC of 10 + your Dexterity Modifier.</li></ul><b>Punch The Wall</b><ul><li>Your unarmed attacks only deal 1 bludgeoning damage if your target is wearing Heavy Armor or is a larger creature with natural armor.</li></ul></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "stance"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "U0YH0GDRUF7KZ3HP"
+}

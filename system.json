@@ -79,6 +79,14 @@
       "folders": []
     },
     {
+      "name": "Abilities",
+      "sorting": "m",
+      "packs": [
+        "abilities",
+        "fighting-stances"
+      ]
+    },
+    {
       "name": "Rules",
       "sorting": "m",
       "packs": [
@@ -125,6 +133,14 @@
       "label": "Fighter: Martial Archetypes",
       "system": "undertaking",
       "path": "./packs/archetypes-fighter.db",
+      "entity": "Item",
+      "type": "Item"
+    },
+    {
+      "name": "fighting-stances",
+      "label": "Fighter: Fighting Stances",
+      "system": "undertaking",
+      "path": "./packs/fighting-stances.db",
       "entity": "Item",
       "type": "Item"
     },

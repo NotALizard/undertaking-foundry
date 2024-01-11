@@ -388,6 +388,31 @@ Hooks.once("init",function(){
     return spellStr;
   });
 
+  Handlebars.registerHelper('language', function(language, options) {
+    let id = CONFIG.undertaking.languages[language];
+    if(id){
+      return game.i18n.localize(id);
+    }
+    return language;
+  });
+
+  Handlebars.registerHelper('armor', function(armor, options) {
+    let id = CONFIG.undertaking.armor[armor];
+    console.log(id);
+    if(id){
+      return game.i18n.localize(id);
+    }
+    return armor;
+  });
+
+  Handlebars.registerHelper('weapon', function(weapon, category, options) {
+    let id = CONFIG.undertaking[category][weapon];
+    if(id){
+      return game.i18n.localize(id);
+    }
+    return weapon;
+  });
+
   Handlebars.registerHelper('json', function(context) {
     return JSON.stringify(context);
   });

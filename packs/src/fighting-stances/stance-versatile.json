@@ -1,0 +1,25 @@
+{
+  "name": "Fighting Stance: Versatile",
+  "type": "ability",
+  "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><i>Requirement:</i> A weapon with the Versatile trait.</p><hr><p>Weapon in hand, you place your off-hand at the ready to switch to two hands and back again, ready to use the right grip for the right moment.</p><hr><u>Pros</u><p><b>Spry Strike</b><ul><li>You make one attack as an action with your weapon in one hand.  You move up one spot in initiative.</li></ul><b>Ample Strike</b><ul><li>You make one attack as an action while holding your weapon with two hands.  You add either your Strength or Dexterity modifier to the final damage.  You move back one spot in initiative.</li></ul></p><hr><u>Cons</u><p><b>Sticky Hands</b><ul><li>You cannot manually switch stance or change how many hands you hold your weapon with after using Spry or Ample Strike until the beginning of your next turn.</li></ul><b>Lacking Defense</b><ul><li>Ending your turn with one hand on your weapon lowers your AC by -2 until the beginning of your next turn.</li></ul><b>Stiff Defense</b><ul><li>Ending your turn with two hands on your weapon lowers your Strength (Save), Dexterity (Save), and Constitution (Save) by -4 until the beginning of your next turn.</li></ul></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "stance"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "OV4KEWGS7DFIDZ0Q"
+}

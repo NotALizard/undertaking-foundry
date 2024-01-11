@@ -93,6 +93,15 @@ hr.blue {
 .bio-container {
     min-width: 720px;
 }
+.bio-right{
+    width: 160px;
+}
+.bio-border.padded{
+    padding: 4px;
+}
+.bio-border p{
+    margin: 0.5px 0;
+}
 .classes-container {
     height: 100%;
     min-width: 400px;
@@ -275,6 +284,14 @@ a.profcheck.checked {
     background-color: var(--bg-blue);
 }
 a.profcheck.skill-expert {
+    border-radius: 0;
+    transform: rotate(45deg);
+    width: 6px !important;
+    height: 6px !important;
+    margin: 4px 5px;
+    margin-left: 0;
+}
+a.profcheck.savvy {
     border-radius: 0;
     transform: rotate(45deg);
     width: 6px !important;

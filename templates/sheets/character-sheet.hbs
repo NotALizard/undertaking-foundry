@@ -542,28 +542,80 @@
                         </div>
                     </div>
                     <div class="bio-right fcol">
-                        <div class="bio-block languages">
-                            <label>{{ localize "undertaking.Languages" }}</label>
-                            <div class="bio-border languages">
-                                Languages
-                            </div>
-                        </div>
                         <div class="bio-block proficiencies">
                             <label>{{ localize "undertaking.Proficiencies" }}</label>
-                            <div class="bio-border proficiencies">
-                                Proficiencies
+                            <div class="bio-border proficiencies padded" style="font-size: 12px;">
+                                {{#each actor.system.traits.armorProf.armor as | armor_val id |}}
+                                    <div class="prof-row frow">
+                                        <input type="hidden" class="input-armor-prof" name="system.traits.armorProf.armor.{{id}}" value="{{armor_val}}" data-dtype="Number">
+                                        <div class="prof-radio-container frow">
+                                            <a class="profcheck armor-prof {{#ifCond armor_val '>=' 1}}checked{{/ifCond}}" id="{{id}}-prof"></a>
+                                            <a class="profcheck armor-savvy savvy {{#ifCond armor_val '>=' 2}}checked{{/ifCond}}" id="{{id}}-expert"></a>
+                                        </div>
+                                        <div class="prof-name-container frow">{{#armor id}}{{/armor}}</div>
+                                    </div>
+                                {{/each}}
+                                <br>
+                                {{#each actor.system.traits.weaponProf.simpleM as | weapon_val id |}}
+                                    <div class="prof-row frow">
+                                        <input type="hidden" class="input-weapon-prof" name="system.traits.weaponProf.simpleM.{{id}}" value="{{weapon_val}}" data-dtype="Number">
+                                        <div class="prof-radio-container frow">
+                                            <a class="profcheck weapon-prof {{#ifCond weapon_val '>=' 1}}checked{{/ifCond}}" id="{{id}}-prof"></a>
+                                            <a class="profcheck weapon-savvy savvy {{#ifCond weapon_val '>=' 2}}checked{{/ifCond}}" id="{{id}}-expert"></a>
+                                        </div>
+                                        <div class="prof-name-container frow">{{#weapon id 'simpleMelee'}}{{/weapon}}</div>
+                                    </div>
+                                {{/each}}
+                                <br>
+                                {{#each actor.system.traits.weaponProf.simpleR as | weapon_val id |}}
+                                    <div class="prof-row frow">
+                                        <input type="hidden" class="input-weapon-prof" name="system.traits.weaponProf.simpleR.{{id}}" value="{{weapon_val}}" data-dtype="Number">
+                                        <div class="prof-radio-container frow">
+                                            <a class="profcheck weapon-prof {{#ifCond weapon_val '>=' 1}}checked{{/ifCond}}" id="{{id}}-prof"></a>
+                                            <a class="profcheck weapon-savvy savvy {{#ifCond weapon_val '>=' 2}}checked{{/ifCond}}" id="{{id}}-expert"></a>
+                                        </div>
+                                        <div class="prof-name-container frow">{{#weapon id 'simpleRanged'}}{{/weapon}}</div>
+                                    </div>
+                                {{/each}}
+                                <br>
+                                {{#each actor.system.traits.weaponProf.martialM as | weapon_val id |}}
+                                    <div class="prof-row frow">
+                                        <input type="hidden" class="input-weapon-prof" name="system.traits.weaponProf.martialM.{{id}}" value="{{weapon_val}}" data-dtype="Number">
+                                        <div class="prof-radio-container frow">
+                                            <a class="profcheck weapon-prof {{#ifCond weapon_val '>=' 1}}checked{{/ifCond}}" id="{{id}}-prof"></a>
+                                            <a class="profcheck weapon-savvy savvy {{#ifCond weapon_val '>=' 2}}checked{{/ifCond}}" id="{{id}}-expert"></a>
+                                        </div>
+                                        <div class="prof-name-container frow">{{#weapon id 'martialMelee'}}{{/weapon}}</div>
+                                    </div>
+                                {{/each}}
+                                <br>
+                                {{#each actor.system.traits.weaponProf.martialR as | weapon_val id |}}
+                                    <div class="prof-row frow">
+                                        <input type="hidden" class="input-weapon-prof" name="system.traits.weaponProf.martialR.{{id}}" value="{{weapon_val}}" data-dtype="Number">
+                                        <div class="prof-radio-container frow">
+                                            <a class="profcheck weapon-prof {{#ifCond weapon_val '>=' 1}}checked{{/ifCond}}" id="{{id}}-prof"></a>
+                                            <a class="profcheck weapon-savvy savvy {{#ifCond weapon_val '>=' 2}}checked{{/ifCond}}" id="{{id}}-expert"></a>
+                                        </div>
+                                        <div class="prof-name-container frow">{{#weapon id 'martialRanged'}}{{/weapon}}</div>
+                                    </div>
+                                {{/each}}
                             </div>
                         </div>
-                        <div class="bio-block trades">
-                            <label>{{ localize "undertaking.Trades" }}</label>
-                            <div class="bio-border trades">
-                                Trades
+                        <div class="bio-block languages">
+                            <div style="text-align:center">
+                                <label>{{ localize "undertaking.LanguagesTitle" }} <a class="edit-languages" title="{{ localize "undertaking.Edit" }}"><i class="fas fa-gear"></i></a></label>
+                            </div>
+                            <div class="bio-border languages padded">
+                                {{#each actor.system.traits.languages.value}}
+                                <p>{{#language this}}{{/language}}</p>
+                                {{/each}}
+                                <p>{{actor.system.traits.languages.custom}}</p>
                             </div>
                         </div>
                         <div class="bio-block other-prof">
                             <label>{{ localize "undertaking.OtherProficiencies" }}</label>
-                            <div class="bio-border other-prof">
-                                Other profs
+                            <div class="bio-border other-prof padded">
+                                <textarea name="system.traits.toolProf.custom" data-dtype="String">{{actor.system.traits.toolProf.custom}}</textarea>
                             </div>
                         </div>
                     </div>

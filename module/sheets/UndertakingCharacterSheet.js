@@ -25,6 +25,7 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     context.classes = context.items.filter(function (item) { return item.type == "class"});
     context.archetypes = context.items.filter(function (item) { return item.type == "archetype"});
     context.abilities = context.items.filter(function (item) { return item.type == "ability"});
+    context.languages = context.items.filter(function (item) { return item.type == "language"});
 
     context.cantrips = context.items.filter(function (item) { return item.type == "spell" && item.system.level == 0});
     context.spells = context.items.filter(function (item) { return item.type == "spell" && item.system.level != 0});
@@ -36,6 +37,7 @@ export default class UndertakingCharacterSheet extends ActorSheet {
 
     context.casters = context.classes.filter(function(item){ return item.system.categorization.spellcaster.progression && item.system.categorization.spellcaster.progression != 'none'});
 
+    console.log(context);
     return context;
   }
 
@@ -104,6 +106,81 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     return form.class.value;
   }
 
+  async editLanguages(event){
+    let allLanguages = CONFIG.undertaking.languages;
+    let myLanguages = this.actor.system.traits.languages.value;
+    let custom = this.actor.system.traits.languages.custom;
+    let languages = {};
+    for (const [key, value] of Object.entries(allLanguages)) {
+      let lang = {
+        title: value,
+        known: myLanguages.includes(key)
+      }
+      languages[key] = lang;
+    }
+    let knownLanguages = await this._getLanguageSelectOptions(languages, custom);
+
+    if(knownLanguages){
+      this.actor.update({"system.traits.languages.value": knownLanguages.known});
+      this.actor.update({"system.traits.languages.custom": knownLanguages.custom});
+      let langItems = [];
+      const existingLangs = this.actor.items.filter(function (item) { return item.type == "language"});
+      const langIds = existingLangs.map(function (item) { return item.id });
+      if(langIds.length){
+        this.actor.deleteEmbeddedDocuments("Item", langIds);
+      }
+      for(let lang of knownLanguages.known){
+        langItems.push({name: `Language (${lang})`, type:"language"});
+      }
+      for(let lang of knownLanguages.custom.split(',')){
+        if(lang.trim())
+          langItems.push({name: `Language (${lang.trim()})`, type:"language"});
+      }
+      return this.actor.createEmbeddedDocuments("Item", langItems);
+    }
+  }
+
+  async _getLanguageSelectOptions(languages, custom){
+    const template = "systems/undertaking/templates/chat/languages-select-dialog.hbs"
+    const html = await renderTemplate(template, {languages: languages, custom: custom});
+
+    return new Promise(resolve => {
+      const data = {
+        title: game.i18n.localize("undertaking.LanguagesTitle"),
+        content: html,
+        buttons: {
+          normal: {
+            label: game.i18n.localize("undertaking.Chat.Confirm"),
+            callback: html => resolve(this._processLanguageSelectOptions(html[0].querySelector("form")))
+          },
+          cancel:{
+            label: game.i18n.localize("undertaking.Chat.Cancel"),
+            callback: html => resolve('')
+          }
+        },
+        default: "normal",
+        close: () => resolve('')
+      }
+      new Dialog(data, null).render(true);
+    });
+  }
+
+  _processLanguageSelectOptions(form){
+    let known = [];
+    let custom = "";
+    for (const [key, value] of Object.entries(form)) {
+      if(value.name == 'custom'){
+        custom = value.value;
+      }
+      else if(value.name.includes('known-')){
+        if(value.checked){
+          known.push(value.lang);
+        }
+      }
+    }
+    return {known: known, custom: custom};
+  }
+
 
   activateListeners(html){
     html.find(".input-checkbox").on("change", event => {
@@ -117,6 +194,21 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     });
     html.find(".profcheck.skill-expert").on("click", event => {
       this._toggleSkillExpertise(event);
+    });
+    html.find(".profcheck.armor-prof").on("click", event => {
+      this._toggleArmorProficiency(event);
+    });
+    html.find(".profcheck.armor-savvy").on("click", event => {
+      this._toggleArmorSavvy(event);
+    });
+    html.find(".profcheck.weapon-prof").on("click", event => {
+      this._toggleWeaponProficiency(event);
+    });
+    html.find(".profcheck.weapon-savvy").on("click", event => {
+      this._toggleWeaponSavvy(event);
+    });
+    html.find(".edit-languages").on("click", event => {
+      this.editLanguages(event);
     });
     html.find(".desperate-toggle").on("click", event => {
       this._toggleDesperate(event);
@@ -319,6 +411,62 @@ export default class UndertakingCharacterSheet extends ActorSheet {
   _toggleSkillExpertise(event){
     const parent = event.currentTarget.closest(".prof-row");
     const field = parent.querySelector('.input-skill-prof');
+    const value = field.value;
+
+    if(value > 1){
+      field.value = 1;
+    }
+    else{
+      field.value = 2;
+    }
+    return this._onSubmit(event);
+  }
+
+  _toggleArmorProficiency(event){
+    const parent = event.currentTarget.closest(".prof-row");
+    const field = parent.querySelector('.input-armor-prof');
+    const value = field.value;
+
+    if(value > 0){
+      field.value = 0;
+    }
+    else{
+      field.value = 1;
+    }
+    return this._onSubmit(event);
+  }
+
+  _toggleArmorSavvy(event){
+    const parent = event.currentTarget.closest(".prof-row");
+    const field = parent.querySelector('.input-armor-prof');
+    const value = field.value;
+
+    if(value > 1){
+      field.value = 1;
+    }
+    else{
+      field.value = 2;
+    }
+    return this._onSubmit(event);
+  }
+
+  _toggleWeaponProficiency(event){
+    const parent = event.currentTarget.closest(".prof-row");
+    const field = parent.querySelector('.input-weapon-prof');
+    const value = field.value;
+
+    if(value > 0){
+      field.value = 0;
+    }
+    else{
+      field.value = 1;
+    }
+    return this._onSubmit(event);
+  }
+
+  _toggleWeaponSavvy(event){
+    const parent = event.currentTarget.closest(".prof-row");
+    const field = parent.querySelector('.input-weapon-prof');
     const value = field.value;
 
     if(value > 1){

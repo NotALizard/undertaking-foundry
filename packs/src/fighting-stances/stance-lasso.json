@@ -1,0 +1,25 @@
+{
+  "name": "Fighting Stance: Lasso",
+  "type": "ability",
+  "img": "icons/sundries/survival/rope-wrapped-loops-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p><i>Requirement:</i> A whip or chain whip.</p><hr><p>Taking your whip in hand and wrapping a loop at the end, you spin the rope.  With the help of the extra weight at the end, you prepare to either batter or ensnare those who oppose you.</p><hr><u>Pros</u><p><b>Whip Crack</b><ul><li>You can choose for your attacks to deal force damage type.</li></ul><b>Lasso</b><ul><li>You can grapple or trip targets up to your weapon’s reach.</li><li>You have advantage on Strength (Athletics) checks to grapple a creature of equal or smaller size if further than 5ft from you.</li></ul><b>Tie the Knot</b><ul><li>While grappling a target within 5ft of you, you can use a minor action to finish tying your whip around the target.  When you do so, you let go of your whip, are no longer @Compendium[undertaking.conditions.FGVFFYGPAFQGZ5RP]{Grappled}, and exit the Lasso Stance.  The target remains @Compendium[undertaking.conditions.FGVFFYGPAFQGZ5RP]{Grappled}, and you continue rolling against the target when it tries to escape the grapple.  When you first do this, you can choose whether this grapple applies the ability 'Noose'.</li></ul><b>Noose</b><ul><li>While grappling a target of equal or smaller size, the target cannot breathe, and the target can only hold its breath for half as long.</li></ul></p><hr><u>Cons</u><p><b>Minimum Distance</b><ul><li>You have disadvantage on melee attacks against creatures within 5ft of you.</li></ul><b>Tangled</b><ul><li>You have disadvantage on checks to resist being @Compendium[undertaking.conditions.FGVFFYGPAFQGZ5RP]{Grappled}.</li></ul></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "stance"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "L1E3KFTI08AW4JXF"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Fighting Stance: Loading",
+  "type": "ability",
+  "img": "icons/skills/ranged/target-bullseye-arrow-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><i>Requirement:</i> A weapon with the Loading trait.</p><hr><p>You focus your eyes on your target from behind your readied weapon, zeroing in on your opponent's weak points and calculating the distance, gravity, and air resistance of your soon-to-hit next shot.</p><hr><u>Pros</u><p><b>Reliable Aim</b><ul><li>You do not have disadvantage on attacks at any range, or from being @Compendium[undertaking.conditions.RK3DF56CKMQUV6DM]{Prone}.</li></ul><b>Snipe</b><ul><li>You do not exit Loading Stance while prone.  In addition, your attacks have a +5 to hit targets 15ft or further away while @Compendium[undertaking.conditions.RK3DF56CKMQUV6DM]{Prone}.</li></ul><b>Precision Pierce</b><ul><li>If you attack a target that has been attacked since your last turn and the attack hits, the creature must make a Constitution (Save) check of DC 10 + Your Attack Modifier or start @Compendium[undertaking.conditions.R54LQEKSDXNQ3N75]{Bleeding}.  The creature can cure this by making an Intelligence (Medicine) check on itself of the same DC as an action.</li></ul></p><hr><u>Cons</u><p><b>Malfunction</b><ul><li>On a critically failed weapon attack, Strength (Save) check, or Dexterity (Save) check, your weapon gets jammed, becoming unusable.  You can attempt to unjam the weapon as a minor action by beating a DC 10 Intelligence (Craft) check.</li></ul><b>Risk of Casualty</b><ul><li>If your target is aware of you and within 5ft of another creature of equal or larger size, then you have a -2 to attack rolls to hit the target.</li></ul></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "stance"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "7ECXODBQJAZNTQFS"
+}

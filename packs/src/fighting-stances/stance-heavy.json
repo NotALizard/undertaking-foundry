@@ -1,0 +1,25 @@
+{
+  "name": "Fighting Stance: Heavy",
+  "type": "ability",
+  "img": "icons/weapons/hammers/hammer-double-stone.webp",
+  "system": {
+    "description": {
+      "value": "<p><i>Requirement:</i> A weapon with the Heavy trait.</p><hr><p>Propping the weapon on your shoulder and widening your stance to prepare for a full-body attack, you are ready to throw your weight around to blow through enemy defenses.</p><hr><u>Pros</u><p><b>Block Breaker</b><ul><li>As an action, you make one attack that has a +3 to hit.  You cannot switch weapon or from this stance until the beginning of your next turn.</li></ul><b>Armor Breaker</b><ul><li>You have advantage to hit creatures in Heavy Armor and to hit larger creatures with Natural Armor.</li></ul><b>Weighty</b><ul><li>When dealing damage by falling on top of another creature, the other creature takes the same amount of falling damage as you.</li></ul></p><hr><u>Cons</u><p><b>Burdened</b><ul><li>You do not add your Dexterity Modifier to your AC or Dexterity (Save) checks unless the modifier is negative.</li><li>If your AC is unchanged by the previous sentence, you have a -2 to AC.</li></ul></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "stance"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "4RWGBRI6CNCPMKCG"
+}

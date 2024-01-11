@@ -1,0 +1,19 @@
+<form>
+    <div class="form-group">
+        <div class="fcol">
+            <div>
+                <label>{{localize "undertaking.LanguagesTitle"}}</label>
+            </div>
+            {{#each languages as |language language_id|}}
+            <div class="frow">
+                <label>{{localize language.title}}</label>
+                <input type="checkbox" name="known-{{language_id}}" lang="{{language_id}}" {{#ifequal language.known true}}checked{{/ifequal}} />
+            </div>
+            {{/each}}
+            <div>
+                <label>{{localize "undertaking.LanguagesCustom"}}</label>
+                <input type="text" name="custom" value="{{custom}}">
+            </div>
+        </div>
+    </div>
+</form>
