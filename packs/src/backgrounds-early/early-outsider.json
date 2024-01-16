@@ -1,0 +1,22 @@
+{
+  "name": "Early Outsider",
+  "type": "background",
+  "img": "icons/environment/wilderness/tree-oak.webp",
+  "system": {
+    "description": {
+      "value": "<p>There was a span of your history where you made little to no contact with society.  Maybe it was due to banishment, exile, or perhaps it was a self imposed isolation.  Whatever the reason, you spent a good deal of time away from anything resembling civilization and contact with others.  And while it is possible it may have left you wanting in the ways of socializing and higher society, such a lifestyle has given you confidence in your own skills and a good measure of self sufficiency.</p>\n<hr />\n<p><strong>Skill Proficiency:</strong> Pick one of the following: Craft, Instinct, Nature, or Perception.</p>\n<p><strong>Trade Proficiency:</strong> Pick one of the following trades: Artisan (Choose any Specialization), Botany, Cooking, Fishing, or Pathfinding.</p>\n<p><strong>Background Feature:</strong> @Compendium[undertaking.abilities.U8KK1AON39A2OHR2]{Lay of the Land}</p>\n<p><strong>Equipment: </strong>Pick one of the following: A brewery kit, herbalism kit, or leatherworker's kit.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "early"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "RQW1N6CVC4JBI4NO"
+}

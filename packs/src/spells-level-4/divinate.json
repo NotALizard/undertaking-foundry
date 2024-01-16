@@ -1,0 +1,62 @@
+{
+    "name": "Divinate",
+    "type": "spell",
+    "img": "icons/magic/perception/third-eye-blue-red.webp",
+    "system": {
+        "description": {
+            "value": "<p>By placing an offering and praying for a response, you become placed in contact with a deity or a deity\u2019s servant.  You ask a single question about a specific goal, event, or activity to occur within 7 days.  The GM offers a truthful reply.  The reply might be a short phrase, a cryptic rhyme, or an omen.  <br>&nbsp;&nbsp;&nbsp;&nbsp;However, the spell doesn\u2019t take into account any possible circumstances that might change the outcome, such as casting of additional spells or the loss or gain of a companion.  <br>&nbsp;&nbsp;&nbsp;&nbsp;If you cast this spell two or more times before finishing your next long rest, your GM rolls a 1d4.  Depending on how many times the spell has been cast, the chance of it failing goes up.<br>&nbsp;&nbsp;&nbsp;&nbsp;The spell returns a random reading on a roll of 1 on the 2nd casting, 1 or 2 on the 3rd casting, 1-3 on the 4th casting, and automatically returns a random reading on the 5th+ casting.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "4",
+        "charge": false,
+        "school": "div",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": true,
+            "concentration": false
+        },
+        "materials": {
+            "value": "15gp worth of religion-appropriate offerings, which the spell consumes",
+            "consumed": true,
+            "cost": "15",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "minute",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "range": {
+            "value": "0",
+            "long": null,
+            "units": "self"
+        },
+        "target": {
+            "value": "",
+            "width": null,
+            "units": "",
+            "type": "self"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "Y2H7NNZFXCHUMB33"
+}

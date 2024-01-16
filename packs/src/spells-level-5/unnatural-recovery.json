@@ -1,0 +1,67 @@
+{
+    "name": "Unnatural Recovery",
+    "type": "spell",
+    "img": "icons/skills/wounds/blood-cells-vessel-blue.webp",
+    "system": {
+        "description": {
+            "value": "<p>Pulsing magic through your systems, your natural healing abilities kick in faster and more notably than expected.  The target may immediately spend 1 hit die to restore their hit points.  At the start of each of their subsequent turns for the duration, they restore an additional 1d4 hit points.  <br>&nbsp;&nbsp;&nbsp;&nbsp;If the spell lasts its full duration, the target can regain the hit die it spent as part of this spell.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "5",
+        "charge": false,
+        "school": "evo",
+        "components": {
+            "somatic": true,
+            "verbal": false,
+            "material": true,
+            "ritual": false,
+            "concentration": true
+        },
+        "materials": {
+            "value": "1 vial of juice",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "heal",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "0",
+            "long": null,
+            "units": "touch"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "1d4",
+                    "healing"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "IGNKJCNA0BXYD1OT"
+}

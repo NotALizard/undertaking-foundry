@@ -1,0 +1,24 @@
+{
+  "name": "Extra Attack",
+  "type": "ability",
+  "img": "icons/skills/melee/strikes-sword-scimitar.webp",
+  "system": {
+    "description": {
+      "value": "<p>When you make an attack action, you can make two attacks with your primary weapon instead of one.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "adept"
+    },
+    "requirements": "6th level overall and 3rd level Fighter",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "SH5OCGLHHXV66GKI"
+}

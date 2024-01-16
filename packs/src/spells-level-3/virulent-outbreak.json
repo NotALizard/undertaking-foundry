@@ -1,0 +1,67 @@
+{
+    "name": "Virulent Outbreak",
+    "type": "spell",
+    "img": "icons/skills/wounds/blood-cells-disease-green.webp",
+    "system": {
+        "description": {
+            "value": "<p>A cloud of dangerous pathogens erupts in a 30-foot cone originating from you and clings to the creatures inside of it.  Choose one of the following @Compendium[undertaking.conditions.9YPWLY1IHQV3MRLO]{Diseases}:<ul><li>Kobold Flu: An infected creature has a -2 penalty to attack rolls and skill checks.</li><li>Lovers\u2019 Pox: An infected creature suffers 2d4 poison damage when it starts its turn within 5 feet of any other creatures.</li><li>Mana Fever: An infected creature must spend 1 extra mana to cast spells and charged versions of cantrips.</li></ul>Each creature in the cone must make a Constitution (Save) check.  On a failed save, a creature takes 6d4 poison damage and becomes temporarily infected with the chosen @Compendium[undertaking.conditions.9YPWLY1IHQV3MRLO]{Disease}.  On a successful save, it takes half damage and is not infected.  An infected creature can repeat the save check at the end of each of its turns, ending the disease on a success.<br>&nbsp;&nbsp;&nbsp;&nbsp;If the creature fails its Constitution (Save) check 5 times, they stop making the save, and the @Compendium[undertaking.conditions.9YPWLY1IHQV3MRLO]{Disease} remains indefinitely.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "3",
+        "charge": false,
+        "school": "evo",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": false,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "range": {
+            "value": "0",
+            "long": null,
+            "units": "self"
+        },
+        "target": {
+            "value": "30",
+            "width": null,
+            "units": "ft",
+            "type": "cone"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "6d4",
+                    "poison"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "con",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "TA1E58P8XATOBEQH"
+}

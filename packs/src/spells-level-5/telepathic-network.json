@@ -1,0 +1,62 @@
+{
+    "name": "Telepathic Network",
+    "type": "spell",
+    "img": "icons/skills/wounds/anatomy-organ-brain-pink-red.webp",
+    "system": {
+        "description": {
+            "value": "<p>You build a telepathic link among up to eight willing creatures of your choice within range that you can see, forging a psychic bond between each creature to all the others for the duration.  Creatures with an Intelligence score of 2 or less are not affected by this spell.<br>&nbsp;&nbsp;&nbsp;&nbsp;The targets can communicate telepathically through the forged link whether they share a common language or not, for as long as the spell lasts.  This communication is possible over any distance, however, it does not stretch across planes.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "5",
+        "charge": false,
+        "school": "div",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "a piece of thread with eight knots tied in it",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "hour"
+        },
+        "range": {
+            "value": "30",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "8",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "J9QLMOBH6NXLN5OQ"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Adrenaline",
+  "type": "ability",
+  "img": "icons/magic/movement/trail-streak-zigzag-teal.webp",
+  "system": {
+    "description": {
+      "value": "<p>As a reaction, you gain 1d10 + your Fighter Level temporary Hit Points.  You cannot use this ability again until you finish a short or long rest.<br>&nbsp;&nbsp;&nbsp;&nbsp;You gain another usage of this ability at each Growth Level.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "novice"
+    },
+    "requirements": "Must have the Fighter Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "S8VA8DQKIDWB6127"
+}

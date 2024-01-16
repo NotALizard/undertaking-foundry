@@ -1,0 +1,62 @@
+{
+    "name": "Banish",
+    "type": "spell",
+    "img": "icons/magic/control/energy-stream-link-large-white.webp",
+    "system": {
+        "description": {
+            "value": "<p>Holding forth the components to ward the creature off, you attempt to send one creature that you can see within range to another plane of existence.  The target must succeed on a Presence (Save) check or be banished, remaining in its new plane of existence until the spell ends.  <br>&nbsp;&nbsp;&nbsp;&nbsp;If the target is not native to this plane of existence, it returns to its home plane.  If the spell does not end before 1 minute, the spell does not reverse when it ends, leaving the creature in its home plane.<br>&nbsp;&nbsp;&nbsp;&nbsp;If the target is native to the plane that it is currently in, it is instead banished to a harmless pocket plane.  While there, the target is @Compendium[undertaking.conditions.3CQC3JEY2C3Y721F]{Incapacitated}, and remains there until the spell ends.<br>&nbsp;&nbsp;&nbsp;&nbsp;When the spell ends, the creature reappears in the space it left or in the nearest unoccupied space if that space is occupied.  <br><br>Charge: This spell can be Charged to target more creatures.  <ul><li>2 Mana: 1 extra creature.</li><li>4 Mana: 2 extra creatures.</li><li>6 Mana: 3 extra creatures.</li><li>11 Mana: 4 extra creatures.</li><li>16 Mana: 5 extra creatures.</li></ul></p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "4",
+        "charge": true,
+        "school": "abj",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": true
+        },
+        "materials": {
+            "value": "an item that the target dislikes",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "60",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "pre",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "XJ75LFYCND9DK4GP"
+}

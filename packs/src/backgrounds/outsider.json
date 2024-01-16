@@ -1,0 +1,21 @@
+{
+  "name": "Outsider",
+  "type": "background",
+  "img": "icons/environment/wilderness/tree-oak.webp",
+  "system": {
+    "description": {
+      "value": "<p>There was a span of your history where you made little to no contact with society.  Maybe it was due to banishment, exile, or perhaps it was a self imposed isolation.  Whatever the reason, you spent a good deal of time away from anything resembling civilization and contact with others.  And while it is possible it may have left you wanting in the ways of socializing and higher society, such a lifestyle has given you confidence in your own skills and a good measure of self sufficiency.</p>\n<hr />\n<p>Choose @Compendium[undertaking.backgrounds-early.RQW1N6CVC4JBI4NO]{Early} and/or @Compendium[undertaking.backgrounds-later.XQRMM8NQ53PTOROY]{Later}</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "B446070BGHES86TP"
+}

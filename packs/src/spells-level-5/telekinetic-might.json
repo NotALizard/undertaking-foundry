@@ -1,0 +1,62 @@
+{
+    "name": "Telekinetic Might",
+    "type": "spell",
+    "img": "icons/magic/control/buff-strength-muscle-damage-red.webp",
+    "system": {
+        "description": {
+            "value": "<p>You force your will upon your surroundings and can manipulate the physical world with your mental power.  When you cast this spell, and as an action each round for the duration, you can exert your will on one creature or object that you can see within range, causing the effects described below for the appropriate target.  You can affect the same target round after round, or choose a new one at any time during the duration.  If you switch targets, the prior target is no longer affected by the spell.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Creature: Using this spell you can try to move up to a Huge or smaller creature.  To do so, make a skill check with your spellcasting ability contested by the creature\u2019s Strength check.  If you win the contest, you can move the creature up to 30 feet in any direction, including upwards, though you cannot move them further away from yourself than the range of the spell would allow.  Until the end of your next turn, the creature is restrained in your telekinetic grip.  If you lift the creature upwards, it is also suspended in mid-air.  <br>&nbsp;&nbsp;&nbsp;&nbsp;On subsequent rounds, you can use your action to attempt to maintain your telekinetic grip by repeating the contest described above.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Object: You can also attempt to move an object up to 1000 pounds.  If the object is unattended (not being worn or carried) then you automatically move it up to 30 feet in any direction, but not beyond the reach of the spell.  <br>&nbsp;&nbsp;&nbsp;&nbsp;If the object is on someone\u2019s person, or being carried or held, you must make a skill check using your spellcasting ability against the creature\u2019s Strength check.  If you succeed, you can move the object up to 30 feet in any direction so long as it does not go beyond the range of the spell.  <br>&nbsp;&nbsp;&nbsp;&nbsp;As well, you have fine control over objects in your telekinetic grip.  Meaning you can do things such as manipulating a simple tool, opening a door, stowing or retrieving an item, or pouring out the contents of a vial.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "5",
+        "charge": false,
+        "school": "evo",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": false,
+            "ritual": false,
+            "concentration": true
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "10",
+            "units": "minute"
+        },
+        "range": {
+            "value": "30",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "object"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "LE5BM8DCSZCPUGMV"
+}

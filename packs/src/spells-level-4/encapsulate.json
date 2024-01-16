@@ -1,0 +1,62 @@
+{
+    "name": "Encapsulate",
+    "type": "spell",
+    "img": "icons/magic/defensive/barrier-shield-dome-blue-purple.webp",
+    "system": {
+        "description": {
+            "value": "<p>An iridescent sphere of magical force surrounds the creature or object that you choose of up to Large size or smaller, within range, that you can see.  An unwilling creature may attempt a Dexterity (Save) check to avoid being enclosed.  On a failure, the creature is encapsulated for the duration.<br>&nbsp;&nbsp;&nbsp;&nbsp;Nothing at all, physical objects or attacks, energy, or other spell effects, can pass through this barrier.  In or out.  The creature inside can still breath, however.  This sphere is completely immune to all damage, and as such the creature or object inside can\u2019t be damaged by attacks or effects originating from outside the bubble.  With that in mind, the creature inside can\u2019t damage anything outside of the sphere either.<br>&nbsp;&nbsp;&nbsp;&nbsp;The magical sphere is weightless and forms just large enough to fit the object or creature inside it.  A creature inside the sphere can spend an action to move itself and the bubble up to half its move speed.  As well, the sphere can be picked up and moved.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "4",
+        "charge": false,
+        "school": "evo",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": true
+        },
+        "materials": {
+            "value": "a palm sized glass bubble",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "30",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "dex",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "0HC21F4SVUGZPWIR"
+}

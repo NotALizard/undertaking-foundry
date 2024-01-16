@@ -1,0 +1,67 @@
+{
+    "name": "Grave Ring",
+    "type": "spell",
+    "img": "icons/magic/unholy/barrier-fire-pink.webp",
+    "system": {
+        "description": {
+            "value": "<p>A ring of black flames appears and spins out into a 60 foot radius sphere from a point of your choosing that is within range that you can see.  All creatures caught in the area must make a Constitution (Save) check.  On a failed save the target takes 8d6 necrotic damage, or half as much on a successful save.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "6",
+        "charge": false,
+        "school": "nec",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "powder from a crushed black gemstone worth at least 500 gp",
+            "consumed": false,
+            "cost": "500",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "range": {
+            "value": "150",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "60",
+            "width": null,
+            "units": "ft",
+            "type": "sphere"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "8d6",
+                    "necrotic"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "con",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "5QKNDIU0N7AOHVQT"
+}

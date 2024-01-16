@@ -1,0 +1,67 @@
+{
+    "name": "Winter\u2019s Piercing Ray",
+    "type": "spell",
+    "img": "icons/magic/water/barrier-ice-wall-snow.webp",
+    "system": {
+        "description": {
+            "value": "<p>Summoning forth the chill of winter, a line 100 feet long and 5 feet wide of frozen energy blasts forth from you in a direction you choose.  A creature caught in the line must make a Constitution (Save) check.  On a failed save, a creature takes 6d6 cold damage and has its speed reduced to 0 until the start of your next turn.  The damage is halved on a successful save, and their speed isn\u2019t affected.<br>&nbsp;&nbsp;&nbsp;&nbsp;Any space this line passes over is covered in snow and considered difficult terrain for the next 1 minute after casting.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "4",
+        "charge": false,
+        "school": "evo",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "a cup of water",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "range": {
+            "value": "0",
+            "long": null,
+            "units": "self"
+        },
+        "target": {
+            "value": "100",
+            "width": null,
+            "units": "ft",
+            "type": "line"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "6d6",
+                    "cold"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "con",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "H2RO4K8JLYTVNEXB"
+}

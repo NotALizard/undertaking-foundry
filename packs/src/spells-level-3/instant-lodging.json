@@ -1,0 +1,62 @@
+{
+    "name": "Instant Lodging",
+    "type": "spell",
+    "img": "icons/environment/settlement/house-woods.webp",
+    "system": {
+        "description": {
+            "value": "<p>Pick a spot of unoccupied space, on stable ground, of at least 10ft by 10ft in dimensions, within range.  From that spot sprouts a 10ft cube log cabin, complete with windows, a single front door, and a smoking chimney.  <br>&nbsp;&nbsp;&nbsp;&nbsp;The interior of the cabin is furnished with seating, a half kitchen, a table, a fireplace, and bunk beds.  These furnishings can be changed and shifted upon casting, but cannot be changed after it is cast.  This cabin also has no running water.  When changing the furnishings you can have the following items:<ul><li>Up to 2 chairs for medium creatures</li><li>A 5ft by 10ft table</li><li>Up to 4 bunk beds for medium creatures</li><li>A half kitchen that takes up room equal to 5ft by 10ft, and must be set along a wall</li><li>A fireplace that takes up a 5ft by 5ft space, and must be along a wall</li><ul><br>&nbsp;&nbsp;&nbsp;&nbsp;Anything that was created by the spell inside the cabin, should it be removed from the cabin, vanishes instantly.  Anything left inside that was not part of the cabin is ejected immediately upon it disappearing.  <br>&nbsp;&nbsp;&nbsp;&nbsp;It is sized for medium creatures, and cannot fit creatures of a larger size.  The inside of the cabin is also larger than its exterior makes it look, having a floorspace of 20ft by 20ft and standing 10ft high, and allows up to 8 medium sized creatures inside.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Only those that the caster designates can enter the cabin.  The temperature on the inside is comfortably dry and warm regardless of outside temperatures.  Spells cast inside the cabin, can\u2019t extend outside of it.  Spells cast outside of it, can\u2019t extend into the cabin.  That does not stop spells from dealing damage to the cabin, however.<br>&nbsp;&nbsp;&nbsp;&nbsp;This cabin has an AC of 11 and 70 hit points.  It also has vulnerability to fire, resistance to piercing, and immunity to poison and psychic.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Should the cabin be reduced to 0 hit points, or be dispelled, it immediately disappears and throws the occupants outwards 10 feet in a random direction, and each creature thrown this way takes 1d4 bludgeoning damage.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Should the spell end naturally and there are still creatures inside, they are shunted out into an unoccupied space next to where the cabin stood, unharmed.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "3",
+        "charge": false,
+        "school": "con",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": true,
+            "concentration": false
+        },
+        "materials": {
+            "value": "a pinch of ash from a fireplace",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "minute",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "8",
+            "units": "hour"
+        },
+        "range": {
+            "value": "10",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "10",
+            "width": null,
+            "units": "ft",
+            "type": "cube"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "SQADB7CXCUN2VURZ"
+}

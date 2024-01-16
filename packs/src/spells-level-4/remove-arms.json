@@ -1,0 +1,62 @@
+{
+    "name": "Remove Arms",
+    "type": "spell",
+    "img": "icons/skills/melee/sword-damaged-broken-glow-red.webp",
+    "system": {
+        "description": {
+            "value": "<p>As an action, you target one weapon that a creature within 60ft of you is holding.  That creature must make a Presence (Save) check against your Spell Save DC.  On failure, the target\u2019s weapon disappears into a pocket plane for the next 1 minute, reappearing at the target\u2019s side at the end of this duration.  If the weapon is magical, the creature makes the (Save) check at advantage.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "4",
+        "charge": false,
+        "school": "abj",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": true
+        },
+        "materials": {
+            "value": "a patch of cloth",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "60",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "object"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "pre",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "7H0M1UB9Z1ZVHSJ0"
+}

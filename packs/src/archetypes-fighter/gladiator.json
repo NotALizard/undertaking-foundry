@@ -11,7 +11,7 @@
     "source": "Core Rules",
     "identifier": "fighter-gladiator",
     "classIdentifier": "fighter",
-    "classDetails": "<h2>&#x1f193; <b>Given Ability: Performer</b> &#x1f193;</h2>"
+    "classDetails": "<h3>Martial Archetype: Gladiator</h3><p><i>Unlock:</i> Have the Fighter Starter Abilities.</p><hr/><p>&#x1F193; Given Abilities: @Compendium[undertaking.abilities.0KTT2Y0R01HSBXB3]{Performer}, @Compendium[undertaking.abilities.SEFGUA8X0TGZPWT2]{Heat}, @Compendium[undertaking.abilities.726QUN63DM3JKKPN]{Gladiatorial Role}</p><hr/><h3>Gladiator Abilities</h3><p>When taking a level in Gladiator, you may choose from the following abilities: </p><hr/><p>Options: @Compendium[undertaking.abilities.C3FOXDT9CHAKP733]{Brand-Builder}, @Compendium[undertaking.abilities.FBB0R61OTQY8CJ45]{Crowd-Worker}, @Compendium[undertaking.abilities.SFNDJIWCV1ORHJTM]{Fighter Stance: Gladiator}</p>"
   },
   "effects": [],
   "folder": null,

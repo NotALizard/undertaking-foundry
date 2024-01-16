@@ -1,0 +1,22 @@
+{
+  "name": "Later Outsider",
+  "type": "background",
+  "img": "icons/environment/wilderness/tree-oak.webp",
+  "system": {
+    "description": {
+      "value": "<p>There was a span of your history where you made little to no contact with society.  Maybe it was due to banishment, exile, or perhaps it was a self imposed isolation.  Whatever the reason, you spent a good deal of time away from anything resembling civilization and contact with others.  And while it is possible it may have left you wanting in the ways of socializing and higher society, such a lifestyle has given you confidence in your own skills and a good measure of self sufficiency.</p>\n<hr />\n<p><strong>Skill Proficiency:</strong> Pick one of the following: Craft, Instinct, Nature, or Perception.</p>\n<p><strong>Trade Proficiency:</strong> Pick one of the following trades: Artisan (Choose any Specialization), Botany, Cooking, Fishing, or Pathfinding.</p>\n<p><strong>Equipment: </strong>Traveling clothes, an adventuring pack, and either a slingshot with 20 pellets of ammunition or a staff.</p>\n<p><strong>Coinage:</strong> 1d4 gp</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "later"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "XQRMM8NQ53PTOROY"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Fighting Stance: Gladiator",
+  "type": "ability",
+  "img": "icons/skills/social/intimidation-impressing.webp",
+  "system": {
+    "description": {
+      "value": "<p>You learn 2 fighting stances from the following list.<br>&nbsp;&nbsp;&nbsp;&nbsp;When you can choose a new Fighting Stance as part of leveling up, you can choose from one of these Fighting Stances as well.<br><br><u><i>Fighting Stance List: Gladiator</i></u><br>@Compendium[undertaking.abilities.2PGSXJZ46F6EQFIM]{Andabata Stance}, @Compendium[undertaking.abilities.18SU1HJZR146Z0UN]{Wrestling Stance}, @Compendium[undertaking.abilities.HBZQK9WH0Z4JGM8L]{Last Stance}, @Compendium[undertaking.abilities.CO89TKPTR5S0E00L]{Scissor Stance}</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Must have the Fighter Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "SFNDJIWCV1ORHJTM"
+}

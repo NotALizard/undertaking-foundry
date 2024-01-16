@@ -1,0 +1,62 @@
+{
+    "name": "Greater Cure",
+    "type": "spell",
+    "img": "icons/magic/life/heart-hand-gold-green-light.webp",
+    "system": {
+        "description": {
+            "value": "<p>You imbue a creature with immense positive energy, reversing debilitating effects that most other spells cannot cure.  This spell does one of the following effects to the target:<ul><li>Reduce @Compendium[undertaking.conditions.ERBR3AG01H4N1L91]{Exhaustion} by 1 level.</li><li>Remove one effect that @Compendium[undertaking.conditions.KJXJ0T5RPNC51N4V]{Charmed} or @Compendium[undertaking.conditions.AKLQGCY7ULVB4B64]{Petrified} the target.</li><li>Remove one curse.</li><li>Unattune from one item, including attunement to a cursed item.</li><li>Revert any reduction to one of the target\u2019s attributes.</li><li>Remove one effect reducing the target\u2019s hit point maximum.</li><li>Changes one @Compendium[undertaking.conditions.JHOXE7HCCBCD8MSK]{Insane} creature from having Indefinite Insanity to Long-Term Insanity with the same symptoms.  </li><li>Change one @Compendium[undertaking.conditions.JHOXE7HCCBCD8MSK]{Insane} Creature from having Long-Term Insanity to Short-Term Insanity with the same symptoms.</li><li>Cure one creature of Short-Term Insanity.</li><li>You cast @Compendium[undertaking.spells-level-2.N04H7KQXVXSTATL9]{Lesser Cure} on the target.</li><ul></p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "5",
+        "charge": false,
+        "school": "abj",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "diamond dust worth 100gp, which the spell consumes",
+            "consumed": true,
+            "cost": "100",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "range": {
+            "value": "0",
+            "long": null,
+            "units": "touch"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "QPM2ECCAG51FC9FW"
+}

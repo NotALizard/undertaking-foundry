@@ -1,0 +1,62 @@
+{
+    "name": "Ashame",
+    "type": "spell",
+    "img": "icons/environment/settlement/temple-night.webp",
+    "system": {
+        "description": {
+            "value": "<p>At a location within range, you create the shining, powerful, and intimidating image of your deity.  Each creature within 40ft of this point that can see the image must make a Presence (Save) check.  On failure, the creature takes 2d10 radiant damage.  <br>&nbsp;&nbsp;&nbsp;&nbsp;If the creature has stolen something, injured another creature, or had rolled a Presence (Deception) or Presence (Intimidation) check within the last 24 hours, the creature also takes an additional 2d10 radiant damage and becomes @Compendium[undertaking.conditions.UK95BQ45TGSD5Q3V]{Frightened} for the duration.  <br>&nbsp;&nbsp;&nbsp;&nbsp;On success in either situation, the creature takes half damage and is not frightened. </p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "5",
+        "charge": false,
+        "school": "abj",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": true
+        },
+        "materials": {
+            "value": "a holy symbol",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "60",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "40",
+            "width": null,
+            "units": "ft",
+            "type": "sphere"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "pre",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "N2ZSVB7D1W068EWZ"
+}

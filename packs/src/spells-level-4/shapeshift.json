@@ -1,0 +1,62 @@
+{
+    "name": "Shapeshift",
+    "type": "spell",
+    "img": "icons/creatures/mammals/wolf-howl-moon-forest-blue.webp",
+    "system": {
+        "description": {
+            "value": "<p>Targeting a creature that you can see, that is within range, you cast this spell in an attempt to transform the target.  An unwilling target may make a Wisdom (Save) check to resist the change.  <br>&nbsp;&nbsp;&nbsp;&nbsp;This transformation lasts for the duration of the spell, or until the target drops to 0 or dies.  The new form assumed by the target can be any beast whose Challenge Rating is equal or lower than the target\u2019s (though for those that don\u2019t have Challenge Ratings, use level).  The target\u2019s game statistics, including all attributes except Intelligence, are replaced by the statistics of the chosen beast.  However, the target does keep its alignment and personality.  <br>&nbsp;&nbsp;&nbsp;&nbsp;The target assumes the hit points of this new form.  When it reverts to its original form, the creature returns to the number of hit points it had before it was transformed.  If it reverts as a result of dropping to 0 hit points, however, any excess damage carries over to its original form.  As long as the excess damage doesn\u2019t reduce the creature\u2019s normal form to or below 0 hit points, it is not knocked unconscious.  <br>&nbsp;&nbsp;&nbsp;&nbsp;The creature is limited in the actions that it can perform by the nature of its new form: it can\u2019t speak, cast spells, or take any action that requires hands or speech.The target\u2019s gear melds into the new form and it cannot activate, use, wield, or otherwise benefit from any of its equipment.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "4",
+        "charge": false,
+        "school": "tra",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": true
+        },
+        "materials": {
+            "value": "a chrysalis",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "hour"
+        },
+        "range": {
+            "value": "60",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "wis",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "YL8USCAX1ZTDKOA1"
+}

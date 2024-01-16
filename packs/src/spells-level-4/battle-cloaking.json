@@ -1,0 +1,62 @@
+{
+    "name": "Battle Cloaking",
+    "type": "spell",
+    "img": "icons/magic/control/silhouette-hold-change-green.webp",
+    "system": {
+        "description": {
+            "value": "<p>You or a creature you touch becomes invisible until the spell ends, and anything the target is wearing and carrying is @Compendium[undertaking.conditions.YE63H7VLOHW7NFHO]{Invisible} as long as it is on the target\u2019s person.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "4",
+        "charge": false,
+        "school": "ill",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": true
+        },
+        "materials": {
+            "value": "A pinch of diamond dust worth at least 100 gold, which the spell consumes",
+            "consumed": true,
+            "cost": "100",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "0",
+            "long": null,
+            "units": "touch"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "WJRECI4EKOPLMTCE"
+}

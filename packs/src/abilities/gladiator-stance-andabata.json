@@ -1,0 +1,25 @@
+{
+  "name": "Fighting Stance: Andabata",
+  "type": "ability",
+  "img": "icons/creatures/eyes/humanoid-single-blind.webp",
+  "system": {
+    "description": {
+      "value": "<p><i>Requirement:</i> The @Compendium[undertaking.conditions.ADW4EH0NKRDCRCA4]{Blinded} condition or some other total lack of sight.</p><hr><p>In some lands, public executions are handled as entertainment, with blindfolded fighting being a popular form.  These prisoners were expected to die in the arena, but some of them continued to survive.  These gladiators had found the secrets to blind fighting, extending their livelihoods in the process.  This strategy did not go unnoticed as word spread of its success, entering more traditional battlefields in the process.  <br>&nbsp;&nbsp;&nbsp;&nbsp;The Andabata Stance is entering a different state of mind.  Instead of fighting for a crowd, those trained in the stance are often after the thrill of fighting blind itself and the risks that brings.  <br>&nbsp;&nbsp;&nbsp;&nbsp;By widening your stance and obscuring or closing your eyes if not already @Compendium[undertaking.conditions.ADW4EH0NKRDCRCA4]{Blinded}, you open your mind and begin to listen.  You feel for vibrations in the ground and sounds in the air, bringing your weapons in close to your body both for defense and to keep from losing them.  With some practice, as your mind clears and focuses, you find yourself able to 'see' without eyes and fight without sight.</p><hr><u>Pros</u><p><b>Blind Thrill</b><ul><li>You gain +10 heat at the beginning of your turn.</li><li>You gain an additional +10 heat if you were attacked this turn, whether it hits or misses.</li></ul><b>Heat Vision</b><ul><li>At the beginning of your turn, you can spend heat to give yourself blindsight as a non-action.  For every 5 heat you spend you have 5ft extra of blindsight until the beginning of your next turn.</li></ul><b>Sight Through Sound</b><ul><li>You have advantage on Wisdom (Perception) checks that rely on hearing.</li></ul></p><hr><u>Cons</u><p><b>Blind</b><ul><li>Excluding blindsight given by Heat Vision, you are @Compendium[undertaking.conditions.ADW4EH0NKRDCRCA4]{Blinded}.</li></ul><b>Blind Ignorance</b><ul><li>You can only gain heat from the Blind Thrill ability.</li></ul></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "stance"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "2PGSXJZ46F6EQFIM"
+}

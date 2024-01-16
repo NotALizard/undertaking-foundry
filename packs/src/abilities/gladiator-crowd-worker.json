@@ -1,0 +1,24 @@
+{
+  "name": "Crowd-Worker",
+  "type": "ability",
+  "img": "icons/skills/social/intimidation-impressing.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Work the Crowd</em></p><p>As a minor action, if at least 1 non-combatant that you can see is watching you fight, you can play to the crowd to gain heat equal to your Presence (Perform) modifier, minimum of 1.</p><p>&nbsp;</p><p><em>This is for You</em></p><p>If at least 1 non-combatant that you can see is watching you fight, you can dedicate your next attack.&nbsp; If this attack kills or knocks a creature @Compendium[undertaking.conditions.9KB959MRZ0H4IT4C]{Unconscious}, you automatically use &ldquo;Work the Crowd&rdquo; as a non-action.&nbsp; If you do, you can spend your heat to regain Hit Points.&nbsp; For every 1 heat you spend, you gain 1 Hit Point to a maximum of 20.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;If the attack fails to knock the creature @Compendium[undertaking.conditions.9KB959MRZ0H4IT4C]{Unconscious}, you cannot use &ldquo;This is for You&rdquo; again for the next 1 minute.&nbsp; If the attack misses, you lose 10 heat.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Must have the Fighter Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "FBB0R61OTQY8CJ45"
+}

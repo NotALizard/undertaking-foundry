@@ -1,0 +1,67 @@
+{
+    "name": "Kinetic Burst",
+    "type": "spell",
+    "img": "icons/magic/sonic/projectile-sound-rings-wave.webp",
+    "system": {
+        "description": {
+            "value": "<p>With a single motion you fling an enormous amount of mental power outwards in an attempt to throw others backward.  Each creature within a 20 foot cube, originating from you, must make a Strength (Save) check.  On a failed throw, the creature is hurled 30 feet away from you, is knocked prone, and takes 8d6 force damage.  A successful (Save) check causes a creature to take half as much damage, they are not knocked @Compendium[undertaking.conditions.RK3DF56CKMQUV6DM]{Prone}, and they are only moved 5 feet.  <br>&nbsp;&nbsp;&nbsp;&nbsp;In addition, any unsecured objects within range of the area of effect are automatically thrown 30 feet away. </p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "5",
+        "charge": false,
+        "school": "evo",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": false,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "range": {
+            "value": "0",
+            "long": null,
+            "units": "self"
+        },
+        "target": {
+            "value": "20",
+            "width": null,
+            "units": "ft",
+            "type": "cube"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "8d6",
+                    "force"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "str",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "RS1WH90WHNO7H1AR"
+}

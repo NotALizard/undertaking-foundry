@@ -10,7 +10,7 @@
     },
     "source": "Core Rules",
     "portion": "core",
-    "classDetails": "<p>Core Kobold Traits</p><ul><li><b>Compatibility: </b>Reptile</li><li><b>Attribute Increase: </b>Your Dexterity increases by 2.</li><li><b>Lifespan: </b>Kobolds reach their age of maturity at 7 years old, and can live up to 125 years old.</li><li><b>Size: </b>Small; Kobolds stand between 2 to 3 feet tall and weigh between 25 to 35 pounds.</li><li><b>Speed: </b>Your base ground speed is 30 feet.</li><li><b>Darkvision: </b>@Compendium[undertaking.abilities.K2R4176S4B99TO6R]{Darkvision (30ft)}</li><li><b>Strength in Numbers:</b> @Compendium[undertaking.abilities.XOU10R2EBHUGDPCQ]{Strength in Numbers}</li><li><b>Languages: </b>You can speak, read, and write Common and Draconic.</li></ul>"
+    "classDetails": "<p>Core Kobold Traits</p><ul><li><b>Compatibility: </b>Reptilian</li><li><b>Attribute Increase: </b>Your Dexterity increases by 2.</li><li><b>Lifespan: </b>Kobolds reach their age of maturity at 7 years old, and can live up to 125 years old.</li><li><b>Size: </b>Small; Kobolds stand between 2 to 3 feet tall and weigh between 25 to 35 pounds.</li><li><b>Speed: </b>Your base ground speed is 30 feet.</li><li><b>Darkvision: </b>@Compendium[undertaking.abilities.K2R4176S4B99TO6R]{Darkvision (30ft)}</li><li><b>Strength in Numbers:</b> @Compendium[undertaking.abilities.XOU10R2EBHUGDPCQ]{Strength in Numbers}</li><li><b>Languages: </b>You can speak, read, and write Common and Draconic.</li></ul>"
   },
   "effects": [],
   "folder": null,

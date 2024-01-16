@@ -1,0 +1,24 @@
+{
+  "name": "Thrives Under Pressure",
+  "type": "ability",
+  "img": "icons/magic/control/silhouette-hold-beam-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>When using a Desperate Action, you gain the following boons:</p><ul><li>You have a +2 to all Save Checks until the beginning of your next turn.</li><li>You can move up to half your movement speed as part of your Desperate Action.&nbsp;&nbsp;</li><li>You can swap heavy weapons as a non-action.</li><li>Your movement is unaffected by difficult or tight terrain.</li><li>You can choose to swap your Fighting Stance at the beginning of an attack instead of at the end.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "adept"
+    },
+    "requirements": "6th level overall and 3rd level Fighter",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "ZBXFQL0LWH9PQUNJ"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Fighting Stance: Scissor",
+  "type": "ability",
+  "img": "icons/skills/trades/scissors-tailor-barber.webp",
+  "system": {
+    "description": {
+      "value": "<p><i>Requirement:</i> Two slashing weapons.</p><hr><p>Turning your blades sideways and placing them across each other with the blades on the inside, resembling giant scissors.  You tilt your blades upward and bring them to your chest, ready to sever any part that falls between your blades by quickly yanking your blades in opposite directions.</p><hr><u>Pros</u><p><b>Disarm</b><ul><li>If a creature misses you with a melee weapon attack while you are in Self-Defense (or when not in Self-Defense at the cost of 5 heat), you can attempt to disarm the creature as a reaction (or as a non-action at the cost of 8 heat).  When you start the attempt, you make a contested attack roll using both you and the creature's current weapon.  If you succeed and the weapon can be disarmed; the creature's melee weapon is dropped in a direction of your choice within 5ft of the creature.</li></ul><b>Dis-Arm</b><ul><li>When your attack brings a humanoid's Hit Points to 0, you can spend 5 heat to instantly sever one of its limbs, giving the target a single failed Death Throw.  Doing so completely restores your heat.</li></ul></p><hr><u>Cons</u><p><b>Loose Grip</b><ul><li>Being hit by a melee weapon causes you to make a Dexterity (Save) check of DC equal to the attacking creature's Strength Attribute.  On failure, you drop one of your weapons.</li></ul></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "stance"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "CO89TKPTR5S0E00L"
+}

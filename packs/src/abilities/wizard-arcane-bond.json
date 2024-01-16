@@ -4,7 +4,7 @@
   "img": "icons/sundries/books/book-stack.webp",
   "system": {
     "description": {
-      "value": "<p>A Wizard can choose an item to make a bond with.  The item they are bonded to now acts as their arcane focus.  In addition, the Wizard can store this focus in a pocket dimension when it is unneeded, and summon it from this space as a free action.  Only the focus can be stored like this.<br>&nbsp;&nbsp;&nbsp;&nbsp;If the focus is ever taken from the Wizard, they can create a bond with another item through a ritual taking a long rest to do so.<br>&nbsp;&nbsp;&nbsp;&nbsp;An arcane bond cannot be bestowed upon a creature, an enchanted object, and can be no bigger than 1 foot by 1 foot by 1 foot.</p>",
+      "value": "<p>A Wizard can choose an item to make a bond with.  The item they are bonded to now acts as their arcane focus.  In addition, the Wizard can store this focus in a pocket dimension when it is unneeded, and summon it from this space as a non-action.  Only the focus can be stored like this.<br>&nbsp;&nbsp;&nbsp;&nbsp;If the focus is ever taken from the Wizard, they can create a bond with another item through a ritual taking a long rest to do so.<br>&nbsp;&nbsp;&nbsp;&nbsp;An arcane bond cannot be bestowed upon a creature, an enchanted object, and can be no bigger than 1 foot by 1 foot by 1 foot.</p>",
       "chat": "",
       "unidentified": ""
     },

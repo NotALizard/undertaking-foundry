@@ -1,0 +1,71 @@
+{
+    "name": "Hundred Spear Assault",
+    "type": "spell",
+    "img": "icons/skills/melee/spear-tips-quintuple-orange.webp",
+    "system": {
+        "description": {
+            "value": "<p>At your call, a hundred ghostly spears are volleyed forward and fall in a line that is 100 feet long and 10 feet wide in a direction that you choose.  Creatures caught in the line must make a Dexterity (Save) check.  On failure, they take 7d6 piercing damage and 4d6 force damage, and have their speed reduced to 0 feet until the end of their next turn as the piercing spears hold targets in place.  On success, they take half damage and do not have their speed reduced.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "6",
+        "charge": false,
+        "school": "evo",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "miniature spear totem",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "range": {
+            "value": "0",
+            "long": null,
+            "units": "self"
+        },
+        "target": {
+            "value": "100",
+            "width": null,
+            "units": "ft",
+            "type": "line"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "7d6",
+                    "piercing"
+                ],
+                [
+                    "4d6",
+                    "force"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "dex",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "3I736YDSAFN1B3E3"
+}

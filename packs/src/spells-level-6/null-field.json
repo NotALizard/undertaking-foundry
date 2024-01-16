@@ -1,0 +1,62 @@
+{
+    "name": "Null Field",
+    "type": "spell",
+    "img": "icons/magic/defensive/barrier-shield-dome-pink.webp",
+    "system": {
+        "description": {
+            "value": "<p>A shimmering field appears as an immobile barrier that forms in a 10 foot radius centered around you and remains for the duration.<br>&nbsp;&nbsp;&nbsp;&nbsp;Any spell that is of 5th level or lower cast from outside the barrier has no effect on creatures and objects within it, even if the spell is Charged to have a more powerful effect.  Such spells can target creatures and objects within the barrier, but the spell will have no effect on them.  As well, the area within the barrier is excluded from the areas of affect from spells of these levels.<br><br>Charge: This spell can be Charged to provide better protection:<ul><li>2 Mana: Spells of up to 6th level cannot penetrate the barrier.</li></ul></p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "6",
+        "charge": true,
+        "school": "abj",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": true
+        },
+        "materials": {
+            "value": "an engraved crystal bead that shatters when the spell ends",
+            "consumed": true,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "0",
+            "long": null,
+            "units": "self"
+        },
+        "target": {
+            "value": "10",
+            "width": null,
+            "units": "ft",
+            "type": "sphere"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "J3C64S01EREH1FZZ"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Fighting Stance: Last Stance",
+  "type": "ability",
+  "img": "icons/magic/death/skull-energy-light-white.webp",
+  "system": {
+    "description": {
+      "value": "<p><i>Requirement:</i> When your Hit Points hit 0, if you are not killed outright then you can enter this stance as a non-action.</p><hr><p>Last stance is a special fighting stance that Gladiators can only enter under certain conditions and as a last resort.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Gladiators in last stance defy their failing bodies, staying up through force of will and the pressure alone.  They push their bodies past their limits, staying up at the cost of being fully conscious.</p><hr><u>Pros</u><p><b>Not Dead Yet</b><ul><li>When you enter this stance, you gain temporary Hit Points equal to your current heat, minimum of 1, and you remain conscious.</li></ul><b>Overdrive</b><ul><li>When you enter this stance, after gaining your temporary Hit Points, your heat is completely restored.</li></ul></p><hr><u>Cons</u><p><b>Practically Unconscious</b><ul><li>You automatically fail all Intelligence and Wisdom checks, and cannot speak intelligible words.</li></ul><b>Borrowed Time</b><ul><li>You automatically exit this stance by falling @Compendium[undertaking.conditions.9KB959MRZ0H4IT4C]{Unconscious}, being healed, or being killed.  Otherwise the stance lasts 1 minute.</li></ul><b>Beyond Your Limits</b><ul><li>When you exit this stance, you take 1 point of @Compendium[undertaking.conditions.ERBR3AG01H4N1L91]{Exhaustion}.</li></ul><b>Bedrest</b><ul><li>You cannot enter this stance again until after a long rest.</li></ul></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "stance"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "HBZQK9WH0Z4JGM8L"
+}

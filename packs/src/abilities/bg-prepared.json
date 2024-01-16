@@ -1,0 +1,80 @@
+{
+  "name": "Prepared",
+  "type": "ability",
+  "img": "icons/sundries/scrolls/scroll-writing-brown-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Should you spend your next short or long rest studying an object, creature, or event, you gain advantage on the next Intelligence or Wisdom based roll you make, excluding Wisdom (Instinct), to understand something about the subject.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "attribute": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "attribute": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "background",
+      "subtype": ""
+    },
+    "requirements": "Early Scholar",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": "Background Features",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "CEDNUQ4BN37WPXPH"
+}

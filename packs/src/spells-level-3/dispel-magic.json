@@ -1,0 +1,62 @@
+{
+    "name": "Dispel Magic",
+    "type": "spell",
+    "img": "icons/magic/symbols/triangle-glow-purple.webp",
+    "system": {
+        "description": {
+            "value": "<p>Select a single creature, object, or magical effect that is in range with a point of the finger.  Any spells of 3rd level or lower on the target end immediately.  For spells on the target that are 4th level and above you must roll an skill check using your spellcasting ability.  You must beat a DC equal to 10 + the spell's level.  If you succeed, the spell ends.  <br><br>Charge: This is a spell that can be Charged.  Doing so causes this spell to have the ability to dispel spells of higher levels without having to roll.  <ul><li>2 Mana: Any spell of 4th level or lower immediately ends</li><li>4 Mana: Any spell of 5th level or lower immediately ends</li><li>6 Mana: Any spell of 6th level or lower immediately ends</li><li>8 Mana: Any spell of 7th level or lower immediately ends</li><li>11 Mana: Any spell of 8th level or lower immediately ends</li><li>21 Mana: Any spell of 9th level or lower immediately ends</li></ul></p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "3",
+        "charge": true,
+        "school": "abj",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": false,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "range": {
+            "value": "120",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "",
+            "width": null,
+            "units": "",
+            "type": ""
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "XD6W9NSEKZ48HGCD"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Scholar",
+  "type": "background",
+  "img": "icons/sundries/scrolls/scroll-writing-brown-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Years of your past have been dedicated to the pursuit of knowledge, whether it be a specific subject or a need for information in general.  Regardless of what knowledge you were searching for, or studying, you have spent quite a while working in pursuit and study of it.  You are more studious, well read, and have a knack for research and uncommon bits of knowledge to impress others with.</p>\n<hr />\n<p>Choose @Compendium[undertaking.backgrounds-early.KPLTCU189M01F8JG]{Early} and/or @Compendium[undertaking.backgrounds-later.7CSI1W6RPAJNZNTG]{Later}</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "LWFRQUQTJCMQRX4F"
+}

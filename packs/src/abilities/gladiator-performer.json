@@ -1,0 +1,24 @@
+{
+  "name": "Performer",
+  "type": "ability",
+  "img": "icons/skills/social/intimidation-impressing.webp",
+  "system": {
+    "description": {
+      "value": "<p>You gain proficiency in Presence (Perform) if you were not already proficient in it.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Must have the Fighter Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "0KTT2Y0R01HSBXB3"
+}

@@ -1,0 +1,62 @@
+{
+    "name": "Mind Shackle",
+    "type": "spell",
+    "img": "icons/magic/control/control-influence-puppet.webp",
+    "system": {
+        "description": {
+            "value": "<p>With a wave of your hands you attempt to force a humanoid that you can see within range to submit to your authority.  The humanoid must make a Wisdom (Save) check, and on a failure it is @Compendium[undertaking.conditions.KJXJ0T5RPNC51N4V]{Charmed} by you for the duration.  Should you, or the creatures that are friendly to you, be fighting the target, it gets advantage on the (Save) check.  <br>&nbsp;&nbsp;&nbsp;&nbsp;While the target is @Compendium[undertaking.conditions.KJXJ0T5RPNC51N4V]{Charmed}, you have a telepathic link with it as long as the two of you are on the same plane of existence.  You can use this telepathic link to issue commands and orders to the creature while you are conscious (no action required).  The target will do its best to obey these orders.  You can give simplistic or general course of action this way, such as \u2018attack that person/creature\u2019, \u2018go into that corner\u2019, or \u2018grab that object\u2019.  If the creature completes an order and it doesn\u2019t receive any further directions from you, it will defend and preserve its own life to the best of its ability, but nothing further.  <br>&nbsp;&nbsp;&nbsp;&nbsp;If you would like to give a more complex and precise order, you can take an action to exert more directed control over the target.  Until the end of your next turn, the creature takes only the actions you choose, and doesn\u2019t do anything that you don\u2019t allow it to do.  During that time you can also have the @Compendium[undertaking.conditions.KJXJ0T5RPNC51N4V]{Charmed} creature use its reaction, at the cost of your own reaction.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Each time the target takes damage, it makes a new Wisdom (Save) check against the spell.  Should it pass the save, then the effects of the spell end.  <br><br>Charge: This spell can be Charged to have a longer duration <ul><li>2 mana: Concentration can be held for 1 hour</li><li>4 mana: Concentration can be held for 8 hours</li></ul></p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "5",
+        "charge": true,
+        "school": "enc",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": false,
+            "ritual": false,
+            "concentration": true
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "60",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "wis",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "84PCT6JT8D1G6SN4"
+}

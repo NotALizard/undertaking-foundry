@@ -1,0 +1,24 @@
+{
+  "name": "Heat",
+  "type": "ability",
+  "img": "icons/skills/social/intimidation-impressing.webp",
+  "system": {
+    "description": {
+      "value": "<p>&ldquo;Heat&rdquo; is the cumulative energy that you gain from being witnessed in battle.&nbsp;&nbsp;&nbsp;&nbsp;</p><p>You gain heat based on your Gladiatorial Role, up to your <strong>Maximum Heat</strong>.&nbsp;&nbsp;&nbsp;&nbsp;</p><p>Your heat depletes after 1 minute of not gaining heat.</p><p><br /><em>Maximum Heat</em> = 5 times half of your overall level.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Must have the Fighter Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "SEFGUA8X0TGZPWT2"
+}

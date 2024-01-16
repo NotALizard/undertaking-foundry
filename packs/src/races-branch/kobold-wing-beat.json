@@ -10,7 +10,7 @@
     },
     "source": "Core Rules",
     "portion": "core",
-    "classDetails": "<p>Wing-Beat Kobold Traits</p><ul><li><b>Compatibility: </b>Reptile</li><li><b>Attribute Increase: </b>Your Wisdom increases by 1.</li><li><b>Skill Proficiency: </b>Choose either Dexterity (Acrobatics) or Wisdom (Perception).</li><li><b>Lesser Flight: </b>@Compendium[undertaking.abilities.IX6N1K5PUGT3QCMV]{Lesser Flight}</li><li><b>Glide: </b>@Compendium[undertaking.abilities.8O5WZBNA6CHJTPSE]{Glide}</li></ul>"
+    "classDetails": "<p>Wing-Beat Kobold Traits</p><ul><li><b>Compatibility: </b>Reptilian</li><li><b>Attribute Increase: </b>Your Wisdom increases by 1.</li><li><b>Skill Proficiency: </b>Choose either Dexterity (Acrobatics) or Wisdom (Perception).</li><li><b>Lesser Flight: </b>@Compendium[undertaking.abilities.IX6N1K5PUGT3QCMV]{Lesser Flight}</li><li><b>Glide: </b>@Compendium[undertaking.abilities.8O5WZBNA6CHJTPSE]{Glide}</li></ul>"
   },
   "effects": [],
   "folder": null,

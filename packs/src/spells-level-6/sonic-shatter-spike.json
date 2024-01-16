@@ -1,0 +1,75 @@
+{
+    "name": "Sonic Shatter Spike",
+    "type": "spell",
+    "img": "icons/magic/sonic/explosion-shock-wave-teal.webp",
+    "system": {
+        "description": {
+            "value": "<p>A large crystalline shard of aether materializes before you and rushes towards a target that you choose that you can see within range.  Roll a ranged spell attack.  On hit, the target takes 6d10 piercing damage.  In either case the shard explodes, causing all creatures within 10 feet of the initial target to make a Dexterity (Save) check.  On failure, that creature takes 4d6 piercing damage, or half as much on a success. <br>&nbsp;&nbsp;&nbsp;&nbsp;At the beginning of your next turn all creatures injured or affected by this spell must make a Constitution (Save) check as the crystalline shards that hit them shatter in a sonic blast.  On a failure, a target takes 5d6 force damage, but takes half as much damage on a success.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "6",
+        "charge": false,
+        "school": "evo",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": false,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "rsak",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "range": {
+            "value": "60",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "10",
+            "width": null,
+            "units": "ft",
+            "type": "sphere"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "6d10",
+                    "piercing"
+                ],
+                [
+                    "4d6",
+                    "piercing"
+                ],
+                [
+                    "5d6",
+                    "force"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "dex",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "8HOLU9HRLA5TTMWE"
+}

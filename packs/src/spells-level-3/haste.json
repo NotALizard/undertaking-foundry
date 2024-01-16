@@ -1,0 +1,62 @@
+{
+    "name": "Haste",
+    "type": "spell",
+    "img": "icons/magic/movement/trail-streak-zigzag-teal.webp",
+    "system": {
+        "description": {
+            "value": "<p>The world seems to slow around you as your mind and body speed up.  Your movement speed is doubled, you gain +2 AC up to your armor\u2019s maximum Dexterity Modifier bonus, if it has one, and you have advantage on Dexterity (Save) checks.   When you use an action to make an attack action or cast a cantrip, you can make an additional attack or cast an additional cantrip.  Alternatively, you can take the Action to Minor Action, Grapple, Shove, Trip, Dash, or Disengage actions instead. </p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "3",
+        "charge": false,
+        "school": "tra",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": false,
+            "ritual": false,
+            "concentration": true
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "30",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "6GFN59MWTZPMBQ61"
+}

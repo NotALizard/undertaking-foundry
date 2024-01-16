@@ -1,0 +1,24 @@
+{
+  "name": "Weapon Fanatic",
+  "type": "ability",
+  "img": "icons/skills/melee/swords-triple-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>Pick 3 weapons that you are not proficient in, you are now proficient in these weapons.<br>&nbsp;&nbsp;&nbsp;&nbsp;Additionally, you have advantage on all Intelligence (Culture) and Intelligence (Investigation) checks related to weapons or armors with which you are proficient, or Fighting Stances in which you know.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "given"
+    },
+    "requirements": "Must have a Fighter Adept Ability",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "57K1WUK53JJUHQ6N"
+}

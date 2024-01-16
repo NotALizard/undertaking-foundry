@@ -1,0 +1,67 @@
+{
+    "name": "Restore",
+    "type": "spell",
+    "img": "icons/magic/life/heart-cross-strong-flame-green.webp",
+    "system": {
+        "description": {
+            "value": "<p>A creature that you can see within range is overwhelmed by restorative energy.  This creature regains 70 hit points, and is cured of @Compendium[undertaking.conditions.ADW4EH0NKRDCRCA4]{Blindness}, @Compendium[undertaking.conditions.WK17M9FZR08DRUP1]{Deafness}, and any @Compendium[undertaking.conditions.9YPWLY1IHQV3MRLO]{Disease} affecting it.  This spell has no effect on constructs or undead.  <br><br>Charge: This spell can be charged to provide better protection:<ul><li>2 Mana: The creature recovers 10 more hit points.</li></ul></p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "6",
+        "charge": true,
+        "school": "evo",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": false,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "heal",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "range": {
+            "value": "60",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "70",
+                    "healing"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "5RC7X7J6H9UK5K29"
+}

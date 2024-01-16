@@ -1,0 +1,62 @@
+{
+    "name": "Reincarnate",
+    "type": "spell",
+    "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
+    "system": {
+        "description": {
+            "value": "<p>Touching at least a piece of a dead creature, you attempt to find the creature's soul to bring back to life in a new body.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Provided that the creature has been dead for no longer than 10 days, the spell forms a new adult body from the material components and calls for the soul to enter that body.  If the target's soul is free and willing to do so, the soul can enter into the body and take control of it, otherwise the spell fails and the body instantly decays.  <br>&nbsp;&nbsp;&nbsp;&nbsp;The body is fashioned from this spell by calling upon a deity, nature, spirits, or the world itself to help meld the body, and as such is unstable until the soul enters it, meaning that the body's final form is out of your control, likely causing the creature's race to change.  The GM may choses a form that best suits the will of the force which you called upon when casting the spell, or may roll for the result.  If so, the GM counts how many core races are available in this campaign and lines them up in alphabetical order on the following table and rolls a d100, rerolling if the result is empty.  <br>&nbsp;&nbsp;&nbsp;&nbsp;The DM may use a smaller die roll if the Total Available Core Races + 1 is smaller than 100. <table><tbody><tr><td><p><strong>1d100 Result</strong></p></td><td><p><strong>Core Race</strong></p></td></tr><tr><td><p>1</p></td><td><p><em>*Race 1*</em></p></td></tr><tr><td><p>2</p></td><td><p><em>*Race 2*</em></p></td></tr><tr><td><p>3</p></td><td><p><em>*Race 3*</em></p></td></tr><tr><td><p>...</p></td><td><p>...</p></td></tr><tr><td><p>99</p></td><td><p><em>*Race 99*</em></p></td></tr><tr><td><p>100</p></td><td><p>Re-roll, but when you roll for a random Branch Race ignore compatibility and roll for any Branch Race</p></td></tr></tbody></table><br>&nbsp;&nbsp;&nbsp;&nbsp;Once the core race is decided, fill in the above table with Branch Races that are compatible with the resulting Core Race and roll on that table.  <br>&nbsp;&nbsp;&nbsp;&nbsp;The reincarnated creature recalls its former life and experiences, retains its capabilities it had in its original form, but exchanges its original racial traits accordingly.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "5",
+        "charge": false,
+        "school": "tra",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "a collection of rare minerals, metals, and water, altogether worth at least 1,000 gp, which the spell consumes",
+            "consumed": true,
+            "cost": "1000",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "hour",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "range": {
+            "value": "0",
+            "long": null,
+            "units": "touch"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "LAT1CHJ5SCDL566O"
+}

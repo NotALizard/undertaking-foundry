@@ -1,0 +1,22 @@
+{
+  "name": "Later Scholar",
+  "type": "background",
+  "img": "icons/sundries/scrolls/scroll-writing-brown-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Years of your past have been dedicated to the pursuit of knowledge, whether it be a specific subject or a need for information in general.  Regardless of what knowledge you were searching for, or studying, you have spent quite a while working in pursuit and study of it.  You are more studious, well read, and have a knack for research and uncommon bits of knowledge to impress others with.</p>\n<hr />\n<p><strong>Skill Proficiency:</strong> Pick one of the following: Arcana, Craft, Investigation, Medicine, Theology, or Culture.</p>\n<p><strong>Other Proficiency:</strong> Pick one of the following: <ul><li>You are proficient in one of the following trades: Alchemy, Botany, Tinkering, or Pathfinding.</li><li>You can speak, read, and write one additional language of your choice.</li></ul></p>\n<p><strong>Equipment: </strong>Robes, an abacus, a research pack.</p>\n<p><strong>Coinage:</strong> 1d10 gp</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "early"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "7CSI1W6RPAJNZNTG"
+}

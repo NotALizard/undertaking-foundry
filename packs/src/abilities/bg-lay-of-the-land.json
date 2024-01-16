@@ -1,0 +1,80 @@
+{
+  "name": "Lay of the Land",
+  "type": "ability",
+  "img": "icons/environment/wilderness/tree-oak.webp",
+  "system": {
+    "description": {
+      "value": "<p>You are familiar with traveling the land and fending for yourself.  When traveling in the wilderness you can easily find food and water for yourself and a handful of other people.  As well, you get advantage on Intelligence (Nature) checks to determine whether a plant is edible and safe to consume, and whether water is safe to drink.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "attribute": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "attribute": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "background",
+      "subtype": ""
+    },
+    "requirements": "Early Outsider",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": "Background Features",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "U8KK1AON39A2OHR2"
+}

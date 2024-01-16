@@ -1,0 +1,67 @@
+{
+    "name": "Concussive Force",
+    "type": "spell",
+    "img": "icons/magic/air/wind-vortex-swirl-blue-purple.webp",
+    "system": {
+        "description": {
+            "value": "<p>A ball of condensed air appears in your hand as you reel back your arm and throw it at a point within range that you can see.  Every creature within a 20 foot radius sphere originating from that point must make a Strength (Save) check.  On failure, they take 10d6 force damage, and are knocked @Compendium[undertaking.conditions.RK3DF56CKMQUV6DM]{Prone}.  On success, they take half as much damage and are not knocked @Compendium[undertaking.conditions.RK3DF56CKMQUV6DM]{Prone}.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "6",
+        "charge": false,
+        "school": "evo",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "a small jade bead",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "range": {
+            "value": "120",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "20",
+            "width": null,
+            "units": "ft",
+            "type": "sphere"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "10d6",
+                    "force"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "str",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "NOK5D400Y0BRTL1N"
+}

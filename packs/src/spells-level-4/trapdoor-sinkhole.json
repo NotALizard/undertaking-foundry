@@ -1,0 +1,67 @@
+{
+    "name": "Trapdoor Sinkhole",
+    "type": "spell",
+    "img": "icons/environment/traps/steel.webp",
+    "system": {
+        "description": {
+            "value": "<p>With a wave of your hand you create a hole with perfectly flat walls leaving only a thin cover over top.  When stepped on the thin cover breaks and swallows up anyone stepping onto it.<br>&nbsp;&nbsp;&nbsp;&nbsp;Upon casting, choose a spot to create the sinkhole; the dimensions are 5-foot-by-5-foot, and 30 feet deep.  The spot chosen must be big enough to fully contain the sinkhole.  Spotting the sinkhole to recognize it is there is a DC 20 Wisdom (Perception) check.  <br>&nbsp;&nbsp;&nbsp;&nbsp;If a creature travels across the space containing the sinkhole, or ends their turn on it, they must immediately make a Dexterity (Save) check.  If the target fails, they fall into the sinkhole and take double falling damage for the distance fallen.  Should the hole not be big enough to contain the creature walking over it, and they fail their save, instead their movement is immediately stopped for that turn and they must make a Strength (Athletics) check to move out of that space.<br>&nbsp;&nbsp;&nbsp;&nbsp;The top of the sinkhole is a magical illusion and stays in place even after a creature has fallen inside it, meaning that other creatures still must make the Wisdom (Perception) check to know the sinkhole\u2019s exact location.  Additionally, a creature cannot see into the hole from outside of it, even if it knows where it is.  However, a creature inside the hole can see out of it.<br>&nbsp;&nbsp;&nbsp;&nbsp;At the end of the spells duration, or if it is ended abruptly, the sinkhole closes and forcefully ejects anything and anyone in it and throws it 5 feet in a random direction.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "4",
+        "charge": false,
+        "school": "con",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": true
+        },
+        "materials": {
+            "value": "a miniature shovel",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "100",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "5",
+            "width": null,
+            "units": "ft",
+            "type": "cube"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "30",
+                    "bludgeoning"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "dex",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "2C1AA6FEY5D1JHV5"
+}

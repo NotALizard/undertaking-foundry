@@ -1,0 +1,24 @@
+{
+  "name": "Fighting Stance",
+  "type": "ability",
+  "img": "icons/environment/people/infantry.webp",
+  "system": {
+    "description": {
+      "value": "<p>Through experimentation, practice, and maybe some help from a teacher, you have learned new forms of battle.  Fighting Stances are methods of combat that grant the user pros and cons, but only while in use.  Pick 2 Fighting Stances from the Stance List later in this section.<br>&nbsp;&nbsp;&nbsp;&nbsp;<i>Usage:</i> You can change your Fighting Stance while standing as a minor action or at the end of an attack action, unless otherwise stated.  You remain in your current Fighting Stance until your weapon is dropped, sheathed, or otherwise removed from your possession, you become prone, stunned, or unconscious, or until you end your stance as a minor action.  <br>&nbsp;&nbsp;&nbsp;&nbsp;All stances that do not require two hands can be used with shields in the off-hand unless stated otherwise.  Similarly, if a stance requires a weapon with a certain trait, all weapons currently wielded must also have that trait, with the exception of shields, unless stated otherwise.  <br>&nbsp;&nbsp;&nbsp;&nbsp;<i>Learning New Stances:</i> You learn 2 extra stances at each Growth Level.<br>&nbsp;&nbsp;&nbsp;&nbsp;Many Fighter Sub-Classes have expanded Fighting Stance options.  Once the unlock requirements for Fighting Stances from that Sub-Class have been met, you are able to choose Fighting Stances from that list when learning new stances as part of level up.</p><br><br><u><i>Stance List</i></u><br>@Compendium[undertaking.fighting-stances.AQKR36ORJ8UW7M7O]{Ammunition Stance}, @Compendium[undertaking.fighting-stances.U0YH0GDRUF7KZ3HP]{Boxing Stance}, @Compendium[undertaking.fighting-stances.59STQWZ34C00OVZP]{Finesse Stance}, @Compendium[undertaking.fighting-stances.4RWGBRI6CNCPMKCG]{Heavy Stance}, @Compendium[undertaking.fighting-stances.L1E3KFTI08AW4JXF]{Lasso Stance}, @Compendium[undertaking.fighting-stances.QEDI2ZY7AFB0GFXY]{Light Stance}, @Compendium[undertaking.fighting-stances.7ECXODBQJAZNTQFS]{Loading Stance}, @Compendium[undertaking.fighting-stances.TO8A2T5QL9GR8MAF]{One-Handed Stance}, @Compendium[undertaking.fighting-stances.98PGZKRSGDG2L2L7]{Quick-Draw Stance}, @Compendium[undertaking.fighting-stances.H2554TR82JFKPYS2]{Reach Stance}, @Compendium[undertaking.fighting-stances.5TS3VRP8JKUPXU0Z]{Shield Stance}, @Compendium[undertaking.fighting-stances.4IQUGM1GK28XR39P]{Slugger Stance}, @Compendium[undertaking.fighting-stances.XK4PEQX6RYXIKTZ6]{Throwing Stance}, @Compendium[undertaking.fighting-stances.CAIFAC3V8NQRCZUQ]{Two-Handed Stance}, @Compendium[undertaking.fighting-stances.OV4KEWGS7DFIDZ0Q]{Versatile Stance}",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "starter"
+    },
+    "requirements": "Fighter",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "8O5S8E5F8E9ZQ5MP"
+}

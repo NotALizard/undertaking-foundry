@@ -1,0 +1,24 @@
+{
+  "name": "Brand-Builder",
+  "type": "ability",
+  "img": "icons/skills/social/intimidation-impressing.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Brand Loyalty</em></p><p>Instead of 1 minute, you now keep your current heat for 1 hour of not gaining heat.</p><p>&nbsp;</p><p><em>Dramatic Entrance</em></p><p>When you roll initiative, your current heat increases by half of your maximum heat.&nbsp;&nbsp;</p><p>&nbsp;</p><p><em>Pressure to Perform</em></p><p>When making a skill check, you can add +1 to your roll for every 4 heat you spend, up to +5.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Must have the Fighter Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "C3FOXDT9CHAKP733"
+}

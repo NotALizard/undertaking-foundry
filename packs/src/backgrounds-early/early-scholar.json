@@ -1,0 +1,22 @@
+{
+  "name": "Early Scholar",
+  "type": "background",
+  "img": "icons/sundries/scrolls/scroll-writing-brown-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Years of your past have been dedicated to the pursuit of knowledge, whether it be a specific subject or a need for information in general.  Regardless of what knowledge you were searching for, or studying, you have spent quite a while working in pursuit and study of it.  You are more studious, well read, and have a knack for research and uncommon bits of knowledge to impress others with.</p>\n<hr />\n<p><strong>Skill Proficiency:</strong> Pick one of the following: Arcana, Craft, Investigation, Medicine, Theology, or Culture.</p>\n<p><strong>Other Proficiency:</strong> Gain either a trade proficiency or the ability to speak, read, and write two additional languages.</p>\n<p><strong>Background Feature:</strong> @Compendium[undertaking.abilities.CEDNUQ4BN37WPXPH]{Prepared}</p>\n<p><strong>Equipment: </strong>A book on a subject of your choice.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "early"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "KPLTCU189M01F8JG"
+}

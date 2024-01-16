@@ -1,7 +1,7 @@
 {
     "name": "Cloak",
     "type": "spell",
-    "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
+    "img": "icons/magic/control/silhouette-hold-change-blue.webp",
     "system": {
         "description": {
             "value": "<p>Upon touching a creature, the target becomes @Compendium[undertaking.conditions.YE63H7VLOHW7NFHO]{Invisible} to others until the spell ends.  Anything the target is wearing or carrying is invisible as well, as long as it is on the target\u2019s person.  <br>&nbsp;&nbsp;&nbsp;&nbsp;If a creature affected by this spell should pick up an object and it is in their sole possession, or placed somewhere on their person, then that object becomes invisible.  This lasts until the spell ends, or the object is no longer on their person or in their possession.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Should the target attack or cast a spell before the duration is up, the spell ends.  <br><br>Charge: This is a spell that can be Charged, increasing the damage done with this spell.  Costs and increase are as follow: <ul><li>4 Mana: Cast on an additional target</li><li>8 Mana: Cast on two additional targets</li></ul></p>",

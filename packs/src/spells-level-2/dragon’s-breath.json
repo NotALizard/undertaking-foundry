@@ -28,7 +28,7 @@
         "attribute": "spell",
         "actionType": "util",
         "activation": {
-            "type": "action",
+            "type": "minor",
             "cost": "1",
             "condition": ""
         },

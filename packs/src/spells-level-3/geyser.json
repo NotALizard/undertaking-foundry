@@ -1,0 +1,67 @@
+{
+    "name": "Geyser",
+    "type": "spell",
+    "img": "icons/magic/water/projectile-ice-impact-stone.webp",
+    "system": {
+        "description": {
+            "value": "<p>Pick a single space within range that you can see.  From that space sprouts a geyser of hot water that erupts abruptly from the ground.  Any creature occupying that space must make a Dexterity (Save) check.  <br>&nbsp;&nbsp;&nbsp;&nbsp;On a failure, a creature of medium size or smaller is thrown 15 feet in a random direction, falls @Compendium[undertaking.conditions.RK3DF56CKMQUV6DM]{Prone}, and takes 4d6 bludgeoning damage.  On a success, the creature keeps their footing, takes half damage and is moved 5ft in a random direction.<br>&nbsp;&nbsp;&nbsp;&nbsp;Creatures of large size or larger that fail their save check fall @Compendium[undertaking.conditions.RK3DF56CKMQUV6DM]{Prone}.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "3",
+        "charge": false,
+        "school": "evo",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": false,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "range": {
+            "value": "90",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "5",
+            "width": null,
+            "units": "ft",
+            "type": "cube"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "4d6",
+                    "bludgeoning"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "dex",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "W7NSYVVHKA2Q2MBJ"
+}

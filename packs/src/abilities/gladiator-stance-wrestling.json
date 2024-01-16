@@ -1,0 +1,25 @@
+{
+  "name": "Fighting Stance: Wrestling",
+  "type": "ability",
+  "img": "icons/environment/creatures/cephalopod-octopus-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><i>Requirement:</i> Unarmed, an unarmed weapon, or improvised weapons.</p><hr><p>When death is not the intent, wrestling is a common alternative form of strength-based entertainment.  The simplest form of wrestling is to grapple and pin the another creature, a talent which wrestlers have honed through years of practice.  While variations on these rules exist, the core concept remains, and wrestling gladiators want nothing more than to score an expert pin with an audience to cheer them on.</p><hr><u>Pros</u><p><b>Wrestle Spirit</b><ul><li>Before making a Strength (Athletics) roll related to grappling, you can add +1 to your roll for every 3 heat you spend to a maximum of +5. </li></ul><b>Pinning Hold</b><ul><li>If grappling a creature of equal or smaller size, you can attempt to grapple the creature again.  If you succeed, the creature is @Compendium[undertaking.conditions.EUHT2SOTAZ1MXEDB]{Pinned} by you.  If you fail, the creature remains @Compendium[undertaking.conditions.FGVFFYGPAFQGZ5RP]{Grappled}.  The pinned creature can attempt to break from this the same way as trying to break from being @Compendium[undertaking.conditions.FGVFFYGPAFQGZ5RP]{Grappled}.  However, upon succeeding, the creature is no longer @Compendium[undertaking.conditions.EUHT2SOTAZ1MXEDB]{Pinned} but remains @Compendium[undertaking.conditions.FGVFFYGPAFQGZ5RP]{Grappled}.</li></ul><b>Submission Hold</b><ul><li>If a creature @Compendium[undertaking.conditions.EUHT2SOTAZ1MXEDB]{Pinned} by you is unable to break out of being @Compendium[undertaking.conditions.EUHT2SOTAZ1MXEDB]{Pinned} after 3 attempts, the creature can no longer attempt to break from being @Compendium[undertaking.conditions.EUHT2SOTAZ1MXEDB]{Pinned} until it is attacked or you release it.</li><li>You gain +25 heat on the first turn that this happens.</li></ul></p><hr><u>Cons</u><p><b>Out Weight Classed</b><ul><li>You have disadvantage to grapple, or resist being @Compendium[undertaking.conditions.FGVFFYGPAFQGZ5RP]{Grappled} by, creatures that are at least 1 size larger than you.</li></ul></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "stance"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "18SU1HJZR146Z0UN"
+}

@@ -13,7 +13,7 @@
     height: calc(100% - 30px);
 }
 .sheet-body.other{
-    height: calc(100% - 73px);
+    height: calc(100% - 60px);
 }
 .sheet-navigation.tabs .gear {
     flex: none !important;
