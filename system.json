@@ -22,6 +22,7 @@
           "sorting": "m",
           "packs": [
             "archetypes-fighter",
+            "archetypes-rogue",
             "archetypes-wizard"
           ]
         }
@@ -141,6 +142,14 @@
       "label": "Fighter: Fighting Stances",
       "system": "undertaking",
       "path": "./packs/fighting-stances.db",
+      "entity": "Item",
+      "type": "Item"
+    },
+    {
+      "name": "archetypes-rogue",
+      "label": "Rogue: Roguish Archetypes",
+      "system": "undertaking",
+      "path": "./packs/archetypes-rogue.db",
       "entity": "Item",
       "type": "Item"
     },

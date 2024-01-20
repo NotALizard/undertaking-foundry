@@ -1,0 +1,24 @@
+{
+  "name": "Way of the Ninja",
+  "type": "ability",
+  "img": "icons/weapons/swords/sword-katana.webp",
+  "system": {
+    "description": {
+      "value": "<p>You gain proficiency in Intelligence (Arcana) and either dagger, midsword, or throwing star.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "given"
+    },
+    "requirements": "Have the Rogue Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "6HKS62RNGHEOJFHU"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Spirit",
+  "type": "ability",
+  "img": "icons/magic/nature/tree-spirit-glow-black-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>Spirit energy is the inner power that a Ninja harnesses to perform great feats of supernatural power and evoke the elements in specific ways.&nbsp; A number of the Ninja&rsquo;s abilities rely on spending Spirit to make them happen.&nbsp; The amount of Spirit you have is equal to:&nbsp;</p><p>&nbsp;</p><ul><li>4 + your proficiency bonus + either your Intelligence or Presence modifier (whichever is higher)</li></ul><p>&nbsp;</p><p>You regain all of your Spirit after a long rest, and a short rest restores an amount of Spirit equal to your proficiency bonus.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "given"
+    },
+    "requirements": "Have the Rogue Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "JQ3I9PYSEKDJ5F06"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Mystic Seals",
+  "type": "ability",
+  "img": "icons/magic/symbols/runes-star-magenta.webp",
+  "system": {
+    "description": {
+      "value": "<p>Ninjas can evoke special mystic abilities through the use of Spirit and a combination of hand seals.&nbsp; You learn these Mystic Seals over time, receiving Detonate upon taking this ability, and the others you gain the other Ninja abilities as specified in their descriptions:</p><p>&nbsp;</p><p><strong>Detonate</strong></p><p>As a Minor Action you can spend 1 Spirit to imbue a piece of ammunition or a thrown weapon with the ability to explode on a successful strike, causing them to deal an extra 1d6 force damage to the target.&nbsp; This enhancement lasts until used or the end of your next turn.&nbsp; Whichever comes first.&nbsp; The thrown weapon or ammunition used is destroyed in the process.</p><p>Alternatively, you can instead spend 1 Spirit as part of your Attack Action and make a finesse unarmed attack against a target.&nbsp; On a success, the target takes 2d6 force damage from a small explosion originating at the point which you struck them, in addition to normal unarmed damage.&nbsp; Should you have the ability to make more than one attack a turn, this ability only takes up one.&nbsp;&nbsp;</p><p>&nbsp;</p><p><strong>Sudden Fog</strong></p><p><em>Unlock:</em> Received upon taking Run Like The Wind.</p><p>As an Action you can spend 1 Spirit to create a fog in your current space that has a 10 foot radius.&nbsp; The fog heavily obscures the area it covers and allows you to immediately make a Dexterity (Stealth) check after it is created.&nbsp; The fog lasts for 1 minute before dissipating.</p><p>&nbsp;</p><p><strong>Hide Below</strong></p><p><em>Unlock:</em> Received upon taking Shadow Walk.</p><p>This ability can be cast in two different ways:&nbsp;</p><p>&nbsp;</p><p>As an Action: you can spend 1 Spirit to sink into the ground beneath you, provided its solid stone, dirt, or sand.&nbsp; The space you are sinking into must be large enough to fully contain your body.&nbsp;&nbsp;</p><p>You are hidden beneath the ground giving you complete concealment.&nbsp; While hidden you have 0 speed, have disadvantage on Dexterity (Save) checks, and can take no action other than resurfacing as a minor action.&nbsp; You can still hear and discern through listening what is going on above you and can tell when a creature is within 10 feet of you.</p><p>After 1 minute of hiding in this way, you have the choice of spending 1 Spirit to stay hidden, or resurface as a minor action and take the rest of your turn.&nbsp; Should you have 0 Spirit at the start of your turn while this ability is active, you immediately resurface.&nbsp;&nbsp;</p><p>Should the space where you are hiding be destroyed, you surface immediately and are ejected 5 feet in a random direction.&nbsp; If not possible, you simply surface immediately.&nbsp;&nbsp;</p><p>&nbsp;</p><p>Taking 10 Minutes: to use this ability causes it to act as it is described above with a couple exceptions:</p><ul><li>You only have to spend 1 Spirit for the initial cast and for every 10 minutes you are hidden this way</li><li>You can hear up to 15 feet around you</li></ul><p>&nbsp;</p><p><strong>Substitution</strong></p><p><em>Unlock:</em> Received upon taking Multiplicity.</p><p>As a reaction when you take damage, you can spend 1 Spirit to switch places with a Copy that you have created with Multiplicity.&nbsp; The Copy must be within 60 feet to do so, and it takes the damage instead of you.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Must have the Rogue Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "PLHRF3R67K6ELYGN"
+}

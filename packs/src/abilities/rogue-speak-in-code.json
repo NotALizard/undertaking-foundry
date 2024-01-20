@@ -1,0 +1,24 @@
+{
+  "name": "Speak in Code",
+  "type": "ability",
+  "img": "icons/sundries/documents/document-symbol-triangle-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p>Either during your formal training, from a run in with another Rogue, or some other happenstance of the profession, you have in some way, shape, or form, come to understand the Code of Thieves'.  It is a specific way of speaking that hides messages in plain speech through shifts in utterance, jargon, and turns of phrases.  Additionally, there is also a short hand and special symbolic signage that is used to help relay simplistic information, such as locations, territory, sanctuary, and marks for instance.<br>&nbsp;&nbsp;&nbsp;&nbsp;Only others that know the Code of Thieves' can understand it, and speaking it takes four times longer to get an idea across than it would simply saying it in layman's terms.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "starter"
+    },
+    "requirements": "Rogue",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "A3GDM85RSHS80N3U"
+}

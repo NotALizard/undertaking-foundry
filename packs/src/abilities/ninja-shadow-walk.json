@@ -1,0 +1,24 @@
+{
+  "name": "Shadow Walk",
+  "type": "ability",
+  "img": "icons/creatures/mammals/wolf-shadow-black.webp",
+  "system": {
+    "description": {
+      "value": "<p>Shadows are your home and the terrain in which you excel the most.  While in shadows or moving while Stealthed your movement speed is doubled.  Additionally, while using the Hide action, Stealthed, or in shadows, others have disadvantage on Wisdom (Perception) checks to notice you.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Must have the Rogue Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "GQTOQHRNTQNSYXX6"
+}

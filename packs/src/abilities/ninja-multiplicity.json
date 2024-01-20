@@ -1,0 +1,24 @@
+{
+  "name": "Multiplicity",
+  "type": "ability",
+  "img": "icons/magic/defensive/illusion-evasion-echo-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Unlock: </em>When you reach 6th level overall you may take the ability below</p><p>One of the Ninja&rsquo;s greatest abilities is to create copies of themselves and employ them in combat or use them to aid in deceit.&nbsp; As an Action a Ninja may create a Copy of themselves in a space adjacent to them.&nbsp; It costs 1 Spirit per Copy made, and a ninja can make 1 Copy at 6th level and 2 Copies at 12th level.&nbsp;&nbsp;</p><p>Copies move when you do in the initiative order and their actions are controlled by you.&nbsp; On the first turn summoned, a Copy may only move or take an action.&nbsp; After the turn they were summoned, a Copy may make an action and a move action.&nbsp;&nbsp;</p><p>&nbsp;</p><p>A Copy has the following statistics:&nbsp;</p><ul><li>Base stats, skills, and proficiencies are identical to yours</li><li>A Copy has no class features aside from Sneak Attack and any Ninja abilities you possess at time of creation, aside from Multiplicity.</li><ul><li>A Copy&rsquo;s Sneak Attack deals 2d6 damage.&nbsp; When you hit 12th level, it goes up to 3d6.&nbsp;&nbsp;</li></ul><li>Hit Points equal to your overall character level + your proficiency bonus</li><li>They must spend Spirit to use Ninja abilities as the base class states</li><li>Spirit equal to half your proficiency bonus</li><li>They are wearing the same armor as you, and carry a copy of a single weapon on your person, but gain none of your other equipment.&nbsp; Any magical effects from your weapon or armor does not work for your Copy</li><li>A Copy gains the following abilities as well:&nbsp;</li><ul><li>Shared Mind: A Copy knows everything that its creator knows, including languages.&nbsp; As well, everything that a Copy senses is known to its creator, provided they are on the same plane, and even over great distances.&nbsp;&nbsp;</li><li>Telepathic Bond: While a Copy is on the same plane as its creator, it can share what it senses with them and communicate telepathically.&nbsp;&nbsp;</li></ul><li>A Copy lasts for 1 minute after summoned before vanishing</li><li>Should their Hit Points drop to 0, or their Spirit drop to 0, a Copy and all equipment they were created with, vanishes</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "6th level overall, must have the Rogue Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "ILG1OGOCEP2L619C"
+}

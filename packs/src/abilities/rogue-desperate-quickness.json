@@ -1,0 +1,24 @@
+{
+  "name": "Desperate Quickness",
+  "type": "ability",
+  "img": "icons/skills/movement/arrow-upward-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your quick reflexes and thinking allow you to push yourself to the extreme and move faster within a split second than others.&nbsp; The respective bonuses granted are doubled when using a desperate action to:</p><ul><li>Shove or move a target</li><li>Dodge an AoE with a Dexterity (Save) check</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "given"
+    },
+    "requirements": "Must have a Rogue Adept Ability",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "MK99LKGD8IHJ48QD"
+}

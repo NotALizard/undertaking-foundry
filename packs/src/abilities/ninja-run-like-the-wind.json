@@ -1,0 +1,24 @@
+{
+  "name": "Run Like The Wind",
+  "type": "ability",
+  "img": "icons/skills/movement/feet-winged-boots-glowing-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>A Ninja must be ready to move through any terrain and cross any obstacle to accomplish their goals.&nbsp; With this ability you can walk across water as if it were solid ground, as long as you do not start or end your turn on or in the water.&nbsp; Should you end your turn over water, you may spend 1 Spirit to stay standing on its surface and continue walking across the water next turn.&nbsp; If you started in water, you may spend 1 Spirit to rise to its surface and walk across it.<br />&nbsp;&nbsp;&nbsp;&nbsp;Additionally, you may spend 1 Spirit on your turn to gain one of the following abilities until the start of your next turn.&nbsp; You may have more than one of these active at a time, but each one still costs 1 Spirit:&nbsp;</p><ul><li>Walk across other liquids as if they were water, using the same rules stated above.</li><li>Walk along walls as though they were flat terrain.</li><li>Ignore rough terrain.</li><li>Run across a gap, chasm, etc.&nbsp; as long as you start and end your movement on solid ground.&nbsp; This kind of movement can only be made horizontally.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Must have the Rogue Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "1N6CJP6HAF725FR3"
+}

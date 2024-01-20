@@ -1,0 +1,24 @@
+{
+  "name": "One Step Ahead",
+  "type": "ability",
+  "img": "icons/skills/movement/feet-winged-boots-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>A Rogue has many ways of getting out of harm&rsquo;s way.&nbsp;&nbsp;</p><ul><li>At the end of each of your turns in combat as a non-action, you can attempt to Hide (should circumstances allow you to perform the Hide action) but at a disadvantage.&nbsp;&nbsp;</li><li>You can spend a minor action to Dash while stealthed.&nbsp;&nbsp;</li><li>You can use a reaction to Disengage if an enemy fails to hit you with a melee attack on their turn and immediately take a 5 foot step away from them.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "novice"
+    },
+    "requirements": "Must have the Rogue Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "JXY8GNKY37UR93L6"
+}

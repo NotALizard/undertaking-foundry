@@ -1,0 +1,24 @@
+{
+  "name": "Evasive",
+  "type": "ability",
+  "img": "icons/magic/fire/explosion-embers-evade-silhouette.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your agility and alertness has made it hard to hit you.&nbsp; Should an attacker that you can see successfully hit you with an attack, you can use a reaction to add +2 to your AC.&nbsp; If this causes the attack to miss, you take no damage and can immediately Disengage and move up to half your speed.&nbsp;&nbsp;</p><p><br />&nbsp;&nbsp;&nbsp;&nbsp;Additionally, when you are subjected to a Dexterity (Save) check made to take half damage from an effect, on a success you instead take no damage.&nbsp; On a failure, you still only take half damage.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "adept"
+    },
+    "requirements": "6th level overall and 3rd level Rogue",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "X90JYLUREXENZDQC"
+}

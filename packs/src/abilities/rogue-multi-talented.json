@@ -1,0 +1,24 @@
+{
+  "name": "Multi-Talented",
+  "type": "ability",
+  "img": "icons/skills/trades/academics-merchant-scribe.webp",
+  "system": {
+    "description": {
+      "value": "<p>Rogues are exceptionally talented folks, seeking expertise in many different skills so that they can be prepared for any situation that arises.&nbsp; Upon taking this ability, you choose two skill or tool proficiencies that you have, and for that skill your proficiency bonus is doubled for any skill check you make regarding it.&nbsp;&nbsp;</p><p><br />&nbsp;&nbsp;&nbsp;&nbsp;You pick another skill or tool proficiency to apply this bonus to when you reach 5th level overall, 11th level overall while at Adept Rogue, and at 17th level overall while at Expert Rogue.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "novice"
+    },
+    "requirements": "Must have the Rogue Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "5H1YLH3E742DLXDK"
+}
