@@ -1,0 +1,62 @@
+{
+    "name": "Conjure Fundamental",
+    "type": "spell",
+    "img": "icons/magic/symbols/squares-3d-green.webp",
+    "system": {
+        "description": {
+            "value": "<p>Shaping the clay in your hands, you envision what you molded filling the space, conjuring a simplified shape of a similar design unto the world with a soft pop sound.&nbsp;&nbsp;</p><p>You can create one of the following solid shapes for the duration.&nbsp; This shape can be no smaller in height, width, or length, than 1 inch.&nbsp; When you do so, choose a simple, opaque texture and pattern to appear on it.&nbsp; This pattern can repeat, but can be no more complex than solid wood grain or brick, and the texture cannot affect the shape of the object more than a centimeter.&nbsp; The weight of the shape is 1-20lbs, decided upon its conjuration.</p><ul><li>Cube: 1-10sqft.</li><li>Plane: 1-5ft width, 1-20ft length, and 1 centimeter flat platform.</li><li>Sphere: 5-10ft diameter.</li><li>Cylinder: 1-15ft height pillar, 1-5ft diameter.</li><li>Pyramid: 1-10ft base and height.</li><li>Triangular Prism: 1-10ft length, 1-10ft width and height.</li><li>Octahedron: 1-10ft diameter from point to point.</li><li>Cone: 1-5ft height, 1-5ft diameter base.</li></ul><p>&nbsp;</p><p>Charge: This is a spell that can be Charged, increasing the effects at the cost of extra Mana:&nbsp;</p><ul><li>1 Mana: Conjure an additional shape.&nbsp;&nbsp;</li><li>2 Mana: Conjure two additional shapes.</li></ul>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "1",
+        "charge": true,
+        "school": "con",
+        "components": {
+            "somatic": true,
+            "verbal": false,
+            "material": true,
+            "ritual": true,
+            "concentration": false
+        },
+        "materials": {
+            "value": "a pound of clay or other moldable material",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "30",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "object"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "NI3IWI89HKX1VH6R"
+}

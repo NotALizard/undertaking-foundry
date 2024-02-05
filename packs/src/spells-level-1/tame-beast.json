@@ -1,0 +1,62 @@
+{
+    "name": "Tame Beast",
+    "type": "spell",
+    "img": "icons/magic/nature/wolf-paw-glow-small-orange.webp",
+    "system": {
+        "description": {
+            "value": "<p>Once per rest, you can convince one beast that you see that you mean it no harm, causing it to be @Compendium[undertaking.conditions.KJXJ0T5RPNC51N4V]{Charmed} by you for the duration.&nbsp; If its intelligence is 6 or higher, the target must make a Wisdom (Save) check to resist the effect.&nbsp;&nbsp;</p><p>The charm ends early if you harm the creature, or otherwise encourage another creature to do so.&nbsp;&nbsp;</p><p>Charge: This is a spell that can be Charged, increasing the effect of the spell at the cost of extra mana to cast the spell:</p><ul><li>2 Mana: This spell now requires Concentration.&nbsp; While the beast is charmed by you, you can give simple commands to it as a minor action that it must follow on its turn.&nbsp; If it is injured in the process of undertaking this action, the spell ends.&nbsp; These commands are available to you:</li><ul><li>\"Come\": The beast will move up to 30 feet toward you.</li><li>&ldquo;Go&rdquo;: The beast will move up to 30 feet toward a target of your choosing.</li><li>\"Sit\": The beast will fall @Compendium[undertaking.conditions.RK3DF56CKMQUV6DM]{Prone}.</li><li>&ldquo;Fetch&rdquo;: The beast will move toward, pick up, and return to you with an item or object it can reasonably carry.</li><li>\"Sic\": Without moving, the beast will make one attack against a creature you specify if it has the means to do so.</li></ul></ul>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "1",
+        "charge": true,
+        "school": "enc",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": true,
+            "concentration": false
+        },
+        "materials": {
+            "value": "a pinch of food",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "hour"
+        },
+        "range": {
+            "value": "30",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "wis",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "WH828JD6WRDOM2M3"
+}

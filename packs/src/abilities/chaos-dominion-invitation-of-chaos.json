@@ -1,0 +1,24 @@
+{
+  "name": "Invitation of Chaos",
+  "type": "ability",
+  "img": "icons/magic/symbols/clover-luck-white-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Once per rest, when you succeed on a check, you can choose to fail it instead to gain a @Compendium[undertaking.abilities.65D4NMYRBMKHW59K]{&#x1F56F; Faith} Die. </p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "starter"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "95LFWCUJ0S9AQ254"
+}

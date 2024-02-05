@@ -1,0 +1,24 @@
+{
+  "name": "Acts of Faith",
+  "type": "ability",
+  "img": "icons/magic/holy/prayer-hands-glowing-yellow-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>You can spend @Compendium[undertaking.abilities.65D4NMYRBMKHW59K]{&amp;#x1F56F; Faith}&nbsp;Dice in the following ways.&nbsp; If an ability does not specify a specific amount of @Compendium[undertaking.abilities.65D4NMYRBMKHW59K]{&amp;#x1F56F; Faith}&nbsp;Dice, then you can spend up to as many @Compendium[undertaking.abilities.65D4NMYRBMKHW59K]{&amp;#x1F56F; Faith}&nbsp;Dice as you have available:</p><ul><li><strong>Divine Cure:</strong> As part of healing a creature, spend your @Compendium[undertaking.abilities.65D4NMYRBMKHW59K]{&amp;#x1F56F; Faith}&nbsp;Dice to increase the hit points recovered.&nbsp; Alternatively, touch a creature and spend your @Compendium[undertaking.abilities.65D4NMYRBMKHW59K]{&amp;#x1F56F; Faith}&nbsp;Dice to heal it directly as an Action.</li><li><strong>Divine Deflection:</strong> As a Reaction, you can spend @Compendium[undertaking.abilities.65D4NMYRBMKHW59K]{&amp;#x1F56F; Faith}&nbsp;Dice to decrease the attack roll of any creature within 30 feet.&nbsp;</li><li><strong>Divine Karma:</strong> As a Reaction, before you know the result of the roll, you can spend 1 @Compendium[undertaking.abilities.65D4NMYRBMKHW59K]{&amp;#x1F56F; Faith}&nbsp;Die to decrease the number rolled on any (Save) check done by any creature within 15 feet.&nbsp; This cannot be stacked.</li><li><strong>Divine Protection:</strong> As a Reaction, spend your @Compendium[undertaking.abilities.65D4NMYRBMKHW59K]{&amp;#x1F56F; Faith}&nbsp;Dice to increase the number rolled on any (Save) check done by any creature within 15 feet.&nbsp;</li><li><strong>Divine Smite:</strong> As part of an attack action or spell attack that deals damage, you can spend @Compendium[undertaking.abilities.65D4NMYRBMKHW59K]{&amp;#x1F56F; Faith}&nbsp;Dice to increase the damage of the attack.&nbsp; If you roll an Eikonic Number as part of the attack roll, deal 5 additional Radiant damage.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "starter"
+    },
+    "requirements": "Cleric",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "JE4KI8AHSZRG8WHH"
+}

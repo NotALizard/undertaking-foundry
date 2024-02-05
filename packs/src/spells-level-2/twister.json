@@ -1,0 +1,71 @@
+{
+    "name": "Twister",
+    "type": "spell",
+    "img": "icons/magic/air/wind-tornado-funnel-gray.webp",
+    "system": {
+        "description": {
+            "value": "<p>You kick up a wind at a point you can see, creating a small, continuous 5ft diameter twister.&nbsp; <br /> Any creature that starts its turn within 5ft of the twister must make a Strength (Save) check or be lifted 10ft into the air and shoved 10ft away from the twister.&nbsp; If the creature is inside the twister, they take this save at disadvantage and are thrown 20ft upward upon failure instead.&nbsp;&nbsp;</p><p>In addition, the winds of the twister disrupt ranged attacks shot within 5ft of it, reducing the chance to hit by -2.&nbsp; <br /> You can move the twister up to 10ft each turn as a minor action.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "2",
+        "charge": false,
+        "school": "evo",
+        "components": {
+            "somatic": true,
+            "verbal": false,
+            "material": true,
+            "ritual": false,
+            "concentration": true
+        },
+        "materials": {
+            "value": "a hand fan",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "60",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "5",
+            "width": null,
+            "units": "ft",
+            "type": "cylinder"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "5",
+                    "bludgeoning"
+                ],
+                [
+                    "10",
+                    "bludgeoning"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "str",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "UEGGABQ79I8A8CG5"
+}

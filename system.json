@@ -2,7 +2,8 @@
   "id":"undertaking",
   "title":"Undertaking RPG",
   "description":"Core rules for the Undertaking system",
-  "version":"0.0.0",
+  "version":"1.0.0",
+  "minimumCoreVersion": "11.0.0",
   "esmodules": [
     "undertaking.js"
   ],
@@ -23,7 +24,8 @@
           "packs": [
             "archetypes-fighter",
             "archetypes-rogue",
-            "archetypes-wizard"
+            "archetypes-wizard",
+            "archetypes-cleric"
           ]
         }
       ]
@@ -158,6 +160,14 @@
       "label": "Wizard: Arcane Archetypes",
       "system": "undertaking",
       "path": "./packs/archetypes-wizard.db",
+      "entity": "Item",
+      "type": "Item"
+    },
+    {
+      "name": "archetypes-cleric",
+      "label": "Cleric: Divine Dominions",
+      "system": "undertaking",
+      "path": "./packs/archetypes-cleric.db",
       "entity": "Item",
       "type": "Item"
     },

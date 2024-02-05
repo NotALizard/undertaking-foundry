@@ -1,7 +1,7 @@
 {
     "name": "Syzygy",
     "type": "spell",
-    "img": "icons/magic/nature/symbol-sun-yellow.webp",
+    "img": "icons/magic/nature/moon-crescent.webp",
     "system": {
         "description": {
             "value": "<p>You draw upon the awe of great celestial alignments of the past and the mathematical inevitability of their future recurrence.  Waiting for the perfect moment when, from your vantage point, all of your targets have fallen into a line, you bring your medallions into alignment in front of your forehead and speak an invocation.  A brilliant bolt of light shoots from the medallions and travels along an 80-foot line originating from you.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Make a ranged spell attack against each creature in the line, starting with the one closest from you and moving further away.  On a hit, the creature takes 5d6 radiant damage and all subsequent damage rolls made during this spell deal an additional 1d6 damage, stacking up to a maximum of 9d6 total.  On a miss, all subsequent attacks made during this spell gain an additional +1 to hit, stacking up to a maximum of +3.<br><br>Charge: This is a spell that can be Charged, modifying its effects.  Costs and effects are as follow:<ul><li>1 Mana: Before making any of the attacks, deal half of the spell\u2019s initial on-hit damage to yourself and then gain both an additional 1d6 to damage and +1 to hit for the spell\u2019s subsequent attacks.</li><li>2 Mana: Increase the length of the line to 120 feet.</li></ul></p>",

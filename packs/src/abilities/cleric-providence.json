@@ -1,0 +1,24 @@
+{
+  "name": "Providence",
+  "type": "ability",
+  "img": "icons/magic/nature/cornucopia-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>When preparing spells as a part of a rest, you can select a creature nearby, one of your Eikonic Numbers, and one @Compendium[undertaking.abilities.8JTZPLSCYX3QARDO]{Mantra} you know, so long as the Mantra can be associated with that Eikonic Number.  Until your next long rest, when that creature rolls the selected Eikonic Number, they gain the benefit of the selected Mantra and you gain 1 @Compendium[undertaking.abilities.65D4NMYRBMKHW59K]{&#x1F56F; Faith} Die.  Once per long rest, if they fall unconscious, you can activate a @Compendium[undertaking.abilities.BREZS34CQ6PFBCNF]{Miracle}.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "adept"
+    },
+    "requirements": "6th level overall and 3rd level Cleric",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "JWUZ8MK65EG4I4MB"
+}

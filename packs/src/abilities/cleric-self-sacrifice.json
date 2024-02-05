@@ -1,0 +1,24 @@
+{
+  "name": "Self-Sacrifice",
+  "type": "ability",
+  "img": "icons/sundries/books/book-stack.webp",
+  "system": {
+    "description": {
+      "value": "<p>Should you take damage from <strong>Saving a Target</strong> as a desperate action, the following happens:</p><ul><li>You can spend 1 of your Rest Dice to restore your Hit Points.</li><li>You can spend 1 of your Rest Dice to restore the saved target&rsquo;s Hit Points.</li><li>Gain 1 @Compendium[undertaking.abilities.65D4NMYRBMKHW59K]{&amp;#x1F56F; Faith}&nbsp;Die.</li><li>If the saved target would have fallen <strong>unconscious </strong>before you intervened, you can make an opportunity attack against the attacker as a non-action.</li><li>If you fall <strong>unconscious</strong> from the attack, the saved target regains Hit Points up to half of the damage dealt to you.</li><li>If you are <strong>Killed Instantly</strong>, the protected creature learns one of your Mantras permanently assigned to the Eikonic Number that you had it assigned to. They know this Mantra so long as you are dead.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "given"
+    },
+    "requirements": "Must have a Cleric Adept Ability",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "9QL8V9MDFLPW6JTH"
+}

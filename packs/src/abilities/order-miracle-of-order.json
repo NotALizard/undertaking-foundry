@@ -1,0 +1,24 @@
+{
+  "name": "Miracle of Order",
+  "type": "ability",
+  "img": "icons/magic/time/clock-spinning-gold-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p>When you learn this ability, the following Miracle is added to your list of options available when a Miracle is triggered.&nbsp;&nbsp;</p><ul><li><strong>In Illo Ordine:</strong> Move an event or creature&rsquo;s turn up or back in the Turn Order by 1 slot.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Order Dominion",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "1E9UK2XHH7PSP837"
+}

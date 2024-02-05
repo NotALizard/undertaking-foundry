@@ -1,0 +1,37 @@
+{
+  "name": "Frenzied",
+  "pages": [
+    {
+      "name": "Frenzied",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Frenzied</p><ul><li>Frenzied creatures add their Wisdom (Instinct) modifier to their AC and all Strength and Dexterity checks, attack rolls, and damage.</li><li>Frenzied creatures lose control, ending all spell concentration, and being forced to move toward and attack the creature nearest to them on their turn.<ul><li>They default to attacking with either their current or strongest weapon that will hit the target at the time.  However, if it would help deal damage to a target, the frenzied creature may activate a racial or class attack ability with an instantaneous effect.</li><li>In the case of a tie on what a frenzied creature will do next, their player will break the tie.</li></ul></li><li>Frenzied creatures end their spell concentration, and do not think to activate magic item effects, cast spells, change any toggled stances or abilities on them, or heal, treat, or buff themselves or others on their turn.</li><li>Frenzied creatures automatically fail all Wisdom checks, except those to end the frenzied effect.</li><li>Frenzied creatures can attempt to snap out of it at the end of their turn by repeating and succeeding its save check.</li></ul>",
+        "markdown": ""
+      },
+      "_id": "JUPX2RHOVGVWU22G",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "Y822OUCDEPAG0HS8"
+}

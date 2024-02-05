@@ -139,7 +139,7 @@ export default class UndertakingActor extends Actor {
     }
 
     //calc misc vals
-    system.stats.carryCapacity = 15 * system.attributes.str.value;
+    system.stats.carryCapacity = (system.stats.carry || 15) * system.attributes.str.value;
     system.stats.init.total = system.attributes[system.stats.init.attribute].mod + system.stats.init.bonus;
 
     //calc AC

@@ -1,0 +1,24 @@
+{
+  "name": "Cleric Spells",
+  "type": "ability",
+  "img": "icons/sundries/scrolls/scroll-runed-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>1st level Clerics get access to Cleric Spells, which consists of 1st through 7th level spells.  However, you do not have access to all of them right away.  These spell levels become accessible as follows:</p><p><i>Cleric Spell Levels</i></p><table><tr><th>Spell Level</th><th>Unlock Requirements</th></tr><tr><td>Level 1 Spells</td><td>1st Level Cleric.</td></tr><tr><td>Level 2 Spells</td><td>2nd Level Cleric;<br>3rd Level Overall.</td></tr><tr><td>Level 3 Spells</td><td>3rd Level Cleric;<br>5th Level Overall<br>(At least 4 of these levels must be in Spellcaster classes).</td></tr><tr><td>Level 4 Spells</td><td>4th Level Cleric;<br>7th Level Overall<br>(At least 6 of these levels must be in Spellcaster classes).</td></tr><tr><td>Level 5 Spells</td><td>5th Level Cleric;<br>9th Level Overall<br>(At least 8 of these levels must be in Spellcaster classes).</td></tr><tr><td>Level 6 Spells</td><td>6th Level Cleric;<br>11th Level Overall<br>(At least 10 of these levels must be in Spellcaster classes).</td></tr><tr><td>Level 7 Spells</td><td>7th Level Cleric;<br>13th Level Overall<br>(At least 12 of these levels must be in Spellcaster classes).</td></tr></table>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "starter"
+    },
+    "requirements": "Cleric",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "K1Q6UGY7O0CBB4KD"
+}

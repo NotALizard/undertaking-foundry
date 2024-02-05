@@ -1,0 +1,37 @@
+{
+  "name": "Stupored",
+  "pages": [
+    {
+      "name": "Stupored",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Stupored</p><ul><li>Stupored creatures have their minds tangled and forgetful, cannot use any class abilities, and have disadvantage on Presence (Save) checks.</li></ul>",
+        "markdown": ""
+      },
+      "_id": "JAGDEZ8BRFEO7PHI",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "1O2HM8TA4RSTVAVL"
+}

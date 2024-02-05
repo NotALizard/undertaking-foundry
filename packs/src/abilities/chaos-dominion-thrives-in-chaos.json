@@ -1,0 +1,24 @@
+{
+  "name": "Thrives in Chaos",
+  "type": "ability",
+  "img": "icons/skills/social/intimidation-impressing.webp",
+  "system": {
+    "description": {
+      "value": "<p>Once per long rest, when you skip your turn from taking a Desperate Action in the previous round, trigger a Miracle.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Chaos Dominion",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "CW7SV7WCSEMZYMHK"
+}

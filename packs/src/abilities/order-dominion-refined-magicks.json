@@ -1,0 +1,24 @@
+{
+  "name": "Refined Magicks",
+  "type": "ability",
+  "img": "icons/magic/symbols/cog-orange-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>You gain proficiency in Intelligence (Arcana) if you were not already proficient in it.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "starter"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "NON1FUV6X5DENLGZ"
+}

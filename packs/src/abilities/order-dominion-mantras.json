@@ -1,0 +1,24 @@
+{
+  "name": "Mantras of Order",
+  "type": "ability",
+  "img": "icons/magic/symbols/cog-orange-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>When you learn this ability, the following Mantras are added to your list of available Mantras to choose from.&nbsp; However, these Mantras can only be associated with your <strong>Number of Order</strong>.&nbsp;&nbsp;</p><p>In addition, when this is unlocked, you can swap out 1 Mantra you know for another one.&nbsp;&nbsp;</p><ul><li><strong>Justice Never Rests:</strong> You gain an extra Reaction until the start of your next turn.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "starter"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "2TSSK5AQWCN8QCK5"
+}

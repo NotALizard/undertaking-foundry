@@ -1,0 +1,24 @@
+{
+  "name": "Law Abiding",
+  "type": "ability",
+  "img": "icons/magic/symbols/cog-orange-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Once per long rest, when you enter into an agreement that would reasonably be beneficial for at least the other creature, you are bound by your word.  You gain a @Compendium[undertaking.abilities.65D4NMYRBMKHW59K]{&#x1F56F; Faith} Die upon completing the agreement without breaking the terms.  You lose a @Compendium[undertaking.abilities.65D4NMYRBMKHW59K]{&#x1F56F; Faith} Die if you break the terms of the agreement.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "starter"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "HAM7R26DCCISOZJH"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Concurrency",
+  "type": "ability",
+  "img": "icons/magic/time/hourglass-tilted-glowing-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>When an ally takes their turn directly before you, or else you take your turn directly before an ally, you can spend a Reaction to instead share a turn.  On a shared turn, each creature's Actions, Minor Actions, Reactions, or Desperate Actions can be taken in any order between creatures who share a turn.  <br>&nbsp;&nbsp;&nbsp;&nbsp;For each Growth Level, another ally with an adjacent turn can join the shared turn.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Order Dominion",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "YOHN2SD20CALZT81"
+}

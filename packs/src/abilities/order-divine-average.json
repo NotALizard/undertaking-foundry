@@ -1,0 +1,24 @@
+{
+  "name": "Act: Divine Average",
+  "type": "ability",
+  "img": "icons/skills/social/trading-justice-scale-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p><p>You can spend @Compendium[undertaking.abilities.65D4NMYRBMKHW59K]{&#x1F56F; Faith} Dice in the following ways:</p><ul><li><strong>Divine Average:</strong> Spend a @Compendium[undertaking.abilities.65D4NMYRBMKHW59K]{&#x1F56F; Faith} Die before you roll a skill check or attack roll to automatically roll 10 instead. This does not count as an Eikonic Number.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Order Dominion",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "QRO01LDH2F2Y4XKO"
+}

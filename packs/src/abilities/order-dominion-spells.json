@@ -1,0 +1,24 @@
+{
+  "name": "Order Dominion Spells",
+  "type": "ability",
+  "img": "icons/magic/symbols/cog-orange-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Clerics of the Order Dominion learn the following spells when able to cast Cleric spells of the same spell level.&nbsp; These spells are always prepared and don&rsquo;t count against your prepared spell amount.&nbsp;&nbsp;</p><p>Dominion spells are considered Cleric spells when learned this way.&nbsp;&nbsp;</p><p>&nbsp;</p><p><em>Order Dominion Spells</em></p><table><tbody><tr><td><p><strong>Able to Cast</strong></p></td><td><p><strong>Spells</strong></p></td></tr><tr><td><p>1st Level Cleric Spells</p></td><td><p>@Compendium[undertaking.spells-level-1.MRQUPL1D078DKFR2]{No Reproach}, @Compendium[undertaking.spells-level-1.3XZ089KFBQMQUFK5]{Tunnel Vision}</p></td></tr><tr><td><p>2nd Level Cleric Spells</p></td><td><p>@Compendium[undertaking.spells-level-2.RSOH8YFIDRSE3ZCL]{Repress Emotions}, @Compendium[undertaking.spells-level-2.YCQC074MGCT6R2NY]{Ultimatum}</p></td></tr><tr><td><p>3rd Level Cleric Spells</p></td><td><p>@Compendium[undertaking.spells-level-3.XD6W9NSEKZ48HGCD]{Dispel Magic}, @Compendium[undertaking.spells-level-3.Z373UKDNQ9VFAMQD]{Syzygy}</p></td></tr><tr><td><p>4th Level Cleric Spells</p></td><td><p>@Compendium[undertaking.spells-level-4.XJ75LFYCND9DK4GP]{Banish}, @Compendium[undertaking.spells-level-4.7H0M1UB9Z1ZVHSJ0]{Remove Arms}</p></td></tr><tr><td><p>5th Level Cleric Spells</p></td><td><p>@Compendium[undertaking.spells-level-5.N2ZSVB7D1W068EWZ]{Ashame}, @Compendium[undertaking.spells-level-5.J9QLMOBH6NXLN5OQ]{Telepathic Network}</p></td></tr></tbody></table>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "starter"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "3K61WI41NGFFQZL2"
+}

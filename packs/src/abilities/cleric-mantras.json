@@ -1,0 +1,24 @@
+{
+  "name": "Mantras",
+  "type": "ability",
+  "img": "icons/magic/holy/yin-yang-balance-symbol.webp",
+  "system": {
+    "description": {
+      "value": "<p>When you feel your faith manifest, you give your mantras life&mdash;either vocally or internally&mdash;channeling that belief into action.&nbsp;&nbsp;</p><p>Mantras are effects or actions tied to <strong>Eikonic Numbers</strong> from Cleric Dominions.&nbsp; Upon rolling an Eikonic Number, all Mantras associated with it are activated at once.&nbsp;&nbsp;</p><p>Choose 2 Mantras to learn from the following list and assign each to your Eikonic Numbers.&nbsp;&nbsp;</p><ul><li>Your Awareness and Wisdom (Perception) checks are increased by +5 until the end of your next turn.</li><li>Your AC increases by +1 until the end of your next turn.</li><li>You gain +1 on all save checks until the end of your next turn.</li><li>You can restore up to your Wisdom Modifier worth of temporary hit points distributed amongst creatures within 15 feet of you.</li><li>You have +1 on skill checks until the end of your next turn.</li></ul><p><br /><em>Learning New Mantras:</em> You learn 1 additional Mantra at each Growth Level.&nbsp; In addition, you may swap out 1 learned Mantra for another, and further change the Eikonic Number associated with 1 Mantra, at each Growth Level.<br /> Many Cleric Sub-Classes have expanded Mantra options.&nbsp; Once the unlock requirements for Mantras from that Sub-Class have been met, you are able to choose from that list as well when learning new Mantras. However, unless stated otherwise, Sub-Class Mantras can only be assigned to their corresponding Eikonic Number.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "novice"
+    },
+    "requirements": "Must have the Cleric Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "8JTZPLSCYX3QARDO"
+}

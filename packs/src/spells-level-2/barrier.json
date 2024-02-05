@@ -1,43 +1,43 @@
 {
-    "name": "Jolt",
+    "name": "Barrier",
     "type": "spell",
-    "img": "icons/magic/lightning/bolt-strike-streak-yellow.webp",
+    "img": "icons/magic/holy/barrier-shield-winged-blue.webp",
     "system": {
         "description": {
-            "value": "<p>A quick jolt of electricity leaps from your finger towards a visible target within range.  Make a ranged spell attack against the target, and if it hits, this spell deals 1d10 lightning damage.</p><p>&nbsp;</p><p>Charge: This is a spell that can be Charged, modifying its effects. Costs and effects are as follow:</p><ul><li> 1 Mana: The range is increased to 120 feet.</li><li> 1 Mana: The lightning damage is increased to 2d10.</li><li> 2 Mana: The lightning damage is increased to 3d10.</li></ul>",
+            "value": "<p>Tracing a circle toward a creature, you manifest a magical and translucent barrier around it that shimmers slightly in the light.&nbsp;&nbsp;</p><p>For the duration, the target gains 10 temporary hit points at the start of its turn.</p><p>&nbsp;</p><p>Charge: This is a spell that can be Charged, increasing the effect of this spell.&nbsp; Costs and effect are as follow:&nbsp;</p><ul><li>2 Mana: Cast on an additional target</li><li>5 Mana: Cast on two additional targets</li></ul>",
             "chat": "",
             "unidentified": ""
         },
         "source": "Core Rules",
-        "level": "0",
+        "level": "2",
         "charge": true,
-        "school": "evo",
+        "school": "abj",
         "components": {
             "somatic": true,
             "verbal": false,
-            "material": false,
+            "material": true,
             "ritual": false,
-            "concentration": false
+            "concentration": true
         },
         "materials": {
-            "value": "",
+            "value": "a carapace",
             "consumed": false,
             "cost": "",
             "supply": 0
         },
         "attribute": "spell",
-        "actionType": "rsak",
+        "actionType": "util",
         "activation": {
             "type": "action",
             "cost": "1",
             "condition": ""
         },
         "duration": {
-            "value": "",
-            "units": "inst"
+            "value": "1",
+            "units": "minute"
         },
         "range": {
-            "value": "60",
+            "value": "30",
             "long": null,
             "units": "ft"
         },
@@ -50,8 +50,8 @@
         "damage": {
             "parts": [
                 [
-                    "1d10",
-                    "lightning"
+                    "10",
+                    "temporary hit points"
                 ]
             ],
             "versatile": ""
@@ -61,7 +61,7 @@
             "dc": null,
             "scaling": "spell"
         },
-        "showInAttacks": true
+        "showInAttacks": false
     },
-    "_id": "0JWJ9J7A2AMSNDK0"
+    "_id": "3BUFFKXCN0WVRIMP"
 }

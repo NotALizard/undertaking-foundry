@@ -457,6 +457,7 @@
           "value": 0,
           "max": 3
         },
+        "carry": 15,
         "desperate": false
       },
       "details": {

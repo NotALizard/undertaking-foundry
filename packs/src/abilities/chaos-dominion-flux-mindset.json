@@ -1,0 +1,24 @@
+{
+  "name": "Flux Mindset",
+  "type": "ability",
+  "img": "icons/magic/symbols/clover-luck-white-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>When you take a rest, roll on the <em>Flux Proficiency Table</em>.&nbsp; Based on the result, you gain proficiency in that skill until your next long rest, after your new proficiency has been decided by this ability.&nbsp; Re-roll on the table if you land on any proficiency you already possess.&nbsp;&nbsp;</p><p>&nbsp;</p><p><em>Flux Proficiency Table</em></p><table><tbody><tr><td><p><strong>1d20</strong></p></td><td><p><strong>Proficiency</strong></p></td></tr><tr><td><p>1</p></td><td><p>Athletics</p></td></tr><tr><td><p>2</p></td><td><p>Acrobatics</p></td></tr><tr><td><p>3</p></td><td><p>Stealth</p></td></tr><tr><td><p>4</p></td><td><p>Sleight of Hand</p></td></tr><tr><td><p>5</p></td><td><p>Arcana</p></td></tr><tr><td><p>6</p></td><td><p>Craft</p></td></tr><tr><td><p>7</p></td><td><p>Culture</p></td></tr><tr><td><p>8</p></td><td><p>Investigation</p></td></tr><tr><td><p>9</p></td><td><p>Nature</p></td></tr><tr><td><p>10</p></td><td><p>Insight</p></td></tr><tr><td><p>11</p></td><td><p>Instinct</p></td></tr><tr><td><p>12</p></td><td><p>Medicine</p></td></tr><tr><td><p>13</p></td><td><p>Perception</p></td></tr><tr><td><p>14</p></td><td><p>Theology</p></td></tr><tr><td><p>15</p></td><td><p>Deception</p></td></tr><tr><td><p>16</p></td><td><p>Intimidation</p></td></tr><tr><td><p>17</p></td><td><p>Perform</p></td></tr><tr><td><p>18</p></td><td><p>Persuasion</p></td></tr><tr><td><p>19</p></td><td><p>Pick a Tool Proficiency</p></td></tr><tr><td><p>20</p></td><td><p>Pick any Skill or Tool Proficiency</p></td></tr></tbody></table>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "starter"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "K7N259JP8I363OMC"
+}

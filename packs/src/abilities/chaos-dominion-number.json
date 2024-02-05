@@ -1,0 +1,24 @@
+{
+  "name": "Number of Chaos",
+  "type": "ability",
+  "img": "icons/magic/symbols/clover-luck-white-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your Eikonic Number for the Chaos Dominion, known as your Number of Chaos, is 11.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "starter"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "7RQ8BN29ZKQKDDPV"
+}

@@ -1,10 +1,10 @@
 {
-    "name": "Jolt",
+    "name": "Caustic Needle",
     "type": "spell",
-    "img": "icons/magic/lightning/bolt-strike-streak-yellow.webp",
+    "img": "icons/magic/acid/projectile-needles-salvo-green.webp",
     "system": {
         "description": {
-            "value": "<p>A quick jolt of electricity leaps from your finger towards a visible target within range.  Make a ranged spell attack against the target, and if it hits, this spell deals 1d10 lightning damage.</p><p>&nbsp;</p><p>Charge: This is a spell that can be Charged, modifying its effects. Costs and effects are as follow:</p><ul><li> 1 Mana: The range is increased to 120 feet.</li><li> 1 Mana: The lightning damage is increased to 2d10.</li><li> 2 Mana: The lightning damage is increased to 3d10.</li></ul>",
+            "value": "<p>You form a needle of acidic material and thrust it towards a creature or an object that is not being worn or carried within range. Make a ranged spell attack against the target. On a hit, the target takes 1d6 acid damage and if it is a creature it gains the @Compendium[undertaking.conditions.R54LQEKSDXNQ3N75]{Bleeding} condition.</p><p>Each time you would inflict @Compendium[undertaking.conditions.R54LQEKSDXNQ3N75]{Bleeding} on a creature that is already at the maximum stacks, deal an additional 1d6 piercing damage instead.</p><p>&nbsp;</p><p>Charge: This is a spell that can be Charged, modifying its effects. Costs and effects are as follow:</p><ul><li>1 Mana: Inflict an additional stack of bleeding on a hit.</li><li>1 Mana: The acid damage is increased to 2d6.</li><li>2 Mana: The acid damage is increased to 3d6.</li></ul>",
             "chat": "",
             "unidentified": ""
         },
@@ -14,7 +14,7 @@
         "school": "evo",
         "components": {
             "somatic": true,
-            "verbal": false,
+            "verbal": true,
             "material": false,
             "ritual": false,
             "concentration": false
@@ -50,8 +50,8 @@
         "damage": {
             "parts": [
                 [
-                    "1d10",
-                    "lightning"
+                    "1d6",
+                    "acid"
                 ]
             ],
             "versatile": ""
@@ -63,5 +63,5 @@
         },
         "showInAttacks": true
     },
-    "_id": "0JWJ9J7A2AMSNDK0"
+    "_id": "MB7NWQ5H11LSIVV7"
 }

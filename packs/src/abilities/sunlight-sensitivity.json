@@ -1,10 +1,10 @@
 {
-  "name": "Beastial Creature",
+  "name": "Sunlight Sensitivity",
   "type": "ability",
-  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "img": "icons/magic/perception/eye-tendrils-web-purple.webp",
   "system": {
     "description": {
-      "value": "<p>You are considered both Humanoid and Beast when it comes to rules affecting creatures types.</p>",
+      "value": "<p>While in sunlight, you have disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -21,5 +21,5 @@
     "default": 0
   },
   "flags": {},
-  "_id": "A69S7OIOQPX7A5GA"
+  "_id": "0YK75ZQYDRVHEP50"
 }

@@ -4,13 +4,13 @@
     "img": "icons/magic/control/mouth-smile-deception-purple.webp",
     "system": {
         "description": {
-            "value": "<p>You emit a field of flat emotion nearby, repressing more extreme emotions in nearby creatures for a time.  Each creature in a 20ft radius sphere from your target point who wants to resist this spell must make a Presence (Save) check.  On failure, one of the following effects happen:<ul><li>The condition effects are suppressed for a @Compendium[undertaking.conditions.KJXJ0T5RPNC51N4V]{Charmed} or @Compendium[undertaking.conditions.UK95BQ45TGSD5Q3V]{Frightened} creature for up to the duration.</li><li>The condition effects are suppressed for an @Compendium[undertaking.conditions.JHOXE7HCCBCD8MSK]{Insane} creature for up to the duration.</li><li>The target creature is indifferent about a creature that it is hostile toward.  This ends if the target is attacked or harmed by a spell or if it witnesses any of its allies being harmed.  The creature becomes hostile again after the spell ends.</li><li>The target creature is indifferent about a creature that it is in love with.  This ends if the target is attacked or harmed by a spell or if it witnesses any of its allies being harmed.  The creature resumes its adoration again after the spell ends.</li></ul></p>",
+            "value": "<p>You emit a field of flat emotion nearby, repressing more extreme emotions in nearby creatures for a time.  Each creature in a 20ft radius sphere from your target point who wants to resist this spell must make a Presence (Save) check.  On failure, one of the following effects happen:<ul><li>The condition effects are suppressed for a @Compendium[undertaking.conditions.KJXJ0T5RPNC51N4V]{Charmed}, @Compendium[undertaking.conditions.UK95BQ45TGSD5Q3V]{Frightened}, or @Compendium[undertaking.conditions.Y822OUCDEPAG0HS8]{Frenzied} creature for up to the duration.</li><li>The condition effects are suppressed for an @Compendium[undertaking.conditions.JHOXE7HCCBCD8MSK]{Insane} creature for up to the duration.</li><li>The target creature is indifferent about a creature that it is hostile toward.  This ends if the target is attacked or harmed by a spell or if it witnesses any of its allies being harmed.  The creature becomes hostile again after the spell ends.</li><li>The target creature is indifferent about a creature that it is in love with.  This ends if the target is attacked or harmed by a spell or if it witnesses any of its allies being harmed.  The creature resumes its adoration again after the spell ends.</li></ul>  <br>&nbsp;&nbsp;&nbsp;&nbsp;Charge: By spending 2 extra Mana, the duration of the spell can be increased to 1 hour.</p>",
             "chat": "",
             "unidentified": ""
         },
         "source": "Core Rules",
         "level": "2",
-        "charge": false,
+        "charge": true,
         "school": "enc",
         "components": {
             "somatic": true,

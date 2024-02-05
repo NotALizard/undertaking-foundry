@@ -1,0 +1,24 @@
+{
+  "name": "Synchronization of Chaos",
+  "type": "ability",
+  "img": "icons/magic/control/hypnosis-mesmerism-watch.webp",
+  "system": {
+    "description": {
+      "value": "<p>You can spend @Compendium[undertaking.abilities.65D4NMYRBMKHW59K]{&amp;#x1F56F; Faith}&nbsp;Dice in the following ways:</p><ul><li><strong>Synchronization of Chaos:</strong> When multiple creatures are rolling simultaneously for the same reason, including you, you can spend two @Compendium[undertaking.abilities.65D4NMYRBMKHW59K]{&amp;#x1F56F; Faith}&nbsp;Dice to replace another creature&rsquo;s roll result with one of your dice rolls.<br /> Alternatively, when you roll multiple dice at once, you can spend two @Compendium[undertaking.abilities.65D4NMYRBMKHW59K]{&amp;#x1F56F; Faith}&nbsp;Dice to change the result of one die to the result of another die you rolled.&nbsp; <br /> This change cannot trigger an Eikonic Number or Miracle for any creature involved.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Chaos Dominion",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "17NZ5JIJ6XJZ18VM"
+}

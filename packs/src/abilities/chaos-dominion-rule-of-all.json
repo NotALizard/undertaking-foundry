@@ -1,0 +1,24 @@
+{
+  "name": "Rule of All",
+  "type": "ability",
+  "img": "icons/skills/social/diplomacy-unity-alliance.webp",
+  "system": {
+    "description": {
+      "value": "<p>Once per long rest, as a reaction, you can send out a burst of unseen chaotic energy at a creature you can see within 60 feet. That creature is struck by a brief confusion that undercuts their composure; mental rhythms stumble, words or orders are flubbed, movements are shaky, and complex actions are misordered, causing the intended Lair or Legendary Action to fail.  In addition, that creature cannot use either until the start of its next turn.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Upon reaching the Growth Level at 11th overall level, you can regain usage of Rule of All by taking a Short Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Chaos Dominion",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "BSNHEGZSSX19MKJ5"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Chaos Dominion Spells",
+  "type": "ability",
+  "img": "icons/magic/symbols/clover-luck-white-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Clerics of the Chaos Dominion learn the following spells when able to cast Cleric spells of the same spell level.&nbsp; These spells are always prepared and don&rsquo;t count against your prepared spell amount.&nbsp;&nbsp;</p><p>Dominion spells are considered Cleric spells when learned this way.&nbsp;&nbsp;</p><p>&nbsp;</p><p><em>Chaos Dominion Spells</em></p><table><tbody><tr><td><p><strong>Able to Cast</strong></p></td><td><p><strong>Spells</strong></p></td></tr><tr><td><p>1st Level Cleric Spells</p></td><td><p>@Compendium[undertaking.spells-level-1.7N5KBCOM40ZX65EO]{Arcane Arrows}, @Compendium[undertaking.spells-level-1.PZLUQ36LJVGLMZ4R]{Lash Out}</p></td></tr><tr><td><p>2nd Level Cleric Spells</p></td><td><p>@Compendium[undertaking.spells-level-2.A0XHQ6VS7PDGN9FJ]{Cloak}, @Compendium[undertaking.spells-level-2.FZ8CHP8N6M0PGLI1]{Discombobulate}</p></td></tr><tr><td><p>3rd Level Cleric Spells</p></td><td><p>@Compendium[undertaking.spells-level-3.VROEDKWBUZ57MFV7]{Rolling Thunder}, @Compendium[undertaking.spells-level-3.TA1E58P8XATOBEQH]{Virulent Outbreak}</p></td></tr><tr><td><p>4th Level Cleric Spells</p></td><td><p>@Compendium[undertaking.spells-level-4.YL8USCAX1ZTDKOA1]{Shapeshift}, @Compendium[undertaking.spells-level-4.7H0M1UB9Z1ZVHSJ0]{Remove Arms}</p></td></tr><tr><td><p>5th Level Cleric Spells</p></td><td><p>@Compendium[undertaking.spells-level-5.LAT1CHJ5SCDL566O]{Reincarnate}, @Compendium[undertaking.spells-level-5.RS1WH90WHNO7H1AR]{Kinetic Burst}</p></td></tr></tbody></table>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "starter"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "V475LKBO4K3Z04IA"
+}

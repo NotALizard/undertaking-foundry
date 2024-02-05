@@ -1,0 +1,24 @@
+{
+  "name": "Miracle",
+  "type": "ability",
+  "img": "icons/magic/holy/chalice-glowing-gold-water.webp",
+  "system": {
+    "description": {
+      "value": "<p>When you:&nbsp;</p><ul><li>Roll doubles on your @Compendium[undertaking.abilities.65D4NMYRBMKHW59K]{&amp;#x1F56F; Faith}&nbsp;Dice</li><li>Roll doubles of any of your Eikonic Numbers on a d20 roll with advantage</li><li>Roll any of your Eikonic Numbers on a 1d100 roll</li></ul><p>Then you can choose to activate one of the following Miracle options:</p><ul><li><strong>Ex Tempore:</strong> Immediately cast a spell as a Non-Action.&nbsp;&nbsp;</li><li><strong>Deus Ex Machina:</strong> Before the end of your next turn, you can cast a Cleric spell of 1 spell level higher than the highest leveled spell that you know.</li><li><strong>Ex Nihilo: </strong>Before your next rest, the next spell you cast costs no Mana if it is of a spell level equal or lower than half your Proficiency Bonus.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "starter"
+    },
+    "requirements": "Cleric",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "BREZS34CQ6PFBCNF"
+}

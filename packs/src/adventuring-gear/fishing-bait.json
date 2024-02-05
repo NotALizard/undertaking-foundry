@@ -1,7 +1,7 @@
 {
     "name": "Fishing Bait",
     "type": "equipment",
-    "img": "icons/creatures/invertebrates/centipede-brown.webp",
+    "img": "icons/environment/creatures/bug-earthworm.webp",
     "system": {
         "description": {
             "value": "Used with a fishing rod to be able to fish. ",

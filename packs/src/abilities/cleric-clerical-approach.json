@@ -1,0 +1,24 @@
+{
+  "name": "Clerical Approach",
+  "type": "ability",
+  "img": "icons/sundries/books/book-tooled-blue-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>The world is filled with countless religious and magical denominations and forms of belief.&nbsp; This information is no secret to a cleric, and often their interactions with such differing forms of belief or magic can affect their magics themselves.&nbsp;&nbsp;</p><p>The following is a list of viewpoints on contradictory beliefs.&nbsp; When you take this ability, choose one of the following forms of belief, as well as the trait with it.&nbsp;&nbsp;</p><p>To change your character&rsquo;s form of belief, you must reach a philosophical breakthrough over the course of a long rest.&nbsp; When you do, you lose access to the trait of your previous Clerical Approach, and may choose another one.&nbsp; This process is mentally taxing, and you cannot make the change again until 1 month after choosing a Clerical Approach.&nbsp;&nbsp;</p><p>&nbsp;</p><p><strong>Exclusivism&nbsp;</strong></p><p>Exclusivist clerics are those that believe that there is only one &ldquo;correct&rdquo; truth or form of belief, and that the beliefs of others are counterfeits or corruptions of the truth.&nbsp;&nbsp;</p><p>&nbsp;</p><p><em>Trait</em>: When you prepare spells for the day, you can prepare 2 extra spells.&nbsp;&nbsp;</p><p>When damaged by a spell that you have prepared from your cleric spell list, you can spend your reaction to halve the spell&rsquo;s damage to yourself.&nbsp;&nbsp;</p><p>&nbsp;</p><p><strong>Inclusivism</strong></p><p>Inclusivists believe that all forms of faith or belief point to a singular truth, encouraged by similarities and downplaying differences between different faiths.&nbsp;&nbsp;</p><p>&nbsp;</p><p><em>Trait</em>: As an action, you can replicate onto yourself the effects of a concentration spell that you can see affecting another creature within 30ft of you.&nbsp; The effect only lasts until the start of your next turn.&nbsp;&nbsp;</p><p>If the spell is of a higher spell level than you can cast, the initial action costs 2 Mana.&nbsp;&nbsp;</p><p>&nbsp;</p><p><strong>Pluralism</strong></p><p>Pluralists make little distinction between faiths. Each is valid to the particular cultures or groups that follow them.&nbsp;&nbsp;</p><p>&nbsp;</p><p><em>Trait</em>: When a creature casts a non-concentration spell within 60ft of you, you can replicate the spell once within 1 minute of the spell happening at the Mana cost of 2 + the Mana cost of the spell.&nbsp;&nbsp;</p><p>You cannot replicate 8th or 9th level spells.&nbsp;&nbsp;</p><p>&nbsp;</p><p><strong>Syncretism</strong></p><p>Syncretists carry a unique faith based on their personal life context, believing bits and pieces of numerous different beliefs that best fit their viewpoints and experiences.&nbsp;&nbsp;</p><p>&nbsp;</p><p><em>Trait</em>: You learn 1 cantrip from any spell list.&nbsp; Additionally, for each spell level that you become able to cast or have been able to cast above 1st, add a non-Cleric spell to your Cleric spell list. These spells can be prepared and count as Cleric spells, and use Wisdom as their spellcasting ability.</p><p>You cannot gain access to non-Cleric spells of 8th or 9th level this way.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "novice"
+    },
+    "requirements": "Must have the Cleric Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "RVBAX8AXLOK0TRYA"
+}

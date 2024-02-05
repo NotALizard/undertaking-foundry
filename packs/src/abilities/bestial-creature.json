@@ -1,0 +1,25 @@
+{
+  "name": "Bestial Creature",
+  "type": "ability",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "<p>You are considered both Humanoid and Beast when it comes to rules affecting creatures types.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "race",
+      "subtype": "branch"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "A69S7OIOQPX7A5GA"
+}
