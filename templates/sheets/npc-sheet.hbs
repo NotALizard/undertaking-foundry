@@ -1,0 +1,120 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <h1>{{item.name}}</h1>
+    </header>
+
+    {{!-- Character Sheet Navigation --}}
+    <nav class="sheet-navigation tabs" data-group="primary">
+        <a class="item active" data-tab="overview">{{ localize "undertaking.Overview" }}</a>
+    </nav>
+    <hr/>
+    {{!-- Item Sheet Body --}}
+    <section class="sheet-body character">
+        <input type="hidden" class="input-edit-lock" name="system.details.editLock" value="{{actor.system.details.editLock}}" data-dtype="Boolean">
+        <div class="tab active character-overview" data-group="primary" data-tab="overview">
+            <div class="overview-container fcol">
+                <div class="character-header frow">
+                    <div class="playerinfo-left fcol">
+                        <div class="char-name-container">
+                            <label>{{localize "undertaking.CharacterName"}}</label>
+                            <input name="name" type="text" value="{{actor.name}}" data-dtype="String" />
+                        </div>
+                        <div class="level-bar frow">
+                            <div class="desperate-container frow">
+                                <input type="hidden" class="input-desperate" name="system.stats.desperate" value="{{actor.system.stats.desperate}}" data-dtype="Boolean">
+                                <label>Desperate:</label>
+                                <a class="desperate-toggle {{#ifCond actor.system.stats.desperate '==' true}}desperate{{/ifCond}}">
+                                {{#ifCond actor.system.stats.desperate '==' true}}<img src="icons/svg/clockwork.svg"/>{{/ifCond}}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playerinfo-right fcol">
+                        <div class="race-row frow">
+                            <div class="race-core-container">
+                                <input name="system.details.creatureType" type="text" value="{{actor.system.details.creatureType}}" data-dtype="String" />
+                                <label>{{localize "undertaking.Type"}}</label>
+                            </div>
+                            <div class="size-container">
+                                <input name="system.traits.size" type="text" value="{{actor.system.traits.size}}" data-dtype="String" />
+                                <label>{{localize "undertaking.Size"}}</label>
+                            </div>
+                            <div class="race-branch-container">
+                                <input name="system.details.challenge" type="text" value="{{actor.system.details.challenge}}" data-dtype="String" />
+                                <label>{{localize "undertaking.Challenge"}}</label>
+                            </div>
+                            <div class="exp-container">
+                                <input name="system.skills.perception.passive" type="number" value="{{actor.system.skills.perception.passive}}" placeholder="0" data-dtype="Number" />
+                                <label>{{localize "undertaking.Awareness"}}</label>
+                            </div>
+                        </div>
+                        <div class="speed-row frow">
+                            <div class="walk-speed-container">
+                                <input name="system.stats.movement.walk" type="text" value="{{actor.system.stats.movement.walk}}" placeholder="30" data-dtype="String" />
+                                <label>{{localize "undertaking.Movement.Walk"}}</label>
+                            </div>
+                            <div class="climb-speed-container">
+                                <input name="system.stats.movement.climb" type="text" value="{{actor.system.stats.movement.climb}}" data-dtype="String" />
+                                <label>{{localize "undertaking.Movement.Climb"}}</label>
+                            </div>
+                            <div class="swim-speed-container">
+                                <input name="system.stats.movement.swim" type="text" value="{{actor.system.stats.movement.swim}}" data-dtype="String" />
+                                <label>{{localize "undertaking.Movement.Swim"}}</label>
+                            </div>
+                            <div class="fly-speed-container">
+                                <input name="system.stats.movement.fly" type="text" value="{{actor.system.stats.movement.fly}}" data-dtype="String" />
+                                <label>{{localize "undertaking.Movement.Fly"}}</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="npc-row-1 frow">
+                    <div class="npc-attrs frow">
+                        {{#each actor.system.attributes as |attribute attr_id|}}
+                            <div class="npc-attr fcol">
+                                <div class="npc-attr-name-container">
+                                    <h4 class="attribute-name box-title rollable">{{#toUpper attr_id}}{{/toUpper}}</h4>
+                                </div>
+                                <div class="attr-nums-col fcol">
+                                    <div class="attribute-modifiers frow">
+                                        <span class="attribute-mod" data-tooltip="">
+                                            {{numberFormat attribute.mod decimals=0 sign=true}}
+                                        </span>
+                                    </div>
+                                    <input type="text" name="system.attributes.{{attr_id}}.value" value="{{attribute.value}}"
+                                        class="attribute-score" placeholder="10" data-dtype="Number">
+                                </div>
+                            </div>
+                        {{/each}}
+                    </div>
+                    <div class="hp-death-container fcol">
+                        <div class="hp-container frow {{#ifCond actor.system.stats.hp.value '==' 0}}downed{{/ifCond}}">
+                            <div class="hp-current-col fcol">
+                                <label class="hp-current-label">{{ localize "undertaking.HitPoints" }}</label>
+                                <input class="hp-big" name="system.stats.hp.value" type="number" value="{{actor.system.stats.hp.value}}" placeholder="0" data-dtype="Number" />
+                                <input class="hp-small" name="system.stats.hp.temp" type="number" value="{{actor.system.stats.hp.temp}}" placeholder="{{ localize "undertaking.TempHpPlaceholder" }}" title="{{ localize "undertaking.TempHpTip" }}" data-dtype="Number" />
+                            </div>
+                            <div class="hp-divider"></div>
+                            <div class="hp-max-col fcol">
+                                <label class="hp-current-label">{{ localize "undertaking.Max" }}</label>
+                                <input class="hp-big" name="system.stats.hp.max" type="number" value="{{actor.system.stats.hp.max}}" placeholder="0" data-dtype="Number" />
+                                <input class="hp-small" name="system.stats.hp.tempmax" type="number" value="{{actor.system.stats.hp.tempmax}}" placeholder="{{ localize "undertaking.TempMaxHpPlaceholder" }}" title="{{ localize "undertaking.TempMaxHpTip" }}" data-dtype="Number" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ac-container fcol">
+                        <div class="total-ac">
+                            <label>{{ localize "undertaking.ArmorClass" }}</label>
+                            <input class="hp-big" name="system.stats.ac.total" type="number" value="{{actor.system.stats.ac.total}}" placeholder="0" data-dtype="Number" />
+                        </div>
+                    </div>
+                </div>
+                <hr class="blue"/>
+                <div class="flexrow">
+                    {{editor descriptionHTML target="system.description.value" button=true editable=editable engine="prosemirror" collaborate=false}}
+                </div>
+                <hr class="blue"/>
+            </div>
+        </div>
+    </section>
+</form>

@@ -540,9 +540,8 @@ input.hp-small {
 a.death-reset-button {
     flex: 1;
 }
-img.death-button {
+i.death-button {
     border: none;
-    filter: invert(1);
     width: 12px;
     height: 12px;
     margin: 0 2px;
@@ -984,4 +983,37 @@ a.damage-control.delete-damage {
 }
 .editor{
     min-height: 30px;
+}
+.editor-container {
+    min-height: 160px;
+}
+.editor.prosemirror {
+    background: rgba(0, 0, 0, 0.1);
+}
+.npc-attr {
+    margin: 0px 5px;
+}
+.npc-attr-name-container {
+    background-color: var(--bg-blue);
+    color: var(--off-white);
+    border-radius: 4px;
+    padding: 6px;
+    text-align: center;
+}
+.npc-attr .attr-nums-col {
+    margin: 2px;
+}
+.npc-row-1 .hp-death-container {
+    height: 62px;
+}
+.npc-row-1 .hp-death-container .hp-container {
+    border-bottom: none;
+}
+.ac-container input {
+    background: none;
+    border: none;
+}
+.npc-row-1 .ac-container {
+    margin-left: 5px;
+    height: 62px;
 }

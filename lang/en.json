@@ -19,6 +19,8 @@
     "BranchRace": "Branch Race",
     "Size": "Size",
     "Experience": "Experience",
+    "Type": "Type",
+    "Challenge": "Challenge",
     "Level": "Level",
     "OverallLevel": "Overall Level",
     "ProfBonus": "Proficiency Bonus",
@@ -131,8 +133,8 @@
     "Eyes": "Eyes",
     "Height": "Height",
     "BodyWeight": "Weight",
-    "Skin": "Skin",
-    "Hair": "Hair",
+    "Skin": "Body Color",
+    "Hair": "Hair Color",
     "Portrait": "Portrait",
     "Personality": "Personality Traits & Flaws",
     "Organizations": "Friends, Foes, and Orgs",
@@ -169,6 +171,7 @@
     "Cast": "Cast",
     "Duration": "Duration",
     "DurationShort": "Lasts",
+    "Activation": "Activation",
     "Time": {
       "Instant": "Instant",
       "Indefinite": "Indefinite",
@@ -264,7 +267,7 @@
       "Infernal": "Infernal",
       "Landspeak": "Landspeak",
       "Sylvan": "Sylvan",
-      "ThievesCode": "Code of Thieves"
+      "ThievesCode": "ThievesCode"
     },
     "Armors": {
       "Light": "Light Armor",

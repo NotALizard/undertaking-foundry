@@ -17,7 +17,16 @@ export default class UndertakingActor extends Actor {
     this._prepareCharacterData(this)
   }
 
+  _prepareNPCData(actorData){
+    const system = actorData.system;
+    // Loop through attribute scores, and add their modifiers to our sheet output.
+    for (let [key, attribute] of Object.entries(system.attributes)) {
+      attribute.mod = Math.floor((attribute.value - 10) / 2);
+    }
+  }
+
   _prepareCharacterData(actorData){
+    if(actorData.type == 'npc') return this._prepareNPCData(actorData);
     if (actorData.type !== 'character') return;
     
     const classes = actorData.items.filter(function (item) { return item.type == "class"});

@@ -8,10 +8,10 @@ def doWork():
             w = {
                 "name": line[0],
                 "type": "weapon",
-                "img": line[26],
+                "img": line[27],
                 "system": {
                     "description": {
-                        "value": line[25],
+                        "value": line[26],
                         "chat": "",
                         "unidentified": ""
                     },
@@ -62,7 +62,7 @@ def doWork():
                         "una": (line[22] == "TRUE"),
                         "ver": (line[23] == "TRUE")
                     },
-                    "showInAttacks": True
+                    "showInAttacks": (line[25] == "TRUE")
                 },
                 "_id": line[24]
             }

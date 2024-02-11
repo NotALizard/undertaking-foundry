@@ -55,7 +55,7 @@
             "una": false,
             "ver": true
         },
-        "showInAttacks": true
+        "showInAttacks": false
     },
     "_id": "HVTHJFPEV3UQZLM1"
 }

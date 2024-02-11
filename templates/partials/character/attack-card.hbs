@@ -23,10 +23,13 @@
             {{#ifCond type '==' 'spell'}} 
                 <p>{{#spellTraits .}}{{/spellTraits}}</p>
             {{/ifCond}}
+            {{#ifCond type '==' 'customAttack'}} 
+                <p>{{#customAttackTraits .}}{{/customAttackTraits}}</p>
+            {{/ifCond}}
         </div>
     </div>
     <div class="item-buttons attack fcol">
-        {{#ifCond type '==' 'attack'}}  
+        {{#ifCond type '==' 'customAttack'}}  
             {{#ifCond lockEdit '==' 0}}                        
                 <a class="item-delete" title="{{ localize "undertaking.DeleteItem" }}">
                     <i class="fas fa-trash"></i>

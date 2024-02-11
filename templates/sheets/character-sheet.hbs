@@ -235,9 +235,9 @@
                                                 <div class="death-buttons frow">
                                                     <input type="hidden" class="input-death-success" name="system.stats.death.success" value="{{actor.system.stats.death.success}}" data-dtype="Number">
                                                     <input type="hidden" class="input-death-fail" name="system.stats.death.failure" value="{{actor.system.stats.death.failure}}" data-dtype="Number">
-                                                    <a><img class="death-button success" src="icons/svg/upgrade.svg" title="{{ localize "undertaking.Success" }}"/></a>
+                                                    <a><i class="fa-solid fa-check death-button success" title="{{ localize "undertaking.Success" }}"></i></a>
                                                     <a class="death-reset-button">{{ localize "undertaking.Reset" }}</a>
-                                                    <a><img class="death-button fail" src="icons/svg/downgrade.svg" title="{{ localize "undertaking.Failure" }}"/></a>
+                                                    <a><i class="fa-solid fa-xmark death-button fail" title="{{ localize "undertaking.Failure" }}"></i></a>
                                                 </div>
                                             </div>
                                             <div class="death-progress fail frow">
@@ -870,6 +870,10 @@
                     <div class="config-input frow">
                         <label>Carry Capacity / STR</label>
                         <input name="system.stats.carry" type="number" placeholder="15" value="{{actor.system.stats.carry}}" data-dtype="Number" />
+                    </div>
+                    <div class="config-input frow">
+                        <label>Initiative Bonus</label>
+                        <input name="system.stats.init.bonus" type="number" placeholder="0" value="{{actor.system.stats.init.bonus}}" data-dtype="Number" />
                     </div>
                 </div>
             </div>

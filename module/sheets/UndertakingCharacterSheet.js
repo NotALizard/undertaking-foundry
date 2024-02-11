@@ -4,7 +4,6 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     return foundry.utils.mergeObject(super.defaultOptions, {
       width: 800,
       height: 960,
-      template: "systems/undertaking/templates/sheets/character-sheet.hbs",
       classes: ["undertaking", "sheet", "character"],
       resizable: true,
       scrollY: [".tab.details"],
@@ -16,11 +15,43 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     });
   }
 
+  get height(){
+    switch(this.actor.type){
+      case "npc":
+        return 400;
+      default:
+        return 960;
+    }
+  }
+
+  get template(){
+    switch(this.actor.type){
+      case "npc":
+        return "systems/undertaking/templates/sheets/npc-sheet.hbs";
+      default:
+        return "systems/undertaking/templates/sheets/character-sheet.hbs";
+    }
+  }
+
   async getData(){
     const context = super.getData();
     context.config = CONFIG.undertaking;
+    const actor = context.actor;
 
-    context.attacks = context.items.filter(function (item) { return (item.type == "weapon" && item.system.showInAttacks ) || (item.type == "spell" && item.system.showInAttacks )});
+    if(actor.type == 'npc'){
+      if(!actor.system.description.value){
+        actor.system.description.value = '&nbsp;';
+      }
+
+      context.descriptionHTML = await TextEditor.enrichHTML(actor.system.description.value, {
+        secrets: true,
+        async: true,
+        relativeTo: this.actor,
+        rollData: context.rollData
+      });
+    }
+
+    context.attacks = context.items.filter(function (item) { return (item.type == "weapon" && item.system.showInAttacks ) || (item.type == "spell" && item.system.showInAttacks ) || item.type == "customAttack"});
     context.equipment = context.items.filter(function (item) { return item.type == "equipment" || item.type == "weapon"});
     context.classes = context.items.filter(function (item) { return item.type == "class"});
     context.archetypes = context.items.filter(function (item) { return item.type == "archetype"});
@@ -341,6 +372,9 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     switch(element.dataset.type){
       case 'ability':
         name = 'New Ability';
+        break;
+      case 'customAttack':
+        name = 'New Attack';
         break;
       default:
         name = "New Item";

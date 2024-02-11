@@ -26,7 +26,7 @@ Hooks.once("init",function(){
   CONFIG.undertaking = undertaking;
 
   CONFIG.Combat.initiative = {
-    formula: "1d20 + @attributes.dex.mod",
+    formula: "1d20 + @attributes.dex.mod + @stats.init.bonus",
     decimals: 2
   };
 
@@ -155,6 +155,25 @@ Hooks.once("init",function(){
             break;
         }
       }
+    }
+    let propsStr = props.join(', ');
+    let chatStr = item.system.chatFlavor;
+    if(propsStr && propsStr != "" && chatStr && chatStr != ""){
+      return `${propsStr}; ${chatStr}`;
+    }
+    else if (propsStr && propsStr != ""){
+      return propsStr;
+    }
+    else if (chatStr && chatStr != ""){
+      return chatStr;
+    }
+    return "";
+  });
+
+  Handlebars.registerHelper('customAttackTraits', function(item, options) {
+    let props = [];
+    if(item.system.range && (item.system.range.value > 0 || item.system.range.long > 0 )){
+      props.push(`Range: ${item.system.range.value || 0} / ${item.system.range.long || 0} ${item.system.range.units ? item.system.range.units : ""}`);
     }
     let propsStr = props.join(', ');
     let chatStr = item.system.chatFlavor;
@@ -328,6 +347,9 @@ Hooks.once("init",function(){
     for(let dmg of item.system.damage.parts){
       let dstr = dmg.join(" ");
       dstr = dstr.replaceAll("@mod", mod);
+      dstr = dstr.replaceAll("@prof", sheet.actor.system.stats.profBonus);
+      dstr = dstr.replaceAll("@pb", sheet.actor.system.stats.profBonus);
+      dstr = dstr.replaceAll("@level", sheet.actor.system.details.overallLevel);
       dstr = dstr.replaceAll("@dex", sheet.actor.system.attributes.dex.mod);
       dstr = dstr.replaceAll("@str", sheet.actor.system.attributes.str.mod);
       dstr = dstr.replaceAll("@con", sheet.actor.system.attributes.con.mod);
@@ -411,6 +433,10 @@ Hooks.once("init",function(){
       return game.i18n.localize(id);
     }
     return weapon;
+  });
+
+  Handlebars.registerHelper('toUpper', function(str, options) {
+    return str.toUpperCase();
   });
 
   Handlebars.registerHelper('json', function(context) {

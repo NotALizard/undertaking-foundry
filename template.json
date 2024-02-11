@@ -640,6 +640,9 @@
     },
     "npc": {
       "templates": ["common", "creature"],
+      "description": {
+        "value": "description goes here"
+      },
       "stats": {
         "hp": {
           "max": 10,
@@ -679,7 +682,7 @@
     "templates": {
       "itemDescription": {
         "description": {
-          "value": "",
+          "value": "description goes here",
           "chat": "",
           "unidentified": ""
         },
