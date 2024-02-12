@@ -1,6 +1,9 @@
 import {undertaking} from "./module/config.js";
 
-import UndertakingActor from "./module/documents/UndertakingActor.js";
+//import UndertakingActor from "./module/documents/UndertakingActor.js";
+//import UndertakingItem from "./module/documents/UndertakingItem.js";
+import * as document from "./module/documents/_module.js";
+import * as dice from "./module/dice/_module.js";
 
 import UndertakingItemSheet from "./module/sheets/UndertakingItemSheet.js";
 import UndertakingCharacterSheet from "./module/sheets/UndertakingCharacterSheet.js";
@@ -25,12 +28,17 @@ Hooks.once("init",function(){
 
   CONFIG.undertaking = undertaking;
 
+  CONFIG.Dice.rolls.push(dice.D20Roll);
+
   CONFIG.Combat.initiative = {
     formula: "1d20 + @attributes.dex.mod + @stats.init.bonus",
     decimals: 2
   };
 
-  CONFIG.Actor.documentClass = UndertakingActor;
+  CONFIG.Actor.documentClass = document.UndertakingActor;
+  CONFIG.Item.documentClass = document.UndertakingItem;
+  CONFIG.ChatMessage.documentClass = document.UndertakingChatMessage;
+  CONFIG.Dice.D20Roll = dice.D20Roll;
 
   Handlebars.registerHelper('ifequal', function (a, b, options) {
     if (a == b) { return options.fn(this); }
@@ -144,7 +152,6 @@ Hooks.once("init",function(){
       if(value){
         switch(key){
           case 'ver':
-            console.log('vers');
             let die = item.system.damage.versatile || " ";
             die = die.split('+')[0].trim();
             let localName = game.i18n.localize(`undertaking.WeaponTraits.${key}`);
@@ -190,9 +197,6 @@ Hooks.once("init",function(){
   });
 
   Handlebars.registerHelper('hitDC', function(item, sheet, options) {
-    if(item.name == "Deposition"){
-      console.log(item);
-    }
     let toHit = "";
     let aType = item.system.actionType;
     if(["mwak","rwak","msak","rsak"].includes(aType)){
@@ -420,7 +424,6 @@ Hooks.once("init",function(){
 
   Handlebars.registerHelper('armor', function(armor, options) {
     let id = CONFIG.undertaking.armor[armor];
-    console.log(id);
     if(id){
       return game.i18n.localize(id);
     }

@@ -767,6 +767,23 @@ a.toggle-lock {
     height: auto;
     margin: auto 0px;
 }
+.item-img.spell {
+    height: 40px;
+    background-size: contain;
+}
+.roll-spell{
+    width: 100%;
+    height: 100%;
+}
+.roll-spell i{
+    width: 100%;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.05);
+    font-size: 40px;
+}
+.roll-spell i:hover{
+    color:white;
+}
 .item-name {
     padding-left: 4px;
     flex: 1;
@@ -1016,4 +1033,13 @@ a.damage-control.delete-damage {
 .npc-row-1 .ac-container {
     margin-left: 5px;
     height: 62px;
+}
+.rollable{
+    cursor: pointer;
+}
+.dice-total.critical{
+    color: green;
+}
+.dice-total.fumble{
+    color: red;
 }

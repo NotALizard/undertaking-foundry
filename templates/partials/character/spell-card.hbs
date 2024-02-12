@@ -1,5 +1,9 @@
 <div class="item-card spell item frow" data-item-id="{{_id}}">
-    <img class="item-img spell" src="{{img}}"/>
+    <div class="item-img spell" style="background-image:url({{img}})">
+        <a class="item-roll attack roll-spell" title="{{ localize "undertaking.Roll" }}">
+            <i class="fa-solid fa-dice-d20"></i>
+        </a>
+    </div>
     <div class="item-name spell short">
         <a class="item-open"><p>{{name}}</p></a>
     </div>

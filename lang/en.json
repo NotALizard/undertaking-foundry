@@ -82,6 +82,8 @@
     },
     "Advantage": "Advantage",
     "Disadvantage": "Disadvantage",
+    "Normal": "Normal",
+    "Check": "Check",
     "SaveCheck":"Save Check",
     "Attribute": "Attribute",
     "MainAttribute": "Main Attribute",

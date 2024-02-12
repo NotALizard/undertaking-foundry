@@ -26,7 +26,7 @@
             "supply": 0
         },
         "attribute": "spell",
-        "actionType": "util",
+        "actionType": "save",
         "activation": {
             "type": "minor",
             "cost": "1",

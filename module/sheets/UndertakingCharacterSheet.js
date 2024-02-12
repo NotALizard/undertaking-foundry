@@ -214,6 +214,7 @@ export default class UndertakingCharacterSheet extends ActorSheet {
 
 
   activateListeners(html){
+    html.find(".rollable").on("click", this._onRoll.bind(this));
     html.find(".input-checkbox").on("change", event => {
       this._changeCheckbox(event);
     });
@@ -281,9 +282,13 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     html.find(".item-delete").on("click", event => {
       this._onItemDelete(event);
     });
+    html.find(".item-roll.attack").on("click", event => {
+      this._onItemRoll(event);
+    });
     html.find(".inline-edit").on("change", event => {
       this._onItemEdit(event);
     });
+    
 
     html.find(".item.class-filter").on("click", event => {
       this._changeClassFilter(event);
@@ -298,6 +303,147 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     this._fixElementSizes(html);
 
     super.activateListeners(html);
+  }
+
+  _onRoll(event){
+    event.preventDefault();
+    const clicked = event.currentTarget.closest(".rollable");
+    const data = clicked.dataset;
+    switch(data.rolltype){
+      case "attribute":
+        return this._rollAttribute(data.attribute);
+      case "save":
+        return this._rollSave(data.attribute);
+      case "skill":
+        return this._rollSkill(data.skill);
+      case "initiative":
+        return this._rollInitiative();
+      case "restdie":
+        return this._rollRestDie(data.die);
+    }
+  }
+
+  async _getRollModeOptions(title){
+
+    return new Promise(resolve => {
+      const data = {
+        title: title,
+        content: '',
+        buttons: {
+          advantage: {
+            label: game.i18n.localize("undertaking.Advantage"),
+            callback: () => resolve('2d20k')
+          },
+          normal: {
+            label: game.i18n.localize("undertaking.Normal"),
+            callback: () => resolve('1d20')
+          },
+          disadvantage:{
+            label: game.i18n.localize("undertaking.Disadvantage"),
+            callback: () => resolve('2d20kl')
+          }
+        },
+        default: "normal",
+        close: () => resolve('')
+      }
+      new Dialog(data, null).render(true);
+    });
+  }
+
+  async _rollAttribute(attribute){
+    const title = `${game.i18n.localize(this.actor.system.attributes[attribute].label)} ${game.i18n.localize("undertaking.Check")}`;
+    const dice = await this._getRollModeOptions(title);
+    if(!dice) return;
+    let rollFormula = `${dice} + @mod`;
+    let rollData = {
+      mod: this.actor.system.attributes[attribute].mod
+    };
+    let messageData = {
+      speaker: ChatMessage.getSpeaker(),
+      flavor: title
+    };
+    let rollResult = await new Roll(rollFormula, rollData).roll();
+    //let rollResult = await new CONFIG.Dice.D20Roll(rollFormula, rollData).roll();
+    await rollResult.toMessage(messageData);
+  }
+
+  async _rollSave(attribute){
+    const title = `${game.i18n.localize(this.actor.system.attributes[attribute].label)} ${game.i18n.localize("undertaking.SaveCheck")}`;
+    const dice = await this._getRollModeOptions(title);
+    if(!dice) return;
+    let rollFormula = `${dice} + @save`;
+    let rollData = {
+      save: this.actor.system.attributes[attribute].save
+    };
+    let messageData = {
+      speaker: ChatMessage.getSpeaker(),
+      flavor: title
+    };
+    let rollResult = await new Roll(rollFormula, rollData).roll();
+    await rollResult.toMessage(messageData);
+  }
+
+  async _rollSkill(skill){
+    const title = `${game.i18n.localize(this.actor.system.skills[skill].label)} ${game.i18n.localize("undertaking.Check")}`;
+    const dice = await this._getRollModeOptions(title);
+    if(!dice) return;
+    let rollFormula = `${dice} + @bonus`;
+    let rollData = {
+      bonus: this.actor.system.skills[skill].total
+    };
+    let messageData = {
+      speaker: ChatMessage.getSpeaker(),
+      flavor: title
+    };
+    let rollResult = await new Roll(rollFormula, rollData).roll();
+    await rollResult.toMessage(messageData);
+  }
+
+  async _rollInitiative(){
+    const title = `${game.i18n.localize("undertaking.Initiative")}`;
+    const dice = await this._getRollModeOptions(title);
+    if(!dice) return;
+    let messageData = {
+      speaker: ChatMessage.getSpeaker(),
+      flavor: title
+    };
+    const formula = `${dice} + @attributes.dex.mod + @stats.init.bonus`;
+    let initiativeOptions = {
+      formula: formula,
+      messageOptions: messageData
+    }
+    
+    await this.actor.rollInitiative({createCombatants: true, rerollInitiative: true, initiativeOptions: initiativeOptions});
+    try{
+      let combat = game.combat;
+      let combatant = combat.getCombatantByActor(this.actor);
+      await combat.rollInitiative(combatant.id, {formula: formula});
+      return;
+    }
+    catch(err){
+      console.log(err);
+    }
+    
+    let rollFormula = "1d20 + @bonus";
+    let rollData = {
+      bonus: this.actor.system.stats.init.total
+    };
+    
+    let rollResult = await new Roll(rollFormula, rollData).roll();
+    await rollResult.toMessage(messageData);
+  }
+
+  async _rollRestDie(die){
+    let rollFormula = `1${die} + @mod`;
+    let rollData = {
+      mod: this.actor.system.attributes.con.mod
+    };
+    let messageData = {
+      speaker: ChatMessage.getSpeaker(),
+      flavor: `${die} ${game.i18n.localize("undertaking.RestDice")}`
+    };
+    let rollResult = await new Roll(rollFormula, rollData).roll();
+    await rollResult.toMessage(messageData);
   }
 
   _changeCheckbox(event){
@@ -366,8 +512,6 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     event.preventDefault();
     let element = event.currentTarget;
 
-    console.log(element.dataset.type);
-
     let name;
     switch(element.dataset.type){
       case 'ability':
@@ -412,6 +556,16 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     let field = element.dataset.field;
 
     return item.update({[field]: element.value});
+  }
+
+  async _onItemRoll(event){
+    event.preventDefault();
+    let element = event.currentTarget;
+    let itemId = element.closest(".item").dataset.itemId;
+    let item = this.actor.items.get(itemId);
+    let data = await this.getData();
+
+    item.roll();
   }
 
   _toggleSaveProficiency(event){

@@ -201,4 +201,13 @@ export default class UndertakingActor extends Actor {
     system.stats.ac.unshielded = unshielded;
     system.stats.ac.total = unshielded + (system.stats.ac.useShield * shield);
   }
+
+  _getSpellcastingAttribute(classIdentifier){
+    let classes = this.items.filter(function (item) { return item.type == "class"});
+    let classItem = classes.filter(function (item) { return item.system.identifier == classIdentifier})[0];
+    if(classItem){
+      return classItem.system.categorization.spellcaster.attribute;
+    }
+    return null;
+  }
 }

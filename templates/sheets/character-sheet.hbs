@@ -137,7 +137,7 @@
                                     </div>
                                     <div class="attr-prof-col fcol">
                                         <div class="attr-name-container">
-                                            <h4 class="attribute-name box-title rollable">{{localize attribute.label}}</h4>
+                                            <h4 class="attribute-name box-title rollable" data-rolltype="attribute" data-attribute="{{attr_id}}">{{localize attribute.label}}</h4>
                                         </div>
                                         <div class="prof-row frow">
                                             <input type="hidden" class="input-save-prof" name="system.attributes.{{attr_id}}.proficient" value="{{attribute.proficient}}" data-dtype="Number">
@@ -147,8 +147,8 @@
                                             <div class="prof-num-container">
                                                 </label>{{numberFormat attribute.save decimals=0 sign=true}}</label>
                                             </div>
-                                            <div class="prof-name-container rollable">
-                                                <label>{{localize "undertaking.SaveCheck"}}</label>
+                                            <div class="prof-name-container">
+                                                <label class="rollable" data-rolltype="save" data-attribute="{{attr_id}}">{{localize "undertaking.SaveCheck"}}</label>
                                             </div>
                                         </div>
                                         {{#each ../actor.system.skills as |skill skill_id|}}
@@ -160,7 +160,7 @@
                                                         <a class="profcheck skill-expert {{#ifCond skill.value '>=' 2}}checked{{/ifCond}}" id="{{skill_id}}-expert"></a>
                                                     </div>
                                                     <div class="prof-num-container frow"></label>{{numberFormat skill.total decimals=0 sign=true}}</label></div>
-                                                    <div class="prof-name-container frow">{{localize skill.label}}
+                                                    <div class="prof-name-container frow rollable" data-rolltype="skill" data-skill="{{skill_id}}">{{localize skill.label}}
                                                         {{#ifCond skill_id '==' 'stealth'}}
                                                             {{#ifCond ../../actor.system.stats.ac.noisy '==' true}}
                                                                 <i class="fa-solid fa-triangle-exclamation red" title="{{localize "undertaking.Disadvantage"}} - {{localize "undertaking.Noisy"}}" style="margin-left: 4px;"></i>
@@ -205,7 +205,7 @@
                                         </div>
                                     </div>
                                     <div class="initiative-container">
-                                        <label>{{ localize "undertaking.Initiative" }}</label>
+                                        <label class="rollable" data-rolltype="initiative">{{ localize "undertaking.Initiative" }}</label>
                                         <h4>{{numberFormat actor.system.stats.init.total decimals=0 sign=true}}</h4>
                                     </div>
                                 </div>
@@ -268,7 +268,7 @@
                                             <div class="rest-die-col fcol">
                                                 <div class="rest-die max fcol">
                                                     <input name="system.stats.restDice.d6.max" type="number" value="{{actor.system.stats.restDice.d6.max}}" placeholder="0" data-dtype="Number" />
-                                                    <label>{{ localize "undertaking.DicePrefix" }}6</label>
+                                                    <label class="rollable" data-rolltype="restdie" data-die="d6">{{ localize "undertaking.DicePrefix" }}6</label>
                                                 </div>
                                                 <div class="rest-die val fcol">
                                                     <input name="system.stats.restDice.d6.value" type="number" value="{{actor.system.stats.restDice.d6.value}}" placeholder="0" data-dtype="Number" />
@@ -277,7 +277,7 @@
                                             <div class="rest-die-col fcol">
                                                 <div class="rest-die max fcol">
                                                     <input name="system.stats.restDice.d8.max" type="number" value="{{actor.system.stats.restDice.d8.max}}" placeholder="0" data-dtype="Number" />
-                                                    <label>{{ localize "undertaking.DicePrefix" }}8</label>
+                                                    <label class="rollable" data-rolltype="restdie" data-die="d8">{{ localize "undertaking.DicePrefix" }}8</label>
                                                 </div>
                                                 <div class="rest-die val fcol">
                                                     <input name="system.stats.restDice.d8.value" type="number" value="{{actor.system.stats.restDice.d8.value}}" placeholder="0" data-dtype="Number" />
@@ -286,7 +286,7 @@
                                             <div class="rest-die-col fcol">
                                                 <div class="rest-die max fcol">
                                                     <input name="system.stats.restDice.d10.max" type="number" value="{{actor.system.stats.restDice.d10.max}}" placeholder="0" data-dtype="Number" />
-                                                    <label>{{ localize "undertaking.DicePrefix" }}10</label>
+                                                    <label class="rollable" data-rolltype="restdie" data-die="d10">{{ localize "undertaking.DicePrefix" }}10</label>
                                                 </div>
                                                 <div class="rest-die val fcol">
                                                     <input name="system.stats.restDice.d10.value" type="number" value="{{actor.system.stats.restDice.d10.value}}" placeholder="0" data-dtype="Number" />
@@ -295,7 +295,7 @@
                                             <div class="rest-die-col fcol">
                                                 <div class="rest-die max fcol">
                                                     <input name="system.stats.restDice.d12.max" type="number" value="{{actor.system.stats.restDice.d12.max}}" placeholder="0" data-dtype="Number" />
-                                                    <label>{{ localize "undertaking.DicePrefix" }}12</label>
+                                                    <label class="rollable" data-rolltype="restdie" data-die="d12">{{ localize "undertaking.DicePrefix" }}12</label>
                                                 </div>
                                                 <div class="rest-die val fcol">
                                                     <input name="system.stats.restDice.d12.value" type="number" value="{{actor.system.stats.restDice.d12.value}}" placeholder="0" data-dtype="Number" />
