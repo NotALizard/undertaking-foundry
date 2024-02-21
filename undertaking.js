@@ -98,6 +98,10 @@ Hooks.once("init",function(){
   });
 
   Handlebars.registerHelper('time', function(value, unit, options) {
+    return timeString(value, unit);
+  });
+
+  function timeString(value, unit){
     switch(unit){
       case 'inst':
         return game.i18n.localize("undertaking.Time.Instant");
@@ -124,7 +128,7 @@ Hooks.once("init",function(){
       case 'desperate':
         return `${value} ` + game.i18n.localize("undertaking.Time.DesperateAction");
     }
-  });
+  }
 
   Handlebars.registerHelper('plural', function(value, unit, options) {
     switch(unit){
@@ -165,35 +169,36 @@ Hooks.once("init",function(){
     }
     let propsStr = props.join(', ');
     let chatStr = item.system.chatFlavor;
-    if(propsStr && propsStr != "" && chatStr && chatStr != ""){
-      return `${propsStr}; ${chatStr}`;
+    let strings = [];
+    if (propsStr && propsStr != ""){
+      strings.push(propsStr);
     }
-    else if (propsStr && propsStr != ""){
-      return propsStr;
+    if (chatStr && chatStr != ""){
+      strings.push(chatStr);
     }
-    else if (chatStr && chatStr != ""){
-      return chatStr;
-    }
-    return "";
+    return strings.join("; ");
   });
 
   Handlebars.registerHelper('customAttackTraits', function(item, options) {
+    console.log(item);
     let props = [];
     if(item.system.range && (item.system.range.value > 0 || item.system.range.long > 0 )){
       props.push(`Range: ${item.system.range.value || 0} / ${item.system.range.long || 0} ${item.system.range.units ? item.system.range.units : ""}`);
     }
     let propsStr = props.join(', ');
     let chatStr = item.system.chatFlavor;
-    if(propsStr && propsStr != "" && chatStr && chatStr != ""){
-      return `${propsStr}; ${chatStr}`;
+    let actionStr = (item.system.activation && item.system.activation.cost && item.system.activation.type) ? timeString(item.system.activation.cost, item.system.activation.type) : "";
+    let strings = [];
+    if (actionStr && actionStr != ""){
+      strings.push(actionStr);
     }
-    else if (propsStr && propsStr != ""){
-      return propsStr;
+    if (propsStr && propsStr != ""){
+      strings.push(propsStr);
     }
-    else if (chatStr && chatStr != ""){
-      return chatStr;
+    if (chatStr && chatStr != ""){
+      strings.push(chatStr);
     }
-    return "";
+    return strings.join("; ");
   });
 
   Handlebars.registerHelper('hitDC', function(item, sheet, options) {
@@ -346,6 +351,29 @@ Hooks.once("init",function(){
         break;
     }
 
+    let classes = [];
+    let casterLevel = 0;
+    let rogue = 0;
+    for(let c of sheet.classes){
+      if(c.system.identifier == "rogue"){
+        rogue = c.system.levels;
+      }
+      if(c.system.categorization.spellcaster.progression && c.system.categorization.spellcaster.progression != 'none'){
+        casterLevel += c.system.levels;
+      }
+      classes.push({id:c.system.identifier, level:c.system.levels});
+    }
+    let sneak = rogue + Math.floor((sheet.actor.system.details.overallLevel - rogue) / 2);
+    if(sneak >= 18){
+      sneak = 10;
+    }
+    else if(sneak >= 17){
+      sneak = 9;
+    }
+    else{
+      sneak = Math.ceil(sneak / 2);
+    }
+
     let parts = [];
 
     for(let dmg of item.system.damage.parts){
@@ -360,6 +388,11 @@ Hooks.once("init",function(){
       dstr = dstr.replaceAll("@int", sheet.actor.system.attributes.int.mod);
       dstr = dstr.replaceAll("@wis", sheet.actor.system.attributes.wis.mod);
       dstr = dstr.replaceAll("@pre", sheet.actor.system.attributes.pre.mod);
+      dstr = dstr.replaceAll("@caster", casterLevel);
+      dstr = dstr.replaceAll("@sneak", sneak);
+      for(let c of classes){
+        dstr = dstr.replaceAll(`@${c.id}`, c.level);
+      }
       parts.push(dstr);
     }
     return parts.join(", ");
@@ -380,11 +413,11 @@ Hooks.once("init",function(){
 
     if(item.system.level == 0){
       //parts.push(`${game.i18n.localize(`undertaking.SpellSchools.${item.system.school}`)} ${game.i18n.localize(`undertaking.Cantrip`)}`);
-      parts.push(`${game.i18n.localize(`undertaking.Cantrip`)}`);
+      parts.push(`${game.i18n.localize(`undertaking.Cantrip`)}${item.system.charge ? '+':''}`);
     }
     else{
       //parts.push(`${game.i18n.localize(`undertaking.Level`)} ${item.system.level} ${game.i18n.localize(`undertaking.SpellSchools.${item.system.school}`)}`);
-      parts.push(`${game.i18n.localize(`undertaking.Level`)} ${item.system.level}`);
+      parts.push(`${game.i18n.localize(`undertaking.Level`)} ${item.system.level}${item.system.charge ? '+':''}`);
     }
 
     let components = [];
@@ -405,13 +438,20 @@ Hooks.once("init",function(){
       parts.push(game.i18n.localize(`undertaking.Concentration`));
     }
 
-
-    let chatStr = item.system.chatFlavor;
-    if (chatStr && chatStr != ""){
-      parts.push(chatStr);
-    }
     spellStr = parts.join(", ");
-    return spellStr;
+    let chatStr = item.system.chatFlavor;
+    let actionStr = (item.system.activation && item.system.activation.cost && item.system.activation.type) ? timeString(item.system.activation.cost, item.system.activation.type) : "";
+    let strings = [];
+    if (actionStr && actionStr != ""){
+      strings.push(actionStr);
+    }
+    if (spellStr && spellStr != ""){
+      strings.push(spellStr);
+    }
+    if (chatStr && chatStr != ""){
+      strings.push(chatStr);
+    }
+    return strings.join("; ");
   });
 
   Handlebars.registerHelper('language', function(language, options) {

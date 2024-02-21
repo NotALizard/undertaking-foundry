@@ -111,7 +111,8 @@ export default class UndertakingItem extends Item {
             case "spell":
                 mod = spellMod;
         }
-        return {
+        let mods = {
+            ...owner._getClassLevels(),
             mod: mod,
             prof: owner.system.stats.profBonus,
             pb: owner.system.stats.profBonus,
@@ -123,6 +124,19 @@ export default class UndertakingItem extends Item {
             wis: owner.system.attributes.wis.mod,
             pre: owner.system.attributes.pre.mod
         }
+        let rogue = mods.rogue ? mods.rogue : 0;
+        let sneak = rogue + Math.floor((owner.system.details.overallLevel - rogue) / 2);
+        if(sneak >= 18){
+            sneak = 10;
+        }
+        else if(sneak >= 17){
+            sneak = 9;
+        }
+        else{
+            sneak = Math.ceil(sneak / 2);
+        }
+        mods.sneak = sneak;
+        return mods;
     }
 
     async _getRollModeOptions(title){
@@ -236,6 +250,8 @@ export default class UndertakingItem extends Item {
                 rollFormula = d[0];
             }
             let damageType = d[1];
+
+            rollFormula = rollFormula.replaceAll("@sneak", rollData.sneak);
             
             
             let messageData = {

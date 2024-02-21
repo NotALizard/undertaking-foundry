@@ -210,4 +210,18 @@ export default class UndertakingActor extends Actor {
     }
     return null;
   }
+
+  _getClassLevels(){
+    let classes = this.items.filter(function (item) { return item.type == "class"});
+    let levels = {};
+    let casterLevel = 0;
+    for(let c of classes){
+      levels[c.system.identifier] = c.system.levels;
+      if(c.system.categorization.spellcaster.progression != 'none'){
+        casterLevel += c.system.levels;
+      }
+    }
+    levels.caster = casterLevel;
+    return levels;
+  }
 }
