@@ -331,5 +331,6 @@
       "flags": {}
     }
   ],
+  "manifest": "https://github.com/NotALizard/undertaking-foundry/releases/latest/download/system.json",
   "download": "https://github.com/NotALizard/undertaking-foundry/releases/latest/download/undertaking.zip"
 }
