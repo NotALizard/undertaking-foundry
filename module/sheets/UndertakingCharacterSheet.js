@@ -424,7 +424,7 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     catch(err){
       console.log(err);
     }
-    */
+    
     
     let rollFormula = "1d20 + @bonus";
     let rollData = {
@@ -433,6 +433,7 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     
     let rollResult = await new Roll(rollFormula, rollData).roll();
     await rollResult.toMessage(messageData);
+    */
   }
 
   async _rollRestDie(die){
