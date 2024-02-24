@@ -327,5 +327,6 @@
       "path": "lang/en.json",
       "flags": {}
     }
-  ]
+  ],
+  "download": "https://github.com/NotALizard/undertaking-foundry/releases/latest/download/undertaking.zip"
 }
