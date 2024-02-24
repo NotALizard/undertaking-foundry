@@ -31,7 +31,7 @@ export default class UndertakingChatMessage extends ChatMessage {
 
     _addListeners(html){
         html.find(".undertaking-roll-damage").on("click", event => {
-            CONFIG.Item.documentClass.chatRollDamage(event, this.speaker.actor);
+            CONFIG.Item.documentClass.chatRollDamage(event);
         });
     }
 }

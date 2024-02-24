@@ -2,8 +2,11 @@
   "id":"undertaking",
   "title":"Undertaking RPG",
   "description":"Core rules for the Undertaking system",
-  "version":"1.0.0",
-  "minimumCoreVersion": "11.0.0",
+  "version":"1.0.1",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
   "esmodules": [
     "undertaking.js"
   ],

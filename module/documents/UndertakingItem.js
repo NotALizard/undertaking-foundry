@@ -1,10 +1,11 @@
 export default class UndertakingItem extends Item {
 
-    static chatRollDamage(event, speaker){
-        let actor = game.actors.get(speaker);
-        if(!actor) return;
+    static chatRollDamage(event){
         let button = event.currentTarget;
         let weaponId = button.dataset.weapon;
+        let actorId = button.dataset.actor;
+        let actor = game.actors.get(actorId);
+        if(!actor) return;
         let weapon = actor.items.get(weaponId);
         if(weapon){
             weapon._rollDamage(button.dataset.versatile);
@@ -225,8 +226,8 @@ export default class UndertakingItem extends Item {
         let rollResult = await new CONFIG.Dice.D20Roll(rollFormula, rollData, rollOptions).roll();
         await rollResult.toMessage(messageData);
         const versatile = (this.system.properties && this.system.properties.ver);
-        const normalButton = `<button class="undertaking-roll-damage" data-weapon="${this.id}" >${game.i18n.localize("undertaking.Damage")}</button>`;
-        const versatileButton = versatile ? `<button class="undertaking-roll-damage" data-weapon="${this.id}" data-versatile="true">${game.i18n.localize("undertaking.WeaponTraits.ver")}</button>` : "";
+        const normalButton = `<button class="undertaking-roll-damage" data-weapon="${this.id}" data-actor="${this.actor.id}">${game.i18n.localize("undertaking.Damage")}</button>`;
+        const versatileButton = versatile ? `<button class="undertaking-roll-damage" data-weapon="${this.id}" data-actor="${this.actor.id}" data-versatile="true">${game.i18n.localize("undertaking.WeaponTraits.ver")}</button>` : "";
         let buttonsHtml = `<div class="undertaking-damage-buttons frow">${normalButton}${versatileButton}</div>`;
         let buttonsData = {
             speaker: ChatMessage.getSpeaker(),
@@ -316,7 +317,7 @@ export default class UndertakingItem extends Item {
             flavor: title
         };
         const dcMsg = ChatMessage.create(dcData);
-        let buttonsHtml = `<div class="undertaking-damage-buttons frow"><button class="undertaking-roll-damage" data-weapon="${this.id}" >${game.i18n.localize("undertaking.Damage")}</button></div>`;
+        let buttonsHtml = `<div class="undertaking-damage-buttons frow"><button class="undertaking-roll-damage" data-weapon="${this.id}" data-actor="${this.actor.id}">${game.i18n.localize("undertaking.Damage")}</button></div>`;
         let buttonsData = {
             speaker: ChatMessage.getSpeaker(),
             content: buttonsHtml,

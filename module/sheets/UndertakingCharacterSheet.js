@@ -414,6 +414,7 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     }
     
     await this.actor.rollInitiative({createCombatants: true, rerollInitiative: true, initiativeOptions: initiativeOptions});
+    /*
     try{
       let combat = game.combat;
       let combatant = combat.getCombatantByActor(this.actor);
@@ -423,6 +424,7 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     catch(err){
       console.log(err);
     }
+    */
     
     let rollFormula = "1d20 + @bonus";
     let rollData = {
