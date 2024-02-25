@@ -1,0 +1,19 @@
+{
+    "name": "Complex Lock",
+    "type": "equipment",
+    "img": "icons/sundries/misc/lock-bronze-reinforced.webp",
+    "system": {
+        "description": {
+            "value": "A complex lock that is used to lock chests, doors, etc.  A key is normally provided with the lock, but without it, only a creature proficient in the thieves trade can attempt to pick this lock with two successful DC 15 attempts.  In addition, upon failure, the lock seizes up and you cannot attempt picking it again for the next 24 hours.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "3",
+        "price": {
+            "value": "60",
+            "denomination": "gp"
+        }
+    },
+    "_id": "RS3U2BYT2ZNGLOQC"
+}

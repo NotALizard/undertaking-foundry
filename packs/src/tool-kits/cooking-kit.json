@@ -4,14 +4,14 @@
     "img": "icons/tools/cooking/bowl-steaming-brown.webp",
     "system": {
         "description": {
-            "value": "(Artisan Kit) Prepare a meal.  Duplicate a meal.  Identify impurities or poisons in food.",
+            "value": "Cooks prepare meals and drinks for their party to keep them full and happy, giving bonuses over rests.  They can attempt to brew alcohol over long rests that can give bonuses to a rest based on how well it is brewed.",
             "chat": "",
             "unidentified": ""
         },
         "source": "Core Rules",
         "weight": "8",
         "price": {
-            "value": "1",
+            "value": "20",
             "denomination": "gp"
         }
     },

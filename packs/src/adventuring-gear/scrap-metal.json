@@ -1,0 +1,19 @@
+{
+    "name": "Scrap Metal",
+    "type": "equipment",
+    "img": "icons/commodities/tech/cog-brass.webp",
+    "system": {
+        "description": {
+            "value": "A small collection of gears, nuts, bolts, nails, screws, or other metal miscellanea used for creating with the Tinkering Trade.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "1",
+            "denomination": "gp"
+        }
+    },
+    "_id": "3M0OCQ8AYJXL58GV"
+}

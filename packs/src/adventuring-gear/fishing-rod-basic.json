@@ -1,10 +1,10 @@
 {
-    "name": "Fishing Rod",
+    "name": "Fishing Rod (Basic)",
     "type": "equipment",
     "img": "icons/tools/fishing/rod-simple-stick.webp",
     "system": {
         "description": {
-            "value": "A long fishing rod, fully featured with a silk line, a steel hook and sinker, and a cork bobber.  Allows the user to attempt to fish using Wisdom (Instinct).  One piece of fishing bait required.",
+            "value": "Fishing Die: 1d6.  A typical fishing rod with a metal hook and sinker, and a bobber.  Allows the user to attempt to fish.  One piece of fishing bait required.",
             "chat": "",
             "unidentified": ""
         },

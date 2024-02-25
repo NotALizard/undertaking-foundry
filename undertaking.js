@@ -275,6 +275,9 @@ Hooks.once("init",function(){
         dcTot = +item.system.save.dc;
       }
       else{
+        if(attr == "spell"){ //If scaling is set to "Spell Save DC", check if the spell/ability is using a specific attr or tied to a class' attribute.
+          attr = item.system.attribute;
+        }
         if(attr == "spell"){
           for (let c of sheet.casters){
             if(c.system.identifier == item.system.classIdentifier){

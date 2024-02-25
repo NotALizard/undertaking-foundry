@@ -1,10 +1,10 @@
 {
-    "name": "Paint Kit",
+    "name": "Art Kit",
     "type": "equipment",
     "img": "icons/tools/hand/brush-paint-pink.webp",
     "system": {
         "description": {
-            "value": "(Artisan Kit) Identifying whether a work of art is original or fake, magical, its age, who might have made it, and where it is from.  Also allows the creation of art.",
+            "value": "Covering non-performance arts, such as painting, sculpting, clayworking, woodcarving, engraving, dance, drawing, opera, ballet, calligraphy, or writing.  Artists spend rests creating and refining works of art that give one-time bonuses or can be sold for a high price.  Medium complexity.",
             "chat": "",
             "unidentified": ""
         },

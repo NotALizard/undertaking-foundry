@@ -1,0 +1,19 @@
+{
+    "name": "Pathfinding Kit",
+    "type": "equipment",
+    "img": "icons/tools/navigation/map-chart-tan.webp",
+    "system": {
+        "description": {
+            "value": "Pathfinders map and explore environments, finding safe paths through them and better understanding the environment around them.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "6",
+        "price": {
+            "value": "25",
+            "denomination": "gp"
+        }
+    },
+    "_id": "SGYR45WRCKK2UR47"
+}

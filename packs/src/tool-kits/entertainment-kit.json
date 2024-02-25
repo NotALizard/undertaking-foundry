@@ -1,0 +1,19 @@
+{
+    "name": "Entertainment Kit",
+    "type": "equipment",
+    "img": "icons/tools/instruments/lute-gold-brown.webp",
+    "system": {
+        "description": {
+            "value": "Covering performance trades, such as dance, theatre, gaming, musical instruments, singing, puppetry, comedy, and street magic.  Entertainers enrapture crowds, controlling public perception of situations and playing off other people\u2019s expectations to draw in attention and to clear people\u2019s heads.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "5",
+        "price": {
+            "value": "25",
+            "denomination": "gp"
+        }
+    },
+    "_id": "R137NV7U0IJFS38B"
+}

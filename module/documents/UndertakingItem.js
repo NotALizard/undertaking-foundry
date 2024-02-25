@@ -277,6 +277,9 @@ export default class UndertakingItem extends Item {
             dcTot = +this.system.save.dc;
         }
         else{
+            if(attr == "spell"){ //If scaling is set to "Spell Save DC", check if the spell/ability is using a specific attr or tied to a class' attribute.
+                attr = this.system.attribute;
+            }
             switch(attr){
                 case "dex":
                     mod = owner.system.attributes.dex.mod;

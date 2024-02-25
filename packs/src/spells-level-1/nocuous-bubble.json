@@ -1,16 +1,16 @@
 {
-    "name": "Poison Pod",
+    "name": "Nocuous Bubble",
     "type": "spell",
     "img": "icons/magic/acid/orb-bubble-smoke-drip.webp",
     "system": {
         "description": {
-            "value": "<p>Throwing your hand out at a target that you can see, you fire a pellet of compressed noxious gas towards them, which explodes on impact.  On a successful ranged spell attack roll, the spell deals 1d12 points of poison damage.  As well, the target must succeed on a Constitution (Save) check or become @Compendium[undertaking.conditions.9X088PM7H5U2S1HQ]{Sickened} for 1 minute.  They can make a Constitution (Save) check at the end of each of their turns to overcome being @Compendium[undertaking.conditions.9X088PM7H5U2S1HQ]{Sickened}.</p>",
+            "value": "<p>Placing your hands together and drawing them apart, you form a bubble of toxic material which launches towards a target within range. Make a ranged spell attack against the target, dealing 2d8 poison damage on a hit.<br>&nbsp;&nbsp;&nbsp;&nbsp;Hit or miss, the bubble bursts and disperses noxious gas. The target and each creature within 5 feet of it must succeed on a Constitution (Save) check or become @Compendium[undertaking.conditions.9X088PM7H5U2S1HQ]{Sickened} until the end of your next turn.  <br><br>Charge: This is a spell that can be Charged, modifying its effects. Costs and effects are as follow: <ul><li>1 Mana: The radius of the noxious gas increases to 10 feet. </li></ul></p>",
             "chat": "",
             "unidentified": ""
         },
         "source": "Core Rules",
         "level": "1",
-        "charge": false,
+        "charge": true,
         "school": "evo",
         "components": {
             "somatic": true,
@@ -34,7 +34,7 @@
         },
         "duration": {
             "value": "1",
-            "units": "minute"
+            "units": "round"
         },
         "range": {
             "value": "30",

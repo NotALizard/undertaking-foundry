@@ -1,0 +1,19 @@
+{
+    "name": "Artisan Kit",
+    "type": "equipment",
+    "img": "icons/commodities/leather/leather-worn-tan.webp",
+    "system": {
+        "description": {
+            "value": "Covering medium-sized artisanry like leatherworking, bookbinding, cobbling, weaving, glassblowing, ceramics, woodcarving, furring, ropemaking, dying, hatting, and so on.  Artisans can craft, repair, and modify items relevant to their specialization.  Simple complexity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "2",
+        "price": {
+            "value": "30",
+            "denomination": "gp"
+        }
+    },
+    "_id": "LPQUQ80HTS1QQFRB"
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Lighter",
+    "type": "equipment",
+    "img": "icons/magic/light/projectile-smoke-pink.webp",
+    "system": {
+        "description": {
+            "value": "A small box that, when activated, uses the small amount of oil in its body to produce a small flame from the top of it that casts 5 ft of dim light.  Useful for lighting fires, lanterns, and torches, thus the name.  If left lit, it lasts about an hour on 1 cp of oil.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0.5",
+        "price": {
+            "value": "2",
+            "denomination": "gp"
+        }
+    },
+    "_id": "CCB1JR5ZBM3FQF9L"
+}

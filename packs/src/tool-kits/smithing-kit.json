@@ -4,7 +4,7 @@
     "img": "icons/skills/trades/smithing-tongs-metal-red.webp",
     "system": {
         "description": {
-            "value": "(Artisan Kit) Identify metals and metalwork, identify age and make, special properties, and repair metal. equipment and items.",
+            "value": "Smiths, which can be specialized as armorers, blacksmith, bladesmith, or gunsmith (if applicable to the campaign), can spend rests forging metal into arms and armor, as well as upkeep their weapons.",
             "chat": "",
             "unidentified": ""
         },

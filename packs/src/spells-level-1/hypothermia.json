@@ -1,0 +1,71 @@
+{
+    "name": "Hypothermia",
+    "type": "spell",
+    "img": "icons/magic/water/heart-ice-freeze.webp",
+    "system": {
+        "description": {
+            "value": "<p>You strike a shrill tone and focus it towards a creature you can see within range, sending a terrible chill through its body. The creature must succeed on a Constitution (Save) check or take 2d8 cold damage and its movement speed is reduced by 5 feet until the spell ends. On a success, the creature takes half and the spell ends. Creatures acclimatized to cold weather have advantage on the save.<br>&nbsp;&nbsp;&nbsp;&nbsp;Until the spell ends, you can use your action once per turn to intensify the icy sensation, causing the creature to suffer 1d8 cold damage and reducing its speed by an additional 5 feet for the duration of the spell. The spell cannot reduce a creature\u2019s speed below 10 feet.<br><br>Charge: This is a spell that can be Charged, modifying its effects. Costs and effects are as follow: <ul><li>1 Mana: A flying creature slowed by this spell must make a Constitution (Save) check at the beginning of each of its turns or fall 10 feet. </li></ul></p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "1",
+        "charge": true,
+        "school": "evo",
+        "components": {
+            "somatic": true,
+            "verbal": false,
+            "material": true,
+            "ritual": false,
+            "concentration": true
+        },
+        "materials": {
+            "value": "a chime on a string and something to strike it with",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "30",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "2d8",
+                    "cold"
+                ],
+                [
+                    "1d8",
+                    "cold"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "con",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "FBBZHRD9FHGJV2C4"
+}

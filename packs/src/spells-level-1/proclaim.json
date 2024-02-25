@@ -4,13 +4,13 @@
     "img": "icons/magic/light/explosion-beam-impact-silhouette.webp",
     "system": {
         "description": {
-            "value": "<p>Holding out your holy symbol, you speak a holy word and the symbol begins shining light momentarily.  All other creatures within a 20ft radius of you must make a Dexterity (Save) check or take 2d4 radiant damage.  On a success, the creature takes half damage.</p>",
+            "value": "<p>Holding out your holy symbol, you proclaim the tenants or teachings of your faith and the symbol begins to shine with radiant light.  All other creatures within a 20ft radius of you must make a Dexterity (Save) check, taking 1d12 radiant damage on a failure or half as much on a success.  All Fiends make saves against this spell at disadvantage.  You conclude your speech at the start of your next turn and can choose to repeat this damaging effect as a non-action, prompting a new save from each creature that is within 20ft of you.<br>&nbsp;&nbsp;&nbsp;&nbsp;For the duration of the spell, your holy symbol sheds bright light for 20ft and dim light for an additional 20ft.  <br><br>Charge: This is a spell that can be Charged, modifying its effects. Costs and effects are as follow: <ul><li>1 Mana: The duration of the bright light cast by this spell extends to 1 minute, or until you lower your holy symbol, whichever comes first.  As an action during this duration, you can force one target within the light to make a Dexterity (Save) check, taking 1d10 radiant damage on a failure or half as much on a success. </li></ul></p>",
             "chat": "",
             "unidentified": ""
         },
         "source": "Core Rules",
         "level": "1",
-        "charge": false,
+        "charge": true,
         "school": "evo",
         "components": {
             "somatic": true,
@@ -33,8 +33,8 @@
             "condition": ""
         },
         "duration": {
-            "value": "",
-            "units": "inst"
+            "value": "1",
+            "units": "round"
         },
         "range": {
             "value": "0",
@@ -50,7 +50,7 @@
         "damage": {
             "parts": [
                 [
-                    "2d4",
+                    "1d12",
                     "radiant"
                 ]
             ],

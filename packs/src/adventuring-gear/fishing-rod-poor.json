@@ -1,0 +1,19 @@
+{
+    "name": "Fishing Rod (Poor)",
+    "type": "equipment",
+    "img": "",
+    "system": {
+        "description": {
+            "value": "Fishing Die: 1d4.  A short fishing rod made of flimsy materials.  Allows the user to attempt to fish.  One piece of fishing bait required.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "5",
+            "denomination": "cp"
+        }
+    },
+    "_id": "H1HD5PS9RB7QT4C8"
+}

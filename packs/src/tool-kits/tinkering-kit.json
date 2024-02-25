@@ -4,14 +4,14 @@
     "img": "icons/tools/hand/screwdriver-flat-steel-black.webp",
     "system": {
         "description": {
-            "value": "(Artisan Kit) Identify mundane objects age, origins, and how they were damaged and when, if they have been.  Allows the repair of mundane items.",
+            "value": "Tinkerers can create minor trinkets, as well as more complex gadgets that can be modified to your liking over rests.  Tinkerers can also repair construct allies. ",
             "chat": "",
             "unidentified": ""
         },
         "source": "Core Rules",
         "weight": "10",
         "price": {
-            "value": "50",
+            "value": "40",
             "denomination": "gp"
         }
     },

@@ -1,0 +1,19 @@
+{
+    "name": "Fishing Rod (Legendary)",
+    "type": "equipment",
+    "img": "",
+    "system": {
+        "description": {
+            "value": "Fishing Die: 1d12.  A fishing rod made by a master crafter, with a fine silk line, a platinum hook and custom sinker, and a high-quality bobber.  Allows the user to attempt to fish.  One piece of fishing bait required.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "100",
+            "denomination": "gp"
+        }
+    },
+    "_id": "A1F8GX0YXEHDE9UN"
+}

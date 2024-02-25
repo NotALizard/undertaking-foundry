@@ -4,7 +4,7 @@
     "img": "icons/tools/laboratory/alembic-glass-ball-blue.webp",
     "system": {
         "description": {
-            "value": "(Artisan Kit) Identifying potions, poisons, chemicals, and similar substances in objects or otherwise.  Creating elixirs or potions.  Handle chemicals or poisons without risk of exposure.  Treat poisoned creatures.",
+            "value": "Alchemy is the capability to transform base materials into precious potions.  Collect materials, make potion bases, and turn those into potions that can heal and improve your allies, or hurt your enemies.  Very high complexity.",
             "chat": "",
             "unidentified": ""
         },

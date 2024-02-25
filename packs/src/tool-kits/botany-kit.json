@@ -1,17 +1,17 @@
 {
-    "name": "Herbalism Kit",
+    "name": "Botany Kit",
     "type": "equipment",
     "img": "icons/tools/cooking/mortar-herbs-yellow.webp",
     "system": {
         "description": {
-            "value": "Identify plants and their properties.  Treating and caring for plants or nature.",
+            "value": "Botanists forage, gather, and apply herbs and medicines to targets directly with delayed effects.  Not effective in dangerous moments, but greatly so before and after.  High complexity.",
             "chat": "",
             "unidentified": ""
         },
         "source": "Core Rules",
         "weight": "3",
         "price": {
-            "value": "5",
+            "value": "20",
             "denomination": "gp"
         }
     },

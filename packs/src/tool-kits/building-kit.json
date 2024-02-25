@@ -1,17 +1,17 @@
 {
-    "name": "Carpentry Kit",
+    "name": "Building Kit",
     "type": "equipment",
     "img": "icons/skills/trades/construction-carpentry-hammer.webp",
     "system": {
         "description": {
-            "value": "(Artisan Kit) Fortifying windows and doors, making barricades, and putting up temporary shelters.  Raw materials must be available for use however.",
+            "value": "Builders can create structures, buildings, and fortifications, over rests, creating or destroying long-lasting structures at their will.  Low complexity.",
             "chat": "",
             "unidentified": ""
         },
         "source": "Core Rules",
         "weight": "6",
         "price": {
-            "value": "8",
+            "value": "10",
             "denomination": "gp"
         }
     },
