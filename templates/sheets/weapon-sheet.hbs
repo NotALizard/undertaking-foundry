@@ -41,6 +41,18 @@
                 <input type="hidden" id="input-show-attack" name="system.showInAttacks" value="{{item.system.showInAttacks}}" data-dtype="Boolean">
 
                 <div class="item-row frow">
+                    <label>{{ localize "undertaking.Weight" }}:</label>
+                    <input class="no-bg short right" name="system.weight" type="number" value="{{item.system.weight}}" placeholder="0" data-dtype="Number" />
+                    <p>{{ localize "undertaking.PoundsAbbrev" }}</p>
+                </div>
+                <hr class="blue"/>
+                <div class="item-row frow">
+                    <label>{{ localize "undertaking.Value" }}:</label>
+                    <input class="no-bg short right" name="system.price.value" type="number" value="{{item.system.price.value}}" placeholder="0" data-dtype="Number" />
+                    <input class="no-bg short" name="system.price.denomination" type="text" value="{{item.system.price.denomination}}" placeholder="gp" data-dtype="String" />
+                </div>
+                <hr class="blue"/>
+                <div class="item-row frow">
                     <label>{{ localize "undertaking.WeaponType" }}:</label>
                     <select class="input-dropdown" data-for="#input-weapontype">
                         <option value="simpleM" {{#ifCond item.system.weaponType '==' "simpleM"}}selected{{/ifCond}}>{{ localize "undertaking.SimpleMelee" }}</option>

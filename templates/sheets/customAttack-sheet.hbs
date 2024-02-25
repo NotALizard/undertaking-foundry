@@ -31,6 +31,7 @@
                     <label>{{ localize "undertaking.Activation" }}:</label>
                     <input class="no-bg" name="system.activation.cost" style="width:6ch" type="number" value="{{item.system.activation.cost}}" placeholder="0" data-dtype="Number" />
                     <select class="input-dropdown" data-for="#input-actiontype">
+                    <option value=""></option>
                     <option value="action" {{#ifCond item.system.activation.type '==' "action"}}selected{{/ifCond}}>{{ localize "undertaking.Time.Action" }}</option>
                     <option value="minor" {{#ifCond item.system.activation.type '==' "minor"}}selected{{/ifCond}}>{{ localize "undertaking.Time.MinorAction" }}</option>
                     <option value="reaction" {{#ifCond item.system.activation.type '==' "reaction"}}selected{{/ifCond}}>{{ localize "undertaking.Time.Reaction" }}</option>

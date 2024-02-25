@@ -40,7 +40,7 @@ undertaking.languages = {
     infernal: "undertaking.Languages.Infernal",
     landspeak: "undertaking.Languages.Landspeak",
     sylvan: "undertaking.Languages.Sylvan",
-    code: "undertaking.Languages.ThievesCode"
+    thievescode: "undertaking.Languages.ThievesCode"
 };
 
 undertaking.armor = {

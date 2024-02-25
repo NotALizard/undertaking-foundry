@@ -1,0 +1,19 @@
+{
+    "name": "Slingshot Pellet",
+    "type": "equipment",
+    "img": "icons/skills/ranged/bullets-triple-ball-orange.webp",
+    "system": {
+        "description": {
+            "value": "Usable with a slingshot. Though slingshots can fire any small stone, spherical projectiles are preferable for their consistent accuracy. Common materials for purpose-made slingshot ammo are iron, lead, glass, or clay",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0.02",
+        "price": {
+            "value": "1",
+            "denomination": "cp"
+        }
+    },
+    "_id": "49WP71CVMA243AMN"
+}

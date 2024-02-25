@@ -4,7 +4,7 @@
     "img": "icons/environment/traps/metal-spikes.webp",
     "system": {
         "description": {
-            "value": "Small spikes that can be spread across a 5ft square area as an action.",
+            "value": "Small spikes that can be spread across a 5ft square area as an action.  When creatures move through this area, they start bleeding.  One bag worth of caltrops can be stepped on up to four times before the caltrops are rendered unusable.",
             "chat": "",
             "unidentified": ""
         },

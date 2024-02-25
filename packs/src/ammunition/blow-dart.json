@@ -1,0 +1,19 @@
+{
+    "name": "Blow Dart",
+    "type": "equipment",
+    "img": "icons/weapons/thrown/dart-feathered.webp",
+    "system": {
+        "description": {
+            "value": "Usable with a blowgun.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0.05",
+        "price": {
+            "value": "2",
+            "denomination": "cp"
+        }
+    },
+    "_id": "LI5IASZ932XCZLMG"
+}

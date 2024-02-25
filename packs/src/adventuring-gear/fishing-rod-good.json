@@ -1,7 +1,7 @@
 {
     "name": "Fishing Rod (Good)",
     "type": "equipment",
-    "img": "",
+    "img": "icons/tools/fishing/rod-brown-gold.webp",
     "system": {
         "description": {
             "value": "Fishing Die: 1d8.  A long fishing rod with a solid line, a steel hook and sinker, and a cork bobber.  Allows the user to attempt to fish.  One piece of fishing bait required.",

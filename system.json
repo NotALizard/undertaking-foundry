@@ -2,7 +2,7 @@
   "id":"undertaking",
   "title":"Undertaking RPG",
   "description":"Core rules for the Undertaking system",
-  "version":"1.0.3",
+  "version":"1.0.4",
   "compatibility": {
     "minimum": "11",
     "verified": "11"
@@ -78,6 +78,7 @@
       "sorting": "m",
       "packs": [
         "weapons",
+        "ammunition",
         "armor",
         "adventuring-gear",
         "tool-kits"
@@ -211,6 +212,14 @@
       "label": "Weapons",
       "system": "undertaking",
       "path": "./packs/weapons.db",
+      "entity": "Item",
+      "type": "Item"
+    },
+    {
+      "name": "ammunition",
+      "label": "Ammunition",
+      "system": "undertaking",
+      "path": "./packs/ammunition.db",
       "entity": "Item",
       "type": "Item"
     },

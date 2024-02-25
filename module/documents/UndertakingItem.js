@@ -206,6 +206,7 @@ export default class UndertakingItem extends Item {
 
 
         const title = `${this.name}`;
+        const flavor = this.system.chatFlavor;
         const dice = await this._getRollModeOptions(title);
         if(!dice) return;
         let rollFormula = `${dice} + @mod + @prof + @bonus`;
@@ -220,7 +221,7 @@ export default class UndertakingItem extends Item {
         }
         let messageData = {
             speaker: ChatMessage.getSpeaker(),
-            flavor: title
+            flavor: flavor ? `${title}<br><em>${flavor}</em>` : title
         };
         //let rollResult = await new Roll(rollFormula, rollData).roll();
         let rollResult = await new CONFIG.Dice.D20Roll(rollFormula, rollData, rollOptions).roll();
@@ -240,6 +241,7 @@ export default class UndertakingItem extends Item {
     async _rollDamage(versatile){
         const owner = this.actor;
         let rollData = this._getRollMods(owner);
+        let flavor = this.system.chatFlavor;
 
         for(let i = 0; i < this.system.damage.parts.length; i++){
             let d = this.system.damage.parts[i];
@@ -254,10 +256,10 @@ export default class UndertakingItem extends Item {
 
             rollFormula = rollFormula.replaceAll("@sneak", rollData.sneak);
             
-            
+            let header = `${this.name} - ${damageType}`;
             let messageData = {
                 speaker: ChatMessage.getSpeaker(),
-                flavor: `${this.name} - ${damageType}`
+                flavor: flavor ? `${header}<br><em>${flavor}</em>` : header
             };
             let rollResult = await new Roll(rollFormula, rollData).roll();
             await rollResult.toMessage(messageData);
@@ -267,6 +269,7 @@ export default class UndertakingItem extends Item {
     async _rollSave(){
         const owner = this.actor;
         const title = `${this.name}`;
+        const flavor = this.system.chatFlavor;
         let dc = "";
         let mod = 0;
         let prof = 0;
@@ -324,7 +327,7 @@ export default class UndertakingItem extends Item {
         let buttonsData = {
             speaker: ChatMessage.getSpeaker(),
             content: buttonsHtml,
-            flavor: title
+            flavor: flavor ? `${title}<br><em>${flavor}</em>` : title
         };
         const buttonMsg = ChatMessage.create(buttonsData);
 

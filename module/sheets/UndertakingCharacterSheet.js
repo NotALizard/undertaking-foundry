@@ -67,6 +67,11 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     }
 
     context.casters = context.classes.filter(function(item){ return item.system.categorization.spellcaster.progression && item.system.categorization.spellcaster.progression != 'none'});
+    let carryLoad = 0;
+    for(let e of context.equipment){
+      carryLoad += parseInt(e.system.weight);
+    }
+    context.carryLoad = carryLoad;
 
     console.log(context);
     return context;

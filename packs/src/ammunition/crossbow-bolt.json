@@ -1,0 +1,19 @@
+{
+    "name": "Crossbow Bolt",
+    "type": "equipment",
+    "img": "icons/weapons/ammunition/arrow-broadhead-white.webp",
+    "system": {
+        "description": {
+            "value": "Usable with a light crossbow, hand crossbow, heavy crossbow, or repeating crossbow.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0.05",
+        "price": {
+            "value": "5",
+            "denomination": "cp"
+        }
+    },
+    "_id": "JSI8LCSF4FN769KX"
+}

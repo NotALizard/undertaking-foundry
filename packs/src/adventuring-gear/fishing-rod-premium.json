@@ -1,7 +1,7 @@
 {
     "name": "Fishing Rod (Premium)",
     "type": "equipment",
-    "img": "",
+    "img": "icons/tools/fishing/rod-wood-blue-tan.webp",
     "system": {
         "description": {
             "value": "Fishing Die: 1d10.  A strong fishing rod, fully featured with a silk line, a steel hook and sinker, and a custom bobber.  Allows the user to attempt to fish.  One piece of fishing bait required.",

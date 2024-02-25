@@ -1,0 +1,19 @@
+{
+    "name": "Arrow",
+    "type": "equipment",
+    "img": "icons/weapons/ammunition/arrow-broadhead.webp",
+    "system": {
+        "description": {
+            "value": "Usable with a shortbow or longbow.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0.05",
+        "price": {
+            "value": "5",
+            "denomination": "cp"
+        }
+    },
+    "_id": "W8GCDA8I1WV4MLQZ"
+}

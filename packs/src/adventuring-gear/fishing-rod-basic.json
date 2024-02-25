@@ -1,7 +1,7 @@
 {
     "name": "Fishing Rod (Basic)",
     "type": "equipment",
-    "img": "icons/tools/fishing/rod-simple-stick.webp",
+    "img": "icons/tools/fishing/rod-simple-stick-brown.webp",
     "system": {
         "description": {
             "value": "Fishing Die: 1d6.  A typical fishing rod with a metal hook and sinker, and a bobber.  Allows the user to attempt to fish.  One piece of fishing bait required.",

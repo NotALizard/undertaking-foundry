@@ -3,6 +3,7 @@
     <label class="nowrap">{{ localize "undertaking.ActionType" }}:</label>
     <input name="system.actionType" id="input-actionType" type="hidden" value="{{item.system.actionType}}" data-dtype="String" />
     <select class="input-dropdown" data-for="#input-actionType">
+        <option value=""></option>
         <option value="mwak" {{#ifCond item.system.actionType '==' "mwak"}}selected{{/ifCond}}>{{ localize "undertaking.MeleeWeaponAtk" }}</option>
         <option value="rwak" {{#ifCond item.system.actionType '==' "rwak"}}selected{{/ifCond}}>{{ localize "undertaking.RangedWeaponAtk" }}</option>
         <option value="msak" {{#ifCond item.system.actionType '==' "msak"}}selected{{/ifCond}}>{{ localize "undertaking.MeleeSpellAtk" }}</option>
