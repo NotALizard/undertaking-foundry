@@ -108,11 +108,15 @@ export default class UndertakingActor extends Actor {
     for (let [key, attribute] of Object.entries(system.attributes)) {
       attribute.mod = Math.floor((attribute.value - 10) / 2);
 
-      let globalBonus = system.bonuses.check.all + system.bonuses.check.save;
-      let attrBonus = attribute.bonuses.check.all + attribute.bonuses.check.save;
-      let profBonus = Math.floor(system.stats.profBonus * attribute.proficient);
+      let checkGlobalBonus = system.bonuses.check.all;
+      let checkAttrBonus = attribute.bonuses.check.all;
+      attribute.check = attribute.mod + checkAttrBonus + checkGlobalBonus;
 
-      attribute.save = attribute.mod + profBonus + attrBonus + globalBonus;
+      let saveGlobalBonus = system.bonuses.check.all + system.bonuses.check.save;
+      let saveAttrBonus = attribute.bonuses.check.all + attribute.bonuses.check.save;
+      let saveProfBonus = Math.floor(system.stats.profBonus * attribute.proficient);
+
+      attribute.save = attribute.mod + saveProfBonus + saveAttrBonus + saveGlobalBonus;
     }
 
     let spellcasting;

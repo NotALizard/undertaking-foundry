@@ -359,9 +359,9 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     const title = `${game.i18n.localize(this.actor.system.attributes[attribute].label)} ${game.i18n.localize("undertaking.Check")}`;
     const dice = await this._getRollModeOptions(title);
     if(!dice) return;
-    let rollFormula = `${dice} + @mod`;
+    let rollFormula = `${dice} + @check`;
     let rollData = {
-      mod: this.actor.system.attributes[attribute].mod
+      check: this.actor.system.attributes[attribute].check
     };
     let messageData = {
       speaker: ChatMessage.getSpeaker(),
