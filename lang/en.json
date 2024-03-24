@@ -85,6 +85,7 @@
     "Normal": "Normal",
     "Check": "Check",
     "SaveCheck":"Save Check",
+    "Total": "Total",
     "Attribute": "Attribute",
     "MainAttribute": "Main Attribute",
     "ByClass": "By Class",

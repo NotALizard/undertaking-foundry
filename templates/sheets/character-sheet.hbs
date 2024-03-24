@@ -137,7 +137,7 @@
                                     </div>
                                     <div class="attr-prof-col fcol">
                                         <div class="attr-name-container">
-                                            <h4 class="attribute-name box-title rollable" data-rolltype="attribute" data-attribute="{{attr_id}}">{{localize attribute.label}}</h4>
+                                            <h4 class="attribute-name box-title rollable" data-rolltype="attribute" data-attribute="{{attr_id}}">{{localize attribute.label}} {{#ifCond attribute.globalBonus '!=' 0}}<span title="{{localize attribute.label}} {{localize "undertaking.Check"}} {{localize "undertaking.Total"}}: {{numberFormat attribute.check decimals=0 sign=true}}">{{numberFormat attribute.globalBonus decimals=0 sign=true}}</span>{{/ifCond}}</h4>
                                         </div>
                                         <div class="prof-row frow">
                                             <input type="hidden" class="input-save-prof" name="system.attributes.{{attr_id}}.proficient" value="{{attribute.proficient}}" data-dtype="Number">

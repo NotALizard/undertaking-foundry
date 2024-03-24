@@ -117,6 +117,8 @@ export default class UndertakingActor extends Actor {
       let saveProfBonus = Math.floor(system.stats.profBonus * attribute.proficient);
 
       attribute.save = attribute.mod + saveProfBonus + saveAttrBonus + saveGlobalBonus;
+
+      attribute.globalBonus = 0 + checkAttrBonus + checkGlobalBonus;
     }
 
     let spellcasting;
