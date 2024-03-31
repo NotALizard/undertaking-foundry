@@ -949,6 +949,7 @@ input.spells-mana-val {
 }
 .spell-details-col{
     padding: 0px 2px;
+    text-align: center;
 }
 .spell-detail-row {
     margin: auto;
