@@ -83,6 +83,9 @@ export default class UndertakingItemSheet extends ItemSheet {
     html.find(".damage-control.delete-damage").on("click", event => {
       this._removeDamagePart(event);
     });
+    html.find(".chat-description").on("click", event => {
+      this._chatDescription(event);
+    });
 
     super.activateListeners(html);
   }
@@ -119,6 +122,18 @@ export default class UndertakingItemSheet extends ItemSheet {
     const item = this.item;
     const damage = item.system.damage;
     item.update({['system.damage.parts']: damage.parts.concat([["",""]])});
+  }
+
+  _chatDescription(event){
+    event.preventDefault();
+    const item = this.item;
+    const description = item.system.description.value;
+    let messageData = {
+      speaker: ChatMessage.getSpeaker(),
+      flavor: item.name,
+      content: description
+    };
+    ChatMessage.create(messageData);
   }
 
   async _removeDamagePart(event){

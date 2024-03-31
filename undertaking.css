@@ -951,6 +951,10 @@ input.spells-mana-val {
     padding: 0px 2px;
     text-align: center;
 }
+.spell-to-chat{
+    flex: 0 !important;
+    font-size: 24px;
+}
 .spell-detail-row {
     margin: auto;
 }
