@@ -12,6 +12,8 @@
 
     <section class="sheet-body other">
       <input type="hidden" id="input-class" name="system.classIdentifier" value="{{item.system.classIdentifier}}" data-dtype="String">
+      <input type="hidden" id="input-prepared" name="system.preparation.prepared" value="{{item.system.preparation.prepared}}" data-dtype="Boolean">
+      <input type="hidden" id="input-always-prepared" name="system.preparation.always" value="{{item.system.preparation.always}}" data-dtype="Boolean">
       <input type="hidden" id="input-somatic" name="system.components.somatic" value="{{item.system.components.somatic}}" data-dtype="Boolean">
       <input type="hidden" id="input-verbal" name="system.components.verbal" value="{{item.system.components.verbal}}" data-dtype="Boolean">
       <input type="hidden" id="input-material" name="system.components.material" value="{{item.system.components.material}}" data-dtype="Boolean">
@@ -48,6 +50,16 @@
             </select>
           </div>
           {{/ifCond}}
+          <div class="item-row frow">
+            <div class="frow short">
+              <label>{{ localize "undertaking.Prepared" }}:</label>
+              <input type="checkbox" class="input-checkbox" data-for="#input-prepared" {{#ifCond item.system.preparation.prepared '==' true}}checked{{/ifCond}}/>
+            </div>
+            <div class="frow short">
+              <label>{{ localize "undertaking.AlwaysPrepared" }}:</label>
+              <input type="checkbox" class="input-checkbox" data-for="#input-always-prepared" {{#ifCond item.system.preparation.always '==' true}}checked{{/ifCond}}/>
+            </div>
+          </div>
           <div class="item-row frow">
             <label>{{ localize "undertaking.Level" }}:</label>
             <input class="short" name="system.level" type="number" value="{{item.system.level}}" placeholder="0" data-dtype="Number" />

@@ -888,6 +888,23 @@ img.portrait {
 .spells-container {
     height: 100%;
 }
+.prepared-toggle{
+    width: 24px;
+    height: 24px;
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 25%;
+    margin: auto 4px;
+}
+.prepared-check {
+    font-size: 24px;
+    margin-left: 1px;
+}
+.prepared-star {
+    margin: auto 4px;
+    font-size: 22px;
+}
 .mana-stats {
     font-size: 16px;
     background-color: var(--bg-tan);

@@ -305,6 +305,10 @@ export default class UndertakingCharacterSheet extends ActorSheet {
       this._duplicateInput(event);
     });
 
+    html.find(".prepared-toggle").on("click", event => {
+      this._toggleSpellPrepared(event);
+    });
+
     this._fixElementSizes(html);
 
     super.activateListeners(html);
@@ -672,6 +676,17 @@ export default class UndertakingCharacterSheet extends ActorSheet {
       field.value = 2;
     }
     return this._onSubmit(event);
+  }
+
+  _toggleSpellPrepared(event){
+    event.preventDefault();
+    let element = event.currentTarget;
+    let itemId = element.closest(".item").dataset.itemId;
+    let item = this.actor.items.get(itemId);
+    console.log(item);
+    let newValue = !item.system.preparation.prepared;
+
+    return item.update({["system.preparation.prepared"]: newValue});
   }
 
   _toggleDesperate(event){

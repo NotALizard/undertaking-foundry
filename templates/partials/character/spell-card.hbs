@@ -4,6 +4,20 @@
             <i class="fa-solid fa-dice-d20"></i>
         </a>
     </div>
+    {{#ifCond system.level '!=' 0}}
+    <div class="fcol">
+        {{#ifCond system.preparation.always '==' true}}
+            <i class="fas fa-star prepared-star" title="{{ localize "undertaking.AlwaysPrepared" }}"></i>
+        {{/ifCond}}
+        {{#ifCond system.preparation.always '!=' true}}
+            <a class="prepared-toggle" title="{{#ifCond system.preparation.prepared '==' true}}{{ localize "undertaking.Prepared" }}{{/ifCond}}{{#ifCond system.preparation.prepared '!=' true}}{{ localize "undertaking.NotPrepared" }}{{/ifCond}}">
+                {{#ifCond system.preparation.prepared '==' true}}
+                    <i class="fas fa-check prepared-check"></i>
+                {{/ifCond}}
+            </a>
+        {{/ifCond}}
+    </div>
+    {{/ifCond}}
     <div class="item-name spell short">
         <a class="item-open"><p>{{name}}</p></a>
     </div>

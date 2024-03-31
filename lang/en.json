@@ -158,6 +158,9 @@
     "Cantrip": "Cantrip",
     "Cantrips": "Cantrips",
     "Spells": "Spells",
+    "Prepared": "Prepared",
+    "NotPrepared": "Not Prepared",
+    "AlwaysPrepared": "Always Prepared",
     "SpellSchools": {
       "abj": "Abjuration",
       "con": "Conjuration",
