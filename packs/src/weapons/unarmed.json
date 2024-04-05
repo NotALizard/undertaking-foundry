@@ -29,7 +29,7 @@
         "damage": {
             "parts": [
                 [
-                    "1",
+                    "1 + (@isprof * @mod)",
                     "bludgeoning"
                 ]
             ],

@@ -112,6 +112,7 @@ export default class UndertakingItem extends Item {
             case "spell":
                 mod = spellMod;
         }
+        let isProficient = this.system.proficient ? 1 : 0;
         let mods = {
             ...owner._getClassLevels(),
             mod: mod,
@@ -123,7 +124,8 @@ export default class UndertakingItem extends Item {
             con: owner.system.attributes.con.mod,
             int: owner.system.attributes.int.mod,
             wis: owner.system.attributes.wis.mod,
-            pre: owner.system.attributes.pre.mod
+            pre: owner.system.attributes.pre.mod,
+            isprof: isProficient
         }
         let rogue = mods.rogue ? mods.rogue : 0;
         let sneak = rogue + Math.floor((owner.system.details.overallLevel - rogue) / 2);
