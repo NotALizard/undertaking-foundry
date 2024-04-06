@@ -52,7 +52,7 @@ export default class UndertakingItem extends Item {
                 mod = owner.system.attributes.wis.mod;
                 break;
             case "pre":
-                mod = owner.system.attributes.str.mod;
+                mod = owner.system.attributes.pre.mod;
                 break;
             case "spell":
                 mod = this._getSpellMod(owner);
@@ -81,7 +81,7 @@ export default class UndertakingItem extends Item {
                 mod = owner.system.attributes.wis.mod;
                 break;
             case "pre":
-                mod = owner.system.attributes.str.mod;
+                mod = owner.system.attributes.pre.mod;
                 break;
         }
         return mod;
@@ -107,7 +107,7 @@ export default class UndertakingItem extends Item {
                 mod = owner.system.attributes.wis.mod;
                 break;
             case "pre":
-                mod = owner.system.attributes.str.mod;
+                mod = owner.system.attributes.pre.mod;
                 break;
             case "spell":
                 mod = spellMod;
@@ -302,7 +302,7 @@ export default class UndertakingItem extends Item {
                     mod = owner.system.attributes.wis.mod;
                     break;
                 case "pre":
-                    mod = owner.system.attributes.str.mod;
+                    mod = owner.system.attributes.pre.mod;
                     break;
                 case "spell":
                     mod = this._getSpellMod(owner);
