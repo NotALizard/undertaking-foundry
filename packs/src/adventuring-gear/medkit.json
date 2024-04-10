@@ -1,0 +1,19 @@
+{
+    "name": "Medkit",
+    "type": "equipment",
+    "img": "icons/containers/chest/chest-simple-box-red.webp",
+    "system": {
+        "description": {
+            "value": "Can be used to add a +3 to a Wisdom (Medicine) check, but is used up after a single use and needs to be refilled for 2 gp afterward.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "3",
+        "price": {
+            "value": "5",
+            "denomination": "gp"
+        }
+    },
+    "_id": "8J7V035ESDHAQOXB"
+}
