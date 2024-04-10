@@ -1,11 +1,13 @@
 <form class="{{cssClass}}" autocomplete="off">
     <header class="sheet-header">
-        <h1>{{item.name}}</h1>
+        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{actor.name}}" placeholder="{{ localize 'Name' }}"/></h1>
     </header>
 
     {{!-- Character Sheet Navigation --}}
     <nav class="sheet-navigation tabs" data-group="primary">
         <a class="item active" data-tab="overview">{{ localize "undertaking.Overview" }}</a>
+        <a class="item" data-tab="abilities">{{ localize "undertaking.Attacks" }}</a>
     </nav>
     <hr/>
     {{!-- Item Sheet Body --}}
@@ -14,21 +16,6 @@
         <div class="tab active character-overview" data-group="primary" data-tab="overview">
             <div class="overview-container fcol">
                 <div class="character-header frow">
-                    <div class="playerinfo-left fcol">
-                        <div class="char-name-container">
-                            <label>{{localize "undertaking.CharacterName"}}</label>
-                            <input name="name" type="text" value="{{actor.name}}" data-dtype="String" />
-                        </div>
-                        <div class="level-bar frow">
-                            <div class="desperate-container frow">
-                                <input type="hidden" class="input-desperate" name="system.stats.desperate" value="{{actor.system.stats.desperate}}" data-dtype="Boolean">
-                                <label>Desperate:</label>
-                                <a class="desperate-toggle {{#ifCond actor.system.stats.desperate '==' true}}desperate{{/ifCond}}">
-                                {{#ifCond actor.system.stats.desperate '==' true}}<img src="icons/svg/clockwork.svg"/>{{/ifCond}}
-                                </a>
-                            </div>
-                        </div>
-                    </div>
                     <div class="playerinfo-right fcol">
                         <div class="race-row frow">
                             <div class="race-core-container">
@@ -105,7 +92,13 @@
                     <div class="ac-container fcol">
                         <div class="total-ac">
                             <label>{{ localize "undertaking.ArmorClass" }}</label>
-                            <input class="hp-big" name="system.stats.ac.total" type="number" value="{{actor.system.stats.ac.total}}" placeholder="0" data-dtype="Number" />
+                            <input class="hp-big" name="system.stats.ac.total" type="number" value="{{actor.system.stats.ac.total}}" data-dtype="Number" />
+                        </div>
+                    </div>
+                    <div class="ac-container fcol">
+                        <div class="total-ac">
+                            <label>{{ localize "undertaking.ProfBonus" }}</label>
+                            <input class="hp-big" name="system.stats.profBonus" type="number" value="{{actor.system.stats.profBonus}}" data-dtype="Number" />
                         </div>
                     </div>
                 </div>
@@ -114,6 +107,51 @@
                     {{editor descriptionHTML target="system.description.value" button=true editable=editable engine="prosemirror" collaborate=false}}
                 </div>
                 <hr class="blue"/>
+            </div>
+        </div>
+        <div class="tab active character-overview" data-group="primary" data-tab="abilities">
+            <div class="abilities-row frow">
+                <div class="list-container abilities item-list fcol fill-space">
+                    <div class="list-header abilities frow addable">
+                        <label>{{ localize "undertaking.Abilities" }}</label>
+                        {{#ifCond actor.system.details.editLock '==' 1}}
+                            <a class="toggle-lock" title="{{ localize "undertaking.UnlockEdit" }}"><i class="fas fa-lock"></i></a>
+                        {{/ifCond}}
+                        {{#ifCond actor.system.details.editLock '==' 0}}
+                            <a class="toggle-lock" title="{{ localize "undertaking.LockEdit" }}"><i class="fas fa-lock-open"></i></a>
+                        {{/ifCond}}
+                        <a class="item-create" data-type="ability" title="{{ localize "undertaking.AddAbility" }}"><i class="fas fa-plus"></i></a>
+                    </div>
+                    <div class="scroll-container fill-space">
+                        <div class="scroll-area abilities">
+                            {{#each abilities as |ability id|}}
+                            {{> "systems/undertaking/templates/partials/character/ability-card.hbs" ability lockEdit=../actor.system.details.editLock}}
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atk-row frow fill-space">
+                <div class="list-container attacks item-list fcol fill-space">
+                    <div class="list-header attacks frow">
+                        <label>{{ localize "undertaking.Attacks" }}</label>
+                        {{#ifCond actor.system.details.editLock '==' 1}}
+                            <a class="toggle-lock" title="{{ localize "undertaking.UnlockEdit" }}"><i class="fas fa-lock"></i></a>
+                        {{/ifCond}}
+                        {{#ifCond actor.system.details.editLock '==' 0}}
+                            <a class="toggle-lock" title="{{ localize "undertaking.LockEdit" }}"><i class="fas fa-lock-open"></i></a>
+                        {{/ifCond}}
+                        <a class="item-create" data-type="customAttack" title="{{ localize "undertaking.AddAttack" }}"><i class="fas fa-plus"></i></a>
+                    </div>
+                    <div class="scroll-container fill-space">
+                        <div class="scroll-area attacks">
+                            {{#each attacks as |attack id|}}
+                            {{> "systems/undertaking/templates/partials/character/attack-card.hbs" attack lockEdit=../actor.system.details.editLock actor=..}}
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

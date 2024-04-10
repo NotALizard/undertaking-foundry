@@ -848,12 +848,37 @@
                         </div>
                         <hr/>
                         <div class="config-input frow">
-                            <label>Spell Attack Bonus</label>
+                            <label>Spell Save DC Bonus</label>
+                            <input name="system.bonuses.spell.dc" type="number" placeholder="0" value="{{actor.system.bonuses.spell.dc}}" data-dtype="Number" />
+                        </div>
+                        <div class="config-input frow">
+                            <label>Global Spell Attack Bonus</label>
                             <input name="system.bonuses.attack.spell.all.attack" type="number" placeholder="0" value="{{actor.system.bonuses.attack.spell.all.attack}}" data-dtype="Number" />
                         </div>
                         <div class="config-input frow">
-                            <label>Spell Save DC Bonus</label>
-                            <input name="system.bonuses.spell.dc" type="number" placeholder="0" value="{{actor.system.bonuses.spell.dc}}" data-dtype="Number" />
+                            <label>Melee Spell Attack Bonus</label>
+                            <input name="system.bonuses.attack.spell.melee.attack" type="number" placeholder="0" value="{{actor.system.bonuses.attack.spell.melee.attack}}" data-dtype="Number" />
+                        </div>
+                        <div class="config-input frow">
+                            <label>Ranged Spell Attack Bonus</label>
+                            <input name="system.bonuses.attack.spell.ranged.attack" type="number" placeholder="0" value="{{actor.system.bonuses.attack.spell.ranged.attack}}" data-dtype="Number" />
+                        </div>
+                    </div>
+                    <div class="fcol" style="border-top: solid; padding-top: 4px; margin-top: 4px;">
+                        <div class="config-header frow">
+                            <label>Weapon Attacks</label>
+                        </div>
+                        <div class="config-input frow">
+                            <label>Global Weapon Attack Bonus</label>
+                            <input name="system.bonuses.attack.weapon.all.attack" type="number" placeholder="0" value="{{actor.system.bonuses.attack.weapon.all.attack}}" data-dtype="Number" />
+                        </div>
+                        <div class="config-input frow">
+                            <label>Melee Weapon Attack Bonus</label>
+                            <input name="system.bonuses.attack.weapon.melee.attack" type="number" placeholder="0" value="{{actor.system.bonuses.attack.weapon.melee.attack}}" data-dtype="Number" />
+                        </div>
+                        <div class="config-input frow">
+                            <label>Ranged Weapon Attack Bonus</label>
+                            <input name="system.bonuses.attack.weapon.ranged.attack" type="number" placeholder="0" value="{{actor.system.bonuses.attack.weapon.ranged.attack}}" data-dtype="Number" />
                         </div>
                     </div>
                 </div>

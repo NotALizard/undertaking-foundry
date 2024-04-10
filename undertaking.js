@@ -31,7 +31,7 @@ Hooks.once("init",function(){
   CONFIG.Dice.rolls.push(dice.D20Roll);
 
   CONFIG.Combat.initiative = {
-    formula: "1d20 + @attributes.dex.mod + @stats.init.bonus",
+    formula: "1d20 + @stats.init.total",
     decimals: 2
   };
 
@@ -244,21 +244,21 @@ Hooks.once("init",function(){
       let bonusAll = 0;
       let bonusSome = 0;
       if(aType == "mwak" || aType == "rwak"){
-        bonusAll = +(sheet.actor.system.bonuses.attack.weapon.all) || 0;
+        bonusAll = +(sheet.actor.system.bonuses.attack.weapon.all.attack) || 0;
         if(aType == "mwak"){
-          bonusSome = +(sheet.actor.system.bonuses.attack.weapon.melee) || 0;
+          bonusSome = +(sheet.actor.system.bonuses.attack.weapon.melee.attack) || 0;
         }
         if(aType == "rwak"){
-          bonusSome = +(sheet.actor.system.bonuses.attack.weapon.ranged) || 0;
+          bonusSome = +(sheet.actor.system.bonuses.attack.weapon.ranged.attack) || 0;
         }
       }
       if(aType == "msak" || aType == "rsak"){
-        bonusAll = +(sheet.actor.system.bonuses.attack.spell.all) || 0;
+        bonusAll = +(sheet.actor.system.bonuses.attack.spell.all.attack) || 0;
         if(aType == "msak"){
-          bonusSome = +(sheet.actor.system.bonuses.attack.spell.melee) || 0;
+          bonusSome = +(sheet.actor.system.bonuses.attack.spell.melee.attack) || 0;
         }
         if(aType == "rsak"){
-          bonusSome = +(sheet.actor.system.bonuses.attack.spell.ranged) || 0;
+          bonusSome = +(sheet.actor.system.bonuses.attack.spell.ranged.attack) || 0;
         }
       }
       let hitTot = 0 + mod + prof + bonus + bonusAll + bonusSome;

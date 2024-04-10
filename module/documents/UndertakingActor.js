@@ -23,6 +23,7 @@ export default class UndertakingActor extends Actor {
     for (let [key, attribute] of Object.entries(system.attributes)) {
       attribute.mod = Math.floor((attribute.value - 10) / 2);
     }
+    system.stats.init.total = system.attributes.dex.mod;
   }
 
   _prepareCharacterData(actorData){
@@ -155,7 +156,7 @@ export default class UndertakingActor extends Actor {
 
     //calc misc vals
     system.stats.carryCapacity = (system.stats.carry || 15) * system.attributes.str.value;
-    system.stats.init.total = system.attributes[system.stats.init.attribute].mod + system.stats.init.bonus;
+    system.stats.init.total = system.attributes[system.stats.init.attribute].mod + system.stats.init.bonus + system.attributes[system.stats.init.attribute].bonuses.check.all + system.bonuses.check.all;
 
     //calc AC
     let unshielded = system.stats.ac.base;

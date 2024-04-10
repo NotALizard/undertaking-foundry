@@ -187,21 +187,21 @@ export default class UndertakingItem extends Item {
         let bonusAll = 0;
         let bonusSome = 0;
         if(aType == "mwak" || aType == "rwak"){
-            bonusAll = +(owner.system.bonuses.attack.weapon.all) || 0;
+            bonusAll = +(owner.system.bonuses.attack.weapon.all.attack) || 0;
             if(aType == "mwak"){
-            bonusSome = +(owner.system.bonuses.attack.weapon.melee) || 0;
+            bonusSome = +(owner.system.bonuses.attack.weapon.melee.attack) || 0;
             }
             if(aType == "rwak"){
-            bonusSome = +(owner.system.bonuses.attack.weapon.ranged) || 0;
+            bonusSome = +(owner.system.bonuses.attack.weapon.ranged.attack) || 0;
             }
         }
         if(aType == "msak" || aType == "rsak"){
-            bonusAll = +(owner.system.bonuses.attack.spell.all) || 0;
+            bonusAll = +(owner.system.bonuses.attack.spell.all.attack) || 0;
             if(aType == "msak"){
-            bonusSome = +(owner.system.bonuses.attack.spell.melee) || 0;
+            bonusSome = +(owner.system.bonuses.attack.spell.melee.attack) || 0;
             }
             if(aType == "rsak"){
-            bonusSome = +(owner.system.bonuses.attack.spell.ranged) || 0;
+            bonusSome = +(owner.system.bonuses.attack.spell.ranged.attack) || 0;
             }
         }
         bonus = bonus + bonusAll + bonusSome;
