@@ -26,10 +26,74 @@
         </div>
 
         {{!-- Details Tab --}}
-        <div class="tab flexrow" data-group="primary" data-tab="details">
-            <div class="item-row frow">
+        <div class="tab flexcol" data-group="primary" data-tab="details">
+          <div class="item-row frow" style="display:none">
+            <label>{{ localize "undertaking.Identifier" }}:</label>
+            <input class="short" name="system.identifier" type="text" value="{{item.system.identifier}}" data-dtype="String" />
+          </div>
+          <div class="item-row frow">
             <label>{{ localize "undertaking.Level" }}:</label>
             <input class="short" name="system.levels" type="number" value="{{item.system.levels}}" placeholder="0" data-dtype="Number" />
+          </div>
+          <div class="item-row frow">
+            <label>{{ localize "undertaking.RestDice" }}:</label>
+            <input name="system.restDice" id="input-restDie" type="hidden" value="{{item.system.restDice}}" data-dtype="String" />
+            <select class="input-dropdown" data-for="#input-restDie">
+                <option value=""></option>
+                <option value="d4" {{#ifCond item.system.restDice '==' "d4"}}selected{{/ifCond}}>d4</option>
+                <option value="d6" {{#ifCond item.system.restDice '==' "d6"}}selected{{/ifCond}}>d6</option>
+                <option value="d8" {{#ifCond item.system.restDice '==' "d8"}}selected{{/ifCond}}>d8</option>
+                <option value="d10" {{#ifCond item.system.restDice '==' "d10"}}selected{{/ifCond}}>d10</option>
+                <option value="d12" {{#ifCond item.system.restDice '==' "d12"}}selected{{/ifCond}}>d12</option>
+            </select>
+          </div>
+          <div class="item-row frow">
+            <label>{{ localize "undertaking.ManaFirstLevel" }}:</label>
+            <input class="short" name="system.manaAtFirstLevel" type="number" value="{{item.system.manaAtFirstLevel}}" placeholder="0" data-dtype="Number" />
+          </div>
+          <div class="item-row frow">
+            <label>{{ localize "undertaking.ManaHigherLevels" }}:</label>
+            <input class="short" name="system.manaPerLevel" type="number" value="{{item.system.manaPerLevel}}" placeholder="0" data-dtype="Number" />
+          </div>
+          <div class="item-row frow">
+            <label>{{ localize "undertaking.MainAttribute" }}:</label>
+            <input name="system.categorization.spellcaster.attribute" id="input-mainAttr" type="hidden" value="{{item.system.categorization.spellcaster.attribute}}" data-dtype="String" />
+            <select class="input-dropdown" data-for="#input-mainAttr">
+                <option value=""></option>
+                <option value="str" {{#ifCond item.system.categorization.spellcaster.attribute '==' "str"}}selected{{/ifCond}}>{{ localize "undertaking.Attributes.Strength" }}</option>
+                <option value="dex" {{#ifCond item.system.categorization.spellcaster.attribute '==' "dex"}}selected{{/ifCond}}>{{ localize "undertaking.Attributes.Dexterity" }}</option>
+                <option value="con" {{#ifCond item.system.categorization.spellcaster.attribute '==' "con"}}selected{{/ifCond}}>{{ localize "undertaking.Attributes.Constitution" }}</option>
+                <option value="int" {{#ifCond item.system.categorization.spellcaster.attribute '==' "int"}}selected{{/ifCond}}>{{ localize "undertaking.Attributes.Intelligence" }}</option>
+                <option value="wis" {{#ifCond item.system.categorization.spellcaster.attribute '==' "wis"}}selected{{/ifCond}}>{{ localize "undertaking.Attributes.Wisdom" }}</option>
+                <option value="pre" {{#ifCond item.system.categorization.spellcaster.attribute '==' "pre"}}selected{{/ifCond}}>{{ localize "undertaking.Attributes.Presence" }}</option>
+            </select>
+          </div>
+          <div class="item-row frow">
+            <label>{{ localize "undertaking.Progression" }}:</label>
+          </div>
+          <div class="item-row frow">
+            <label>{{ localize "undertaking.Martial" }}:</label>
+            <input name="system.categorization.martial.progression" id="input-martialProgress" type="hidden" value="{{item.system.categorization.martial.progression}}" data-dtype="String" />
+            <select class="input-dropdown" data-for="#input-martialProgress">
+                <option value=""></option>
+                <option value="full" {{#ifCond item.system.categorization.martial.progression '==' "full"}}selected{{/ifCond}}>{{ localize "undertaking.Full" }}</option>
+                <option value="three-quarter" {{#ifCond item.system.categorization.martial.progression '==' "three-quarter"}}selected{{/ifCond}}>{{ localize "undertaking.ThreeQuarters" }}</option>
+                <option value="half" {{#ifCond item.system.categorization.martial.progression '==' "half"}}selected{{/ifCond}}>{{ localize "undertaking.Half" }}</option>
+                <option value="third" {{#ifCond item.system.categorization.martial.progression '==' "third"}}selected{{/ifCond}}>{{ localize "undertaking.Third" }}</option>
+                <option value="none" {{#ifCond item.system.categorization.martial.progression '==' "none"}}selected{{/ifCond}}>{{ localize "undertaking.None" }}</option>
+            </select>
+          </div>
+          <div class="item-row frow">
+            <label>{{ localize "undertaking.Spellcaster" }}:</label>
+            <input name="system.categorization.spellcaster.progression" id="input-spellcasterProgress" type="hidden" value="{{item.system.categorization.spellcaster.progression}}" data-dtype="String" />
+            <select class="input-dropdown" data-for="#input-spellcasterProgress">
+                <option value=""></option>
+                <option value="full" {{#ifCond item.system.categorization.spellcaster.progression '==' "full"}}selected{{/ifCond}}>{{ localize "undertaking.Full" }}</option>
+                <option value="three-quarter" {{#ifCond item.system.categorization.spellcaster.progression '==' "three-quarter"}}selected{{/ifCond}}>{{ localize "undertaking.ThreeQuarters" }}</option>
+                <option value="half" {{#ifCond item.system.categorization.spellcaster.progression '==' "half"}}selected{{/ifCond}}>{{ localize "undertaking.Half" }}</option>
+                <option value="third" {{#ifCond item.system.categorization.spellcaster.progression '==' "third"}}selected{{/ifCond}}>{{ localize "undertaking.Third" }}</option>
+                <option value="none" {{#ifCond item.system.categorization.spellcaster.progression '==' "none"}}selected{{/ifCond}}>{{ localize "undertaking.None" }}</option>
+            </select>
           </div>
         </div>
      </section>

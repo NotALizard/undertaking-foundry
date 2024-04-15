@@ -53,7 +53,7 @@ export default class UndertakingActor extends Actor {
             mage = 0.5;
             break;
           case 'third':
-            mage = 0.3333333333333334;
+            mage = 0.334;
             break;
         }
       }

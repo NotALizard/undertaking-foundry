@@ -326,6 +326,15 @@
       "Longbow": "Longbow",
       "ThrowingStar": "Throwing Star"
     },
+    "Identifier": "Identifier",
+    "ManaFirstLevel": "Mana at 1st Level",
+    "ManaHigherLevels": "Mana at Higher Levels",
+    "Martial": "Martial",
+    "Spellcaster": "Spellcaster",
+    "Full": "Full",
+    "ThreeQuarters": "Three-Quarters",
+    "Half": "Half",
+    "Third": "Third",
     "Roll": "Roll",
     "Chat": {
       "Confirm": "Confirm",
