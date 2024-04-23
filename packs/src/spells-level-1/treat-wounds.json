@@ -4,7 +4,7 @@
     "img": "icons/magic/life/heart-cross-blue.webp",
     "system": {
         "description": {
-            "value": "<p>A creature you touch regains 1d8 + your spellcasting ability modifier in hit points.  This does not affect undead or constructs.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Charge: This is a spell that can be Charged, increasing the healing done with this spell.  For every 2 extra Mana you spend, you can increase the healing by 1d8 up to your charge limit.</p>",
+            "value": "<p>A creature you touch regains 1d8 + your spellcasting ability modifier in hit points.  If this heals a target from @Compendium[undertaking.conditions.R54LQEKSDXNQ3N75]{Bleeding}, they also gain 1d4 temporary hit points.  This spell has no effect on undead or constructs.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Charge: This spell can be Charged, modifying the spell\u2019s effects.  Costs and effects are as follow: <ul><li>1 Mana: The healing increases by 1d8.</li><li>3 Mana: The healing increases by 2d8.</li></ul></p>",
             "chat": "",
             "unidentified": ""
         },

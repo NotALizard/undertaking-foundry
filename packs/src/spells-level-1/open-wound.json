@@ -4,13 +4,13 @@
     "img": "icons/magic/unholy/hand-fire-skeleton-pink.webp",
     "system": {
         "description": {
-            "value": "<p>You reach your hand out and make a melee spell attack against a creature you can reach.  On hit, the creature takes 3d10 necrotic damage as their skin and tendons open up where you touch.</p>",
+            "value": "<p>You reach your hand out and make a melee spell attack against a creature you can reach.  On hit, the creature takes 3d10 necrotic damage as their skin and tendons open up where you touch.<br><br>Charge: This is a spell that can be Charged, modifying its effects. Costs and effects are as follow: <ul><li>1 Mana: The necrotic damage increases to 4d10. </li><li>3 Mana: The necrotic damage increases to 5d10.</li></ul></p>",
             "chat": "",
             "unidentified": ""
         },
         "source": "Core Rules",
         "level": "1",
-        "charge": false,
+        "charge": true,
         "school": "nec",
         "components": {
             "somatic": true,

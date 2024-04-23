@@ -4,7 +4,7 @@
     "img": "icons/magic/death/skull-energy-light-purple.webp",
     "system": {
         "description": {
-            "value": "<p>When you cast this spell you must designate a single target within range that you can see.  That target makes a Wisdom (Save) check.  If it fails, the target has disadvantage on attacks against the caster for the next minute.</p>",
+            "value": "<p>When you cast this spell you must designate a single target within range that you can see.  That target makes a Wisdom (Save) check.  If it fails, the target has disadvantage on attacks against the caster for the next minute.  The target repeats the save check at the end of each of their turns, ending the effect upon success.</p>",
             "chat": "",
             "unidentified": ""
         },

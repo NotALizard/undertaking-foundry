@@ -4,13 +4,13 @@
     "img": "icons/magic/air/wind-weather-snow-gusts.webp",
     "system": {
         "description": {
-            "value": "<p>Throwing your hands out, you bring forth a sharp blast of cold wind outwards from yourself in a 15 foot diameter sphere centered on you.  <br>&nbsp;&nbsp;&nbsp;&nbsp;When you cast the spell, any creature within the sphere, except you, must succeed on a Dexterity (Save) check.  A failed throw results in being knocked back 10 feet and taking 1d6 cold damage and 1d6 slashing damage.  A successful save negates the push, and the creature takes half damage.  <br>&nbsp;&nbsp;&nbsp;&nbsp;On each of your turns until the spell ends or concentration is broken, you can use your action to cast the effects of this spell again at no extra cost.</p>",
+            "value": "<p>Throwing your hands out, you bring forth a sharp blast of cold wind outwards from yourself in a 15 foot diameter sphere centered on you.  <br>&nbsp;&nbsp;&nbsp;&nbsp;When you cast the spell, any creature within the sphere, except you, must succeed on a Dexterity (Save) check.  A failed throw results in being knocked back 10 feet and taking 1d6 cold damage and 1d6 slashing damage.  A successful save negates the push, and the creature takes half damage.  <br>&nbsp;&nbsp;&nbsp;&nbsp;On each of your turns until the spell ends or concentration is broken, you can use your action to cast the effects of this spell again at no extra cost.</p><p>&nbsp;</p><p>Charge: This is a spell that can be Charged, modifying its effects. Costs and effects are as follow:</p><ul><li>2 Mana: The cold damage increases to 2d6 and the radius of the sphere increases to 10ft.</li><li>2 Mana: The slashing damage increases to 2d6 and creatures that fail their save are pushed an additional 5ft.</li></ul>",
             "chat": "",
             "unidentified": ""
         },
         "source": "Core Rules",
         "level": "1",
-        "charge": false,
+        "charge": true,
         "school": "evo",
         "components": {
             "somatic": true,
@@ -42,7 +42,7 @@
             "units": "self"
         },
         "target": {
-            "value": "15",
+            "value": "5",
             "width": null,
             "units": "ft",
             "type": "sphere"

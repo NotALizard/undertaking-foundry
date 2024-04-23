@@ -4,7 +4,7 @@
     "img": "icons/magic/fire/dagger-rune-enchant-flame-strong-orange.webp",
     "system": {
         "description": {
-            "value": "<p>Your weapon surrounds itself with an aura of the element of your choice from the following list: Fire, Cold, Lightning, or Force.  You can only choose one per casting, and it cannot be changed during the spell\u2019s duration.<br>&nbsp;&nbsp;&nbsp;&nbsp;For the duration of the spell, the target weapon deals an extra 1d4 of the damage type chosen, on top of its normal damage.</p>",
+            "value": "<p>Your weapon surrounds itself with an aura of the element of your choice from the following list: Fire, Cold, Lightning, or Force.  You can only choose one per casting, and it cannot be changed during the spell\u2019s duration.<br>&nbsp;&nbsp;&nbsp;&nbsp;For the duration of the spell, the target weapon deals an extra 1d4 of the damage type chosen, on top of its normal damage.</p><p>&nbsp;</p><p>Charge: This is a spell that can be Charged, modifying its effects. Costs and effects are as follow:</p><ul><li>4 Mana: Deals 2d4 damage of the chosen type.</li><li>8 Mana: Deals 3d4 damage of the chosen type.</li></ul>",
             "chat": "",
             "unidentified": ""
         },

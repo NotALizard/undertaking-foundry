@@ -4,14 +4,14 @@
     "img": "icons/magic/unholy/strike-body-life-soul-purple.webp",
     "system": {
         "description": {
-            "value": "<p>With a quick few words, you send dozens of tiny, invisible bolts of magic outwards.  Any creature caught in range from you, except for you, must succeed a Dexterity (Save) check.  On failure, the creature takes 3d6 points of chaos damage.  On success, they take half damage.</p>",
+            "value": "<p>By fiercely separating the energies in the surrounding air and releasing them again, you cause thin rippling tendrils of chaotic energy to shoot outwards from your space before dissipating.  All other creatures within 10 feet of you must make a Dexterity (Save) check.  On a failure, the creature takes 1d4 chaos damage, and if the creature is within 5 feet of you it takes an additional 1d12 chaos damage.  On success, they take half damage.</p><p>&nbsp;</p><p>Charge: This is a spell that can be Charged, modifying its effects. Costs and effects are as follow:</p><ul><li>1 Mana: The radius increases by 5 feet, and all creatures in the spell\u2019s area take the extra damage, not just those within 5 feet of you.</li><li>2 Mana: The baseline and extra chaos damage increase to 2d4 and 2d12 respectively.</li></ul>",
             "chat": "",
             "unidentified": ""
         },
         "source": "Core Rules",
         "level": "1",
-        "charge": false,
-        "school": "con",
+        "charge": true,
+        "school": "evo",
         "components": {
             "somatic": false,
             "verbal": true,
@@ -42,7 +42,7 @@
             "units": "self"
         },
         "target": {
-            "value": "5",
+            "value": "10",
             "width": null,
             "units": "ft",
             "type": "sphere"
@@ -50,7 +50,11 @@
         "damage": {
             "parts": [
                 [
-                    "3d6",
+                    "1d4",
+                    "chaos"
+                ],
+                [
+                    "1d12",
                     "chaos"
                 ]
             ],

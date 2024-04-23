@@ -4,7 +4,7 @@
     "img": "icons/magic/earth/projectile-stone-ball-brown.webp",
     "system": {
         "description": {
-            "value": "<p>With a quick contact with the closest surface made of, or containing stone, you give a harsh word and a sizable stone projectile fires off at a single selected target.  Make a ranged spell attack against a single target.  If this attack hits, it deals 2d10 bludgeoning damage.</p>",
+            "value": "<p>With a quick contact with the closest surface made of, or containing stone, you give a harsh word and a sizable stone projectile fires off at a single selected target.  Make a ranged spell attack against a single target.  If this attack hits, it deals 3d8 bludgeoning damage.</p>",
             "chat": "",
             "unidentified": ""
         },
@@ -50,7 +50,7 @@
         "damage": {
             "parts": [
                 [
-                    "2d10",
+                    "3d8",
                     "bludgeoning"
                 ]
             ],
