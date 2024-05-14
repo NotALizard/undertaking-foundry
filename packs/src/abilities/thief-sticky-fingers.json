@@ -1,0 +1,24 @@
+{
+  "name": "Sticky Fingers",
+  "type": "ability",
+  "img": "icons/creatures/webs/web-spider-caught-hand-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>You gain proficiency in two of the following:&nbsp;</p><ul><li>Dexterity (Sleight of Hand)</li><li>Dexterity (Stealth)</li><li>Presence (Deception)</li><li>Thievery Trade</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "given"
+    },
+    "requirements": "Have the Rogue Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "UQMIR0G36A5Y12FE"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Roguish Archetype: Thief",
+  "type": "archetype",
+  "img": "icons/skills/social/theft-pickpocket-bribery-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Subclass for the @Compendium[undertaking.classes.I9VDL0C1Q1G7YHVO]{Rogue} class.</p><p>Thieves, the quintessential street rats of civilization. While their expertise rarely inspires trust, rogues choose to become thieves for many reasons. Some from necessity, others for the thrill, others simply as a set of useful skills that can aid them in their lives. Their natural talents at misdirection and manipulation to gain possession of an item can prove incredibly useful in the right hands. Their skills even expand to combat, where the line between life and death can be as simple as knowing where your blade&rsquo;s stowed at all times.</p><p>To a thief, suspicion is expected. Half of the time, that just makes them easier to misdirect. So after each night you spend with an eye open, think about it this way instead: If that thief really wanted your wallet, they&rsquo;d have it already.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "identifier": "rogue-thief",
+    "classIdentifier": "rogue",
+    "classDetails": "<h3>Roguish Archetype: Thief</h3><p><i>Unlock:</i> Have the Rogue Starter Abilities.</p><hr/><p>&#x1F193; Given Abilities: @Compendium[undertaking.abilities.UQMIR0G36A5Y12FE]{Sticky Fingers}, @Compendium[undertaking.abilities.EE5KJBK43K69MTT5]{Five-Finger Discount}</p><hr/><h3>Thief Abilities</h3><p>When taking a level in Thief, you may choose from the following abilities: </p><hr/><p>Options: @Compendium[undertaking.abilities.NFT3RSXOWDP7SS1X]{Master Thief}, @Compendium[undertaking.abilities.I3ZGJ4PULFJFHGD3]{Street Rat}, @Compendium[undertaking.abilities.POBHBOBIFM6899DA]{Kleptomania}, @Compendium[undertaking.abilities.26JCNSTKXQ52FM2O]{Spell Thief}</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "ZYETWQRILPMN3521"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Street Rat",
+  "type": "ability",
+  "img": "icons/creatures/mammals/rodent-rat-diseaed-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>To become a thief, one must have a certain level of determination and focus to allow delicate acts quickly and with a high variety of unpredictability. One must also know every trick in the book to get themselves out of danger and into your pockets.</p><p>As a street rat, you gain the following Thief abilities:</p><p><strong>Thief&rsquo;s Focus (1 Finger)</strong></p><p>When making a Sleight of Hand or Stealth check, before knowing the result, you can spend 1 Finger to increase the result by +5.</p><p><strong>Catch!</strong></p><p>You can pass an item no heavier than 6 lbs to another creature up to 20 ft away. So long as the creature can see you, is willing, and is capable, they automatically catch the item.</p><p><strong>Quaff</strong></p><p>You can drink any potion or potion-sized drink as a Minor Action instead of an Action.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Must have the Rogue Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "I3ZGJ4PULFJFHGD3"
+}

@@ -4,7 +4,7 @@
   "img": "icons/magic/control/control-influence-rally-purple.webp",
   "system": {
     "description": {
-      "value": "<p>Archetype for the @Compendium[undertaking.classes.V29B5QR22SYWVP8K]{Fighter} class.</p><p>Gladiators are combatants that fight their greatest when witnessed. They feed off of the passion and excitement of being seen in combat, and use that as motivation to push themselves further than ever before.</p>",
+      "value": "<p>Subclass for the @Compendium[undertaking.classes.V29B5QR22SYWVP8K]{Fighter} class.</p><p>Gladiators are combatants that fight their greatest when witnessed. They feed off of the passion and excitement of being seen in combat, and use that as motivation to push themselves further than ever before.</p>",
       "chat": "",
       "unidentified": ""
     },

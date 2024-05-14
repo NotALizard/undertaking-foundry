@@ -10,7 +10,7 @@
       },
       "text": {
         "format": 1,
-        "content": "<p>Stupored</p><ul><li>Stupored creatures have their minds tangled and forgetful, cannot use any class abilities, and have disadvantage on Presence (Save) checks.</li></ul>",
+        "content": "<p>Stupored</p><ul><li>Stupored creatures have their minds tangled and forgetful, cannot use any class abilities, and have disadvantage on Presence (Save) checks.</li><li>The creature cannot cast or concentrate on spells.</li></ul>",
         "markdown": ""
       },
       "_id": "JAGDEZ8BRFEO7PHI",

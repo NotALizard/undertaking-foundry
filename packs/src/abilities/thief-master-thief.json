@@ -1,0 +1,24 @@
+{
+  "name": "Master Thief",
+  "type": "ability",
+  "img": "icons/commodities/currency/coin-embossed-ruby-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Thieves are skilled in the art of the transition. The transition of one&rsquo;s attention from here to there. The transition of items of theirs to yours. The transition of here and gone.</p><p>As a master thief, you gain the following Thief abilities:</p><p><strong>Steal (1 Finger)</strong></p><p>As an action, you swipe a random item from a creature within 5 feet of you. Roll a Dexterity (Sleight of Hand) check, with advantage if they don&rsquo;t know that you&rsquo;re there, and with disadvantage if they are actively hostile toward or suspicious of you.</p><p>Regardless of the result, you steal one item from the target as determined by the GM, with higher results meaning you swipe larger or rarer items from the target&rsquo;s possession. With this ability, you cannot steal any items they are being directly held or clutched, or that are not easily detachable, nor items they do not possess.</p><p>If the creature has no separate items or equipment in their possession, or if it would better match the Steal roll&rsquo;s result, you instead break, tear, or cut off a piece of the creature to take as an item. As a result, the creature&rsquo;s natural weapons are reduced by 1 die size. This can only be done once per creature, and lasts until their next long rest.</p><p><strong>Swipe (3 Fingers)</strong></p><p>As an action, you attempt to take a held or clutched weapon or item from a creature within 5 feet of you. Roll a contested Dexterity (Sleight of Hand) check against the target. If you succeed, you take the item from their hand, and are proficient in the weapon for the next 1 minute.</p><p>If the stolen item is a weapon, you can immediately make an attack against the target using this weapon.</p><p><strong>Mug</strong></p><p>If you hit a creature as part of the Attack Action, you can use either Steal or Swipe against that creature as a Minor Action before the end of your turn.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Must have the Rogue Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "NFT3RSXOWDP7SS1X"
+}

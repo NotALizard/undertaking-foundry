@@ -1,0 +1,24 @@
+{
+  "name": "Kleptomania",
+  "type": "ability",
+  "img": "icons/equipment/hand/glove-simple-leather-brown-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>When you thieve, you feel a rush of adrenaline&mdash;a high off of the excitement of repossession, regardless of the worth of the item itself. This feeling keeps you moving, and keeps you on your toes as you make your escape.</p><p>After successfully stealing something, you can:&nbsp;</p><ul><li>Disengage as a non-action.</li><li>Until the start of your next turn, move through the space of other creatures at half speed, should you have been blocked by them instead.</li><li>For the next minute, gain temporary hit points equal to your proficiency bonus at the start of your turn.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Must have the Rogue Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "POBHBOBIFM6899DA"
+}

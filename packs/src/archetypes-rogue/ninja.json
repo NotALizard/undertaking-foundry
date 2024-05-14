@@ -4,7 +4,7 @@
   "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
   "system": {
     "description": {
-      "value": "<p>Archetype for the @Compendium[undertaking.classes.I9VDL0C1Q1G7YHVO]{Rogue} class.</p><p>Rogues have always been a secretive type, but there are those even among their ranks that they find to be even more elusive than your normal Rogue.  Ninjas are Rogues of myth that blend the subtle arts of stealth and sleight of hand with a barely understood mystic power.  They are feared for their effectiveness, awed for their power, and none, other than those that bear their title, know their ways.</p>",
+      "value": "<p>Subclass for the @Compendium[undertaking.classes.I9VDL0C1Q1G7YHVO]{Rogue} class.</p><p>Rogues have always been a secretive type, but there are those even among their ranks that they find to be even more elusive than your normal Rogue.  Ninjas are Rogues of myth that blend the subtle arts of stealth and sleight of hand with a barely understood mystic power.  They are feared for their effectiveness, awed for their power, and none, other than those that bear their title, know their ways.</p>",
       "chat": "",
       "unidentified": ""
     },

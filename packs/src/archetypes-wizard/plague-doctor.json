@@ -4,7 +4,7 @@
   "img": "icons/equipment/head/mask-plague-grey.webp",
   "system": {
     "description": {
-      "value": "Wizards that have spent their time studying sickness and the means to cure, and by consequence cause, disease and maladies take up the role of Plague Doctors.  Not always as malintented as their name may give off, these Wizards are known for their understanding of medicine and toxins. ",
+      "value": "<p>Subclass for the @Compendium[undertaking.classes.KWLWHMDBZ3NK1FAV]{Wizard} class.</p><p>Wizards that have spent their time studying sickness and the means to cure, and by consequence cause, disease and maladies take up the role of Plague Doctors.  Not always as malintented as their name may give off, these Wizards are known for their understanding of medicine and toxins. </p>",
       "chat": "",
       "unidentified": ""
     },

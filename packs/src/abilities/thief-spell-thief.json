@@ -1,0 +1,24 @@
+{
+  "name": "Spell Thief",
+  "type": "ability",
+  "img": "icons/magic/unholy/hand-marked-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p>While most thieves steal or borrow possessions, some thieves specialize in the thievery of the arcane. It turns out, many of the principles are the same: lower a target&rsquo;s defenses, move in, and take what you want. However, instead of a pocket, you&rsquo;re reaching into their soul or otherwise.</p><p>While harder to fence, spell thieves are particularly adept in combat scenarios and at taking on spellcasters&mdash;many of them are spellcasters themselves. Indeed, the art of spell thievery is sometimes cultivated in military and mercenary bands for its anti-magical talents.</p><p>As a spell thief, you gain the following Thief abilities:</p><p><strong>Strip Down (2 Fingers)</strong></p><p>As a minor action, steal a non-instantaneous magical or spell effect off of another creature that is within 5ft of you and place it on yourself. If the spell effect required concentration, you now maintain that concentration for the remainder of its duration. An effect that lasts longer than 24 hours cannot be stolen.</p><p><strong>Lost Marbles (2 Fingers)</strong></p><p>Replacing 3d6 Sneak Attack, you can steal 1 Mana from a creature, turning into a small marble-sized mote of solid Mana.</p><p>Mana Motes can be absorbed as a Minor Action to gain 1 Mana. If not used within 1 hour, the Mana Mote dissipates.</p><p><strong>Spell Steal (2 Fingers)&nbsp;</strong></p><p>As a reaction to a cantrip being cast within 30 ft of you, you can spend 2 Fingers to attempt to steal their knowledge of the cantrip. The caster must succeed on a Concentration check versus your Sneak Attack DC or else the spell fails, you temporarily learn the cantrip, and they are unable to cast the cantrip again until their next long rest. On a success, you fail to steal the cantrip and they cast the spell normally.</p><p>When you learn a cantrip from this ability, choose Intelligence, Wisdom, or Presence to be your spellcasting attribute for the cantrip. If the cantrip has verbal components, you must be able to hear the caster to learn it, likewise if it has somatic or material components you must be able to see the caster to learn it.</p><p>You forget the cantrip learned from this ability when you finish a rest or learn a different cantrip using this ability. However, each time you finish a rest, you can choose not to forget your current cantrip at the cost of not regaining one of your expended Fingers.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Must have the Rogue Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "26JCNSTKXQ52FM2O"
+}

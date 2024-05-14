@@ -1,0 +1,24 @@
+{
+  "name": "Five-Finger Discount",
+  "type": "ability",
+  "img": "icons/commodities/bones/bones-hand-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>A thief&rsquo;s hands are trained in delicate procedures, a natural quickness that allows for sneaky operations. As thieves act throughout the day, their mental and physical acuity is drained, until they inevitably botch an attempt. Thieves sometimes call these &ldquo;Thief Fingers&rdquo; or simply Fingers (with a capital F), referring to how many more tricks the thief can pull off before failing.</p><p>You have 5 &ldquo;Fingers&rdquo; (regardless of how many <em>fingers</em> you have) which represent the deftness of your most thieving faculties. They can be spent to take certain Thief actions.</p><p>Fingers are regained at the end of a rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "given"
+    },
+    "requirements": "Have the Rogue Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "EE5KJBK43K69MTT5"
+}
