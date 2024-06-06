@@ -66,6 +66,12 @@ input.short{
 .item-row input.right{
     text-align: right;
 }
+.row-input {
+    display: flex;
+    flex: 1;
+    padding: 0 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
 hr.blue {
     border: 0;
     display: block;
@@ -977,7 +983,8 @@ a.damage-control.delete-damage {
     white-space: nowrap;
 }
 .item-row {
-    margin-bottom:4px;
+    margin: 4px 0;
+    column-gap: 20px;
 }
 .item-roll-container.attack{
     font-size: 28px;
@@ -988,6 +995,17 @@ a.damage-control.delete-damage {
     padding-left: 4px;
     flex: 1;
     display: flex;
+}
+.item-count {
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+.item-count-change.increase {
+    margin-bottom: -6px;
+}
+.item-count-change.decrease {
+    margin-top: -6px;
 }
 
 .config-container {

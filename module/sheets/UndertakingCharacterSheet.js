@@ -69,9 +69,14 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     context.casters = context.classes.filter(function(item){ return item.system.categorization.spellcaster.progression && item.system.categorization.spellcaster.progression != 'none'});
     let carryLoad = 0;
     for(let e of context.equipment){
-      carryLoad += parseInt(e.system.weight);
+      let weight = parseInt(e.system.weight);
+      if(isNaN(weight)) weight = 0;
+      let quantity = parseInt(e.system.quantity);
+      if(isNaN(quantity)) quantity = 0;
+      carryLoad += (weight*quantity);
     }
     context.carryLoad = carryLoad;
+    context.isOverCarryCapacity = (carryLoad > context.actor.system.stats.carryCapacity);
 
     console.log(context);
     return context;
@@ -286,6 +291,9 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     });
     html.find(".item-delete").on("click", event => {
       this._onItemDelete(event);
+    });
+    html.find(".item-count-change").on("click", event => {
+      this._onItemChangeQuantity(event);
     });
     html.find(".item-roll.attack").on("click", event => {
       this._onItemRoll(event);
@@ -568,6 +576,20 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     let field = element.dataset.field;
 
     return item.update({[field]: element.value});
+  }
+
+  _onItemChangeQuantity(event){
+    event.preventDefault();
+    let element = event.currentTarget;
+    let delta = (element.classList.contains('increase')) ? 1 : -1;
+    let itemId = element.closest(".item").dataset.itemId;
+    let item = this.actor.items.get(itemId);
+    let field = 'system.quantity';
+    let value = parseInt(item.system.quantity);
+    if(isNaN(value)) value = 0;
+    value += delta;
+    if(value < 0) value = 0;
+    return item.update({[field]: value});
   }
 
   async _onItemRoll(event){

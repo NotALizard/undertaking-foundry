@@ -3,6 +3,13 @@
     <div class="item-name equipment">
         <a class="item-open"><p>{{name}}</p></a>
     </div>
+    <div class="item-count equipment fcol">
+        <a class="item-count-change increase"><i class="fa-solid fa-caret-up"></i></a>                    
+        <label class="item-quantity" title="{{ localize "undertaking.Quantity" }}">{{system.quantity}}</label>
+        {{#ifCond system.quantity '>' 0}}
+            <a class="item-count-change decrease"><i class="fa-solid fa-caret-down"></i></a> 
+        {{/ifCond}}
+    </div>
     <div class="item-buttons equipment fcol">
         {{#ifCond lockEdit '==' 0}}                        
             <a class="item-delete" title="{{ localize "undertaking.DeleteItem" }}">

@@ -319,7 +319,10 @@
                             <div class="equip-col">
                                 <div class="list-container equipment item-list fcol">
                                     <div class="list-header equipment frow">
-                                        <label>{{ localize "undertaking.Equipment" }} ({{carryLoad}} lbs.)</label>
+                                        <label>{{ localize "undertaking.Equipment" }} ({{carryLoad}} lbs.)
+                                        {{#ifCond isOverCarryCapacity '==' true}}
+                                            <i class="fa-solid fa-triangle-exclamation red" title="{{localize "undertaking.OverCarryCapacity"}}" style="margin-left: 4px;"></i>
+                                        {{/ifCond}}</label>
                                         {{#ifCond actor.system.details.editLock '==' 1}}
                                             <a class="toggle-lock" title="{{ localize "undertaking.UnlockEdit" }}"><i class="fas fa-lock"></i></a>
                                         {{/ifCond}}

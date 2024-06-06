@@ -62,6 +62,8 @@
     "AddAbility": "Add Ability",
     "AddAttack": "Add Attack",
     "DeleteItem": "Delete Item",
+    "Quantity": "Quantity",
+    "OverCarryCapacity": "You are over your Carry Capacity",
     "Weight": "Weight",
     "PoundsAbbrev": "lbs",
     "Value": "Value",
