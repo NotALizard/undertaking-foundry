@@ -24,6 +24,7 @@ export default class UndertakingActor extends Actor {
       attribute.mod = Math.floor((attribute.value - 10) / 2);
     }
     system.stats.init.total = system.attributes.dex.mod;
+    system.stats.mana.max = system.stats.mana.max ? system.stats.mana.max : 0;
   }
 
   _prepareCharacterData(actorData){

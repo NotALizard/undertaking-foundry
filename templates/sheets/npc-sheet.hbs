@@ -74,31 +74,71 @@
                             </div>
                         {{/each}}
                     </div>
-                    <div class="hp-death-container fcol">
-                        <div class="hp-container frow {{#ifCond actor.system.stats.hp.value '==' 0}}downed{{/ifCond}}">
-                            <div class="hp-current-col fcol">
-                                <label class="hp-current-label">{{ localize "undertaking.HitPoints" }}</label>
-                                <input class="hp-big" name="system.stats.hp.value" type="number" value="{{actor.system.stats.hp.value}}" placeholder="0" data-dtype="Number" />
-                                <input class="hp-small" name="system.stats.hp.temp" type="number" value="{{actor.system.stats.hp.temp}}" placeholder="{{ localize "undertaking.TempHpPlaceholder" }}" title="{{ localize "undertaking.TempHpTip" }}" data-dtype="Number" />
+                    <div class="fcol">
+                        <div class="npc-row-1 frow" style="margin-bottom: 4px">
+                            <div class="hp-death-container fcol">
+                                <div class="hp-container frow {{#ifCond actor.system.stats.hp.value '==' 0}}downed{{/ifCond}}">
+                                    <div class="hp-current-col fcol">
+                                        <label class="hp-current-label">{{ localize "undertaking.HitPoints" }}</label>
+                                        <input class="hp-big" name="system.stats.hp.value" type="number" value="{{actor.system.stats.hp.value}}" placeholder="0" data-dtype="Number" />
+                                        <input class="hp-small" name="system.stats.hp.temp" type="number" value="{{actor.system.stats.hp.temp}}" placeholder="{{ localize "undertaking.TempHpPlaceholder" }}" title="{{ localize "undertaking.TempHpTip" }}" data-dtype="Number" />
+                                    </div>
+                                    <div class="hp-divider"></div>
+                                    <div class="hp-max-col fcol">
+                                        <label class="hp-current-label">{{ localize "undertaking.Max" }}</label>
+                                        <input class="hp-big" name="system.stats.hp.max" type="number" value="{{actor.system.stats.hp.max}}" placeholder="0" data-dtype="Number" />
+                                        <input class="hp-small" name="system.stats.hp.tempmax" type="number" value="{{actor.system.stats.hp.tempmax}}" placeholder="{{ localize "undertaking.TempMaxHpPlaceholder" }}" title="{{ localize "undertaking.TempMaxHpTip" }}" data-dtype="Number" />
+                                    </div>
+                                </div>
                             </div>
-                            <div class="hp-divider"></div>
-                            <div class="hp-max-col fcol">
-                                <label class="hp-current-label">{{ localize "undertaking.Max" }}</label>
-                                <input class="hp-big" name="system.stats.hp.max" type="number" value="{{actor.system.stats.hp.max}}" placeholder="0" data-dtype="Number" />
-                                <input class="hp-small" name="system.stats.hp.tempmax" type="number" value="{{actor.system.stats.hp.tempmax}}" placeholder="{{ localize "undertaking.TempMaxHpPlaceholder" }}" title="{{ localize "undertaking.TempMaxHpTip" }}" data-dtype="Number" />
+                            <div class="ac-container fcol">
+                                <div class="total-ac">
+                                    <label>{{ localize "undertaking.ArmorClass" }}</label>
+                                    <input class="hp-big" name="system.stats.ac.total" type="number" value="{{actor.system.stats.ac.total}}" data-dtype="Number" />
+                                </div>
+                            </div>
+                            <div class="ac-container fcol">
+                                <div class="total-ac">
+                                    <label>{{ localize "undertaking.ProfBonus" }}</label>
+                                    <input class="hp-big" name="system.stats.profBonus" type="number" value="{{actor.system.stats.profBonus}}" data-dtype="Number" />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="ac-container fcol">
-                        <div class="total-ac">
-                            <label>{{ localize "undertaking.ArmorClass" }}</label>
-                            <input class="hp-big" name="system.stats.ac.total" type="number" value="{{actor.system.stats.ac.total}}" data-dtype="Number" />
-                        </div>
-                    </div>
-                    <div class="ac-container fcol">
-                        <div class="total-ac">
-                            <label>{{ localize "undertaking.ProfBonus" }}</label>
-                            <input class="hp-big" name="system.stats.profBonus" type="number" value="{{actor.system.stats.profBonus}}" data-dtype="Number" />
+
+                        <div class="npc-row-2 frow" style="margin-bottom: 4px">
+                            <div class="hp-death-container fcol">
+                                <label>{{ localize "undertaking.Mana" }}</label>
+                                    <div class="mana-vals frow">
+                                    <input class="mana-val" id="mana-val" name="system.stats.mana.value" type="number" value="{{actor.system.stats.mana.value}}" placeholder="0" data-dtype="Number" />
+                                    <label class="mana-val divider">/</label>
+                                    <input class="mana-val" id="mana-val" name="system.stats.mana.max" type="number" value="{{actor.system.stats.mana.max}}" placeholder="0" data-dtype="Number" />
+                                </div>
+                            </div>
+
+                            <div class="res-container fcol" style="margin-left: 5px; width: 100px;">
+                                <div class="res-border fcol">
+                                    <div class="res-values frow">
+                                        <input class="res-val" name="system.resources.01.value" type="number" value="{{actor.system.resources.01.value}}" placeholder="0" data-dtype="Number" />
+                                        <label>/</label>
+                                        <input class="res-max" name="system.resources.01.max" type="number" value="{{actor.system.resources.01.max}}" placeholder="0" data-dtype="Number" />
+                                    </div>
+                                </div>
+                                <div class="res-label frow">
+                                    <input name="system.resources.01.label" type="text" value="{{actor.system.resources.01.label}}" data-dtype="String" placeholder="Resource"/>
+                                </div>
+                            </div>
+                            <div class="res-container fcol" style="margin-left: 5px; width: 100px;">
+                                <div class="res-border fcol">
+                                    <div class="res-values frow">
+                                        <input class="res-val" name="system.resources.02.value" type="number" value="{{actor.system.resources.02.value}}" placeholder="0" data-dtype="Number" />
+                                        <label>/</label>
+                                        <input class="res-max" name="system.resources.02.max" type="number" value="{{actor.system.resources.02.max}}" placeholder="0" data-dtype="Number" />
+                                    </div>
+                                </div>
+                                <div class="res-label frow">
+                                    <input name="system.resources.02.label" type="text" value="{{actor.system.resources.02.label}}" data-dtype="String" placeholder="Resource"/>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -110,7 +150,7 @@
             </div>
         </div>
         <div class="tab active character-overview" data-group="primary" data-tab="abilities">
-            <div class="abilities-row frow">
+            <div class="abilities-row frow fill-space">
                 <div class="list-container abilities item-list fcol fill-space">
                     <div class="list-header abilities frow addable">
                         <label>{{ localize "undertaking.Abilities" }}</label>
@@ -132,7 +172,7 @@
                 </div>
             </div>
 
-            <div class="atk-row frow fill-space">
+            <div class="abilities-row frow fill-space">
                 <div class="list-container attacks item-list fcol fill-space">
                     <div class="list-header attacks frow">
                         <label>{{ localize "undertaking.Attacks" }}</label>
@@ -148,6 +188,27 @@
                         <div class="scroll-area attacks">
                             {{#each attacks as |attack id|}}
                             {{> "systems/undertaking/templates/partials/character/attack-card.hbs" attack lockEdit=../actor.system.details.editLock actor=..}}
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="abilities-row frow fill-space">
+                <div class="list-container spells item-list fcol fill-space">
+                    <div class="list-header spells frow">
+                        <label>{{ localize "undertaking.Spells" }}</label>
+                        {{#ifCond actor.system.details.editLock '==' 1}}
+                            <a class="toggle-lock" title="{{ localize "undertaking.UnlockEdit" }}"><i class="fas fa-lock"></i></a>
+                        {{/ifCond}}
+                        {{#ifCond actor.system.details.editLock '==' 0}}
+                            <a class="toggle-lock" title="{{ localize "undertaking.LockEdit" }}"><i class="fas fa-lock-open"></i></a>
+                        {{/ifCond}}
+                        <a class="item-create" data-type="spell" title="{{ localize "undertaking.AddItem" }}"><i class="fas fa-plus"></i></a>
+                    </div>
+                    <div class="scroll-container fill-space">
+                        <div class="scroll-area spells">
+                            {{#each spells as |spell id|}}
+                            {{> "systems/undertaking/templates/partials/character/spell-card.hbs" spell lockEdit=../actor.system.details.editLock}}
                             {{/each}}
                         </div>
                     </div>

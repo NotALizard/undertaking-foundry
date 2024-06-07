@@ -58,10 +58,16 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     context.abilities = context.items.filter(function (item) { return item.type == "ability"});
     context.languages = context.items.filter(function (item) { return item.type == "language"});
 
-    context.cantrips = context.items.filter(function (item) { return item.type == "spell" && item.system.level == 0});
-    context.spells = context.items.filter(function (item) { return item.type == "spell" && item.system.level != 0});
+    if(actor.type == 'npc'){
+      context.spells = context.items.filter(function (item) { return item.type == "spell"});
+      context.cantrips = [];
+    }
+    else{
+      context.cantrips = context.items.filter(function (item) { return item.type == "spell" && item.system.level == 0});
+      context.spells = context.items.filter(function (item) { return item.type == "spell" && item.system.level != 0});
+    }
     const filter = context.actor.system.details.classFilter;
-    if(filter != 'all'){
+    if(filter && filter != 'all'){
       context.cantrips = context.cantrips.filter(function (item) { return item.system.classIdentifier == filter});
       context.spells = context.spells.filter(function (item) { return item.system.classIdentifier == filter});
     }
@@ -533,6 +539,8 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     let element = event.currentTarget;
 
     let name;
+    let type = element.dataset.type;
+    let extra = null;
     switch(element.dataset.type){
       case 'ability':
         name = 'New Ability';
@@ -540,14 +548,31 @@ export default class UndertakingCharacterSheet extends ActorSheet {
       case 'customAttack':
         name = 'New Attack';
         break;
+      case 'class':
+        name = 'New Class';
+        break;
+      case 'archetype':
+        name = 'New Archetype';
+        break;
+      case 'cantrip':
+        name = 'New Cantrip';
+        type = 'spell';
+        extra = {level: 0};
+        break;
+      case 'spell':
+        name = 'New Spell';
+        break;
       default:
         name = "New Item";
         break;
     }
     let itemData = {
       name: name,
-      type: element.dataset.type
+      type: type
     };
+    if(extra){
+      itemData.system = extra;
+    }
 
     return this.actor.createEmbeddedDocuments("Item", [itemData]);
   }
