@@ -126,7 +126,7 @@
             },
             "shortRestGain": {
               "bonus": 0,
-              "divisor": 4
+              "divisor": 2
             }
           },
           "restDice":{

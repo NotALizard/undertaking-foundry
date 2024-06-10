@@ -39,8 +39,11 @@ export default class UndertakingActor extends Actor {
     let level = 0;
     let casterLevel = 0;
     let maxMana = 0;
+    //First, calculate the overall level of the character, used to determine which growth bracket they are in
     for(let c of classes){
       level += c.system.levels;
+    }
+    for(let c of classes){
       let mage = 0;
       try{
         switch(c.system.categorization.spellcaster.progression){
@@ -67,6 +70,10 @@ export default class UndertakingActor extends Actor {
         mana += c.system.manaAtFirstLevel;
         let remainingLevels = c.system.levels - 1;
         mana += c.system.manaPerLevel*remainingLevels;
+        //Growth Mana
+        if(mage > 0 && level >= 11){
+          mana += c.system.levels;
+        }
       }
       maxMana += mana;
     }
@@ -74,7 +81,7 @@ export default class UndertakingActor extends Actor {
 
     //calc spellcaster stats
     system.stats.mana.max = maxMana + system.stats.mana.bonus;
-    let divisor = Number.isInteger(system.stats.mana.shortRestGain.divisor) ? system.stats.mana.shortRestGain.divisor : 4;
+    let divisor = Number.isInteger(system.stats.mana.shortRestGain.divisor) ? system.stats.mana.shortRestGain.divisor : 2;
     system.stats.mana.shortRestGain.value = Math.ceil(casterLevel/divisor) + system.stats.mana.shortRestGain.bonus;
     let chargeLimit = 0;
     if(false){
