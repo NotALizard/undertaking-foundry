@@ -13,7 +13,8 @@
         "price": {
             "value": "1",
             "denomination": "gp"
-        }
+        },
+        "rarity": ""
     },
     "_id": "BBUT1110082UFVGK"
 }

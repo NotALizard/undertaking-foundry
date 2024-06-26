@@ -13,7 +13,8 @@
         "price": {
             "value": "5",
             "denomination": "gp"
-        }
+        },
+        "rarity": ""
     },
     "_id": "TP360O8J6NS78EC9"
 }

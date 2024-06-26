@@ -33,7 +33,7 @@
             "condition": ""
         },
         "duration": {
-            "value": "1",
+            "value": "10",
             "units": "minute"
         },
         "range": {

@@ -13,7 +13,8 @@
         "price": {
             "value": "50",
             "denomination": "gp"
-        }
+        },
+        "rarity": "Uncommon"
     },
     "_id": "FKOU9MFAC96IYL2D"
 }

@@ -8,10 +8,10 @@ def doWork():
             w = {
                 "name": line[1],
                 "type": "equipment",
-                "img": line[6],
+                "img": line[7],
                 "system": {
                     "description": {
-                        "value": line[5],
+                        "value": line[6],
                         "chat": "",
                         "unidentified": ""
                     },
@@ -20,7 +20,8 @@ def doWork():
                     "price": {
                         "value": line[2],
                         "denomination": line[3]
-                    }
+                    },
+                    "rarity": line[5]
                 },
                 "_id": line[0]
             }

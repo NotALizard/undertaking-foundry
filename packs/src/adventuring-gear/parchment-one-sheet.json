@@ -13,7 +13,8 @@
         "price": {
             "value": "1",
             "denomination": "sp"
-        }
+        },
+        "rarity": ""
     },
     "_id": "POS6K3GG6NQ7YHIZ"
 }

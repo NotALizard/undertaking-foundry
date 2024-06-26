@@ -4,7 +4,7 @@
     "img": "icons/magic/earth/strike-fist-stone-gray.webp",
     "system": {
         "description": {
-            "value": "<p>This spell hardens the fists of a single target touched.  For as long as this spell is active, the target is treated as if they have proficiency in unarmed strikes, and the damage of their unarmed strikes increase.  <br>&nbsp;&nbsp;&nbsp;&nbsp;If their damage was a base of 1, it is now 1d4.  If the damage for their unarmed strikes is already a die (such as 1d4, 1d8, etc) then that damage is one step larger.  (Refer to the 'Steps in Damage Size Table' in \"Chapter 6: How to Play\")</p>",
+            "value": "<p>This spell hardens the fists, claws, or other natural weapons of the target creature.  For as long as this spell is active, the creature has proficiency in unarmed strikes, and the damage of their unarmed and natural weapon strikes increases by one die size.  (Refer to the \u2018Steps in Damage Size Table\u2019 in \u201cChapter 6: How to Play\u201d)</p>",
             "chat": "",
             "unidentified": ""
         },
@@ -17,7 +17,7 @@
             "verbal": true,
             "material": false,
             "ritual": false,
-            "concentration": true
+            "concentration": false
         },
         "materials": {
             "value": "",

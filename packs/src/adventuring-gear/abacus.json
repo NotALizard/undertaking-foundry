@@ -13,7 +13,8 @@
         "price": {
             "value": "2",
             "denomination": "gp"
-        }
+        },
+        "rarity": ""
     },
     "_id": "DYG18TH2O1B3DXML"
 }

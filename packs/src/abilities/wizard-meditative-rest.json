@@ -4,21 +4,21 @@
   "img": "icons/sundries/survival/bedroll-blue-red.webp",
   "system": {
     "description": {
-      "value": "<p>Whenever a Wizard that has this ability takes a short rest, they regain Mana equal to their caster level divided by 2, instead of the normal divided by 4.</p>",
+      "value": "<p>Whenever a Wizard takes a rest, they can also spend Rest Dice to regain Mana instead of hit points. Do not add your Constitution modifier to rest dice spent in this way.</p>",
       "chat": "",
       "unidentified": ""
     },
     "source": "Core Rules",
     "type": {
       "value": "class",
-      "subtype": "novice"
+      "subtype": "given"
     },
-    "requirements": "Must have the Wizard Starter Abilities",
+    "requirements": "Must have a Wizard Adept Ability",
     "recharge": {
       "value": null,
       "charged": false
     }
   },
   "folder": null,
-  "_id": "L4TCBW3PWUZVSULN"
+  "_id": "SHD2ABFLNZ9CNNII"
 }

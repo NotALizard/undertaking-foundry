@@ -13,7 +13,8 @@
         "price": {
             "value": "2",
             "denomination": "sp"
-        }
+        },
+        "rarity": ""
     },
     "_id": "NQIM8Y0A7O366BTY"
 }

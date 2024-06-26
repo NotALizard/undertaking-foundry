@@ -13,7 +13,8 @@
         "price": {
             "value": "1",
             "denomination": "cp"
-        }
+        },
+        "rarity": ""
     },
     "_id": "K48XT37F5817E5AP"
 }

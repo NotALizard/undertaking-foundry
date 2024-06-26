@@ -1,0 +1,62 @@
+{
+    "name": "Scan",
+    "type": "spell",
+    "img": "icons/magic/perception/hand-eye-fire-blue.webp",
+    "system": {
+        "description": {
+            "value": "<p>Interacting with and inspecting the target, as well as mumbling some divination chants, you can determine information about an object or creature.</p><ul><li><strong>Objects:</strong> Choose one of the following:</li><ul><li>If the object is a magic item, and if so immediately make an identification check with a +5 to the result to identify the magic item.</li><ul><li>This effect cannot be applied if the mana cost of this spell is reduced to 0.</li></ul><li>Add +5 to your next Intelligence (Investigation) check to investigate the object within the next minute.</li><li>You learn what primary material the object or a specific part of the object is made of.</li></ul><li><strong>Creatures:</strong> Choose one of the following:</li><ul><li>Learn of one spell effect or condition currently affecting the creature. This cannot determine specific diseases afflicting the creature.</li><li>You learn the target&rsquo;s creature type, highest and lowest attributes, and its highest skill check bonus.</li><li>You learn either a weakness, resistance, or immunity, that the creature has. If they have none of those, you will learn one from another category instead.</li></ul></ul><p>Charge: This is a spell that can be Charged, modifying its effects. Costs and effects are as follow:</p><ul><li>1 Mana: When identifying a magic item, increase the bonus from +5 to +10.</li></ul>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "1",
+        "charge": true,
+        "school": "div",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": false,
+            "ritual": true,
+            "concentration": false
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "range": {
+            "value": "0",
+            "long": null,
+            "units": "touch"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "object"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "E5JHRIBZ22X07BP7"
+}

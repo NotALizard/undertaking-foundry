@@ -13,7 +13,8 @@
         "price": {
             "value": "20",
             "denomination": "gp"
-        }
+        },
+        "rarity": ""
     },
     "_id": "IFTTJ6EFPIZ8K5L2"
 }

@@ -13,7 +13,8 @@
         "price": {
             "value": "1",
             "denomination": "cp"
-        }
+        },
+        "rarity": ""
     },
     "_id": "MLOULSA3II9OXD81"
 }

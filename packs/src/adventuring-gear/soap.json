@@ -13,7 +13,8 @@
         "price": {
             "value": "2",
             "denomination": "cp"
-        }
+        },
+        "rarity": ""
     },
     "_id": "REXP2D0F955NBGCF"
 }

@@ -13,7 +13,8 @@
         "price": {
             "value": "1000",
             "denomination": "gp"
-        }
+        },
+        "rarity": ""
     },
     "_id": "6YBOHFOANZ001LO5"
 }

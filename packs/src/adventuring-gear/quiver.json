@@ -13,7 +13,8 @@
         "price": {
             "value": "1",
             "denomination": "gp"
-        }
+        },
+        "rarity": ""
     },
     "_id": "EZJ5B98OXWP48F3V"
 }

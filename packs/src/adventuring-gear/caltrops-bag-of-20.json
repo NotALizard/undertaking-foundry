@@ -13,7 +13,8 @@
         "price": {
             "value": "1",
             "denomination": "gp"
-        }
+        },
+        "rarity": ""
     },
     "_id": "MG4SALOHXG2Q5SF9"
 }

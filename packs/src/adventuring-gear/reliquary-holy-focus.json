@@ -13,7 +13,8 @@
         "price": {
             "value": "5",
             "denomination": "gp"
-        }
+        },
+        "rarity": ""
     },
     "_id": "QSO4ZBY0LNOX22B4"
 }

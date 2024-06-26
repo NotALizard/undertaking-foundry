@@ -1,0 +1,24 @@
+{
+  "name": "Efforless Cantrips",
+  "type": "ability",
+  "img": "icons/magic/fire/flame-burning-hand-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>Whenever you Charge a cantrip, reduce its total mana cost by 1 (minimum 0). Use the un-reduced mana cost when checking if it satisfies the limit for how much mana you can spend on a single spell.</p><p>In addition, when a creature triggers an attack of opportunity from you, you can use your reaction to cast a cantrip at the creature instead of making an opportunity attack. The cantrip must have a casting time of 1 action or less and must only target that creature.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "adept"
+    },
+    "requirements": "6th level overall and 3rd level Wizard",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "ZG3FXZY4IZX4LH6N"
+}

@@ -4,7 +4,7 @@
     "img": "icons/sundries/books/book-symbol-triangle-silver-brown.webp",
     "system": {
         "description": {
-            "value": "A leather bound tome with 100 blank vellum pages that are suitable for recording spells.  An essential for wizards.  More resilient to heat, water, wear and tear than those often made by Wizards on their own, but only by so much.",
+            "value": "A leather bound tome with 100 blank vellum pages that are suitable for recording spells.  An essential for wizards.  More resilient to heat, water, wear and tear than those often made by Wizards on their own.",
             "chat": "",
             "unidentified": ""
         },
@@ -13,7 +13,8 @@
         "price": {
             "value": "50",
             "denomination": "gp"
-        }
+        },
+        "rarity": ""
     },
     "_id": "V22FF305SXF7DYLF"
 }

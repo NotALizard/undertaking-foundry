@@ -1,0 +1,24 @@
+{
+  "name": "Visceral Casting",
+  "type": "ability",
+  "img": "icons/magic/unholy/strike-body-life-soul-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>What&rsquo;s difficult to learn through teaching or reading, is that as your experience grows, sometimes the best casts come from more than just impeccable pronunciation and precision wrist flicks. With a bit of emotion, instinct, and brute forcing, you&rsquo;ve found the theoretical limits of spells to be more flexible than they appear.</p><p>When you cast a spell, you have access to additional charge options depending on its spell components.</p><p>If the spell has a <strong>Somatic</strong> component, you can choose to meet that component with at least two hands to gain access to the following charge options:</p><ul><li>1 Mana: Increase one of the spell&rsquo;s damage amounts by either 2d6 or 1d12.</li><li>1 Mana: Extend the range of a non-touch spell by 15ft.</li><li>1 Mana: Extend the range of a touch spell by 5ft.</li></ul><p>If the spell has a <strong>Verbal</strong> component, you can choose to meet that component by shouting its incantation to gain access to the following charge options:</p><ul><li>2 Mana: Increase the spell save DC by your proficiency bonus.</li><li>2 Mana: Expand the spell&rsquo;s radius by 5ft if it has a radius.</li><li>X Mana: Target two creatures within 5ft of each other instead of one if it is a single-target spell. The charge cost is equal to half of the spell&rsquo;s mana cost.</li></ul><p>If the spell has a <strong>Material</strong> component that you are meeting using a spellcasting focus, but you supply the spell with material components anyway, then you gain access to the following charge option:</p><ul><li>0 Mana: Every listed material component is consumed by the casting. As a result, reduce the casting time of the spell:&nbsp;</li><ul><li>If the casting time is greater than 1 minute, reduce it by 1 minute.</li><li>If the casting time is 1 minute or less but greater than an Action, cast it as an Action.</li><li>If the casting time is an Action, cast it as a Minor Action.</li><li>If the casting time is a Minor Action, cast it as a Reaction.</li></ul></ul><p>If the spell has either a Verbal or Somatic component, you gain access to the following charge option:</p><ul><li>1 Mana: The spell no longer requires a Verbal component. However, spells that amplify a verbal component still require your voice.</li><li>1 Mana: The spell no longer requires a Somatic component. Spells with a range of touch can be applied to creatures within 5ft without having to touch them.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "adept"
+    },
+    "requirements": "6th level overall and 3rd level Wizard",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "DNKUZOHBFP8JQ80N"
+}

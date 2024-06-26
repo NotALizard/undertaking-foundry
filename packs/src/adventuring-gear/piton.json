@@ -13,7 +13,8 @@
         "price": {
             "value": "5",
             "denomination": "cp"
-        }
+        },
+        "rarity": ""
     },
     "_id": "PSWYLF5UIWE5IFJE"
 }

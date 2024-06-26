@@ -13,7 +13,8 @@
         "price": {
             "value": "1",
             "denomination": "cp"
-        }
+        },
+        "rarity": ""
     },
     "_id": "F34U8M0Y1XIIM1OM"
 }

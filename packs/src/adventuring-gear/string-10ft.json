@@ -13,7 +13,8 @@
         "price": {
             "value": "1",
             "denomination": "sp"
-        }
+        },
+        "rarity": ""
     },
     "_id": "D1TH4OF8ME03A4RP"
 }

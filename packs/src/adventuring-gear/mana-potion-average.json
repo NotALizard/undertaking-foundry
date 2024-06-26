@@ -1,10 +1,10 @@
 {
-    "name": "Healing Potion (Superior)",
+    "name": "Mana Potion (Average)",
     "type": "equipment",
-    "img": "icons/consumables/potions/bottle-round-corked-orante-red.webp",
+    "img": "icons/consumables/potions/bottle-corked-blue.webp",
     "system": {
         "description": {
-            "value": "A creature that ingests this potion regains 8d4 + 8 hit points.  Drinking or administering this potion takes an action.",
+            "value": "A creature that ingests this potion regains 2d4 + 2 mana.  Drinking or administering this potion takes an action.",
             "chat": "",
             "unidentified": ""
         },
@@ -16,5 +16,5 @@
         },
         "rarity": "Very Rare"
     },
-    "_id": "3W0W8O0T7IVQ0YCX"
+    "_id": "2KQ57KY8FEJI37XV"
 }

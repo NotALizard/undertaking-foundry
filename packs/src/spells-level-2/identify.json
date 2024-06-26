@@ -4,12 +4,12 @@
     "img": "icons/skills/trades/academics-investigation-study-blue.webp",
     "system": {
         "description": {
-            "value": "<p>Touching one object throughout the casting of this spell, you attempt to learn the magical secrets that it holds.  If it is a magic item or some other magic-imbued object, you learn its properties and how to use them.  As well as whether it requires attunement to use, and how many charges it has, if any.  You also learn whether any spells are affecting the item and what they are.  If the item was created by a spell, you learn which spell was used to create it.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Should you touch a creature instead throughout this casting, you learn what spells, if any, that are currently affecting it. </p>",
+            "value": "<p>Using magic to pull back the veil on one object or creature, you learn the magical secrets that it holds.</p><ul><li><strong>Objects:</strong> Learn all of the following:</li><ul><li><em>Identify Magic Item:</em> If the object is a magic item, and if so, all of its magical properties, rules, and elements, how many charges it uses, if it requires attunement, and so on.</li><li><em>Identify Spell Effects: </em>Whether any spells or magical effects are affecting the object and what they are.</li><li><em>Identify Magic Origin: </em>If the object was created by a spell and which spell was used to create it.</li></ul></ul><ul><li><strong>Creatures:</strong> Learn all of the following:<ul><li><em>Identify Conditions: </em>Whether any spells or magical effects are affecting the creature and what they are.</li><li><em>Identify Creature: </em>The creature&rsquo;s type and core attributes.</li><li><em>Identify Durability: </em>The creature&rsquo;s weaknesses, resistances, and immunities.</li><li><em>Identify Attunement: </em>Which items on their person they are attuned to, but not what they are capable of.</li></ul></li></ul>",
             "chat": "",
             "unidentified": ""
         },
         "source": "Core Rules",
-        "level": "1",
+        "level": "2",
         "charge": false,
         "school": "div",
         "components": {
@@ -28,7 +28,7 @@
         "attribute": "spell",
         "actionType": "util",
         "activation": {
-            "type": "action",
+            "type": "minute",
             "cost": "1",
             "condition": ""
         },
@@ -37,9 +37,9 @@
             "units": "inst"
         },
         "range": {
-            "value": "0",
+            "value": "5",
             "long": null,
-            "units": "touch"
+            "units": "ft"
         },
         "target": {
             "value": "1",

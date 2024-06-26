@@ -13,7 +13,8 @@
         "price": {
             "value": "2",
             "denomination": "sp"
-        }
+        },
+        "rarity": ""
     },
     "_id": "S4FPLGGKC25XDSH9"
 }

@@ -1,10 +1,10 @@
 {
-    "name": "Healing Potion (Supreme)",
+    "name": "Mana Potion (Greater)",
     "type": "equipment",
-    "img": "icons/consumables/potions/potion-tube-corked-bat-gold-red.webp",
+    "img": "icons/consumables/potions/bottle-round-corked-blue.webp",
     "system": {
         "description": {
-            "value": "A creature that ingests this potion regains 10d4 + 20 hit points.  Drinking or administering this potion takes an action.",
+            "value": "A creature that ingests this potion regains 4d4 + 4 mana.  Drinking or administering this potion takes an action.",
             "chat": "",
             "unidentified": ""
         },
@@ -16,5 +16,5 @@
         },
         "rarity": "Legendary"
     },
-    "_id": "ZY73SPCD77XBFGIV"
+    "_id": "BE5Q2VKJ34Q4NAH6"
 }

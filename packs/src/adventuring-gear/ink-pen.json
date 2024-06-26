@@ -13,7 +13,8 @@
         "price": {
             "value": "1",
             "denomination": "sp"
-        }
+        },
+        "rarity": ""
     },
     "_id": "W9VPHRBPDRWML49S"
 }

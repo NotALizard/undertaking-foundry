@@ -13,7 +13,8 @@
         "price": {
             "value": "200",
             "denomination": "gp"
-        }
+        },
+        "rarity": ""
     },
     "_id": "ZP24KTV8Z3QA1DIU"
 }

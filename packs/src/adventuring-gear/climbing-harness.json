@@ -13,7 +13,8 @@
         "price": {
             "value": "5",
             "denomination": "gp"
-        }
+        },
+        "rarity": ""
     },
     "_id": "YT521W4STH2LPU6I"
 }
