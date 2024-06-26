@@ -232,7 +232,7 @@ Hooks.once("init",function(){
           mod = sheet.actor.system.attributes.wis.mod;
           break;
         case "pre":
-          mod = sheet.actor.system.attributes.str.mod;
+          mod = sheet.actor.system.attributes.pre.mod;
           break;
       }
       if(aType == "msak" || aType == "rsak" || item.system.proficient){
@@ -302,7 +302,7 @@ Hooks.once("init",function(){
             mod = sheet.actor.system.attributes.wis.mod;
             break;
           case "pre":
-            mod = sheet.actor.system.attributes.str.mod;
+            mod = sheet.actor.system.attributes.pre.mod;
             break;
         }
         prof = sheet.actor.system.stats.profBonus;
@@ -350,7 +350,7 @@ Hooks.once("init",function(){
         mod = sheet.actor.system.attributes.wis.mod;
         break;
       case "pre":
-        mod = sheet.actor.system.attributes.str.mod;
+        mod = sheet.actor.system.attributes.pre.mod;
         break;
     }
 
