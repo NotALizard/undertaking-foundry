@@ -84,6 +84,9 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     context.carryLoad = carryLoad;
     context.isOverCarryCapacity = (carryLoad > context.actor.system.stats.carryCapacity);
 
+    this.quantityDeltas = [];
+    this.quantityTimeout = null;
+
     console.log(context);
     return context;
   }
@@ -605,16 +608,49 @@ export default class UndertakingCharacterSheet extends ActorSheet {
 
   _onItemChangeQuantity(event){
     event.preventDefault();
+    if(this.quantityTimeout){
+      clearTimeout(this.quantityTimeout);
+    }
+    
     let element = event.currentTarget;
-    let delta = (element.classList.contains('increase')) ? 1 : -1;
+    let sign = (element.classList.contains('increase')) ? 1 : -1;
     let itemId = element.closest(".item").dataset.itemId;
     let item = this.actor.items.get(itemId);
-    let field = 'system.quantity';
+
+    let deltaObj = { id: itemId, delta: 0 };
+    let existing = this.quantityDeltas.filter(function(item){ return item.id == itemId});
+    if(existing.length){
+      deltaObj = existing[0];
+    }
+    deltaObj.delta += sign;
     let value = parseInt(item.system.quantity);
     if(isNaN(value)) value = 0;
-    value += delta;
+    value += deltaObj.delta;
+    
+    this._updateItemQuantity(element, value);
+    this.quantityDeltas = this.quantityDeltas.filter(function(item){ return item.id != itemId});
+    this.quantityDeltas.push(deltaObj);
+    this.quantityTimeout = setTimeout(this._applyItemQuantityDeltas.bind(this), 1000);
+  }
+
+  _updateItemQuantity(element, value){
     if(value < 0) value = 0;
-    return item.update({[field]: value});
+    let counter = element.closest(".item-count").querySelector(".item-quantity");
+    counter.innerHTML = value;
+  }
+
+  _applyItemQuantityDeltas(){
+    let deltas = this.quantityDeltas;
+    this.quantityDeltas = [];
+    for(let delta of deltas){
+      let item = this.actor.items.get(delta.id);
+      let field = 'system.quantity';
+      let value = parseInt(item.system.quantity);
+      if(isNaN(value)) value = 0;
+      value += delta.delta;
+      if(value < 0) value = 0;
+      item.update({[field]: value});
+    }
   }
 
   async _onItemRoll(event){
