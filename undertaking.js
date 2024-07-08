@@ -140,7 +140,7 @@ Hooks.once("init",function(){
   });
 
   Handlebars.registerHelper('school', function(value, options) {
-    const schools = ["abj","con","div","enc","evo","ill","nec","tra"];
+    const schools = ["abj","con","div","mes","evo","ill","nec","tra"];
     if(schools.includes(value)){
       return game.i18n.localize(`undertaking.SpellSchools.${value}`);
     }

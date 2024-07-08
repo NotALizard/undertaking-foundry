@@ -168,9 +168,9 @@
       "abj": "Abjuration",
       "con": "Conjuration",
       "div": "Divination",
-      "enc": "Enchantment",
       "evo": "Evocation",
       "ill": "Illusion",
+      "mes": "Mesmerization",
       "nec": "Necromancy",
       "tra": "Transmutation"
     },

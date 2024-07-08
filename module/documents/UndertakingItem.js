@@ -12,6 +12,14 @@ export default class UndertakingItem extends Item {
         }
     }
 
+    static migrateData(source){
+        if(source?.system?.school === "enc"){
+            console.warn("Migrating UndertakingItem spell school from 'enc' to 'mes'");
+            source.system.school = "mes";
+        }
+        return super.migrateData(source);
+    }
+
     async roll(){
         switch(this.system.actionType){
             case "rwak":
