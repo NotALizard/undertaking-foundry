@@ -11,7 +11,7 @@
         "source": "Core Rules",
         "level": "1",
         "charge": true,
-        "school": "enc",
+        "school": "mes",
         "components": {
             "somatic": true,
             "verbal": true,
