@@ -69,7 +69,8 @@
         "spells-level-3",
         "spells-level-4",
         "spells-level-5",
-        "spells-level-6"
+        "spells-level-6",
+        "spells-level-7"
       ],
       "folders": []
     },
@@ -327,6 +328,15 @@
       "label": "6th Level Spells",
       "system": "undertaking",
       "path": "packs/spells-level-6.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "spells-level-7",
+      "label": "7th Level Spells",
+      "system": "undertaking",
+      "path": "packs/spells-level-7.db",
       "type": "Item",
       "private": false,
       "flags": {}

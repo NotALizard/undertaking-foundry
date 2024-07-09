@@ -82,7 +82,8 @@ export default class UndertakingActor extends Actor {
     //calc spellcaster stats
     system.stats.mana.max = maxMana + system.stats.mana.bonus;
     let divisor = Number.isInteger(system.stats.mana.shortRestGain.divisor) ? system.stats.mana.shortRestGain.divisor : 2;
-    system.stats.mana.shortRestGain.value = Math.ceil(casterLevel/divisor) + system.stats.mana.shortRestGain.bonus;
+    //system.stats.mana.shortRestGain.value = Math.ceil(casterLevel/divisor) + system.stats.mana.shortRestGain.bonus;
+    system.stats.mana.shortRestGain.value = Math.ceil(maxMana/divisor) + system.stats.mana.shortRestGain.bonus;
     let chargeLimit = 0;
     if(false){
       //reserved for legendary spells

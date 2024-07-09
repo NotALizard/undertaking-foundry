@@ -1,7 +1,7 @@
 {
     "name": "Despair",
     "type": "spell",
-    "img": "",
+    "img": "icons/magic/fire/flame-burning-creature-skeleton.webp",
     "system": {
         "description": {
             "value": "<p>Make a spell attack roll against a creature within range. On success, you create painless, structural cracks in reality around a creature&rsquo;s being. Audible, ominous creaking can be heard from the creature this spell is cast on. At the start of your next full turn, an invisible explosion wracks their body from the inside out, dealing 11d6 chaos damage and 4d6 fire damage.</p><p>The seeming explosion generates an intense heat around them. Any creatures within a 10ft radius of the target when they explode must make a Dexterity (Save) Check, taking 6d6 fire damage on failure, or half on success.</p>",
