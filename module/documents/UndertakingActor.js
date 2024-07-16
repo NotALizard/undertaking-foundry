@@ -144,7 +144,13 @@ export default class UndertakingActor extends Actor {
         spellcasting = 'int';
       }
     }
-    const spellcastingAttribute = JSON.parse(JSON.stringify(system.attributes[spellcasting]));
+    let spellcastingAttribute;
+    try{
+      spellcastingAttribute = JSON.parse(JSON.stringify(system.attributes[spellcasting]));
+    }
+    catch(err){
+      spellcastingAttribute = system.attributes['int'];
+    }
     spellcastingAttribute.attack = spellcastingAttribute.mod + system.stats.profBonus + system.bonuses.attack.spell.all.attack;
     spellcastingAttribute.dc = 8 + spellcastingAttribute.mod + system.stats.profBonus + system.bonuses.spell.dc;
     system.stats.spellcastingAttribute = spellcastingAttribute;

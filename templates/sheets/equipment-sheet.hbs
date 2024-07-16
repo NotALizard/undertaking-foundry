@@ -24,9 +24,34 @@
             </div>
           </div>
           <hr class="blue"/>
-          <div class="description-container">
-            {{editor descriptionHTML target="system.description.value" button=true editable=editable engine="prosemirror" collaborate=false}}
-          </div>
+          {{#ifGM}}
+            <input type="hidden" id="input-identified" name="system.identified" value="{{item.system.identified}}" data-dtype="Boolean">
+            <div class="item-row frow">
+              <div class="frow short">
+                <label>{{ localize "undertaking.Identified" }}:</label>
+                <input type="checkbox" class="input-checkbox" data-for="#input-identified" {{#ifCond item.system.identified '==' true}}checked{{/ifCond}}/>
+              </div>
+            </div>
+            <label><b>{{ localize "undertaking.Description" }}&nbsp;({{#ifCond item.system.identified '==' true}}{{ localize "undertaking.Shown" }}{{else}}{{ localize "undertaking.Hidden" }}{{/ifCond}})</b></label>
+            <div class="description-container {{#ifCond item.system.identified '==' false}}inactive{{else}}highlighted{{/ifCond}}">
+              {{editor descriptionHTML target="system.description.value" button=true editable=editable engine="prosemirror" collaborate=false}}
+            </div>
+            <label><b>{{ localize "undertaking.UnidentifiedDescription" }}&nbsp;({{#ifCond item.system.identified '==' false}}{{ localize "undertaking.Shown" }}{{else}}{{ localize "undertaking.Hidden" }}{{/ifCond}})</b></label>
+            <div class="description-container {{#ifCond item.system.identified '==' true}}inactive{{else}}highlighted{{/ifCond}}">
+              {{editor unidentifiedHTML target="system.description.unidentified" button=true editable=editable engine="prosemirror" collaborate=false}}
+            </div>
+          {{else}}
+            {{#ifCond item.system.identified '==' true}}
+              <div class="description-container">
+                {{editor descriptionHTML target="system.description.value" button=true editable=editable engine="prosemirror" collaborate=false}}
+              </div>
+            {{/ifCond}}
+            {{#ifCond item.system.identified '==' false}}
+              <div class="description-container">
+                {{editor unidentifiedHTML target="system.description.unidentified" button=true editable=editable engine="prosemirror" collaborate=false}}
+              </div>
+            {{/ifCond}}
+          {{/ifGM}}
         </div>
       </div>
     </section>

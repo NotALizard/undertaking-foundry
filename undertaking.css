@@ -1083,3 +1083,13 @@ a.damage-control.delete-damage {
 .dice-total.fumble{
     color: red;
 }
+.description-container.inactive {
+    background: repeating-linear-gradient(45deg, rgba(0,0,0, 0.1),rgba(0,0,0, 0.1) 10px,transparent 10px,transparent 20px);
+}
+.description-container.highlighted {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0px;
+    border-color: var(--bg-blue);
+    margin: -2px;
+}

@@ -40,6 +40,10 @@ Hooks.once("init",function(){
   CONFIG.ChatMessage.documentClass = document.UndertakingChatMessage;
   CONFIG.Dice.D20Roll = dice.D20Roll;
 
+  Handlebars.registerHelper('ifGM', function (options) {
+    return (game.user.isGM) ? options.fn(this) : options.inverse(this);
+  });
+
   Handlebars.registerHelper('ifequal', function (a, b, options) {
     if (a == b) { return options.fn(this); }
     return options.inverse(this);

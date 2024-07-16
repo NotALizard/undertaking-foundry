@@ -40,6 +40,13 @@ export default class UndertakingItemSheet extends ItemSheet {
       rollData: context.rollData
     });
 
+    context.unidentifiedHTML = await TextEditor.enrichHTML(item.system.description.unidentified, {
+      secrets: item.isOwner,
+      async: true,
+      relativeTo: this.item,
+      rollData: context.rollData
+    });
+
     if(item.type == 'class' || item.type == 'archetype' || item.type == 'race'){
       context.classDetails = await TextEditor.enrichHTML(item.system.classDetails, {
         secrets: item.isOwner,
