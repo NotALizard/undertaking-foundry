@@ -76,6 +76,10 @@ Hooks.once("init",function(){
             return (v1 && v2) ? options.fn(this) : options.inverse(this);
         case '||':
             return (v1 || v2) ? options.fn(this) : options.inverse(this);
+        case 'in':
+            return (v2.split(',').includes(v1)) ? options.fn(this) : options.inverse(this);
+        case 'notin':
+            return (!v2.split(',').includes(v1)) ? options.fn(this) : options.inverse(this);
         default:
             return options.inverse(this);
     }
@@ -184,7 +188,6 @@ Hooks.once("init",function(){
   });
 
   Handlebars.registerHelper('customAttackTraits', function(item, options) {
-    console.log(item);
     let props = [];
     if(item.system.range && (item.system.range.value > 0 || item.system.range.long > 0 )){
       props.push(`Range: ${item.system.range.value || 0} / ${item.system.range.long || 0} ${item.system.range.units ? item.system.range.units : ""}`);
@@ -459,6 +462,48 @@ Hooks.once("init",function(){
       strings.push(chatStr);
     }
     return strings.join("; ");
+  });
+
+  Handlebars.registerHelper('spellSource', function(item, sheet, options) {
+    let attr = item.system.attribute;
+    let className = "";
+    if(attr == "spell"){
+      for (let c of sheet.casters){
+        if(c.system.identifier == item.system.classIdentifier){
+          attr = c.system.categorization.spellcaster.attribute;
+          className = c.name;
+        }
+      }
+    }
+    if(!["dex","str","con","int","wis","pre"].includes(attr)){
+      return "";
+    }
+    let attrName = "";
+    switch(attr){
+      case "dex":
+        attrName = game.i18n.localize(sheet.actor.system.attributes.dex.label);
+        break;
+      case "str":
+        attrName = game.i18n.localize(sheet.actor.system.attributes.str.label);
+        break;
+      case "con":
+        attrName = game.i18n.localize(sheet.actor.system.attributes.con.label);
+        break;
+      case "int":
+        attrName = game.i18n.localize(sheet.actor.system.attributes.int.label);
+        break;
+      case "wis":
+        attrName = game.i18n.localize(sheet.actor.system.attributes.wis.label);
+        break;
+      case "pre":
+        attrName = game.i18n.localize(sheet.actor.system.attributes.pre.label);
+        break;
+    }
+    let outputStr = attrName;
+    if(className != ""){
+      outputStr += ` (${className})`;
+    }
+    return `<div class="item-name spell short subtext"><p>${outputStr}</p></div>`;
   });
 
   Handlebars.registerHelper('language', function(language, options) {

@@ -57,6 +57,7 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     context.archetypes = context.items.filter(function (item) { return item.type == "archetype"});
     context.abilities = context.items.filter(function (item) { return item.type == "ability"});
     context.languages = context.items.filter(function (item) { return item.type == "language"});
+    context.casters = context.classes.filter(function(item){ return item.system.categorization.spellcaster.progression && item.system.categorization.spellcaster.progression != 'none'});
 
     if(actor.type == 'npc'){
       context.spells = context.items.filter(function (item) { return item.type == "spell"});
@@ -66,13 +67,22 @@ export default class UndertakingCharacterSheet extends ActorSheet {
       context.cantrips = context.items.filter(function (item) { return item.type == "spell" && item.system.level == 0});
       context.spells = context.items.filter(function (item) { return item.type == "spell" && item.system.level != 0});
     }
+
+    context.preparedByClass = {};
+    for(let c of context.casters){
+      let prepCt = context.spells.filter( item => item.system.classIdentifier == c.system.identifier && item.system.preparation.prepared && ! item.system.preparation.always).length;
+      context.preparedByClass[c.system.identifier] = prepCt;
+    }
+
     const filter = context.actor.system.details.classFilter;
-    if(filter && filter != 'all'){
+    if(filter && filter == 'prepared'){
+      context.spells = context.spells.filter(function (item) { return item.system.preparation.prepared || item.system.preparation.always});
+    }
+    else if(filter && filter != 'all'){
       context.cantrips = context.cantrips.filter(function (item) { return item.system.classIdentifier == filter});
       context.spells = context.spells.filter(function (item) { return item.system.classIdentifier == filter});
     }
 
-    context.casters = context.classes.filter(function(item){ return item.system.categorization.spellcaster.progression && item.system.categorization.spellcaster.progression != 'none'});
     let carryLoad = 0;
     for(let e of context.equipment){
       let weight = parseInt(e.system.weight);
@@ -324,6 +334,9 @@ export default class UndertakingCharacterSheet extends ActorSheet {
 
     html.find(".prepared-toggle").on("click", event => {
       this._toggleSpellPrepared(event);
+    });
+    html.find(".spend-mana").on("click", event => {
+      this._spendMana(event);
     });
 
     this._fixElementSizes(html);
@@ -770,6 +783,20 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     let newValue = !item.system.preparation.prepared;
 
     return item.update({["system.preparation.prepared"]: newValue});
+  }
+
+  _spendMana(event){
+    event.preventDefault();
+    let element = event.currentTarget;
+    let manaCost = element.closest(".spend-mana").dataset.level;
+    manaCost = parseInt(manaCost);
+    if(isNaN(manaCost)) manaCost = 1;
+    
+    const root = event.currentTarget.closest(".sheet-body");
+    const field = root.querySelector("#mana-val");
+
+    field.value -= manaCost;
+    return this._onSubmit(event);
   }
 
   _toggleDesperate(event){

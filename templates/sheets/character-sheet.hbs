@@ -646,16 +646,33 @@
                     </div>
                 </div>
                 <hr/>
+                <div class="mana-stats spend frow">
+                    <div class="mana-cost short frow"><a class="spend-mana" data-level="1"><label><span class="nohover">1st: 1 {{localize "undertaking.Mana"}}</span><span class="onhover">{{localize "undertaking.Spend"}}</span></label></a></div>
+                    <div class="mana-cost short frow"><a class="spend-mana" data-level="2"><label><span class="nohover">2nd: 2 {{localize "undertaking.Mana"}}</span><span class="onhover">{{localize "undertaking.Spend"}}</span></label></a></div>
+                    <div class="mana-cost short frow"><a class="spend-mana" data-level="4"><label><span class="nohover">3rd: 4 {{localize "undertaking.Mana"}}</span><span class="onhover">{{localize "undertaking.Spend"}}</span></label></a></div>
+                    <div class="mana-cost short frow"><a class="spend-mana" data-level="5"><label><span class="nohover">4th: 5 {{localize "undertaking.Mana"}}</span><span class="onhover">{{localize "undertaking.Spend"}}</span></label></a></div>
+                    <div class="mana-cost short frow"><a class="spend-mana" data-level="6"><label><span class="nohover">5th: 6 {{localize "undertaking.Mana"}}</span><span class="onhover">{{localize "undertaking.Spend"}}</span></label></a></div>
+                    <div class="mana-cost short frow"><a class="spend-mana" data-level="8"><label><span class="nohover">6th: 8 {{localize "undertaking.Mana"}}</span><span class="onhover">{{localize "undertaking.Spend"}}</span></label></a></div>
+                    <div class="mana-cost short frow"><a class="spend-mana" data-level="10"><label><span class="nohover">7th: 10 {{localize "undertaking.Mana"}}</span><span class="onhover">{{localize "undertaking.Spend"}}</span></label></a></div>
+                    <div class="mana-cost short frow"><a class="spend-mana" data-level="20"><label><span class="nohover">8th: 20 {{localize "undertaking.Mana"}}</span><span class="onhover">{{localize "undertaking.Spend"}}</span></label></a></div>
+                    <div class="mana-cost short frow"><a class="spend-mana" data-level="charge"><label><span class="nohover">{{localize "undertaking.Charge"}}: +1</span><span class="onhover">{{localize "undertaking.Spend"}}</span></label></a></div>
+                </div>
+                <hr/>
                 {{!-- Class Filter --}}
                 <nav class="tabs" data-group="primary">
                     <a class="item class-filter {{#ifCond actor.system.details.classFilter '==' 'all'}}active{{/ifCond}}" data-tab="all">{{ localize "undertaking.All" }}</a>
+                    <a class="item class-filter {{#ifCond actor.system.details.classFilter '==' 'prepared'}}active{{/ifCond}}" data-tab="prepared">{{ localize "undertaking.Prepared" }}</a>
                     {{#each casters as |caster id|}}
-                        <a class="item class-filter {{#ifCond ../actor.system.details.classFilter '==' caster.system.identifier}}active{{/ifCond}}" data-tab="{{caster.system.identifier}}">{{ caster.name }}</a>
+                        {{#each ../preparedByClass as |count class_id|}}
+                            {{#ifCond caster.system.identifier '==' class_id}}
+                                <a class="item class-filter {{#ifCond ../../actor.system.details.classFilter '==' caster.system.identifier}}active{{/ifCond}}" data-tab="{{caster.system.identifier}}">{{ caster.name }} ({{ count }})</a>
+                            {{/ifCond}}
+                        {{/each}}
                     {{/each}}
                 </nav>
                 <hr/>
                 <div class="caster-stats frow">
-                    {{#ifCond actor.system.details.classFilter '==' 'all'}}
+                    {{#ifCond actor.system.details.classFilter 'in' 'all,prepared'}}
                         <div class="caster-stat attribute frow fill-space">
                             <!-- <h4>{{localize "undertaking.Attribute"}}: </h4> -->
                             <select data-for="#input-casting-attribute" class="input-dropdown">
@@ -665,7 +682,7 @@
                             </select>
                         </div>
                     {{/ifCond}}
-                    {{#ifCond actor.system.details.classFilter '!=' 'all'}}
+                    {{#ifCond actor.system.details.classFilter 'notin' 'all,prepared'}}
                         <div class="caster-stat attribute  fill-space">
                             <h4><!--{{localize "undertaking.Attribute"}}: -->{{localize actor.system.stats.spellcastingAttribute.label}}</h4>
                         </div>
@@ -695,7 +712,7 @@
                         <div class="scroll-container fill-space">
                             <div class="scroll-area cantrips">
                                 {{#each cantrips as |cantrip id|}}
-                                {{> "systems/undertaking/templates/partials/character/spell-card.hbs" cantrip lockEdit=../actor.system.details.editLock}}
+                                {{> "systems/undertaking/templates/partials/character/spell-card.hbs" cantrip lockEdit=../actor.system.details.editLock actor=..}}
                                 {{/each}}
                             </div>
                         </div>
@@ -716,7 +733,7 @@
                         <div class="scroll-container fill-space">
                             <div class="scroll-area spells">
                                 {{#each spells as |spell id|}}
-                                {{> "systems/undertaking/templates/partials/character/spell-card.hbs" spell lockEdit=../actor.system.details.editLock}}
+                                {{> "systems/undertaking/templates/partials/character/spell-card.hbs" spell lockEdit=../actor.system.details.editLock actor=..}}
                                 {{/each}}
                             </div>
                         </div>

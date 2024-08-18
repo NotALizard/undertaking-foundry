@@ -132,7 +132,7 @@ export default class UndertakingActor extends Actor {
     }
 
     let spellcasting;
-    if(system.details.classFilter == 'all'){
+    if(system.details.classFilter == 'all' || system.details.classFilter == 'prepared'){
       spellcasting = system.stats.spellcasting || 'int';
     }
     else{

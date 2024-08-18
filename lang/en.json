@@ -47,6 +47,7 @@
     "TempMaxHpPlaceholder": "+Temp Max",
     "TempMaxHpTip": "Temporary Change to Max Hit Points",
     "Mana": "Mana",
+    "Spend": "Spend",
     "ChargeLimit": "Charge Limit",
     "ShortRest": "Short Rest",
     "RestDice": "Rest Dice",

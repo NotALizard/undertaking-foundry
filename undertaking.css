@@ -893,6 +893,7 @@ img.portrait {
 
 .spells-container {
     height: 100%;
+    max-height: 90vmin;
 }
 .prepared-toggle{
     width: 24px;
@@ -917,6 +918,21 @@ img.portrait {
     padding: 4px;
     border-radius: 4px;
     margin-top: -5px;
+}
+.mana-stats.spend {
+    background-color: var(--bg-blue);
+    color:var(--off-white);
+    font-size: 12px;
+    margin-top: 0px;
+}
+.mana-cost .onhover{
+    display: none;
+}
+.mana-cost:hover .onhover{
+    display: block;
+}
+.mana-cost:hover .nohover{
+    display: none;
 }
 .mana-stats div {
     justify-content: center;
@@ -947,11 +963,13 @@ input.spells-mana-val {
     margin: 2px;
     flex: 2;
     min-height: 140px;
+    max-height: 25%;
 }
 .spells-row {
     margin: 2px;
     flex: 5;
     min-height: 140px;
+    max-height: 58%;
 }
 .spell-details-col{
     padding: 0px 2px;
@@ -971,6 +989,10 @@ input.spells-mana-val {
     border: none;
     width:20px;
     height: 20px;
+}
+.spell.subtext {
+    font-size: var(--font-size-11);
+    color: dimgrey;
 }
 a.damage-control.delete-damage {
     margin: auto 4px;
