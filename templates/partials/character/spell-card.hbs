@@ -82,7 +82,7 @@
                 {{#switch system.range.units}} 
                     {{#case 'self'}}{{ localize "undertaking.Self" }}{{/case}} 
                     {{#case 'touch'}}{{ localize "undertaking.Touch" }}{{/case}}
-                    {{#case 'ft'}}{{system.range.value}}{{system.range.units}}{{/case}}
+                    {{#default}}{{system.range.value}}{{system.range.units}}{{/default}}
                 {{/switch}}
             </p>
         </div>
