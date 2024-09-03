@@ -25,6 +25,18 @@ export default class UndertakingActor extends Actor {
     }
     system.stats.init.total = system.attributes.dex.mod;
     system.stats.mana.max = system.stats.mana.max ? system.stats.mana.max : 0;
+
+    let spellcasting = system.stats.spellcasting || 'int';
+    let spellcastingAttribute;
+    try{
+      spellcastingAttribute = JSON.parse(JSON.stringify(system.attributes[spellcasting]));
+    }
+    catch(err){
+      spellcastingAttribute = system.attributes['int'];
+    }
+    spellcastingAttribute.attack = spellcastingAttribute.mod + system.stats.profBonus + system.bonuses.attack.spell.all.attack;
+    spellcastingAttribute.dc = 8 + spellcastingAttribute.mod + system.stats.profBonus + system.bonuses.spell.dc;
+    system.stats.spellcastingAttribute = spellcastingAttribute;
   }
 
   _prepareCharacterData(actorData){

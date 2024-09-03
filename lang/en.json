@@ -346,7 +346,8 @@
     "Chat": {
       "Confirm": "Confirm",
       "Cancel": "Cancel",
-      "ForClass": "Associated Class"
+      "ForClass": "Associated Class",
+      "ForAttribute": "Associated Attribute"
     }
   }
 }

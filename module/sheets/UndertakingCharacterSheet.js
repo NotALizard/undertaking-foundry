@@ -127,14 +127,50 @@ export default class UndertakingCharacterSheet extends ActorSheet {
       }
     }
     else if(itemData.type == 'spell'){
-      let classes = this.actor.items.filter(function (item) { return item.type == "class" && item.system.categorization.spellcaster.progression && item.system.categorization.spellcaster.progression != 'none'});
-      let filter = this.actor.system.details.classFilter;
-      let assignedClass = await this._getClassSelectOptions(classes, filter);
-      itemData.system.classIdentifier = assignedClass;
-      return this.actor.createEmbeddedDocuments("Item", [itemData]);
+      if(this.actor.type == 'npc'){
+        let assignedAttribute = await this._getAttributeSelectOptions(this.actor.system.attributes, this.actor.system.stats.spellcasting);
+        itemData.system.attribute = assignedAttribute;
+        return this.actor.createEmbeddedDocuments("Item", [itemData]);
+      }
+      else{
+        let classes = this.actor.items.filter(function (item) { return item.type == "class" && item.system.categorization.spellcaster.progression && item.system.categorization.spellcaster.progression != 'none'});
+        let filter = this.actor.system.details.classFilter;
+        let assignedClass = await this._getClassSelectOptions(classes, filter);
+        itemData.system.classIdentifier = assignedClass;
+        return this.actor.createEmbeddedDocuments("Item", [itemData]);
+      }
     }
 
     super._onDropItem(event, data);
+  }
+
+  async _getAttributeSelectOptions(attributes, defaultVal){
+    const template = "systems/undertaking/templates/chat/attribute-select-dialog.hbs"
+    const html = await renderTemplate(template, {attributes: attributes, default: defaultVal});
+
+    return new Promise(resolve => {
+      const data = {
+        title: game.i18n.localize("undertaking.Chat.ForAttribute"),
+        content: html,
+        buttons: {
+          normal: {
+            label: game.i18n.localize("undertaking.Chat.Confirm"),
+            callback: html => resolve(this._processAttributeSelectOptions(html[0].querySelector("form")))
+          },
+          cancel:{
+            label: game.i18n.localize("undertaking.Chat.Cancel"),
+            callback: html => resolve('')
+          }
+        },
+        default: "normal",
+        close: () => resolve('')
+      }
+      new Dialog(data, null).render(true);
+    });
+  }
+
+  _processAttributeSelectOptions(form){
+    return form.attribute.value;
   }
 
   async _getClassSelectOptions(classes, filter){

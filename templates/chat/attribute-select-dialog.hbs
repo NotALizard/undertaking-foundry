@@ -1,0 +1,14 @@
+<form>
+    <div class="form-group">
+        <div class="fcol">
+            <div>
+                <label>{{localize "undertaking.Attribute"}}</label>
+            </div>
+            {{#each attributes as |attribute attribute_id|}}
+                <div>
+                    <input type="radio" name="attribute" value="{{attribute_id}}" {{#ifequal attribute_id ../default}}checked{{/ifequal}}> {{localize attribute.label}} <br>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</form>

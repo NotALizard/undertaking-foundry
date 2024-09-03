@@ -467,7 +467,7 @@ Hooks.once("init",function(){
   Handlebars.registerHelper('spellSource', function(item, sheet, options) {
     let attr = item.system.attribute;
     let className = "";
-    if(attr == "spell"){
+    if(attr == "spell" && sheet?.type == "character"){
       for (let c of sheet.casters){
         if(c.system.identifier == item.system.classIdentifier){
           attr = c.system.categorization.spellcaster.attribute;

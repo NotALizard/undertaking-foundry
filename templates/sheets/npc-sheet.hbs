@@ -193,6 +193,27 @@
                     </div>
                 </div>
             </div>
+            <hr/>
+            <input type="hidden" id="input-casting-attribute" name="system.stats.spellcasting" value="{{actor.system.stats.spellcasting}}" data-dtype="String">
+            <div class="caster-stats frow">
+                <div class="caster-stat attribute frow fill-space">
+                    <!-- <h4>{{localize "undertaking.Attribute"}}: </h4> -->
+                    <select data-for="#input-casting-attribute" class="input-dropdown">
+                        {{#each actor.system.attributes as |attribute attr_id|}}
+                            <option value="{{attr_id}}" {{#ifCond ../actor.system.stats.spellcasting '==' attr_id}}selected{{/ifCond}}>{{localize attribute.label}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+                <div class="caster-stat modifier fill-space">
+                    <h4>{{localize "undertaking.Modifier"}}: {{numberFormat actor.system.stats.spellcastingAttribute.mod decimals=0 sign=true}}</h4>
+                </div>
+                <div class="caster-stat attack-bonus fill-space">
+                    <h4>{{localize "undertaking.SpellAttack"}}: {{numberFormat actor.system.stats.spellcastingAttribute.attack decimals=0 sign=true}}</h4>
+                </div>
+                <div class="caster-stat save-dc fill-space">
+                    <h4>{{localize "undertaking.SpellSaveDC"}}: {{numberFormat actor.system.stats.spellcastingAttribute.dc decimals=0 sign=false}}</h4>
+                </div>
+            </div>
             <div class="abilities-row frow fill-space">
                 <div class="list-container spells item-list fcol fill-space">
                     <div class="list-header spells frow">
@@ -208,7 +229,7 @@
                     <div class="scroll-container fill-space">
                         <div class="scroll-area spells">
                             {{#each spells as |spell id|}}
-                            {{> "systems/undertaking/templates/partials/character/spell-card.hbs" spell lockEdit=../actor.system.details.editLock}}
+                            {{> "systems/undertaking/templates/partials/character/spell-card.hbs" spell lockEdit=../actor.system.details.editLock actor=..}}
                             {{/each}}
                         </div>
                     </div>
