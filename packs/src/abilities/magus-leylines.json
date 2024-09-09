@@ -1,0 +1,24 @@
+{
+  "name": "Leylines",
+  "type": "ability",
+  "img": "icons/magic/symbols/runes-star-pentagon-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>As a minor action, you trace a circle in the air around your feet, causing mystical and slightly glowing leylines to appear beneath you in a 5ft radius, lasting for 1 minute. Creating new leylines dissipates any previous leylines you created. Creatures within the leylines are made completely visible to all onlookers as if they could see them with true sight.</p><hr /><p><em>Requirement: </em>The <em>Slow Cast</em> ability.</p><hr /><p>While standing within your leylines, you have advantage on Concentration checks while Slow Casting, and Slow Casts can be completed with a minor action on your next turn, instead of an action.</p><hr /><p><em>Requirement: </em>The <em>Arcane Attraction</em> ability.</p><hr /><p>Leylines are also viable targets for Arcane Attraction, can be used as targets repeatedly, and can have resonance even while another resonance is active. When you first draw your leylines, they automatically resonate with you as described in the Arcane Attraction ability.</p><hr /><p><em>Requirement: </em>The <em>Up-Cast</em> ability.</p><hr /><p>While standing within your leylines, your charge limit is further increased by 1 mana.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Must have the Wizard Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "XF1V319XZ78D9JGL"
+}

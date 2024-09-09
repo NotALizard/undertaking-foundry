@@ -1,0 +1,24 @@
+{
+  "name": "Up-Cast",
+  "type": "ability",
+  "img": "icons/magic/light/explosion-star-glow-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>When casting a wizard spell, your charge limit is increased by 1 mana. For example, if 3rd level Wizard spells are the highest level you can cast, each time you cast a spell you can now spend up to 5 mana in total, instead of 4, by adding a charge option.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Must have the Wizard Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "3ZNUE5OBA4KUN184"
+}

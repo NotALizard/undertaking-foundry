@@ -1,0 +1,24 @@
+{
+  "name": "Resonant Attraction",
+  "type": "ability",
+  "img": "icons/magic/control/energy-stream-link-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>By bending the subspace around a creature and yourself, you can stretch the space between you and them like a rubber band. Such that, when released, the space between you ripples, flinging you toward them.</p><p>As a minor action, you can apply a magical resonance between you and another creature. The tension threatens to release, pulling you to them in an instant; resisting the pull is easy, letting go is just as easy. Only one resonance can be active at a time.</p><p>As a reaction, you can stop resisting the pull to immediately and directly move toward the resonant target up to 30 feet, stopping harmlessly adjacent to it and ending the resonance. As space bends, moving in this way feels almost like standing still, not requiring movement or affecting any simultaneous actions. However, if there is a solid obstacle between you and the target when releasing the tension, you slam into it and take falling damage for how far you moved. If @Compendium[undertaking.conditions.FGVFFYGPAFQGZ5RP]{Grappled}&nbsp;or loosely bound, you take 5 chaos damage and get another (Save) check to escape. If otherwise bound, you just take the 5 chaos damage.</p><p>When you fall unconscious while this frequency is active, you are automatically pulled to the nearest resonant target.</p><p>Such a resonance can only be applied to each creature once per long rest, as the wrinkled space around a creature needs time to recover.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Must have the Wizard Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "URSPXLXX4T08D0SZ"
+}

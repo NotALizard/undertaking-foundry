@@ -1,0 +1,24 @@
+{
+  "name": "Armiger's Armory",
+  "type": "ability",
+  "img": "icons/skills/melee/strike-weapons-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>You gain proficiency in one weapon of your choice and one of the following:</p><ul><li>One additional weapon of your choice</li><li>Light armor</li><li>Medium armor</li><li>Shields</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "starter"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "29L79CWTS5SNA9ES"
+}

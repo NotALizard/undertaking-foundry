@@ -1,0 +1,24 @@
+{
+  "name": "Arcane Archetype: Magus",
+  "type": "archetype",
+  "img": "icons/equipment/head/hat-pointed-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Subclass for the @Compendium[undertaking.classes.KWLWHMDBZ3NK1FAV]{Wizard} class.</p><p>Wizards are often known for pushing boundaries, delving into the furthest depths of reality and the arcane and using what they find to go even further. Spells are made bigger, more dramatic, and more dangerous, as is the nature of progress. Magi are those who take this idea to its natural extreme. Magi cast spells longer and more forcibly than traditional wizards, pushing the arcane to its limits for the sake of sheer destruction. Such brute force spellcasting may get results, but are thought to leave scars on reality itself. One day, such scars could hurt the stability of reality. A magus, however, tends not to believe such rumors, or simply views it as a necessary means to an end. After all, saving or ending the right lives today can be worth the consequences in the long run.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "identifier": "wizard-magus",
+    "classIdentifier": "wizard",
+    "classDetails": "<h3>Arcane Archetype: Magus</h3><p><i>Unlock:</i> Have the Wizard Starter Abilities.</p><hr/><p>&#x1F193; Given Abilities: @Compendium[undertaking.abilities.L1GHFAREZ9DVXIW0]{Magus Spells}, @Compendium[undertaking.abilities.QEBX3GHOS7POI4FW]{Enochian}</p><hr/><h3>Magus Abilities</h3><p>When taking a level in Magus, you may choose from the following abilities: </p><hr/><p>Options: @Compendium[undertaking.abilities.V674JRH1IOBW11BE]{Slow Cast}, @Compendium[undertaking.abilities.URSPXLXX4T08D0SZ]{Resonant Attraction}, @Compendium[undertaking.abilities.3ZNUE5OBA4KUN184]{Up-Cast}, @Compendium[undertaking.abilities.XF1V319XZ78D9JGL]{Leylines}</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "UCASCGDSYFC9XQYD"
+}

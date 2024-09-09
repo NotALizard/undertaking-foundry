@@ -1,0 +1,24 @@
+{
+  "name": "Enochian",
+  "type": "ability",
+  "img": "icons/sundries/scrolls/scroll-runed-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>You know the language of the ancient spellcasters, and can read magic runes. You can speak, read, and write enochian, though your writings contain no power on their own.</p><p>Magic runes are now readable by you. Most runes on enchanted objects tell you what magical effect they have, sometimes also revealing the creator of the enchantment. Others leave cryptic warnings behind. You have expertise in Intelligence (Arcana) checks to interpret how a magic item works if it is adorned in magic runes.</p><p>In addition, if you fulfill a vocal component of a spell by speaking in enochian, you gain the additional charge option:</p><ul><li>2 Mana: The spell no longer requires targets to hear or understand you, and the spell&rsquo;s damage is converted to Chaos damage as it scars reality.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "starter"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "QEBX3GHOS7POI4FW"
+}

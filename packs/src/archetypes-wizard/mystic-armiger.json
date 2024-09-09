@@ -1,0 +1,24 @@
+{
+  "name": "Arcane Archetype: Mystic Armiger",
+  "type": "archetype",
+  "img": "icons/skills/melee/sword-stuck-glowing-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p>Subclass for the @Compendium[undertaking.classes.KWLWHMDBZ3NK1FAV]{Wizard} class.</p><p>Soldiers, mercenaries, and even bandits and murderers; anyone knowledgeable and willing enough to wield a blade have learned the art of taking a life. Spellcasting can be much the same way. Unlike steel, magic can bring people life, but it too can take it away. The first ones to successfully wreathe themselves in magic rather than their enemies discovered a marriage between the mystic and the martial that granted them a fearsome power and versatility on the battlefield.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "identifier": "wizard-mystic-armiger",
+    "classIdentifier": "wizard",
+    "classDetails": "<h3>Arcane Archetype: Mystic Armiger</h3><p><i>Unlock:</i> Have the Wizard Starter Abilities.</p><hr/><p>&#x1F193; Given Abilities: @Compendium[undertaking.abilities.QI8Z7PCV0BBCVFXO]{Mystic Armiger Spells}, @Compendium[undertaking.abilities.29L79CWTS5SNA9ES]{Armiger's Armory}</p><hr/><h3>Mystic Armiger Abilities</h3><p>When taking a level in Mystic Armiger, you may choose from the following abilities: </p><hr/><p>Options: @Compendium[undertaking.abilities.Y5PXHIVN1CM6H74J]{Spellarm}, @Compendium[undertaking.abilities.VG98NJ22142VHWO6]{Sword and Sorcery}, @Compendium[undertaking.abilities.AJ29PDCH81I8B27R]{Impossible Stance}, @Compendium[undertaking.abilities.M8U825D68XPJKC0Q]{Spell Armor}</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "2ES4H55WJQ3SABHM"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Spell Armor",
+  "type": "ability",
+  "img": "icons/magic/defensive/shield-barrier-flaming-diamond-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>You&rsquo;ve learned to always keep an imperceptible aura of magic around you, reinforcing your thoughts and body and merging with the energies of your mystic arts.</p><p>While conscious, you can add your Intelligence modifier to Concentration checks. In addition, you gain each of the following bonus abilities, so long as you meet their requirements:</p><br><hr/><p><em>Requirement: </em>The <em>Spellarm</em> ability.</p><hr/><p>While <em>Spellarm</em> is active, you are resistant to the spell&rsquo;s damage type(s) (Max of 2).</p><br><hr/><p><em>Requirement: </em>The <em>Sword and Sorcery</em> ability.</p><hr/><p>When you cast a cantrip with a casting time of 1 action, you can take the Self-Defense action as a minor action.</p><br><hr/><p><em>Requirement: </em>The <em>Impossible Stance </em>ability.</p><hr/><p>When you are knocked @Compendium[undertaking.conditions.RK3DF56CKMQUV6DM]{Prone}, you can make a Concentration check to attempt to remain in your Fighting Stance. On a success, you can remain in your stance if you stand up before the end of your next turn.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Must have the Wizard Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "M8U825D68XPJKC0Q"
+}

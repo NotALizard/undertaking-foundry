@@ -1,0 +1,24 @@
+{
+  "name": "Magus Spells",
+  "type": "ability",
+  "img": "icons/sundries/books/book-black-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>Wizards that specialize in becoming a Magus learn the following spells as Wizard spells once able to cast Wizard spells of the same spell level.&nbsp;&nbsp;</p><p>&nbsp;</p><p><em>Magus Spells</em></p><table><tbody><tr><td><p><strong>Able to Cast</strong></p></td><td><p><strong>Spells</strong></p></td></tr><tr><td><p>1st Level Wizard Spells</p></td><td><p>@Compendium[undertaking-homebrew.spells-level-1.37VLMG8DVH1QVCYM]{Conduit Shock}, @Compendium[undertaking-homebrew.spells-level-1.93IZ61HQGJ91795Y]{Brittle Beam}</p></td></tr><tr><td><p>2nd Level Wizard Spells</p></td><td><p>@Compendium[undertaking-homebrew.spells-level-2.HVOF7QNI17K2O6C1]{Snowslide}, @Compendium[undertaking.spells-level-2.XPI8O47UKUK45ZRP]{Weight of the World}</p></td></tr><tr><td><p>3rd Level Wizard Spells</p></td><td><p>@Compendium[undertaking.spells-level-3.7UWC00HNXCOL4GFI]{Fireball}, @Compendium[undertaking.spells-level-3.Z373UKDNQ9VFAMQD]{Syzygy}</p></td></tr><tr><td><p>4th Level Wizard Spells</p></td><td><p>Acidic Wave*</p></td></tr><tr><td><p>5th Level Wizard Spells</p></td><td><p>---</p></td></tr><tr><td><p>6th Level Wizard Spells</p></td><td><p>@Compendium[undertaking.spells-level-6.GAC3VH4EZJOKZ8U0]{Ruin}</p></td></tr><tr><td><p>7th Level Wizard Spells</p></td><td><p>@Compendium[undertaking.spells-level-7.6YF5LESOLNIOTVM1]{Despair}</p></td></tr></tbody></table>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "starter"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "L1GHFAREZ9DVXIW0"
+}

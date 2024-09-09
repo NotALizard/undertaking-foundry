@@ -1,0 +1,24 @@
+{
+  "name": "Sword and Sorcery",
+  "type": "ability",
+  "img": "icons/skills/melee/blade-tip-energy-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>When you cast a cantrip with a casting time of 1 action, you can make a single weapon attack as a minor action. This attack does not add your attribute modifier to its damage.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Must have the Wizard Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "VG98NJ22142VHWO6"
+}

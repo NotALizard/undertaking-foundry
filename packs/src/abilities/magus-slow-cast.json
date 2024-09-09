@@ -1,0 +1,24 @@
+{
+  "name": "Slow Cast",
+  "type": "ability",
+  "img": "icons/magic/time/hourglass-brown-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>Magi push their spellcasting to their limits. So long as they retain focus, their spells can shake the battlefield.</p><p>When you cast an instantaneous spell or a concentration spell that takes only 1 action to cast, you can extend the casting time to last through your next turn. When you do, you must take an action on your next turn to select the target and finish the casting or the spell fizzles. When you successfully cast a spell in this way, the spell&rsquo;s damage dice automatically roll their highest value.</p><p>You cannot take any actions or movement while casting a spell this way, or else break your concentration on the spell. If attacked during this time, you make concentration checks to try and keep the spell from failing. If you take a desperate action to cast the spell immediately, you take a point of @Compendium[undertaking.conditions.ERBR3AG01H4N1L91]{Exhaustion}.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Must have the Wizard Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "V674JRH1IOBW11BE"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Impossible Stance",
+  "type": "ability",
+  "img": "icons/skills/melee/maneuver-greatsword-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<hr/><p><em>Requirement: </em>The <em>Fighting Stance</em> ability from the <em>Fighter</em> class.</p><hr/><p>Using magic to sharpen your focus and give stability to your stances, you&rsquo;re able to make up for weaknesses that proficiency alone cannot solve.</p><p>When entering a Fighting Stance, you can choose to spend Mana equal to your proficiency bonus to ignore 1 of the Stance&rsquo;s Cons.</p><p>In addition, learn 1 Fighting Stance when you gain this ability.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Must have the Wizard Starter Abilities and the Fighting Stance ability from the Fighter class.",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "AJ29PDCH81I8B27R"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Spellarm",
+  "type": "ability",
+  "img": "icons/skills/melee/strike-axe-energy-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p>Magic is powerful, mystical, but often the hardest part about it is that it lacks form. Spells, especially powerful ones, often require some form of stability or backbone to act as a conduit. It&rsquo;s the same when it comes to combat. Mystics of eld have found great success in sustaining the effects of magic spells by wrapping them around themselves and their weapons, instead of around their enemies. A sharpened blade can take a life, but one imbued with magic can do even more.</p><p>You gain an additional charge option that can be applied to spells with an instantaneous duration:</p><ul><li>x2 Mana: You instead imbue the spell or cantrip into a weapon you are holding for the next 1 minute, until you lose concentration on it, or another creature takes possession of the weapon. <br />The first time that weapon or ammunition fired from it strikes a target each round, the following happens:</li><ul><li>The weapon&rsquo;s damage die is two sizes smaller.</li><li>The stored spell is cast on the target originating from the weapon.</li><li>The spell&rsquo;s first spell attack automatically hits.</li></ul></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "subclass"
+    },
+    "requirements": "Must have the Wizard Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "Y5PXHIVN1CM6H74J"
+}
