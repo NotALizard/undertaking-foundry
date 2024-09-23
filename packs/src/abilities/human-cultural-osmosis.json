@@ -4,7 +4,7 @@
   "img": "icons/skills/social/diplomacy-handshake.webp",
   "system": {
     "description": {
-      "value": "<p>You have advantage on Presence (Insight) checks directed at members of your adopted race.</p>",
+      "value": "<p>You have advantage on Intelligence (Culture) checks related to your adopted race.</p>",
       "chat": "",
       "unidentified": ""
     },
