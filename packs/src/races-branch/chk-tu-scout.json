@@ -4,13 +4,13 @@
   "img": "icons/environment/creatures/bug-tick-red.webp",
   "system": {
     "description": {
-      "value": "<p>Scout chk'tu are slimmer chk'tu born with 6 wings instead of 4, each with a larger wingspan than other chk'tu.  The extra set of wings are located beneath the other four, and altogether the wings allow scout chk'tu to fly without landing as long as the chk'tu has the energy to do so.  <br>&nbsp;&nbsp;&nbsp;&nbsp;These flying chk'tu are often given roles of scouting, messaging, and air assault in combat, as well as territory guards, foragers, and hunters.</p>",
+      "value": "<p>Scout chk'tu are slimmer chk'tu born with 6 wings instead of 4, each with a larger wingspan than other chk'tu.  The extra set of wings are located beneath the other four, and altogether the wings allow scout chk'tu to fly without landing as long as the chk'tu has the energy to do so.  They also uniquely have a set of antennae that are highly sensitive to the scents of flora.<br>&nbsp;&nbsp;&nbsp;&nbsp;These flying chk'tu are often given roles of scouting, messaging, and air assault in combat, as well as territory guards, foragers, and hunters.</p>",
       "chat": "",
       "unidentified": ""
     },
     "source": "Core Rules",
     "portion": "core",
-    "classDetails": "<p>Scout Chk'tu Traits</p><ul><li><b>Compatibility: </b>Insectoid</li><li><b>Attribute Increase: </b>Your Dexterity increases by 2.</li><li><b>Slow Walker: </b>Your base walking speed is 20ft instead. </li><li><b>Flight: </b>You have a flying speed of 25ft.  To use this speed, you cannot be wearing medium or heavy armor.</li></ul>"
+    "classDetails": "<p>Scout Chk'tu Traits</p><ul><li><b>Compatibility: </b>Insectoid</li><li><b>Attribute Increase: </b>Your Dexterity increases by 2.</li><li><b>Slow Walker: </b>Your base walking speed is 20ft instead. </li><li><b>Flight: </b>You have a flying speed of 25ft.  To use this speed, you cannot be wearing medium or heavy armor.</li><li><b>Olfactory Antennae: </b>@Compendium[undertaking.abilities.PX53DTW4FKMESH8I]{Olfactory Antennae}</li></ul>"
   },
   "effects": [],
   "folder": null,

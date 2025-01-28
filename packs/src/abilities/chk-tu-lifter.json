@@ -1,10 +1,10 @@
 {
-  "name": "Handsy",
+  "name": "Lifter",
   "type": "ability",
   "img": "icons/commodities/claws/claw-insect-brown.webp",
   "system": {
     "description": {
-      "value": "<p>Whenever you make a Strength (Athletics) check to grapple a creature of equal or smaller size using all four arms, then you gain advantage.  Once you succeed at grappling a target this way, you cannot gain this benefit again for the next hour.</p>",
+      "value": "<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -21,5 +21,5 @@
     "default": 0
   },
   "flags": {},
-  "_id": "ND986T2ORMSDKFYJ"
+  "_id": "4F8FWF6AU6ZW5AWV"
 }

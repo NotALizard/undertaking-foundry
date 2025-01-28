@@ -1,10 +1,10 @@
 {
-  "name": "Handsy",
+  "name": "Multitasker",
   "type": "ability",
   "img": "icons/commodities/claws/claw-insect-brown.webp",
   "system": {
     "description": {
-      "value": "<p>Whenever you make a Strength (Athletics) check to grapple a creature of equal or smaller size using all four arms, then you gain advantage.  Once you succeed at grappling a target this way, you cannot gain this benefit again for the next hour.</p>",
+      "value": "<p>With your extra hands, you can work with your hands more efficiently than others.<br>&nbsp;&nbsp;&nbsp;&nbsp;When taking a long rest to work a trade based on using your hands, you can additionally work a trade as if you also took a short rest as well, getting more done in less time.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -21,5 +21,5 @@
     "default": 0
   },
   "flags": {},
-  "_id": "ND986T2ORMSDKFYJ"
+  "_id": "DSW72S4UGRPZ789H"
 }

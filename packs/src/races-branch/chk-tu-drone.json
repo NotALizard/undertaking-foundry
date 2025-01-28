@@ -10,7 +10,7 @@
     },
     "source": "Core Rules",
     "portion": "core",
-    "classDetails": "<p>Drone Chk'tu Traits</p><ul><li><b>Compatibility: </b>Insectoid</li><li><b>Attribute Increase: </b>Your Strength increases by 2.</li><li><b>Skill Proficiency: </b>You are proficient in Dexterity (Sleight of Hand).</li><li><b>Extra Arms: </b>@Compendium[undertaking.abilities.5QYD3QFDLZO2NKCD]{Extra Arms}</li><li><b>Handsy: </b>@Compendium[undertaking.abilities.ND986T2ORMSDKFYJ]{Handsy}</li></ul>"
+    "classDetails": "<p>Drone Chk'tu Traits</p><ul><li><b>Compatibility: </b>Insectoid</li><li><b>Attribute Increase: </b>Your Strength increases by 2.</li><li><b>Trade Proficiency: </b>You are proficient in one Trade your choice.</li><li><b>Extra Arms: </b>@Compendium[undertaking.abilities.5QYD3QFDLZO2NKCD]{Extra Arms}</li><li><b>Multitasker: </b>@Compendium[undertaking.abilities.DSW72S4UGRPZ789H]{Multitasker}</li><li><b>Handsy: </b>@Compendium[undertaking.abilities.ND986T2ORMSDKFYJ]{Handsy}</li><li><b>Lifter: </b>@Compendium[undertaking.abilities.4F8FWF6AU6ZW5AWV]{Lifter}</li></ul>"
   },
   "effects": [],
   "folder": null,

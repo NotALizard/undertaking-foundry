@@ -10,7 +10,7 @@
       },
       "text": {
         "format": 1,
-        "content": "<p>Suffocating</p><ul><li>When a creature runs out of breath and starts suffocating, the creature has a number of rounds equal to its Constitution modifier (minimum of 1 round) to reach air before dropping to 0 hit points.</li><li>While suffocating, the creature automatically fails all death throws. </li></ul>",
+        "content": "<p>Suffocating</p><ul><li>A medium creature can hold its breath for 60 seconds (10 rounds).  For each size above that, they can hold their breath for twice as long.  For each size below that, they can hold their breath for half as long.</li><li>When a creature runs out of breath and starts suffocating, the creature has a number of rounds equal to its Constitution modifier (minimum of 1 round) to reach air before dropping to 0 hit points.</li><li>While suffocating, the creature automatically fails all death throws. </li></ul>",
         "markdown": ""
       },
       "_id": "2WL4LEJIDJ15HPJK",

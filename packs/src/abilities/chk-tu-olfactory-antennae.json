@@ -1,10 +1,10 @@
 {
-  "name": "Handsy",
+  "name": "Olfactory Antennae",
   "type": "ability",
   "img": "icons/commodities/claws/claw-insect-brown.webp",
   "system": {
     "description": {
-      "value": "<p>Whenever you make a Strength (Athletics) check to grapple a creature of equal or smaller size using all four arms, then you gain advantage.  Once you succeed at grappling a target this way, you cannot gain this benefit again for the next hour.</p>",
+      "value": "<p>Scout chk'tu have highly specialized antennae built for foraging.  By smell alone, they are able to locate and identify flowers and other notably scented flora at up to 100ft away.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -21,5 +21,5 @@
     "default": 0
   },
   "flags": {},
-  "_id": "ND986T2ORMSDKFYJ"
+  "_id": "PX53DTW4FKMESH8I"
 }

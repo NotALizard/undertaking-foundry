@@ -4,7 +4,7 @@
     "img": "icons/magic/air/wind-tornado-funnel-gray.webp",
     "system": {
         "description": {
-            "value": "<p>You kick up a wind at a point you can see, creating a small, continuous 5ft diameter twister.&nbsp; <br /> Any creature that starts its turn within 5ft of the twister must make a Strength (Save) check or be lifted 10ft into the air and shoved 10ft away from the twister.&nbsp; If the creature is inside the twister, they take this save at disadvantage and are thrown 20ft upward upon failure instead.&nbsp;&nbsp;</p><p>In addition, the winds of the twister disrupt ranged attacks shot within 5ft of it, reducing the chance to hit by -2.&nbsp; <br /> You can move the twister up to 10ft each turn as a minor action.</p>",
+            "value": "<p>You kick up a whirlwind in a space you can see, creating a controlled twister that lasts until the spell ends.  The twister is 5ft in diameter and occupies the same amount of space that a medium creature or object would, however, it is able to move through and occupy spaces regardless of whether there are objects or creatures already in those spaces.  You can move the twister up to 10ft each turn as a minor action. &nbsp; <br />Any creature that starts its turn within 5ft of the twister but not sharing its space must make a Strength (Save) check or be lifted 10ft into the air and shoved 10ft away from the twister.  If the creature is occupying the same space as the twister, they make this save check at disadvantage and are thrown 20ft straight upward upon failure instead.  Creatures that are huge or larger automatically succeed these save checks.&nbsp; <br />In addition, the winds of the twister disrupt any ranged attacks that pass within 5ft of it, imposing a -2 penalty to the attack roll.</p>",
             "chat": "",
             "unidentified": ""
         },
@@ -42,10 +42,10 @@
             "units": "ft"
         },
         "target": {
-            "value": "5",
+            "value": "",
             "width": null,
-            "units": "ft",
-            "type": "cylinder"
+            "units": "",
+            "type": ""
         },
         "damage": {
             "parts": [
