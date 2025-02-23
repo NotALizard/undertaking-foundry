@@ -720,7 +720,11 @@ a.toggle-lock {
 .list-header label {
     flex: 1;
     text-align: center;
-    margin-right: -16px;
+    margin-right: -32px;
+}
+.attunement-footer label {
+    flex: 1;
+    text-align: center;
 }
 .list-header.addable label {
     margin-right: -29px;
@@ -740,6 +744,10 @@ a.toggle-lock {
 .scroll-container {
     overflow-y: scroll;
     flex: 1;
+}
+.scroll-container.equipment {
+    border-top: 1px solid var(--bg-blue);
+    border-bottom: 1px solid var(--bg-blue);
 }
 .money-container {
     height: 30px;
@@ -1029,6 +1037,13 @@ a.damage-control.delete-damage {
 }
 .item-count-change.decrease {
     margin-top: -6px;
+}
+.item-attune-change {
+    font-size: 18px;
+    color: var(--fg-brown);
+}
+.item-attune-change.attuned {
+    color: var(--bg-blue);
 }
 
 .config-container {

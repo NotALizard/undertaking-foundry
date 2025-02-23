@@ -53,6 +53,7 @@ export default class UndertakingCharacterSheet extends ActorSheet {
 
     context.attacks = context.items.filter(function (item) { return (item.type == "weapon" && item.system.showInAttacks ) || (item.type == "spell" && item.system.showInAttacks ) || item.type == "customAttack"});
     context.equipment = context.items.filter(function (item) { return item.type == "equipment" || item.type == "weapon"});
+    context.attuned = context.items.filter(function (item) { return item?.system?.attuned});
     context.classes = context.items.filter(function (item) { return item.type == "class"});
     context.archetypes = context.items.filter(function (item) { return item.type == "archetype"});
     context.abilities = context.items.filter(function (item) { return item.type == "ability"});
@@ -93,6 +94,8 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     }
     context.carryLoad = carryLoad;
     context.isOverCarryCapacity = (carryLoad > context.actor.system.stats.carryCapacity);
+
+    context.attunedCount = context.attuned.length;
 
     this.quantityDeltas = [];
     this.quantityTimeout = null;
@@ -346,6 +349,9 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     });
     html.find(".item-delete").on("click", event => {
       this._onItemDelete(event);
+    });
+    html.find(".item-attune-change").on("click", event => {
+      this._onItemChangeAttunement(event);
     });
     html.find(".item-count-change").on("click", event => {
       this._onItemChangeQuantity(event);
@@ -653,6 +659,17 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     let field = element.dataset.field;
 
     return item.update({[field]: element.value});
+  }
+
+  _onItemChangeAttunement(event){
+    event.preventDefault();
+    
+    let element = event.currentTarget;
+    let itemId = element.closest(".item").dataset.itemId;
+    let item = this.actor.items.get(itemId);
+
+    let value = !(item.system.attuned);
+    item.update({['system.attuned']: value});
   }
 
   _onItemChangeQuantity(event){

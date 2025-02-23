@@ -331,13 +331,22 @@
                                         {{/ifCond}}
                                         <a class="item-create" data-type="equipment" title="{{ localize "undertaking.AddItem" }}"><i class="fas fa-plus"></i></a>
                                     </div>
-                                    <div class="scroll-container">
+                                    <div class="scroll-container equipment">
                                         <div class="equip-scroll">
                                             {{#each equipment as |equip id|}}
                                             {{> "systems/undertaking/templates/partials/character/equipment-card.hbs" equip lockEdit=../actor.system.details.editLock}}
                                             {{/each}}
                                         </div>
                                     </div>
+                                    {{#ifCond attunedCount '>' 0}}
+                                    <div class="attunement-footer equipment frow">
+                                        <label>{{ localize "undertaking.Attuned" }}: {{attunedCount}}/{{actor.system.stats.attunement.max}}
+                                            {{#ifCond attunedCount '>' actor.system.stats.attunement.max}}
+                                                <i class="fa-solid fa-triangle-exclamation red" title="{{localize "undertaking.OverAttunements"}}" style="margin-left: 4px;"></i>
+                                            {{/ifCond}}
+                                        </label>
+                                    </div>
+                                    {{/ifCond}}
                                 </div>
                                 <div class="money-container frow">
                                     <div class="money-col fcol">
@@ -917,7 +926,11 @@
                         <input name="system.stats.luck.max" type="number" placeholder="3" value="{{actor.system.stats.luck.max}}" data-dtype="Number" />
                     </div>
                     <div class="config-input frow">
-                        <label>Carry Capacity / STR</label>
+                        <label>Maximum Attunements</label>
+                        <input name="system.stats.attunement.max" type="number" placeholder="3" value="{{actor.system.stats.attunement.max}}" data-dtype="Number" />
+                    </div>
+                    <div class="config-input frow">
+                        <label>Carry Capacity per STR</label>
                         <input name="system.stats.carry" type="number" placeholder="15" value="{{actor.system.stats.carry}}" data-dtype="Number" />
                     </div>
                     <div class="config-input frow">

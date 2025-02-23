@@ -23,15 +23,30 @@
               <input class="no-bg short" name="system.price.denomination" type="text" value="{{item.system.price.denomination}}" placeholder="gp" data-dtype="String" />
             </div>
           </div>
-          <hr class="blue"/>
-          {{#ifGM}}
-            <input type="hidden" id="input-identified" name="system.identified" value="{{item.system.identified}}" data-dtype="Boolean">
-            <div class="item-row frow">
-              <div class="frow short">
-                <label>{{ localize "undertaking.Identified" }}:</label>
-                <input type="checkbox" class="input-checkbox" data-for="#input-identified" {{#ifCond item.system.identified '==' true}}checked{{/ifCond}}/>
-              </div>
+          <input type="hidden" id="input-identified" name="system.identified" value="{{item.system.identified}}" data-dtype="Boolean">
+          <input type="hidden" id="input-attunement" name="system.attunement" value="{{item.system.attunement}}" data-dtype="Boolean">
+          <input type="hidden" id="input-attuned" name="system.attuned" value="{{item.system.attuned}}" data-dtype="Boolean">
+          <div class="item-row frow">
+            {{#ifGM}}
+            <div class="frow short">
+              <label>{{ localize "undertaking.Identified" }}:</label>
+              <input type="checkbox" class="input-checkbox" data-for="#input-identified" {{#ifCond item.system.identified '==' true}}checked{{/ifCond}}/>
             </div>
+            {{/ifGM}}
+            <div class="frow short">
+              <label>{{ localize "undertaking.RequiresAttunement" }}:</label>
+              <input type="checkbox" class="input-checkbox" data-for="#input-attunement" {{#ifCond item.system.attunement '==' true}}checked{{/ifCond}}/>
+            </div>
+            {{#ifCond item.system.attunement '==' true}}
+            <div class="frow short">
+                <label>{{ localize "undertaking.Attuned" }}:</label>
+                <input type="checkbox" class="input-checkbox" data-for="#input-attuned" {{#ifCond item.system.attuned '==' true}}checked{{/ifCond}}/>
+            </div>
+            {{/ifCond}}
+          </div>
+          <hr class="blue"/>
+          <br/>
+          {{#ifGM}}
             <label><b>{{ localize "undertaking.Description" }}&nbsp;({{#ifCond item.system.identified '==' true}}{{ localize "undertaking.Shown" }}{{else}}{{ localize "undertaking.Hidden" }}{{/ifCond}})</b></label>
             <div class="description-container {{#ifCond item.system.identified '==' false}}inactive{{else}}highlighted{{/ifCond}}">
               {{editor descriptionHTML target="system.description.value" button=true editable=editable engine="prosemirror" collaborate=false}}

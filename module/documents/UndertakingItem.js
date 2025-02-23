@@ -17,6 +17,10 @@ export default class UndertakingItem extends Item {
             console.warn("Migrating UndertakingItem spell school from 'enc' to 'mes'");
             source.system.school = "mes";
         }
+        if(source?.system && typeof source.system.attunement === "number"){
+            console.warn("Migrating UndertakingItem attunement from int to bool");
+            source.system.attunement = source.system.attunement > 0;
+        }
         return super.migrateData(source);
     }
 

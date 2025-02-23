@@ -3,6 +3,11 @@
     <div class="item-name equipment">
         <a class="item-open"><p>{{name}}</p></a>
     </div>
+    {{#ifCond system.attunement '==' true}}
+    <div class="item-buttons equipment fcol">
+        <a class="item-attune-change{{#ifCond system.attuned '==' true}} attuned{{/ifCond}}" title="{{#ifCond system.attuned '==' true}}{{ localize "undertaking.Attuned" }}{{else}}{{ localize "undertaking.NotAttuned" }}{{/ifCond}}"><i class="{{#ifCond system.attuned '==' true}}fa-solid{{else}}fa-regular{{/ifCond}} fa-sparkles"></i></a>
+    </div>
+    {{/ifCond}}
     <div class="item-count equipment fcol">
         <a class="item-count-change increase"><i class="fa-solid fa-caret-up"></i></a>                    
         <label class="item-quantity" title="{{ localize "undertaking.Quantity" }}">{{system.quantity}}</label>
