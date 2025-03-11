@@ -1,0 +1,24 @@
+{
+  "name": "Eikonic Numbers",
+  "type": "ability",
+  "img": "icons/magic/holy/prayer-hands-glowing-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>At its core, a Cleric is one whose faith gets them through tough situations. A Cleric without faith is no Cleric at all.</p><p><strong>Eikonic Numbers and Mantras</strong></p><p>Every Cleric has a mark or idea that symbolizes their faith; an Eikon. When you feel this faith manifest, you give your mantras life&mdash;either vocally or internally&mdash;channeling that belief into action.</p><p>Your Divine Dominion defines your <strong>Eikonic Number</strong> and teaches you its associated <strong>Mantras</strong>. When you roll one of your Eikonic Numbers on any single die as listed in the rules (for example, 1d100 counts as a single die, not 2d10), you activate the effects of the <strong>Mantra</strong> you have assigned to it. When you roll with Disadvantage, your Eikonic Number only triggers if it&rsquo;s the lower of the two results.</p><p>Whenever you adopt a new Cleric Divine Dominion, you will be instructed to pick your Eikonic Number from the table below. These options present a trade-off; lower Potencies are rolled more frequently but allow for fewer Mantras to be assigned to them, while higher Potencies are less frequent but can have more Mantras instead. Taking multiple Divine Dominions may give you additional Eikonic Numbers.</p><p><em>Eikonic Number Potency Table</em></p><table><tbody><tr><td><p><strong>Potency</strong></p></td><td><p><strong>Available Eikonic Numbers</strong></p></td><td><p><strong>Max. Mantra Assignments</strong></p></td></tr><tr><td><p>Lesser</p></td><td><p>7 or 8</p></td><td><p>1</p></td></tr><tr><td><p>Moderate</p></td><td><p>9 or 10</p></td><td><p>2</p></td></tr><tr><td><p>Greater</p></td><td><p>11 or 12</p></td><td><p>2*</p></td></tr></tbody></table><p><em>* When you roll a Greater Potency Eikonic Number, Faith Abides also activates without having to replace a Mantra effect.</em></p><p><strong>Faith Abides</strong></p><p>When you roll your Eikonic Number, you can replace one <strong>Mantra</strong> with the following effect:</p><ul><li>Gain a @Compendium[undertaking.abilities.65D4NMYRBMKHW59K]{&#x1F56F; Faith} Die.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "starter"
+    },
+    "requirements": "Cleric",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "CTOHXD4403501WIK"
+}

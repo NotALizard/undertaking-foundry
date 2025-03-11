@@ -1,0 +1,25 @@
+{
+  "name": "Fighting Stance: Ranged",
+  "type": "ability",
+  "img": "icons/weapons/bows/shortbow-recurve-yellow-blue.webp",
+  "system": {
+    "description": {
+      "value": "<table><tbody><tr><td><p><strong>Ranged Stance</strong></p></td></tr><tr><td><p><em>Requirement</em>: A ranged weapon.</p></td></tr><tr><td><p>With an eye toward higher ground, you grab your ranged weapon and prepare to climb&mdash;from above, you&rsquo;ll be able to both see and control the battlefield, delivering death from above.</p></td></tr><tr><td><p>Pros</p><p><strong>Death from Above</strong></p><ul><li>While at least 5ft elevated from your target, your attacks gain +1 to hit, deal +1 damage, and have +10ft range.</li><li>Gain this bonus again at 15ft, 30ft, 45ft, and 60ft elevated, to a maximum bonus of +5 and +50ft.</li><li>While flying or hovering, this bonus caps at +2 and +20ft.</li></ul><br /><p><strong>Overwatch</strong></p><ul><li>You have advantage on readied attacks against moving targets.</li></ul></td></tr><tr><td><p>Cons</p><p><strong>Fox Hole</strong></p><ul><li>Creatures with cover against your attacks treat:</li><ul><li><strong>Three Quarters Cover</strong> as <strong>Full Cover</strong>.</li><li><strong>Half Cover</strong> as <strong>Three Quarters Cover</strong>.&nbsp;</li></ul></ul></td></tr></tbody></table>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "stance"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "SK2FZU8XH2UZX0GP"
+}

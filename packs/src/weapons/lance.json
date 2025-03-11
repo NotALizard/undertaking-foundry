@@ -4,7 +4,7 @@
     "img": "icons/weapons/polearms/spear-hooked-double-engraved.webp",
     "system": {
         "description": {
-            "value": "Encompasses all lances, and pikes. <br>Special: You have disadvantage when you use a lance to attack a target within 5ft of you.  Also, the lance requires two hands to wield when you aren\u2019t mounted.",
+            "value": "Encompasses all lances, and pikes. <br>Special: You have disadvantage when you use a lance to attack a target within 5ft of you.  Additionally, lances do not require two hands to wield when you are on a mount.",
             "chat": "",
             "unidentified": ""
         },
@@ -51,7 +51,7 @@
             "rch": true,
             "spc": true,
             "thr": false,
-            "two": false,
+            "two": true,
             "una": false,
             "ver": false
         },

@@ -1,0 +1,24 @@
+{
+  "name": "Number of Order",
+  "type": "ability",
+  "img": "icons/magic/symbols/cog-orange-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>You gain an Eikonic Number as detailed in the&nbsp;@Compendium[undertaking.abilities.CTOHXD4403501WIK]{Eikonic Numbers} Cleric Starter Ability.</p><p>Additionally, based on your <em>Eikonic Number Potency</em>, assign one or both of the following Mantras to this new <strong>Eikonic Number of Order</strong>:</p><ul><li><strong>Justice Never Rests:</strong> You gain an extra Reaction until the start of your next turn.</li><li><strong>Lawful:</strong> You immediately know either:</li><ul><li>An important law, natural or legal, of the area you are in.</li><li>Someone who has broken the law in the last 24 hours within 1 mile of you.</li></ul><li><strong>Oath to Order</strong>: Move an event or creature&rsquo;s turn up or back in the Turn Order by 1 slot. This can only affect the same target once per turn.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "starter"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "NU56ZP100JW4HO08"
+}

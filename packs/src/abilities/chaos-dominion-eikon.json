@@ -1,0 +1,24 @@
+{
+  "name": "Number of Chaos",
+  "type": "ability",
+  "img": "icons/magic/symbols/clover-luck-white-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>You gain an Eikonic Number as detailed in the&nbsp;@Compendium[undertaking.abilities.CTOHXD4403501WIK]{Eikonic Numbers} Cleric Starter Ability.</p><p>Additionally, based on your <em>Eikonic Number Potency</em>, assign one or both of the following Mantras to this new <strong>Eikonic Number of Chaos</strong>:</p><ul><li><strong>Chaotic:</strong> You can immediately either:</li><ul><li>Cause a small object to move a few feet.</li><li>Cause a small fragile object to crack or shatter.</li><li>Swap places with a creature up to 10ft away.</li></ul><li><strong>Control of Chaos:</strong> You can re-roll 1 die before the end of your next turn, and must take the new result.</li><li><strong>Embrace the Chaos:</strong> A creature of your choice that you can see takes 1d10 chaos damage. You take half of the damage dealt, unless you spend a @Compendium[undertaking.abilities.65D4NMYRBMKHW59K]{&amp;#x1F56F; Faith} Die to negate the damage against yourself.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "starter"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "7RQ8BN29ZKQKDDPV"
+}

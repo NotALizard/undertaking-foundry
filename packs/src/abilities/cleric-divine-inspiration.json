@@ -1,0 +1,24 @@
+{
+  "name": "Divine Inspiraiton",
+  "type": "ability",
+  "img": "icons/magic/holy/yin-yang-balance-symbol.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have become well-versed in the mantras and ways of your beliefs.  Seldom are the moments when you are found at a loss for inspiration with your faith to guide you.</p><p>&nbsp;When you roll any of your @Compendium[undertaking.abilities.CTOHXD4403501WIK]{Eikonic Numbers}, you can immediately activate one of the following Mantras.</p><ul><li>Your Awareness and Wisdom (Perception) checks are increased by +5 until the end of your next turn.</li><li>Your AC increases by +1 until the end of your next turn.</li><li>You gain +1 on all save checks until the end of your next turn.</li><li>You can restore up to your Wisdom Modifier worth of temporary hit points distributed amongst creatures within 15 feet of you.</li><li>You have +1 on skill checks until the end of your next turn.</li><li>Any unassigned Mantra from the same Divine Dominion as the rolled Eikonic Number.</li></ul><p><br />&nbsp;Upon reaching the Growth Level at 11th overall level, you can activate this ability twice when you roll an Eikonic Number.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "novice"
+    },
+    "requirements": "Must have the Cleric Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "8JTZPLSCYX3QARDO"
+}

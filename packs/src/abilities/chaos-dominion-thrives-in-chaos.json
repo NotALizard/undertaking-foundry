@@ -4,7 +4,7 @@
   "img": "icons/skills/social/intimidation-impressing.webp",
   "system": {
     "description": {
-      "value": "<p>Once per long rest, when you skip your turn from taking a Desperate Action in the previous round, trigger a Miracle.</p>",
+      "value": "<p><em>Requirement: </em>The Miracle Adept ability</p><p>Once per long rest, when you skip your turn from taking a Desperate Action in the previous round, trigger a Miracle.</p>",
       "chat": "",
       "unidentified": ""
     },
