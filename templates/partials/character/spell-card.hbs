@@ -73,7 +73,7 @@
             {{#ifCond system.components.somatic '==' true}}<p title="{{localize "undertaking.Somatic"}}">&nbsp;S</p>{{/ifCond}}{{#ifCond system.components.verbal '==' true}}<p title="{{localize "undertaking.Verbal"}}">&nbsp;V</p>{{/ifCond}}{{#ifCond system.components.material '==' true}}<p title="{{localize "undertaking.Material"}}">&nbsp;M</p>{{/ifCond}}<p>&nbsp;</p>
         </div>
         <div class="spell-detail-row material-details frow">
-            <p>&nbsp;{{#ifCond system.materials.cost '!=' 0}}{{system.materials.cost}} gp{{/ifCond}} {{#ifCond system.materials.consumed '==' true}}&nbsp;</p><p title="{{localize "undertaking.Consumed"}}">&#10060;</p>{{/ifCond}}
+            <p>&nbsp;{{#ifCond system.materials.cost '>' 0}}{{system.materials.cost}} gp{{/ifCond}} {{#ifCond system.materials.consumed '==' true}}&nbsp;</p><p title="{{localize "undertaking.Consumed"}}">&#10060;</p>{{/ifCond}}
         </div>
     </div>
     <div class="spell-details-col fcol long">
