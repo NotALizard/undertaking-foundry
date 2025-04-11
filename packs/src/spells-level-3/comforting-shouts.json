@@ -11,7 +11,7 @@
         "source": "Core Rules",
         "level": "3",
         "charge": true,
-        "school": "evo",
+        "school": "nec",
         "components": {
             "somatic": false,
             "verbal": true,

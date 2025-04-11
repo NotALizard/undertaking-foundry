@@ -4,7 +4,7 @@
     "img": "icons/tools/fishing/weight-steel-iron.webp",
     "system": {
         "description": {
-            "value": "<p>Designating one creature within the spell\u2019s range that you can see, you gather the force of gravity and bring it crashing down on the target.  The target must make a Dexterity (Save) check.  On a failed save, the creature takes 3d6 force damage and its base speed is reduced to 0 feet.  On a success, the creature only takes half damage.<br>&nbsp;&nbsp;&nbsp;&nbsp;Should the target fail its save check, the spell continues and the caster must keep up concentration.  While the spell is ongoing, the target retains a speed of 0 feet, however, it does not take damage again.  The target gets a chance to make another Dexterity (Save) check at the end of each of their turns to break free.</p>",
+            "value": "<p>Designating one creature within the spell&rsquo;s range that you can see, you gather the force of gravity and bring it crashing down on the target. The target must make a Dexterity (Save) check. On a failed save, the creature takes 3d6 force damage and its base speed is reduced to 0 feet. On a success, the creature only takes half damage.<br />&nbsp;&nbsp;&nbsp;&nbsp;The target gets a chance to make another Dexterity (Save) check at the end of each of their turns to break free, ending the spell on success. Should the target fail this save check, the creature takes 1d6 force damage and its speed remains at 0 feet.</p><p>Charge: This is a spell that can be Charged for an additional Mana cost to increase its effect:&nbsp;</p><ul><li>2 Mana: Cast on an additional target, and the spell&rsquo;s base damage is reduced to 2d6 force damage</li></ul>",
             "chat": "",
             "unidentified": ""
         },

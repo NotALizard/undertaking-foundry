@@ -4,7 +4,7 @@
   "img": "icons/commodities/biological/stinger-insect-grey.webp",
   "system": {
     "description": {
-      "value": "<p>You have a stinger on your abdomen that is bred to kill.  If you attempt to sting a creature with it, make a melee weapon attack with proficiency.  On hit, the target takes 1d10 piercing damage, and you take 1d10 chaos damage as the stinger rips out.  On critical hit, the target becomes poisoned.  Otherwise the target must make a Constitution (Save) Check of DC 10 + your proficiency bonus.  On failure, the creature takes 1d6 poison damage and is sickened until the end of your next turn.  You cannot use this racial trait again until you take a long rest.</p>",
+      "value": "<p>You have a stinger on your abdomen that is bred to kill. If you attempt to sting a creature with it, make a melee weapon attack with proficiency. On hit, the target takes 1d10 piercing damage, and you take 1d10 chaos damage as the stinger rips out. On a critical hit, the target becomes @Compendium[undertaking.conditions.SRRBLPRSJWGUR551]{Poisoned}. Otherwise the target must make a Constitution (Save) Check of DC 10 + your proficiency bonus. On failure, the creature takes 1d6 poison damage and is @Compendium[undertaking.conditions.9X088PM7H5U2S1HQ]{Sickened} until the end of your next turn. <br />&nbsp;&nbsp;&nbsp;&nbsp;You cannot use this racial trait again until you take a <em>Long Rest Action</em> to focus your body on regrowing the stinger.</p>",
       "chat": "",
       "unidentified": ""
     },

@@ -4,7 +4,7 @@
   "img": "icons/commodities/claws/claw-insect-brown.webp",
   "system": {
     "description": {
-      "value": "<p>With your extra hands, you can work with your hands more efficiently than others.<br>&nbsp;&nbsp;&nbsp;&nbsp;When taking a long rest to work a trade based on using your hands, you can additionally work a trade as if you also took a short rest as well, getting more done in less time.</p>",
+      "value": "<p>With your extra hands, you can work with your hands more efficiently than others. <br />&nbsp;&nbsp;&nbsp;&nbsp;When taking a <em>Long Rest Action</em> to work a trade based on using your hands, you can additionally take a <em>Rest Action</em>, getting more done in less time. <br />&nbsp;&nbsp;&nbsp;&nbsp;In addition, for each hour spent working with your hands, you complete 1.5 hours of work. For example, an 8 hour task can be completed in 6 hours instead.</p>",
       "chat": "",
       "unidentified": ""
     },
