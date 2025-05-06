@@ -1,0 +1,20 @@
+{
+    "name": "Small Cage",
+    "type": "equipment",
+    "img": "icons/environment/traps/cage-simple-wood.webp",
+    "system": {
+        "description": {
+            "value": "A small cage made from interlaced shoots of wood or bands of iron, with one side that can be open and shut.  It can securely confine one or more tiny creatures and has a capacity of about 5 cubic feet or 10lbs.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "15",
+        "price": {
+            "value": "5",
+            "denomination": "gp"
+        },
+        "rarity": ""
+    },
+    "_id": "A0FTPHU6A21A6A54"
+}

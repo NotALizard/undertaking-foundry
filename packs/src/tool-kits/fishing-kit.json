@@ -1,0 +1,19 @@
+{
+    "name": "Fishing Kit",
+    "type": "equipment",
+    "img": "icons/tools/fishing/rod-wood-blue-tan.webp",
+    "system": {
+        "description": {
+            "value": "Fishers can fish over rests taken near pools of water or liquid, allowing them to gather food in bulk or reel in useful prize fish. Simple complexity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "19",
+        "price": {
+            "value": "8",
+            "denomination": "gp"
+        }
+    },
+    "_id": "GN5O5UZX85J3RTV9"
+}

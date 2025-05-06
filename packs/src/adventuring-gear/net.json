@@ -1,0 +1,20 @@
+{
+    "name": "Net",
+    "type": "equipment",
+    "img": "icons/environment/traps/net.webp",
+    "system": {
+        "description": {
+            "value": "A net made out of hempen rope, often with metal weights attached.  As an action, you can attempt to ensnare a medium or smaller creature with the net.  Make a Grapple contest against the target.  If you win, the target is Restrained inside the net instead of Grappled.  A creature touching the net can use its action to make a DC 10 Strength check, freeing itself or another creature on a success.  Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "3",
+        "price": {
+            "value": "2",
+            "denomination": "gp"
+        },
+        "rarity": ""
+    },
+    "_id": "IEUYP3X451NCPZ4M"
+}

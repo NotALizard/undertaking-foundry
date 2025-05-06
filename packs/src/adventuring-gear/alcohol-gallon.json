@@ -1,0 +1,20 @@
+{
+    "name": "Alcohol, gallon",
+    "type": "equipment",
+    "img": "icons/consumables/drinks/alcohol-jug-spirits-brown.webp",
+    "system": {
+        "description": {
+            "value": "A gallon of whatever else is on tap.  Contains eight 1-pint servings.  Gallon container not included.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "8",
+        "price": {
+            "value": "2",
+            "denomination": "sp"
+        },
+        "rarity": ""
+    },
+    "_id": "IRESVETRZ0923GJR"
+}

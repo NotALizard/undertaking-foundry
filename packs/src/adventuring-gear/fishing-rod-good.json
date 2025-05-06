@@ -4,7 +4,7 @@
     "img": "icons/tools/fishing/rod-brown-gold.webp",
     "system": {
         "description": {
-            "value": "Fishing Die: 1d8.  A long fishing rod with a solid line, a steel hook and sinker, and a cork bobber.  Allows the user to attempt to fish.  One piece of fishing bait required.",
+            "value": "A long fishing rod with a solid line, a steel hook and sinker, and a cork bobber.  You can use a Rest Action and expend 1 Fishing Bait to catch a single unexceptional fish with a successful DC 15 Wisdom (Instinct) Check. This fish can be cooked to feed a single creature.  When used with the Fishing Trade, it has a base fishing score of 1.",
             "chat": "",
             "unidentified": ""
         },

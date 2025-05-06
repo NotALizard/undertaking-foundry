@@ -48,7 +48,16 @@
             "type": "sphere"
         },
         "damage": {
-            "parts": [],
+            "parts": [
+                [
+                    "2d10",
+                    "radiant"
+                ],
+                [
+                    "2d10",
+                    "additional radiant"
+                ]
+            ],
             "versatile": ""
         },
         "save": {

@@ -1,0 +1,20 @@
+{
+    "name": "Wine, fine",
+    "type": "equipment",
+    "img": "icons/consumables/drinks/wine-amphora-clay-gray.webp",
+    "system": {
+        "description": {
+            "value": "A bottle of fine wine.  Only the finest.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "3",
+        "price": {
+            "value": "2",
+            "denomination": "gp"
+        },
+        "rarity": ""
+    },
+    "_id": "I4C6FCZFADLBCGZV"
+}

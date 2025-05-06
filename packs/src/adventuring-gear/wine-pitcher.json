@@ -1,0 +1,20 @@
+{
+    "name": "Wine, pitcher",
+    "type": "equipment",
+    "img": "icons/consumables/drinks/wine-amphora-clay-red.webp",
+    "system": {
+        "description": {
+            "value": "A pitcher of standard-quality wine.  Contains 1 gallon of wine.  Drinking pitcher not included.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "3",
+        "price": {
+            "value": "2",
+            "denomination": "sp"
+        },
+        "rarity": ""
+    },
+    "_id": "XP1P0AQLJCCUBZX3"
+}
