@@ -98,7 +98,9 @@
           {{#ifCond item.system.components.material '==' true}}
           <div class="item-row frow">
             <label>{{ localize "undertaking.Material" }}:</label>
-            <input class="no-bg short" name="system.materials.value" type="text" value="{{item.system.materials.value}}" data-dtype="String" />
+            <input class="short" name="system.materials.value" type="text" value="{{item.system.materials.value}}" data-dtype="String" />
+          </div>
+          <div class="item-row frow">
             <label>{{ localize "undertaking.Consumed" }}:</label>
             <input type="checkbox" class="input-checkbox" data-for="#input-consumed" {{#ifCond item.system.materials.consumed '==' true}}checked{{/ifCond}}/>
             <label>{{ localize "undertaking.Cost" }}:</label>
