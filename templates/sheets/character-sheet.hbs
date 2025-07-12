@@ -259,47 +259,55 @@
                                     </div>
                                 </div>
                                 <div class="rest-dice frow">
-                                    <div class="rest-labels fcol">
-                                        <label class="rest-label max">{{ localize "undertaking.Max" }}</label>
-                                        <label class="rest-label val">{{ localize "undertaking.RestDice" }}</label>
-                                    </div>
                                     <div class="rest-status-container frow">
-                                        <div class="rest-container frow">
-                                            <div class="rest-die-col fcol">
-                                                <div class="rest-die max fcol">
-                                                    <input name="system.stats.restDice.d6.max" type="number" value="{{actor.system.stats.restDice.d6.max}}" placeholder="0" data-dtype="Number" />
-                                                    <label class="rollable" data-rolltype="restdie" data-die="d6">{{ localize "undertaking.DicePrefix" }}6</label>
+                                        <div class="rest-labels-container fcol">
+                                            <div class="rest-label top frow">
+                                                <div class="rest-label-spacer"></div>
+                                                <div class="rest-label-inner">Rest Dice</div>
+                                                <div class="rest-label-spacer"></div>
+                                            </div>
+                                            <div class="rest-container frow">
+                                                <div class="rest-die-col fcol">
+                                                    <div class="rest-die val fcol">
+                                                        <input name="system.stats.restDice.d6.value" type="number" value="{{actor.system.stats.restDice.d6.value}}" placeholder="0" data-dtype="Number" />
+                                                        <label class="rollable" data-rolltype="restdie" data-die="d6">{{ localize "undertaking.DicePrefix" }}6</label>
+                                                    </div>
+                                                    <div class="rest-die max fcol">
+                                                        <input name="system.stats.restDice.d6.max" type="number" value="{{actor.system.stats.restDice.d6.max}}" placeholder="0" data-dtype="Number" />
+                                                    </div>
                                                 </div>
-                                                <div class="rest-die val fcol">
-                                                    <input name="system.stats.restDice.d6.value" type="number" value="{{actor.system.stats.restDice.d6.value}}" placeholder="0" data-dtype="Number" />
+                                                <div class="rest-die-col fcol">
+                                                    <div class="rest-die val fcol">
+                                                        <input name="system.stats.restDice.d8.value" type="number" value="{{actor.system.stats.restDice.d8.value}}" placeholder="0" data-dtype="Number" />
+                                                        <label class="rollable" data-rolltype="restdie" data-die="d8">{{ localize "undertaking.DicePrefix" }}8</label>
+                                                    </div>
+                                                    <div class="rest-die max fcol">
+                                                        <input name="system.stats.restDice.d8.max" type="number" value="{{actor.system.stats.restDice.d8.max}}" placeholder="0" data-dtype="Number" />
+                                                    </div>
+                                                </div>
+                                                <div class="rest-die-col fcol">
+                                                    <div class="rest-die val fcol">
+                                                        <input name="system.stats.restDice.d10.value" type="number" value="{{actor.system.stats.restDice.d10.value}}" placeholder="0" data-dtype="Number" />
+                                                        <label class="rollable" data-rolltype="restdie" data-die="d10">{{ localize "undertaking.DicePrefix" }}10</label>
+                                                    </div>
+                                                    <div class="rest-die max fcol">
+                                                        <input name="system.stats.restDice.d10.max" type="number" value="{{actor.system.stats.restDice.d10.max}}" placeholder="0" data-dtype="Number" />
+                                                    </div>
+                                                </div>
+                                                <div class="rest-die-col fcol">
+                                                    <div class="rest-die val fcol">
+                                                        <input name="system.stats.restDice.d12.value" type="number" value="{{actor.system.stats.restDice.d12.value}}" placeholder="0" data-dtype="Number" />
+                                                        <label class="rollable" data-rolltype="restdie" data-die="d12">{{ localize "undertaking.DicePrefix" }}12</label>
+                                                    </div>
+                                                    <div class="rest-die max fcol">
+                                                        <input name="system.stats.restDice.d12.max" type="number" value="{{actor.system.stats.restDice.d12.max}}" placeholder="0" data-dtype="Number" />
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="rest-die-col fcol">
-                                                <div class="rest-die max fcol">
-                                                    <input name="system.stats.restDice.d8.max" type="number" value="{{actor.system.stats.restDice.d8.max}}" placeholder="0" data-dtype="Number" />
-                                                    <label class="rollable" data-rolltype="restdie" data-die="d8">{{ localize "undertaking.DicePrefix" }}8</label>
-                                                </div>
-                                                <div class="rest-die val fcol">
-                                                    <input name="system.stats.restDice.d8.value" type="number" value="{{actor.system.stats.restDice.d8.value}}" placeholder="0" data-dtype="Number" />
-                                                </div>
-                                            </div>
-                                            <div class="rest-die-col fcol">
-                                                <div class="rest-die max fcol">
-                                                    <input name="system.stats.restDice.d10.max" type="number" value="{{actor.system.stats.restDice.d10.max}}" placeholder="0" data-dtype="Number" />
-                                                    <label class="rollable" data-rolltype="restdie" data-die="d10">{{ localize "undertaking.DicePrefix" }}10</label>
-                                                </div>
-                                                <div class="rest-die val fcol">
-                                                    <input name="system.stats.restDice.d10.value" type="number" value="{{actor.system.stats.restDice.d10.value}}" placeholder="0" data-dtype="Number" />
-                                                </div>
-                                            </div>
-                                            <div class="rest-die-col fcol">
-                                                <div class="rest-die max fcol">
-                                                    <input name="system.stats.restDice.d12.max" type="number" value="{{actor.system.stats.restDice.d12.max}}" placeholder="0" data-dtype="Number" />
-                                                    <label class="rollable" data-rolltype="restdie" data-die="d12">{{ localize "undertaking.DicePrefix" }}12</label>
-                                                </div>
-                                                <div class="rest-die val fcol">
-                                                    <input name="system.stats.restDice.d12.value" type="number" value="{{actor.system.stats.restDice.d12.value}}" placeholder="0" data-dtype="Number" />
-                                                </div>
+                                            <div class="rest-label bottom frow">
+                                                <div class="rest-label-spacer"></div>
+                                                <div class="rest-label-inner">Maximum</div>
+                                                <div class="rest-label-spacer"></div>
                                             </div>
                                         </div>
                                         <div class="status-container fcol">

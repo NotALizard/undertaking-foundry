@@ -586,19 +586,24 @@ input.mana-val{
     width: 14px;
 }
 .rest-label {
-    transform: rotate(-90deg);
     height: 12px;
-    transform-origin: top left;
+    z-index: 5;
 }
-.rest-label.max {
+.rest-label.top {
+    margin-bottom: -12px;
+}
+.rest-label.bottom {
+    margin-top: -14px;
+    margin-bottom: 2px;
+}
+.rest-label-spacer{
     flex: 1;
-    margin-top: 40px;
 }
-.rest-label.val {
-    margin-top: 55px;
-    margin-bottom: -15px;
-    flex: 2;
-    white-space: nowrap;
+.rest-label-inner{
+    flex:8;
+    background: white;
+    height: 14px;
+    padding-bottom: 2px;
 }
 .rest-status-container {
     text-align: center;
@@ -608,24 +613,28 @@ input.mana-val{
     background: white;
     flex: 1;
 }
-.rest-container {
+.rest-labels-container {
     width: 50%;
+}
+.rest-container {
+    width: 100%;
+    height: 100%;
 }
 .rest-die-col {
     flex: 1;
     border-right: solid;
 }
 .rest-die.max {
-    flex: 1;
+    border-top: solid;
+    flex: 2;
 }
 .rest-die input {
     background: none;
     border: none;
 }
 .rest-die.val {
-    border-top: solid;
-    flex: 2;
-    justify-content: center;
+    flex: 3;
+    justify-content: end;
 }
 .status-container {
     flex: 1;
