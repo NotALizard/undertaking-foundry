@@ -86,13 +86,13 @@ export default class UndertakingCharacterSheet extends ActorSheet {
 
     let carryLoad = 0;
     for(let e of context.equipment){
-      let weight = parseInt(e.system.weight);
+      let weight = parseFloat(e.system.weight);
       if(isNaN(weight)) weight = 0;
-      let quantity = parseInt(e.system.quantity);
+      let quantity = parseFloat(e.system.quantity);
       if(isNaN(quantity)) quantity = 0;
       carryLoad += (weight*quantity);
     }
-    context.carryLoad = carryLoad;
+    context.carryLoad = Math.round(carryLoad);
     context.isOverCarryCapacity = (carryLoad > context.actor.system.stats.carryCapacity);
 
     context.attunedCount = context.attuned.length;
