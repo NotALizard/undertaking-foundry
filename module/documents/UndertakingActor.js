@@ -19,6 +19,7 @@ export default class UndertakingActor extends Actor {
 
   _prepareNPCData(actorData){
     const system = actorData.system;
+    system.stats.profBonus = system.stats.profBonus || 0;
     // Loop through attribute scores, and add their modifiers to our sheet output.
     for (let [key, attribute] of Object.entries(system.attributes)) {
       attribute.mod = Math.floor((attribute.value - 10) / 2);

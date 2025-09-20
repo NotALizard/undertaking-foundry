@@ -15,6 +15,9 @@
 .sheet-body.other{
     height: calc(100% - 60px);
 }
+.sheet-body.npc{
+    height: calc(100% - 140px);
+}
 .sheet-navigation.tabs .gear {
     flex: none !important;
     width: auto !important;
@@ -77,6 +80,7 @@ hr.blue {
     display: block;
     width: 100%;
     background-color: var(--bg-blue);
+    background-image: none;
     height: 2px;
     margin: 0;
 }
@@ -1118,6 +1122,26 @@ a.damage-control.delete-damage {
 .npc-row-1 .ac-container {
     margin-left: 5px;
     height: 62px;
+}
+.npc-two-col {
+    margin: 2px;
+}
+.npc-abilities-equip-row {
+    flex: 3;
+    min-height: 120px;
+    max-height: 35%;
+}
+.npc-attacks-row {
+    margin: 2px;
+    flex: 3;
+    min-height: 140px;
+    max-height: 30%;
+}
+.npc-spells-row {
+    margin: 2px;
+    flex: 3;
+    min-height: 140px;
+    max-height: 35%;
 }
 .rollable{
     cursor: pointer;
