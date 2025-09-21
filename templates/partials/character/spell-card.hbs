@@ -24,7 +24,7 @@
         </div>
         {{#spellSource . actor}}{{/spellSource}}
     </div>
-    <div class="spell-details-col fcol long">
+    <div class="spell-details-col fcol short">
         <div class="spell-detail-row level-school frow">
             {{#ifCond system.level '==' 0}}
                 <p>{{#school system.school}}system.school{{/school}} {{localize "undertaking.Cantrip"}}</p>
@@ -76,7 +76,7 @@
             <p>&nbsp;{{#ifCond system.materials.cost '>' 0}}{{system.materials.cost}} gp{{/ifCond}} {{#ifCond system.materials.consumed '==' true}}&nbsp;</p><p title="{{localize "undertaking.Consumed"}}">&#10060;</p>{{/ifCond}}
         </div>
     </div>
-    <div class="spell-details-col fcol long">
+    <div class="spell-details-col fcol short">
         <div class="spell-detail-row range frow">
             <p>{{localize "undertaking.Range"}}:
                 {{#switch system.range.units}} 

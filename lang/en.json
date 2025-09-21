@@ -183,6 +183,16 @@
       "nec": "Necromancy",
       "tra": "Transmutation"
     },
+    "SpellSchoolsShort": {
+      "abj": "ABJ",
+      "con": "CON",
+      "div": "DIV",
+      "evo": "EVO",
+      "ill": "ILL",
+      "mes": "MES",
+      "nec": "NEC",
+      "tra": "TRA"
+    },
     "School": "School",
     "Charge": "Charge",
     "CanBeCharged": "This spell can be charged",

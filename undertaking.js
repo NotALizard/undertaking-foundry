@@ -150,7 +150,7 @@ Hooks.once("init",function(){
   Handlebars.registerHelper('school', function(value, options) {
     const schools = ["abj","con","div","mes","evo","ill","nec","tra"];
     if(schools.includes(value)){
-      return game.i18n.localize(`undertaking.SpellSchools.${value}`);
+      return game.i18n.localize(`undertaking.SpellSchoolsShort.${value}`);
     }
     return value;
   });
@@ -467,7 +467,7 @@ Hooks.once("init",function(){
   Handlebars.registerHelper('spellSource', function(item, sheet, options) {
     let attr = item.system.attribute;
     let className = "";
-    if(attr == "spell" && sheet?.type == "character"){
+    if(attr == "spell" && sheet?.actor?.type == "character"){
       for (let c of sheet.casters){
         if(c.system.identifier == item.system.classIdentifier){
           attr = c.system.categorization.spellcaster.attribute;
