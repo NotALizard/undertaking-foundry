@@ -1,0 +1,22 @@
+{
+  "name": "Early Artisan",
+  "type": "background",
+  "img": "icons/skills/trades/textiles-cloth-dye-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>You are trained in the way of a particular craft, and likely making most of your living plying its trade. You may have been sculpted from a young age as an apprentice or taken up the art later in life. Either way, you have developed an eye for quality and the skills to fashion it.</p>\n<hr />\n<p><strong>Skill Proficiency:</strong> Pick one of the following: Craft, Culture, Investigation, Persuasion, or Sleight of Hand.</p>\n<p><strong>Trade Proficiency:</strong> Alchemy, Artisan (Choose any Specialization), Building, Smithing, or Tinkering.</p>\n<p><strong>Background Feature:</strong> @Compendium[undertaking.abilities.5Z5KEPS9RQKUVCPC]{Eye for Quality}</p>\n<p><strong>Equipment: </strong>A @Compendium[undertaking.adventuring-gear.FV2QYDSKA33VFWW3]{merchant's scale} and one trade kit you are proficient with, excluding the alchemy kit.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "early"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "QBNIV394WWIIOUS9"
+}

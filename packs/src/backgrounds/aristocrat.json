@@ -1,0 +1,21 @@
+{
+  "name": "Aristocrat",
+  "type": "background",
+  "img": "icons/commodities/treasure/brooch-crown-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Whether you were born to high society or merely appointed to it later in life, you have learned and internalized the customs and manners of the who&rsquo;s-who. Though entreating with other figures of influence can be an exhausting ordeal at times, it&rsquo;s certainly not without its perks.</p>\n<hr />\n<p>Choose @Compendium[undertaking.backgrounds-early.RVF51GOYOERMAZLK]{Early} and/or @Compendium[undertaking.backgrounds-later.L72XCPOL3MUNBRSI]{Later}</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "QPZBNR9GRVD9UEVX"
+}

@@ -1,0 +1,80 @@
+{
+  "name": "Institutional Sway",
+  "type": "ability",
+  "img": "icons/commodities/treasure/brooch-crown-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your insignia and general air distinguish you from the unwashed masses, making bureaucrats and authority figures less likely to dismiss your concerns. Should you need to arrange an audience or appointment, you have advantage on Presence (Persuasion) checks to do so.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "attribute": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "attribute": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "background",
+      "subtype": ""
+    },
+    "requirements": "Early Aristocrat",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": "Background Features",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "2BWN854LL0WQ39J3"
+}

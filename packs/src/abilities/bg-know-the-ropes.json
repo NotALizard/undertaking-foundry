@@ -1,0 +1,80 @@
+{
+  "name": "Know the Ropes",
+  "type": "ability",
+  "img": "icons/environment/settlement/ship.webp",
+  "system": {
+    "description": {
+      "value": "<p>You are no stranger to the workings of a ship. You can easily negotiate passage on a ship for you and your companions in exchange for labor during the voyage, provided the ship has enough excess capacity to accommodate you. Should the crew require convincing, you have advantage on the associated Presence (Persuasion) checks.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "attribute": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "attribute": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "background",
+      "subtype": ""
+    },
+    "requirements": "Early Sailor",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": "Background Features",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "6S8K0D2XXAKPWE4J"
+}

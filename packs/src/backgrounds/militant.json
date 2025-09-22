@@ -1,0 +1,21 @@
+{
+  "name": "Militant",
+  "type": "background",
+  "img": "icons/environment/people/infantry-army.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have spent impactful portions of your life in regions marked by strife, acquiring the skills to brave the test of combat. Regardless of choice or conscription, you were trained to protect and serve, whether as a soldier in war or as a town guard.</p>\n<hr />\n<p>Choose @Compendium[undertaking.backgrounds-early.CQL5HS9GMYEMJ4VE]{Early} and/or @Compendium[undertaking.backgrounds-later.HRG5607DEJM3LMRV]{Later}</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "JJRNL9NJQ5HUHCSE"
+}

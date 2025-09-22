@@ -1,0 +1,21 @@
+{
+  "name": "Sailor",
+  "type": "background",
+  "img": "icons/environment/settlement/ship.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have dwelled near the salt and spray of the great blue sea. In this time, you learned your way around ropes and rigging, and likely got to try your hand at a tiller, sail, or perhaps even a ship&rsquo;s wheel. The tough work you&rsquo;ve endured and seafaring knack you&rsquo;ve acquired sets you apart from the uninitiated lubbers and gives you an instant rapport with other sailors.</p>\n<hr />\n<p>Choose @Compendium[undertaking.backgrounds-early.1YO6NDDY6HX07DW3]{Early} and/or @Compendium[undertaking.backgrounds-later.78RRM3K69OFNVN6H]{Later}</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "QGKCNI2S1EINNN0Z"
+}

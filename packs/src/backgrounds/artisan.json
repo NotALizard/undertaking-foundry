@@ -1,0 +1,21 @@
+{
+  "name": "Artisan",
+  "type": "background",
+  "img": "icons/skills/trades/textiles-cloth-dye-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>You are trained in the way of a particular craft, and likely making most of your living plying its trade. You may have been sculpted from a young age as an apprentice or taken up the art later in life. Either way, you have developed an eye for quality and the skills to fashion it.</p>\n<hr />\n<p>Choose @Compendium[undertaking.backgrounds-early.QBNIV394WWIIOUS9]{Early} and/or @Compendium[undertaking.backgrounds-later.M2M1SR521S0YSV5C]{Later}</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "MXYW8P4KY30W4EOD"
+}

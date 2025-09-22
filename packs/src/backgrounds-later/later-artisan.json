@@ -1,0 +1,22 @@
+{
+  "name": "Later Artisan",
+  "type": "background",
+  "img": "icons/skills/trades/textiles-cloth-dye-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>You are trained in the way of a particular craft, and likely making most of your living plying its trade. You may have been sculpted from a young age as an apprentice or taken up the art later in life. Either way, you have developed an eye for quality and the skills to fashion it.</p>\n<hr />\n<p><strong>Skill Proficiency:</strong> Pick one of the following: Craft, Culture, Investigation, Persuasion, or Sleight of Hand.</p>\n<p><strong>Trade Proficiency:</strong> Alchemy, Artisan (Choose any Specialization), Building, Smithing, or Tinkering.</p>\n<p><strong>Equipment: </strong>A modest set of @Compendium[undertaking.adventuring-gear.5G2UAJCNYN6QNHDD]{fine clothes} or two sets of work clothes (@Compendium[undertaking.adventuring-gear.UT2OGD8BHM2NQWSL]{travel clothes}); @Compendium[undertaking.adventuring-gear.O9K3J48N355WZI9K]{leather gloves}, a @Compendium[undertaking.adventuring-gear.5IYR0BKWNDA9RSZW]{satchel}, and one trade kit you are proficient with (if you select the @Compendium[undertaking.tool-kits.8GCSWHROZUJQOKZR]{alchemy kit}, skip the 'Coinage' section).</p>\n<p><strong>Coinage:</strong> 4d4 gp</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "later"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "M2M1SR521S0YSV5C"
+}

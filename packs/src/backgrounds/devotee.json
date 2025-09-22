@@ -1,0 +1,21 @@
+{
+  "name": "Devotee",
+  "type": "background",
+  "img": "icons/environment/people/cleric-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have spent a great deal of time living in or around a temple or other community of faith, and the lessons you have taken away from it mean a great deal to you. Though the wider world now calls to you, the faith you&rsquo;ve nurtured ever guides you and brings you comfort in trying times.</p>\n<hr />\n<p>Choose @Compendium[undertaking.backgrounds-early.64EFYI39SS88H6S2]{Early} and/or @Compendium[undertaking.backgrounds-later.3PAGJJZSBOD01CEC]{Later}</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "MAH2R3NBY2LQJZ4M"
+}

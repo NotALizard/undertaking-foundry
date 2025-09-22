@@ -10,7 +10,7 @@
       },
       "text": {
         "format": 1,
-        "content": "<p>Stupored</p><ul><li>Stupored creatures have their minds tangled and forgetful, cannot use any class abilities, and have disadvantage on Presence (Save) checks.</li><li>The creature cannot cast or concentrate on spells.</li></ul>",
+        "content": "<p>Stupored</p><ul><li>Stupored creatures have their minds tangled and forgetful. The stupored creature cannot take non-standard actions, such as those given by class or racial abilities&mdash;minor actions, reactions, etc. are unaffected. These standard actions cannot be modified or improved by other abilities, such as how the attack action is modified by sneak attack, multi-attack, etc.</li><li>In addition, they lose spell concentration, cannot cast spells, and have disadvantage on Presence (Save) checks.</li></ul>",
         "markdown": ""
       },
       "_id": "JAGDEZ8BRFEO7PHI",

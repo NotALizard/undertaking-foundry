@@ -1,0 +1,22 @@
+{
+  "name": "Early Militant",
+  "type": "background",
+  "img": "icons/environment/people/infantry-army.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have spent impactful portions of your life in regions marked by strife, acquiring the skills to brave the test of combat. Regardless of choice or conscription, you were trained to protect and serve, whether as a soldier in war or as a town guard.</p>\n<hr />\n<p><strong>Skill Proficiency:</strong> Pick one of the following: Athletics, Instinct, Intimidation, Medicine, Perception.</p>\n<p><strong>Weapon Proficiency:</strong> Pick two simple weapons or one martial weapon.</p>\n<p><strong>Background Feature:</strong> @Compendium[undertaking.abilities.QJK4VRMK8IZWD41C]{Choose Your Battles}</p>\n<p><strong>Equipment: </strong>Pick one of the following:<ul><li>One martial weapon you are proficient with, worth up to 25gp.</li><li>A simple weapon, @Compendium[undertaking.armor.J1OJN64I84SZNIHY]{padded armor}, and a @Compendium[undertaking.weapons.3G25RK4YN5AC9V00]{buckler}.</li></ul></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "early"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "CQL5HS9GMYEMJ4VE"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Later Devotee",
+  "type": "background",
+  "img": "icons/environment/people/cleric-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have spent a great deal of time living in or around a temple or other community of faith, and the lessons you have taken away from it mean a great deal to you. Though the wider world now calls to you, the faith you&rsquo;ve nurtured ever guides you and brings you comfort in trying times.</p>\n<hr />\n<p><strong>Skill Proficiency:</strong> Pick one of the following: Culture, Intimidation, Perform, Persuasion, Theology.</p>\n<p><strong>Trade Proficiency:</strong> Art (Choose any Specialization), Botany, Cooking, Entertainment (Singing or Musical Instrument).</p>\n<p><strong>Equipment: </strong>@Compendium[undertaking.adventuring-gear.P74Y95LV5368WJ9O]{Vestments}, a @Compendium[undertaking.adventuring-gear.NQIM8Y0A7O366BTY]{block of incense}, a @Compendium[undertaking.adventuring-gear.SFXHJWK03FEQVHJT]{censer}, and either a @Compendium[undertaking.adventuring-gear.2ZUMOJBLJ4Y4ARIP]{religious text (holy focus)} or @Compendium[undertaking.adventuring-gear.TU9X25JEFO91SBLU]{emblem (holy focus)}.</p>\n<p><strong>Coinage:</strong> 1d4 gp</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "later"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "3PAGJJZSBOD01CEC"
+}

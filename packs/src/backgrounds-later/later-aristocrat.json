@@ -1,0 +1,22 @@
+{
+  "name": "Later Aristocrat",
+  "type": "background",
+  "img": "icons/commodities/treasure/brooch-crown-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Whether you were born to high society or merely appointed to it later in life, you have learned and internalized the customs and manners of the who&rsquo;s-who. Though entreating with other figures of influence can be an exhausting ordeal at times, it&rsquo;s certainly not without its perks.</p>\n<hr />\n<p><strong>Skill Proficiency:</strong> Pick one of the following: Culture, Deception, Insight, Intimidation, Perform, Persuasion.</p>\n<p><strong>Trade Proficiency:</strong> Art (Choose any Specialization), Entertainment (Singing, Dance, or Musical Instrument), or Subterfuge.</p>\n<p><strong>Equipment: </strong>A set of @Compendium[undertaking.adventuring-gear.5G2UAJCNYN6QNHDD]{fine clothes}.</p>\n<p><strong>Coinage:</strong> 10d6 gp</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "later"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "L72XCPOL3MUNBRSI"
+}

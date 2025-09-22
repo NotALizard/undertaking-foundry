@@ -1,0 +1,22 @@
+{
+  "name": "Early Sailor",
+  "type": "background",
+  "img": "icons/environment/settlement/ship.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have dwelled near the salt and spray of the great blue sea. In this time, you learned your way around ropes and rigging, and likely got to try your hand at a tiller, sail, or perhaps even a ship&rsquo;s wheel. The tough work you&rsquo;ve endured and seafaring knack you&rsquo;ve acquired sets you apart from the uninitiated lubbers and gives you an instant rapport with other sailors.</p>\n<hr />\n<p><strong>Skill Proficiency:</strong> Pick one of the following: Acrobatics, Athletics, Instinct, Intimidation, or Perception.</p>\n<p><strong>Trade Proficiency:</strong> Pick one of the following: Artisan (Ropemaking or Woodwork), Building, Cooking, Fishing, Pathfinding, or Vehicles.</p>\n<p><strong>Background Feature:</strong> @Compendium[undertaking.abilities.6S8K0D2XXAKPWE4J]{Know the Ropes}</p>\n<p><strong>Equipment: </strong>Pick one of the following: A @Compendium[undertaking.tool-kits.GJM0RMS60GY1X423]{cooking kit}, @Compendium[undertaking.tool-kits.SGYR45WRCKK2UR47]{pathfinding kit}, a @Compendium[undertaking.tool-kits.9YBVQA8VWQ255QLS]{building kit}, or a @Compendium[undertaking.tool-kits.GN5O5UZX85J3RTV9]{fishing kit} with the basic fishing rod replaced with a @Compendium[undertaking.adventuring-gear.ZBC6B56YAICGXRGU]{good fishing rod}.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "portion": "early"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "1YO6NDDY6HX07DW3"
+}
