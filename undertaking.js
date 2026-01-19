@@ -506,6 +506,18 @@ Hooks.once("init",function(){
     return `<div class="item-name spell short subtext"><p>${outputStr}</p></div>`;
   });
 
+  Handlebars.registerHelper('armorWeight', function(actor, options) {
+    const isWeighty = actor?.system?.stats?.ac?.weighty?.enabled;
+    if(isWeighty){
+      const strengthReq = actor?.system?.stats?.ac?.weighty?.strength || 0;
+      const strength = actor?.system?.attributes?.str?.value || 10;
+      if(strength < strengthReq){
+        return `<i class="fa-solid fa-triangle-exclamation red" title="${game.i18n.localize('undertaking.ArmorTooHeavy')}" style="margin-left: 4px;"></i>`;
+      }
+    }
+    return "";
+  });
+
   Handlebars.registerHelper('language', function(language, options) {
     let id = CONFIG.undertaking.languages[language];
     if(id){

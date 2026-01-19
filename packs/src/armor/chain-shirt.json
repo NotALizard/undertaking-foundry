@@ -1,6 +1,6 @@
 {
     "name": "Chain Shirt",
-    "type": "equipment",
+    "type": "armor",
     "img": "icons/commodities/metal/mail-chain-steel.webp",
     "system": {
         "description": {
@@ -14,11 +14,42 @@
             "value": "50",
             "denomination": "gp"
         },
-        "armor": {
-            "type": "medium",
-            "value": "13",
-            "dex": "2"
-        }
+        "armorType": "medium",
+        "baseAC": 13,
+        "bonusAC": 0,
+        "noisy": false,
+        "weighty": {
+            "enabled": false,
+            "strength": null
+        },
+        "attributes": {
+            "dex": {
+                "enabled": true,
+                "limit": 2
+            },
+            "str": {
+                "enabled": false,
+                "limit": null
+            },
+            "con": {
+                "enabled": false,
+                "limit": null
+            },
+            "int": {
+                "enabled": false,
+                "limit": null
+            },
+            "wis": {
+                "enabled": false,
+                "limit": null
+            },
+            "pre": {
+                "enabled": false,
+                "limit": null
+            }
+        },
+        "baseItem": "",
+        "proficient": true
     },
     "_id": "9MAZ5666I2Z9MX78"
 }

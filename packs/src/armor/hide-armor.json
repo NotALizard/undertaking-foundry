@@ -1,6 +1,6 @@
 {
     "name": "Hide Armor",
-    "type": "equipment",
+    "type": "armor",
     "img": "icons/equipment/leg/tasset-fur-studded-leather.webp",
     "system": {
         "description": {
@@ -14,11 +14,42 @@
             "value": "10",
             "denomination": "gp"
         },
-        "armor": {
-            "type": "medium",
-            "value": "12",
-            "dex": "2"
-        }
+        "armorType": "medium",
+        "baseAC": 12,
+        "bonusAC": 0,
+        "noisy": false,
+        "weighty": {
+            "enabled": false,
+            "strength": null
+        },
+        "attributes": {
+            "dex": {
+                "enabled": true,
+                "limit": 2
+            },
+            "str": {
+                "enabled": false,
+                "limit": null
+            },
+            "con": {
+                "enabled": false,
+                "limit": null
+            },
+            "int": {
+                "enabled": false,
+                "limit": null
+            },
+            "wis": {
+                "enabled": false,
+                "limit": null
+            },
+            "pre": {
+                "enabled": false,
+                "limit": null
+            }
+        },
+        "baseItem": "",
+        "proficient": true
     },
     "_id": "4VFNM4JUI5JYZDX9"
 }

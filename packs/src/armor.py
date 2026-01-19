@@ -7,7 +7,7 @@ def doWork():
         for line in gearReader:
             w = {
                 "name": line[1],
-                "type": "equipment",
+                "type": "armor",
                 "img": line[6],
                 "system": {
                     "description": {
@@ -21,11 +21,42 @@ def doWork():
                         "value": line[2],
                         "denomination": line[3]
                     },
-                    "armor": {
-                        "type": line[7],
-                        "value": line[8],
-                        "dex": line[9]
-                    }
+                    "armorType": line[7],
+                    "baseAC": int(line[8]),
+                    "bonusAC": 0,
+                    "noisy": line[13] == "y",
+                    "weighty": {
+                        "enabled": line[11] == "y",
+                        "strength": None if line[12] == "" else int(line[12])
+                    },
+                    "attributes": {
+                        "dex": {
+                            "enabled": line[9] == "y",
+                            "limit": None if line[10] == "" else int(line[10])
+                        },
+                        "str": {
+                            "enabled": False,
+                            "limit": None
+                        },
+                        "con": {
+                            "enabled": False,
+                            "limit": None
+                        },
+                        "int": {
+                            "enabled": False,
+                            "limit": None
+                        },
+                        "wis": {
+                            "enabled": False,
+                            "limit": None
+                        },
+                        "pre": {
+                            "enabled": False,
+                            "limit": None
+                        }
+                    },
+                    "baseItem": "",
+                    "proficient": True
                 },
                 "_id": line[0]
             }

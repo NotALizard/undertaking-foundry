@@ -259,4 +259,18 @@ export default class UndertakingActor extends Actor {
     levels.caster = casterLevel;
     return levels;
   }
+
+  static migrateData(source){
+    if(source?.system?.stats?.ac){
+      if(!(source?.system?.stats?.ac?.weighty)){
+        console.warn(`Migrating actor ${source.name} to add weighty armor data structure`);
+        source.system.stats.ac.weighty = {enabled: false, strength: 0}
+      }
+      if(!(source?.system?.stats?.ac?.equippedArmorId)){
+        console.warn(`Migrating actor ${source.name} to add equippedArmorId to AC data structure`);
+        source.system.stats.ac.equippedArmorId = null;
+      }
+    }
+    return super.migrateData(source);
+  }
 }

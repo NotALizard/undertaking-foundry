@@ -58,7 +58,7 @@
                         <div class="speed-row frow">
                             <div class="walk-speed-container">
                                 <input name="system.stats.movement.walk" type="text" value="{{actor.system.stats.movement.walk}}" placeholder="30" data-dtype="String" />
-                                <label>{{localize "undertaking.Movement.Walk"}}</label>
+                                <label>{{localize "undertaking.Movement.Walk"}} {{#armorWeight actor}}{{/armorWeight}}</label>
                             </div>
                             <div class="climb-speed-container">
                                 <input name="system.stats.movement.climb" type="text" value="{{actor.system.stats.movement.climb}}" data-dtype="String" />
@@ -186,10 +186,11 @@
                                             <label>{{ localize "undertaking.ArmorClass" }}</label>
                                             <h4>{{actor.system.stats.ac.total}}</h4>
                                         </div>
+                                        {{#ifCond actor.system.stats.ac.useShield '==' 1}}
                                         <div class="base-ac">
-                                            <h4>({{actor.system.stats.ac.unshielded}})</h4>
-                                            <label>({{ localize "undertaking.WithoutShield" }})</label>
+                                            <h4>({{ localize "undertaking.BaseAC" }}: {{actor.system.stats.ac.unshielded}})</h4>
                                         </div>
+                                        {{/ifCond}}
                                     </div>
                                     <div class="shield-container fcol">
                                         <div class="shield-info fcol">
@@ -826,44 +827,57 @@
                         </div>
                         <div class="config-input frow">
                             <input type="hidden" id="input-ac-dex" name="system.stats.ac.attributes.dex.enabled" value="{{actor.system.stats.ac.attributes.dex.enabled}}" data-dtype="Boolean">
+                            <label>Add DEX</label>
                             <input type="checkbox" class="input-checkbox" data-for="#input-ac-dex" {{#ifCond actor.system.stats.ac.attributes.dex.enabled '==' true}}checked{{/ifCond}}/>
-                            <label>Add Dex. Limit:</label>
+                            <label>{{ localize "undertaking.Limit" }}</label>
                             <input name="system.stats.ac.attributes.dex.limit" type="number" value="{{actor.system.stats.ac.attributes.dex.limit}}" data-dtype="Number" />
                         </div>
                         <div class="config-input frow">
                             <input type="hidden" id="input-ac-str" name="system.stats.ac.attributes.str.enabled" value="{{actor.system.stats.ac.attributes.str.enabled}}" data-dtype="Boolean">
+                            <label>Add STR</label>
                             <input type="checkbox" class="input-checkbox" data-for="#input-ac-str" {{#ifCond actor.system.stats.ac.attributes.str.enabled '==' true}}checked{{/ifCond}}/>
-                            <label>Add Str. Limit:</label>
+                            <label>{{ localize "undertaking.Limit" }}</label>
                             <input name="system.stats.ac.attributes.str.limit" type="number" value="{{actor.system.stats.ac.attributes.str.limit}}" data-dtype="Number" />
                         </div>
                         <div class="config-input frow">
                             <input type="hidden" id="input-ac-con" name="system.stats.ac.attributes.con.enabled" value="{{actor.system.stats.ac.attributes.con.enabled}}" data-dtype="Boolean">
+                            <label>Add CON</label>
                             <input type="checkbox" class="input-checkbox" data-for="#input-ac-con" {{#ifCond actor.system.stats.ac.attributes.con.enabled '==' true}}checked{{/ifCond}}/>
-                            <label>Add Con. Limit:</label>
+                            <label>{{ localize "undertaking.Limit" }}</label>
                             <input name="system.stats.ac.attributes.con.limit" type="number" value="{{actor.system.stats.ac.attributes.con.limit}}" data-dtype="Number" />
                         </div>
                         <div class="config-input frow">
                             <input type="hidden" id="input-ac-int" name="system.stats.ac.attributes.int.enabled" value="{{actor.system.stats.ac.attributes.int.enabled}}" data-dtype="Boolean">
+                            <label>Add INT</label>
                             <input type="checkbox" class="input-checkbox" data-for="#input-ac-int" {{#ifCond actor.system.stats.ac.attributes.int.enabled '==' true}}checked{{/ifCond}}/>
-                            <label>Add Int. Limit:</label>
+                            <label>{{ localize "undertaking.Limit" }}</label>
                             <input name="system.stats.ac.attributes.int.limit" type="number" value="{{actor.system.stats.ac.attributes.int.limit}}" data-dtype="Number" />
                         </div>
                         <div class="config-input frow">
                             <input type="hidden" id="input-ac-wis" name="system.stats.ac.attributes.wis.enabled" value="{{actor.system.stats.ac.attributes.wis.enabled}}" data-dtype="Boolean">
+                            <label>Add WIS</label>
                             <input type="checkbox" class="input-checkbox" data-for="#input-ac-wis" {{#ifCond actor.system.stats.ac.attributes.wis.enabled '==' true}}checked{{/ifCond}}/>
-                            <label>Add Wis. Limit:</label>
+                            <label>{{ localize "undertaking.Limit" }}</label>
                             <input name="system.stats.ac.attributes.wis.limit" type="number" value="{{actor.system.stats.ac.attributes.wis.limit}}" data-dtype="Number" />
                         </div>
                         <div class="config-input frow">
                             <input type="hidden" id="input-ac-pre" name="system.stats.ac.attributes.pre.enabled" value="{{actor.system.stats.ac.attributes.pre.enabled}}" data-dtype="Boolean">
+                            <label>Add PRE</label>
                             <input type="checkbox" class="input-checkbox" data-for="#input-ac-pre" {{#ifCond actor.system.stats.ac.attributes.pre.enabled '==' true}}checked{{/ifCond}}/>
-                            <label>Add Pre. Limit:</label>
+                            <label>{{ localize "undertaking.Limit" }}</label>
                             <input name="system.stats.ac.attributes.pre.limit" type="number" value="{{actor.system.stats.ac.attributes.pre.limit}}" data-dtype="Number" />
                         </div>
                         <div class="config-input frow">
                             <input type="hidden" id="input-noisy" name="system.stats.ac.noisy" value="{{actor.system.stats.ac.noisy}}" data-dtype="Boolean">
+                            <label>{{ localize "undertaking.Noisy" }}</label>
                             <input type="checkbox" class="input-checkbox" data-for="#input-noisy" {{#ifCond actor.system.stats.ac.noisy '==' true}}checked{{/ifCond}}/>
-                            <label>Noisy</label>
+                        </div>
+                        <div class="config-input frow">
+                            <input type="hidden" id="input-weighty" name="system.stats.ac.weighty.enabled" value="{{actor.system.stats.ac.weighty.enabled}}" data-dtype="Boolean">
+                            <label>{{ localize "undertaking.Weighty" }}</label>
+                            <input type="checkbox" class="input-checkbox" data-for="#input-weighty" {{#ifCond actor.system.stats.ac.weighty.enabled '==' true}}checked{{/ifCond}}/>
+                            <label>{{ localize "undertaking.Attributes.Strength" }}</label>
+                            <input name="system.stats.ac.weighty.strength" type="number" value="{{actor.system.stats.ac.weighty.strength}}" data-dtype="Number" />
                         </div>
                         
                     </div>

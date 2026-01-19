@@ -78,6 +78,12 @@ export default class UndertakingItemSheet extends ItemSheet {
   }
 
   activateListeners(html){
+    html.find(".btn-armor-equip").on("click", event => {
+      this._onArmorEquip(event);
+    });
+    html.find(".btn-armor-unequip").on("click", event => {
+      this._onArmorUnequip(event);
+    });
     html.find(".input-dropdown").on("change", event => {
       this._changeDropdown(event);
     });
@@ -152,6 +158,51 @@ export default class UndertakingItemSheet extends ItemSheet {
     const damage = foundry.utils.deepClone(item.system.damage);
     damage.parts.splice(Number(index), 1);
     item.update({['system.damage.parts']: damage.parts});
+  }
+
+  async _onArmorEquip(event){
+    event.preventDefault();
+    const item = this.item;
+    //get the actor that owns this item
+    const actor = item.actor;
+    if(actor){
+      const baseAC = item.system.baseAC || 10;
+      const bonusAC = !isNaN(parseInt(item.system.bonusAC)) ? parseInt(item.system.bonusAC) : 0;
+      actor.update({
+        'system.stats.ac.base': baseAC + bonusAC,
+        'system.stats.ac.equippedArmorId': item.id,
+        'system.stats.ac.noisy': item.system.noisy,
+        'system.stats.ac.weighty': item.system.weighty,
+        'system.stats.ac.attributes': item.system.attributes
+      });
+      await new Promise(resolve => setTimeout(resolve, 200));
+      this.render();
+    }
+  }
+
+  async _onArmorUnequip(event){
+    event.preventDefault();
+    const item = this.item;
+    //get the actor that owns this item
+    const actor = item.actor;
+    if(actor){
+      actor.update({
+        'system.stats.ac.base': 10,
+        'system.stats.ac.equippedArmorId': null,
+        'system.stats.ac.noisy': false,
+        'system.stats.ac.weighty': {enabled: false, strength: null},
+        'system.stats.ac.attributes': {
+          dex: {enabled: true, limit: 0},
+          str: {enabled: false, limit: 0},
+          con: {enabled: false, limit: 0},
+          int: {enabled: false, limit: 0},
+          wis: {enabled: false, limit: 0},
+          pre: {enabled: false, limit: 0}
+        }
+      });
+      await new Promise(resolve => setTimeout(resolve, 200));
+      this.render();
+    }
   }
 
 }

@@ -1,0 +1,182 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}"/></h1>
+    </header>
+
+    {{!-- Item Sheet Navigation --}}
+    <nav class="sheet-navigation tabs" data-group="primary">
+        <a class="item active" data-tab="description">{{ localize "undertaking.Description" }}</a>
+        <a class="item" data-tab="details">{{ localize "undertaking.Details" }}</a>
+    </nav>
+
+    <section class="sheet-body other">
+      {{!-- Description Tab --}}
+      <div class="tab full-page flexrow active" data-group="primary" data-tab="description">
+        <div class="fcol">
+          
+          <input type="hidden" id="input-identified" name="system.identified" value="{{item.system.identified}}" data-dtype="Boolean">
+          <input type="hidden" id="input-attunement" name="system.attunement" value="{{item.system.attunement}}" data-dtype="Boolean">
+          <input type="hidden" id="input-attuned" name="system.attuned" value="{{item.system.attuned}}" data-dtype="Boolean">
+          <div class="item-row frow">
+            {{#ifGM}}
+            <div class="frow short">
+              <label>{{ localize "undertaking.Identified" }}:</label>
+              <input type="checkbox" class="input-checkbox" data-for="#input-identified" {{#ifCond item.system.identified '==' true}}checked{{/ifCond}}/>
+            </div>
+            {{/ifGM}}
+            <div class="frow short">
+              <label>{{ localize "undertaking.RequiresAttunement" }}:</label>
+              <input type="checkbox" class="input-checkbox" data-for="#input-attunement" {{#ifCond item.system.attunement '==' true}}checked{{/ifCond}}/>
+            </div>
+            {{#ifCond item.system.attunement '==' true}}
+            <div class="frow short">
+                <label>{{ localize "undertaking.Attuned" }}:</label>
+                <input type="checkbox" class="input-checkbox" data-for="#input-attuned" {{#ifCond item.system.attuned '==' true}}checked{{/ifCond}}/>
+            </div>
+            {{/ifCond}}
+          </div>
+          <hr class="blue"/>
+          <div class="item-row frow">
+            {{#ifCond item.id '==' item.actor.system.stats.ac.equippedArmorId}}
+            <a class="btn-armor-unequip">{{ localize "undertaking.UnequipArmor" }}</a>
+            {{else}}
+            <a class="btn-armor-equip">{{ localize "undertaking.EquipArmor" }}</a>
+            {{/ifCond}}
+          </div>
+          <br/>
+          {{#ifGM}}
+            <label><b>{{ localize "undertaking.Description" }}&nbsp;({{#ifCond item.system.identified '==' true}}{{ localize "undertaking.Shown" }}{{else}}{{ localize "undertaking.Hidden" }}{{/ifCond}})</b></label>
+            <div class="description-container {{#ifCond item.system.identified '==' false}}inactive{{else}}highlighted{{/ifCond}}">
+              {{editor descriptionHTML target="system.description.value" button=true editable=editable engine="prosemirror" collaborate=false}}
+            </div>
+            <label><b>{{ localize "undertaking.UnidentifiedDescription" }}&nbsp;({{#ifCond item.system.identified '==' false}}{{ localize "undertaking.Shown" }}{{else}}{{ localize "undertaking.Hidden" }}{{/ifCond}})</b></label>
+            <div class="description-container {{#ifCond item.system.identified '==' true}}inactive{{else}}highlighted{{/ifCond}}">
+              {{editor unidentifiedHTML target="system.description.unidentified" button=true editable=editable engine="prosemirror" collaborate=false}}
+            </div>
+          {{else}}
+            {{#ifCond item.system.identified '==' true}}
+              <div class="description-container">
+                {{editor descriptionHTML target="system.description.value" button=true editable=editable engine="prosemirror" collaborate=false}}
+              </div>
+            {{/ifCond}}
+            {{#ifCond item.system.identified '==' false}}
+              <div class="description-container">
+                {{editor unidentifiedHTML target="system.description.unidentified" button=true editable=editable engine="prosemirror" collaborate=false}}
+              </div>
+            {{/ifCond}}
+          {{/ifGM}}
+        </div>
+      </div>
+
+      {{!-- Details Tab --}}
+      <div class="tab full-page flexrow" data-group="primary" data-tab="details">
+        <div class="fcol">
+          <input type="hidden" id="input-armortype" name="system.armorType" value="{{item.system.armorType}}" data-dtype="String">
+          <input type="hidden" id="input-proficient" name="system.proficient" value="{{item.system.proficient}}" data-dtype="Boolean">
+          <input type="hidden" id="input-weighty" name="system.weighty.enabled" value="{{item.system.weighty.enabled}}" data-dtype="Boolean">
+          <input type="hidden" id="input-noisy" name="system.noisy" value="{{item.system.noisy}}" data-dtype="Boolean">
+          <input type="hidden" id="input-uses-dex" name="system.dex.enabled" value="{{item.system.dex.enabled}}" data-dtype="Boolean">
+          <input type="hidden" id="input-uses-str" name="system.str.enabled" value="{{item.system.str.enabled}}" data-dtype="Boolean">
+          <input type="hidden" id="input-uses-con" name="system.con.enabled" value="{{item.system.con.enabled}}" data-dtype="Boolean">
+          <input type="hidden" id="input-uses-int" name="system.int.enabled" value="{{item.system.int.enabled}}" data-dtype="Boolean">
+          <input type="hidden" id="input-uses-wis" name="system.wis.enabled" value="{{item.system.wis.enabled}}" data-dtype="Boolean">
+          <input type="hidden" id="input-uses-pre" name="system.pre.enabled" value="{{item.system.pre.enabled}}" data-dtype="Boolean">
+          <div class="item-row frow">
+            <div class="row-input">
+              <label>{{ localize "undertaking.Quantity" }}:</label>
+              <input class="no-bg short right" name="system.quantity" type="number" value="{{item.system.quantity}}" placeholder="1" data-dtype="Number" />
+            </div>
+            <div class="row-input">
+              <label>{{ localize "undertaking.Weight" }}:</label>
+              <input class="no-bg short right" name="system.weight" type="number" value="{{item.system.weight}}" placeholder="0" data-dtype="Number" />
+              <p>{{ localize "undertaking.PoundsAbbrev" }}</p>
+            </div>
+            <div class="row-input">
+              <label>{{ localize "undertaking.Value" }}:</label>
+              <input class="no-bg short right" name="system.price.value" type="number" value="{{item.system.price.value}}" placeholder="0" data-dtype="Number" />
+              <input class="no-bg short" name="system.price.denomination" type="text" value="{{item.system.price.denomination}}" placeholder="gp" data-dtype="String" />
+            </div>
+          </div>
+          <hr class="blue"/>
+          <div class="item-row frow">
+            {{#ifCond item.id '==' item.actor.system.stats.ac.equippedArmorId}}
+            <a class="btn-armor-unequip">{{ localize "undertaking.UnequipArmor" }}</a>
+            {{else}}
+            <a class="btn-armor-equip">{{ localize "undertaking.EquipArmor" }}</a>
+            {{/ifCond}}
+          </div>
+          <div class="item-row frow">
+              <label>{{ localize "undertaking.ArmorType" }}:</label>
+              <select class="input-dropdown" data-for="#input-armortype">
+                  <option value="light" {{#ifCond item.system.armorType '==' "light"}}selected{{/ifCond}}>{{ localize "undertaking.Armors.Light" }}</option>
+                  <option value="medium" {{#ifCond item.system.armorType '==' "medium"}}selected{{/ifCond}}>{{ localize "undertaking.Armors.Medium" }}</option>
+                  <option value="heavy" {{#ifCond item.system.armorType '==' "heavy"}}selected{{/ifCond}}>{{ localize "undertaking.Armors.Heavy" }}</option>
+              </select>
+          </div>
+
+          <div class="item-row frow">
+              <div class="frow short">
+                  <label>{{ localize "undertaking.Proficient" }}:</label>
+                  <input type="checkbox" class="input-checkbox" data-for="#input-proficient" {{#ifCond item.system.proficient '==' true}}checked{{/ifCond}}/>
+              </div>
+          </div>
+          <div class="item-row frow">
+              <div class="frow short">
+                  <label>{{ localize "undertaking.Noisy" }}:</label>
+                  <input type="checkbox" class="input-checkbox" data-for="#input-noisy" {{#ifCond item.system.noisy '==' true}}checked{{/ifCond}}/>
+              </div>
+          </div>
+          <div class="item-row frow">
+            <label>{{ localize "undertaking.Weighty" }}:</label>
+            <input type="checkbox" class="input-checkbox" data-for="#input-weighty" {{#ifCond item.system.weighty.enabled '==' true}}checked{{/ifCond}}/>
+            <label>{{ localize "undertaking.StrengthReq" }}:</label>
+            <input class="short" name="system.weighty.strength" type="number" value="{{item.system.weighty.strength}}" placeholder="0" data-dtype="Number" />
+          </div>
+          <div class="item-row frow">
+            <label>{{ localize "undertaking.BaseAC" }}:</label>
+            <input class="short" name="system.baseAC" type="number" value="{{item.system.baseAC}}" placeholder="0" data-dtype="Number" />
+          </div>
+          <div class="item-row frow">
+            <label>{{ localize "undertaking.BonusAC" }}:</label>
+            <input class="short" name="system.bonusAC" type="number" value="{{item.system.bonusAC}}" placeholder="0" data-dtype="Number" />
+          </div>
+          <div class="item-row frow">
+            <label>{{ localize "undertaking.AddDexterity" }}:</label>
+            <input type="checkbox" class="input-checkbox" data-for="#input-uses-dex" {{#ifCond item.system.attributes.dex.enabled '==' true}}checked{{/ifCond}}/>
+            <label>{{ localize "undertaking.Limit" }}:</label>
+            <input class="short" name="system.attributes.dex.limit" type="number" value="{{item.system.attributes.dex.limit}}" placeholder="0" data-dtype="Number" />
+          </div>
+          <div class="item-row frow">
+            <label>{{ localize "undertaking.AddStrength" }}:</label>
+            <input type="checkbox" class="input-checkbox" data-for="#input-uses-str" {{#ifCond item.system.attributes.str.enabled '==' true}}checked{{/ifCond}}/>
+            <label>{{ localize "undertaking.Limit" }}:</label>
+            <input class="short" name="system.attributes.str.limit" type="number" value="{{item.system.attributes.str.limit}}" placeholder="0" data-dtype="Number" />
+          </div>
+          <div class="item-row frow">
+            <label>{{ localize "undertaking.AddConstitution" }}:</label>
+            <input type="checkbox" class="input-checkbox" data-for="#input-uses-con" {{#ifCond item.system.attributes.con.enabled '==' true}}checked{{/ifCond}}/>
+            <label>{{ localize "undertaking.Limit" }}:</label>
+            <input class="short" name="system.attributes.con.limit" type="number" value="{{item.system.attributes.con.limit}}" placeholder="0" data-dtype="Number" />
+          </div>
+          <div class="item-row frow">
+            <label>{{ localize "undertaking.AddIntelligence" }}:</label>
+            <input type="checkbox" class="input-checkbox" data-for="#input-uses-int" {{#ifCond item.system.attributes.int.enabled '==' true}}checked{{/ifCond}}/>
+            <label>{{ localize "undertaking.Limit" }}:</label>
+            <input class="short" name="system.attributes.int.limit" type="number" value="{{item.system.attributes.int.limit}}" placeholder="0" data-dtype="Number" />
+          </div>
+          <div class="item-row frow">
+            <label>{{ localize "undertaking.AddWisdom" }}:</label>
+            <input type="checkbox" class="input-checkbox" data-for="#input-uses-wis" {{#ifCond item.system.attributes.wis.enabled '==' true}}checked{{/ifCond}}/>
+            <label>{{ localize "undertaking.Limit" }}:</label>
+            <input class="short" name="system.attributes.wis.limit" type="number" value="{{item.system.attributes.wis.limit}}" placeholder="0" data-dtype="Number" />
+          </div>
+          <div class="item-row frow">
+            <label>{{ localize "undertaking.AddPresence" }}:</label>
+            <input type="checkbox" class="input-checkbox" data-for="#input-uses-pre" {{#ifCond item.system.attributes.pre.enabled '==' true}}checked{{/ifCond}}/>
+            <label>{{ localize "undertaking.Limit" }}:</label>
+            <input class="short" name="system.attributes.pre.limit" type="number" value="{{item.system.attributes.pre.limit}}" placeholder="0" data-dtype="Number" />
+          </div>
+      </div>
+    </section>
+</form>

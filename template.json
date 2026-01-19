@@ -85,6 +85,11 @@
             "formula": "",
             "useShield": 1,
             "shield": 2,
+            "noisy": false,
+            "weighty": {
+              "enabled": false,
+              "strength": 0
+            },
             "attributes": {
               "dex":{
                 "enabled": true,
@@ -678,7 +683,7 @@
     }
   },
   "Item": {
-    "types": ["weapon", "equipment", "consumable", "tool", "treasure", "background", "class", "archetype", "spell", "ability", "backpack", "race", "customAttack", "language"],
+    "types": ["weapon", "equipment", "consumable", "tool", "treasure", "background", "class", "archetype", "spell", "ability", "backpack", "race", "customAttack", "language", "armor"],
     "templates": {
       "itemDescription": {
         "description": {
@@ -836,18 +841,50 @@
     },
     "equipment": {
       "templates": ["itemDescription", "physicalItem", "activatedEffect", "action", "mountable"],
-      "armor": {
-        "type": "light",
-        "value": null,
-        "dex": null
-      },
       "baseItem": "",
       "speed": {
         "value": null,
         "conditions": ""
       },
-      "strength": null,
-      "stealth": false,
+      "proficient": true
+    },
+    "armor": {
+      "templates": ["itemDescription", "physicalItem", "activatedEffect", "action"],
+      "armorType": "light",
+      "baseAC": 10,
+      "bonusAC": 0,
+      "noisy": false,
+      "weighty": {
+        "enabled": false,
+        "strength": null
+      },
+      "attributes": {
+        "dex":{
+          "enabled": true,
+          "limit": null
+        },
+        "str":{
+          "enabled": false,
+          "limit": null
+        },
+        "con":{
+          "enabled": false,
+          "limit": null
+        },
+        "int":{
+          "enabled": false,
+          "limit": null
+        },
+        "wis":{
+          "enabled": false,
+          "limit": null
+        },
+        "pre":{
+          "enabled": false,
+          "limit": null
+        }
+      },
+      "baseItem": "",
       "proficient": true
     },
     "ability": {

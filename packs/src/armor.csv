@@ -1,13 +1,13 @@
-id,Name,Cost,Currency,Weight,Description,Image,type,ac,dex
-J1OJN64I84SZNIHY,Padded Armor,5,gp,8,AC 11 + Dex modifier,icons/equipment/chest/breastplate-collared-leather-grey.webp,light,11,
-F3F4NK1XB820809Y,Leather Armor,10,gp,10,AC 11 + Dex modifier,icons/equipment/chest/breastplate-collared-leather-brown.webp,light,11,
-K60QIHKO06GT65WV,Hardened Leather Armor,40,gp,13,AC 12 + Dex modifier,icons/equipment/chest/breastplate-layered-leather-studded-brown.webp,light,12,
-4VFNM4JUI5JYZDX9,Hide Armor,10,gp,12,AC 12 + Dex modifier (Max 2),icons/equipment/leg/tasset-fur-studded-leather.webp,medium,12,2
-9MAZ5666I2Z9MX78,Chain Shirt,50,gp,20,AC 13 + Dex modifier (Max 2),icons/commodities/metal/mail-chain-steel.webp,medium,13,2
-Q83GZVCHVREF9U67,Scale Mail,50,gp,45,AC 14 + Dex modifier (Max 2)<br>Noisy,icons/equipment/chest/breastplate-metal-scaled-grey.webp,medium,14,2
-U7KUU9TA22JAASWW,Breastplate,400,gp,20,AC 14 + Dex modifier (Max 2),icons/equipment/chest/breastplate-gorget-steel-white.webp,medium,14,2
-ONMRQL8FK7IADSGK,Half Plate Armor,750,gp,40,AC 15 + Dex modifier (Max 2)<br>Noisy,icons/equipment/chest/breastplate-gorget-steel-purple.webp,medium,15,2
-15LIQPMBXX4PN8UO,Ring Mail,30,gp,40,AC 14,icons/equipment/waist/belt-ring-steel.webp,heavy,14,0
-24260F2SZYTV4NZF,Chain Mail,75,gp,55,"AC 16<br>Noisy, Weighty 13",icons/commodities/metal/mail-chain-steel.webp,heavy,16,0
-5W0W7PLJELBAY3II,Splint Armor,200,gp,60,"AC 17<br>Noisy, Weighty 15",icons/equipment/chest/breastplate-banded-steel-gold.webp,heavy,17,0
-ODETR6GRSUI4XEDL,Plate Armor,1500,gp,65,"AC 18<br>Noisy, Weighty 15",icons/equipment/chest/breastplate-cuirass-steel-grey.webp,heavy,18,0
+id,Name,Cost,Currency,Weight,Description,Image,type,ac,dex,limit,weighty,str,noisy
+J1OJN64I84SZNIHY,Padded Armor,5,gp,8,AC 11 + Dex modifier,icons/equipment/chest/breastplate-collared-leather-grey.webp,light,11,y,,n,,n
+F3F4NK1XB820809Y,Leather Armor,10,gp,10,AC 11 + Dex modifier,icons/equipment/chest/breastplate-collared-leather-brown.webp,light,11,y,,n,,n
+K60QIHKO06GT65WV,Hardened Leather Armor,40,gp,13,AC 12 + Dex modifier,icons/equipment/chest/breastplate-layered-leather-studded-brown.webp,light,12,y,,n,,n
+4VFNM4JUI5JYZDX9,Hide Armor,10,gp,12,AC 12 + Dex modifier (Max 2),icons/equipment/leg/tasset-fur-studded-leather.webp,medium,12,y,2,n,,n
+9MAZ5666I2Z9MX78,Chain Shirt,50,gp,20,AC 13 + Dex modifier (Max 2),icons/commodities/metal/mail-chain-steel.webp,medium,13,y,2,n,,n
+Q83GZVCHVREF9U67,Scale Mail,50,gp,45,AC 14 + Dex modifier (Max 2)<br>Noisy,icons/equipment/chest/breastplate-metal-scaled-grey.webp,medium,14,y,2,n,,y
+U7KUU9TA22JAASWW,Breastplate,400,gp,20,AC 14 + Dex modifier (Max 2),icons/equipment/chest/breastplate-gorget-steel-white.webp,medium,14,y,2,n,,n
+ONMRQL8FK7IADSGK,Half Plate Armor,750,gp,40,AC 15 + Dex modifier (Max 2)<br>Noisy,icons/equipment/chest/breastplate-gorget-steel-purple.webp,medium,15,y,2,n,,y
+15LIQPMBXX4PN8UO,Ring Mail,30,gp,40,AC 14,icons/equipment/waist/belt-ring-steel.webp,heavy,14,n,,n,,n
+24260F2SZYTV4NZF,Chain Mail,75,gp,55,"AC 16<br>Noisy, Weighty 13",icons/commodities/metal/mail-chain-steel.webp,heavy,16,n,,y,13,y
+5W0W7PLJELBAY3II,Splint Armor,200,gp,60,"AC 17<br>Noisy, Weighty 15",icons/equipment/chest/breastplate-banded-steel-gold.webp,heavy,17,n,,y,15,y
+ODETR6GRSUI4XEDL,Plate Armor,1500,gp,65,"AC 18<br>Noisy, Weighty 15",icons/equipment/chest/breastplate-cuirass-steel-grey.webp,heavy,18,n,,y,15,y

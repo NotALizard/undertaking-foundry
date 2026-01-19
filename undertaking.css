@@ -330,6 +330,15 @@ a.profcheck.savvy {
     width:300px;
 }
 .ac-container {
+    width: 120px;
+    font-size: 12px;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 6px;
+    background: white;
+}
+.npc-container {
     width: 100px;
     font-size: 12px;
     text-align: center;
@@ -1118,6 +1127,26 @@ a.damage-control.delete-damage {
 .ac-container input {
     background: none;
     border: none;
+}
+a.btn-armor-equip {
+    border-style: solid;
+    border-width: 2px;
+    padding: 4px;
+    width: 100%;
+    text-align: center;
+    border-color: var(--bg-blue);
+    color: inherit;
+    background-color: var(--bg-gray);
+}
+a.btn-armor-unequip {
+    border-style: solid;
+    border-width: 2px;
+    padding: 4px;
+    width: 100%;
+    text-align: center;
+    border-color: var(--bg-blue);
+    color: var(--off-white);
+    background-color: var(--bg-blue);
 }
 .npc-row-1 .ac-container {
     margin-left: 5px;

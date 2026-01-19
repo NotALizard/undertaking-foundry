@@ -1,6 +1,6 @@
 {
     "name": "Leather Armor",
-    "type": "equipment",
+    "type": "armor",
     "img": "icons/equipment/chest/breastplate-collared-leather-brown.webp",
     "system": {
         "description": {
@@ -14,11 +14,42 @@
             "value": "10",
             "denomination": "gp"
         },
-        "armor": {
-            "type": "light",
-            "value": "11",
-            "dex": ""
-        }
+        "armorType": "light",
+        "baseAC": 11,
+        "bonusAC": 0,
+        "noisy": false,
+        "weighty": {
+            "enabled": false,
+            "strength": null
+        },
+        "attributes": {
+            "dex": {
+                "enabled": true,
+                "limit": null
+            },
+            "str": {
+                "enabled": false,
+                "limit": null
+            },
+            "con": {
+                "enabled": false,
+                "limit": null
+            },
+            "int": {
+                "enabled": false,
+                "limit": null
+            },
+            "wis": {
+                "enabled": false,
+                "limit": null
+            },
+            "pre": {
+                "enabled": false,
+                "limit": null
+            }
+        },
+        "baseItem": "",
+        "proficient": true
     },
     "_id": "F3F4NK1XB820809Y"
 }

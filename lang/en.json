@@ -35,9 +35,20 @@
     "Awareness": "Awareness",
     "CarryCapacity": "Carry Capacity",
     "ArmorClass": "Armor Class",
-    "WithoutShield": "Without Shield",
+    "NoShield": "Unshielded",
     "Shield": "Shield",
     "Noisy": "Noisy",
+    "Weighty": "Weighty",
+    "StrengthReq": "Strength Requirement",
+    "AddDexterity": "Add Dexterity",
+    "AddStrength": "Add Strength",
+    "AddConstitution": "Add Constitution",
+    "AddIntelligence": "Add Intelligence",
+    "AddWisdom": "Add Wisdom",
+    "AddPresence": "Add Presence",
+    "Limit": "Limit",
+    "BaseAC": "Base AC",
+    "BonusAC": "Bonus AC",
     "Initiative": "Initiative",
     "HitPoints": "Current Hit Points",
     "Max": "Max",
@@ -73,6 +84,9 @@
     "Quantity": "Quantity",
     "OverCarryCapacity": "You are over your Carry Capacity",
     "OverAttunements": "You are over your Maximum Attunements",
+    "ArmorTooHeavy": "Movement speed reduced by 10 - You do not meet the Strength Requirement for this Armor",
+    "EquipArmor": "Equip Armor (Not currently equipped)",
+    "UnequipArmor": "Unequip Armor (Currently equipped)",
     "Weight": "Weight",
     "PoundsAbbrev": "lbs",
     "Value": "Value",
@@ -363,6 +377,7 @@
       "Cancel": "Cancel",
       "ForClass": "Associated Class",
       "ForAttribute": "Associated Attribute"
-    }
+    },
+    "ArmorType": "Armor Type"
   }
 }

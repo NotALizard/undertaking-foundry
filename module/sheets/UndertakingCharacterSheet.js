@@ -52,7 +52,7 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     }
 
     context.attacks = context.items.filter(function (item) { return (item.type == "weapon" && item.system.showInAttacks ) || (item.type == "spell" && item.system.showInAttacks ) || item.type == "customAttack"});
-    context.equipment = context.items.filter(function (item) { return item.type == "equipment" || item.type == "weapon"});
+    context.equipment = context.items.filter(function (item) { return item.type == "equipment" || item.type == "weapon" || item.type == "armor"});
     context.attuned = context.items.filter(function (item) { return item?.system?.attuned});
     context.classes = context.items.filter(function (item) { return item.type == "class"});
     context.archetypes = context.items.filter(function (item) { return item.type == "archetype"});
