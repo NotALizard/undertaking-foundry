@@ -1,0 +1,21 @@
+{
+    "name": "Reliquary (Holy focus) +2",
+    "type": "equipment",
+    "img": "icons/commodities/treasure/puzzle-pyramid.webp",
+    "system": {
+        "description": {
+            "value": "A small holy box that might hold a fragment or piece of a sacred relic.  These relics are rare and unique, and give a great connection to the deity or deities it represents.  A reliquary is often not meant to be opened under normal circumstances.<br><br>While holding this focus, you gain a bonus to spell attack rolls. This bonus is determined by the focus&rsquo; rarity.<br><br><strong>While Attuned</strong><br><br>While somewhere on your person, you gain a bonus to the save DCs of spells you cast. This bonus is determined by the focus&rsquo; rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "2",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "rare",
+        "attunement": 1
+    },
+    "_id": "T4YIHODUO7QCR71M"
+}

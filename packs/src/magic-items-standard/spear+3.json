@@ -1,0 +1,63 @@
+{
+    "name": "Spear +3",
+    "type": "weapon",
+    "img": "icons/weapons/polearms/spear-flared-green.webp",
+    "system": {
+        "description": {
+            "value": "Encompasses all spears and poles shorter than 8ft.<br><br>You have a bonus on your attack and damage rolls made with this weapon, the bonus of which is dependent on the rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "3",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "veryRare",
+        "weaponType": "simpleM",
+        "attribute": "str",
+        "actionType": "mwak",
+        "range": {
+            "value": "20",
+            "long": "60",
+            "units": "ft"
+        },
+        "critical": {
+            "threshold": null,
+            "damage": ""
+        },
+        "attackBonus": "3",
+        "damage": {
+            "parts": [
+                [
+                    "1d6 + @mod + 3",
+                    "piercing"
+                ]
+            ],
+            "versatile": "1d8 + @mod + 3"
+        },
+        "formula": "",
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "properties": {
+            "amm": false,
+            "fin": false,
+            "foc": false,
+            "hvy": false,
+            "lgt": false,
+            "lod": false,
+            "rch": false,
+            "spc": false,
+            "thr": true,
+            "two": false,
+            "una": false,
+            "ver": true
+        },
+        "showInAttacks": true
+    },
+    "_id": "F1H7OTZPVEVCUMP6"
+}

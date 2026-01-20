@@ -1,0 +1,56 @@
+{
+    "name": "Breastplate +2",
+    "type": "armor",
+    "img": "icons/equipment/chest/breastplate-gorget-steel-white.webp",
+    "system": {
+        "description": {
+            "value": "AC 14 + Dex modifier (Max 2)<br><br>While wearing this armor you have a bonus to your AC.  The bonus is determined by its rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "20",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "veryRare",
+        "armorType": "medium",
+        "baseAC": 14,
+        "bonusAC": 2,
+        "noisy": false,
+        "weighty": {
+            "enabled": false,
+            "strength": null
+        },
+        "attributes": {
+            "dex": {
+                "enabled": true,
+                "limit": 2
+            },
+            "str": {
+                "enabled": false,
+                "limit": null
+            },
+            "con": {
+                "enabled": false,
+                "limit": null
+            },
+            "int": {
+                "enabled": false,
+                "limit": null
+            },
+            "wis": {
+                "enabled": false,
+                "limit": null
+            },
+            "pre": {
+                "enabled": false,
+                "limit": null
+            }
+        },
+        "baseItem": "",
+        "proficient": true
+    },
+    "_id": "A4XLXRWPG16I5U07"
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Ring of Comets",
+    "type": "equipment",
+    "img": "icons/equipment/finger/ring-band-studded-gold.webp",
+    "system": {
+        "description": {
+            "value": "<p><em>Ring</em></p><p>This ring has 7 charges. While wearing this ring, you can spend 1 charge to cast @Compendium[undertaking.spells-level-1.7N5KBCOM40ZX65EO]{Arcane Arrows}. You can also spend an extra 1 charge when using the ring to cast @Compendium[undertaking.spells-level-1.7N5KBCOM40ZX65EO]{Arcane Arrows} to get an additional bolt. You can only cast up to 5 bolts at once.</p><p>Additionally, once per day you can invoke the ring of comets to ignite the arrows fired from the ring and deal an extra 1d4 fire damage each. However, this ability can only be used when spending 1 charge from the ring. Once used, you cannot invoke this ability again until the next dawn.</p><p>The ring of comets regains 1d6 expended charges daily at dawn.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0.1",
+        "price": {
+            "value": "0",
+            "denomination": "gp"
+        },
+        "rarity": "uncommon"
+    },
+    "_id": "ET471JXZLTYSMC5Q"
+}

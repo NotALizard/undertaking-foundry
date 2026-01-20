@@ -1,0 +1,63 @@
+{
+    "name": "Longbow +2",
+    "type": "weapon",
+    "img": "icons/weapons/bows/longbow-recurve-brown.webp",
+    "system": {
+        "description": {
+            "value": "Encompasses all compound bows, flat bows, reflex bows, and other types of longbows.<br><br>You have a bonus on your attack and damage rolls made with this weapon, the bonus of which is dependent on the rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "2",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "rare",
+        "weaponType": "martialR",
+        "attribute": "dex",
+        "actionType": "rwak",
+        "range": {
+            "value": "150",
+            "long": "600",
+            "units": "ft"
+        },
+        "critical": {
+            "threshold": null,
+            "damage": ""
+        },
+        "attackBonus": "2",
+        "damage": {
+            "parts": [
+                [
+                    "1d8 + @mod + 2",
+                    "piercing"
+                ]
+            ],
+            "versatile": ""
+        },
+        "formula": "",
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "properties": {
+            "amm": true,
+            "fin": false,
+            "foc": false,
+            "hvy": true,
+            "lgt": false,
+            "lod": false,
+            "rch": false,
+            "spc": false,
+            "thr": false,
+            "two": true,
+            "una": false,
+            "ver": false
+        },
+        "showInAttacks": true
+    },
+    "_id": "7Y4KEJ40LPXI3L62"
+}

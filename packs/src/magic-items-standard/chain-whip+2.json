@@ -1,0 +1,63 @@
+{
+    "name": "Chain Whip +2",
+    "type": "weapon",
+    "img": "icons/skills/melee/strike-chain-whip-blue.webp",
+    "system": {
+        "description": {
+            "value": "Encompasses all chain whips, kusari-fundo, meteor hammers, slungshots, and surujins. <br>Special: You can use this weapon to Grapple or Trip a creature within this weapon\u2019s reach.  A creature grappled by this weapon is not able to move further away from you, but does not lose its movement speed.<br><br>You have a bonus on your attack and damage rolls made with this weapon, the bonus of which is dependent on the rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "7",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "rare",
+        "weaponType": "martialM",
+        "attribute": "str",
+        "actionType": "mwak",
+        "range": {
+            "value": "0",
+            "long": "0",
+            "units": "ft"
+        },
+        "critical": {
+            "threshold": null,
+            "damage": ""
+        },
+        "attackBonus": "2",
+        "damage": {
+            "parts": [
+                [
+                    "1d6 + @mod + 2",
+                    "bludgeoning"
+                ]
+            ],
+            "versatile": ""
+        },
+        "formula": "",
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "properties": {
+            "amm": false,
+            "fin": false,
+            "foc": false,
+            "hvy": false,
+            "lgt": false,
+            "lod": false,
+            "rch": true,
+            "spc": true,
+            "thr": false,
+            "two": false,
+            "una": false,
+            "ver": false
+        },
+        "showInAttacks": true
+    },
+    "_id": "K0KNVSWDHH6SX2CY"
+}

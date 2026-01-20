@@ -1,0 +1,21 @@
+{
+    "name": "Seal of the Zealot",
+    "type": "equipment",
+    "img": "icons/commodities/currency/coin-inset-copper-axe.webp",
+    "system": {
+        "description": {
+            "value": "<p><em>Emblem (Holy Focus), (requires attunement by a Cleric)</em></p><p>A golden seal with an ornate border and a blank face.</p><p><strong>While attuned</strong></p><p>The seal&rsquo;s face changes to depict iconography representative of your faith. You can use your action to remove the seal from or magically affix it to a necklace chain, shield, or weapon you are holding. While the seal is somewhere on your person, you gain a +1 bonus to the save DCs of your Cleric spells, as well as to the total result of Faith Die rolls made to deal damage or gain temporary hit points.</p><p>Before attacking with any weapon, you can choose to increase the size of the weapon&rsquo;s damage die any number of steps (to a maximum size of 1d12). On a hit, the damage roll suffers a -1 penalty for each step you chose to increase the damage die (minimum 0 damage).</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": "0",
+            "denomination": "gp"
+        },
+        "rarity": "uncommon",
+        "attunement": 1
+    },
+    "_id": "5HPMOWTFDKHUBO5G"
+}

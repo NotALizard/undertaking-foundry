@@ -1,0 +1,21 @@
+{
+    "name": "Crystal (Arcane focus) +3",
+    "type": "equipment",
+    "img": "icons/commodities/gems/gem-cluster-purple.webp",
+    "system": {
+        "description": {
+            "value": "A small, clear crystal of varying shape and color that is normally put on the top of a staff, in the pommel of a weapon, or worn in some adornment.  Or simply carried.<br><br>While holding this focus, you gain a bonus to spell attack rolls. This bonus is determined by the focus&rsquo; rarity.<br><br><strong>While Attuned</strong><br><br>While somewhere on your person, you gain a bonus to the save DCs of spells you cast. This bonus is determined by the focus&rsquo; rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "veryRare",
+        "attunement": 1
+    },
+    "_id": "D1RKX2E7X9Z9JC87"
+}

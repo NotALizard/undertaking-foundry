@@ -6,7 +6,7 @@
     "UnlockEdit": "Unlock Editing",
     "Name": "Name",
     "Identified": "Identified",
-    "RequiresAttunement": "Requires Attunement",
+    "RequiresAttunement": "Attunable",
     "Attuned": "Attuned",
     "NotAttuned": "Not Attuned",
     "Description": "Description",
@@ -92,6 +92,16 @@
     "Value": "Value",
     "Cost": "Cost",
     "Supply": "Supply",
+    "Rarity": "Rarity",
+    "Rarities": {
+      "None": "None",
+      "Common": "Common",
+      "Uncommon": "Uncommon",
+      "Rare": "Rare",
+      "VeryRare": "Very Rare",
+      "Legendary": "Legendary",
+      "Artifact": "Artifact"
+    },
     "Currency": {
       "PP": "PP",
       "GP": "GP",

@@ -1,0 +1,20 @@
+{
+    "name": "Book of Holding",
+    "type": "equipment",
+    "img": "icons/sundries/books/book-embossed-bound-brown.webp",
+    "system": {
+        "description": {
+            "value": "<p><em>Wondrous Item</em></p><p>A book of holding works much like a @Compendium[undertaking.magic-items-unusual.ZP24KTV8Z3QA1DIU]{Bag of Holding}, only with the following excepts:&nbsp;</p><p>Objects transfer into the book when the object&rsquo;s name is written down on any page and the object is touching it. It will then disappear, being stored inside the book&rsquo;s extradimensional space. Any objects that have senses or spells on them instead affect the book until the item is removed.</p><p>When an item&rsquo;s name is erased from the book, the item reappears touching the cover of the book. If the writing cannot be erased, the item cannot be removed from the book without spending a long rest to magically force it out.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "5",
+        "price": {
+            "value": "0",
+            "denomination": "gp"
+        },
+        "rarity": "uncommon"
+    },
+    "_id": "ETA5V2SGC5IST4LT"
+}

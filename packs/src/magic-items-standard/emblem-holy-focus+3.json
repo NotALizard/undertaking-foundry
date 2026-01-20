@@ -1,0 +1,21 @@
+{
+    "name": "Emblem (Holy focus) +3",
+    "type": "equipment",
+    "img": "icons/commodities/treasure/plaque-wood-leaves.webp",
+    "system": {
+        "description": {
+            "value": "An emblem inlaid into a shield, armor, leather, or any other object that can be pressed or engraved.  The emblem represents or depicts a specific god or pantheon, and helps spread the name or presence of the specific deity or deities.<br><br>While holding this focus, you gain a bonus to spell attack rolls. This bonus is determined by the focus&rsquo; rarity.<br><br><strong>While Attuned</strong><br><br>While somewhere on your person, you gain a bonus to the save DCs of spells you cast. This bonus is determined by the focus&rsquo; rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "veryRare",
+        "attunement": 1
+    },
+    "_id": "A187OO05RLGFWVFO"
+}

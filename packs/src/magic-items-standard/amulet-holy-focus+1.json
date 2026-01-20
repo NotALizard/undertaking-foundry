@@ -1,0 +1,21 @@
+{
+    "name": "Amulet (Holy focus) +1",
+    "type": "equipment",
+    "img": "icons/equipment/neck/amulet-round-engraved-spiral-gold.webp",
+    "system": {
+        "description": {
+            "value": "An amulet that depicts a specific god or pantheon through symbology, and can help focus the holder\u2019s connection to the deity or deities.<br><br>While holding this focus, you gain a bonus to spell attack rolls. This bonus is determined by the focus&rsquo; rarity.<br><br><strong>While Attuned</strong><br><br>While somewhere on your person, you gain a bonus to the save DCs of spells you cast. This bonus is determined by the focus&rsquo; rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "uncommon",
+        "attunement": 1
+    },
+    "_id": "SO74XVGKV7F7V18L"
+}

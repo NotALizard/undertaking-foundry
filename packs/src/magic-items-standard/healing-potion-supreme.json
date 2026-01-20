@@ -1,0 +1,20 @@
+{
+    "name": "Healing Potion (Supreme)",
+    "type": "equipment",
+    "img": "icons/consumables/potions/potion-tube-corked-bat-gold-red.webp",
+    "system": {
+        "description": {
+            "value": "A creature that ingests this potion regains 10d4 + 20 hit points.  Drinking or administering this potion takes an action.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0.5",
+        "price": {
+            "value": "10000",
+            "denomination": "gp"
+        },
+        "rarity": "legendary"
+    },
+    "_id": "ZY73SPCD77XBFGIV"
+}

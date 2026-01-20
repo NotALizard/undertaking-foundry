@@ -1,0 +1,20 @@
+{
+    "name": "Slingshot Pellet +1",
+    "type": "equipment",
+    "img": "icons/skills/ranged/bullets-triple-ball-orange.webp",
+    "system": {
+        "description": {
+            "value": "Usable with a slingshot. Though slingshots can fire any small stone, spherical projectiles are preferable for their consistent accuracy. Common materials for purpose-made slingshot ammo are iron, lead, glass, or clay<br><br>This piece of ammunition grants you a bonus to hit and to damage, the bonus of which is determined by the rarity of the ammunition.  However, once it hits a target, the ammunition is no longer magical.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0.02",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "uncommon"
+    },
+    "_id": "ZN6V9IV0K7OQE41F"
+}

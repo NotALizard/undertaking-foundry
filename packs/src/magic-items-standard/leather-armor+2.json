@@ -1,0 +1,56 @@
+{
+    "name": "Leather Armor +2",
+    "type": "armor",
+    "img": "icons/equipment/chest/breastplate-collared-leather-brown.webp",
+    "system": {
+        "description": {
+            "value": "AC 11 + Dex modifier<br><br>While wearing this armor you have a bonus to your AC.  The bonus is determined by its rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "10",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "veryRare",
+        "armorType": "light",
+        "baseAC": 11,
+        "bonusAC": 2,
+        "noisy": false,
+        "weighty": {
+            "enabled": false,
+            "strength": null
+        },
+        "attributes": {
+            "dex": {
+                "enabled": true,
+                "limit": null
+            },
+            "str": {
+                "enabled": false,
+                "limit": null
+            },
+            "con": {
+                "enabled": false,
+                "limit": null
+            },
+            "int": {
+                "enabled": false,
+                "limit": null
+            },
+            "wis": {
+                "enabled": false,
+                "limit": null
+            },
+            "pre": {
+                "enabled": false,
+                "limit": null
+            }
+        },
+        "baseItem": "",
+        "proficient": true
+    },
+    "_id": "1BW8LDJXROMNKF8U"
+}

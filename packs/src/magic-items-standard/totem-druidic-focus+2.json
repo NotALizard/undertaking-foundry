@@ -1,0 +1,21 @@
+{
+    "name": "Totem (Druidic focus) +2",
+    "type": "equipment",
+    "img": "icons/weapons/wands/wand-totem.webp",
+    "system": {
+        "description": {
+            "value": "A totem that incorporates fur, feathers, teeth, and foliage from sacred animals and plants.<br><br>While holding this focus, you gain a bonus to spell attack rolls. This bonus is determined by the focus&rsquo; rarity.<br><br><strong>While Attuned</strong><br><br>While somewhere on your person, you gain a bonus to the save DCs of spells you cast. This bonus is determined by the focus&rsquo; rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "rare",
+        "attunement": 1
+    },
+    "_id": "M10E94CHVHNAOGL4"
+}

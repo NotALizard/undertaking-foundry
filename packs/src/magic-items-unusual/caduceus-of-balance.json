@@ -1,0 +1,21 @@
+{
+    "name": "Caduceus of Balance",
+    "type": "equipment",
+    "img": "icons/weapons/staves/staff-forest-spiral.webp",
+    "system": {
+        "description": {
+            "value": "<p><em>Rod (Arcane, Druidic, or Holy Focus), (attunement optional)</em></p><p>A sleek silver rod adorned with an ornament depicting a scorpion locked in combat with a golop. While holding this focus, you gain a +2 bonus to spell attack rolls.</p><p><strong>While attuned</strong></p><p>While you have it somewhere on your person, you gain a +1 bonus to the save DCs of spells you cast. The rod has a maximum of 7 charges. As a minor action, you can touch the rod to a creature and spend up to 3 charges to heal it for 1d4+1 hit points per charge spent. The rod regains 1 charge each time you cause a hostile creature to become @Compendium[undertaking.conditions.9X088PM7H5U2S1HQ]{Sickened}, @Compendium[undertaking.conditions.SRRBLPRSJWGUR551]{Poisoned}, or @Compendium[undertaking.conditions.9YPWLY1IHQV3MRLO]{Diseased}.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "2",
+        "price": {
+            "value": "0",
+            "denomination": "gp"
+        },
+        "rarity": "rare",
+        "attunement": 1
+    },
+    "_id": "T8LTXEJR77B98ZPH"
+}

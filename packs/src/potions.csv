@@ -1,0 +1,9 @@
+id,Name,Cost,Currency,Weight,Rarity,Description,Image
+UXFGMYF3ZZMSD8W9,Healing Potion (Lesser),20,gp,0.5,common,A creature that ingests this potion regains 1d4 + 1 hit points.  Drinking or administering this potion takes an action.,icons/consumables/potions/potion-tube-corked-red.webp
+FKOU9MFAC96IYL2D,Healing Potion (Average),50,gp,0.5,uncommon,A creature that ingests this potion regains 2d4 + 2 hit points.  Drinking or administering this potion takes an action.,icons/consumables/potions/bottle-corked-red.webp
+5NW7KEOTV30PY2IW,Healing Potion (Greater),200,gp,0.5,rare,A creature that ingests this potion regains 4d4 + 4 hit points.  Drinking or administering this potion takes an action.,icons/consumables/potions/bottle-round-corked-red.webp
+3W0W8O0T7IVQ0YCX,Healing Potion (Superior),1000,gp,0.5,veryRare,A creature that ingests this potion regains 8d4 + 8 hit points.  Drinking or administering this potion takes an action.,icons/consumables/potions/bottle-round-corked-orante-red.webp
+ZY73SPCD77XBFGIV,Healing Potion (Supreme),10000,gp,0.5,legendary,A creature that ingests this potion regains 10d4 + 20 hit points.  Drinking or administering this potion takes an action.,icons/consumables/potions/potion-tube-corked-bat-gold-red.webp
+80CUKMM7QT92GDK2,Mana Potion (Lesser),200,gp,0.5,rare,A creature that ingests this potion regains 1d4 + 1 mana.  Drinking or administering this potion takes an action.,icons/consumables/potions/vial-cork-blue.webp
+2KQ57KY8FEJI37XV,Mana Potion (Average),1000,gp,0.5,veryRare,A creature that ingests this potion regains 2d4 + 2 mana.  Drinking or administering this potion takes an action.,icons/consumables/potions/bottle-corked-blue.webp
+BE5Q2VKJ34Q4NAH6,Mana Potion (Greater),10000,gp,0.5,legendary,A creature that ingests this potion regains 4d4 + 4 mana.  Drinking or administering this potion takes an action.,icons/consumables/potions/bottle-round-corked-blue.webp

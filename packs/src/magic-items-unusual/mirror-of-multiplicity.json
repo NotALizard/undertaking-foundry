@@ -1,0 +1,20 @@
+{
+    "name": "Mirror of Multiplicity",
+    "type": "equipment",
+    "img": "icons/sundries/survival/mirror-plain.webp",
+    "system": {
+        "description": {
+            "value": "<p><em>Wondrous item</em></p><p>A flat two-sided golden mirror with intricate carvings around the handle that seem to appear as both one person and two people at once. When the holder looks into the mirror, it always seems to show an incredibly accurate reflection of oneself.</p><p>When the holder locks eyes with its reflection as a minor action, the mirror uses the ability @Compendium[undertaking.abilities.ILG1OGOCEP2L619C]{Multiplicity} from the Ninja Rogue Sub-Class on the user, but with the following details.</p><ul><li>A Mirror Copy lasts for 1 hour, and cannot extend its time out.</li><li>A Mirror Copy has no @Compendium[undertaking.abilities.JQ3I9PYSEKDJ5F06]{Spirit} to spend.</li><li>The mirror itself does not duplicate.</li><li>A Mirror Copy can be made autonomous and mentally separate from you or return to having a Shared Mind as a non-action. When mentally separated, the GM controls your duplicate.</li><li>A Mirror Copy can use any Starter Class Features that you know as if it is 1st level in that class, sharing all chosen options that you know as part of that ability, such as known Fighting Stances, as long as the option had no leveled unlock requirement.</li><li>If the Mirror Copy is of a spellcaster, it can only cast Cantrips that you know.</li><li>The mirror can be used once per day, recharging at midnight each night.</li></ul>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "2",
+        "price": {
+            "value": "0",
+            "denomination": "gp"
+        },
+        "rarity": "veryRare"
+    },
+    "_id": "96XNCIC1S9SYZI0Q"
+}

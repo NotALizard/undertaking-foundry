@@ -1,0 +1,21 @@
+{
+    "name": "Six-Fingered Gloves",
+    "type": "equipment",
+    "img": "icons/equipment/hand/glove-ringed-leather-yellow.webp",
+    "system": {
+        "description": {
+            "value": "<p><em>Wondrous Item (Gloves), (requires attunement)</em></p><p>These otherwise unremarkable-looking gloves manifest a spectral sixth finger to aid you in your handiwork.</p><p><strong>While Attuned</strong></p><p>While you are wearing them, you can add an additional 1d6 to the results of any Dexterity (Sleight of Hand) or Intelligence (Craft) checks.</p><p>If you are a @Compendium[undertaking.archetypes-rogue.ZYETWQRILPMN3521]{Thief Rogue}, the gloves also grant you one additional &ldquo;Finger&rdquo; to your maximum.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "uncommon",
+        "attunement": 1
+    },
+    "_id": "1YAPFO6ZJPDM5VTY"
+}

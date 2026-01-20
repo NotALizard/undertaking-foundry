@@ -1,0 +1,63 @@
+{
+    "name": "Pike +1",
+    "type": "weapon",
+    "img": "icons/weapons/polearms/pike-flared-red.webp",
+    "system": {
+        "description": {
+            "value": "Encompasses all spears and poles longer than 8ft. <br>Special: You have disadvantage when you use a pike to attack a target within 5ft of you.<br><br>You have a bonus on your attack and damage rolls made with this weapon, the bonus of which is dependent on the rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "18",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "uncommon",
+        "weaponType": "martialM",
+        "attribute": "str",
+        "actionType": "mwak",
+        "range": {
+            "value": "0",
+            "long": "0",
+            "units": "ft"
+        },
+        "critical": {
+            "threshold": null,
+            "damage": ""
+        },
+        "attackBonus": "1",
+        "damage": {
+            "parts": [
+                [
+                    "1d10 + @mod + 1",
+                    "piercing"
+                ]
+            ],
+            "versatile": ""
+        },
+        "formula": "",
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "properties": {
+            "amm": false,
+            "fin": false,
+            "foc": false,
+            "hvy": true,
+            "lgt": false,
+            "lod": false,
+            "rch": true,
+            "spc": true,
+            "thr": false,
+            "two": true,
+            "una": false,
+            "ver": false
+        },
+        "showInAttacks": true
+    },
+    "_id": "WXYLKXEKGMH2OSRO"
+}

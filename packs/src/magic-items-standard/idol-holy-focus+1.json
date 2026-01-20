@@ -1,0 +1,21 @@
+{
+    "name": "Idol (Holy focus) +1",
+    "type": "equipment",
+    "img": "icons/commodities/treasure/figurine-goddess.webp",
+    "system": {
+        "description": {
+            "value": "An intricate, hand-held idol or statue of a deity, often helpful in telling stories or giving examples of a deity or deities and their exploits.<br><br>While holding this focus, you gain a bonus to spell attack rolls. This bonus is determined by the focus&rsquo; rarity.<br><br><strong>While Attuned</strong><br><br>While somewhere on your person, you gain a bonus to the save DCs of spells you cast. This bonus is determined by the focus&rsquo; rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "2",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "uncommon",
+        "attunement": 1
+    },
+    "_id": "4EWHO00HVVZJTNU9"
+}

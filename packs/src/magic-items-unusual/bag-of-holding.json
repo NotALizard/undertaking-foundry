@@ -1,0 +1,20 @@
+{
+    "name": "Bag of Holding",
+    "type": "equipment",
+    "img": "icons/containers/bags/pack-silver-purple.webp",
+    "system": {
+        "description": {
+            "value": "<p><em>Wondrous Item</em></p><p>The interior of this finely made bag is far larger than its exterior would let on, roughly 2 feet in diameter at the mouth and 4 feet deep. A bag of holding can contain up to 500 pounds, that does not exceed a volume of 64 cubic feet, while still only weighing 15 pounds to the user regardless of contents. However, to retrieve an item from the bag of holding takes an action.</p><p>Should the bag become overloaded, or ever be pierced or torn, it ruptures and is immediately destroyed, casting any contents inside it into the Astral Plane. Additionally, should the bag be turned inside out, all contents stored within are dumped out onto the ground and the bag is left unharmed, but unusable until turned right-side-in. There is no air within a bag of holding, therefore breathing creatures inside the bag can only survive up to a number of minutes equal to 10 divided by the number of creatures inside the bag (minimum of 1 minute) after which time they begin to suffocate.</p><p>A bag of holding placed within another bag of holding, or another item with similar spacial effects, will instantly destroy both items and rip a hole through the planes, opening a gate to the Astral Plane. This gate originates where the item that was placed inside the other was originally. Should any creature be within 10 feet of the gate when it appears, they are sucked through and thrown to a random location in the Astral Plane. After which, the gate closes and cannot be reopened, as this gate only goes one way.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "15",
+        "price": {
+            "value": "200",
+            "denomination": "gp"
+        },
+        "rarity": "uncommon"
+    },
+    "_id": "ZP24KTV8Z3QA1DIU"
+}

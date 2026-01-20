@@ -1,0 +1,63 @@
+{
+    "name": "Buckler +2",
+    "type": "weapon",
+    "img": "icons/equipment/shield/buckler-wooden-boss.webp",
+    "system": {
+        "description": {
+            "value": "AC +1. Can be used as a weapon.<br><br>While holding this shield, you gain a bonus to your AC determined by the shield's rarity.  This bonus is in addition to the shield's normal bonus to AC.  Additionally, you can add this bonus to attack and damage rolls made using the shield as a weapon.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "2",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "veryRare",
+        "weaponType": "shield",
+        "attribute": "str",
+        "actionType": "mwak",
+        "range": {
+            "value": "0",
+            "long": "0",
+            "units": "ft"
+        },
+        "critical": {
+            "threshold": null,
+            "damage": ""
+        },
+        "attackBonus": "2",
+        "damage": {
+            "parts": [
+                [
+                    "1 + @mod + 2",
+                    "bludgeoning"
+                ]
+            ],
+            "versatile": ""
+        },
+        "formula": "",
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "properties": {
+            "amm": false,
+            "fin": false,
+            "foc": false,
+            "hvy": false,
+            "lgt": false,
+            "lod": false,
+            "rch": false,
+            "spc": false,
+            "thr": false,
+            "two": false,
+            "una": true,
+            "ver": false
+        },
+        "showInAttacks": true
+    },
+    "_id": "LGKE4C9F9TBUIAOC"
+}

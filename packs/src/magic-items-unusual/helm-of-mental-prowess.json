@@ -1,0 +1,20 @@
+{
+    "name": "Helm of Mental Prowess",
+    "type": "equipment",
+    "img": "icons/equipment/head/helm-spangen.webp",
+    "system": {
+        "description": {
+            "value": "<p><em>Wondrous item</em></p><p>While wearing this helm you can cast the cantrip @Compendium[undertaking.spells-cantrips.IJ97BYFB2ANTKOSW]{Force of Will} as an action. Additionally, the helm has 5 charges, and regains 1d4 expended charges daily at dawn. These charges can be used to cast either @Compendium[undertaking.spells-level-5.LE5BM8DCSZCPUGMV]{Telekinetic Might} or @Compendium[undertaking.spells-level-5.J9QLMOBH6NXLN5OQ]{Telepathic Network} by expending 1 charge for either.</p><p>Alternatively, @Compendium[undertaking.spells-level-5.J9QLMOBH6NXLN5OQ]{Telepathic Network} can be cast with 2 charges, which allows it to be maintained even if @Compendium[undertaking.spells-level-5.LE5BM8DCSZCPUGMV]{Telekinetic Might} is also cast with the helm, effectively allowing both to be active at one time.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "4",
+        "price": {
+            "value": "0",
+            "denomination": "gp"
+        },
+        "rarity": "rare"
+    },
+    "_id": "83OS88TIF6IYBBBZ"
+}

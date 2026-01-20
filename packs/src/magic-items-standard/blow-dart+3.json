@@ -1,0 +1,20 @@
+{
+    "name": "Blow Dart +3",
+    "type": "equipment",
+    "img": "icons/weapons/thrown/dart-feathered.webp",
+    "system": {
+        "description": {
+            "value": "Usable with a blowgun.<br><br>This piece of ammunition grants you a bonus to hit and to damage, the bonus of which is determined by the rarity of the ammunition.  However, once it hits a target, the ammunition is no longer magical.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0.05",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "veryRare"
+    },
+    "_id": "6U4AI3B1B8LH2OND"
+}

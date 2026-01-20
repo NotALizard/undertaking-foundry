@@ -1,0 +1,63 @@
+{
+    "name": "Dart +1",
+    "type": "weapon",
+    "img": "icons/weapons/thrown/dart-feathered.webp",
+    "system": {
+        "description": {
+            "value": "Encompasses all bo shuriken, gypsy arrows, martiobarbuli, plumbatas, and other handheld darts. <br>Special: You can use either your Dexterity or Strength modifiers for attack and damage rolls.<br><br>You have a bonus on your attack and damage rolls made with this weapon, the bonus of which is dependent on the rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0.25",
+        "price": {
+            "value": 0,
+            "denomination": "cp"
+        },
+        "rarity": "uncommon",
+        "weaponType": "simpleR",
+        "attribute": "dex",
+        "actionType": "rwak",
+        "range": {
+            "value": "20",
+            "long": "60",
+            "units": "ft"
+        },
+        "critical": {
+            "threshold": null,
+            "damage": ""
+        },
+        "attackBonus": "1",
+        "damage": {
+            "parts": [
+                [
+                    "1d4 + @mod + 1",
+                    "piercing"
+                ]
+            ],
+            "versatile": ""
+        },
+        "formula": "",
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "properties": {
+            "amm": false,
+            "fin": false,
+            "foc": false,
+            "hvy": false,
+            "lgt": false,
+            "lod": false,
+            "rch": false,
+            "spc": true,
+            "thr": true,
+            "two": false,
+            "una": false,
+            "ver": false
+        },
+        "showInAttacks": true
+    },
+    "_id": "DK11JZ9X7631OPAQ"
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Mana Potion (Average)",
+    "type": "equipment",
+    "img": "icons/consumables/potions/bottle-corked-blue.webp",
+    "system": {
+        "description": {
+            "value": "A creature that ingests this potion regains 2d4 + 2 mana.  Drinking or administering this potion takes an action.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0.5",
+        "price": {
+            "value": "1000",
+            "denomination": "gp"
+        },
+        "rarity": "veryRare"
+    },
+    "_id": "2KQ57KY8FEJI37XV"
+}

@@ -1,0 +1,63 @@
+{
+    "name": "Shortbow +3",
+    "type": "weapon",
+    "img": "icons/weapons/bows/shortbow-recurve-red.webp",
+    "system": {
+        "description": {
+            "value": "Encompasses all curved bows, flat bows, and all types of small or average bows.<br><br>You have a bonus on your attack and damage rolls made with this weapon, the bonus of which is dependent on the rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "2",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "veryRare",
+        "weaponType": "simpleR",
+        "attribute": "dex",
+        "actionType": "rwak",
+        "range": {
+            "value": "80",
+            "long": "320",
+            "units": "ft"
+        },
+        "critical": {
+            "threshold": null,
+            "damage": ""
+        },
+        "attackBonus": "3",
+        "damage": {
+            "parts": [
+                [
+                    "1d6 + @mod + 3",
+                    "piercing"
+                ]
+            ],
+            "versatile": ""
+        },
+        "formula": "",
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "properties": {
+            "amm": true,
+            "fin": false,
+            "foc": false,
+            "hvy": false,
+            "lgt": false,
+            "lod": false,
+            "rch": false,
+            "spc": false,
+            "thr": false,
+            "two": true,
+            "una": false,
+            "ver": false
+        },
+        "showInAttacks": true
+    },
+    "_id": "YAELMFERSAB3E48B"
+}

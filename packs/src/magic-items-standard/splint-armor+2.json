@@ -1,0 +1,56 @@
+{
+    "name": "Splint Armor +2",
+    "type": "armor",
+    "img": "icons/equipment/chest/breastplate-banded-steel-gold.webp",
+    "system": {
+        "description": {
+            "value": "AC 17<br>Noisy, Weighty 15<br><br>While wearing this armor you have a bonus to your AC.  The bonus is determined by its rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "60",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "veryRare",
+        "armorType": "heavy",
+        "baseAC": 17,
+        "bonusAC": 2,
+        "noisy": true,
+        "weighty": {
+            "enabled": true,
+            "strength": 15
+        },
+        "attributes": {
+            "dex": {
+                "enabled": false,
+                "limit": null
+            },
+            "str": {
+                "enabled": false,
+                "limit": null
+            },
+            "con": {
+                "enabled": false,
+                "limit": null
+            },
+            "int": {
+                "enabled": false,
+                "limit": null
+            },
+            "wis": {
+                "enabled": false,
+                "limit": null
+            },
+            "pre": {
+                "enabled": false,
+                "limit": null
+            }
+        },
+        "baseItem": "",
+        "proficient": true
+    },
+    "_id": "RJ8ASAGDLS699XA7"
+}

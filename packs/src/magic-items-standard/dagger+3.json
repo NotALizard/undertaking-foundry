@@ -1,0 +1,63 @@
+{
+    "name": "Dagger +3",
+    "type": "weapon",
+    "img": "icons/weapons/daggers/dagger-black.webp",
+    "system": {
+        "description": {
+            "value": "Encompasses all daggers, knives, kunai, screwdrivers, shivs, sais, tantos, tekpis, and other short, sharp objects.<br><br>You have a bonus on your attack and damage rolls made with this weapon, the bonus of which is dependent on the rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "veryRare",
+        "weaponType": "simpleM",
+        "attribute": "dex",
+        "actionType": "mwak",
+        "range": {
+            "value": "20",
+            "long": "60",
+            "units": "ft"
+        },
+        "critical": {
+            "threshold": null,
+            "damage": ""
+        },
+        "attackBonus": "3",
+        "damage": {
+            "parts": [
+                [
+                    "1d4 + @mod + 3",
+                    "piercing"
+                ]
+            ],
+            "versatile": ""
+        },
+        "formula": "",
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "properties": {
+            "amm": false,
+            "fin": true,
+            "foc": false,
+            "hvy": false,
+            "lgt": true,
+            "lod": false,
+            "rch": false,
+            "spc": false,
+            "thr": true,
+            "two": false,
+            "una": false,
+            "ver": false
+        },
+        "showInAttacks": true
+    },
+    "_id": "FESF4NL9053V06LL"
+}

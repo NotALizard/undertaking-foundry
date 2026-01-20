@@ -1,0 +1,63 @@
+{
+    "name": "Repeating Crossbow +1",
+    "type": "weapon",
+    "img": "icons/weapons/crossbows/crossbow-golden-bolt.webp",
+    "system": {
+        "description": {
+            "value": "Encompasses any magazine-based crossbow.<br><br>You have a bonus on your attack and damage rolls made with this weapon, the bonus of which is dependent on the rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "6",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "uncommon",
+        "weaponType": "martialR",
+        "attribute": "dex",
+        "actionType": "rwak",
+        "range": {
+            "value": "30",
+            "long": "120",
+            "units": "ft"
+        },
+        "critical": {
+            "threshold": null,
+            "damage": ""
+        },
+        "attackBonus": "1",
+        "damage": {
+            "parts": [
+                [
+                    "1d6 + @mod + 1",
+                    "piercing"
+                ]
+            ],
+            "versatile": ""
+        },
+        "formula": "",
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "properties": {
+            "amm": true,
+            "fin": false,
+            "foc": false,
+            "hvy": false,
+            "lgt": false,
+            "lod": false,
+            "rch": false,
+            "spc": false,
+            "thr": false,
+            "two": true,
+            "una": false,
+            "ver": false
+        },
+        "showInAttacks": true
+    },
+    "_id": "ZSC6A5MRXBLWXGHL"
+}

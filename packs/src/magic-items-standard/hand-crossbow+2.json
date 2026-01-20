@@ -1,0 +1,63 @@
+{
+    "name": "Hand Crossbow +2",
+    "type": "weapon",
+    "img": "icons/weapons/crossbows/handcrossbow-black.webp",
+    "system": {
+        "description": {
+            "value": "Encompasses any one-handed crossbow.<br><br>You have a bonus on your attack and damage rolls made with this weapon, the bonus of which is dependent on the rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "3",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "rare",
+        "weaponType": "martialR",
+        "attribute": "dex",
+        "actionType": "rwak",
+        "range": {
+            "value": "30",
+            "long": "120",
+            "units": "ft"
+        },
+        "critical": {
+            "threshold": null,
+            "damage": ""
+        },
+        "attackBonus": "2",
+        "damage": {
+            "parts": [
+                [
+                    "1d6 + @mod + 2",
+                    "piercing"
+                ]
+            ],
+            "versatile": ""
+        },
+        "formula": "",
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "properties": {
+            "amm": true,
+            "fin": false,
+            "foc": false,
+            "hvy": false,
+            "lgt": true,
+            "lod": true,
+            "rch": false,
+            "spc": false,
+            "thr": false,
+            "two": false,
+            "una": false,
+            "ver": false
+        },
+        "showInAttacks": true
+    },
+    "_id": "31QC9Z9K357RF4I6"
+}

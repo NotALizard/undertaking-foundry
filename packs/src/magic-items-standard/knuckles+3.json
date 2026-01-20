@@ -1,0 +1,63 @@
+{
+    "name": "Knuckles +3",
+    "type": "weapon",
+    "img": "icons/weapons/fist/fist-knuckles-brass.webp",
+    "system": {
+        "description": {
+            "value": "Encompasses all hand-worn weaponry, such as brass knuckles and knuckle-weighted gloves.<br><br>You have a bonus on your attack and damage rolls made with this weapon, the bonus of which is dependent on the rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "6",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "veryRare",
+        "weaponType": "martialM",
+        "attribute": "str",
+        "actionType": "mwak",
+        "range": {
+            "value": "0",
+            "long": "0",
+            "units": "ft"
+        },
+        "critical": {
+            "threshold": null,
+            "damage": ""
+        },
+        "attackBonus": "3",
+        "damage": {
+            "parts": [
+                [
+                    "1d4 + @mod + 3",
+                    "bludgeoning"
+                ]
+            ],
+            "versatile": ""
+        },
+        "formula": "",
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "properties": {
+            "amm": false,
+            "fin": false,
+            "foc": false,
+            "hvy": false,
+            "lgt": false,
+            "lod": false,
+            "rch": false,
+            "spc": false,
+            "thr": false,
+            "two": false,
+            "una": true,
+            "ver": false
+        },
+        "showInAttacks": true
+    },
+    "_id": "P27CANUZ4U3W5438"
+}

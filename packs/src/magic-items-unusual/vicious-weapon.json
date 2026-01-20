@@ -1,0 +1,63 @@
+{
+    "name": "Vicious Weapon",
+    "type": "weapon",
+    "img": "icons/weapons/swords/greatsword-guard-split-eyes.webp",
+    "system": {
+        "description": {
+            "value": "<p><em>Weapon (any)</em></p><p>When using this weapon, if you roll a 20 to attack then the target takes an extra 7 damage of the weapon&rsquo;s type.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "3",
+        "price": {
+            "value": "",
+            "denomination": "gp"
+        },
+        "rarity": "rare",
+        "weaponType": "martialM",
+        "attribute": "str",
+        "actionType": "mwak",
+        "range": {
+            "value": "0",
+            "long": "0",
+            "units": "ft"
+        },
+        "critical": {
+            "threshold": null,
+            "damage": ""
+        },
+        "damage": {
+            "parts": [
+                [
+                    "1d8 + @mod",
+                    "slashing"
+                ]
+            ],
+            "versatile": "1d10 + @mod"
+        },
+        "formula": "",
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "properties": {
+            "amm": false,
+            "fin": false,
+            "foc": false,
+            "hvy": false,
+            "lgt": false,
+            "lod": false,
+            "rch": false,
+            "spc": false,
+            "thr": false,
+            "two": false,
+            "una": false,
+            "ver": true
+        },
+        "chatFlavor": "Deals 7 extra damage on a natural 20.",
+        "showInAttacks": true
+    },
+    "_id": "ZQQQLPZYF5X9NASD"
+}

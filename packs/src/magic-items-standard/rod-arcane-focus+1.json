@@ -1,0 +1,21 @@
+{
+    "name": "Rod (Arcane focus) +1",
+    "type": "equipment",
+    "img": "icons/weapons/staves/staff-ornate-purple.webp",
+    "system": {
+        "description": {
+            "value": "A heavy cylinder made of metal, wood, or bone.  Normally about 2 to 3 feet long, 1 inch thick, and 2 to 5 pounds.<br><br>While holding this focus, you gain a bonus to spell attack rolls. This bonus is determined by the focus&rsquo; rarity.<br><br><strong>While Attuned</strong><br><br>While somewhere on your person, you gain a bonus to the save DCs of spells you cast. This bonus is determined by the focus&rsquo; rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "2",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "uncommon",
+        "attunement": 1
+    },
+    "_id": "1HB5TXIX0IQG75BL"
+}

@@ -15,19 +15,26 @@
         {{!-- Description Tab --}}
         <div class="tab full-page flexrow active" data-group="primary" data-tab="description">
             <div class="fcol">
+                <input type="hidden" id="input-rarity" name="system.rarity" value="{{item.system.rarity}}" data-dtype="String">
                 <input type="hidden" id="input-identified" name="system.identified" value="{{item.system.identified}}" data-dtype="Boolean">
                 <input type="hidden" id="input-attunement" name="system.attunement" value="{{item.system.attunement}}" data-dtype="Boolean">
                 <input type="hidden" id="input-attuned" name="system.attuned" value="{{item.system.attuned}}" data-dtype="Boolean">
                 <div class="item-row frow">
-                    {{#ifGM}}
                     <div class="frow short">
-                        <label>{{ localize "undertaking.Identified" }}:</label>
-                        <input type="checkbox" class="input-checkbox" data-for="#input-identified" {{#ifCond item.system.identified '==' true}}checked{{/ifCond}}/>
+                    <label>{{ localize "undertaking.Rarity" }}:</label>
+                    <select class="input-dropdown" data-for="#input-rarity">
+                        <option value="" {{#ifCond item.system.rarity '==' ""}}selected{{/ifCond}}>{{ localize "undertaking.Rarities.None" }}</option>
+                        <option value="common" {{#ifCond item.system.rarity '==' "common"}}selected{{/ifCond}}>{{ localize "undertaking.Rarities.Common" }}</option>
+                        <option value="uncommon" {{#ifCond item.system.rarity '==' "uncommon"}}selected{{/ifCond}}>{{ localize "undertaking.Rarities.Uncommon" }}</option>
+                        <option value="rare" {{#ifCond item.system.rarity '==' "rare"}}selected{{/ifCond}}>{{ localize "undertaking.Rarities.Rare" }}</option>
+                        <option value="veryRare" {{#ifCond item.system.rarity '==' "veryRare"}}selected{{/ifCond}}>{{ localize "undertaking.Rarities.VeryRare" }}</option>
+                        <option value="legendary" {{#ifCond item.system.rarity '==' "legendary"}}selected{{/ifCond}}>{{ localize "undertaking.Rarities.Legendary" }}</option>
+                        <option value="artifact" {{#ifCond item.system.rarity '==' "artifact"}}selected{{/ifCond}}>{{ localize "undertaking.Rarities.Artifact" }}</option>
+                    </select>
                     </div>
-                    {{/ifGM}}
                     <div class="frow short">
-                        <label>{{ localize "undertaking.RequiresAttunement" }}:</label>
-                        <input type="checkbox" class="input-checkbox" data-for="#input-attunement" {{#ifCond item.system.attunement '==' true}}checked{{/ifCond}}/>
+                    <label>{{ localize "undertaking.RequiresAttunement" }}:</label>
+                    <input type="checkbox" class="input-checkbox" data-for="#input-attunement" {{#ifCond item.system.attunement '==' true}}checked{{/ifCond}}/>
                     </div>
                     {{#ifCond item.system.attunement '==' true}}
                     <div class="frow short">
@@ -36,6 +43,12 @@
                     </div>
                     {{/ifCond}}
                 </div>
+                {{#ifGM}}
+                <div class="item-row frow">
+                    <label>{{ localize "undertaking.Identified" }}:</label>
+                    <input type="checkbox" class="input-checkbox" data-for="#input-identified" {{#ifCond item.system.identified '==' true}}checked{{/ifCond}}/>
+                </div>
+                {{/ifGM}}
                 <hr class="blue"/>
                 <br/>
                 {{#ifGM}}

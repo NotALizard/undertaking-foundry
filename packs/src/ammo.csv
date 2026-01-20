@@ -1,0 +1,5 @@
+id,Name,Cost,Currency,Weight,Rarity,Description,Image
+W8GCDA8I1WV4MLQZ,Arrow,5,cp,0.05,,Usable with a shortbow or longbow.,icons/weapons/ammunition/arrow-broadhead.webp
+LI5IASZ932XCZLMG ,Blow Dart,2,cp,0.05,,Usable with a blowgun.,icons/weapons/thrown/dart-feathered.webp
+JSI8LCSF4FN769KX,Crossbow Bolt,5,cp,0.05,,"Usable with a light crossbow, hand crossbow, heavy crossbow, or repeating crossbow.",icons/weapons/ammunition/arrow-broadhead-white.webp
+49WP71CVMA243AMN,Slingshot Pellet,1,cp,0.02,,"Usable with a slingshot. Though slingshots can fire any small stone, spherical projectiles are preferable for their consistent accuracy. Common materials for purpose-made slingshot ammo are iron, lead, glass, or clay",icons/skills/ranged/bullets-triple-ball-orange.webp

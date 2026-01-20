@@ -1,0 +1,20 @@
+{
+    "name": "Healing Potion (Lesser)",
+    "type": "equipment",
+    "img": "icons/consumables/potions/potion-tube-corked-red.webp",
+    "system": {
+        "description": {
+            "value": "A creature that ingests this potion regains 1d4 + 1 hit points.  Drinking or administering this potion takes an action.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0.5",
+        "price": {
+            "value": "20",
+            "denomination": "gp"
+        },
+        "rarity": "common"
+    },
+    "_id": "UXFGMYF3ZZMSD8W9"
+}

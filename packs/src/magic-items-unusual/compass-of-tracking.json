@@ -1,0 +1,20 @@
+{
+    "name": "Compass of Tracking",
+    "type": "equipment",
+    "img": "icons/tools/navigation/compass-plain-blue.webp",
+    "system": {
+        "description": {
+            "value": "<p><em>Wondrous item</em></p><p>When built, this compass is given an example of the items that it is meant to track. It then points its numerous compass hands in the direction of the nearest examples of those objects within the plane it is currently on, the closest example being pointed at with the largest hand. If less than 10 objects are being pointed at, the smallest hands hide under the largest hand.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "0.5",
+        "price": {
+            "value": "0",
+            "denomination": "gp"
+        },
+        "rarity": "uncommon"
+    },
+    "_id": "TKJ6Z0ZGQKXPIKJ7"
+}

@@ -1,0 +1,21 @@
+{
+    "name": "Orb (Arcane focus) +1",
+    "type": "equipment",
+    "img": "icons/commodities/gems/pearl-blue-gold.webp",
+    "system": {
+        "description": {
+            "value": "A crystal orb that fits comfortably in a single hand.  Perfectly round, made of glass or crystal, and transparent.<br><br>While holding this focus, you gain a bonus to spell attack rolls. This bonus is determined by the focus&rsquo; rarity.<br><br><strong>While Attuned</strong><br><br>While somewhere on your person, you gain a bonus to the save DCs of spells you cast. This bonus is determined by the focus&rsquo; rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "3",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "uncommon",
+        "attunement": 1
+    },
+    "_id": "SXJWL4PGBCV3BE4G"
+}

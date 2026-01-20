@@ -1,0 +1,68 @@
+{
+    "name": "Staff of Concussion",
+    "type": "weapon",
+    "img": "icons/weapons/staves/staff-ornate.webp",
+    "system": {
+        "description": {
+            "value": "<p><em>Quarterstaff (Weapon, Arcane Focus), (attunement optional)</em></p><p>A hollow metal staff adorned with countless tiny, round bells and topped with a single brass cowbell. You gain a +1 bonus to spell attacks on spells cast while holding this staff and weapon attack rolls made with this staff. The staff deals 1d4 additional force damage on a hit when used in a melee weapon attack.</p><p><strong>While attuned</strong></p><p>You know the @Compendium[undertaking.spells-cantrips.DTPPMUPRVRY3XXMS]{Salvo} cantrip and can cast the spell @Compendium[undertaking.spells-level-2.FZ8CHP8N6M0PGLI1]{Discombobulate} once from the staff without spending mana. Intelligence, Wisdom, or Presence is your spellcasting attribute for these spells. Once you cast @Compendium[undertaking.spells-level-2.FZ8CHP8N6M0PGLI1]{Discombobulate} from the staff, you regain the ability to cast it from the staff again at the next dawn.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "4",
+        "price": {
+            "value": 0,
+            "denomination": "sp"
+        },
+        "rarity": "uncommon",
+        "attunement": 1,
+        "weaponType": "simpleM",
+        "attribute": "str",
+        "actionType": "mwak",
+        "range": {
+            "value": "0",
+            "long": "0",
+            "units": "ft"
+        },
+        "critical": {
+            "threshold": null,
+            "damage": ""
+        },
+        "attackBonus": "1",
+        "damage": {
+            "parts": [
+                [
+                    "1d6 + @mod",
+                    "bludgeoning"
+                ],
+                [
+                    "1d4",
+                    "force"
+                ]
+            ],
+            "versatile": "1d8 + @mod"
+        },
+        "formula": "",
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "properties": {
+            "amm": false,
+            "fin": false,
+            "foc": false,
+            "hvy": false,
+            "lgt": false,
+            "lod": false,
+            "rch": false,
+            "spc": false,
+            "thr": false,
+            "two": false,
+            "una": false,
+            "ver": true
+        },
+        "showInAttacks": true
+    },
+    "_id": "R92DZY0BCNRW93M1"
+}

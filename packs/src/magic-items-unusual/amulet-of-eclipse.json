@@ -1,0 +1,21 @@
+{
+    "name": "Amulet of the Eclipse",
+    "type": "equipment",
+    "img": "icons/equipment/neck/necklace-astrology-sun-gold.webp",
+    "system": {
+        "description": {
+            "value": "<p><em>Amulet (Arcane, Druidic, or Holy Focus), (attunement optional)</em></p><p>A golden amulet shaped like a sun, with a silver symbol of the moon circumscribed within it. You gain a +2 bonus to spell attacks while you are holding the amulet in your hand.</p><p><strong>While Attuned</strong></p><p>While you have the amulet somewhere on your person, you gain a +1 bonus to the save DCs of spells you cast. You can use both of the following abilities:</p><ul><li><strong>In the Darkness, Light:</strong> When you are reduced to 0 hit points, you can use a Desperate Action to drop to 1 hit point instead, and may immediately spend up to three rest dice to regain hit points. You cannot use this ability again until the next dawn.</li><li><strong>In the Light, Darkness:</strong> You can cast the spell @Compendium[undertaking.spells-level-3.Z373UKDNQ9VFAMQD]{Syzygy} once from the amulet without spending mana. Intelligence, Wisdom, or Presence is your spellcasting attribute for this spell. You cannot use this ability again until you use the amulet&rsquo;s <em>In the Darkness, Light</em> ability.</li></ul>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "rare",
+        "attunement": 1
+    },
+    "_id": "95A03IK5J2FBWS59"
+}

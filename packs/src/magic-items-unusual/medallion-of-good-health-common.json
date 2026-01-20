@@ -1,0 +1,21 @@
+{
+    "name": "Medallion of Good Health (Common)",
+    "type": "equipment",
+    "img": "icons/equipment/neck/necklace-simple-rune-fehu-yellow.webp",
+    "system": {
+        "description": {
+            "value": "<p><em>Wondrous Item (Necklace), (requires attunement)</em></p><p>A simple medallion, sometimes gifted to loved ones as a token of good luck. The materials and iconography on the medallion vary between cultures, but the most common variety features the image of a heart on both sides&mdash;on the front symbolically, and on the back anatomically.</p><p><strong>While Attuned</strong></p><p>Your maximum hit points increases by 1.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "common",
+        "attunement": 1
+    },
+    "_id": "HU3QGOXHPKZXRV38"
+}

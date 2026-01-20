@@ -1,0 +1,21 @@
+{
+    "name": "Religious Text (Holy focus) +2",
+    "type": "equipment",
+    "img": "icons/sundries/books/book-symbol-yellow-grey.webp",
+    "system": {
+        "description": {
+            "value": "A sacred book filled with holy information about one\u2019s religion.  Each page is filled with wisdoms of the religion it speaks of, and has a great connection to the god or gods it represents.<br><br>While holding this focus, you gain a bonus to spell attack rolls. This bonus is determined by the focus&rsquo; rarity.<br><br><strong>While Attuned</strong><br><br>While somewhere on your person, you gain a bonus to the save DCs of spells you cast. This bonus is determined by the focus&rsquo; rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "5",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "rare",
+        "attunement": 1
+    },
+    "_id": "9NAI08GFZVUNFX5A"
+}

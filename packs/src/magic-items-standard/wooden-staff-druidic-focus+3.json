@@ -1,0 +1,21 @@
+{
+    "name": "Wooden Staff (Druidic focus) +3",
+    "type": "equipment",
+    "img": "icons/weapons/staves/staff-simple-spiral-green.webp",
+    "system": {
+        "description": {
+            "value": "A staff made from special wood, often created whole from a living tree.<br><br>While holding this focus, you gain a bonus to spell attack rolls. This bonus is determined by the focus&rsquo; rarity.<br><br><strong>While Attuned</strong><br><br>While somewhere on your person, you gain a bonus to the save DCs of spells you cast. This bonus is determined by the focus&rsquo; rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "4",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "veryRare",
+        "attunement": 1
+    },
+    "_id": "R1E5LZGWDNN61LAA"
+}

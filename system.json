@@ -2,7 +2,7 @@
   "id":"undertaking",
   "title":"Undertaking RPG",
   "description":"Core rules for the Undertaking system",
-  "version":"1.4.0",
+  "version":"1.4.1",
   "compatibility": {
     "minimum": "11",
     "verified": "11"
@@ -82,7 +82,9 @@
         "ammunition",
         "armor",
         "adventuring-gear",
-        "tool-kits"
+        "tool-kits",
+        "magic-items-standard",
+        "magic-items-unusual"
       ],
       "folders": []
     },
@@ -340,6 +342,22 @@
       "type": "Item",
       "private": false,
       "flags": {}
+    },
+    {
+      "name": "magic-items-standard",
+      "label": "Magic Items (Standard)",
+      "system": "undertaking",
+      "path": "./packs/magic-items-standard.db",
+      "entity": "Item",
+      "type": "Item"
+    },
+    {
+      "name": "magic-items-unusual",
+      "label": "Magic Items (Unusual)",
+      "system": "undertaking",
+      "path": "./packs/magic-items-unusual.db",
+      "entity": "Item",
+      "type": "Item"
     }
   ],
   "languages": [

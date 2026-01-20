@@ -1,0 +1,56 @@
+{
+    "name": "Hardened Leather Armor +1",
+    "type": "armor",
+    "img": "icons/equipment/chest/breastplate-layered-leather-studded-brown.webp",
+    "system": {
+        "description": {
+            "value": "AC 12 + Dex modifier<br><br>While wearing this armor you have a bonus to your AC.  The bonus is determined by its rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "13",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "rare",
+        "armorType": "light",
+        "baseAC": 12,
+        "bonusAC": 1,
+        "noisy": false,
+        "weighty": {
+            "enabled": false,
+            "strength": null
+        },
+        "attributes": {
+            "dex": {
+                "enabled": true,
+                "limit": null
+            },
+            "str": {
+                "enabled": false,
+                "limit": null
+            },
+            "con": {
+                "enabled": false,
+                "limit": null
+            },
+            "int": {
+                "enabled": false,
+                "limit": null
+            },
+            "wis": {
+                "enabled": false,
+                "limit": null
+            },
+            "pre": {
+                "enabled": false,
+                "limit": null
+            }
+        },
+        "baseItem": "",
+        "proficient": true
+    },
+    "_id": "S8TOXQXJWN0YQA5U"
+}

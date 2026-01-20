@@ -1,0 +1,21 @@
+{
+    "name": "Wand (Arcane focus) +1",
+    "type": "equipment",
+    "img": "icons/weapons/wands/wand-gem-blue.webp",
+    "system": {
+        "description": {
+            "value": "Usually has a straight cylindrical shape, but not always, and is made of either metal, bone, or wood.  Has a length of about 15 inches and weighs about a pound.<br><br>While holding this focus, you gain a bonus to spell attack rolls. This bonus is determined by the focus&rsquo; rarity.<br><br><strong>While Attuned</strong><br><br>While somewhere on your person, you gain a bonus to the save DCs of spells you cast. This bonus is determined by the focus&rsquo; rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "uncommon",
+        "attunement": 1
+    },
+    "_id": "9VDFXG5ITQ3W1CYZ"
+}

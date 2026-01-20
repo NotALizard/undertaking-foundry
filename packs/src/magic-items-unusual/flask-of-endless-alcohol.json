@@ -1,0 +1,20 @@
+{
+    "name": "Flask of Endless Alcohol",
+    "type": "equipment",
+    "img": "icons/consumables/drinks/alcohol-spirits-bottle-blue.webp",
+    "system": {
+        "description": {
+            "value": "<p><em>Wondrous item</em></p><p>This engraved metal flask seems to only hold a few ounces of liquid, yet you can hear the sloshing of something inside even when it is empty. You can use an action to name any kind of alcohol and the flask will fill with said liquid. It will continue to refill with the mentioned liquor until the next dawn, when it must be reactivated and the type of alcohol can be changed.</p><p>If poured out, the flask produces up to 3 gallons, pouring at 12 ounces a minute, before stopping. It will still produce more alcohol to be imbibed, but it will no longer pour out unless someone is drinking from it until the dawn of the next day.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "1",
+        "price": {
+            "value": "0",
+            "denomination": "gp"
+        },
+        "rarity": "uncommon"
+    },
+    "_id": "F8DOWBQVEM44FRV2"
+}

@@ -1,0 +1,56 @@
+{
+    "name": "Plate Armor +1",
+    "type": "armor",
+    "img": "icons/equipment/chest/breastplate-cuirass-steel-grey.webp",
+    "system": {
+        "description": {
+            "value": "AC 18<br>Noisy, Weighty 15<br><br>While wearing this armor you have a bonus to your AC.  The bonus is determined by its rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "65",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "rare",
+        "armorType": "heavy",
+        "baseAC": 18,
+        "bonusAC": 1,
+        "noisy": true,
+        "weighty": {
+            "enabled": true,
+            "strength": 15
+        },
+        "attributes": {
+            "dex": {
+                "enabled": false,
+                "limit": null
+            },
+            "str": {
+                "enabled": false,
+                "limit": null
+            },
+            "con": {
+                "enabled": false,
+                "limit": null
+            },
+            "int": {
+                "enabled": false,
+                "limit": null
+            },
+            "wis": {
+                "enabled": false,
+                "limit": null
+            },
+            "pre": {
+                "enabled": false,
+                "limit": null
+            }
+        },
+        "baseItem": "",
+        "proficient": true
+    },
+    "_id": "AU2BGOPIAQFNV6TK"
+}

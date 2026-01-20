@@ -1,0 +1,63 @@
+{
+    "name": "Hammer +1",
+    "type": "weapon",
+    "img": "icons/weapons/hammers/shorthammer-simple-iron-black.webp",
+    "system": {
+        "description": {
+            "value": "Encompasses all hand hammers, hardened aspergillums, carpenter\u2019s hammers, crowbars, hand wrenches, and small one-handed hammers that are not considered maces.<br><br>You have a bonus on your attack and damage rolls made with this weapon, the bonus of which is dependent on the rarity.",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "weight": "3",
+        "price": {
+            "value": 0,
+            "denomination": "gp"
+        },
+        "rarity": "uncommon",
+        "weaponType": "simpleM",
+        "attribute": "str",
+        "actionType": "mwak",
+        "range": {
+            "value": "0",
+            "long": "0",
+            "units": "ft"
+        },
+        "critical": {
+            "threshold": null,
+            "damage": ""
+        },
+        "attackBonus": "1",
+        "damage": {
+            "parts": [
+                [
+                    "1d4 + @mod + 1",
+                    "bludgeoning"
+                ]
+            ],
+            "versatile": ""
+        },
+        "formula": "",
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "properties": {
+            "amm": false,
+            "fin": false,
+            "foc": false,
+            "hvy": false,
+            "lgt": true,
+            "lod": false,
+            "rch": false,
+            "spc": false,
+            "thr": true,
+            "two": false,
+            "una": false,
+            "ver": false
+        },
+        "showInAttacks": true
+    },
+    "_id": "1BMFGN94H5K4D0OS"
+}
