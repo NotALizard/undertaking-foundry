@@ -1,0 +1,67 @@
+{
+    "name": "Prying Whispers",
+    "type": "spell",
+    "img": "icons/magic/control/mouth-smile-deception-purple.webp",
+    "system": {
+        "description": {
+            "value": "<p>You point at a creature within range that can hear you and utter a wordless, cryptic whisper. The target hears a hollow voice invoke their deepest insecurities and secrets as a sourceless voice in a language they understand. <br />The creature must make a Wisdom (Save) check. On failure, their insecurities wrack their mind, suffering 1d6 psychic damage. In addition, the first time they hit with an attack before the end of their next turn, they must roll the damage twice and use the lower result.</p><p>Charge: This is a spell that can be Charged, modifying its effects. Costs and effects are as follow:</p><ul><li>1 Mana: The creature must roll damage twice and use the lower result for all attacks it makes before the end of its next turn.</li><li>1 Mana: The psychic damage is increased to 2d6.</li><li>2 Mana: The psychic damage is increased to 3d6.</li></ul>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "0",
+        "charge": true,
+        "school": "div",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": false,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "round"
+        },
+        "range": {
+            "value": "60",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "1d6",
+                    "psychic"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "wis",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": true
+    },
+    "_id": "Q31B0A3FNPWP10MQ"
+}

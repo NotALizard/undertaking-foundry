@@ -1,0 +1,62 @@
+{
+    "name": "Captivate",
+    "type": "spell",
+    "img": "icons/magic/perception/eye-slit-orange.webp",
+    "system": {
+        "description": {
+            "value": "<p>You make yourself extremely engaging to another creature, capturing its full attention. The target creature, while able to see you, has disadvantage on Wisdom (Perception) checks to perceive any creature besides you.</p><p>In addition, the target must make a Wisdom (Save) check. On a failed save, the creature must include you as a target for any attacks and harmful spells or abilities it attempts until the end of its next turn. This effect only restricts the creature&rsquo;s valid targets, it does not (on its own) provoke hostility from a creature that otherwise would not be inclined to harm you.</p><p>All effects immediately end if the creature is attacked or harmed.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "0",
+        "charge": false,
+        "school": "mes",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": false,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "30",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "wis",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "S19PI54SQR9C8R14"
+}

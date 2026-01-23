@@ -1,0 +1,67 @@
+{
+    "name": "Salvo",
+    "type": "spell",
+    "img": "icons/magic/sonic/explosion-shock-sound-wave.webp",
+    "system": {
+        "description": {
+            "value": "<p>Opening your mouth or palm toward a target, a concussive burst erupts. The target must make a Constitution (Save) Check or take 1d8 force damage and be forced 5ft away from you.</p><p>Objects not worn, held, or affixed, are automatically launched if Medium or smaller.</p><p>Charge: This is a spell that can be Charged, modifying its effects. Costs and effects are as follow:</p><ul><li>1 Mana: The target is moved an additional 10 feet.&nbsp;</li><li>1 Mana: The target is pulled instead of pushed.&nbsp;</li><li>1 Mana: The spell&rsquo;s range increases to 60ft.</li></ul>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "0",
+        "charge": true,
+        "school": "evo",
+        "components": {
+            "somatic": true,
+            "verbal": false,
+            "material": false,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "save",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "range": {
+            "value": "10",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "1d8",
+                    "force"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "con",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": true
+    },
+    "_id": "DTPPMUPRVRY3XXMS"
+}

@@ -4,7 +4,7 @@
   "img": "icons/environment/creatures/bug-tick-red.webp",
   "system": {
     "description": {
-      "value": "<p>Scout chk'tu are slimmer chk'tu born with 6 wings instead of 4, each with a larger wingspan than other chk'tu.  The extra set of wings are located beneath the other four, and altogether the wings allow scout chk'tu to fly without landing as long as the chk'tu has the energy to do so.  They also uniquely have a set of antennae that are highly sensitive to the scents of flora.<br>&nbsp;&nbsp;&nbsp;&nbsp;These flying chk'tu are often given roles of scouting, messaging, and air assault in combat, as well as territory guards, foragers, and hunters.</p>",
+      "value": "<p>Scout chk'tu are slimmer chk'tu born with six wings instead of the usual four that warrior chk'tu are born with. A scout chk'tu's wings also come with a larger wingspan that allows them to fly without landing so long as the chk'tu has the energy to do so.  They also uniquely have a set of antennae that are highly sensitive to the scents of flora.<br>&nbsp;&nbsp;&nbsp;&nbsp;These flying chk'tu are often given roles as scouts, foragers, and air support, as well as territory guards, messengers, and hunters.</p>",
       "chat": "",
       "unidentified": ""
     },
