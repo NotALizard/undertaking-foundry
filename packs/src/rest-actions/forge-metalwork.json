@@ -1,0 +1,20 @@
+{
+    "name": "Forge Metalwork",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Smithing"
+        },
+        "restType": "short",
+        "requirements": "Smithing Kit, Materials, Forge (optional)",
+        "summary": "Forge armor, a weapon, or another metallic item.",
+        "description": {
+            "value": "<p>You can create one non-magical armor, weapon, or metalcraft. So long as you have relevant materials equal to &frac34; of the item&rsquo;s cost, you can work on creating the item over the course of short or long rests. Each <em>Rest Action</em> you spend working on it, make an Intelligence (Craft) check against DC 8. Each success counts as 1 completed work session, a failure does not. Depending on the item&rsquo;s actual cost, it takes more work sessions to complete, as determined by the <em>Forging Table</em> below.</p><ul><li>If you do not have access to a furnace or some similarly hot heat source, increase the DC to 16.</li></ul><p><em>Forging Table</em></p><table><tbody><tr><td><p><strong>Item Cost</strong></p></td><td><p>1sp or less</p></td><td><p>1gp or less</p></td><td><p>5gp or less</p></td><td><p>10gp or less</p></td><td><p>15gp or less</p></td><td><p>20gp or less</p></td><td><p>etc.</p></td></tr><tr><td><p><strong>Sessions</strong></p></td><td><p>&frac14;</p></td><td><p>1</p></td><td><p>1 &amp; &frac12;&nbsp;</p></td><td><p>2</p></td><td><p>2 &amp; &frac12;&nbsp;</p></td><td><p>3</p></td><td><p>etc.</p></td></tr></tbody></table>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "HF8I51IUJOKOO61A"
+}

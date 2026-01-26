@@ -1,0 +1,20 @@
+{
+    "name": "Treat Plant",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Botany"
+        },
+        "restType": "short",
+        "requirements": "Botany Kit, Water",
+        "summary": "Tend to a plant, ensuring it remains healthy and continues to grow.",
+        "description": {
+            "value": "<p>As a <em>Rest Action</em>, you can treat up to a 10 ft area worth of plants, watering and trimming them, and keeping their soil clean and pest-free. This process uses up a pint of water per 5 ft area. <br />If used on a plant creature, it restores 1d6 additional hit points as part of the rest, but uses up 4 pints of water.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "7FXC64HI7DZJACFX"
+}

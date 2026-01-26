@@ -1,0 +1,20 @@
+{
+    "name": "Sharing Spells",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Class",
+            "name": "Wizard"
+        },
+        "restType": "short",
+        "requirements": "Blank Spellpage",
+        "summary": "Copy a spell you know onto a spellpage.",
+        "description": {
+            "value": "<p>While many wizards closely guard their accumulated arcane secrets for fear of what could come about were they to fall into the wrong hands, collaboration between wizards can lead to even greater knowledge. As a <em>Rest Action</em>, you can copy one Wizard spell you know onto a discrete spellpage, should you have one in your possession.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "1ZTDHXICI9AG8MH1"
+}

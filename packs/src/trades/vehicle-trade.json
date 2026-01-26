@@ -1,0 +1,16 @@
+{
+    "name": "Vehicle Trade",
+    "type": "trade",
+    "system": {
+        "description": {
+            "value": "<p>If you have Vehicle Proficiency, you can use a vehicle in the following ways, so long as the vehicle can reasonably undertake these maneuvers. Options with the (M) icon can be used with mounts as if they are vehicles:&nbsp;</p><ul><li><strong>(M) Evasive Maneuvers:</strong> As a reaction, you can give disadvantage on an attack made against a vehicle or mount that you are piloting.</li><li><strong>Repair Vehicle:</strong> As a <em>Rest Action</em>, make an Intelligence (Craft) check. Restore the vehicle&rsquo;s hit points by the result, so long as you have the parts.</li><li><strong>(M) Speed Demon:</strong> With your expert knowledge of your vehicle or mount&rsquo;s workings, you know how to push it just above its typical limits without causing any harm to it. Vehicles under your control move 1/4 faster, rounded up to the nearest 5ft.</li><li><strong>Tune-Up:</strong> As a <em>Long Rest Action</em>, you can tune up a vehicle to give one of the following benefits. Should the vehicle take any damage, be used to travel for a cumulative full day, or travel over rough terrain for half the length, the benefit is removed.</li><ul><li><em>Lubricate: </em>Increase movement speed of vehicle by &frac14; rounded up to the nearest 5 feet. In addition, reduce travel time by 1 day per 6 days of travel.</li><li><em>Reinforce: </em>Increase the vehicle&rsquo;s durability. Make an Intelligence (Craft) check, giving the vehicle temporary hit points equal to the result.</li><li><em>Weather Proof: </em>Increase the vehicle&rsquo;s resilience to one type of intense weather. Vehicles can add your Intelligence (Craft) modifier to checks relating to the vehicle avoiding the detriments of the weather.</li><li><em>Terrain Match: </em>Prepare a vehicle for particularly intense weather, so long as you have fitting parts. Vehicles can add your Intelligence (Craft) modifier to checks relating to the vehicle traveling across rough terrain.</li></ul><li><strong>(M) Unnatural Driver:</strong> You do not have disadvantage when attempting to control or ride a vehicle or mount of unusual or unnatural design.</li></ul>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "restActions": [
+            "undertaking.rest-actions.F6FJX0KSFSHJQWAL",
+            "undertaking.rest-actions.S2UMN9AG35OUHHFN"
+        ]
+    },
+    "_id": "YXS5J424CPZJR4MR"
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Create Forgery",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Subterfuge"
+        },
+        "restType": "short",
+        "requirements": "Subterfuge Kit",
+        "summary": "Attempt to create a convincing forgery of a document or image.",
+        "description": {
+            "value": "<p>As a <em>Rest Action</em>, you can attempt to create a forgery. The forgery can be of a document or other text no longer than a page, an identification, or a simple badge or image. When you do, make an Intelligence (Craft) check. The result of that roll determines the DC that is necessary to recognize that the forgery is a fake.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "ZLANKSOHURR2BJFV"
+}

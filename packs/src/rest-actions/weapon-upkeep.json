@@ -1,0 +1,20 @@
+{
+    "name": "Weapon Upkeep",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Smithing"
+        },
+        "restType": "short",
+        "requirements": "Smithing Kit",
+        "summary": "Sharpen a weapon, giving it an edge on its damage for a short time.",
+        "description": {
+            "value": "<p>As a <em>Rest Action</em>, you can do general upkeep to a weapon, such as sharpening or tuning, to give it +1 damage on hit. It retains this bonus until it has hit a target three times, or until the next long rest after it has hit a target.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "RUM498WEE37VE3SW"
+}

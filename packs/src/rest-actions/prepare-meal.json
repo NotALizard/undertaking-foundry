@@ -1,0 +1,20 @@
+{
+    "name": "Prepare Meal",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Basic",
+            "name": "Basic"
+        },
+        "restType": "short",
+        "requirements": "Cooking Kit, Supplies",
+        "summary": "Prepare a meal for a small group and bolster their spirits.",
+        "description": {
+            "value": "<p>As a <em>Rest Action</em>, Provided you have access to sufficient supplies, you can prepare a meal or drinks. Up to three people, including yourself, can have a serving during a rest to gain 1d4 temporary hit points.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "492BI947VGRFOXMQ"
+}

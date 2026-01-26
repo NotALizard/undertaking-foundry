@@ -35,6 +35,7 @@ export default class UndertakingCharacterSheet extends ActorSheet {
 
   async getData(){
     const context = super.getData();
+    await this.populateBasicRestActions();
     context.config = CONFIG.undertaking;
     const actor = context.actor;
 
@@ -59,6 +60,44 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     context.abilities = context.items.filter(function (item) { return item.type == "ability"});
     context.languages = context.items.filter(function (item) { return item.type == "language"});
     context.casters = context.classes.filter(function(item){ return item.system.categorization.spellcaster.progression && item.system.categorization.spellcaster.progression != 'none'});
+    context.trades = context.items.filter(function (item) { return item.type == "trade"});
+
+
+    context.restActions = [];
+    
+    const charRestActions = context.items.filter(function (item) { return item.type == "restAction"});
+    for(let ra of charRestActions){
+      ra.deletable = true;
+      ra.isExternal = false;
+      context.restActions.push(ra);
+    }
+    for(let t of context.trades){
+      try{
+        const tradeRestActions = t.system.restActions || {};
+        for(let ind of Object.keys(tradeRestActions)){
+          let traId = tradeRestActions[ind];
+          let raItem = null;
+          if(traId.startsWith('Item.') || traId.startsWith('Actor.')){
+            raItem = await fromUuid(traId);
+          }
+          else if(traId.split('.').length > 2){
+            let parts = traId.split('.');
+            let id = parts.pop();
+            let packId = parts.join('.');
+            raItem = await game.packs.get(packId).getDocument(id);
+          }
+          if(raItem){
+            let raData = raItem.toObject();
+            raData.deletable = false;
+            raData._id = traId;
+            context.restActions.push(raData);
+          }
+        }
+      }
+      catch(err){
+        console.log("Error loading trade rest actions for " + t.name + ": " + err);
+      }
+    }
 
     if(actor.type == 'npc'){
       context.spells = context.items.filter(function (item) { return item.type == "spell"});
@@ -75,13 +114,18 @@ export default class UndertakingCharacterSheet extends ActorSheet {
       context.preparedByClass[c.system.identifier] = prepCt;
     }
 
-    const filter = context.actor.system.details.classFilter;
-    if(filter && filter == 'prepared'){
+    const spellFilter = context.actor.system.details.classFilter;
+    if(spellFilter && spellFilter == 'prepared'){
       context.spells = context.spells.filter(function (item) { return item.system.preparation.prepared || item.system.preparation.always});
     }
-    else if(filter && filter != 'all'){
-      context.cantrips = context.cantrips.filter(function (item) { return item.system.classIdentifier == filter});
-      context.spells = context.spells.filter(function (item) { return item.system.classIdentifier == filter});
+    else if(spellFilter && spellFilter != 'all'){
+      context.cantrips = context.cantrips.filter(function (item) { return item.system.classIdentifier == spellFilter});
+      context.spells = context.spells.filter(function (item) { return item.system.classIdentifier == spellFilter});
+    }
+
+    const restActionFilter = context.actor.system.details.restActionFilter;
+    if(restActionFilter && restActionFilter != 'all'){
+      context.restActions = context.restActions.filter(function (item) { return item.system.restType == restActionFilter});
     }
 
     let carryLoad = 0;
@@ -102,6 +146,49 @@ export default class UndertakingCharacterSheet extends ActorSheet {
 
     console.log(context);
     return context;
+  }
+
+  async populateBasicRestActions(){
+    let hasRecoverFromExhaustion = false;
+    let hasIdentifyMagicItem = false;
+    let hasPrepareMeal = false;
+    for(let item of this.actor.items){
+      console.log(item);
+      if(item.type == 'restAction' && item.system?.origin?.type == 'Basic' && item.name == 'Recover From Exhaustion'){
+        hasRecoverFromExhaustion = true;
+      }
+      if(item.type == 'restAction' && item.system?.origin?.type == 'Basic' && item.name == 'Identify Magic Item'){
+        hasIdentifyMagicItem = true;
+      }
+      if(item.type == 'restAction' && item.system?.origin?.type == 'Basic' && item.name == 'Prepare Meal'){
+        hasPrepareMeal = true;
+      }
+      if(hasRecoverFromExhaustion && hasIdentifyMagicItem && hasPrepareMeal) break;
+    }
+    if(!hasRecoverFromExhaustion){
+      console.warn(`Migrating actor ${this.actor.name} to add "Recover From Exhaustion" rest action`);
+      let exhaustionItem = await game.packs.get('undertaking.rest-actions').getDocument('97LLYYBHCBZ9CZPQ');
+      if(exhaustionItem){
+        let itemData = {name: exhaustionItem.name, type: exhaustionItem.type, system: exhaustionItem.system};
+        await this.actor.createEmbeddedDocuments("Item", [itemData]);
+      }
+    }
+    if(!hasIdentifyMagicItem){
+      console.warn(`Migrating actor ${this.actor.name} to add "Identify Magic Item" rest action`);
+      let identifyItem = await game.packs.get('undertaking.rest-actions').getDocument('4KLVEXDPVV4IU6VP');
+      if(identifyItem){
+        let itemData = {name: identifyItem.name, type: identifyItem.type, system: identifyItem.system};
+        await this.actor.createEmbeddedDocuments("Item", [itemData]);
+      }
+    }
+    if(!hasPrepareMeal){
+      console.warn(`Migrating actor ${this.actor.name} to add "Prepare Meal" rest action`);
+      let mealItem = await game.packs.get('undertaking.rest-actions').getDocument('492BI947VGRFOXMQ');
+      if(mealItem){
+        let itemData = {name: mealItem.name, type: mealItem.type, system: mealItem.system};
+        await this.actor.createEmbeddedDocuments("Item", [itemData]);
+      }
+    }
   }
 
   /*
@@ -362,8 +449,9 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     html.find(".inline-edit").on("change", event => {
       this._onItemEdit(event);
     });
-    
-
+    html.find(".item.rest-action-filter").on("click", event => {
+      this._changeRestActionFilter(event);
+    });
     html.find(".item.class-filter").on("click", event => {
       this._changeClassFilter(event);
     });
@@ -642,12 +730,22 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     return this.actor.deleteEmbeddedDocuments("Item", [itemId]);
   }
 
-  _onItemOpen(event){
+  async _onItemOpen(event){
     event.preventDefault();
     let element = event.currentTarget;
     let itemId = element.closest(".item").dataset.itemId;
+    if(itemId.startsWith('Item.') || itemId.startsWith('Actor.')){
+        let item = await fromUuid(itemId);
+        return item.sheet.render(true);
+      }
+    else if (itemId.includes('.')){
+      let parts = itemId.split('.');
+      let id = parts.pop();
+      let packId = parts.join('.');
+      let item = await game.packs.get(packId).getDocument(id);
+      return item.sheet.render(true);
+    }
     let item = this.actor.items.get(itemId);
-
     item.sheet.render(true);
   }
 
@@ -965,6 +1063,15 @@ export default class UndertakingCharacterSheet extends ActorSheet {
 
     const parent = event.currentTarget.closest(".spells-container");
     const field = parent.querySelector('#input-class-filter');
+    field.value = value;
+    return this._onSubmit(event);
+  }
+
+  _changeRestActionFilter(event){
+    const element = event.currentTarget;
+    const value = element.closest(".item").dataset.tab;
+    const parent = event.currentTarget.closest(".downtime-container");
+    const field = parent.querySelector('#input-rest-action-filter');
     field.value = value;
     return this._onSubmit(event);
   }

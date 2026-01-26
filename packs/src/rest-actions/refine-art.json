@@ -1,0 +1,20 @@
+{
+    "name": "Refine Art",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Art"
+        },
+        "restType": "short",
+        "requirements": "Art Kit, Art Supplies worth 5gp (optional)",
+        "summary": "Refine an existing work of art that falls within your specialization.",
+        "description": {
+            "value": "<p>As a <em>Rest Action</em>, you can refine one piece of art that you could reasonably create with your specialization. You can refine a piece of art over the course of multiple rests, but an art piece can only be refined up to 5 times total. Each refinement costs an additional 5gp worth of art supplies. Each time you attempt to refine a piece of art, reduce the quality level by 10, and then make an Intelligence (Craft) check and add it to the @Compendium[undertaking.tables.SVAINSJV86RZ4629]{Art Quality} level. Based on the resulting quality level, the price of the art further increases.</p><ul><li><em>Fine Art: </em>Art over a certain quality level is considered <em>Fine Art</em>. A creature of intelligence 6 or higher may gain a one-time benefit upon spending 1 minute observing the piece for the first time. Receiving the effect from a Fine Art piece gives you the option to take the effect of a lower quality piece as well. A creature cannot receive the bonus from more than one Fine Art piece at once.</li><li>You can attempt to refine an art piece with less than 5gp worth of supplies for a -1 to your Intelligence (Craft) checks, and a further -1 for each 5sp less than 5gp. For example, using supplies worth a bit more than 2gp will confer a -6 on your Intelligence (Craft) check.</li></ul>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "2A7XYTD7US4CSG5D"
+}

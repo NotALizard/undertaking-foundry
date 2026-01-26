@@ -1,0 +1,20 @@
+{
+    "name": "Identify Magic Item",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Basic",
+            "name": "Basic"
+        },
+        "restType": "long",
+        "requirements": "None",
+        "summary": "Attempt to discern the effects of a possible magic item.",
+        "description": {
+            "value": "<p>In the realm of magic items there are those that are nearly identical to their non-magical twins, and others that put their magic properties on display for the world. There are times that magic items have hints as to what their magical properties might be on them. Some might have telling markings or engravings, glow or even have a command word listed on its body. Magical properties can even manifest physical ways, such as a feeling of connection or dread while holding it.</p><p>Wearing or experimenting with a magic item can be a useful way of figuring out what a magic item is capable of, so long as the item does not require attunement, though this method can take a good bit longer. If a character is unable to determine if an item is magical, they can still attempt to attune to it. However, they do not know if they successfully attuned, and are not given any information on what the item does or the effects it has without further experimentation or full identification.</p><p>However, many magical items are indistinguishable from non-magical items. If the item is suspected of being a magic item, the creature can attempt to identify it.</p><p>The fastest way to figure out how a magic item works is through casting <em>Identify. </em>However, a character can attempt to identify the magical properties of one item as a <strong>long rest action</strong>. At the end of the rest, the character learns if the item is magical, and makes an Intelligence (Arcana) check (or a Wisdom (Theology) check if more religious than arcane) if so. The item&rsquo;s rarity determines the DC as seen below.</p><p><em>Magic Item Identification Table</em></p><table><tbody><tr><td><p><strong>Rarity</strong></p></td><td><p><strong>Identification DC</strong></p></td></tr><tr><td><p>Common</p></td><td><p>DC 10</p></td></tr><tr><td><p>Uncommon</p></td><td><p>DC 15</p></td></tr><tr><td><p>Rare</p></td><td><p>DC 20</p></td></tr><tr><td><p>Very Rare</p></td><td><p>DC 25</p></td></tr><tr><td><p>Legendary</p></td><td><p>DC 30</p></td></tr><tr><td><p>Artifact</p></td><td><p>Impossible</p></td></tr></tbody></table><p>Upon succeeding the identification check, the character learns all magical aspects of the magic item, including its name, how to use it, any activation words, if it requires attunement, and so on. They can also attune to the item as part of this process.</p><p>Upon failure, the identification fails and the item remains a mystery. The character may reattempt the identification on their next long rest.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "4KLVEXDPVV4IU6VP"
+}

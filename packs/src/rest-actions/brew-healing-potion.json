@@ -1,0 +1,20 @@
+{
+    "name": "Brew Healing Potion",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Alchemy"
+        },
+        "restType": "long",
+        "requirements": "Alchemy Kit, Potion Base, Herb, Creature Part",
+        "summary": "Attempt to brew a healing potion from various ingredients.",
+        "description": {
+            "value": "<ul><li>As a <em>Long Rest Action</em>, you can attempt to combine a vial of Potion Base and combine it with any herbal ingredient and creature part to make one vial of Healing Potion. When you do so, roll an Intelligence (Craft) check. On success, the potion is made with both effects.&nbsp;</li><ul><li>The rarity of the herbal ingredient determines the DC, as shown in the <em>Healing Potion Brewing DC</em> table.</li><li>The rarity of the creature part determines the potency of the potion, as shown in the <em>Potion Potency</em> table.</li><li>Healing Potions are always instantaneous and single-usage.</li></ul></ul><p><em>Healing Potion Brewing DC</em></p><table><tbody><tr><td><p><strong>Ingredient</strong></p></td><td><p>Common Herb</p></td><td><p>Uncommon Herb</p></td><td><p>Rare Herb</p></td></tr><tr><td><p><strong>Brewing DC</strong></p></td><td><p>DC 16</p></td><td><p>DC 11</p></td><td><p>DC 6</p></td></tr></tbody></table><p><em>Potion Potency</em></p><table><tbody><tr><td><p><strong>Creature Part CR</strong></p></td><td><p><strong>CR 0-4</strong></p></td><td><p><strong>CR 5-9</strong></p></td><td><p><strong>CR 10-15</strong></p></td><td><p><strong>CR 15-20</strong></p></td><td><p><strong>CR 20+</strong></p></td></tr><tr><td><p><strong>Duration</strong></p></td><td><p>6 seconds</p></td><td><p>1 minute</p></td><td><p>1 hour</p></td><td><p>8 hours</p></td><td><p>Indefinite</p></td></tr><tr><td><p><strong>Potency</strong></p></td><td><p>1d4+1</p></td><td><p>2d4+2</p></td><td><p>4d4+4</p></td><td><p>8d4+8</p></td><td><p>10d4+20</p></td></tr></tbody></table>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "0XAXEBW2HK3AQK1Z"
+}

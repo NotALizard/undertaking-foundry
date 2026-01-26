@@ -1,0 +1,20 @@
+{
+    "name": "Recover From Exhaustion",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Basic",
+            "name": "Basic"
+        },
+        "restType": "long",
+        "requirements": "Food, Drink",
+        "summary": "Remove a level of the Exhausted condition.",
+        "description": {
+            "value": "<p>During a long rest in which you consume food and drink, you can use a <strong>long rest action</strong> to reduce your @Compendium[undertaking.conditions.ERBR3AG01H4N1L91]{Exhaustion} by 1 level. </p> ",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "97LLYYBHCBZ9CZPQ"
+}

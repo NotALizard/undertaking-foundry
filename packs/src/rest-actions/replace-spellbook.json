@@ -1,0 +1,20 @@
+{
+    "name": "Replace Spellbook",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Class",
+            "name": "Wizard"
+        },
+        "restType": "long",
+        "requirements": "Empty Spellbook or similar medium",
+        "summary": "Turn a blank book into a new book of spells.",
+        "description": {
+            "value": "<p>Should a Wizard lose their @Compendium[undertaking.abilities.L4TCBW3PWUZVSULN]{Book of Spells} and have to write a new one, they can do so as a <em>Long Rest Action</em> with a new and empty spellbook or any suitable medium&mdash;though any improvised option will be less durable than a proper spellbook. During this process, they can copy down all of the spells they know. Spells that you don&rsquo;t know but had temporarily prepared due to spell scrolls or spellpages that were tucked into your old spellbook are not recovered.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "J5UBBMIM6FKPUK1C"
+}

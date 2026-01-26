@@ -1,0 +1,20 @@
+{
+    "name": "Prepare Rations",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Cooking"
+        },
+        "restType": "short",
+        "requirements": "Cooking Kit, Food (up to 3lbs)",
+        "summary": "Prepare food to last longer without spoiling, making suitable rations.",
+        "description": {
+            "value": "<p>As a <em>Rest Action</em>, you can dry and store food, turning up to up to 3 pounds of food into 3 days of rations. Food lasts significantly longer as rations, but any benefits granted by the food beyond sustenance are removed upon becoming rations.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "ZAFKE13RG0V931GM"
+}

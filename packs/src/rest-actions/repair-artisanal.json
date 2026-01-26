@@ -1,0 +1,20 @@
+{
+    "name": "Repair Artisanal",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Artisan"
+        },
+        "restType": "short",
+        "requirements": "Artisan Kit, Materials",
+        "summary": "Repair a fully or partially broken item related to your specialization.",
+        "description": {
+            "value": "<p>So long as it is something you could build with your specialization, you can repair a fully broken object or item at &frac12; the material cost in &frac12; the sessions using the&nbsp;@Compendium[undertaking.tables.WS5UX4KFBB0PAZAE]{Craft Artisanal} table. Partially damaged objects require fewer parts and less time to repair, ask your GM for the difficulty and cost of a partial repair. Intelligence (Craft) checks to repair parts have a DC of 12.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "MI0J193A4COTVOF3"
+}

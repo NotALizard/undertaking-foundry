@@ -1,0 +1,20 @@
+{
+    "name": "Set a Trap",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Fishing"
+        },
+        "restType": "long",
+        "requirements": "Net or Cage, Bait (1-3 pieces)",
+        "summary": "Bait a net or cage to catch a large number of fish at once.",
+        "description": {
+            "value": "<p>As a <em>Long Rest Action</em> within a short walk of a body of water or liquid, you can use up to 3 pieces of Fishing Bait (which are consumed) and either a net or small cage in order to catch multiple fish. If the body of water you set the trap in contains fish, you are able to attract 1d4 fish for each piece of bait you used. When hauling in the trap, you capture all of the fish that were attracted with a successful Strength (Athletics) or Wisdom (Instinct) check against DC 12. On a failure, you only catch half of the fish and the rest escape. Each fish you catch can be cooked to feed one creature.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "AMM09XWOSJMMTTOC"
+}

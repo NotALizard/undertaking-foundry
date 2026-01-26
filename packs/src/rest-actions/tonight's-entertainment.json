@@ -1,0 +1,20 @@
+{
+    "name": "Tonight's Entertainment",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Entertainment"
+        },
+        "restType": "short",
+        "requirements": "Your Instrument of Entertainment",
+        "summary": "Perform for a group to chase their worries away for a bit.",
+        "description": {
+            "value": "<p>As a <em>Rest Action</em>, you can put on a performance to get your mind off of things. When you do, choose to either add a +1 to all skill checks made during this rest (aside from this one) or, before your next rest, add a +1 to a single check&rsquo;s final result. <br />In addition, make a Presence (Perform) check. Take the result divided by 5 and rounded down. Choose that many other creatures resting nearby to gain the same choice of entertainment bonus. <br />Should you roll a Natural 20 on, all creatures gain both bonuses. In addition, choose one member of the rest, other than yourself, to gain a point of Luck.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "NG9VZ9LY8VNJO1J8"
+}

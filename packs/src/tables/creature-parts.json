@@ -1,0 +1,33 @@
+{
+  "name": "Potion Ingredients - Creature Parts",
+  "pages": [
+    {
+      "name": "Creature Parts Table",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<table><tbody><tr><td><p><strong>Aberrations</strong></p></td><td><p><strong>Unstable Potion:</strong> Roll on the same rarity level on the <em>Ingredients - Herbs</em> table. Change the effect of the potion to the result. Select from the effects in the Otherworldly Biome effects for a 20.</p></td></tr><tr><td><p><strong>Beasts</strong></p></td><td><p><strong>Slow-Acting Potion:</strong> The potion takes its duration to kick in. When it does kick in, its duration is doubled, if it has one.</p></td></tr><tr><td><p><strong>Celestials</strong></p></td><td><p><strong>High-Yield Potion:</strong> Doubles the potion yield, but the second potion has a potency CR of 0.</p></td></tr><tr><td><p><strong>Constructs</strong></p></td><td><p><strong>Consistent Potion:</strong> Any effects with dice automatically roll the average + 1.</p></td></tr><tr><td><p><strong>Dragons</strong></p></td><td><p><strong>Up-Brewed Potion:</strong> If mixed with a Common or Uncommon herb, improve the rarity of the effect, but the duration reduces to no longer than 1 minute.</p></td></tr><tr><td><p><strong>Elementals</strong></p></td><td><p><strong>Fizzy Potion:</strong> You may re-roll up to half of the potion's dice once. If the potion doesn't have dice, add 1d6 to your next check or attack.</p></td></tr><tr><td><p><strong>Fey</strong></p></td><td><p><strong>False Potion:</strong> This potion resembles another potion of the same rarity of your choice. The potion can be recognized as false with a DC 15 Intelligence (Investigation) check using an Alchemy Kit.</p></td></tr><tr><td><p><strong>Fiends</strong></p></td><td><p><strong>Corrupted Potion:</strong> Changes the effect of the potion, often reversing it.</p></td></tr><tr><td><p><strong>Humanoids / Humanoid Mixes</strong></p></td><td><p><strong>Unimpressive Potion:</strong> No additional effect.</p><p>Roll 1d10. On a 1, the potion is fouled, loses all effect, and tastes disgusting.</p></td></tr><tr><td><p><strong>Insectoids</strong></p></td><td><p><strong>Thickened Potion: </strong>Changes the properties of the potion, enabling it to apply on skin contact, but thickening it up and making the potion permeative so as that it can be applied to weaponry. As an action, this can be applied to a weapon or ammunition for a single use on hit. The effect remains for the next 1 minute before dissipating harmlessly. Applying more than one potion to a weapon or ammunition causes the potions to dissipate.</p></td></tr><tr><td><p><strong>Monstrosities</strong></p></td><td><p><strong>Chimeric Potion:</strong> If mixed with an Uncommon or Rare herb, roll twice on the herb rarity level lower. Replace the potion's effects with the two rolled results.</p></td></tr><tr><td><p><strong>Plants</strong></p></td><td><p><strong>Splash Potion:</strong> The potion, upon impact with a surface, explodes in a 10ft radius. Up to three creatures of your choice in the radius are affected by the potion, making normal saves for potions that require them. All saves required by the potion are still done normally. The potion's potency is decreased by 1 level.</p></td></tr><tr><td><p><strong>Undead</strong></p></td><td><p><strong>Down-Brewed Potion:</strong> If mixed with an Uncommon or Rare herb, reduce the effect by 1 rarity level.</p></td></tr></tbody></table>",
+        "markdown": ""
+      },
+      "_id": "7F3WX6ERGMVNUQAB",
+      "image": {},
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "01V3FGYMA3LZKZ1N"
+}

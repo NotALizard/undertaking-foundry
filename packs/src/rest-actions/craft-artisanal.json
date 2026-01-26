@@ -1,0 +1,20 @@
+{
+    "name": "Craft Artisanal",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Artisan"
+        },
+        "restType": "short",
+        "requirements": "Artisan Kit, Materials",
+        "summary": "Create or continue working on an item related to your specialization.",
+        "description": {
+            "value": "<p>You can create one non-magical object, item, or piece of clothing that you could reasonably build with your specialization. So long as you have relevant materials equal to &frac34; of the item&rsquo;s cost, you can work on creating the item over the course of multiple rests. Each <em>Rest Action</em> you spend working on it, make an Intelligence (Craft) check against DC 10. Each success counts as 1 completed work session, a failure does not. Depending on the item&rsquo;s actual cost, it takes more work sessions to complete (see @Compendium[undertaking.tables.WS5UX4KFBB0PAZAE]{Craft Artisanal} table).</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "48ZTOVZEVCO8OA50"
+}

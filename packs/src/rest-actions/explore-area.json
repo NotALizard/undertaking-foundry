@@ -1,0 +1,20 @@
+{
+    "name": "Explore Area",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Pathfinding"
+        },
+        "restType": "short",
+        "requirements": "Pathfinding Kit",
+        "summary": "Search the local area for something in particular.",
+        "description": {
+            "value": "<p>As a <em>Rest Action</em>, you can explore the 3-mile terrain you were in when you started this rest. Doing so allows you to do one of the following&mdash;two, if using a <em>Long Rest Action</em>:</p><ul><li><em>Recon:</em> Learn if the area openly contains a certain creature type or species, a type of structure or ruin, a type of business or service, the presence of a certain group or power, the availability of an item or equipment for trade, or the ready availability of food or water.</li><li><em>Track:</em> Select a specific creature you know to have been in the environment within the past week and make a Wisdom (Investigation) check to try and determine the creature&rsquo;s direction. If you beat the DC by 5 or more, you also find a clue about the creature, such as if it&rsquo;s injured, if it&rsquo;s been here often, if it&rsquo;s dropped a clue, etc.</li><li><em>Gossip</em>: While resting in a settlement, learn of a local rumor or relevant job posting.</li><li><em>Scout</em>: Reveal an inconspicuous aspect of the surrounding environment or culture as determined by the DM. You can&rsquo;t direct what you&rsquo;ll find, but you&rsquo;ll always find something, even if just a few extra coins. For example, a hidden dungeon entrance, a back entrance to a notable structure, a hidden or lost treasure, a creature or group notable or unique to the area, a local creature nest, a surprising food or water source, a cultural practice or expectation you had yet to learn, an event in motion, or simply an item or coin purse left forgotten for you to pocket.</li><li><em>Reveal</em>: If you have a hunch that a certain something is hidden in this environment, such as a hidden entrance, invisible object, or illusive creature, you can make a Wisdom (Investigation) check to learn the location or general location of it or its last location. You do not learn that it is not here if you fail the check. DC depends on the environment&rsquo;s density, the size of the target, and if it&rsquo;s in motion.</li><li><em>Scour</em>: Obtain enough food to feed yourself tonight, if any exist in the environment.</li></ul>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "7PJSDKWR301BX7EA"
+}

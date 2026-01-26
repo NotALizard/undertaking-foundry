@@ -1,0 +1,20 @@
+{
+    "name": "Tune-Up",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Vehicle"
+        },
+        "restType": "long",
+        "requirements": "Varies",
+        "summary": "Prepare a vehicle to endure wear or hostile conditions.",
+        "description": {
+            "value": "<p>As a <em>Long Rest Action</em>, you can tune up a vehicle to give one of the following benefits. Should the vehicle take any damage, be used to travel for a cumulative full day, or travel over rough terrain for half the length, the benefit is removed.</p><ul><li><em>Lubricate: </em>Increase movement speed of vehicle by &frac14; rounded up to the nearest 5 feet. In addition, reduce travel time by 1 day per 6 days of travel.</li><li><em>Reinforce: </em>Increase the vehicle&rsquo;s durability. Make an Intelligence (Craft) check, giving the vehicle temporary hit points equal to the result.</li><li><em>Weather Proof: </em>Increase the vehicle&rsquo;s resilience to one type of intense weather. Vehicles can add your Intelligence (Craft) modifier to checks relating to the vehicle avoiding the detriments of the weather.</li><li><em>Terrain Match: </em>Prepare a vehicle for particularly intense weather, so long as you have fitting parts. Vehicles can add your Intelligence (Craft) modifier to checks relating to the vehicle traveling across rough terrain.</li></ul>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "S2UMN9AG35OUHHFN"
+}

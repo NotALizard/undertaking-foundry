@@ -1,0 +1,20 @@
+{
+    "name": "Apply Basic Disguise",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Subterfuge"
+        },
+        "restType": "short",
+        "requirements": "Subterfuge Kit",
+        "summary": "Create a disguise for yourself that shares your race and proportions.",
+        "description": {
+            "value": "<p>As a <em>Rest Action</em>, you can attempt to disguise yourself as any creature of your same race and general body proportions. When you apply this disguise, make an Intelligence (Craft) check. The result of that roll determines the DC that is necessary for others to recognize that the disguise is a fake. The result of that roll, -5, determines the DC that is necessary for others to recognize that the disguise is a fake.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "78XV9ODPBTSN0I9P"
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Heel or Face Turn",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Class",
+            "name": "Gladiator Fighter"
+        },
+        "restType": "long",
+        "requirements": "None",
+        "summary": "Practice a new Gladiatorial Role to adjust your public image.",
+        "description": {
+            "value": "<p>You can change your Gladiatorial Role, but it takes some time to change your public image and get used to the role. You can do so by practicing your new image as a <em>Long Rest Action</em>. When you do, you lose access to the traits of your previous @Compendium[undertaking.abilities.726QUN63DM3JKKPN]{Gladiatorial Role} and may choose another one. If you change @Compendium[undertaking.abilities.726QUN63DM3JKKPN]{Gladiatorial Role} within 1 month of the last change, then you can only gain half heat for 1 week following.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "QS58G9QJAIP20Y4S"
+}

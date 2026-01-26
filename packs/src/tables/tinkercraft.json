@@ -1,0 +1,33 @@
+{
+  "name": "Tinkercraft",
+  "pages": [
+    {
+      "name": "Tinkercraft Table",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Tinkercraft Table</em></p><table><tbody><tr><td><p><strong>Item Cost</strong></p></td><td><p>1sp or less</p></td><td><p>1gp or less</p></td><td><p>5gp or less</p></td><td><p>10gp or less</p></td><td><p>15gp or less</p></td><td><p>20gp or less</p></td><td><p>etc.</p></td></tr><tr><td><p><strong>Sessions</strong></p></td><td><p>&frac14;</p></td><td><p>1</p></td><td><p>2</p></td><td><p>3</p></td><td><p>4</p></td><td><p>5</p></td><td><p>etc.</p></td></tr></tbody></table>",
+        "markdown": ""
+      },
+      "_id": "FKECGP9Q2HOWJOCA",
+      "image": {},
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "OANH1Q51JDEB8ETI"
+}

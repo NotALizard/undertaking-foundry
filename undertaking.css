@@ -861,6 +861,81 @@ a.toggle-lock {
 .subclass-col {
     margin: 2px;
 }
+.downtime-container {
+    height: 100%;
+    min-width: 400px;
+    max-height: 95vmin;
+}
+.trades-container {
+    flex: 1;
+    min-height: 120px;
+    max-height: 100%;
+}
+.list-container.trades{
+    flex: 2;
+    margin: 2px;
+}
+.list-container.rest-actions{
+    flex: 5;
+    margin: 2px;
+}
+.item-card.trade {
+    border-radius: 8px;
+    background-color: var(--bg-blue);
+    color: var(--off-white);
+    padding: 4px 8px;
+    margin: 4px;
+    font-size: 2vmin;
+}
+.item-card.rest-action {
+    border-radius: 8px;
+    margin: 4px;
+}
+.rest-type-tab {
+    width: 2vmin;
+    text-align: center;
+    border-right: solid;
+    border-color: var(--bg-blue);
+    border-width: 2px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.rest-type-tab.rest-long {
+    color: var(--off-white);
+    background: var(--bg-blue);
+    box-shadow: 0px 0px 0 1px var(--bg-blue);
+}
+.rest-type-tab.rest-short {
+    color: var(--off-white);
+    background: var(--fg-brown);
+    box-shadow: 0px 0px 0 1px var(--fg-brown);
+    border-color: var(--fg-brown);
+}
+.item-name.rest-action {
+    padding: 4px 8px;
+}
+.rest-action a.item-open {
+    font-size: 2vmin;
+    margin-bottom: 2px;
+}
+p.rest-action.summary {
+    font-size: 1.4vmin;
+    font-style: italic;
+    margin-bottom: 2px;
+}
+p.rest-action.requirements {
+    font-size: 1.4vmin;
+    text-decoration: underline;
+}
+.rest-action-source {
+    font-size: 1.4vmin;
+    text-decoration: underline;
+    text-align: right;
+    width: 0px;
+    direction: rtl;
+    white-space: nowrap;
+}
+
 
 .bio-container {
     height: 100%;

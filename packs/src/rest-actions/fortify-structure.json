@@ -1,0 +1,20 @@
+{
+    "name": "Fortify Structure",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Building"
+        },
+        "restType": "short",
+        "requirements": "Building Kit, Materials",
+        "summary": "Repair a structure and make it more resistant to destruction.",
+        "description": {
+            "value": "<p>So long as you have relevant materials, you can reinforce a structure against damage at a rate of 10sqft per minute. Each <em>Rest Action</em> you spend working on it, make an Intelligence (Craft) check.</p><ul><li>If the structure has hit points, restore them by the result of the check - 10.</li><li>If the structure has a DC to destroy it, take the result of the check - 5. If that is higher than the DC, that becomes the new DC to destroy it.</li></ul>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "UBA9SUCWV5SKMGZN"
+}

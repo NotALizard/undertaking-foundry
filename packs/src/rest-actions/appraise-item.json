@@ -1,0 +1,20 @@
+{
+    "name": "Appraise Item",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Thievery"
+        },
+        "restType": "short",
+        "requirements": "Thievery Kit",
+        "summary": "Estimate the sale value of items you've spent time around.",
+        "description": {
+            "value": "<p>As a <em>Rest Action</em>, you can determine the estimated sale value of up to three items for an area you have spent at least a day in.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "7SI9HJ3BATABAABG"
+}

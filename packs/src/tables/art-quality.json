@@ -1,0 +1,33 @@
+{
+  "name": "Art Quality",
+  "pages": [
+    {
+      "name": "Art Quality Table",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Art Quality Table</em></p><table><tbody><tr><td><p><strong>Quality Level</strong></p></td><td><p>&lt;10</p></td><td><p>11-15</p></td><td><p>16-20</p></td><td><p>21-30</p></td><td><p>31-40</p></td><td><p>41-50</p></td></tr><tr><td><p><strong>Cost</strong></p></td><td><p>5sp</p></td><td><p>1gp</p></td><td><p>5gp</p></td><td><p>10gp</p></td><td><p>15gp</p></td><td><p>20gp</p></td></tr></tbody></table><p><em>Fine Art Quality Table</em></p><table><tbody><tr><td><p><strong>Quality Level</strong></p></td><td><p>51-64</p></td><td><p>65-80</p></td><td><p>81-99</p></td><td><p>100+</p></td></tr><tr><td><p><strong>Cost</strong></p></td><td><p>40gp</p></td><td><p>100gp</p></td><td><p>250gp</p></td><td><p>750gp</p></td></tr><tr><td><p><strong>Effect</strong></p></td><td><p>+1d6 on a check of your choice before your next long rest</p></td><td><p>Advantage on Wisdom (Save) checks until your next long rest</p></td><td><p>Resistant to Psychic damage until your next long rest</p></td><td><p>+1d6 on Wisdom, Intelligence, or Presence checks until your next long rest</p></td></tr></tbody></table>",
+        "markdown": ""
+      },
+      "_id": "FMB7O12QFU16TKCG",
+      "image": {},
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "SVAINSJV86RZ4629"
+}

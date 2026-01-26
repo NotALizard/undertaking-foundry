@@ -1,0 +1,20 @@
+{
+    "name": "Expand Pathfinder's Guide",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Pathfinding"
+        },
+        "restType": "long",
+        "requirements": "Pathfinding Kit, Pathfinder's Guide",
+        "summary": "Add a new chapter to an existing wilderness guidebook.",
+        "description": {
+            "value": "<p>With a Pathfinder&rsquo;s Guide in hand, you can add additional chapters to it as a <em>Long Rest Action</em>, each chapter taking up one sheet of paper (or two pages) each:&nbsp;</p><ul><li><strong>Geographical Map:</strong> You calligraph a simple map of the area most fitting to a 6-mile diameter.<ul><li><em>Requirement:</em> Use <em>Explore Area</em> to learn at least three aspects about the area.</li><li><em>Effect:</em> While traveling, you move through this area in half the time.</li></ul></li><li><strong>Notated Map:</strong> You update your Geographical Map to notate local resources and landmarks.</li><ul><li><em>Requirements:</em></li><ul><li>Have a Geographical Map of the area.</li><li>Use <em>Explore Area</em> to learn at least five aspects about the area.</li></ul><li><em>Effect: </em>While in the area of the map, you have a +2 to finding natural resources and notable unnatural landmarks in the area.</li></ul><li><strong>Flora Guide:</strong> You press the flora into the book, supplementing it with additional sketches and notes about prime spots for it to grow.<ul><li><em>Requirement:</em> One of the flora from the area in question, pressed into the page when you create this chapter.</li><li><em>Effect: </em>You have a +2 to skill checks to find a specific type of flora again.</li></ul></li><li><strong>Fauna Guide:</strong> You sketch the creature and add notable observations about its biology and behavior.<ul><li><em>Requirement:</em> Succeed on a DC 15 Intelligence (Investigation) or Wisdom (Instinct) check toward a creature you can see within 15 ft of you. Upon failure, you cannot try again for the next 1 hour.</li><li><em>Effect:</em> You have a +2 to uncontested skill checks against the creature.<ul><li>Fauna Guides cannot be made for societal creatures, such as player races (humans, zhier, chk&rsquo;tu, etc.).</li></ul></li></ul></li><li><strong>Hunting Guide:</strong> You add more details to the creature sketch, highlighting weak points and noting useful hunting tactics.</li><ul><li><em>Requirements:</em></li><ul><li>Have a <em>Fauna Guide</em> for the creature.</li><li>You must have slain or defeated a creature of this type at least once.</li></ul><li><em>Effect:</em> You have a +1 to attack rolls and damage against a creature, and +2 to checks to harvest anything from it or its corpse.<ul><li>Making a Hunting Guide for societal creatures, such as player races (humans, zhier, chk&rsquo;tu, etc.), grants no bonus to attack or damage.</li></ul></li></ul><li><strong>Star Chart:</strong> You chart the stars, noting the directions and angles based on the changing seasons.<ul><li><em>Requirement:</em> View the stars at night in the area at least once.</li><li><em>Effect: While you can see the stars at night, you have both a +2 to checks to navigate and a +1 to Wisdom (Save) checks.</em></li></ul></li></ul>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "1HMFWYGIRHKP1PBG"
+}

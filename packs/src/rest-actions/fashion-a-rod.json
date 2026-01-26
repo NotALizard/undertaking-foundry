@@ -1,0 +1,20 @@
+{
+    "name": "Fashion a Rod",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Fishing"
+        },
+        "restType": "short",
+        "requirements": "Branch or Pole, 10ft of Rope or String",
+        "summary": "Create a makeshift fishing rod from available materials.",
+        "description": {
+            "value": "<p>As a <em>Rest Action</em>, you can create a Poor Fishing Rod using any wooden branch or pole and 10ft of either rope or string.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "94MZBFDRNWJSYBDS"
+}

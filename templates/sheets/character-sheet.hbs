@@ -7,6 +7,7 @@
     <nav class="sheet-navigation tabs" data-group="primary">
         <a class="item active" data-tab="overview">{{ localize "undertaking.Overview" }}</a>
         <a class="item" data-tab="classAbilities">{{ localize "undertaking.ClassAbilities" }}</a>
+        <a class="item" data-tab="downtime">{{ localize "undertaking.Downtime" }}</a>
         <a class="item" data-tab="biography">{{ localize "undertaking.Biography" }}</a>
         <a class="item" data-tab="spells">{{ localize "undertaking.Spellcasting" }}</a>
         <a class="item gear" data-tab="config"><i class="fas fa-gear" title="{{ localize "undertaking.Config" }}"></i></a>
@@ -479,6 +480,59 @@
                             <div class="scroll-area abilities">
                                 {{#each abilities as |ability id|}}
                                 {{> "systems/undertaking/templates/partials/character/ability-card.hbs" ability lockEdit=../actor.system.details.editLock}}
+                                {{/each}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab full-page downtime" data-group="primary" data-tab="downtime">
+            <div class="downtime-container fcol">
+                {{!-- Rest Actions Filter --}}
+                <input type="hidden" id="input-rest-action-filter" name="system.details.restActionFilter" value="{{actor.system.details.restActionFilter}}" data-dtype="String">
+                <nav class="tabs" data-group="primary">
+                    <a class="item rest-action-filter {{#ifCond actor.system.details.restActionFilter '==' 'all'}}active{{/ifCond}}" data-tab="all">{{ localize "undertaking.All" }}</a>
+                    <a class="item rest-action-filter {{#ifCond actor.system.details.restActionFilter '==' 'short'}}active{{/ifCond}}" data-tab="short">{{ localize "undertaking.RestActionsTypes.Short" }}</a>
+                    <a class="item rest-action-filter {{#ifCond actor.system.details.restActionFilter '==' 'long'}}active{{/ifCond}}" data-tab="long">{{ localize "undertaking.RestActionsTypes.Long" }}</a>
+                </nav>
+                <hr/>
+                <div class="trades-container frow">
+                    <div class="list-container trades item-list fcol fill-space">
+                        <div class="list-header trades frow addable">
+                            <label>{{ localize "undertaking.TradeProficiencies" }}</label>
+                                                        {{#ifCond actor.system.details.editLock '==' 1}}
+                                <a class="toggle-lock" title="{{ localize "undertaking.UnlockEdit" }}"><i class="fas fa-lock"></i></a>
+                            {{/ifCond}}
+                            {{#ifCond actor.system.details.editLock '==' 0}}
+                                <a class="toggle-lock" title="{{ localize "undertaking.LockEdit" }}"><i class="fas fa-lock-open"></i></a>
+                            {{/ifCond}}
+                            <a class="item-create" data-type="trade" title="{{ localize "undertaking.AddTrade" }}"><i class="fas fa-plus"></i></a>
+                        </div>
+                        <div class="scroll-container fill-space">
+                            <div class="scroll-area trades">
+                                {{#each trades as |trade id|}}
+                                {{> "systems/undertaking/templates/partials/character/trade-card.hbs" trade lockEdit=../actor.system.details.editLock}}
+                                {{/each}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-container rest-actions item-list fcol fill-space">
+                        <div class="list-header rest-actions frow addable">
+                            <label>{{ localize "undertaking.RestActions" }}</label>
+                                                        {{#ifCond actor.system.details.editLock '==' 1}}
+                                <a class="toggle-lock" title="{{ localize "undertaking.UnlockEdit" }}"><i class="fas fa-lock"></i></a>
+                            {{/ifCond}}
+                            {{#ifCond actor.system.details.editLock '==' 0}}
+                                <a class="toggle-lock" title="{{ localize "undertaking.LockEdit" }}"><i class="fas fa-lock-open"></i></a>
+                            {{/ifCond}}
+                            <a class="item-create" data-type="restAction" title="{{ localize "undertaking.AddRestAction" }}"><i class="fas fa-plus"></i></a>
+                        </div>
+                        <div class="scroll-container fill-space">
+                            <div class="scroll-area rest-actions">
+                                {{#each restActions as |restAction id|}}
+                                {{> "systems/undertaking/templates/partials/character/rest-action-card.hbs" restAction lockEdit=../actor.system.details.editLock}}
                                 {{/each}}
                             </div>
                         </div>

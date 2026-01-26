@@ -1,0 +1,20 @@
+{
+    "name": "Create Pathfinder's Guide",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Pathfinding"
+        },
+        "restType": "long",
+        "requirements": "Pathfinding Kit, Empty Book or Paper",
+        "summary": "Create a new guidebook with helpful wilderness information.",
+        "description": {
+            "value": "<p>As a <em>Long Rest Action</em>, you can turn a book or unfilled paper into a Pathfinder&rsquo;s Guide, adding one chapter to it in the process. <br />Any creature that can read the Pathfinder&rsquo;s Guide can study up to 3 chapters of it as a short rest, gaining each chapter&rsquo;s benefits until their next rest. Bonuses from chapters cannot be stacked, and each physical chapter can only be studied by one creature per rest.</p><p>See @Compendium[undertaking.rest-actions.1HMFWYGIRHKP1PBG]{Expand Pathfinder's Guide} for possible chapters you can add.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "KRF8A9MO5DQ6LJ4F"
+}

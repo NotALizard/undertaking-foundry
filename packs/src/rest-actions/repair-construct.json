@@ -1,0 +1,20 @@
+{
+    "name": "Repair Construct",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Tinkering"
+        },
+        "restType": "short",
+        "requirements": "Tinkering Kit, Scrap Metal",
+        "summary": "Use your tools and spare metal to restore hit points to a construct.",
+        "description": {
+            "value": "<p>Over a <em>Rest Action</em>, you can repair damage to a Construct using 1 Scrap Metal. Make a DC 10 Intelligence (Craft) check. On success, the Construct restores hit points equal to 1d10 + your Intelligence (Craft) Modifier. On failure, restore 1d4 + your Proficiency instead.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "8YNWKHKKC2QMV0LY"
+}

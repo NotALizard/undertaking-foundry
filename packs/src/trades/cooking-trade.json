@@ -1,0 +1,16 @@
+{
+    "name": "Cooking Trade",
+    "type": "trade",
+    "system": {
+        "description": {
+            "value": "<p>The Cooking Kit can be used in the following ways:</p><ul><li><strong><strong>Prepare Meal:</strong></strong> As a <em>Rest Action</em>, Provided you have access to sufficient supplies, you can prepare a meal or drinks. Up to three people, including yourself, can have a serving during a rest to gain 1d4 temporary hit points.</li></ul><p>If you have Cooking Proficiency, you can use the Cooking Kit in the following ways:&nbsp;</p><ul><li><strong><strong>Advanced Preparation:</strong></strong> Creatures who partake in the meal from Prepare Meal also regain an extra Rest Die.</li><li><strong>Prepare Rations:</strong> As a <em>Rest Action</em>, you can dry and store food, turning up to up to 3 pounds of food into 3 days of rations. Food lasts significantly longer as rations, but any benefits granted by the food beyond sustenance are removed upon becoming rations.</li><li><strong>Brew Alcohol:</strong> Provided you have access to sufficient supplies, you can brew alcohol over the course of multiple long rests. You can work on the brew over a <em>Rest Action</em>, but no more than once per completed long rest. Each <em>Rest Action </em>you spend working on it, make an Intelligence (Craft) check against DC 15. Each success improves the quality of the brew as shown in the table below. Regardless of the quality, the batch is completed after 5 rests spent working on it, and will brew enough for three full servings. A serving takes a <em>Rest Action</em> to consume and gain all the benefits.<ul><li>Further fermenting past its completion may improve the flavor or alcohol levels, but it can no longer be worked to gain additional effects.</li><li>Larger brewing containers are generally too cumbersome for traveling kits, but can be used to make larger batches if that is not a concern.</li><li>Forcing a serving down in a shorter time than a <em>Rest Action</em>, no faster than an action, reduces the effects granted by the brew by 2 success levels. So if it was a 3 success level brew, then you would only gain the benefits of a 1 success level brew.</li></ul></li></ul><p><em>Brewing Table</em></p><table><tbody><tr><td><p><strong>Successes</strong></p></td><td><p>0</p></td><td><p>1</p></td><td><p>2</p></td><td><p>3</p></td><td><p>4</p></td><td><p>5</p></td></tr><tr><td><p><strong>Effect</strong></p></td><td><p>Counts as a meal</p></td><td><p>Also gain 1d4 temporary hit points</p></td><td><p>Also remove the Frightened condition and gain advantage on Save Checks against the Frightened condition for the next hour</p></td><td><p>Also regain an extra Rest Die</p></td><td><p>Also gain 1d10+2 temporary hit points, stacking on top of any previous temporary hit points</p></td><td><p>Also gain +1 on all saving throws until your next long rest</p></td></tr></tbody></table>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "restActions": [
+            "undertaking.rest-actions.ZAFKE13RG0V931GM",
+            "undertaking.rest-actions.4GMFZHR88TQNNXQV"
+        ]
+    },
+    "_id": "M1264U70MFFJT1TQ"
+}

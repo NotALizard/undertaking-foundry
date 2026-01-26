@@ -1,0 +1,20 @@
+{
+    "name": "Agriculture",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Botany"
+        },
+        "restType": "short",
+        "requirements": "Botany Kit, Seeds",
+        "summary": "Plant the seeds of an herb for greater yields at a later date.",
+        "description": {
+            "value": "<p>As a <em>Rest Action</em>, you can plant seeds in a 5 ft area of prepared soil. So long as it isn&rsquo;t dying, the plant grows over the course of months, but their output is greatly multiplied.<br />In their natural biome, plants survive so long as they are treated once a week. Outside of their natural biome, they generally survive so long as they are treated once a day, so long as they are shielded from the more extreme elements of the biome, such as heat or cold.</p><ul><li>Common Flora:&nbsp;</li><ul><li>Yield: x20 per 5ft.</li><li>Harvest Period: 1 month.</li></ul><li>Uncommon Flora:&nbsp;</li><ul><li>Yield: x10 per 5ft.</li><li>Harvest Period: 2 months.</li></ul><li>Rare Flora:&nbsp;</li><ul><li>Yield x5 per 5ft.</li><li>Harvest Period: 3 months.</li></ul></ul>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "J2Y3CB7LHPKSK7X3"
+}

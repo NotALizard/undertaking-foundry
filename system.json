@@ -2,7 +2,7 @@
   "id":"undertaking",
   "title":"Undertaking RPG",
   "description":"Core rules for the Undertaking system",
-  "version":"1.4.1",
+  "version":"1.5.0",
   "compatibility": {
     "minimum": "11",
     "verified": "11"
@@ -93,7 +93,15 @@
       "sorting": "m",
       "packs": [
         "abilities",
-        "fighting-stances"
+        "fighting-stances",
+        "rest-actions"
+      ]
+    },
+    {
+      "name": "Trades",
+      "sorting": "m",
+      "packs": [
+        "trades"
       ]
     },
     {
@@ -107,7 +115,8 @@
           "name": "References",
           "sorting": "m",
           "packs": [
-            "conditions"
+            "conditions",
+            "tables"
           ]
         }
       ]
@@ -358,6 +367,30 @@
       "path": "./packs/magic-items-unusual.db",
       "entity": "Item",
       "type": "Item"
+    },
+    {
+      "name": "trades",
+      "label": "Trades",
+      "system": "undertaking",
+      "path": "packs/trades.db",
+      "entity": "Item",
+      "type": "Item"
+    },
+    {
+      "name": "rest-actions",
+      "label": "Rest Actions",
+      "system": "undertaking",
+      "path": "packs/rest-actions.db",
+      "entity": "Item",
+      "type": "Item"
+    },
+    {
+      "name": "tables",
+      "label": "Tables",
+      "system": "undertaking",
+      "path": "packs/tables.db",
+      "entity": "JournalEntry",
+      "type": "JournalEntry"
     }
   ],
   "languages": [

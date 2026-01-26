@@ -1,0 +1,28 @@
+<div class="item-card rest-action item frow" data-item-id="{{_id}}">
+    <div class="rest-type-tab fcol rest-{{system.restType}}">
+        {{#ifCond system.restType '==' "short"}}
+            <p title="{{ localize "undertaking.RestActionsTypes.Short" }}"><i class="fas fa-sun"></i></p>
+        {{/ifCond}}
+        {{#ifCond system.restType '==' "long"}}
+            <p title="{{ localize "undertaking.RestActionsTypes.Long" }}"><i class="fas fa-moon"></i></p>
+        {{/ifCond}}
+    </div>
+    <div class="item-name rest-action fcol">
+        <a class="item-open"><p>{{name}}</p></a>
+        <p class="rest-action summary">{{system.summary}}</p>
+        <p class="rest-action requirements">{{ localize "undertaking.Requirements" }}: {{system.requirements}}</p>
+    </div>
+    <div class="rest-action-source">
+        <p>{{#ifCond system.origin.type 'notin' "Basic,Other,"}}{{#origin system.origin.type}}system.origin.type{{/origin}}: {{/ifCond}}{{system.origin.name}}</p>
+    </div>
+    
+    <div class="item-buttons rest-action fcol">
+        {{#ifCond deletable '==' 1}}
+            {{#ifCond lockEdit '==' 0}}                        
+                <a class="item-delete" title="{{ localize "undertaking.DeleteItem" }}">
+                    <i class="fas fa-trash"></i>
+                </a>
+            {{/ifCond}}
+        {{/ifCond}}
+    </div>
+</div>

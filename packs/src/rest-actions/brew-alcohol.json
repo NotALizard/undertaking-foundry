@@ -1,0 +1,20 @@
+{
+    "name": "Brew Alcohol",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Cooking"
+        },
+        "restType": "short",
+        "requirements": "Cooking Kit, Supplies",
+        "summary": "Prepare a new batch of or continue refining a fermenting beverage.",
+        "description": {
+            "value": "<p>Provided you have access to sufficient supplies, you can brew alcohol over the course of multiple long rests. You can work on the brew over a <em>Rest Action</em>, but no more than once per completed long rest. Each <em>Rest Action </em>you spend working on it, make an Intelligence (Craft) check against DC 15. Each success improves the quality of the brew as shown in the table below. Regardless of the quality, the batch is completed after 5 rests spent working on it, and will brew enough for three full servings. A serving takes a <em>Rest Action</em> to consume and gain all the benefits.</p><ul><li>Further fermenting past its completion may improve the flavor or alcohol levels, but it can no longer be worked to gain additional effects.</li><li>Larger brewing containers are generally too cumbersome for traveling kits, but can be used to make larger batches if that is not a concern.</li><li>Forcing a serving down in a shorter time than a <em>Rest Action</em>, no faster than an action, reduces the effects granted by the brew by 2 success levels. So if it was a 3 success level brew, then you would only gain the benefits of a 1 success level brew.</li></ul><p><em>Brewing Table</em></p><table><tbody><tr><td><p><strong>Successes</strong></p></td><td><p>0</p></td><td><p>1</p></td><td><p>2</p></td><td><p>3</p></td><td><p>4</p></td><td><p>5</p></td></tr><tr><td><p><strong>Effect</strong></p></td><td><p>Counts as a meal</p></td><td><p>Also gain 1d4 temporary hit points</p></td><td><p>Also remove the Frightened condition and gain advantage on Save Checks against the Frightened condition for the next hour</p></td><td><p>Also regain an extra Rest Die</p></td><td><p>Also gain 1d10+2 temporary hit points, stacking on top of any previous temporary hit points</p></td><td><p>Also gain +1 on all saving throws until your next long rest</p></td></tr></tbody></table>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "4GMFZHR88TQNNXQV"
+}

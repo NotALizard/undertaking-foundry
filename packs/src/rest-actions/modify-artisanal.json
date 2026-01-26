@@ -1,0 +1,20 @@
+{
+    "name": "Modify Artisanal",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Artisan"
+        },
+        "restType": "short",
+        "requirements": "Artisan Kit, Materials",
+        "summary": "Improve the value of an item related to your specialization.",
+        "description": {
+            "value": "<p>As a <em>Rest Action</em>, you can modify one non-magical object, item, structure, or piece of clothing in a way that you could reasonably do with your specialization, or else painting, dying, trimming, or smoothing it. When you do so, make an Intelligence (Craft) check. If half the result is higher than the gold cost of the materials added to the object, you succeed. If not, you may continue adding to your roll with each subsequent attempt until you have met the gold cost of the object. On success, apply the modification and increase the selling price of the item by 1.5 times the external materials used or applied as part of the process. The price of the object cannot more than double the price of either the applied materials or object.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "1IV3TY01UM57AGSV"
+}

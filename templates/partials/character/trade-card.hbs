@@ -1,0 +1,12 @@
+<div class="item-card trade item frow" data-item-id="{{_id}}">
+    <div class="item-name trade">
+        <a class="item-open"><p>{{name}}</p></a>
+    </div>
+    <div class="item-buttons trade fcol">
+        {{#ifCond lockEdit '==' 0}}                        
+            <a class="item-delete" title="{{ localize "undertaking.DeleteItem" }}">
+                <i class="fas fa-trash"></i>
+            </a>
+        {{/ifCond}}
+    </div>
+</div>

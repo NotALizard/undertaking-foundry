@@ -1,0 +1,20 @@
+{
+    "name": "Repair Ammunition",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Smithing"
+        },
+        "restType": "short",
+        "requirements": "Smithing Kit",
+        "summary": "Repair up to 5 pieces of broken ammunition.",
+        "description": {
+            "value": "<p>As a <em>Rest Action</em>, you can repair up to 5 broken ammunition.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "VG68336KAA307W42"
+}

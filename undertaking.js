@@ -17,7 +17,9 @@ async function preloadHandlebarsTemplates(){
     "systems/undertaking/templates/partials/character/archetype-card.hbs",
     "systems/undertaking/templates/partials/character/ability-card.hbs",
     "systems/undertaking/templates/partials/character/spell-card.hbs",
-    "systems/undertaking/templates/partials/item/edit-attack.hbs"
+    "systems/undertaking/templates/partials/item/edit-attack.hbs",
+    "systems/undertaking/templates/partials/character/trade-card.hbs",
+    "systems/undertaking/templates/partials/character/rest-action-card.hbs",
   ];
 
   return loadTemplates(templatePaths);
@@ -151,6 +153,14 @@ Hooks.once("init",function(){
     const schools = ["abj","con","div","mes","evo","ill","nec","tra"];
     if(schools.includes(value)){
       return game.i18n.localize(`undertaking.SpellSchoolsShort.${value}`);
+    }
+    return value;
+  });
+
+  Handlebars.registerHelper('origin', function(value, options) {
+    const origins = ["Background","Class","Race","Other","Trade","Basic"];
+    if(origins.includes(value)){
+      return game.i18n.localize(`undertaking.Origins.${value}`);
     }
     return value;
   });

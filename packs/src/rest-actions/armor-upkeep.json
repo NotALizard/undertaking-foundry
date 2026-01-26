@@ -1,0 +1,20 @@
+{
+    "name": "Armor Upkeep",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Smithing"
+        },
+        "restType": "short",
+        "requirements": "Smithing Kit",
+        "summary": "Renew a set of armor, bolstering it against the next blow it receives.",
+        "description": {
+            "value": "<p>As a <em>Rest Action</em>, you can do general upkeep, such as hammering out dents, treating cracks, or reinforcing weakened metal, to give a piece of armor +1 AC for the next attack that is made against it.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "ZRFAFQU804JG2V4M"
+}

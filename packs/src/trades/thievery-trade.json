@@ -1,0 +1,15 @@
+{
+    "name": "Thievery Trade",
+    "type": "trade",
+    "system": {
+        "description": {
+            "value": "<p>With Thievery Trade Proficiency, you can do the following:</p><ul><li><strong><strong>Pick Pocket:</strong></strong> You can attempt to pickpocket someone without being noticed by making a Dexterity (Sleight of Hand) and Dexterity (Stealth) check and taking the lower result. The target DC is the target&rsquo;s Awareness, modified by the difficulty of the targeted item as determined by the GM. If you roll higher than the DC, then you successfully take the item unnoticed.<ul><li>Any items that would cause a noticeable weight difference to the creature if stolen, such as a sheathed sword or hefty coin purse, causes the target to roll a Wisdom (Perception) check. If the result is higher than the target&rsquo;s Awareness, then that is the target DC to beat instead. However, even should they fail to notice this at first, they are likely to notice it soon after.</li></ul></li></ul><p>The Thievery Kit can be used in the following ways:</p><ul><li><strong><strong>Pick Lock:</strong></strong> Thievery Kits come with varying lockpicking tools, allowing you to attempt to pick a basic lock using a Dexterity (Sleight of Hand) check without garnering disadvantage.</li></ul><p>If you have Thievery Trade Proficiency, you can use the Thievery Kit in the following ways:&nbsp;</p><ul><li><strong><strong>Capable Pickpocket:</strong></strong> When you use Pick Pocket, you do not have to roll the Dexterity (Stealth) check.</li><li><strong>Capable Locksmith:</strong> When you use Pick Lock, you can additionally attempt to pick <em>complex </em>locks without disadvantage.</li><li><strong>Cut Purse:</strong> When you use Pick Pocket, you can make the Dexterity (Sleight of Hand) check at advantage and can take a Disengage action as a minor action. Regardless of the result, however, your crime is immediately spotted.</li><li><strong>Arm or Disarm Trap:</strong> You can attempt to arm or disarm a trap without setting it off by rolling a Dexterity (Sleight of Hand) check without disadvantage.</li><li><strong>Appraise Item:</strong> As a <em>Rest Action</em>, you can determine the estimated sale value of up to three items for an area you have spent at least a day in.</li></ul>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "restActions": [
+            "undertaking.rest-actions.7SI9HJ3BATABAABG"
+        ]
+    },
+    "_id": "20GKS6W7N9SIVRM1"
+}

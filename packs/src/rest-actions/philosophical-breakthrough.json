@@ -1,0 +1,20 @@
+{
+    "name": "Philosophical Breakthrough",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Class",
+            "name": "Cleric"
+        },
+        "restType": "long",
+        "requirements": "None",
+        "summary": "Change the form of belief granted by your Clerical Approach.",
+        "description": {
+            "value": "<p>To change your character&rsquo;s form of belief, you must reach a philosophical breakthrough as a <em>Long Rest Action</em>. When you do, you lose access to the trait of your previous @Compendium[undertaking.abilities.RVBAX8AXLOK0TRYA]{Clerical Approach}, and may choose another one. This process is mentally taxing, and you cannot make the change again until 1 month after choosing a @Compendium[undertaking.abilities.RVBAX8AXLOK0TRYA]{Clerical Approach}.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "QCJ0RCMG5ZDKN597"
+}

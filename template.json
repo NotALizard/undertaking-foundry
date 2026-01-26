@@ -683,7 +683,7 @@
     }
   },
   "Item": {
-    "types": ["weapon", "equipment", "consumable", "tool", "treasure", "background", "class", "archetype", "spell", "ability", "backpack", "race", "customAttack", "language", "armor"],
+    "types": ["weapon", "equipment", "consumable", "tool", "treasure", "background", "class", "archetype", "spell", "ability", "backpack", "race", "customAttack", "language", "armor", "restAction", "trade"],
     "templates": {
       "itemDescription": {
         "description": {
@@ -950,6 +950,20 @@
       "baseItem": "",
       "properties": [],
       "proficient": true
+    },
+    "restAction": {
+      "templates": ["itemDescription"],
+      "summary": "",
+      "requirements": "None",
+      "restType": "short",
+      "origin": {
+        "type": "Other",
+        "name": "Custom"
+      }
+    },
+    "trade": {
+      "templates": ["itemDescription"],
+      "restActions": []
     }
   },
   "JournalEntryPage": {

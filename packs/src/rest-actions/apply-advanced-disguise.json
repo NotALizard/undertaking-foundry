@@ -1,0 +1,20 @@
+{
+    "name": "Apply Advanced Disguise",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Subterfuge"
+        },
+        "restType": "short",
+        "requirements": "Subterfuge Kit",
+        "summary": "Disguise yourself in any way you feasibly can.",
+        "description": {
+            "value": "<p>As a <em>Rest Action</em>, you can attempt to disguise yourself as any creature that you can reasonably disguise yourself as. When you apply this disguise, make an Intelligence (Craft) check.</p><ul><li>As part of this disguise, you can make yourself appear about a foot taller or shorter, some pounds thicker or thinner, and can even change your eye color.</li><li>Attempting to disguise yourself as something with elements that you cannot replicate, such as extra limbs, a different creature size, or an extra head, will automatically fail unless hiding or replacing those elements is part of the disguise.</li></ul>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "NWUB95AUJSGDBRD1"
+}

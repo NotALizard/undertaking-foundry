@@ -1,0 +1,20 @@
+{
+    "name": "Find Herbs",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Botany"
+        },
+        "restType": "short",
+        "requirements": "None",
+        "summary": "Search the local area for any medicinal herbs that grow here.",
+        "description": {
+            "value": "<p>Over the course of an hour, you can attempt to find herbs in a biome. Roll an Intelligence (Nature) check. Based on the result and environment, you find different results. If you get a high roll, you can choose to find a more common herb instead. <br />Certain biomes are harder to find herbs in. Those biomes have DC modifiers listed next to their names on the @Compendium[undertaking.tables.5R8FKYXDXRVWMOQD]{Ingredients - Herbs}  table.</p><p><em>Herb Finding Table</em></p><table><tbody><tr><td><p><strong>Ingredient</strong></p></td><td><p>Common Herb</p></td><td><p>Uncommon Herb</p></td><td><p>Rare Herb</p></td></tr><tr><td><p><strong>Finding DC</strong></p></td><td><p>DC 13</p></td><td><p>DC 15</p></td><td><p>DC 18</p></td></tr><tr><td><p><strong>Yield</strong></p></td><td><p>1d6-1 (Minimum of 1)</p></td><td><p>1d4</p></td><td><p>1</p></td></tr></tbody></table>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "ENUO4SZEMU7GFGCJ"
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Gather Bait",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Fishing"
+        },
+        "restType": "short",
+        "requirements": "None",
+        "summary": "Collect tiny creatures suitable for use as fishing bait.",
+        "description": {
+            "value": "<p>As a <em>Rest Action</em> in any location with vegetation, you can search for insects and invertebrates that are suitable for use as fishing bait. Make an Intelligence (Nature) check against DC 8. On a success, you find 1d4 Fishing Bait. You find 1 additional piece of Fishing Bait for every 3 your roll exceeds the DC by.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "ZI2EQRKJRDGD2ORL"
+}

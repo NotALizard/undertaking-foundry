@@ -1,0 +1,20 @@
+{
+    "name": "Fashion a Net",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Fishing"
+        },
+        "restType": "long",
+        "requirements": "50ft of Rope",
+        "summary": "Create a makeshift fishing net from available materials.",
+        "description": {
+            "value": "<p>As a <em>Long Rest Action</em>, you can weave and tie 50ft of rope into a Net suitable for fishing.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "K9GM2TADYHZ4T8AM"
+}

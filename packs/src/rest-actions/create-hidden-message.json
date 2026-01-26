@@ -1,0 +1,20 @@
+{
+    "name": "Create Hidden Message",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Subterfuge"
+        },
+        "restType": "short",
+        "requirements": "Subterfuge Kit",
+        "summary": "Create a cipher or other form of hidden message.",
+        "description": {
+            "value": "<p>As a <em>Rest Action</em>, you can create a hidden message in text, such as a cipher, encryption, invisible message, and so on. Make a Dexterity (Sleight of Hand) or Intelligence (Craft) check. The result, -5, becomes the DC to decipher the message.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "5QZH5SVTJFRU1XPM"
+}

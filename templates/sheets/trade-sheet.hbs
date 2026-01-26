@@ -1,0 +1,43 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}"/></h1>
+    </header>
+
+    {{!-- Item Sheet Navigation --}}
+    <nav class="sheet-navigation tabs" data-group="primary">
+        <a class="item active" data-tab="description">{{ localize "undertaking.Description" }}</a>
+        <a class="item" data-tab="details">{{ localize "undertaking.Details" }}</a>
+    </nav>
+
+    <section class="sheet-body other">
+
+        {{!-- Description Tab --}}
+        <div class="tab full-page flexrow active" data-group="primary" data-tab="description">
+            <div class="fcol">
+                <div class="description-container">
+                    {{editor descriptionHTML target="system.description.value" button=true editable=editable engine="prosemirror" collaborate=false}}
+                </div>
+            </div>
+        </div>
+
+        {{!-- Details Tab --}}
+        <div class="tab full-page flexrow" data-group="primary" data-tab="details">
+            <div class="fcol">
+                <div class="item-row frow">
+                    <label class="nowrap">{{ localize "undertaking.RestActions" }}</label>
+                    <a class="rest-action-control add-rest-action"><i class="fas fa-plus"></i></a>
+                </div>
+                <div class="item-row frow">
+                    <ol class="rest-actions fcol">
+                        {{#each item.system.restActions as |action i| }}
+                        <li class="rest-actions frow" data-restaction="{{i}}">
+                            <input type="text" name="system.restActions.{{i}}" value="{{action}}" data-dtype="String"/>
+                            <a class="rest-action-control delete-rest-action"><i class="fas fa-minus"></i></a>
+                        </li>
+                        {{/each}}
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+</form>

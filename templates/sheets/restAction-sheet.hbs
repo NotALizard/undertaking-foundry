@@ -1,0 +1,62 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}"/></h1>
+    </header>
+
+    {{!-- Item Sheet Navigation --}}
+    <nav class="sheet-navigation tabs" data-group="primary">
+        <a class="item active" data-tab="description">{{ localize "undertaking.Description" }}</a>
+        <a class="item" data-tab="details">{{ localize "undertaking.Details" }}</a>
+    </nav>
+
+    <section class="sheet-body other">
+
+        {{!-- Description Tab --}}
+        <div class="tab full-page flexrow active" data-group="primary" data-tab="description">
+            <div class="fcol">
+                <div class="description-container">
+                    {{editor descriptionHTML target="system.description.value" button=true editable=editable engine="prosemirror" collaborate=false}}
+                </div>
+            </div>
+        </div>
+
+        {{!-- Details Tab --}}
+        <div class="tab full-page flexrow" data-group="primary" data-tab="details">
+            <div class="fcol">
+                <input type="hidden" id="input-resttype" name="system.restType" value="{{item.system.restType}}" data-dtype="String">
+                <input type="hidden" id="input-origintype" name="system.origin.type" value="{{item.system.origin.type}}" data-dtype="String">
+
+                <div class="item-row frow">
+                    <label>{{ localize "undertaking.Summary" }}</label>
+                    <input class="no-bg" name="system.summary" type="text" value="{{item.system.summary}}" data-dtype="String" />
+                </div>
+
+                <div class="item-row frow">
+                    <label>{{ localize "undertaking.Requirements" }}</label>
+                    <input class="no-bg" name="system.requirements" type="text" value="{{item.system.requirements}}" data-dtype="String" />
+                </div>
+
+                <div class="item-row frow">
+                    <label>{{ localize "undertaking.Origin" }}</label>
+                    <select class="input-dropdown" data-for="#input-origintype" style="margin-right: 1ch;">
+                        <option value="">{{ localize "undertaking.Origins.Other" }}</option>
+                        <option value="Basic" {{#ifCond item.system.origin.type '==' "Basic"}}selected{{/ifCond}}>{{ localize "undertaking.Origins.Basic" }}</option>
+                        <option value="Trade" {{#ifCond item.system.origin.type '==' "Trade"}}selected{{/ifCond}}>{{ localize "undertaking.Origins.Trade" }}</option>
+                        <option value="Race" {{#ifCond item.system.origin.type '==' "Race"}}selected{{/ifCond}}>{{ localize "undertaking.Origins.Race" }}</option>
+                        <option value="Class" {{#ifCond item.system.origin.type '==' "Class"}}selected{{/ifCond}}>{{ localize "undertaking.Origins.Class" }}</option>
+                        <option value="Background" {{#ifCond item.system.origin.type '==' "Background"}}selected{{/ifCond}}>{{ localize "undertaking.Origins.Background" }}</option>
+                    </select>
+                    <input class="no-bg" name="system.origin.name" type="text" value="{{item.system.origin.name}}" data-dtype="String" />
+                </div>
+
+                <div class="item-row frow">
+                    <label>{{ localize "undertaking.RestActionType" }}</label>
+                    <select class="input-dropdown" data-for="#input-resttype">
+                        <option value="short" {{#ifCond item.system.restType '==' "short"}}selected{{/ifCond}}>{{ localize "undertaking.RestActionsTypes.Short" }}</option>
+                        <option value="long" {{#ifCond item.system.restType '==' "long"}}selected{{/ifCond}}>{{ localize "undertaking.RestActionsTypes.Long" }}</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+</form>

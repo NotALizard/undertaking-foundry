@@ -1,0 +1,20 @@
+{
+    "name": "Create Potion Base",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Alchemy"
+        },
+        "restType": "long",
+        "requirements": "Alchemy Kit, Distilled Water",
+        "summary": "Prepare a vial of potion base, useful for further brewing.",
+        "description": {
+            "value": "<p>As a <em>Long Rest Action</em>, you can turn a vial of Distilled Water into a Potion Base using your Alchemy Kit and a few base chemicals that come with it.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "3EUA1FH4J2A5SW7K"
+}

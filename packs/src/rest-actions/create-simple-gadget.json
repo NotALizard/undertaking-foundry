@@ -1,0 +1,20 @@
+{
+    "name": "Create Simple Gadget",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Tinkering"
+        },
+        "restType": "short",
+        "requirements": "Tinkering Kit, Scrap Metal",
+        "summary": "Create a common gadget such as a crossbow, lighter, lock, or trap.",
+        "description": {
+            "value": "<p>As a <em>Rest Action</em>, you can create one common gadget&mdash;two as a <em>Long Rest Action</em>. Each gadget can be made from Scrap Metal of an equal GP value:</p><ul><li>A crossbow (Light, Hand, Heavy, or Repeating)</li><li>A hunting trap</li><li>A lighter</li><li>A lock</li></ul>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "D7V8RYFTL5VCQ4GI"
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Create Art",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Art"
+        },
+        "restType": "short",
+        "requirements": "Art Kit, Art Supplies worth at least 1gp",
+        "summary": "Create a new work of art that falls within your specialization.",
+        "description": {
+            "value": "<p>As a <em>Rest Action</em>, you can create one piece of art no larger than 5 square feet that you could reasonably create with your specialization. The first rest you spend creating the work of art, make an Intelligence (Craft) check. The result of the check is its initial @Compendium[undertaking.tables.SVAINSJV86RZ4629]{Art Quality} level, which determines the base selling price of the art piece. The initial creation of an art piece takes up 5gp worth of supplies.</p><ul><li>You can attempt to make an art piece with less than 5gp worth of supplies for a -1 to your Intelligence (Craft) checks, and a further -1 for each 5sp less than 5gp, to a minimum of 1gp. For example, using supplies worth a bit more than 2gp will confer a -6 on your Intelligence (Craft) check.</li></ul>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "N587VA8S965FW285"
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Regrow Stinger",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Race",
+            "name": "Warrior Chk'tu"
+        },
+        "restType": "long",
+        "requirements": "None",
+        "summary": "Regain the use of your Death Sting.",
+        "description": {
+            "value": "<p>As a<em> Long Rest Action, you</em> focus your body on regrowing your stinger and regain the use of your&nbsp;@Compendium[undertaking.abilities.W2JOTIASQTIRW3IA]{Death Sting} ability.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "YLOTM7EKMWPAIQ2E"
+}

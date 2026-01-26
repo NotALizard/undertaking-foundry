@@ -1,0 +1,20 @@
+{
+    "name": "Repair Trinket or Gadget",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Tinkering"
+        },
+        "restType": "short",
+        "requirements": "Tinkering Kit",
+        "summary": "Repair a damaged trinket or gadget.",
+        "description": {
+            "value": "<p>You can repair a fully broken trinket or gadget at &frac12; the material cost in &frac12; the sessions using the @Compendium[undertaking.tables.OANH1Q51JDEB8ETI]{Tinkercraft} table. Partially damaged objects require fewer parts and less time to repair, ask your GM for the difficulty and cost of a partial repair. Intelligence (Craft) checks to repair parts have a DC of 12.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "I1I483EOGS2A0ZEE"
+}

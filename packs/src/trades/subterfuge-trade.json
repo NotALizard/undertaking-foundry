@@ -1,0 +1,18 @@
+{
+    "name": "Subterfuge Trade",
+    "type": "trade",
+    "system": {
+        "description": {
+            "value": "<p>With Subterfuge Proficiency, you can do the following:</p><ul><li><strong><strong>Apply Basic Disguise:</strong></strong> As a <em>Rest Action</em>, you can attempt to disguise yourself as any creature of your same race and general body proportions. When you apply this disguise, make an Intelligence (Craft) check. The result of that roll determines the DC that is necessary for others to recognize that the disguise is a fake. The result of that roll, -5, determines the DC that is necessary for others to recognize that the disguise is a fake.</li><li><strong>Throw Voice:</strong> If you are unseen by the target, you can roll a Presence (Deception) check against a creature to convince them that your voice is coming from somewhere else up to 30 ft away.</li><li><strong>Vocal Mimicry:</strong> You have +2 to Presence (Deception) checks to make your voice sound like someone else&rsquo;s.</li></ul><p>If you have Subterfuge Proficiency, you can use the Subterfuge Kit in the following ways:&nbsp;</p><ul><li><strong>Apply Advanced Disguise:</strong> As a <em>Rest Action</em>, you can attempt to disguise yourself as any creature that you can reasonably disguise yourself as. When you apply this disguise, make an Intelligence (Craft) check.</li><ul><li>As part of this disguise, you can make yourself appear about a foot taller or shorter, some pounds thicker or thinner, and can even change your eye color.</li><li>Attempting to disguise yourself as something with elements that you cannot replicate, such as extra limbs, a different creature size, or an extra head, will automatically fail unless hiding or replacing those elements is part of the disguise.</li></ul><li><strong>Method Acting:</strong> The longer you stay in an advanced disguise, the more capable you are at convincingly replicating the mannerisms of the creature or character you are disguised as. After 8 hours in disguise, you gain advantage on Presence (Deception) and Presence (Performance) checks to convince others that you are who you say you are.</li><li><strong>Create Forgery:</strong> As a <em>Rest Action</em>, you can attempt to create a forgery. The forgery can be of a document or other text no longer than a page, an identification, or a simple badge or image. When you do, make an Intelligence (Craft) check. The result of that roll determines the DC that is necessary to recognize that the forgery is a fake.</li><li><strong>Create Hidden Message:</strong> As a <em>Rest Action</em>, you can create a hidden message in text, such as a cipher, encryption, invisible message, and so on. Make a Dexterity (Sleight of Hand) or Intelligence (Craft) check. The result, -5, becomes the DC to decipher the message.</li></ul>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "restActions": [
+            "undertaking.rest-actions.78XV9ODPBTSN0I9P",
+            "undertaking.rest-actions.NWUB95AUJSGDBRD1",
+            "undertaking.rest-actions.ZLANKSOHURR2BJFV",
+            "undertaking.rest-actions.5QZH5SVTJFRU1XPM"
+        ]
+    },
+    "_id": "3I0YAVDN7I2B3UIM"
+}

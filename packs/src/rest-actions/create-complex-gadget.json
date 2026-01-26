@@ -1,0 +1,20 @@
+{
+    "name": "Create Complex Gadget",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Tinkering"
+        },
+        "restType": "short",
+        "requirements": "Tinkering Kit, Scrap Metal",
+        "summary": "Create a complex mechanical gadget from scrap metal.",
+        "description": {
+            "value": "<p>Over the course of one or more <em>Rest Actions</em>, you can create one intricate item of clockwork, gadgetry, or otherwise. These can vary and some have special effects.</p><ul><li><em>Create Clockwork Toy (1 Scrap Metal, 1 rest): </em>You can create a simple clockwork toy that is no larger than a few inches. You decide what it looks like when you make it, but it always has a small winding key to activate it. The toy does up to two simple actions once wound-up, and can only be wound enough to act for up to 1 minute:&nbsp;</li><ul><li>Walk 5 ft forward.</li><li>Make a clicking or dinging noise.</li><li>Grab and hold an object less than 1lb in size near it.</li><li>Activate upon motion instead of winding.</li><li>Light up like a built-in lighter to cast 5 ft of light.</li></ul><li><em>Create Timepiece (2 Scrap Metal, 2 rests):</em> You can create a watch or clock that tells the time.</li><li><em>Create Impact Capsule (1 Scrap Metal, 1 rest):</em> You can create a capsule that, when a pin is pulled from it, will explode its contents out into a 10 ft radius around where it next impacts. Contents can be anything that can fit inside a baseball, including liquids like water, oil, or potions without the corrupted or thickened modifiers, smoke or gas canisters, even ball bearings or a letter. Impact Capsules break once activated, with all Scrap Metal used to make it too damaged for reusage.<ul><li><em>Add Lighting Mechanism (1 Scrap Metal, 1 rest):</em> Once you have created an Impact Capsule, you can add a mechanism to cause a spark upon impact, causing anything flammable inside of it to light on fire.</li></ul></li><li><em>Create Music Box (5 Scrap Metal, 3 rests):</em> You can create a box that, when wound, plays a simple tune. You can create new songs for the box by using an additional 1 Scrap Metal.</li></ul>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "EIIIFLRNWN36Y8R4"
+}
