@@ -1,0 +1,20 @@
+{
+    "name": "Distill Water",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Trade",
+            "name": "Alchemy"
+        },
+        "restType": "short",
+        "requirements": "Alchemy Kit, 1 Gallon of Water",
+        "summary": "Purify one gallon of water for drinking or potion brewing.",
+        "description": {
+            "value": "<p>As a <em>Rest Action</em>, you can distill up to 1 gallon of water into a potable form.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "64ADAXB2WA7JS17S"
+}

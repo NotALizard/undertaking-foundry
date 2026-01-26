@@ -739,6 +739,12 @@ export default class UndertakingCharacterSheet extends ActorSheet {
       case 'armor':
         name = 'New Armor';
         break;
+      case 'restAction':
+        name = 'New Rest Action';
+        break;
+      case 'trade':
+        name = 'New Trade';
+        break;
       default:
         name = "New Item";
         break;
