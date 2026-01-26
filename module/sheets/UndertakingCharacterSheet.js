@@ -680,14 +680,39 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     return this._onSubmit(event);
   }
 
-  _onItemCreate(event){
+  async _getItemTypeOptions(types){
+    return new Promise(resolve => {
+      let buttons = {};
+      for(let t of types){
+        buttons[t] = {
+          label: game.i18n.localize(`undertaking.ItemType.${t}`),
+          callback: () => resolve(t)
+        };
+      }
+      const data = {
+        title: game.i18n.localize("undertaking.ChooseType"),
+        content: '',
+        buttons: buttons,
+        default: "",
+        close: () => resolve('')
+      }
+      new Dialog(data, null).render(true);
+    });
+  }
+
+  async _onItemCreate(event){
     event.preventDefault();
     let element = event.currentTarget;
 
     let name;
     let type = element.dataset.type;
+    if(typeof type === "string" && type.includes(",")){
+      let types = type.split(",");
+      type = await this._getItemTypeOptions(types);
+      if(!type) return;
+    }
     let extra = null;
-    switch(element.dataset.type){
+    switch(type){
       case 'ability':
         name = 'New Ability';
         break;
@@ -707,6 +732,12 @@ export default class UndertakingCharacterSheet extends ActorSheet {
         break;
       case 'spell':
         name = 'New Spell';
+        break;
+      case 'weapon':
+        name = 'New Weapon';
+        break;
+      case 'armor':
+        name = 'New Armor';
         break;
       default:
         name = "New Item";

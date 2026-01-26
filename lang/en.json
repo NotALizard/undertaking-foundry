@@ -90,6 +90,17 @@
     "ArmorTooHeavy": "Movement speed reduced by 10 - You do not meet the Strength Requirement for this Armor",
     "EquipArmor": "Equip Armor (Not currently equipped)",
     "UnequipArmor": "Unequip Armor (Currently equipped)",
+    "ChooseType": "Choose Type",
+    "ItemType": {
+      "weapon": "Weapon",
+      "armor": "Armor",
+      "equipment": "Equipment",
+      "customAttack": "Custom Attack",
+      "class": "Class",
+      "archetype": "Archetype",
+      "cantrip": "Cantrip",
+      "spell": "Spell"
+    },
     "Weight": "Weight",
     "PoundsAbbrev": "lbs",
     "Value": "Value",

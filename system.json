@@ -356,7 +356,7 @@
       "name": "magic-items-standard",
       "label": "Magic Items (Standard)",
       "system": "undertaking",
-      "path": "./packs/magic-items-standard.db",
+      "path": "packs/magic-items-standard.db",
       "entity": "Item",
       "type": "Item"
     },
@@ -364,7 +364,7 @@
       "name": "magic-items-unusual",
       "label": "Magic Items (Unusual)",
       "system": "undertaking",
-      "path": "./packs/magic-items-unusual.db",
+      "path": "packs/magic-items-unusual.db",
       "entity": "Item",
       "type": "Item"
     },
