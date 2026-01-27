@@ -35,7 +35,14 @@ export default class UndertakingCharacterSheet extends ActorSheet {
 
   async getData(){
     const context = super.getData();
-    await this.populateBasicRestActions();
+    if(this.actor.isOwner){
+      try{
+        await this.populateBasicRestActions();
+      }
+      catch(err){
+        console.warn("Error populating basic rest actions: " + err);
+      }
+    }
     context.config = CONFIG.undertaking;
     const actor = context.actor;
 
