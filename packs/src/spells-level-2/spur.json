@@ -1,26 +1,26 @@
 {
-    "name": "Quicken",
+    "name": "Spur",
     "type": "spell",
-    "img": "icons/magic/time/clock-spinning-gold-pink.webp",
+    "img": "icons/skills/movement/feet-spurred-boots-brown.webp",
     "system": {
         "description": {
-            "value": "<p>Your heartbeat quickens and impatience floods your mind.  At the end of each of your turns, move up one space in the initiative order.</p>",
+            "value": "<p>The target moves up 1 slot in initiative and takes 1 piercing damage, plus an additional slot and damage for every 5 creatures in initiative. This cannot move a creature past the current turn in initiative.</p><p>Charge: This spell can be Charged, modifying its effects for a cost:</p><ul><li>1 Mana: You take the spell&rsquo;s damage instead of the target.</li><li>2 Mana: The casting time is now 1 Reaction.</li><li>2 Mana: Increase the damage per initiative slot to 1d6 piercing damage.</li></ul>",
             "chat": "",
             "unidentified": ""
         },
         "source": "Core Rules",
-        "level": "4",
-        "charge": false,
-        "school": "con",
+        "level": "2",
+        "charge": true,
+        "school": "tra",
         "components": {
             "somatic": true,
             "verbal": true,
             "material": true,
             "ritual": false,
-            "concentration": true
+            "concentration": false
         },
         "materials": {
-            "value": "a shaving of cocoa",
+            "value": "a sharp piece of metal",
             "consumed": false,
             "cost": "",
             "supply": 0
@@ -28,13 +28,13 @@
         "attribute": "spell",
         "actionType": "util",
         "activation": {
-            "type": "action",
+            "type": "minor",
             "cost": "1",
             "condition": ""
         },
         "duration": {
-            "value": "1",
-            "units": "minute"
+            "value": "",
+            "units": "inst"
         },
         "range": {
             "value": "30",
@@ -48,7 +48,12 @@
             "type": "creature"
         },
         "damage": {
-            "parts": [],
+            "parts": [
+                [
+                    "1",
+                    "piercing per slot advanced"
+                ]
+            ],
             "versatile": ""
         },
         "save": {
@@ -58,5 +63,5 @@
         },
         "showInAttacks": false
     },
-    "_id": "RMO4JFTE8ZFGDWOA"
+    "_id": "U8ZOMEE7ERUQPF0D"
 }

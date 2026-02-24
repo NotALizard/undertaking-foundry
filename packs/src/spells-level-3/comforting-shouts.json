@@ -4,7 +4,7 @@
     "img": "icons/magic/life/heart-area-circle-red-green.webp",
     "system": {
         "description": {
-            "value": "<p>You cry out magically laced words of encouragement to those around you.  Up to six creatures of your choice that can hear you within range regain hit points equal to 1d4 + your spellcasting ability modifier.<br>&nbsp;&nbsp;&nbsp;&nbsp;This spell has no effect on undead or constructs.  <br><br>Charge: For every 2 extra Mana spent, this spell restores an additional 1d4 hit points.  You cannot cast this spell to cost more than 16 Mana.</p>",
+            "value": "<p>You cry out magically laced words of encouragement to those around you. Up to six creatures of your choice that can hear you within range regain hit points equal to 1d4 + your spellcasting ability modifier.</p><p>This spell has no effect on undead or constructs.</p><p>Charge: This spell can be Charged, modifying its effects for a cost:&nbsp;</p><ul><li>2 Mana: Restores an additional 1d4 hit points.</li><li>4 Mana: Restores an additional 2d4 hit points.</li><li>8 Mana: Restores an additional 4d4 hit points.</li></ul>",
             "chat": "",
             "unidentified": ""
         },

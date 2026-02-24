@@ -1,10 +1,10 @@
 {
-  "name": "Desperate Quickness",
+  "name": "Lightning Reflex",
   "type": "ability",
   "img": "icons/skills/movement/arrow-upward-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>Your quick reflexes and thinking allow you to push yourself to the extreme and move faster within a split second than others.&nbsp; The respective bonuses granted are doubled when using a desperate action to:</p><ul><li>Shove or move a target</li><li>Dodge an AoE with a Dexterity (Save) check</li></ul>",
+      "value": "<p><em>In moments of import, you&rsquo;ve learned to let your reflexes take control. Nothing&rsquo;s faster or more reliable in a pinch. </em></p><p><br />During a Desperate Action, you can do one of the following as a non-action: <strong>Dash</strong>, <strong>Disengage</strong>, <strong>Hide</strong>, or <strong>Search</strong>.</p>",
       "chat": "",
       "unidentified": ""
     },

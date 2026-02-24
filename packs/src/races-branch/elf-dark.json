@@ -10,7 +10,7 @@
     },
     "source": "Core Rules",
     "portion": "core",
-    "classDetails": "<p>Dark Elf Traits</p><ul><li><b>Compatibility: </b>Hominoid</li><li><b>Attribute Increase: </b>Your Wisdom increases by 1.</li><li><b>Skill Proficiency: </b>You have proficiency in the Wisdom (Theology) skill.</li><li><b>Fey Ancestry: </b>@Compendium[undertaking.abilities.B6D7U0WZJRIXIX5O]{Fey Ancestry}</li><li><b>Darkvision: </b>@Compendium[undertaking.abilities.1F3VSNLQTVMYA4PE]{Darkvision (60ft)}</li><li><b>Cantrip: </b>You know one Cantrip of your choice from the cleric spell list.  Wisdom is your spellcasting ability for it. </li></ul>"
+    "classDetails": "<p>Dark Elf Traits</p><ul><li><b>Compatibility: </b>Hominoid</li><li><b>Attribute Increase: </b>Your Wisdom increases by 1.</li><li><b>Skill Proficiency: </b>You have proficiency in the Wisdom (Theology) skill.</li><li><b>Fey Ancestry: </b>@Compendium[undertaking.abilities.B6D7U0WZJRIXIX5O]{Fey Ancestry}</li><li><b>Darkvision: </b>@Compendium[undertaking.abilities.1F3VSNLQTVMYA4PE]{Darkvision (60ft)}</li><li><b>Cantrip: </b>You know one Cantrip of your choice from the cleric spell list.  You can use your Intelligence, Wisdom, or Presence as your spellcasting attribute for this spell.</li></ul>"
   },
   "effects": [],
   "folder": null,

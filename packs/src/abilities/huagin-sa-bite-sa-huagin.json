@@ -1,0 +1,25 @@
+{
+    "name": "Bite (Sa Huagin)",
+    "type": "ability",
+    "img": "icons/creatures/fish/fish-shark-swimming.webp",
+    "system": {
+        "description": {
+            "value": "<p>You have a sharp set of teeth and a powerful jaw behind them. These can be used as a natural weapon that deals 1d4 piercing damage and inflicts @Compendium[undertaking.conditions.R54LQEKSDXNQ3N75]{Bleeding} on the target.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "SHZ8D3VSLPA7EC50"
+}

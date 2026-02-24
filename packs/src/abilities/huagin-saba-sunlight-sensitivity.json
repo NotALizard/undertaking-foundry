@@ -1,0 +1,25 @@
+{
+    "name": "Sunlight Sensitivity",
+    "type": "ability",
+    "img": "icons/creatures/fish/fish-shark-swimming.webp",
+    "system": {
+        "description": {
+            "value": "<p>Your time in the depths has left your eyes sensitive to the sun&rsquo;s harsh glare. You have disadvantage on attack rolls and Wisdom (Perception) checks that rely on sight when you or what you are trying to perceive or target is in direct sunlight.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "DRUBCSKJCK05ZOYF"
+}

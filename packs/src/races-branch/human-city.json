@@ -10,7 +10,7 @@
     },
     "source": "Core Rules",
     "portion": "core",
-    "classDetails": "<p>City Human Traits</p><ul><li><b>Compatibility: </b>Hominoid</li><li><b>Skill Proficiency: </b>You have proficiency in one skill from the following list: Culture, Insight, Persuasion, Deception.</li><li><b>Language: </b>You can speak, read, and write in one extra language of your choice. </li><li><b>Fast-Walker: </b>Your base ground speed is 35ft. </li><li><b>Night Owl: </b>@Compendium[undertaking.abilities.1G46RNQC5EFYGSXM]{Night Owl}</li><li><b>Hard Sell: </b>@Compendium[undertaking.abilities.AGC864XWZMAXOUFX]{Hard Sell}</li><li><b>Pocket Protector: </b>@Compendium[undertaking.abilities.I7IHUKZI8GA0BZ11]{Pocket Protector}</li></ul>"
+    "classDetails": "<p>City Human Traits</p><ul><li><b>Compatibility: </b>Hominoid</li><li><b>Attribute Increase: </b>Pick one attribute that you did not increase as part of your core racial traits.  Increase the chosen attribute by 1.</li><li><b>Skill Proficiency: </b>You have proficiency in one skill from the following list: Culture, Insight, Persuasion, Deception.</li><li><b>Language: </b>You can speak, read, and write in one extra language of your choice. </li><li><b>Fast-Walker: </b>Your base ground speed is 35ft. </li><li><b>Night Owl: </b>@Compendium[undertaking.abilities.1G46RNQC5EFYGSXM]{Night Owl}</li><li><b>Hard Sell: </b>@Compendium[undertaking.abilities.AGC864XWZMAXOUFX]{Hard Sell}</li><li><b>Pocket Protector: </b>@Compendium[undertaking.abilities.I7IHUKZI8GA0BZ11]{Pocket Protector}</li></ul>"
   },
   "effects": [],
   "folder": null,

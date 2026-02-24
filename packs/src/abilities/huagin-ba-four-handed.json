@@ -1,0 +1,25 @@
+{
+    "name": "Four-Handed",
+    "type": "ability",
+    "img": "icons/creatures/fish/fish-shark-swimming.webp",
+    "system": {
+        "description": {
+            "value": "<p>Using four hands to grip a two-handed weapon, you can double your strength modifier for damage dealt. In addition, the weapon does not count as heavy.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "60SP46N54DDHRTIR"
+}

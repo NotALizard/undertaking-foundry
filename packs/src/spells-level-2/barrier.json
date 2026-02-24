@@ -4,7 +4,7 @@
     "img": "icons/magic/holy/barrier-shield-winged-blue.webp",
     "system": {
         "description": {
-            "value": "<p>Tracing a circle toward a creature, you manifest a magical and translucent barrier around it that shimmers slightly in the light.&nbsp;&nbsp;</p><p>For the duration, the target gains 10 temporary hit points at the start of its turn.</p><p>&nbsp;</p><p>Charge: This is a spell that can be Charged, increasing the effect of this spell.&nbsp; Costs and effect are as follow:&nbsp;</p><ul><li>2 Mana: Cast on an additional target</li><li>5 Mana: Cast on two additional targets</li></ul>",
+            "value": "<p>Tracing a circle toward a creature, you manifest a magical and translucent barrier around it that shimmers slightly in the light.&nbsp;&nbsp;</p><p>The target gains 10 temporary hit points immediately and at the start of each of its turns until the spell ends.</p><p>&nbsp;</p><p>Charge: This is a spell that can be Charged, increasing the effect of this spell.&nbsp; Costs and effect are as follow:&nbsp;</p><ul><li>2 Mana: Cast on an additional target</li><li>5 Mana: Cast on two additional targets</li></ul>",
             "chat": "",
             "unidentified": ""
         },

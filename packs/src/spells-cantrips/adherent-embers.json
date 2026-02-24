@@ -1,0 +1,67 @@
+{
+    "name": "Adherent Embers",
+    "type": "spell",
+    "img": "icons/magic/fire/explosion-embers-orange.webp",
+    "system": {
+        "description": {
+            "value": "<p><em>You stoke elemental fire within three pieces of charcoal, transforming them into clinging embers.</em></p><p>You create three magical embers. As an action, you can make a ranged spell attack to throw one of the embers at a target within 30 feet, dealing 1d4 + your spellcasting ability modifier fire damage on a hit.&nbsp;</p><p>You can also use the embers as ammunition for a sling or slingshot. When you hit with a weapon attack using an ember as ammunition, the weapon deals its normal damage but with its type converted to fire.</p><p>After you hit a target with an ember, it attaches to it for the duration of the spell and emits 5 feet of dim light. The next time a target with an attached ember takes damage that matches this spell&rsquo;s damage type, the ember is destroyed in a detonation and deals 1d4 fire damage to the attached target. The ember is harmlessly destroyed if it is submerged in a liquid, the attached target takes any cold damage, or a creature within reach uses its action to remove it.&nbsp;</p><p>If an ability modifies this spell&rsquo;s damage type to cold,then the ember is harmlessly destroyed whenever the target takes any fire damage rather than cold damage.</p><p>Charge: This spell can be Charged, modifying its effects for a cost:&nbsp;</p><ul><li>1 Mana: You can create up to six embers when you cast the spell.</li><li>1 Mana: The first ember to detonate before the spell ends deals 1d12 fire damage instead of 1d4.</li><li>2 Mana: Whenever the embers detonate, creatures within 5 feet of the target also suffer the damage.</li></ul>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "0",
+        "charge": true,
+        "school": "evo",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "pieces of charcoal, which the spell consumes",
+            "consumed": true,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "rsak",
+        "activation": {
+            "type": "minor",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "30",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "1d4+@mod",
+                    "fire"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": true
+    },
+    "_id": "58I1UTE8ZV4CJ5W6"
+}

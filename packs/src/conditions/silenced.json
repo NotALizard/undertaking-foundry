@@ -1,0 +1,37 @@
+{
+  "name": "Silenced",
+  "pages": [
+    {
+      "name": "Silenced",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Silenced</p><ul><li>Silenced creatures cannot speak or make sounds with their voice, cannot fulfill the vocal component of spells, and fail skill checks that require a voice.</li></ul>",
+        "markdown": ""
+      },
+      "_id": "MWK35MGDCR2IVRSX",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "GVNYWJ2OSBQN7YC3"
+}

@@ -10,7 +10,7 @@
     },
     "source": "Core Rules",
     "portion": "core",
-    "classDetails": "<p>Country Human Traits</p><ul><li><b>Compatibility: </b>Hominoid</li><li><b>Skill Proficiency: </b>You have proficiency in one skill from the following list: Athletics, Craft, Nature, Instinct.</li><li><b>Weapon Proficiency: </b>You have proficiency in sickles, scythes, tridents, and whips. </li><li><b>Farmer's Advantage: </b>@Compendium[undertaking.abilities.1GWNHHDFP2B30LUH]{Farmer's Advantage}</li><li><b>Pet Pal: </b>@Compendium[undertaking.abilities.BX9VETXWGYCFYBBD]{Pet Pal}</li><li><b>Early Bird: </b>@Compendium[undertaking.abilities.JQVEQW294G49HFD8]{Early Bird}</li></ul>"
+    "classDetails": "<p>Country Human Traits</p><ul><li><b>Compatibility: </b>Hominoid</li><li><b>Attribute Increase: </b>Pick one attribute that you did not increase as part of your core racial traits.  Increase the chosen attribute by 1.</li><li><b>Skill Proficiency: </b>You have proficiency in one skill from the following list: Athletics, Craft, Nature, Instinct.</li><li><b>Weapon Proficiency: </b>You have proficiency in sickles, scythes, tridents, and whips. </li><li><b>Farmer's Advantage: </b>@Compendium[undertaking.abilities.1GWNHHDFP2B30LUH]{Farmer's Advantage}</li><li><b>Pet Pal: </b>@Compendium[undertaking.abilities.BX9VETXWGYCFYBBD]{Pet Pal}</li><li><b>Early Bird: </b>@Compendium[undertaking.abilities.JQVEQW294G49HFD8]{Early Bird}</li></ul>"
   },
   "effects": [],
   "folder": null,

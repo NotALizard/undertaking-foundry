@@ -4,7 +4,7 @@
   "img": "icons/magic/fire/explosion-embers-evade-silhouette.webp",
   "system": {
     "description": {
-      "value": "<p>Your agility and alertness has made it hard to hit you.&nbsp; Should an attacker that you can see successfully hit you with an attack, you can use a reaction to add +2 to your AC.&nbsp; If this causes the attack to miss, you take no damage and can immediately Disengage and move up to half your speed.&nbsp;&nbsp;</p><p><br />&nbsp;&nbsp;&nbsp;&nbsp;Additionally, when you are subjected to a Dexterity (Save) check made to take half damage from an effect, on a success you instead take no damage.&nbsp; On a failure, you still only take half damage.</p>",
+      "value": "<p><em>Your finely honed agility and alertness has given you the uncanny ability to scrape through otherwise deadly situations.&nbsp;</em></p><p><strong>Quick Escape</strong></p><p>If an attacker that you can see hits you with an attack, you can use your reaction to add +2 to your AC. If this causes the attack to miss, you take no damage and can immediately <strong>Disengage</strong> and move up to half your speed.</p><p><strong>Evasive Maneuver</strong></p><p>When making a Dexterity (Save) check to take half damage from an effect, you instead take no damage when you would take half damage, and half damage when you would take full damage.</p>",
       "chat": "",
       "unidentified": ""
     },

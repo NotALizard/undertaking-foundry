@@ -1,0 +1,25 @@
+{
+    "name": "Tri-Wield",
+    "type": "ability",
+    "img": "icons/creatures/fish/fish-shark-swimming.webp",
+    "system": {
+        "description": {
+            "value": "<p>If you are wielding at least three Light weapons without a shield, you can take a Lesser Off-Hand Attack as a non-action immediately after taking an Off-Hand Attack minor action.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "5YTUEHPZ18OHVJ18"
+}

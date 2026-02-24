@@ -1,0 +1,23 @@
+{
+    "name": "Sa Huagin",
+    "type": "race",
+    "img": "icons/creatures/fish/fish-shark-swimming.webp",
+    "system": {
+        "description": {
+            "value": "<p><strong>Compatibility: </strong>Aquatic</p><p>The most common form of huagin, sa huagin are equally as dangerous and capable as their four-armed brethren. Not the least of which because of their sharp teeth, matched only by their even sharper killer instinct. Sa huagin are the top of the food chain in many parts of the sea, their bodies equipped with a hyper-reactive sense of smell and taste for blood. Their four-armed brethren&rsquo;s whirlwind of synchronized weapons are terrifying, but what originally earned huagin the land-term of &ldquo;sea devil&rdquo; came from the sa huagin&rsquo;s terrifying ability to dig into an opponent in battle, both in sea and on land.</p><p>That is a sa huagin from a land-dweller&rsquo;s perspective. To many sea dwellers, what they breathe is polluted by many undesirable elements from sea life alone, and underwater hunting only adds more to that. Fortunately for sa huagin, blood has a slightly tangy taste and smell&mdash;instead of metallic&mdash;that activates a hairtrigger shot of adrenaline in them when sensed. In a flash, a sa huagin can hone in and bite down on any target unlucky enough to bleed near them, should they want to.</p><p>Despite popular belief, sa huagin are not slaves to this instinct, however, nor do they find the taste of blood irresistible. While it can make rare meals particularly blood-pumping, blood is an otherwise intense firestarter for sa huagin just going about their day. It can be frustrating to deal with outside of life-or-death situations. Furthermore, if it's the blood of an ally or themselves, the flavor often turns sour.</p><p>Because of all of this, sa huagin culture tends to discourage bloodshed within their ranks. Even improperly treated wounds can be a trigger for nearby sa huagin and is greatly looked down upon. Where blood is to be expected or encouraged, however, such as combat arenas or meat markets, sa huagin are common, often working or enjoying such environments for the contact high. This brings us full circle; sa huagin are some of the first to prove themselves in combat&mdash;the benefits are undeniable.</p><p>Sa huagin may be notable for their hunter&rsquo;s instinct, but as one of the seas&rsquo; most widespread races, sa huagin are often seen in more mundane environments. The sea is a bountiful place, and many sa huagin are content with making a life in their slice of the ocean. Those who go on land, however, often find the environment inhospitable. More so than ba or saba huagin, sa huagin are less likely to be found on land willingly. However, sa huagin crowd their seas, so those who do venture onto land benefit from standing out amidst their neighbors. Those who do adventure often seek a unique path to call their own, no matter how rough the path.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "portion": "branch",
+        "classDetails": "<p>Sa Huagin Traits</p><ul><li><strong>Attribute Increase: </strong>Your Strength increases by 1.</li><li><strong>Proficiency: </strong>You have proficiency in one of the following:<ul><li>Wisdom (Instinct)</li><li>Wisdom (Medicine)</li><li>The Artisan Trade</li><li>The Smithing Trade</li></ul></li><li><strong>Bite:</strong> @Compendium[undertaking.abilities.SHZ8D3VSLPA7EC50]{Bite (Sa Huagin)}</li><li><strong>Hemovore:</strong> @Compendium[undertaking.abilities.ZNHVD01ULNMS0M0W]{Hemovore}</li><li><strong>Sunlight Sensitivity:</strong> @Compendium[undertaking.abilities.IZYTI3UCBFDKWEUU]{Sunlight Sensitivity}</li><li><strong>Dry Skin:</strong> @Compendium[undertaking.abilities.NJAX0XZ39VVJ7XNE]{Dry Skin}</li><li><strong>Bloodsense 15ft:</strong> @Compendium[undertaking.abilities.5X6VJGSD0ZYYKWDZ]{Bloodsense 15ft}</li><li><strong>Blood Frenzy:</strong> @Compendium[undertaking.abilities.YVOL9DRHC1IM778U]{Blood Frenzy}</li></ul>"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "9LNXNY4G4UR57EVK"
+}

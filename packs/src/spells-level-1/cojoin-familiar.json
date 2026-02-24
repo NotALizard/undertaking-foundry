@@ -1,0 +1,62 @@
+{
+    "name": "Cojoin Familiar",
+    "type": "spell",
+    "img": "icons/creatures/mammals/cat-hunched-glowing-red.webp",
+    "system": {
+        "description": {
+            "value": "<p>You forge an indefinite bond with a lesser spirit from beyond the material plane, entwining its essence with your very soul. The familiar appears in an unoccupied space within 5 feet of you, taking the form of an animal that uses the statistics of an <em>Attack Dog, Cat, Crow, Eel, Frog, Homing Bird, Lizard, Pig, Serpent, </em>or <em>Tarantula,</em> except that its creature type is Celestial, Fey, or Fiend and it does not have its own hit points. As explained below, you can control, share the senses of, and fight alongside your familiar, amongst other things.</p><p>You control your familiar at will, and while your familiar is within 100 feet of you, you can use your minor action to peer through its eyes and share all of its senses. While doing this, you are @Compendium[undertaking.conditions.ADW4EH0NKRDCRCA4]{Blinded} and @Compendium[undertaking.conditions.WK17M9FZR08DRUP1]{Deafened} to your own surroundings, and unable to take minor actions. You can end this state at will.</p><p>Your familiar doesn&rsquo;t enter initiative in combat. Instead, it acts on your turn at your command. In addition to moving, you can command it to take one of the following sub-set of actions: <strong>Dash</strong>, <strong>Disengage</strong>, <strong>Hide</strong>, or <strong>Self-Defense</strong>. Alternatively, you can take a minor action to command the familiar to remove this limit and let it take any action it&rsquo;s capable of, such as the <strong>Attack</strong> or <strong>Assist</strong> action.</p><p>As familiars lack their own initiative, they cannot take <strong>Desperate Actions</strong>. However, you can use your desperate action to command your familiar to immediately take an action in your stead. In addition, so long as your familiar is within 100 feet of you, you can spend your reaction to cast Touch spells through your familiar, allowing you to target creatures adjacent to either of you.</p><p>As part of your contract with the lesser spirit, whenever your familiar would take damage, you lose hit points instead. This happens after taking the familiar&rsquo;s modifiers and resistances into account. If both you and your familiar are targeted by the same hostile area of effect, instead of taking both damage results, you suffer disadvantage on any save checks to resist the effect made during the current turn. Your familiar is instantly banished to a pocket dimension when your hit points reach 0.</p><p>As a minor action, you can banish your familiar to a pocket dimension or summon your banished familiar to an unoccupied space within 5 feet of you. While in this pocket dimension, the familiar is @Compendium[undertaking.conditions.3CQC3JEY2C3Y721F]{Incapacitated} and requires no sustenance. If you die, your familiar is released from its pocket dimension, as well as its bond.</p><p>You can only have one familiar at a time. If you cast this spell when you already have a familiar, you can choose to replace its form with one from the list above. If you decide to get rid of your familiar, you can permanently dismiss it as an action, ending the spell.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "1",
+        "charge": false,
+        "school": "con",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": true,
+            "concentration": false
+        },
+        "materials": {
+            "value": "1lb bag of various crystals, herbs, and oils",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "hour",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "indef"
+        },
+        "range": {
+            "value": "5",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "TT94JMKOUYP2WM96"
+}

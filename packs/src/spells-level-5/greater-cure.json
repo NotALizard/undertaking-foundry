@@ -4,7 +4,7 @@
     "img": "icons/magic/life/heart-hand-gold-green-light.webp",
     "system": {
         "description": {
-            "value": "<p>You imbue a creature with immense positive energy, reversing debilitating effects that most other spells cannot cure.  This spell does one of the following effects to the target:<ul><li>Reduce @Compendium[undertaking.conditions.ERBR3AG01H4N1L91]{Exhaustion} by 1 level.</li><li>Remove one effect that @Compendium[undertaking.conditions.KJXJ0T5RPNC51N4V]{Charmed} or @Compendium[undertaking.conditions.AKLQGCY7ULVB4B64]{Petrified} the target.</li><li>Remove one curse.</li><li>Unattune from one item, including attunement to a cursed item.</li><li>Revert any reduction to one of the target\u2019s attributes.</li><li>Remove one effect reducing the target\u2019s hit point maximum.</li><li>Changes one @Compendium[undertaking.conditions.JHOXE7HCCBCD8MSK]{Insane} creature from having Indefinite Insanity to Long-Term Insanity with the same symptoms.  </li><li>Change one @Compendium[undertaking.conditions.JHOXE7HCCBCD8MSK]{Insane} Creature from having Long-Term Insanity to Short-Term Insanity with the same symptoms.</li><li>Cure one creature of Short-Term Insanity.</li><li>You cast @Compendium[undertaking.spells-level-2.N04H7KQXVXSTATL9]{Lesser Cure} on the target.</li><ul></p>",
+            "value": "<p>You imbue a creature with immense positive energy, reversing debilitating effects that most other spells cannot cure. This spell does one of the following effects to the target:</p><ul><li>All stacks of @Compendium[undertaking.conditions.R54LQEKSDXNQ3N75]{Bleeding}.</li><li>Remove an effect reducing the target&rsquo;s hit point or attribute maximum.</li><li>@Compendium[undertaking.conditions.HFC5771FPBA3Z870]{Stableize} and remove all of their failed Death Throws.</li><li>Cure <strong>Short-Term Insanity</strong>.</li><li>Reduce @Compendium[undertaking.conditions.ERBR3AG01H4N1L91]{Exhaustion} by 1 level. This spell cannot be cast again until your next long rest.</li><li>You cast @Compendium[undertaking.spells-level-2.N04H7KQXVXSTATL9]{Lesser Cure} on the target.</li></ul><p>Charge: This spell can be Charged, modifying its effects for a cost:&nbsp;</p><ul><li>Diamond Dust worth 100gp: Greater Cure has the additional following effects to choose from:</li><ul><li>Remove one <strong>curse</strong>.</li><li>Unattune one magic item, even cursed items.</li><li>Reduce @Compendium[undertaking.conditions.ERBR3AG01H4N1L91]{Exhaustion} by 1 level.</li><li>Remove @Compendium[undertaking.conditions.AKLQGCY7ULVB4B64]{Petrified}.</li><li>Remove @Compendium[undertaking.conditions.SRRBLPRSJWGUR551]{Poisoned}.</li><li>Trade <strong>Indefinite Insanity</strong> for <strong>Long-Term Insanity</strong> with the same symptoms.</li><li>Trade <strong>Long-Term Insanity</strong> for <strong>Short-Term Insanity</strong> with the same symptoms.</li></ul></ul>",
             "chat": "",
             "unidentified": ""
         },
@@ -15,14 +15,14 @@
         "components": {
             "somatic": true,
             "verbal": true,
-            "material": true,
+            "material": false,
             "ritual": false,
             "concentration": false
         },
         "materials": {
-            "value": "diamond dust worth 100gp, which the spell consumes",
-            "consumed": true,
-            "cost": "100",
+            "value": "",
+            "consumed": false,
+            "cost": "",
             "supply": 0
         },
         "attribute": "spell",

@@ -1,0 +1,25 @@
+{
+    "name": "Improved Dual-Wield",
+    "type": "ability",
+    "img": "icons/creatures/fish/fish-shark-swimming.webp",
+    "system": {
+        "description": {
+            "value": "<p>Holding your primary weapon in at least two hands without a shield, you can make Off-Hand attacks regardless of what weapon you use for your main attack, including a Heavy weapon.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "CWH17KUM5KF5QQSY"
+}

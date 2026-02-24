@@ -4,7 +4,7 @@
     "img": "icons/consumables/potions/bottle-corked-blue.webp",
     "system": {
         "description": {
-            "value": "A creature that ingests this potion regains 2d4 + 2 mana.  Drinking or administering this potion takes an action.",
+            "value": "A creature that ingests this potion regains 2d4 + 2 mana.  Takes a minor action to drink.",
             "chat": "",
             "unidentified": ""
         },

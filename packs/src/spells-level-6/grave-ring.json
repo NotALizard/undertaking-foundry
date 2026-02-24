@@ -4,7 +4,7 @@
     "img": "icons/magic/unholy/barrier-fire-pink.webp",
     "system": {
         "description": {
-            "value": "<p>A ring of black flames appears and spins out into a 60 foot radius sphere from a point of your choosing that is within range that you can see.  All creatures caught in the area must make a Constitution (Save) check.  On a failed save the target takes 8d6 necrotic damage, or half as much on a successful save.</p>",
+            "value": "<p>A ring of black flames appears and spins out into a 60 foot radius sphere from a point of your choosing that is within range that you can see. All creatures caught in the area must make a Constitution (Save) check. On a failed save the target takes 8d6 necrotic damage, or half as much on a successful save.</p><p>Charge: This spell can be Charged, modifying its effects for a cost:&nbsp;</p><ul><li>Crushed black gemstone worth 500gp: Deal +4d6 necrotic damage.</li></ul>",
             "chat": "",
             "unidentified": ""
         },
@@ -15,14 +15,14 @@
         "components": {
             "somatic": true,
             "verbal": true,
-            "material": true,
+            "material": false,
             "ritual": false,
             "concentration": false
         },
         "materials": {
-            "value": "powder from a crushed black gemstone worth at least 500 gp",
+            "value": "",
             "consumed": false,
-            "cost": "500",
+            "cost": "",
             "supply": 0
         },
         "attribute": "spell",

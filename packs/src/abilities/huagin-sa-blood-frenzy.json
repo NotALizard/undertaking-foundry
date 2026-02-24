@@ -1,0 +1,25 @@
+{
+    "name": "Blood Frenzy",
+    "type": "ability",
+    "img": "icons/creatures/fish/fish-shark-swimming.webp",
+    "system": {
+        "description": {
+            "value": "<p>When your Bloodsense detects a creature who has just taken damage, you can use your reaction to move adjacent to the creature and make a Bite attack against it. <br />This ability cannot move you further than 15ft.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "YVOL9DRHC1IM778U"
+}

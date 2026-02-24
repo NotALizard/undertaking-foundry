@@ -4,7 +4,7 @@
     "img": "icons/magic/holy/chalice-glowing-gold.webp",
     "system": {
         "description": {
-            "value": "<p>You perform a special magical ritual related to your religion or beliefs.  Throughout the duration, the object cannot move more than 10ft away from you or the spell fails.  When you cast the spell, choose one of the following ceremonies to perform: <ul><li>One flask-worth of water you touch turns into holy water.  This purifies the liquid of diseases, added poisons, and all other trace additives.  This process cannot purify any liquid that is not mostly water.  <br>&nbsp;&nbsp;&nbsp;&nbsp;If cast without powdered silver, the holy water becomes plain water after 24 hours.</li>  <li>You touch one willing or @Compendium[undertaking.conditions.9KB959MRZ0H4IT4C]{Unconscious} creature whose morality has been magically changed and make a DC 20 Wisdom (Theology) check.  On success, you restore the creature\u2019s original moral alignment, though the curse or cause's of other effects may remain.  <br>&nbsp;&nbsp;&nbsp;&nbsp;If cast without powdered silver, the moral restoration lasts for 1 hour.</li><li>You touch one corpse.  The corpse cannot be raised for the next 7 days.</li>  <li>You touch one object.  No creature can possess or take control of the object for the next 7 days.  If the object is already possessed and is not not cursed or bound to the object by magic, the soul is expelled from the object as part of the process.</li>  <li>You touch two creatures willing to be bonded together in marriage.  For the first 7 days, both targets replace their lowest attribute with the other person's matching attribute, if it is higher, while within 30ft of each other.  <br>&nbsp;&nbsp;&nbsp;&nbsp;This effect cannot be used on the same two creatures more than once.</li><ul></p>",
+            "value": "<p>You perform a special magical ritual related to your religion or beliefs. Throughout the duration, the object cannot move more than 10ft away from you or the spell fails. When you cast the spell, choose one of the following ceremonies to perform:</p><ul><li>One flask-worth of water you touch turns into holy water. This purifies the liquid of diseases, added poisons, and all other trace additives. This process cannot purify any liquid that is not mostly water. The holy water becomes plain water once again after 24 hours.</li><li>You touch one willing or @Compendium[undertaking.conditions.9KB959MRZ0H4IT4C]{Unconscious} creature whose morality has been magically changed and make a DC 20 Wisdom (Theology) check. On success, you restore the creature&rsquo;s original moral alignment for 1 hour, though the curse or causes of other effects may remain.</li><li>You touch one corpse. The corpse cannot be raised for the next 7 days.</li><li>You touch one object. No creature can possess or take control of the object for the next 7 days. If the object is already possessed and is not cursed or bound to the object by magic, the soul is expelled from the object as part of the process.</li><li>You touch two creatures willing to be bonded together in marriage. For the first 7 days, both targets replace their lowest attribute with the other person&rsquo;s matching attribute, if it is higher, while within 30ft of each other. <br />This effect cannot be used on the same two creatures more than once.</li></ul><p>Charge: This spell can be Charged, modifying its effects for a cost:&nbsp;</p><ul><li>25gp worth of powdered silver: Holy Water created with this component no longer turns back into plain water.</li><li>25gp worth of powdered silver: Moral alignments are restored indefinitely.</li></ul>",
             "chat": "",
             "unidentified": ""
         },
@@ -15,14 +15,14 @@
         "components": {
             "somatic": true,
             "verbal": false,
-            "material": true,
+            "material": false,
             "ritual": true,
             "concentration": false
         },
         "materials": {
-            "value": "25 gp worth of powdered silver, which the spell consumes",
-            "consumed": true,
-            "cost": "25",
+            "value": "",
+            "consumed": false,
+            "cost": "",
             "supply": 0
         },
         "attribute": "spell",

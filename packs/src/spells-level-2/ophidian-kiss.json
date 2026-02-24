@@ -1,0 +1,67 @@
+{
+    "name": "Ophidian Kiss",
+    "type": "spell",
+    "img": "icons/creatures/reptiles/serpent-horned-green.webp",
+    "system": {
+        "description": {
+            "value": "<p>Your teeth grow into vicious fangs, dripping with deadly venom. Make a melee spell attack against a creature within 5 feet. On a hit, the creature takes 2d6 poison damage and gains the @Compendium[undertaking.conditions.R54LQEKSDXNQ3N75]{Bleeding}&nbsp;condition. Hitting a creature that is already at the maximum stacks of @Compendium[undertaking.conditions.R54LQEKSDXNQ3N75]{Bleeding}&nbsp;inflicts one level of @Compendium[undertaking.conditions.ERBR3AG01H4N1L91]{Exhaustion}&nbsp;until the bleeding is cured, as long as it was not already suffering from @Compendium[undertaking.conditions.ERBR3AG01H4N1L91]{Exhaustion}&nbsp;resulting from this spell.&nbsp;</p><p>For the spell&rsquo;s duration, you can repeat the spell attack against any creature within 5 feet as an action.</p><p>Charge: This is a spell that can be Charged, modifying its effects. Costs and effects are as follow:</p><ul><li>1 Mana: Until the spell ends, you can repeat the spell attack in place of a weapon attack when a creature provokes an Attack of Opportunity from you.</li><li>2 Mana: The poison damage increases by 1d6.</li><li>3 Mana: Creatures afflicted with @Compendium[undertaking.conditions.R54LQEKSDXNQ3N75]{Bleeding}&nbsp;from this spell are also @Compendium[undertaking.conditions.9X088PM7H5U2S1HQ]{Sickened}&nbsp;until the @Compendium[undertaking.conditions.R54LQEKSDXNQ3N75]{Bleeding}&nbsp;is cured.</li></ul>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "2",
+        "charge": true,
+        "school": "tra",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": true
+        },
+        "materials": {
+            "value": "the fang of a snake",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "msak",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "range": {
+            "value": "0",
+            "long": null,
+            "units": "self"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "2d6",
+                    "poison"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "IGNXR8HBQZS1JVCY"
+}

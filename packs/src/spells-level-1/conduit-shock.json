@@ -1,0 +1,71 @@
+{
+    "name": "Conduit Shock",
+    "type": "spell",
+    "img": "icons/magic/lightning/bolt-beam-strike-blue.webp",
+    "system": {
+        "description": {
+            "value": "<p>A jolt of electricity reaches from you toward a creature within range. Make a ranged spell attack against the target, ignoring any cover bonuses resulting from other creatures obstructing the attack's path. On a hit, the creature takes 1d10 lightning damage. Hit or miss, the target and any creature standing in a line between you and the target must make a Dexterity (Save) Check to avoid an arc of lightning that briefly flickers between you and your target. Creatures in the line take 2d6 lightning damage on a failed save, or half as much on a success.<br><br>Charge: This is a spell that can be Charged, modifying its effects. Costs and effects are as follow: <ul><li>1 Mana: The spell's range increases to 30 feet.</li><li>1 Mana: The attack deals 1d8 additional lightning damage to its target for each creature in the line that fails the save. </li><li>3 Mana: The lightning damage on a failed save increases to 4d6. </li></ul></p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "1",
+        "charge": true,
+        "school": "evo",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": false,
+            "ritual": false,
+            "concentration": false
+        },
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "rsak",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "range": {
+            "value": "20",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "20",
+            "width": null,
+            "units": "ft",
+            "type": "line"
+        },
+        "damage": {
+            "parts": [
+                [
+                    "1d10",
+                    "lightning"
+                ],
+                [
+                    "2d6",
+                    "lightning"
+                ]
+            ],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "dex",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "37VLMG8DVH1QVCYM"
+}

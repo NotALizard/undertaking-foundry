@@ -1,0 +1,25 @@
+{
+    "name": "Four-Handed",
+    "type": "ability",
+    "img": "icons/creatures/fish/fish-shark-swimming.webp",
+    "system": {
+        "description": {
+            "value": "<p>Weapons with the two-handed trait do not count as heavy. In addition, it is also treated as having the Versatile trait, doubling your Strength modifier added to damage instead of increasing the die size. This versatile trait can only be activated by holding the weapon in four hands instead of two.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "81XW5LGJ382S2UUE"
+}

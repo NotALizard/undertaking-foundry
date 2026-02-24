@@ -1,0 +1,37 @@
+{
+  "name": "Muddled",
+  "pages": [
+    {
+      "name": "Muddled",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Muddled</p><ul><li>Muddled creatures have disadvantage on skill checks.</li></ul>",
+        "markdown": ""
+      },
+      "_id": "DEI7363UQ5HVPZJU",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "LM1J0T2XZ0KS1UFK"
+}

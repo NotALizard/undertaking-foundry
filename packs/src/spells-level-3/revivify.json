@@ -4,7 +4,7 @@
     "img": "icons/skills/wounds/anatomy-organ-heart-red.webp",
     "system": {
         "description": {
-            "value": "<p>You touch a creature that has died within the last minute, diamonds in hand.  That creature returns to life with 1 hit point, remaining @Compendium[undertaking.conditions.RK3DF56CKMQUV6DM]{Prone}.  <br>&nbsp;&nbsp;&nbsp;&nbsp;This spell fails if the creature has died of old age, and it does not restore any missing body parts.</p>",
+            "value": "<p>A spell that raises the downed, its effect changes based on its target:</p><ul><li>Touching a creature at 0 hit points, they regain half of their maximum hit points and gain 2 levels of @Compendium[undertaking.conditions.ERBR3AG01H4N1L91]{Exhaustion}. <br />For the next 1 minute afterward, the target is @Compendium[undertaking.conditions.KJXJ0T5RPNC51N4V]{Charmed} by you.</li><li>Touching a corpse no older than 1 month old, the corpse awakens for the next 1 minute. The awakened corpse is immobile, unaware of its surroundings, and emits the voice of its previous occupant. The voice shares their knowledge and personality as well. It feels compelled to trust you and must answer your questions. However, if it has a particular distrust or hatred toward you, especially in life, it may choose to lie. <br />Revivify cannot be cast on the same corpse for a week afterward.</li></ul><p>Charge: This spell can be Charged, modifying its effects for a cost:&nbsp;</p><ul><li>A Diamond worth 300gp: If the target creature has died within the last minute, they are returned to life with 1 hit point. <br />This spell fails if the creature has died of old age, and it does not restore any missing body parts.</li></ul>",
             "chat": "",
             "unidentified": ""
         },
@@ -15,14 +15,14 @@
         "components": {
             "somatic": true,
             "verbal": true,
-            "material": true,
+            "material": false,
             "ritual": false,
             "concentration": false
         },
         "materials": {
-            "value": "diamonds worth 300gp, which the spell consumes",
-            "consumed": true,
-            "cost": "300",
+            "value": "",
+            "consumed": false,
+            "cost": "",
             "supply": 0
         },
         "attribute": "spell",

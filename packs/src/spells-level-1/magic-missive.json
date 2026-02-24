@@ -1,0 +1,62 @@
+{
+    "name": "Magic Missive",
+    "type": "spell",
+    "img": "icons/sundries/documents/envelope-sealed-red-brown.webp",
+    "system": {
+        "description": {
+            "value": "<p>When you cast this spell, you can communicate with any creature that has signed the book you hold. Address a creature by name and dictate a message consisting of up to 30 words to it. The book flips open to its first empty page and the words you dictate appear on the page in your handwriting as you speak them. The spell fails if you address your message to a creature that has not written its own name on the inside cover of the book, or if there are no remaining blank pages in the book.</p><p>Once you finish dictating the message, the page tears itself from the book, folds into a glider, and takes flight at a speed of 180 feet per round (20 miles per hour). If the recipient is within the spell&rsquo;s range, the message travels to them by the shortest route that is safe for it to do so, otherwise it travels to a random point within the spell&rsquo;s range. When the message arrives it unfolds and hovers gently for 6 seconds or until held. The message, when held by the target creature, imparts an understanding that they can dictate a reply of 30 words of their own, which the spell inscribes on the back of the sheet. When their reply is finished, the page refolds and travels back to you at the same speed, as long as you are still on the same plane of existence as it. The spell ends when the reply reaches you or if the recipient does not reply within 10 minutes of receipt.</p><p>The message deftly avoids collisions as it travels. The seeking magic fades from the message if it takes damage, has an object attached to it, or is manually unfolded during transit. While under the effect of the spell, the page can&rsquo;t be marked or altered by mundane means. If all paths to the message&rsquo;s target are cut off (for example the message or target is inside a closed room) it taps gently against the obstacle blocking it until a path becomes available or the spell&rsquo;s duration expires.</p><p>Charge: This is a spell that can be Charged, modifying its effects. Costs and effects are as follow:</p><ul><li>1 Mana: The spell&rsquo;s range is increased to 75 miles. (the rough equivalent of three day&rsquo;s travel by horse)</li><li>3 Mana: The spell&rsquo;s range encompasses the plane of existence you are currently on.</li></ul>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "1",
+        "charge": true,
+        "school": "div",
+        "components": {
+            "somatic": false,
+            "verbal": true,
+            "material": true,
+            "ritual": true,
+            "concentration": false
+        },
+        "materials": {
+            "value": "A signed book worth at least 5gp, which the spell partially consumes",
+            "consumed": true,
+            "cost": "5",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "minute",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "7",
+            "units": "day"
+        },
+        "range": {
+            "value": "25",
+            "long": null,
+            "units": "mi"
+        },
+        "target": {
+            "value": "1",
+            "width": null,
+            "units": "",
+            "type": "creature"
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "OK48R80X6F22TZ7D"
+}

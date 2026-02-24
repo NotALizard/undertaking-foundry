@@ -1,0 +1,25 @@
+{
+    "name": "Bloodsense 15ft",
+    "type": "ability",
+    "img": "icons/creatures/fish/fish-shark-swimming.webp",
+    "system": {
+        "description": {
+            "value": "<p>You have incredibly well-tuned senses tuned to detect fresh blood in an instant. Within 15ft, you automatically detect and are considered to have blindsight vision on any @Compendium[undertaking.conditions.R54LQEKSDXNQ3N75]{Bleeding} creatures. Furthermore, you can detect any spilled blood fresher than a day old, and can immediately sense when a creature within range takes damage that would draw blood, such as from slashing or piercing damage. <br />While underwater, your Bloodsense range is doubled.&nbsp;</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "5X6VJGSD0ZYYKWDZ"
+}

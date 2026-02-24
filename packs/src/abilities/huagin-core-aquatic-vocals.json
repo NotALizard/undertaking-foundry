@@ -1,0 +1,25 @@
+{
+    "name": "Aquatic Vocals",
+    "type": "ability",
+    "img": "icons/creatures/fish/fish-shark-swimming.webp",
+    "system": {
+        "description": {
+            "value": "<p>Your voice box is specially designed for speaking underwater. Your voice carries through water as if air, and is audible, clear, and pronounced to any creatures within 60 feet of you, distorting beyond that point.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "core"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "THVUXV1MHZ3DTIUJ"
+}

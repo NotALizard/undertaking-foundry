@@ -4,7 +4,7 @@
     "img": "icons/magic/life/heart-hand-gold-green.webp",
     "system": {
         "description": {
-            "value": "<p>You touch a creature and cure it of either one disease or one condition.  The conditions this spell can cure are @Compendium[undertaking.conditions.ADW4EH0NKRDCRCA4]{Blinded}, @Compendium[undertaking.conditions.WK17M9FZR08DRUP1]{Deafened}, @Compendium[undertaking.conditions.OBTES08D2XC130IG]{Paralyzed}, or @Compendium[undertaking.conditions.9X088PM7H5U2S1HQ]{Sickened}.  Assume that any @Compendium[undertaking.conditions.9YPWLY1IHQV3MRLO]{Disease} can be cured by Lesser Cure unless the disease states otherwise.</p>",
+            "value": "<p>You touch a creature and activate its latent regeneration to cure it of one of the following physical conditions:</p><ul><li>2 stacks of @Compendium[undertaking.conditions.R54LQEKSDXNQ3N75]{Bleeding}.</li><li>@Compendium[undertaking.conditions.ADW4EH0NKRDCRCA4]{Blinded}</li><li>@Compendium[undertaking.conditions.WK17M9FZR08DRUP1]{Deafened}</li><li>@Compendium[undertaking.conditions.9YPWLY1IHQV3MRLO]{Diseased}; only one if the target is afflicted by multiple diseases. Some diseases require Greater Restoration to be cured instead.</li><li>@Compendium[undertaking.conditions.FIKTMW8NEOFEAKG6]{Hobbled}</li><li>@Compendium[undertaking.conditions.OBTES08D2XC130IG]{Paralyzed}</li><li>@Compendium[undertaking.conditions.9X088PM7H5U2S1HQ]{Sickened}</li></ul>",
             "chat": "",
             "unidentified": ""
         },

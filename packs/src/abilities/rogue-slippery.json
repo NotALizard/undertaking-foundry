@@ -1,0 +1,24 @@
+{
+  "name": "Slippery",
+  "type": "ability",
+  "img": "icons/skills/movement/feet-winged-boots-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Where others see obstacles, rogues see opportunities.</em></p><p>The <strong>Dash</strong>, <strong>Disengage</strong>, <strong>Hide</strong>, and <strong>Search</strong> actions are now minor actions.</p><p>Once per turn, you can take either the <strong>Give, Take, or Trade</strong> minor action or the <strong>Hide</strong> minor action as a non-action.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "adept"
+    },
+    "requirements": "6th level overall and 3rd level Rogue",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "T4YIHUPQPW9YAAV6"
+}

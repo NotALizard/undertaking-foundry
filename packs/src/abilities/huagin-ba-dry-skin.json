@@ -1,0 +1,25 @@
+{
+    "name": "Dry Skin",
+    "type": "ability",
+    "img": "icons/creatures/fish/fish-shark-swimming.webp",
+    "system": {
+        "description": {
+            "value": "<p>Your fish-like body is not used to the dryness of the surface world. You must submerge in water or otherwise get soaked by 4 pints of water each day or automatically gain 1 level of @Compendium[undertaking.conditions.ERBR3AG01H4N1L91]{Exhaustion} at the end of your next long rest. <br />This level of exhaustion cannot be removed without submerging in water for at least 1 hour.&nbsp;</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "8UMKZTEWXL5TOHF4"
+}

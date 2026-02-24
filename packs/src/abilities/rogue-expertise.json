@@ -1,0 +1,24 @@
+{
+  "name": "Expertise",
+  "type": "ability",
+  "img": "icons/skills/trades/academics-merchant-scribe.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Despite acting outside of traditional means, rogues are often highly trained experts in their fields. Any less and they could be replaced or worse.</em></p><p>Choose two skills that you are proficient in. Gain <strong>expertise </strong>in those skills.</p><p>See &ldquo;<em>Chapter 6 - How To Play</em>&rdquo; for more info on Expertise.</p><p>Pick another proficient skill to gain Expertise in when you reach 5th level overall, 11th level overall while at Adept Rogue, and at 17th level overall while at Expert Rogue.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "novice"
+    },
+    "requirements": "Must have the Rogue Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "5H1YLH3E742DLXDK"
+}

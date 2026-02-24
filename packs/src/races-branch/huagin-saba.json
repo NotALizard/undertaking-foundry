@@ -1,0 +1,23 @@
+{
+    "name": "Saba Huagin",
+    "type": "race",
+    "img": "icons/creatures/fish/fish-shark-swimming.webp",
+    "system": {
+        "description": {
+            "value": "<p><strong>Compatibility: </strong>Aquatic</p><p>Saba huagin, whose name literally means &ldquo;huagin of the sa and ba,&rdquo; are four-armed, fish-like huagin. Unlike their brethren, however, saba huagin grow to be large creatures, as well as being terrifying four-armed multitaskers in and out of combat. Their size allows their four-armed styles to be even more terrifying, adding heavy-weapons into the weapons they&rsquo;re able to dual-wield. <br />Saba huagin, are born successfully less often, but when successful, many expectations get put upon them. While it&rsquo;s no guarantee that a saba huagin will be stronger than its brethren, saba huagin often have great expectations put upon them, as they usually attain high-ranking positions within their kind. While everything must be earned, combat is the most common way to earn it in huagin society, and few are willing to risk fighting a giant. Of those who are, even fewer can handle a saba huagin&rsquo;s four-armed onslaught, and the pressure of multiple attack angles often gets a surrender out of them before the fight truly begins. It&rsquo;s much the same in domestic life; saba huagin are desirable workers, often able to do twice the work in half the time.</p><p>Expectations are high, but what&rsquo;s not often said, is how much the saba huagin have to train to become so capable with their four arms. Unlike their ba brethren, saba huagin aren&rsquo;t naturally capable with all four arms, often colliding them during simple tasks in adolescence. Without proper practice, saba huagin may rely upon only one or two hands for tasks, losing their skill with all four in the process. This, paired with their size, often leads saba huagin to minimize their weapon variety to keep things in check. However, with their high potential, saba huagin tend to attract the best teachers to help them master themselves. A properly trained and fully grown saba huagin is more than just strong, they&rsquo;re the culmination of their kind&hellip; At least until someone proves otherwise.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "portion": "branch",
+        "classDetails": "<p>Saba Huagin Traits</p><ul><li><strong>Attribute Increase: </strong>Your Strength increases by 1.</li><li><strong>Large Size:</strong> Your size is Large, taking up a 10sqft radius instead of a Medium creature&rsquo;s 5sqft. Your height increases by about 2+1d4 feet, and your weight increases by 1d4-1, minimum of 1, times 50% of your core race&rsquo;s weight. <br />For example, if you are a non-mixed Huagin, your weight might be around 1050-3000lbs at 9-14ft tall.</li><li><strong>Skill Proficiency: </strong>You have proficiency in the Intelligence (Arcana) skill.</li><li><strong>Sunlight Sensitivity:</strong> @Compendium[undertaking.abilities.DRUBCSKJCK05ZOYF]{Sunlight Sensitivity}</li><li><strong>Dry Skin:</strong> @Compendium[undertaking.abilities.2GAA77UD05M0NG97]{Dry Skin}</li><li><strong>Extra Arms: </strong> @Compendium[undertaking.abilities.XW8D056N2NFMJA8J]{Extra Arms}</li><li><strong>Four-Handed:</strong> @Compendium[undertaking.abilities.81XW5LGJ382S2UUE]{Four-Handed}</li><li><strong>Improved Dual-Wield:</strong> @Compendium[undertaking.abilities.CWH17KUM5KF5QQSY]{Improved Dual-Wield}</li></ul>"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "ARZCBPUK1VL3GBKC"
+}

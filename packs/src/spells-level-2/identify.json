@@ -4,7 +4,7 @@
     "img": "icons/skills/trades/academics-investigation-study-blue.webp",
     "system": {
         "description": {
-            "value": "<p>Using magic to pull back the veil on one object or creature, you learn the magical secrets that it holds.</p><ul><li><strong>Objects:</strong> Learn all of the following:</li><ul><li><em>Identify Magic Item:</em> If the object is a magic item, and if so, all of its magical properties, rules, and elements, how many charges it uses, if it requires attunement, and so on.</li><li><em>Identify Spell Effects: </em>Whether any spells or magical effects are affecting the object and what they are.</li><li><em>Identify Magic Origin: </em>If the object was created by a spell and which spell was used to create it.</li></ul></ul><ul><li><strong>Creatures:</strong> Learn all of the following:<ul><li><em>Identify Conditions: </em>Whether any spells or magical effects are affecting the creature and what they are.</li><li><em>Identify Creature: </em>The creature&rsquo;s type and core attributes.</li><li><em>Identify Durability: </em>The creature&rsquo;s weaknesses, resistances, and immunities.</li><li><em>Identify Attunement: </em>Which items on their person they are attuned to, but not what they are capable of.</li></ul></li></ul>",
+            "value": "<p><em>Using magic to pull back the veil on one object or creature, you learn the magical secrets that it holds. </em></p><p>The effect of this spell changes based on the target:</p><ul><li><strong>Objects:</strong> Learn all of the following:</li><ul><li><em><em>Identify Object:</em> What the object is and its general purpose. <br />For example, you would learn that a key is designed to open a lock, not what lock it is meant to open.</em></li><li><em>Identify Magic:</em> If the object is a magic item, or if it has a spell or magical effect cast on it, and what the magic item or spell on it is called.</li><li><em>Identify Magic Origin: </em>If the object was created by a spell and which spell was used to create it.</li></ul><li><strong>Creatures:</strong> Learn all of the following:<ul><li><em>Identify Effects: </em>Which spells, conditions, and magical effects are affecting the creature, but not what they do.</li><li><em>Identify Creature Type: </em>The creature&rsquo;s type and core attributes.</li><li><em>Identify Attunement: </em>Which items on their person they are attuned to, but not what they are capable of.</li></ul></li></ul><p>Charge: This spell can be Charged, modifying its effects for a cost:</p><ul><li>A Clear Crystal worth 50gp: Additionally&hellip;</li><ul><li><em>Identify Magic Item</em>: <strong>Identify</strong> the magic item.</li><li><em>Identify Spell Effects</em>: Learn the nature of the spell(s) affecting the object.</li></ul><li>A Clear Crystal worth 100gp: Additionally&hellip;&nbsp;</li><ul><li><em>Identify Creature</em>: Learn the creature&rsquo;s true name and face, and a secret about them.</li><li><em>Identify Durability: Learn </em>the creature&rsquo;s weaknesses, resistances, and immunities.</li><li><em>Identify Spell Effects: Learn the nature of the spell(s) affecting the creature.</em></li></ul></ul>",
             "chat": "",
             "unidentified": ""
         },
@@ -15,14 +15,14 @@
         "components": {
             "somatic": true,
             "verbal": true,
-            "material": true,
+            "material": false,
             "ritual": true,
             "concentration": false
         },
         "materials": {
-            "value": "A crystalline disc worth at least 100 gold",
+            "value": "",
             "consumed": false,
-            "cost": "100",
+            "cost": "",
             "supply": 0
         },
         "attribute": "spell",

@@ -1,0 +1,25 @@
+{
+    "name": "Hemovore",
+    "type": "ability",
+    "img": "icons/creatures/fish/fish-shark-swimming.webp",
+    "system": {
+        "description": {
+            "value": "<p>Once per long rest, if you Bite a @Compendium[undertaking.conditions.R54LQEKSDXNQ3N75]{Bleeding} creature or raw meat, you can regain hit points equal to your overall level.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "ZNHVD01ULNMS0M0W"
+}

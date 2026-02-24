@@ -1,0 +1,24 @@
+{
+  "name": "Vital Strike",
+  "type": "ability",
+  "img": "icons/skills/melee/strike-dagger-white-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Through experience and cunning you know exactly where a strike would be most fatal and how to do it with subtlety. </em></p><p>Once per turn, you can deal extra damage to a target equal to one of your weapon damage types. When attacking with a Light or Finesse weapon, or else a natural weapon, Vital Strike will activate if any of the following is true:</p><ul><li>You have <strong>advantage</strong> on the attack.&nbsp;</li><li>You are <strong>unseen</strong> by the target.</li><li>The target has one or more <strong>conditions</strong>.</li></ul><p>The amount of damage that a Vital Strike deals increases as you gain levels in the Rogue class, as shown in the table below:</p><p><em>Vital Strike Table</em></p><table><tbody><tr><td><p><strong>Vital Strike Level*</strong></p></td><td><p><strong>Extra Damage</strong></p></td></tr><tr><td><p>1-2</p></td><td><p>1d6</p></td></tr><tr><td><p>3-4</p></td><td><p>2d6</p></td></tr><tr><td><p>5-6</p></td><td><p>3d6</p></td></tr><tr><td><p>7-8</p></td><td><p>4d6</p></td></tr><tr><td><p>9-10</p></td><td><p>5d6</p></td></tr><tr><td><p>11-12</p></td><td><p>6d6</p></td></tr><tr><td><p>13-14</p></td><td><p>7d6</p></td></tr><tr><td><p>15-16</p></td><td><p>8d6</p></td></tr><tr><td><p>17</p></td><td><p>9d6</p></td></tr><tr><td><p>18</p></td><td><p>10d6</p></td></tr></tbody></table><p>*Vital Strike Level is equal to your Rogue level, plus &frac12; of every non-Rogue level, rounded down. For example, a level 7 Wizard / Level 4 Rogue would have a Vital Strike Level of 7, and could thus deal 4d6 Vital Strike damage.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "starter"
+    },
+    "requirements": "Rogue",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "1P8DJ5ZSPPJRMLWH"
+}
