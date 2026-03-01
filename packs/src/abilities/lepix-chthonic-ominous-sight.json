@@ -1,0 +1,25 @@
+{
+    "name": "Ominous Sight",
+    "type": "ability",
+    "img": "icons/environment/creatures/bug-tick-red.webp",
+    "system": {
+        "description": {
+            "value": "<p>Your darkvision is not impeded by magical darkness. <br />When you are standing in dim light or darkness, your eyes faintly glow red while conscious and not hidden by illusion. While your glowing eyes are visible, you have disadvantage on Dexterity (Stealth) checks and advantage on Presence (Intimidation) checks.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "2QNO86INI4E4DGTV"
+}

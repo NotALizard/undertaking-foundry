@@ -1,0 +1,25 @@
+{
+    "name": "Lesser Horns",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>You have a pair of horns growing from your head. These function as a natural weapon that deals 1d4 piercing damage.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "core"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "HF5TGW1UQJY6J1GK"
+}

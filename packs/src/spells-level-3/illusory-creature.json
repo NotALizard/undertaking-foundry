@@ -1,0 +1,62 @@
+{
+    "name": "Illusory Creature",
+    "type": "spell",
+    "img": "icons/creatures/mammals/spirit-deer-herd-blue.webp",
+    "system": {
+        "description": {
+            "value": "<p>With a wave of your hands, the image of a creature springs from your imagination into reality at a point you can see. The image you create must be of either a single Huge or smaller creature or a swarm of Tiny creatures, which count as and take up the space of a Small creature for the purpose of this spell. The creature appears convincingly real, down to any smells, sounds, or thermal stimuli that might accompany the creature, although these cannot be extreme enough to cause damage, conditions, or other effects.</p><p>Any creature that interacts physically with the illusion discovers it to be just that. Should a creature discover it to be an illusion (beyond being told so), it becomes translucent and has its stimuli diminished so as to not meaningfully obstruct the creature. When attacked, the illusion automatically appears to receive matching wounds in order to remain convincing to creatures other than the attacker. Creatures can use a <strong>Search</strong> or <strong>Glance</strong> action to inspect the illusory creature, discerning it to be an illusion on a successful Intelligence (Investigation) check versus your spell save DC.</p><p>On your turn, you can use your action to move the creature to any other point within range you can see and control what sounds it makes, including speech. Immediately when you cast the spell and each time you use your action to control the illusion, you can attempt to frighten one creature within 20ft of it. The target must succeed on a Wisdom save check or become @Compendium[undertaking.conditions.UK95BQ45TGSD5Q3V]{Frightened} of the illusion until the end of its next turn. A target that already knows the creature to be an illusion automatically succeeds on this save check.</p><p>Charge: This spell can be Charged, modifying its effects for a cost:&nbsp;</p><ul><li>2 Mana: The illusory creature can be Gargantuan in size, and if it is a swarm it can consist of creatures up to Medium in size.</li><li>A pearl worth 50gp: Increase the casting time to 1 minute. The illusion lasts until it is dispelled and does not require concentration. However, the illusory creature cannot move more than 60ft from where the spell was cast. You can give the illusory creature orders to act on, including what actions to act out or words to say in response to specific triggers. These triggers can be as general as simply being approached by any creature or specify any number of details such as types of creatures, creatures you designate by name or appearance, or a certain phrase being spoken or not spoken nearby. Your orders can include having the illusory creature attempt to frighten a target, as per the spell&rsquo;s effects. As the caster, you can use your action while within 60ft of the illusory creature to issue it new orders.</li></ul>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "level": "3",
+        "charge": true,
+        "school": "ill",
+        "components": {
+            "somatic": true,
+            "verbal": true,
+            "material": true,
+            "ritual": false,
+            "concentration": true
+        },
+        "materials": {
+            "value": "a tiny glass figurine of a creature",
+            "consumed": false,
+            "cost": "",
+            "supply": 0
+        },
+        "attribute": "spell",
+        "actionType": "util",
+        "activation": {
+            "type": "action",
+            "cost": "1",
+            "condition": ""
+        },
+        "duration": {
+            "value": "1",
+            "units": "hour"
+        },
+        "range": {
+            "value": "60",
+            "long": null,
+            "units": "ft"
+        },
+        "target": {
+            "value": "",
+            "width": null,
+            "units": "",
+            "type": ""
+        },
+        "damage": {
+            "parts": [],
+            "versatile": ""
+        },
+        "save": {
+            "attribute": "wis",
+            "dc": null,
+            "scaling": "spell"
+        },
+        "showInAttacks": false
+    },
+    "_id": "FOW5GSST2ZXRMKJ4"
+}

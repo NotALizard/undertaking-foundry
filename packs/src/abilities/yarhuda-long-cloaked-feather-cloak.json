@@ -1,0 +1,25 @@
+{
+    "name": "Feather Cloak",
+    "type": "ability",
+    "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
+    "system": {
+        "description": {
+            "value": "<p>You have large and extended tuft feathers that drape down to your shins. By ruffling your feathers, you can widen your feathers together and close any gaps to act as a parachute. So long as you are not <strong>incapacitated</strong>, you can land on your feet and prevent yourself from taking falling damage when falling.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "K209GDHAKHLWD2ZO"
+}

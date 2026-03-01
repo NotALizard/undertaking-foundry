@@ -1,0 +1,25 @@
+{
+    "name": "Spatial Reconstruction",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>Once they&rsquo;ve surveyed a location, mason-minds never forget it, and can navigate it again with great ease, even in the dark. With just a glance, mason-minds can make reliable inferences about a structure they haven&rsquo;t fully explored based on the parts they have. For example, should one door or passageway become impassable, they&rsquo;re able to quickly reroute. <br />You can close your eyes and picture an environment&rsquo;s basic layout inside and out as you last knew it. Details however, such as colors, textures, small objects, creatures, etc. are not retained any better than an average creature&rsquo;s memory.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "76S5EYBF31K9S9L4"
+}

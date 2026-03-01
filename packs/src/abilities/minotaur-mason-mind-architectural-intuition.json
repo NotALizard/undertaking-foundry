@@ -1,0 +1,25 @@
+{
+    "name": "Architectural Intuition",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>You gain one of the following traits:<ul><li>With proficiency in the Building Trade, when you are hitting a structure with a weapon attack, you can angle the impact in a way that is most likely to weaken its structural integrity. On a successful DC 12 Intelligence (Investigation) check, you permanently create a structural weakness and can immediately apply the Building Trade&rsquo;s <strong>Destruct </strong>bonus to this attack.</li><li>With proficiency in the Pathfinding Trade, when you take the <em>Explore Area</em> rest action in a city, ruins, or other constructed environment, you have advantage on the associated skill check.</li></ul></p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "7IE9OGRPT50ZUUAY"
+}

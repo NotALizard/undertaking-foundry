@@ -1,0 +1,23 @@
+{
+    "name": "Elysian Lep'ix",
+    "type": "race",
+    "img": "icons/environment/creatures/bug-tick-red.webp",
+    "system": {
+        "description": {
+            "value": "<p><strong>Compatibility: </strong>Insectoid</p><p>Elysian Lep&rsquo;ix have an affinity for the realms of idyll and divine grace. Their mystical gifts harken to the splendor and providence of an ideal world. Their wings tend toward a butterfly&rsquo;s wing shapes and patterns, and may develop breath-taking stained glass or metal embossed textures, representing symbolic or even prophetic designs. Despite drawing power from the divine, an elysian lep&rsquo;ix&rsquo;s powers and wing patterns don&rsquo;t necessarily draw from an existing divinity. Rather, a particularly devout or fate-bound lep&rsquo;ix might, but many elysian lep&rsquo;ix draw from the broader divine energies of elysium instead. This has led to suppositions that elysian lep&rsquo;ix are lesser divinities in their own right, such as a lesser deva or angel, or else a descendant of one. Any doctrine on the matter, however, is undercut by the fact that lep&rsquo;ix biology molds just as well to infernal or celestial magic as much as the divine.</p><p>When a lep&rsquo;ix comes of age and develops their magical connection, not only do their wings adapt to the change, but also their mind. A lep&rsquo;ix becoming elysian begins to carry themselves with an almost unnatural grace, and their speech patterns alter&mdash;their mind finding certain patterns and intonations of words more natural to say than before. Elysian Lep&rsquo;ix are truly sights to behold, and this often gives others pause who have not seen one before.</p><p>To lep&rsquo;ix cultures, elysian flare is less standout, and the differences between them is notable mostly like personality traits are. Elysian Lep&rsquo;ix communities are highly social, leaning on each other for the skills they lack, both verbally and physically. Others, however, seek out communities they can stand apart from&mdash;an elysian lep&rsquo;ix is less impressive in a crowd of their own.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "portion": "branch",
+        "classDetails": "<h4>Elysian Lep'ix Traits</h4><ul><li><strong>Attribute Increase:</strong> Your Wisdom and Presence both increase by 1.</li><li><strong>Empyrean Resistance:</strong> You have resistance to radiant damage.</li><li><strong>Language:</strong> You can speak, read, and write Celestial.</li><li><strong>Unmistakable Presence:</strong> @Compendium[undertaking.abilities.26VHF3075B59HT0I]{Unmistakable Presence}</li><li><strong>Elysian Magic:</strong> @Compendium[undertaking.abilities.LMZQYCB6DCLQ5XZL]{Elysian Magic}</li><li><strong>Healing Hands:</strong> @Compendium[undertaking.abilities.7N0RHPPAXR3NO2WJ]{Healing Hands}</li></ul>"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "XAWV9TOOU3YO4VE2"
+}

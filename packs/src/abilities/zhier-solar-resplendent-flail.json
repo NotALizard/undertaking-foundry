@@ -1,0 +1,25 @@
+{
+    "name": "Resplendent Flail",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>If you have the @Compendium[undertaking.abilities.3QPFSY40NDIM3XL9]{Element Flail} zhier racial trait, increase the damage of the tail natural weapon by one die size.<ul><li>Otherwise, you have a tail with a vibrant tuft of fur at its tip. You can swing it at targets as a natural weapon flail. This weapon has the Finesse property and deals 1d4 radiant damage. On impact, it sears your target and scatters specks of sunlight.</li></ul></p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "5I4QJNLLGII5HT53"
+}

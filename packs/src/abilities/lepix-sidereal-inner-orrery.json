@@ -1,0 +1,25 @@
+{
+    "name": "Inner Orrery",
+    "type": "ability",
+    "img": "icons/environment/creatures/bug-tick-red.webp",
+    "system": {
+        "description": {
+            "value": "<p>You always know which way is up, and immediately sense when a celestial event visible from this planet is starting, such as a meteor shower, eclipse, shooting star, full or new moon, or planetary alignment.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "TYJ1AYF7FU092BN0"
+}

@@ -1,0 +1,23 @@
+{
+    "name": "Regomecian",
+    "type": "race",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p><strong>Compatibility: </strong>Bestial</p><p>Like geons, &ldquo;rego mecians&rdquo; are unusually capable in psionics, but in an entirely different area. They don't just receive and transmit mental signals, they can also send neural signals into another&rsquo;s body with alarming potency, even to the point of being able to briefly control another. A simple nickname for this effect is where the term &ldquo;regomecian&rdquo; came from. The prefix being a simple conjugation meaning to act, or &ldquo;go,&rdquo; as the result of another&rsquo;s action; to be reactionary. As the one who causes another to &ldquo;re-go,&rdquo; regomecians was considered fitting when the term was coined.</p><p>Regardless, this capability is part of the cultural heritage of regomecians, tending to be fairly encouraged in their circles&mdash;within reason. Even amongst other mecians where the mind is considered less secret, it's considered extremely bad form to control another without permission. Fear and misunderstanding causes many to keep their distance from regomecians, and so they are often forced to hide their talents in order to fit in.</p><p>Unfortunately, while non-psionic races are unlikely to determine a regomecian&rsquo;s heritage, other mecians can immediately identify a regomecian through psionic touch alone&mdash;so strong is the mental force surrounding them.</p><p>Physically, regomecians have slightly shorter tails than most mecians. A connection between missing tail bones and increased psychic potency is theorized, but unproven.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "portion": "branch",
+        "classDetails": "<p>Regomecian Traits</p><ul><li><strong>Attribute Increase: </strong>Your Presence increases by 1.</li><li><strong>Imposed Impulse:</strong> @Compendium[undertaking.abilities.TMFEJKD6VESCN6XL]{Imposed Impulse}</li></ul>"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "RI5EZE7T09OGJ0TK"
+}

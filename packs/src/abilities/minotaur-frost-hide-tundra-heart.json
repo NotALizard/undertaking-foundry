@@ -1,0 +1,25 @@
+{
+    "name": "Tundra Heart",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>Every part of your body is built for self-regulation, from hide to horn to hoof. So much so, that your fur is said to be somewhat magic resistant, and horns magic conductive. Regardless of magical inclination, this causes more physical magics to shirk off of frost-hides. <br />You have advantage on all Constitution (Save) Checks against magic.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "FTOHE443QKI6XBGG"
+}

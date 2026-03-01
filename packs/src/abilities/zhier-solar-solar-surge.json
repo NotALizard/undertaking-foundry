@@ -1,0 +1,25 @@
+{
+    "name": "Solar Surge",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>You have a number of surge charges equal to your proficiency bonus, and you regain all expended charges on a long rest. Each time you hit a target with an attack, you can spend a surge charge to make a natural weapon attack with your tail as a non-action. <br />You can choose to chain surge attacks together until you either miss or run out of charges to spend.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "SEVHM17XUDB3QKR1"
+}

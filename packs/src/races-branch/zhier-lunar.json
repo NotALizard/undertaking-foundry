@@ -1,0 +1,23 @@
+{
+    "name": "Lunar Zhier",
+    "type": "race",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p><strong>Compatibility: </strong>Bestial</p><p>Born with a connection to the moon, lunar zhier tend to have smoother, flatter, and more reflective fur with less of a mane. Their connection to the moon manifests in their mind, with a feeling of confidence and capability in the moonlight. As they grow, this connection grows, giving them access to powers and knowledge of those older than them. Lunar zhier are known for having a mature understanding of their place in the universe that other species and zhier usually take much longer to grasp.</p><p>The moon keeps watch over the night, inspiring reflection upon and rest from the events of the day before it. The lunar sign symbolizes vigil, thoughtfulness, and change.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "portion": "branch",
+        "classDetails": "<p>Lunar Zhier Traits</p><ul><li><strong>Attribute Increase: </strong>Your Wisdom increases by 1.</li><li><strong>Lunar Affinity:</strong> @Compendium[undertaking.abilities.UEBZ9LPMH9YWUEKM]{Lunar Affinity}</li><li><strong>Lunar Cycle:</strong> @Compendium[undertaking.abilities.6C0WDIXDL8N1AQSG]{Lunar Cycle}</li><li><strong>Nocturnal Light:</strong> @Compendium[undertaking.abilities.5JTXJQ589XY9XY1R]{Nocturnal Light}</li><li><strong>Transient Magic:</strong> @Compendium[undertaking.abilities.9YZ9MU6RHEEIME77]{Transient Magic}</li></ul>"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "E4B9FHB3LRI32VVA"
+}

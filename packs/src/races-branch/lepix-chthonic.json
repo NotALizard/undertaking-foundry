@@ -1,0 +1,23 @@
+{
+    "name": "Chthonic Lep'ix",
+    "type": "race",
+    "img": "icons/environment/creatures/bug-tick-red.webp",
+    "system": {
+        "description": {
+            "value": "<p><strong>Compatibility: </strong>Insectoid</p><p>Chthonic Lep&rsquo;ix have an affinity for the realms of gloom and turmoil. Their mystical gifts portend ruin and obscuration. Their wing patterns tend toward darker or less saturated tones, sometimes complemented by striking high-contrast elements. These may form the shapes of uncanny visages, chaotic intersecting geometry, or sinister eyes, to name a few. Despite their infernal influence, a chthonic lep&rsquo;ix&rsquo;s powers and wing patterns don&rsquo;t tend to draw from a devil or demon&rsquo;s powers. Rather, drawing upon infernal realms themselves instead.</p><p>Despite these infernal associations and a naturally more gothic appearance, chthonic lep&rsquo;ix are still lep&rsquo;ix by nature, and not necessarily any more or less devious. Hard to convince outsiders of that, however, with chthonic lep&rsquo;ix trending toward being out at night where their eyes glow red. Indeed, many people's first sighting of a chthonic lep&rsquo;ix tends to be a pair of faint red eyes in the dark. The superstitious consider this a bad portent or sign of danger&mdash;akin to having a black cat cross one&rsquo;s path. These stories come from some amount of truth: chthonics have exceptionally great darkvision and are often out at night. So if one meets a lep&rsquo;ix in the night, it likely knows something they don&rsquo;t. Whether the lep&rsquo;ix approaches with a warning or a threat, however, is another thing.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "portion": "branch",
+        "classDetails": "<h4>Chthonic Lep'ix Traits</h4><ul><li><strong>Attribute Increase:</strong> Your Dexterity and Presence both increase by 1.</li><li><strong>Baleful Resistance:</strong> You have resistance to necrotic damage.</li><li><strong>Language:</strong> You can speak, read, and write Infernal.</li><li><strong>Darkvision 60ft:</strong> @Compendium[undertaking.abilities.DY1RSHJ35NQJIMNJ]{Darkvision 60ft}</li><li><strong>Ominous Sight:</strong> @Compendium[undertaking.abilities.2QNO86INI4E4DGTV]{Ominous Sight}</li><li><strong>Cryptic Essence:</strong> @Compendium[undertaking.abilities.2M6GUTP8M5CJHMU5]{Cryptic Essence}</li><li><strong>Chthonic Magic:</strong> @Compendium[undertaking.abilities.7P62CC0I70VY0V2J]{Chthonic Magic}</li></ul>"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "YBDTRDD023A2IDS4"
+}

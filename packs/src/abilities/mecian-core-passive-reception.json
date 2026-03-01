@@ -1,0 +1,25 @@
+{
+    "name": "Passive Reception",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>To a mecian, minds are not private&mdash;not completely. They constantly generate signals that can be &ldquo;heard&rdquo; if paid attention to. In this way, mecian minds act like an active radio receiver, constantly receiving bits of garbled information and emotion from nearby minds. This mostly comes in the form of a constant white noise, and requires some level of focus to hone in on specific neurons. When a mecian is paying attention, however, one&rsquo;s feelings can be hard to hide. <br />You have proficiency on Wisdom (Insight) skill checks made against creatures within 60ft of you. <br />Gives no benefit against Constructs or Undead.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "core"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "NG6ZJR57CL9WRGV9"
+}

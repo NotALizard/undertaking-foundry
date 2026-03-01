@@ -1,0 +1,25 @@
+{
+    "name": "Mystic Movement",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>If you are able to move and haven&rsquo;t yet, you can spend your movement to instead do a hypnotizing dance or flourish for another creature within 60ft that can see you. That creature gains a bonus on their next check or attack roll equal to your Proficiency Bonus.<br />Alternatively, this dance can silently convey a meaning that could be described with 5 or fewer words, regardless of language barrier. <br />This ability can be used 3 times per long rest.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "JFC9GWTLDKMIWYI3"
+}

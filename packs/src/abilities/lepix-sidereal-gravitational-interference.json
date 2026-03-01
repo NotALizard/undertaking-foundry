@@ -1,0 +1,25 @@
+{
+    "name": "Gravitational Interference",
+    "type": "ability",
+    "img": "icons/environment/creatures/bug-tick-red.webp",
+    "system": {
+        "description": {
+            "value": "<p>You subconsciously exude a field of gravity-altering magic, causing any nearby creatures to feel slightly lighter or heavier based on your attitude towards them. When creatures within 15ft of you take falling damage, you can choose to either halve it or increase the damage total by 5.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "MSF5RJ7ZU7F16G1F"
+}

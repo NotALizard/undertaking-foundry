@@ -1,0 +1,25 @@
+{
+    "name": "Cryptic Essence",
+    "type": "ability",
+    "img": "icons/environment/creatures/bug-tick-red.webp",
+    "system": {
+        "description": {
+            "value": "<p>Your chthonic attunement has deviated your very essence from the norm. As a result, certain magicks struggle to identify you as a target. <br />You have advantage on save checks against spells that can only target humanoids.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "2M6GUTP8M5CJHMU5"
+}

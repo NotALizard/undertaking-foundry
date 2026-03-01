@@ -1,0 +1,25 @@
+{
+    "name": "Imposed Impulse",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>Once per long rest, as an action, you can touch a creature and force them to take a standard action. Cannot use on Constructs or Undead.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "TMFEJKD6VESCN6XL"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Elysian Magic",
+    "type": "ability",
+    "img": "icons/environment/creatures/bug-tick-red.webp",
+    "system": {
+        "description": {
+            "value": "<p>You know the @Compendium[undertaking.spells-cantrips.1UP8YL8Z33NMUI5P]{Minor Wonder} cantrip. When you reach 3rd level, you can cast the @Compendium[undertaking.spells-level-1.MRQUPL1D078DKFR2]{No Reproach} spell once per long rest with this trait. When you reach 5th level, you can cast the @Compendium[undertaking.spells-level-2.YCQC074MGCT6R2NY]{Ultimatum} spell once per long rest with this trait.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "LMZQYCB6DCLQ5XZL"
+}

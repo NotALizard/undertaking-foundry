@@ -1,0 +1,25 @@
+{
+    "name": "Unmistakable Presence",
+    "type": "ability",
+    "img": "icons/environment/creatures/bug-tick-red.webp",
+    "system": {
+        "description": {
+            "value": "<p>Choose one Presence skill (Deception, Intimidation, Perform, or Persuasion) to be the iconic expression of your presence. If you are proficient with the chosen skill, you gain Expertise with it. If you are not proficient with the skill you become proficient, and can increase this proficiency to Expertise at any point by gaining proficiency with the skill from another source.<br />Regardless, you suffer a -1 penalty to each of the other Presence skills you did not choose for this ability.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "26VHF3075B59HT0I"
+}

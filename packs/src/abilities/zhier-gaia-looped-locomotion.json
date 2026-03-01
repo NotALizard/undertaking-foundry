@@ -1,0 +1,25 @@
+{
+    "name": "Looped Locomotion",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>As a minor action, you can leap and curl into a loop so that you begin rolling on your armored spine. While you are in this wheel form, you gain a +1 bonus to your AC. The only actions you can take while in wheel form are the <strong>Dash</strong>, <strong>Disengage</strong>, <strong>Saving a Target</strong>, and <strong>Self-Defense</strong> actions, and you can leave wheel form as a minor action or by falling @Compendium[undertaking.conditions.RK3DF56CKMQUV6DM]{Prone}. If you start your turn in wheel form, your walking speed is increased by 10ft until the end of your turn.<br />While in wheel form, if you roll at least 15ft in a straight line immediately before ramming into a creature, they must make a Dexterity (Save) check versus 8 + your Strength (Athletics) bonus. On a failed save, the creature takes 1d6 bludgeoning damage per 15ft you traveled this turn before the collision (max 3d6) and you immediately exit your wheel form.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "YW7J3KWFP497JP5P"
+}

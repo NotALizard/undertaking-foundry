@@ -1,0 +1,25 @@
+{
+    "name": "Spirit Guide",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>You learn the spell @Compendium[undertaking.spells-level-1.TT94JMKOUYP2WM96]{Cojoin Familiar} and can cast it once per long rest without expending material components.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "RZSLDAG5NL15FBEM"
+}

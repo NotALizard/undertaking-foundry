@@ -1,0 +1,25 @@
+{
+    "name": "Bull in a Potion Shop",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>When you hit a creature your size or smaller with a natural weapon attack, you can push it 5ft away from you. If this movement is obstructed, increase the attack&rsquo;s damage die size by two steps.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "A3ZYWKJ6CPWV2VAL"
+}

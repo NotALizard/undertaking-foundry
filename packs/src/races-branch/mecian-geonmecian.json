@@ -1,0 +1,23 @@
+{
+    "name": "Geonmecian",
+    "type": "race",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p><strong>Compatibility: </strong>Bestial</p><p>&ldquo;Geon mecian&rdquo; quite literally means &ldquo;smart mecian,&rdquo; an apt term for mecians with a natural psionic talent. Geonmecians are considered great leaders and natural &lsquo;speakers,&rsquo; able to communicate and feel the feelings of others with little effort. As a result, geonmecians tend to be central members of mecian pods, or to succeed without one.</p><p>Their ability to convey and share emotion further helps them connect with those outside of their race, bridging the gap between their words and meaning.</p><p>In a world where they constantly catch glimpses of the unfiltered thoughts of those around them, and in a culture where the unsaid thoughts are as potent as those said, geonmecians are the most prepared to handle it all. With impressive mental fortitude, geonmecians often have an unshakeable confidence about the world around them. Within their own culture, success is all but guaranteed. Beyond that, they can rest easy in the knowledge that they are born with advantages that other races lack.</p><p>Geonmecians have the distinction of having much longer whiskers, thinner and more sensitive than those of their kin. They range between 1ft to 3ft long, and are just strong enough to stick out and wisp around, but not touch, the geonmecian&rsquo;s head when facing the wind or moving forward. A connection between longer whiskers and increased intelligence is an unproven wives tale. That doesn&rsquo;t stop mecians from aspiring to grow their whiskers longer as a result.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "portion": "branch",
+        "classDetails": "<p>Geonmecian Traits</p><ul><li><strong>Attribute Increase: </strong>Your Intelligence increases by 1.</li><li><strong>Psychic Resistance:</strong> You are resistant to psychic damage.</li><li><strong>Empathic:</strong> @Compendium[undertaking.abilities.Y19AYY7DSNR7VP8F]{Empathic}</li></ul>"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "H64N3EQ0YXGJ7X1J"
+}

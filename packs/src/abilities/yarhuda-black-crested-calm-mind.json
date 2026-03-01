@@ -1,0 +1,25 @@
+{
+    "name": "Calm Mind",
+    "type": "ability",
+    "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
+    "system": {
+        "description": {
+            "value": "<p>You have advantage on save checks to resist falling into a negative emotional state, such as those caused by @Compendium[undertaking.conditions.UK95BQ45TGSD5Q3V]{Frightened} or @Compendium[undertaking.conditions.Y822OUCDEPAG0HS8]{Frenzied}.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "WLAJ2YWVGZC2NL8Y"
+}

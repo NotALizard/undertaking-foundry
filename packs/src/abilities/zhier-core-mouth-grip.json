@@ -1,0 +1,25 @@
+{
+    "name": "Mouth Grip",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>You can use your mouth to grip or interact with something as if as a hand. For example, you can wield one-handed weapons in your mouth, handle an object or magic item, or open doors. However, complex items take twice as long to use, and Loading weapons now require a minor action to be reloaded at the end of your turn.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "core"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "2AAUZETAFQSEKV9M"
+}

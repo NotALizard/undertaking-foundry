@@ -1,0 +1,25 @@
+{
+    "name": "Light Mount",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>You can carry a single creature that is at least one size smaller than you on your back without reducing your movement speed. If this creature is wearing heavy armor, your movement speed is halved.<br />As long as the creature on your back is not encumbered, the weight of their body and equipment does not count against your carrying capacity. If they are encumbered, only the weight they are carrying in excess of their own carrying capacity is counted against yours. <br />Creatures can spend 5 feet of movement to get onto your back, so long as you are willing. Alternatively, you can spend a minor action to pull a willing creature that is at least one size smaller than you on or off of your back.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "core"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "T147SCK0L9JBNDJ4"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Bird of Prey",
+    "type": "ability",
+    "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
+    "system": {
+        "description": {
+            "value": "<p>You have long, sharp, curved talons on your hands and feet. These can be used as a natural weapon that deals 1d6 slashing damage.<br />When you succeed on a contested Grapple check against a creature, you may additionally deal the damage of your talon natural weapon, but as piercing damage instead.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "VHIDDMOZ69USKFHW"
+}

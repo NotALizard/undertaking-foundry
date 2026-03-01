@@ -1,0 +1,25 @@
+{
+    "name": "Lunar Cycle",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>Your connection to the moon shifts each night, changing in much the same way that the moon&rsquo;s visage does, but at a faster pace. This connection cycles between two phases; New Moon and Full Moon. These phases manifest visually as an uncanny specular sheen to your fur. While in Full Moon phase, your fur has a faint front-lighting regardless of the light source. Meanwhile, in New Moon phase, an underglow surrounds your face and body. <br />You start in the New Moon phase, and each long rest you swap to the phase you aren&rsquo;t currently in. Your other magical gifts as a lunar zhier are heavily influenced by which phase you are in when you use them.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "6C0WDIXDL8N1AQSG"
+}

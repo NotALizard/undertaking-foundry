@@ -1,0 +1,25 @@
+{
+    "name": "Sunbathe",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>Once per long rest, as a rest action, you can sunbathe in direct sunlight to soak up energy from the sun to regain expended @Compendium[undertaking.abilities.SEVHM17XUDB3QKR1]{Solar Surge} charges equal to half your proficiency bonus. In addition, your fur begins to glow, shedding 10ft of dim light until you expend your last @Compendium[undertaking.abilities.SEVHM17XUDB3QKR1]{Solar Surge} charge or get an hour into a long rest.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "NIR7W2U5N0DVWX8Z"
+}

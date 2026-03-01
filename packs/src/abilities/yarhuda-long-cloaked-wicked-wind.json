@@ -1,0 +1,25 @@
+{
+    "name": "Wicked Wind",
+    "type": "ability",
+    "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
+    "system": {
+        "description": {
+            "value": "<p>When you take the Attack action on your turn, you can replace one of your attacks with a swirl of your extended and sharpened neck feathers that lifts you 5ft in the air before immediately dropping back down. When you do this, each creature within a 5ft radius must make a Dexterity saving throw of DC = 8 + your Constitution modifier + your proficiency bonus. On a failed save, a creature takes 1d8 slashing damage. On a successful save, it takes half as much damage. <br />This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).<br />You can use Wicked Wind a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "AE4EGB6H1CSLN85E"
+}

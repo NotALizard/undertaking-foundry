@@ -1,0 +1,23 @@
+{
+    "name": "Frost-Hide Minotaur",
+    "type": "race",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p><strong>Compatibility: </strong>Bestial</p><p>With thick and shaggy fur camouflaged in whites and greys, frost-hide minotaurs are well adapted to life amidst snow and wind and ice. Beneath their coarse fur is an even thicker hide. Together, they trap heat extremely well and are exceptionally water retardant, running their blood hot even in the frigid cold. However their most effective body regulators are their horns. Often outward-facing, upturned crescents, frost-hide horns conduct heat in hotter weather, releasing excess into the air to keep their fur and hide from baking them from the inside out. Their hooves assist with this, relaxing muscles to let heat out of seams in their hooves when they grow too hot. Even with all of this, it&rsquo;s not uncommon for frost-hides to brush their fur in the mid-day sun in an attempt to let out excess heat and magical energies trapped between their fur and hide.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "portion": "branch",
+        "classDetails": "<p>Frost-Hide Minotaur Traits</p><ul><li><strong>Attribute Increase:</strong> Your Constitution score increases by 1.</li><li><strong>Cold Resistance:</strong> You have resistance to cold damage.</li><li><strong>Frost Walker:</strong> @Compendium[undertaking.abilities.PO72QLL7HDNVWOUP]{Frost Walker}</li><li><strong>Tundra Heart:</strong> @Compendium[undertaking.abilities.FTOHE443QKI6XBGG]{Tundra Heart}</li></ul><table><tbody><tr><td><p><strong>Alternate Heritage:</strong> Minotaur heritage can be present in various ways. If your core race does not already grant you Horns, you can choose to replace either the &ldquo;Cold Resistance&rdquo; or &ldquo;Tundra Heart&rdquo; racial traits with the @Compendium[undertaking.abilities.HF5TGW1UQJY6J1GK]{Lesser Horns} alternate heritage trait from the start of this section.</p></td></tr></tbody></table>"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "TG393M0WOPBA9YGC"
+}

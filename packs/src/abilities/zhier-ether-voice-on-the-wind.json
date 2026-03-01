@@ -1,0 +1,25 @@
+{
+    "name": "Voice on the Wind",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>You can project your voice to be heard and understood at twice the normal distance, and noise created by strong winds can never drown out the sound of your voice.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "9JN3KP9RXNJ1UWZJ"
+}

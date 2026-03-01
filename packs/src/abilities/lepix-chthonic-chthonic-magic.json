@@ -1,0 +1,25 @@
+{
+    "name": "Chthonic Magic",
+    "type": "ability",
+    "img": "icons/environment/creatures/bug-tick-red.webp",
+    "system": {
+        "description": {
+            "value": "<p>You know the @Compendium[undertaking.spells-cantrips.Q31B0A3FNPWP10MQ]{Prying Whispers} cantrip. When you reach 3rd level, you can cast the @Compendium[undertaking.spells-level-1.DR1S6TA7ZZHXVKVY]{Menacing Visage} spell once per long rest with this trait. When you reach 5th level, you can cast the @Compendium[undertaking.spells-level-2.A0XHQ6VS7PDGN9FJ]{Cloak} spell once per long rest with this trait.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "7P62CC0I70VY0V2J"
+}

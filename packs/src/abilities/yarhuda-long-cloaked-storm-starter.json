@@ -1,0 +1,25 @@
+{
+    "name": "Storm Starter",
+    "type": "ability",
+    "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
+    "system": {
+        "description": {
+            "value": "<p>At 5th level, you can cast the @Compendium[undertaking.spells-level-2.UEGGABQ79I8A8CG5]{Twister} spell adjacent to you once per long rest. When cast this way, you automatically succeed the twister Strength (Save) check unless you choose to fail it.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "RR6BVPL9LOV2HAXV"
+}

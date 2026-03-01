@@ -1,0 +1,25 @@
+{
+    "name": "Storm Acclimatized",
+    "type": "ability",
+    "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
+    "system": {
+        "description": {
+            "value": "<p>Your Feather Cloak is weatherproof, and your talons are gripped, allowing you to be able to ignore penalties from heavy rain.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "T3GAI02T73XXHXOT"
+}

@@ -10,7 +10,7 @@
     },
     "source": "Core Rules",
     "portion": "core",
-    "classDetails": "<p>Light Elf Traits</p><ul><li><b>Compatibility: </b>Hominoid</li><li><b>Attribute Increase: </b>Your Intelligence increases by 1.</li><li><b>Skill Proficiency: </b>You have proficiency in the Intelligence (Arcana) skill.</li><li><b>Fey Ancestry: </b>@Compendium[undertaking.abilities.B6D7U0WZJRIXIX5O]{Fey Ancestry}</li><li><b>Illuminary: </b>You can cast the spell @Compendium[undertaking.spells-cantrips.NTGJ71IJ1VDA3GS9]{Luminescence} as a cantrip without needing to use the verbal or somatic components.  You can only use this on yourself.</li><li><b>Cantrip: </b>You know one Cantrip of your choice from the wizard spell list.  You can use your Intelligence, Wisdom, or Presence as your spellcasting attribute for this spell.</li></ul>"
+    "classDetails": "<p>Light Elf Traits</p><ul><li><b>Compatibility: </b>Hominoid</li><li><b>Attribute Increase: </b>Your Intelligence increases by 1.</li><li><b>Skill Proficiency: </b>You have proficiency in the Intelligence (Arcana) skill.</li><li><b>Fey Ancestry: </b>@Compendium[undertaking.abilities.B6D7U0WZJRIXIX5O]{Fey Ancestry}</li><li><b>Illuminary: </b>You can cast the spell @Compendium[undertaking.spells-cantrips.NTGJ71IJ1VDA3GS9]{Luminescence} as a cantrip without needing to use the verbal or somatic components.</li><li><b>Cantrip: </b>You know one Cantrip of your choice from the wizard spell list.  You can use your Intelligence, Wisdom, or Presence as your spellcasting attribute for this spell.</li></ul>"
   },
   "effects": [],
   "folder": null,

@@ -1,0 +1,25 @@
+{
+    "name": "Spirit Casting Additional Trait (Cold)",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>Once per day, when you cast the @Compendium[undertaking.spells-cantrips.KH6D03TEJYZNA62N]{Cold Snap} cantrip, you can charge the spell as if you spent 1 extra mana in casting it.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "core"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "O27T8DMCLZPKT1W3"
+}

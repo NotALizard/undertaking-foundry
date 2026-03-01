@@ -1,0 +1,25 @@
+{
+    "name": "Empathic",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>You have an advanced capability to not just communicate and interpret thoughts, but also feelings. <br />You have advantage on Wisdom (Insight) checks against a creature whom you are touching, and are able to convey detailed emotions in a single touch. A willing creature can choose to send detailed emotions back as well. <br />Cannot use on Constructs or Undead.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "Y19AYY7DSNR7VP8F"
+}

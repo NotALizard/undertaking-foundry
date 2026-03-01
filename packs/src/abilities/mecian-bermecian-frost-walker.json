@@ -1,0 +1,25 @@
+{
+    "name": "Frost Walker",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>With military-level training, you are not slowed by non-magical rough terrain that results from ice, snow, or cold weather otherwise.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "J5VT5KLFB5OS0TQV"
+}

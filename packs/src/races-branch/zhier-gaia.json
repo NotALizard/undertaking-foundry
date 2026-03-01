@@ -1,0 +1,23 @@
+{
+    "name": "Gaia Zhier",
+    "type": "race",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p><strong>Compatibility: </strong>Bestial</p><p>Born with a connection to the earth, gaia zhier tend to have slightly sturdier-built bodies with keratin scales layered down their spine. With their natural control over themselves on land, they can curl into wheels and roll at high speeds without getting dizzy or losing track of where they&rsquo;re going.</p><p>The earth is the origin, home, and protector of the zhier. In many ways, zhier believe they owe gaia for its gists, and should protect it in return. The sign of gaia represents stability, growth, and physicality.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "portion": "branch",
+        "classDetails": "<p>Gaia Zhier Traits</p><ul><li><strong>Attribute Increase: </strong>Your Constitution increases by 1.</li><li><strong>Armored Spine:</strong> @Compendium[undertaking.abilities.7XEVJ8IGYPAM7913]{Armored Spine}</li><li><strong>Looped Locomotion:</strong> @Compendium[undertaking.abilities.YW7J3KWFP497JP5P]{Looped Locomotion}</li></ul>"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "V7WXGI4OHT3U4L14"
+}

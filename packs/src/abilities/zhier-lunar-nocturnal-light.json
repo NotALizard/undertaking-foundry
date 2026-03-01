@@ -1,0 +1,25 @@
+{
+    "name": "Nocturnal Light",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>You know the @Compendium[undertaking.spells-cantrips.NTGJ71IJ1VDA3GS9]{Luminescence} cantrip. The light you cast with this spell resembles moonlight, and its brightness is determined by your Lunar Cycle phase.<ul><li><strong>New Moon phase:</strong> Your @Compendium[undertaking.spells-cantrips.NTGJ71IJ1VDA3GS9]{Luminescence} cantrip only sheds 30 feet of dim light.</li><li><strong>Full Moon phase:</strong> Your @Compendium[undertaking.spells-cantrips.NTGJ71IJ1VDA3GS9]{Luminescence} cantrip only sheds 30 feet of bright light.</li></ul></p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "5JTXJQ589XY9XY1R"
+}

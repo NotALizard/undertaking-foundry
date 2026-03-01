@@ -1,0 +1,25 @@
+{
+    "name": "Flutter Fall",
+    "type": "ability",
+    "img": "icons/environment/creatures/bug-tick-red.webp",
+    "system": {
+        "description": {
+            "value": "<p>While conscious, you can flutter your wings to prevent yourself from taking falling damage. This does not apply while wearing heavy armor.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "core"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "G7NRS6CYBK7GV2WW"
+}

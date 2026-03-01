@@ -1,0 +1,25 @@
+{
+    "name": "Stamina Reserve",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>When you spend a rest die, you can increase its size by one step (to a maximum of 1d12) before rolling it. You can use this ability a number of times equal to your proficiency bonus, and can spend multiple uses on the same rest die. You regain all expended uses on a long rest.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "EKFZ9KVQTVVV81BU"
+}

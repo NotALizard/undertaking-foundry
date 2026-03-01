@@ -1,0 +1,25 @@
+{
+    "name": "Spirit Casting (Lightning)",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>You know the @Compendium[undertaking.spells-cantrips.0JWJ9J7A2AMSNDK0]{Jolt} cantrip. You can also cast the @Compendium[undertaking.spells-level-1.37VLMG8DVH1QVCYM]{Conduit Shock} spell once per long rest.&nbsp;</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "core"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "YNBPIYB4O41QRD6N"
+}

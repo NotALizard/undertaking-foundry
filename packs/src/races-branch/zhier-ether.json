@@ -1,0 +1,23 @@
+{
+    "name": "Ether Zhier",
+    "type": "race",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p><strong>Compatibility: </strong>Bestial</p><p>Born with a connection to the sky, ether zhier tend to have slightly longer and more airy fur and manes that flow when they move. Even on days when the winds are perfectly still, their thin, wispy fur seems to sway and dance in some unfelt breeze. It is said that ether zhier feel a kinship with the wind, and there are many who would trust it to carry their voice and even their very spirit across the land.</p><p>The sun and the moon and the earth are siblings of sorts. So the ether is that which flows between them, sharing within their orbits. The sign of ether represents connection, fluidity, and agility.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "portion": "branch",
+        "classDetails": "<p>Ether Zhier Traits</p><ul><li><strong>Attribute Increase: </strong>Your Dexterity increases by 1.</li><li><strong>Ethereal Jaunt:</strong> @Compendium[undertaking.abilities.OFPN9HTKWIHFGJII]{Ethereal Jaunt}</li><li><strong>Voice on the Wind:</strong> @Compendium[undertaking.abilities.9JN3KP9RXNJ1UWZJ]{Voice on the Wind}</li></ul>"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "D03C9V0KHOLVXBLN"
+}

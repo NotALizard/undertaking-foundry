@@ -1,0 +1,25 @@
+{
+    "name": "Transient Magic",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>At 5th level, your connection to the moon grows stronger, allowing you to draw upon a selection of powerful spells determined by your Lunar Cycle phase. You regain the ability to use this trait when you finish a long rest.<ul><li><strong>New Moon phase:</strong> You can cast either the @Compendium[undertaking.spells-level-3.Z373UKDNQ9VFAMQD]{Syzygy} or @Compendium[undertaking.spells-level-3.XD6W9NSEKZ48HGCD]{Dispel Magic} spell once with this trait.</li><li><strong>Full Moon phase:</strong> You can cast either the @Compendium[undertaking.spells-level-3.6GFN59MWTZPMBQ61]{Haste} or @Compendium[undertaking.spells-level-3.FOW5GSST2ZXRMKJ4]{Illusory Creature} spell once with this trait.</li></ul></p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "9YZ9MU6RHEEIME77"
+}

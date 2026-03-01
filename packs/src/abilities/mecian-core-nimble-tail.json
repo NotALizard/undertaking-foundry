@@ -1,0 +1,25 @@
+{
+    "name": "Nimble Tail",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>You have a thin, pink, tapered tail like that of a rat or mouse. This tail is dextrous, and able to carry and manipulate small objects and light weapons like a third hand. However, it is not dextrous enough to grant additional attacks, actions, or minor actions. <br />Shields held by this tail do not improve your Armor Class as it is not strong enough to resist any blows against the shield.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "core"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "0YU2TJMLJPZVTTPR"
+}

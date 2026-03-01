@@ -1,0 +1,25 @@
+{
+    "name": "Spirit Casting (Poison)",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>You know the @Compendium[undertaking.spells-cantrips.MB7NWQ5H11LSIVV7]{Caustic Needle} cantrip, dealing poison damage instead of acid when cast in this way. At 3rd level, you can cast the @Compendium[undertaking.spells-level-2.IGNXR8HBQZS1JVCY]{Ophidian Kiss}<em></em> spell once per long rest.&nbsp;</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "core"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "15AYWYZJLABDJ09Z"
+}

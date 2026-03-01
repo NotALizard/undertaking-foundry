@@ -1,0 +1,25 @@
+{
+    "name": "Spirit Casting (Cold)",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>You know the @Compendium[undertaking.spells-cantrips.KH6D03TEJYZNA62N]{Cold Snap} cantrip. At 5th level, you can cast the @Compendium[undertaking.spells-level-3.IJWDFSYAAI44S9JD]{Frigid Barrage} spell once per long rest.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "core"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "J5UHXN59MY3NP3VV"
+}

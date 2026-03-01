@@ -1,0 +1,25 @@
+{
+    "name": "Corpse Casting",
+    "type": "ability",
+    "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
+    "system": {
+        "description": {
+            "value": "<p>You can cast the @Compendium[undertaking.spells-cantrips.44UXH5FVH6EK2UI9]{Disuse Atrophy} cantrip at will. At 3rd level, you can cast the @Compendium[undertaking.spells-level-1.V4RW5MFB4N243CDA]{Open Wounds} spell once per long rest. At 5th level, you can cast the @Compendium[undertaking.spells-level-2.DS8BAOY19DVGW5SH]{Stupefy} spell once per long rest.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "DSGZMV7CBP9IKHPD"
+}

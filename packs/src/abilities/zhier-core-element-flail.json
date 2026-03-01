@@ -1,0 +1,25 @@
+{
+    "name": "Element Flail",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>Of all parts of a Zhier, the tail is the point most connected to its spirit element. You can swing your tail like a natural weapon flail. This weapon has both the Light and Finesse properties, and deals 1d4 damage of the damage type associated with your Spirit Element.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "core"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "3QPFSY40NDIM3XL9"
+}

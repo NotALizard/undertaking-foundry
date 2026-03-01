@@ -1,0 +1,23 @@
+{
+    "name": "Valley-Hoof Minotaur",
+    "type": "race",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p><strong>Compatibility: </strong>Bestial</p><p>When folks describe minotaurs, they often think first of their bull-like features, their formidable, almost top-heavy stature, and their horn. Valley-Hoof minotaurs are often what people envision. Found most often amid rolling hills and fertile valleys, valley-hooves are the most bovine of their kind, with large-nosed snouts on large heads, long horns, bent backs, and skin-tight pelts. Their stout build makes tough work like mining, hauling, and smithing look easy, and the abundance these boons bring make for a hale constitution. Their hooves are the toughest to crack and are uniquely flat, garnering them the misnomer &ldquo;flat-hoof&rdquo; minotaurs. This lets them distribute their weight across a larger area and across more lifting muscles, giving them more of a grip, even on mud.</p><p>Adding to the bovine comparisons, valley-hooves are generally thought of as docile minotaurs. Devious types sometimes mistake valley-hooves for pushovers and easy targets&mdash;a misconception short-lived after realizing a valley-hoof minotaur&rsquo;s reaction to provocation is as fearsome as any other.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "portion": "branch",
+        "classDetails": "<p>Valley-Hoof Minotaur Traits</p><ul><li><strong>Attribute Increase:</strong> Your Constitution score increases by 1.</li><li><strong>Increased Move Speed: </strong>Your movement speed is increased by +5ft.</li><li><strong>Runner&rsquo;s High:</strong> @Compendium[undertaking.abilities.0FT24V5W1898J73O]{Runners High}</li><li><strong>Stamina Reserve:</strong> @Compendium[undertaking.abilities.EKFZ9KVQTVVV81BU]{Stamina Reserve}</li></ul><table><tbody><tr><td><p><strong>Alternate Heritage: </strong>Minotaur heritage can be present in various ways. If your core race does not already grant you Horns, you can choose to replace either the &ldquo;Mighty Physique&rdquo; racial trait with the @Compendium[undertaking.abilities.HF5TGW1UQJY6J1GK]{Lesser Horns} alternate heritage trait from the start of this section.</p></td></tr></tbody></table>"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "UXQ9A2A606TN9K5V"
+}

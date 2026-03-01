@@ -1,0 +1,23 @@
+{
+    "name": "Wild-Blood Minotaur",
+    "type": "race",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p><strong>Compatibility: </strong>Bestial</p><p>Wild-Blood minotaurs share a kinship with the more primeval and remote stretches of the wilderness. They sport shorter horns and longer fur than most of their kin, sometimes with especially deep hunching, giving off a more ragged or natural look.</p><p>The wild-blood&rsquo;s tie to the natural energies of the world is rather unique, often seen with a lesser natural spirit in animal form at their side. While wild-bloods are able to conjure various animal forms, it is said that wild-bloods are soul-bound to the first spirit they ever conjure. This &lsquo;spirit guide&rsquo; is said to look over them through life and beyond from birth, and the summoning is just giving them a form. In fact, this initial animal form is said to become the easiest for the wild-blood to conjure from then on. Forming any other shape is thought to only re-shape their spirit guardian rather than call another. The cause of this connection is unknown, but being that wild-blood is generally hereditary unlike other minotaur branches, it&rsquo;s thought that these &lsquo;spirit guides&rsquo; may be the result of a bloodline blessing or are ancestral spirits looking after their kin.</p><p>Some wild-bloods also swear that they can understand their familiar, advising them either literally or indirectly. Perhaps a voice in the wind on their familiar&rsquo;s fur, or a tilt of the head that carries more meaning than it should, or even literal speech. In any case, it&rsquo;s often a source of reassurance and comfort for a wild-blood. It&rsquo;s for this reason that wild-bloods are thought to be wiser and more self-assured than their kin. Some wild-bloods are said to use their spirit guide&rsquo;s reassurances as an echo chamber that leads them to overconfidence and recklessness, others can&rsquo;t interpret their spirit at all, relying on their own instincts instead.</p><p>Regardless of the origin, wild-blood minotaur are most often connected and drawn to lush environments; forests, jungles, lakes, and marshes, for example.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "portion": "branch",
+        "classDetails": "<p>Wild-Blood Minotaur Traits</p><ul><li><strong>Attribute Increase:</strong> Your Wisdom score increases by 1.</li><li><strong>Spirit Guide:</strong> @Compendium[undertaking.abilities.RZSLDAG5NL15FBEM]{Spirit Guide}</li><li><strong>Spirit Guidance:</strong> @Compendium[undertaking.abilities.1THSTBQHCP5YUGKL]{Spirit Guidance}</li></ul><table><tbody><tr><td><p><strong>Alternate Heritage:</strong> Minotaur heritage can be present in various ways. If your core race does not already grant you Horns, you can choose to replace either the &ldquo;Spirit Guidance&rdquo; racial trait with the @Compendium[undertaking.abilities.HF5TGW1UQJY6J1GK]{Lesser Horns} alternate heritage trait from the start of this section.</p></td></tr></tbody></table>"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "3GAYY3A02QKOISF1"
+}

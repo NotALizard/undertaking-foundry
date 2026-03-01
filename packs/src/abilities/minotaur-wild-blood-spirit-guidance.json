@@ -1,0 +1,25 @@
+{
+    "name": "Spirit Guidance",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>In moments of hesitation, you can draw upon the bond you have with your familiar, leaning on their instincts to pull you through. Before making a Wisdom check, you can choose to add your proficiency bonus to the roll&rsquo;s total, so long as you can see your conjoined familiar. You can use this ability once per rest.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "1THSTBQHCP5YUGKL"
+}

@@ -1,0 +1,23 @@
+{
+    "name": "Solar Zhier",
+    "type": "race",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p><strong>Compatibility: </strong>Bestial</p><p>Born with a connection to the sun, solar zhier tend to abound with energy. They often have brighter fur colors with larger tail tufts that more visibly spark with their birth element, should they have one. As they enter the fray of combat, striking an opponent, they seem to gain a burst of energy or adrenaline, spinning around for more strikes with shining speed.</p><p>The sun brings meaning, filling the days with happiness, and a trust that tomorrow will always come. The solar sign is warmth, energy, and emotion.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "portion": "branch",
+        "classDetails": "<p>Solar Zhier Traits</p><ul><li><strong>Attribute Increase: </strong>Your Dexterity increases by 1.</li><li><strong>Resplendent Flail:</strong> @Compendium[undertaking.abilities.5I4QJNLLGII5HT53]{Resplendent Flail}</li><li><strong>Solar Surge:</strong> @Compendium[undertaking.abilities.SEVHM17XUDB3QKR1]{Solar Surge}</li><li><strong>Sunbathe:</strong> @Compendium[undertaking.abilities.NIR7W2U5N0DVWX8Z]{Sunbathe}</li></ul>"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "UNKGD2I2DPBYCIXC"
+}

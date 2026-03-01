@@ -1,0 +1,23 @@
+{
+    "name": "Str&amacr;mecian",
+    "type": "race",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p><strong>Compatibility: </strong>Bestial</p><p>Str&amacr;mecians have built up particular dexterity in their tails, becoming able to use them in ways more numerous than most. This skill makes them expert multitaskers, though is culturally associated with shadier activities.</p><p>While it is possible to be born with a more flexible tail that trends one toward becoming a str&amacr;mecian, this trait is not genetic. It is, however, a skill that can be lost if not trained at a young age. It is also a skill often lost by str&amacr;mecians who go into service, where their more unique attributes get pushed down and normalized as part of training to be a berm. No wonder it&rsquo;s said that no str&amacr;mecian survives the army.</p><p>Adult mecians with such capabilities, regardless of their origins, are often called &ldquo;str&amacr;mecians,&rdquo; an insult that may be translated literally to &ldquo;street rat,&rdquo; referring to a common stereotype. However, using more cultural context, it translates closer to &ldquo;draft dodger,&rdquo; or simply &ldquo;space waster.&rdquo; Despite its nastier origins, the term stuck and is now casually used to refer more broadly to any mecian who breaks the mold, even as a compliment. <br />Despite a more controversial history in military roles, some str&amacr;mecians are hired or trained as specialists for their capabilities, even as assassins.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "portion": "branch",
+        "classDetails": "<p>Str&amacr;mecian Traits</p><ul><li><strong>Attribute Increase: </strong>Your Dexterity increases by 1.</li><li><strong>Skill Proficiency:</strong> You have proficiency in Dexterity (Sleight of Hand).</li><li><strong>Tail Requirement:</strong> If you do not have the @Compendium[undertaking.abilities.0YU2TJMLJPZVTTPR]{Nimble Tail} trait from your Core Race, then gain that trait now. <br />In exchange, reduce your Strength attribute by 1.</li><li><strong>Tri-Wield:</strong> @Compendium[undertaking.abilities.WRPRF15WQAE8RENU]{Tri-Wield}</li></ul>"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "J9M67XIGBS2MIP9U"
+}

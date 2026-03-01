@@ -1,0 +1,25 @@
+{
+    "name": "Spirit Casting (Fire)",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>You know the @Compendium[undertaking.spells-cantrips.58I1UTE8ZV4CJ5W6]{Adherent Embers} cantrip. The embers created by the spell float near your tail until used. At 5th level, you can cast the @Compendium[undertaking.spells-level-3.7UWC00HNXCOL4GFI]{Fireball} spell once per long rest.&nbsp;</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "core"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "OCP4C1AL9OIF3NRK"
+}

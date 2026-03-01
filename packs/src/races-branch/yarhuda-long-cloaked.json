@@ -1,0 +1,23 @@
+{
+    "name": "Long-Cloaked Yarhuda",
+    "type": "race",
+    "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
+    "system": {
+        "description": {
+            "value": "<p><strong>Compatibility: </strong>Avian</p><p>Yarhuda feathers, even their flight feathers, can vary in length depending on genetics. Long-Cloaked Yarhuda have naturally much longer plume feathers that hang down to their ankles while standing. Due to the weight and size of their feathers, extended flight is tougher and more unwieldy for these yarhuda. Instead, most long-cloaked yarhuda have spent time refining their control over their feathers, using them as weapons as well as producing blustering twisters that can serve to give them or others a lift.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "portion": "branch",
+        "classDetails": "<p>Long-Cloaked Yarhuda Traits</p><ul><li><strong>Attribute Increase: </strong>Your Dexterity increases by 1.</li><li><strong>Feather Cloak:</strong> @Compendium[undertaking.abilities.K209GDHAKHLWD2ZO]{Feather Cloak}</li><li><strong>Storm Acclimatized:</strong> @Compendium[undertaking.abilities.T3GAI02T73XXHXOT]{Storm Acclimatized}</li><li><strong>Flying Traits:</strong> If your core race has a flying speed, you have the following racial traits:</li><ul><li><strong>Additional Attribute Increase:</strong> Your Dexterity increases by 1.</li><li><strong>Short-Distance Flier:</strong> @Compendium[undertaking.abilities.5Q2XHBBE46MGKS0R]{Short-Distance Flier}</li></ul><li><strong>Grounded Traits:</strong> If your core race doesn&rsquo;t have a flying speed, you have the following racial traits:<ul><li><strong>Reduced Move Speed: </strong>Your ground speed defined by your core race is reduced by 5 feet.</li><li><strong>Force Vulnerability:</strong> You are vulnerable to force damage.</li><li><strong>Feathered Furore:</strong> @Compendium[undertaking.abilities.MWI5F41P3AGMTOBP]{Feathered Furore}</li></ul></li><li><strong>Wicked Wind:</strong> @Compendium[undertaking.abilities.AE4EGB6H1CSLN85E]{Wicked Wind}</li><li><strong>Storm Starter:</strong> @Compendium[undertaking.abilities.RR6BVPL9LOV2HAXV]{Storm Starter}</li></ul>"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "3S3LUN8PSB0H1EJY"
+}

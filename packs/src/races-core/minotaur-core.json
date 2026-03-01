@@ -1,0 +1,23 @@
+{
+    "name": "Core Minotaur",
+    "type": "race",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p><strong>Compatibility: </strong>Bestial</p><p>Minotaurs are bipedal beings reminiscent of humans, but with a head resembling a bull&rsquo;s, hooved feet (usually white, black, or a blend), and a full or partial covering of short, bovine fur. Minotaur fur generally comes in shades of brown, black, white, or a mixture of those colors. Generally a solid color, minotaurs are sometimes born with larger splotches of color or smaller sets of freckles. Skin colors can vary as much as humans, but feature a wider spectrum of reds and browns.</p><p>Regardless of sex, the head of a minotaur is adorned with a formidable pair of solid, bull-like horns, often built of stronger stuff than even their bones. In minotaur culture, it&rsquo;s said that the horns are the most important part of the body, and much can be gleaned from the handling of one&rsquo;s horns. Not to be overstated, minotaur culture puts much stock into preserving their horns. To many, it&rsquo;s their history worn bare, every scrape or nick has a story to tell, and plays a part in minotaur socializing and cultural pride.</p><p>Minotaur bodies tend to be built larger than humans, with the average minotaur sharing a height with some of the tallest and largest humans. Be it for muscle or fat, it&rsquo;s not uncommon for minotaurs to find other races scrawny or unhealthy looking in comparison.</p><p>Minotaur society is that of adaptability. Minotaurs are all born of the same stock, but grow rapidly in their adolescence, evolving to meet the challenges natural to their environment. It&rsquo;s said that minotaur strength meets their match in nature, and many minotaur groups choose to face that challenge head on.</p><p>The result of all this is one of the more formidablely resilient races, to such an extent some wonder if minotaurs may have been created through magical means. While not shared by all of their kind, to many minotaurs, it hardly matters. The truth is what&rsquo;s before them and what&rsquo;s in their reach. The future is unknown, but the present makes a past worth wearing with pride.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "portion": "core",
+        "classDetails": "<p>Core Minotaur Traits</p><ul><li><strong>Attribute Increase:</strong> Your Strength and Constitution scores both increase by 1.</li><li><strong>Lifespan:</strong> Minotaurs reach adulthood in their mid-teens and few live past 80 years of age.&nbsp;</li><li><strong>Size:</strong> Medium; Minotaur height generally ranges from 5&frac12; to 7 feet tall, and their weight ranges from below 150 lb. to 275 lb. or more.</li><li><strong>Speed:</strong> Your base walking speed is 30 feet.</li><li><strong>Languages: </strong>You can speak, read, and write Common and Landspeak.</li><li><strong>Horns:</strong> @Compendium[undertaking.abilities.8PHJHUPTCSNNWE71]{Horns}</li><li><strong>Bull Rush:</strong> @Compendium[undertaking.abilities.FSYAETXYEA3YJSPS]{Bull Rush}</li><li><strong>Trailblazer:</strong> @Compendium[undertaking.abilities.K44RS5GZ07MOGUI1]{Trailblazer}</li></ul>"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "1E5LPEA0RDN5EZIX"
+}

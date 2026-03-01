@@ -1,0 +1,25 @@
+{
+    "name": "Heavy Hitter",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>When you make a Strength-based attack with a weapon or improvised weapon, the weapon&rsquo;s damage die is increased by one step.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "27PZP21ZBZM74HM9"
+}

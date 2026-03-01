@@ -1,0 +1,23 @@
+{
+    "name": "Bermecian",
+    "type": "race",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p><strong>Compatibility: </strong>Bestial</p><p>In many mecian cultures, military services is highly encouraged. In fact, these &ldquo;berm mecians&rdquo; are the most common mecian&mdash;berm standing for the simplest, and thus most reliable, form of something.</p><p>Traditionally, mecians are considered berm once they serve time protecting their people, or otherwise go through some form of formal combat training. Their skills are typically focused on the physical, and any standout birth talents, such as a geon or rego mecian&rsquo;s stronger telepathic capabilities, are lost due to lack of use or from being trained out of them.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "portion": "branch",
+        "classDetails": "<p>Bermecian Traits</p><ul><li><strong>Attribute Increase: </strong>Your Dexterity increases by 1.</li><li><strong>Increased Move Speed: </strong>Your movement speed is increased by +5ft.</li><li><strong>Weapon Proficiency:</strong> You have proficiency in either:<ul><li>Spears and all crossbows.</li><li>Two simple weapons of your choice.</li></ul></li><li><strong>Armor Proficiency: </strong>You have proficiency in Light Armor.</li><li><strong>Frost Walker:</strong> @Compendium[undertaking.abilities.J5VT5KLFB5OS0TQV]{Frost Walker}</li></ul>"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "U68CCQK54DD5A7QK"
+}

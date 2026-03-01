@@ -1,0 +1,23 @@
+{
+    "name": "Mason-Mind Minotaur",
+    "type": "race",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p><strong>Compatibility: </strong>Bestial</p><p>Many gatherings of minotaurs lean rural, often nomadic or transhumant. Some of the oldest minotaur cultures, however, are more closed off and urban. Mason-Mind Minotaurs, unlike most minotaurs, have grown up in particularly urban or underground environments. These minotaurs tend to feel much more at home amidst the rigidly confining walls, corridors, and streets of a city, or tangled tunnels of caverns, than their nomadic kin.</p><p>While all minotaurs are born with a strong sense of direction, formative years spent navigating the various interconnecting interiors and exteriors that make up an urban sprawl or subterrain have honed an uncanny spatial sense.</p><p>In larger settlements where minotaurs, and thus mason-minds, make up a significant portion of the population, the spatial reasoning they bring to the table tends to have an emergent effect on the culture and even layout of their community. As the settlement grows and develops, it often becomes painfully obvious to resident mason-minds where shortcuts and more efficient routes could be created with minimal changes to foundation. Those who pick up masonry as either a profession or pastime, often find themselves in charge of their local infrastructure before long. Even those less inclined to stonework often find a use for their robust mental maps. Deliveries in settlements run by mason-minds are said to run like clockwork, and they are often sought after as couriers in cities abroad.</p><p>As changes are made to the layout of the city to facilitate new routes, older streets and passages become less used and are eventually bricked off so that their space can be reclaimed and used to expand the adjoining buildings. For this reason, cities where mason-mind minotaurs congregate tend to develop their own techniques around masonry and architecture that allow for quick construction and selective demolition without compromising on the stability of the structure. To outsiders who only occasionally visit these cities, however, the experience can be an uncanny one as the walls and streets seem to shift every visit. While for many minotaurs this ruthless pursuit of architectural iteration is a point of pride, it may also contribute to the stigma some hold which paints minotaurs as being obsessed with building mazes to some strange and unknown end.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "portion": "branch",
+        "classDetails": "<p>Mason-Mind Minotaur Traits</p><ul><li><strong>Attribute Increase:</strong> Your Intelligence score increases by 1.</li><li><strong>Trade Proficiency: </strong>You have proficiency in the Building or Pathfinding Trade.</li><li><strong>Architectural Intuition:</strong> @Compendium[undertaking.abilities.7IE9OGRPT50ZUUAY]{Architectural Intuition}</li><li><strong>Spatial Reconstruction:</strong> @Compendium[undertaking.abilities.76S5EYBF31K9S9L4]{Spatial Reconstruction}</li><li><strong>Bull in a Potion Shop:</strong> @Compendium[undertaking.abilities.A3ZYWKJ6CPWV2VAL]{Bull in a Potion Shop}</li></ul><table><tbody><tr><td><p><strong>Alternate Heritage:</strong> Minotaur heritage can be present in various ways. If your core race does not already grant you Horns, you can choose to replace one of the &ldquo;Trade Proficiency\", \"Architectural Intuition&rdquo;, or &ldquo;Bull in a Potion Shop\" racial trait with the @Compendium[undertaking.abilities.HF5TGW1UQJY6J1GK]{Lesser Horns} alternate heritage trait from the start of this section.</p></td></tr></tbody></table>"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "VP2L0XDAYX49H9FO"
+}

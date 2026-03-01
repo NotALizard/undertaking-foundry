@@ -1,0 +1,25 @@
+{
+    "name": "Feather Dart",
+    "type": "ability",
+    "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
+    "system": {
+        "description": {
+            "value": "<p>You grow 10 sharpened feather darts growing in your plume. As a minor action, you can pluck up to three of these, taking 1 hit point of damage for each. Each plucked feather is equivalent to the Dart weapon, but breaks after a single use.<br />Upon completing a long rest, any plucked feather darts grow back.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "WHIWHF415AFOHZO3"
+}

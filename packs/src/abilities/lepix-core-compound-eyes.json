@@ -1,0 +1,25 @@
+{
+    "name": "Compound Eyes",
+    "type": "ability",
+    "img": "icons/environment/creatures/bug-tick-red.webp",
+    "system": {
+        "description": {
+            "value": "<p>You have large, rounded, compound eyes. These cannot be closed; you have no eyelids. While unconscious, you retain vision, but have half Awareness.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "core"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "TW3Q20EW6IL08P3K"
+}

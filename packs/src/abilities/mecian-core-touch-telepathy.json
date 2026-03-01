@@ -1,0 +1,25 @@
+{
+    "name": "Touch Telepathy",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>Mecians create a mental circuit when they touch another creature, allowing the sharing of knowledge and emotions without a single spoken word. <br />You can telepathically communicate with another creature so long as you are touching them and share a known language.<br />Cannot be used to communicate with Constructs or Undead.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "core"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "N6TTMSUFM57X8K16"
+}

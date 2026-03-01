@@ -1,0 +1,25 @@
+{
+    "name": "Spirit Casting Additional Trait (Lightning)",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>At 3rd level, once per day, when you cast the @Compendium[undertaking.spells-level-1.37VLMG8DVH1QVCYM]{Conduit Shock} spell, you can charge the spell as if you spent 1 extra mana in casting it.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "core"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "6HMQFQZ7A29OJEGP"
+}

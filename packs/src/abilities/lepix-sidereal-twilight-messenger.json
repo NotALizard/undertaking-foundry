@@ -1,0 +1,25 @@
+{
+    "name": "Twilight Messenger",
+    "type": "ability",
+    "img": "icons/environment/creatures/bug-tick-red.webp",
+    "system": {
+        "description": {
+            "value": "<p>You know the @Compendium[undertaking.spells-level-1.OK48R80X6F22TZ7D]{Magic Missive} spell, and can cast it as a ritual. When you cast the spell, the missive folds into the shape of a moth while in flight.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "BW9HAR7W7YO0Z9PH"
+}

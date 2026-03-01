@@ -1,0 +1,23 @@
+{
+    "name": "Mountain-Horn Minotaur",
+    "type": "race",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p><strong>Compatibility: </strong>Bestial</p><p>Mountain-Horn minotaurs tend to thrive in some of the most rugged environments in the world. Steep terrain has honed their strength, and their horns have become fortified through contests with the local predators, giving these minotaurs their iconic name. They often feature powerful, spiked hooves and thick, ridged, curved horns. Their fur color varies but tends to be coarse, sometimes sun-bleached. Perhaps most distinct is the mountain-horn&rsquo;s bulk, especially on their upper halves. Built for climbing, with coarse and spined hooves and strong finger muscles, even weaker mountain-horns can lift their own weight up cliff faces with ease. This tends to carry to other feats of strength as well. Minotaur are sometimes called gentle giants, but those who say it haven&rsquo;t met an angered mountain-horn. As if the horns weren&rsquo;t enough, in the right, powerful hands, anything can be a weapon.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "portion": "branch",
+        "classDetails": "<p>Mountain-Horn Minotaur Traits</p><ul><li><strong>Attribute Increase:</strong> Your Strength score increases by 1.</li><li><strong>Climb Speed:</strong> With a strong grip and spined hooves, you find climbing and lifting your body surprisingly easy. <br />Your climbing speed is 30ft.</li><li><strong>Heavy Hitter:</strong> @Compendium[undertaking.abilities.27PZP21ZBZM74HM9]{Heavy Hitter}</li></ul><table><tbody><tr><td><p><strong>Alternate Heritage:</strong> Minotaur heritage can be present in various ways. If your core race does not already grant you Horns, you can choose to replace either the &ldquo;Climb Speed&rdquo; racial trait with the @Compendium[undertaking.abilities.HF5TGW1UQJY6J1GK]{Lesser Horns} alternate heritage trait from the start of this section.</p></td></tr></tbody></table>"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "IM2OH22HF9MUJRHV"
+}

@@ -1,0 +1,23 @@
+{
+    "name": "Sidereal Lep'ix",
+    "type": "race",
+    "img": "icons/environment/creatures/bug-tick-red.webp",
+    "system": {
+        "description": {
+            "value": "<p><strong>Compatibility: </strong>Insectoid</p><p>Sidereal Lep&rsquo;ix have an affinity for the realm of stars and the celestial bodies that live there. Their mystical gifts are reminiscent of the grandeur of a starlit night and the pull of planets and moons as they dance above us. Wing patterns draw from the stars themselves, and may include features such as glittering constellations, colorful nebulas, representations of the sun or moon, or concentric and intersecting ellipses, to name a few. Their shifting wing patterns may even convey a slight glittering to onlookers.</p><p>Other lep&rsquo;ix are connected to long-proven sources of power&mdash;the infernal, tied to devils and demons, and the divine, tied to the celestials. Sidereal Lep&rsquo;ix, however, have a connection to that which was once thought to be indistinct from the divine, or else a stop-gap on the way to it that sourced only aberrations. The implications of sidereal lep&rsquo;ix continue to shake the magical world, implying further untapped and unknown powers beyond that of which are well established. This is also where some theorize lep&rsquo;ix are not originally from this world. The realm of stars is not well understood. The idea that fire lights the skies between distant rocks is not a well-known viewpoint, but by all accounts, sidereal lep&rsquo;ix are the origins of this rumor. Something within sidereals gives them an uncanny sense for the heavens; different parts, but often corroborated by others of their kind. Other lep&rsquo;ix don&rsquo;t have such a sense for it, but sidereals are said to be able to feel the space between stars in motion and are able to let it influence the world around them in a way that doesn&rsquo;t quite feel like traditional magic to a wizard.</p><p>Sidereal Lep&rsquo;ix are often seen as strange within their kind, less communicative in words as they are in feelings. Even in areas or societies that tend to create lep&rsquo;ix of a single type, sidereal lep&rsquo;ix are the most common unexpected magical bonding to have. These lep&rsquo;ix often get put in more magical or clerical work rather than social ones. Perhaps because of their outsider nature, sidereals tend to get along well with other races, lacking much of the intimidation factor of either other lep&rsquo;ix branches.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "portion": "branch",
+        "classDetails": "<h4>Sidereal Lep'ix Traits</h4><ul><li><strong>Attribute Increase:</strong> Your Intelligence and Wisdom both increase by 1.</li><li><strong>Language:</strong> You can speak, read, and write Farspeak.</li><li><strong>Inner Orrery:</strong> @Compendium[undertaking.abilities.TYJ1AYF7FU092BN0]{Inner Orrery}</li><li><strong>Twilight Messenger:</strong> @Compendium[undertaking.abilities.BW9HAR7W7YO0Z9PH]{Twilight Messenger}</li><li><strong>Sidereal Magic:</strong> @Compendium[undertaking.abilities.56ALYGLX05DJKFVC]{Sidereal Magic}</li><li><strong>Gravitational Interference:</strong> @Compendium[undertaking.abilities.MSF5RJ7ZU7F16G1F]{Gravitational Interference}</li></ul>"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "VHOSNZMN9WS2D4PJ"
+}

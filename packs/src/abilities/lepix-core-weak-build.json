@@ -1,0 +1,25 @@
+{
+    "name": "Weak Build",
+    "type": "ability",
+    "img": "icons/environment/creatures/bug-tick-red.webp",
+    "system": {
+        "description": {
+            "value": "<p>Your carrying capacity is reduced to \u00e2\u2026\u201d the normal amount, and you cannot grapple, trip, or shove creatures larger than you.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "core"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "9LRGBCE9H4Z9YXF9"
+}

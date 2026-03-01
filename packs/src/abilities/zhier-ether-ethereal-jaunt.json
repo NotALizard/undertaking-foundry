@@ -1,0 +1,25 @@
+{
+    "name": "Ethereal Jaunt",
+    "type": "ability",
+    "img": "icons/creatures/abilities/paw-print-tan.webp",
+    "system": {
+        "description": {
+            "value": "<p>As an action, you can briefly transform yourself and up to one willing creature you are carrying into an ethereal form made of strong winds and vapors that travel along the ground. You immediately escape all physical restraints, and can remain intangible until the end of your turn. While you are in this form, your movement does not provoke attacks of opportunity and you gain resistance to all damage types. You can also pass through narrow openings no smaller than an inch, moving at half speed if the gap is smaller than a foot.<br />Additionally, you can move through all other creatures as if they were difficult terrain, and the first time you move through each creature this turn it must make a Dexterity (Save) check versus 8 + your Dexterity (Acrobatics) bonus or take 2d6 slashing damage on a failed save or half as much on a success. If you have the Zhier ability &ldquo;<em>Spirit Element</em>,&rdquo; then it can make the damage type be that of your <em>Spirit Element</em> instead.<br />You can use this trait once per long rest. If you are occupying the same space as another creature when the effect ends, you are shoved into the nearest unoccupied space.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "OFPN9HTKWIHFGJII"
+}
