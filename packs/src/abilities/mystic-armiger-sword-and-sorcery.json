@@ -4,7 +4,7 @@
   "img": "icons/skills/melee/blade-tip-energy-green.webp",
   "system": {
     "description": {
-      "value": "<p>When you cast a cantrip with a casting time of 1 action, you can make a single weapon attack as a minor action. This attack does not add your attribute modifier to its damage.</p>",
+      "value": "<p><em>When skilled enough in both arts, swinging a sword is no different from slinging a cantrip. Both require an instinct and willingness to kill. </em></p><p>When you cast a cantrip with a casting time of 1 action, you can make a single weapon attack as a minor action. This attack does not add your attribute modifier to its damage.</p>",
       "chat": "",
       "unidentified": ""
     },

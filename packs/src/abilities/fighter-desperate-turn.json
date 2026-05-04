@@ -1,0 +1,24 @@
+{
+  "name": "Desperate Turn",
+  "type": "ability",
+  "img": "icons/skills/melee/strike-sword-slashing-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>When everything falls apart, you have to do more&mdash;it may be your only chance to turn the tide. </em></p><p><br />Once per long rest, as a Desperate Action, immediately take an entire extra turn. At the end of this desperate turn, do not gain the @Compendium[undertaking.conditions.QUP5YUWBCXD17R7E]{Desperate} condition. However, you cannot take a desperate action until the end of your next turn.<br />Like any normal turn, this triggers any &ldquo;on your turn&rdquo; effects.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "adept"
+    },
+    "requirements": "6th level overall and 3rd level Fighter",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "F0XR725A3FMS2V7I"
+}

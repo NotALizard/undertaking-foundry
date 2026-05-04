@@ -1,0 +1,24 @@
+{
+  "name": "Strike Down",
+  "type": "ability",
+  "img": "icons/skills/melee/strike-axe-blood-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Fighting requires more precision than some think. Less than an inch is the difference between a vital organ or a flesh wound. Fighters know that finishing what you&rsquo;ve started takes numbers off the field, and when an opponent is low, it&rsquo;s important to finish them off before they have the chance to punish your mistake. </em></p><p>As a reaction after injuring a creature on your turn, if the creature has less than &frac14; hit points remaining, then the creature takes additional chaos damage equal to your overall level.</p><p>If this reaction reduces the creature to 0 hit points, you can take an additional Action this turn.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "novice"
+    },
+    "requirements": "Must have the Fighter Starter Abilities",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "S8VA8DQKIDWB6127"
+}

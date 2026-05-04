@@ -1,0 +1,37 @@
+{
+  "name": "Desperate",
+  "pages": [
+    {
+      "name": "Desperate",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul><li>A condition gained after taking a <strong>Desperate Action</strong>.</li><li>Desperate creatures cannot take Reactions or Desperate Actions.</li><li>When a creature is desperate at the start of their turn:</li><ul><li>They do not gain any actions, minor actions, movement, or reactions from this turn, but do not lose unspent reactions.</li><li>They are cured of the Desperate condition.</li><li>Their turn immediately ends.</li></ul></ul>",
+        "markdown": ""
+      },
+      "_id": "3RCM25CWR3DJETTR",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "QUP5YUWBCXD17R7E"
+}

@@ -1,10 +1,10 @@
 {
-  "name": "Size-Up",
+  "name": "Size Up",
   "type": "ability",
   "img": "icons/magic/control/silhouette-grow-shrink-tan.webp",
   "system": {
     "description": {
-      "value": "<p>You can size up a living creature that you can see as a non-action.  When you do so, the GM tells you if the creature is closest to:<ul><li>1/4 Hit Points remaining.</li><li>1/2 Hit Points remaining.</li><li>3/4 Hit Points remaining.</li><li>Full Hit Points.</li><li>Or greater than full Hit Points.</li></ul></p>",
+      "value": "<p>You can size up a living creature that you can see as a non-action. When you do so, the GM tells you if the creature&rsquo;s hit points are:</p><ul><li>Zero</li><li>Less than &frac14;</li><li>Less than &frac12;</li><li>Less than &frac34;</li><li>Less than full</li><li>Full</li><li>Greater than full</li></ul>",
       "chat": "",
       "unidentified": ""
     },

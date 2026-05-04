@@ -4,7 +4,7 @@
   "img": "icons/skills/melee/sword-stuck-glowing-pink.webp",
   "system": {
     "description": {
-      "value": "<p>Subclass for the @Compendium[undertaking.classes.KWLWHMDBZ3NK1FAV]{Wizard} class.</p><p>Soldiers, mercenaries, and even bandits and murderers; anyone knowledgeable and willing enough to wield a blade have learned the art of taking a life. Spellcasting can be much the same way. Unlike steel, magic can bring people life, but it too can take it away. The first ones to successfully wreathe themselves in magic rather than their enemies discovered a marriage between the mystic and the martial that granted them a fearsome power and versatility on the battlefield.</p>",
+      "value": "<p>Subclass for the @Compendium[undertaking.classes.KWLWHMDBZ3NK1FAV]{Wizard} class.</p><p><em>Soldiers, mercenaries, and even bandits and murderers; anyone knowledgeable and willing enough to wield a blade have learned the art of taking a life. Spellcasting can be much the same way. Unlike steel, magic can restore life, but it too can take it away. The first wizards to successfully wreathe themselves in magic rather than their enemies discovered a marriage between the mystical and the martial that granted them a fearsome power and versatility on the battlefield.</em></p>",
       "chat": "",
       "unidentified": ""
     },

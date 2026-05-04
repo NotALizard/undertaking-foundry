@@ -4,7 +4,7 @@
   "img": "icons/skills/melee/swords-triple-orange.webp",
   "system": {
     "description": {
-      "value": "<p>Pick 3 weapons that you are not proficient in, you are now proficient in these weapons.<br>&nbsp;&nbsp;&nbsp;&nbsp;Additionally, you have advantage on all Intelligence (Culture) and Intelligence (Investigation) checks related to weapons or armors with which you are proficient, or Fighting Stances in which you know.</p>",
+      "value": "<p>For each growth level, gain proficiency in 2 more weapons. This also applies for all previously obtained growth levels.</p><p>Additionally, you have advantage on all Intelligence (Culture) and Intelligence (Investigation) checks related to weapons or armors with which you are proficient, or Fighting Stances in which you know.</p>",
       "chat": "",
       "unidentified": ""
     },

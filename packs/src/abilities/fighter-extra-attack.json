@@ -4,7 +4,7 @@
   "img": "icons/skills/melee/strikes-sword-scimitar.webp",
   "system": {
     "description": {
-      "value": "<p>When you make an attack action, you can make two attacks with your primary weapon instead of one.</p>",
+      "value": "<p><em>As combat becomes your constant companion, you learn how to attack twice as quickly without sacrificing power. </em></p><p>When you make an attack action, you can make two attacks instead of one.</p>",
       "chat": "",
       "unidentified": ""
     },

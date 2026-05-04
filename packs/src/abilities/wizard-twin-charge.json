@@ -1,0 +1,24 @@
+{
+  "name": "Twin Charge",
+  "type": "ability",
+  "img": "icons/magic/symbols/symbol-lightning-bolt.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>A spell is nothing more than a template waiting to be reshaped to your exacting demands.</em></p><p>Whenever you cast a spell, you can apply up to two charge effects to it instead of one.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "adept"
+    },
+    "requirements": "6th level overall and 3rd level Wizard",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "DNKUZOHBFP8JQ80N"
+}

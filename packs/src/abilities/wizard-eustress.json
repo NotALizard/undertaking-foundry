@@ -1,0 +1,24 @@
+{
+  "name": "Eustress",
+  "type": "ability",
+  "img": "icons/magic/control/silhouette-hold-beam-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>When fate hangs in the balance, you abandon caution and push your wizardry to its absolute limit. </em></p><p>When you use a Desperate Action to cast a spell, you gain the following benefits:</p><ul><li>Your Charge Limit for this casting of the spell is increased by 1.</li><li>You can choose to take a level of @Compendium[undertaking.conditions.ERBR3AG01H4N1L91]{Exhaustion} to reduce the spell&rsquo;s base mana cost to 0.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Core Rules",
+    "type": {
+      "value": "class",
+      "subtype": "given"
+    },
+    "requirements": "Must have a Wizard Adept Ability",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "folder": null,
+  "_id": "SHD2ABFLNZ9CNNII"
+}
