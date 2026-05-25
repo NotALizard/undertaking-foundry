@@ -8,6 +8,7 @@
     <nav class="sheet-navigation tabs" data-group="primary">
         <a class="item active" data-tab="description">{{ localize "undertaking.Description" }}</a>
         <a class="item" data-tab="details">{{ localize "undertaking.Details" }}</a>
+        <a class="item" data-tab="resources">{{ localize "undertaking.Resources" }}</a>
     </nav>
 
     <section class="sheet-body other">
@@ -197,6 +198,13 @@
                         <input type="checkbox" class="input-checkbox" data-for="#input-show-attack" {{#ifCond item.system.showInAttacks '==' true}}checked{{/ifCond}}/>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        {{!-- Resources Tab --}}
+        <div class="tab full-page flexrow" data-group="primary" data-tab="resources">
+            <div class="fcol">
+                {{> "systems/undertaking/templates/partials/item/edit-resource.hbs"}}
             </div>
         </div>
     </section>

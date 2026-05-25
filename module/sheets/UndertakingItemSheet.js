@@ -73,6 +73,10 @@ export default class UndertakingItemSheet extends ItemSheet {
     const damage = formData.system?.damage;
     if ( damage ) damage.parts = Object.values(damage?.parts || {}).map(d => [d[0] || "", d[1] || ""]);
 
+    // Handle Resource Tracker dropdown options
+    const resource = formData.system?.resource;
+    if ( resource ) resource.dropdownOptions = Object.values(resource?.dropdownOptions || {});
+
     // Return the flattened submission data
     return foundry.utils.flattenObject(formData);
   }
@@ -95,6 +99,12 @@ export default class UndertakingItemSheet extends ItemSheet {
     });
     html.find(".damage-control.delete-damage").on("click", event => {
       this._removeDamagePart(event);
+    });
+    html.find(".resource-control.add-dropdown").on("click", event => {
+      this._addResourceDropdown(event);
+    });
+    html.find(".resource-control.delete-dropdown").on("click", event => {
+      this._removeResourceDropdown(event);
     });
     html.find(".chat-description").on("click", event => {
       this._chatDescription(event);
@@ -130,13 +140,6 @@ export default class UndertakingItemSheet extends ItemSheet {
     return this._onSubmit(event);
   }
 
-  _addDamagePart(event){
-    event.preventDefault();
-    const item = this.item;
-    const damage = item.system.damage;
-    item.update({['system.damage.parts']: damage.parts.concat([["",""]])});
-  }
-
   _chatDescription(event){
     event.preventDefault();
     const item = this.item;
@@ -149,6 +152,13 @@ export default class UndertakingItemSheet extends ItemSheet {
     ChatMessage.create(messageData);
   }
 
+  _addDamagePart(event){
+    event.preventDefault();
+    const item = this.item;
+    const damage = item.system.damage;
+    item.update({['system.damage.parts']: damage.parts.concat([["",""]])});
+  }
+
   async _removeDamagePart(event){
     event.preventDefault();
     const parent = event.currentTarget.closest(".damage-part");
@@ -158,6 +168,24 @@ export default class UndertakingItemSheet extends ItemSheet {
     const damage = foundry.utils.deepClone(item.system.damage);
     damage.parts.splice(Number(index), 1);
     item.update({['system.damage.parts']: damage.parts});
+  }
+
+  _addResourceDropdown(event){
+    event.preventDefault();
+    const item = this.item;
+    const options = item.system.resource.dropdownOptions || [];
+    item.update({['system.resource.dropdownOptions']: options.concat(["New Option"])});
+  }
+
+  async _removeResourceDropdown(event){
+    event.preventDefault();
+    const parent = event.currentTarget.closest(".resource-dropdown-option");
+    const index = parent.dataset.resourceDropdownOption;
+    const item = this.item;
+    await this._onSubmit(event);
+    const options = foundry.utils.deepClone(item.system.resource.dropdownOptions);
+    options.splice(Number(index), 1);
+    item.update({['system.resource.dropdownOptions']: options});
   }
 
   async _onArmorEquip(event){

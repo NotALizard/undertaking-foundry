@@ -679,6 +679,8 @@ input.mana-val{
     border-width: 3px;
     border-radius: 6px;
     background: white;
+}
+.res-slot {
     height: 50px;
 }
 .res-values {
@@ -711,10 +713,54 @@ input.mana-val{
     line-height: 16px;
     height: 14px;
 }
+.res-name {
+    overflow: hidden;
+    line-height: 16px;
+    height: 14px;
+    width: 100%;
+}
+.res-name:hover{
+    cursor: pointer;
+}
 .res-buttons {
     font-size: 12px;
     justify-content: space-between;
     margin-bottom: -8px;
+    z-index: 10;
+}
+.res-buttons p {
+    margin: 1px 2px;
+}
+.res-dropdown-label{
+    margin-right: 2px;
+}
+.res-dropdown {
+    flex: 1;
+}
+.res-dropdown-label {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 4px;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+.res-dropdown-icons {
+    margin: auto;
+    margin-right: 4px;
+}
+.res-dropdown-details {
+    margin: auto;
+    margin-right: 4px;
+}
+.res-dropdown-details:hover{
+    cursor: pointer;
+}
+.res-values input:disabled {
+    color: inherit;
+}
+a.resource-control.delete-dropdown {
+    margin: auto 4px;
 }
 img.res-button {
     border: none;

@@ -10,7 +10,8 @@ import UndertakingCharacterSheet from "./module/sheets/UndertakingCharacterSheet
 
 async function preloadHandlebarsTemplates(){
   const templatePaths = [
-    "systems/undertaking/templates/partials/character/character-resources.hbs",
+    "systems/undertaking/templates/partials/character/resource-dropdown.hbs",
+    "systems/undertaking/templates/partials/character/resource-box.hbs",
     "systems/undertaking/templates/partials/character/equipment-card.hbs",
     "systems/undertaking/templates/partials/character/attack-card.hbs",
     "systems/undertaking/templates/partials/character/class-card.hbs",
@@ -18,6 +19,7 @@ async function preloadHandlebarsTemplates(){
     "systems/undertaking/templates/partials/character/ability-card.hbs",
     "systems/undertaking/templates/partials/character/spell-card.hbs",
     "systems/undertaking/templates/partials/item/edit-attack.hbs",
+    "systems/undertaking/templates/partials/item/edit-resource.hbs",
     "systems/undertaking/templates/partials/character/trade-card.hbs",
     "systems/undertaking/templates/partials/character/rest-action-card.hbs",
   ];
@@ -383,15 +385,15 @@ Hooks.once("init",function(){
       }
       classes.push({id:c.system.identifier, level:c.system.levels});
     }
-    let sneak = rogue + Math.floor((sheet.actor.system.details.overallLevel - rogue) / 2);
-    if(sneak >= 18){
-      sneak = 10;
+    let vital = rogue + Math.floor((sheet.actor.system.details.overallLevel - rogue) / 2);
+    if(vital >= 18){
+      vital = 10;
     }
-    else if(sneak >= 17){
-      sneak = 9;
+    else if(vital >= 17){
+      vital = 9;
     }
     else{
-      sneak = Math.ceil(sneak / 2);
+      vital = Math.ceil(vital / 2);
     }
 
     let parts = [];
@@ -409,7 +411,8 @@ Hooks.once("init",function(){
       dstr = dstr.replaceAll("@wis", sheet.actor.system.attributes.wis.mod);
       dstr = dstr.replaceAll("@pre", sheet.actor.system.attributes.pre.mod);
       dstr = dstr.replaceAll("@caster", casterLevel);
-      dstr = dstr.replaceAll("@sneak", sneak);
+      dstr = dstr.replaceAll("@sneak", vital);
+      dstr = dstr.replaceAll("@vital", vital);
       for(let c of classes){
         dstr = dstr.replaceAll(`@${c.id}`, c.level);
       }

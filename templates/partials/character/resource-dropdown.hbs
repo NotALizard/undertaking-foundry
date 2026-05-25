@@ -1,0 +1,37 @@
+<div class="res-row frow">
+    <div class="res-container frow" data-item-id="{{_id}}">
+        <div class="res-dropdown-label fcol">
+            <label class="res-name">{{system.resource.name}}</label> 
+        </div>
+        <div class="res-dropdown-icons fcol" {{#ifCond system.resource.rechargeOn 'notin' 'short,long'}}style="display:none;"{{/ifCond}}>
+            <p title="{{#switch system.resource.rechargeOn}}{{#case 'short'}}{{localize "undertaking.Resource.OnShortRest"}}{{/case}}{{#case 'long'}}{{localize "undertaking.Resource.OnLongRest"}}{{/case}}{{/switch}} : {{#switch system.resource.rechargeStyle}}{{#case 'fill'}}{{localize "undertaking.Resource.RegainAll"}}{{/case}}{{#case 'gain'}}{{localize "undertaking.Resource.Gain"}} {{system.resource.recharge}}{{/case}}{{#case 'set'}}{{localize "undertaking.Resource.SetTo"}} {{system.resource.recharge}}{{/case}}{{#case 'reminder'}}{{system.resource.rechargeMessage}}{{/case}}{{/switch}}"><i class="fa-solid {{#switch system.resource.rechargeOn}} 
+                    {{#case 'short'}}fa-sun{{/case}} 
+                    {{#case 'long'}}fa-moon{{/case}}
+                    {{#default}}fa-ban{{/default}}
+                {{/switch}}"></i> : {{#switch system.resource.rechargeStyle}} 
+                    {{#case 'fill'}}<i class="fa-solid fa-arrows-rotate"></i>{{/case}} 
+                    {{#case 'gain'}}{{#ifCond system.resource.recharge '>=' 0}}+{{/ifCond}}{{system.resource.recharge}}{{/case}}
+                    {{#case 'set'}}={{system.resource.recharge}}{{/case}}
+                    {{#case 'reminder'}}<i class="fa-solid fa-alarm-clock"></i>{{/case}}
+                    {{#default}}<i class="fa-solid fa-ban"></i>{{/default}}
+                {{/switch}}</p>
+        </div>
+        {{#each system.resource.dropdownOptions as |option id|}}
+            {{#ifCond ../system.resource.value '==' option.value}}
+                {{#ifCond ../_id '!=' option.id}}
+                <div class="res-dropdown-details fcol" data-option-id="{{option.id}}">
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+                {{/ifCond}}
+            {{/ifCond}}
+        {{/each}}
+        <div class="res-dropdown fcol">
+            <select>
+                <option value="" {{#ifCond system.resource.value '==' ""}}selected{{/ifCond}}></option>
+                {{#each system.resource.dropdownOptions as |option id|}}
+                    <option value="{{option.value}}" {{#ifCond ../system.resource.value '==' option.value}}selected{{/ifCond}}>{{option.value}}</option>
+                {{/each}}
+            </select>
+        </div>
+    </div>
+</div>

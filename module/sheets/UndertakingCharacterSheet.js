@@ -59,7 +59,7 @@ export default class UndertakingCharacterSheet extends ActorSheet {
       });
     }
 
-    context.attacks = context.items.filter(function (item) { return (item.type == "weapon" && item.system.showInAttacks ) || (item.type == "spell" && item.system.showInAttacks ) || item.type == "customAttack"});
+    context.attacks = context.items.filter(function (item) { return (item.type == "weapon" && item.system.showInAttacks ) || (item.type == "spell" && item.system.showInAttacks ) || (item.type == "ability" && item.system.showInAttacks ) || item.type == "customAttack"});
     context.equipment = context.items.filter(function (item) { return item.type == "equipment" || item.type == "weapon" || item.type == "armor"});
     context.attuned = context.items.filter(function (item) { return item?.system?.attuned});
     context.classes = context.items.filter(function (item) { return item.type == "class"});
@@ -68,7 +68,46 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     context.languages = context.items.filter(function (item) { return item.type == "language"});
     context.casters = context.classes.filter(function(item){ return item.system.categorization.spellcaster.progression && item.system.categorization.spellcaster.progression != 'none'});
     context.trades = context.items.filter(function (item) { return item.type == "trade"});
+    
+    let resources = context.items.filter(function (item) { return item?.system?.resource?.showOnSheet });
+    let resourceBoxes = [];
+    context.resourceBoxRows = [];
+    context.resourceDropdowns = [];
 
+    let extraDropdowns = [];
+    for (let res of resources) {
+      if (res.system.resource.style == 'choice') {
+        if (res.system.resource.dropdownOptions && Array.isArray(res.system.resource.dropdownOptions)) {
+          res.system.resource.dropdownOptions = res.system.resource.dropdownOptions.map(option => ({id: res._id, value: option}));
+        }
+
+        if (res.system.resource.addOptionsTo) {
+          extraDropdowns.push(res);
+        }
+        else {
+          context.resourceDropdowns.push(res);
+        }
+      }
+      else{
+        resourceBoxes.push(res);
+      }
+    }
+
+    for (let res of extraDropdowns) {
+      const targetResource = context.resourceDropdowns.find(r => r.system.resource.dropdownIdentifier === res.system.resource.addOptionsTo);
+      if (targetResource) {
+        targetResource.system.resource.dropdownOptions = targetResource.system.resource.dropdownOptions || [];
+        targetResource.system.resource.dropdownOptions.push(...res.system.resource.dropdownOptions); 
+      }
+    }
+
+    for (let i = 0; i < resourceBoxes.length; i += 3) {
+      let row = resourceBoxes.slice(i, i + 3);
+      while (row.length < 3) {
+        row.push(false);
+      }
+      context.resourceBoxRows.push(row);
+    }
 
     context.restActions = [];
     
@@ -468,12 +507,26 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     html.find(".duplicate-input").on("change", event => {
       this._duplicateInput(event);
     });
-
     html.find(".prepared-toggle").on("click", event => {
       this._toggleSpellPrepared(event);
     });
     html.find(".spend-mana").on("click", event => {
       this._spendMana(event);
+    });
+    html.find(".res-control.res-val").on("change", event => {
+      this._changeResourceValue(event);
+    });
+    html.find(".res-control.res-max").on("change", event => {
+      this._changeResourceMax(event);
+    });
+    html.find(".res-dropdown select").on("change", event => {
+      this._changeResourceDropdown(event);
+    });
+    html.find(".res-name").on("click", event => {
+      this._openResourceItem(event);
+    });
+    html.find(".res-dropdown-details").on("click", event => {
+      this._openResourceDetail(event);
     });
 
     this._fixElementSizes(html);
@@ -1099,6 +1152,50 @@ export default class UndertakingCharacterSheet extends ActorSheet {
       field.value = +field.value-1;
     }
     return this._onSubmit(event);
+  }
+
+  _changeResourceValue(event){
+    console.log("Changing resource value");
+    const parent = event.currentTarget.closest(".res-container");
+    const id = parent.dataset.itemId;
+    const field = parent.querySelector('.res-val');
+    let item = this.actor.items.get(id);
+    let value = parseInt(field.value);
+    if(isNaN(value)) value = 0;
+    return item.update({['system.resource.value']: value});
+  }
+
+  _changeResourceMax(event){
+    console.log("Changing resource max");
+    const parent = event.currentTarget.closest(".res-container");
+    const id = parent.dataset.itemId;
+    const field = parent.querySelector('.res-max');
+    let item = this.actor.items.get(id);
+    let value = parseInt(field.value);
+    if(isNaN(value)) value = 0;
+    return item.update({['system.resource.maxFlat']: value});
+  }
+
+  _changeResourceDropdown(event){
+    console.log("Changing resource dropdown");
+    const parent = event.currentTarget.closest(".res-container");
+    const id = parent.dataset.itemId;
+    const field = parent.querySelector('.res-dropdown select');
+    let item = this.actor.items.get(id);
+    return item.update({['system.resource.value']: field.value});
+  }
+
+  _openResourceItem(event){
+    const parent = event.currentTarget.closest(".res-container");
+    const id = parent.dataset.itemId;
+    let item = this.actor.items.get(id);
+    return item.sheet.render(true);
+  }
+
+  _openResourceDetail(event){
+    const id = event.currentTarget.dataset.optionId;
+    let item = this.actor.items.get(id);
+    return item.sheet.render(true);
   }
 
   _changeClassFilter(event){

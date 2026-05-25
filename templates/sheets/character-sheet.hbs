@@ -324,7 +324,25 @@
                                         </div>
                                     </div>
                                 </div>
-                                {{> "systems/undertaking/templates/partials/character/character-resources.hbs"}}
+                                <div class="resources fcol">
+                                    {{#each resourceBoxRows as |row id|}}
+                                    <div class="res-row frow">
+                                        {{#each row as |res id|}}
+                                        {{#if res}}
+                                        {{> "systems/undertaking/templates/partials/character/resource-box.hbs" res}}
+                                        {{else}}
+                                        <div class="res-container fcol"><div class="res-slot fcol"></div></div>
+                                        {{/if}}
+                                        {{#ifCond @index '<' 2}}
+                                        <div class="res-spacer"></div>
+                                        {{/ifCond}}
+                                        {{/each}}
+                                    </div>
+                                    {{/each}}
+                                    {{#each resourceDropdowns as |res id|}}
+                                        {{> "systems/undertaking/templates/partials/character/resource-dropdown.hbs" res}}
+                                    {{/each}}
+                                </div>
                             </div>
                             <div class="equip-col">
                                 <div class="list-container equipment item-list fcol">

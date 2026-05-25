@@ -1,0 +1,142 @@
+<input type="hidden" id="input-show-on-sheet" name="system.resource.showOnSheet" value="{{item.system.resource.showOnSheet}}" data-dtype="Boolean">
+<input name="system.resource.style" id="input-resource-style" type="hidden" value="{{item.system.resource.style}}" data-dtype="String" />
+<input name="system.resource.valueFrom" id="input-resource-valueFrom" type="hidden" value="{{item.system.resource.valueFrom}}" data-dtype="String" />
+{{!-- Show On Sheet --}}
+<div class="item-row frow">
+    <label>{{ localize "undertaking.Resource.ShowOnSheet" }}:</label>
+    <input type="checkbox" class="input-checkbox" data-for="#input-show-on-sheet" {{#ifCond item.system.resource.showOnSheet '==' true}}checked{{/ifCond}}/>
+</div>
+
+{{!-- Name --}}
+<div class="item-row frow">
+    <label>{{ localize "undertaking.Resource.Name" }}:</label>
+    <input type="text" name="system.resource.name" value="{{item.system.resource.name}}" />
+</div>
+
+{{!-- Style --}}
+<div class="item-row frow">
+    <label>{{ localize "undertaking.Resource.Style" }}:</label>
+    
+    <select class="input-dropdown" data-for="#input-resource-style">
+        <option value="counter" {{#ifCond item.system.resource.style '==' "counter"}}selected{{/ifCond}}>{{ localize "undertaking.Resource.Counter" }}</option>
+        <option value="single" {{#ifCond item.system.resource.style '==' "single"}}selected{{/ifCond}}>{{ localize "undertaking.Resource.Single" }}</option>
+        <option value="choice" {{#ifCond item.system.resource.style '==' "choice"}}selected{{/ifCond}}>{{ localize "undertaking.Resource.Choice" }}</option>
+    </select>
+</div>
+
+{{#ifCond item.system.resource.style 'in' "counter,single"}}
+    {{!-- valueFrom dropdown ('manual', 'formula') --}}
+    <div class="item-row frow">
+        {{#ifCond item.system.resource.style '==' "counter"}}
+        <label>{{ localize "undertaking.Resource.MaxFrom" }}:</label>
+        {{/ifCond}}
+        {{#ifCond item.system.resource.style '==' "single"}}
+        <label>{{ localize "undertaking.Resource.ValueFrom" }}:</label>
+        {{/ifCond}}
+        <select class="input-dropdown" data-for="#input-resource-valueFrom">
+            <option value="manual" {{#ifCond item.system.resource.valueFrom '==' "manual"}}selected{{/ifCond}}>{{ localize "undertaking.Resource.Manual" }}</option>
+            <option value="formula" {{#ifCond item.system.resource.valueFrom '==' "formula"}}selected{{/ifCond}}>{{ localize "undertaking.Resource.Formula" }}</option>
+        </select>
+    </div>
+
+    {{!-- Max Formula --}}
+    {{#ifCond item.system.resource.valueFrom '==' "formula"}}
+    <div class="item-row frow">
+        <label>{{ localize "undertaking.Resource.Formula" }}:</label>
+        <input type="text" name="system.resource.maxFormula" value="{{item.system.resource.maxFormula}}" data-formula-editor/>
+    </div>
+    {{/ifCond}}
+    {{!-- Max Flat --}}
+    {{#ifCond item.system.resource.valueFrom '==' "manual"}}
+    <div class="item-row frow">
+        {{#ifCond item.system.resource.style '==' "counter"}}
+        <label>{{ localize "undertaking.Resource.Max" }}:</label>
+        {{/ifCond}}
+        {{#ifCond item.system.resource.style '==' "single"}}
+        <label>{{ localize "undertaking.Resource.Value" }}:</label>
+        {{/ifCond}}
+        <input type="number" name="system.resource.maxFlat" value="{{item.system.resource.maxFlat}}" data-dtype="Number"/>
+    </div>
+    {{/ifCond}}
+
+{{/ifCond}}
+
+{{#ifCond item.system.resource.style '==' "choice"}}
+    {{!-- Dropdown Identifier --}}
+    <div class="item-row frow">
+        <label>{{ localize "undertaking.Resource.DropdownIdentifier" }}:</label>
+        <input type="text" name="system.resource.dropdownIdentifier" value="{{item.system.resource.dropdownIdentifier}}" />
+    </div>
+    {{!-- Add Options To --}}
+    <div class="item-row frow">
+        <label>{{ localize "undertaking.Resource.AddOptionsTo" }}:</label>
+        <input type="text" name="system.resource.addOptionsTo" value="{{item.system.resource.addOptionsTo}}" />
+    </div>
+
+    {{!-- Dropdown Options --}}
+    <div class="item-row frow">
+        <label class="nowrap">{{ localize "undertaking.Resource.DropdownOptions" }}:</label>
+        <a class="resource-control add-dropdown"><i class="fas fa-plus"></i></a>
+    </div>
+    <div class="item-row frow">
+        <ol class="resource-dropdowns fcol">
+            {{#each item.system.resource.dropdownOptions as |option i| }}
+            <li class="resource-dropdown-option frow" data-resource-dropdown-option="{{i}}">
+                <input type="text" name="system.resource.dropdownOptions.{{i}}" value="{{this}}" data-dtype="String"/>
+                <a class="resource-control delete-dropdown"><i class="fas fa-minus"></i></a>
+            </li>
+            {{/each}}
+        </ol>
+    </div>
+{{/ifCond}}
+
+
+
+{{!-- Recharge --}}
+<div class="item-row frow">
+    <label>{{ localize "undertaking.Resource.RechargeOn" }}:</label>
+    <input name="system.resource.rechargeOn" id="input-resource-recharge" type="hidden" value="{{item.system.resource.rechargeOn}}" data-dtype="String" />
+    <select class="input-dropdown" data-for="#input-resource-recharge">
+        <option value="none" {{#ifCond item.system.resource.rechargeOn '==' "none"}}selected{{/ifCond}}>{{ localize "undertaking.None" }}</option>
+        <option value="short" {{#ifCond item.system.resource.rechargeOn '==' "short"}}selected{{/ifCond}}>{{ localize "undertaking.ShortRest" }}</option>
+        <option value="long" {{#ifCond item.system.resource.rechargeOn '==' "long"}}selected{{/ifCond}}>{{ localize "undertaking.LongRest" }}</option>
+    </select>
+</div>
+
+{{#ifCond item.system.resource.rechargeOn '!=' "none"}}
+    {{!-- Recharge Style --}}
+    <div class="item-row frow">
+        <label>{{ localize "undertaking.Resource.RechargeStyle" }}:</label>
+        <input name="system.resource.rechargeStyle" id="input-resource-rechargeStyle" type="hidden" value="{{item.system.resource.rechargeStyle}}" data-dtype="String" />
+        <select class="input-dropdown" data-for="#input-resource-rechargeStyle">
+            <option value="fill" {{#ifCond item.system.resource.rechargeStyle '==' "fill"}}selected{{/ifCond}}>{{ localize "undertaking.Resource.Fill" }}</option>
+            <option value="gain" {{#ifCond item.system.resource.rechargeStyle '==' "gain"}}selected{{/ifCond}}>{{ localize "undertaking.Resource.Gain" }}</option>
+            <option value="set" {{#ifCond item.system.resource.rechargeStyle '==' "set"}}selected{{/ifCond}}>{{ localize "undertaking.Resource.Set" }}</option>
+            <option value="reminder" {{#ifCond item.system.resource.rechargeStyle '==' "reminder"}}selected{{/ifCond}}>{{ localize "undertaking.Resource.Reminder" }}</option>
+        </select>
+    </div>
+    {{!-- Recharge Formula --}}
+    {{#ifCond item.system.resource.rechargeStyle 'in' "gain,set"}}
+    <div class="item-row frow">
+        <label>{{ localize "undertaking.Resource.RechargeFormula" }}:</label>
+        <input type="text" name="system.resource.rechargeFormula" value="{{item.system.resource.rechargeFormula}}" data-formula-editor/>
+    </div>
+    {{/ifCond}}
+    {{!-- Recharge Message --}}
+    <div class="item-row frow">
+        <label>{{ localize "undertaking.Resource.RechargeMessage" }}:</label>
+        <input type="text" name="system.resource.rechargeMessage" value="{{item.system.resource.rechargeMessage}}" />
+    </div>
+{{/ifCond}}
+
+{{#ifCond item.system.resource.style '==' "counter"}}
+    {{!-- Overfilled Message --}}
+    <div class="item-row frow">
+        <label>{{ localize "undertaking.Resource.OverfilledMessage" }}:</label>
+        <input type="text" name="system.resource.overfilledMessage" value="{{item.system.resource.overfilledMessage}}" />
+    </div>
+{{/ifCond}}
+
+    
+
+

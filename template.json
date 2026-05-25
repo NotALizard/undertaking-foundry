@@ -760,6 +760,25 @@
         },
         "showInAttacks": false
       },
+      "trackedResource": {
+        "resource": {
+          "showOnSheet": false,
+          "value": 0,
+          "style": "counter",
+          "name": "",
+          "valueFrom": "manual",
+          "maxFormula": "",
+          "maxFlat": 0,
+          "rechargeOn": "none",
+          "rechargeStyle": "fill",
+          "rechargeFormula": "",
+          "rechargeMessage": "",
+          "overfilledMessage": "",
+          "dropdownIdentifier": "",
+          "addOptionsTo": "",
+          "dropdownOptions": []
+        }
+      },
       "mountable": {
         "armor": {
           "value": null
@@ -840,7 +859,7 @@
       }
     },
     "equipment": {
-      "templates": ["itemDescription", "physicalItem", "activatedEffect", "action", "mountable"],
+      "templates": ["itemDescription", "physicalItem", "activatedEffect", "action", "mountable", "trackedResource"],
       "baseItem": "",
       "speed": {
         "value": null,
@@ -849,7 +868,7 @@
       "proficient": true
     },
     "armor": {
-      "templates": ["itemDescription", "physicalItem", "activatedEffect", "action"],
+      "templates": ["itemDescription", "physicalItem", "activatedEffect", "action", "trackedResource"],
       "armorType": "light",
       "baseAC": 10,
       "bonusAC": 0,
@@ -888,19 +907,15 @@
       "proficient": true
     },
     "ability": {
-      "templates": ["itemDescription", "activatedEffect", "action"],
+      "templates": ["itemDescription", "activatedEffect", "action", "trackedResource"],
       "type": {
         "value": "",
         "subtype": ""
       },
-      "requirements": "",
-      "recharge": {
-        "value": null,
-        "charged": false
-      }
+      "requirements": ""
     },
     "customAttack": {
-      "templates": ["itemDescription", "activatedEffect", "action"],
+      "templates": ["itemDescription", "activatedEffect", "action", "trackedResource"],
       "showInAttacks": false
     },
     "treasure": {
@@ -945,7 +960,7 @@
       "attribute": "spell"
     },
     "weapon": {
-      "templates": ["itemDescription", "physicalItem" ,"activatedEffect", "action", "mountable"],
+      "templates": ["itemDescription", "physicalItem" ,"activatedEffect", "action", "mountable", "trackedResource"],
       "weaponType": "simpleM",
       "baseItem": "",
       "properties": [],

@@ -1,5 +1,23 @@
 export default class UndertakingItem extends Item {
 
+    prepareDerivedData(){
+        super.prepareDerivedData();
+        if(this.system.resource?.style == 'counter' || this.system.resource?.style == 'single'){
+            if(this.system.resource.valueFrom == 'formula'){
+                const result = this._evalFormulaSync(this.system.resource.maxFormula);
+                this.system.resource.max = result.total;
+            }
+            else{
+                this.system.resource.max = this.system.resource.maxFlat;
+            }
+            if(this.system.resource.style == 'single'){
+                this.system.resource.value = this.system.resource.max;
+            }
+            const result = this._evalFormulaSync(this.system.resource.rechargeFormula);
+            this.system.resource.recharge = result.total;
+        }
+    }
+
     static chatRollDamage(event){
         let button = event.currentTarget;
         let weaponId = button.dataset.weapon;
@@ -126,31 +144,10 @@ export default class UndertakingItem extends Item {
         }
         let isProficient = this.system.proficient ? 1 : 0;
         let mods = {
-            ...owner._getClassLevels(),
+            ...owner._getRollMods(),
             mod: mod,
-            prof: owner.system.stats.profBonus,
-            pb: owner.system.stats.profBonus,
-            level: owner.system.details.overallLevel,
-            dex: owner.system.attributes.dex.mod,
-            str: owner.system.attributes.str.mod,
-            con: owner.system.attributes.con.mod,
-            int: owner.system.attributes.int.mod,
-            wis: owner.system.attributes.wis.mod,
-            pre: owner.system.attributes.pre.mod,
             isprof: isProficient
         }
-        let rogue = mods.rogue ? mods.rogue : 0;
-        let sneak = rogue + Math.floor((owner.system.details.overallLevel - rogue) / 2);
-        if(sneak >= 18){
-            sneak = 10;
-        }
-        else if(sneak >= 17){
-            sneak = 9;
-        }
-        else{
-            sneak = Math.ceil(sneak / 2);
-        }
-        mods.sneak = sneak;
         return mods;
     }
 
@@ -269,6 +266,7 @@ export default class UndertakingItem extends Item {
             let damageType = d[1];
 
             rollFormula = rollFormula.replaceAll("@sneak", rollData.sneak);
+            rollFormula = rollFormula.replaceAll("@vital", rollData.vital);
             
             let header = `${this.name} - ${damageType}`;
             let messageData = {
@@ -278,6 +276,30 @@ export default class UndertakingItem extends Item {
             let rollResult = await new Roll(rollFormula, rollData).roll();
             await rollResult.toMessage(messageData);
         }
+    }
+
+    async _evalFormula(formula){
+        if(formula == null || formula == undefined || formula == "") return {total: 0};
+        const owner = this.actor;
+        let rollData = this._getRollMods(owner);
+        let rollFormula = formula;
+        rollFormula = rollFormula.replaceAll("@sneak", rollData.sneak);
+        rollFormula = rollFormula.replaceAll("@vital", rollData.vital);
+        return await new Roll(rollFormula, rollData).roll();
+    }
+
+    _evalFormulaSync(formula){
+        if(formula == null || formula == undefined || formula == "") return {total: 0};
+        const owner = this.actor;
+        let rollData = this._getRollMods(owner);
+        let rollFormula = formula;
+        rollFormula = rollFormula.replaceAll("@sneak", rollData.sneak);
+        rollFormula = rollFormula.replaceAll("@vital", rollData.vital);
+        const roll = Roll.create(rollFormula, rollData);
+        if(typeof roll.evaluateSync === "function"){
+            return roll.evaluateSync();
+        }
+        return roll.evaluate({async: false});
     }
 
     async _rollSave(){

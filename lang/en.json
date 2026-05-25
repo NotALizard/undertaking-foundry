@@ -65,6 +65,7 @@
     "Spend": "Spend",
     "ChargeLimit": "Charge Limit",
     "ShortRest": "Short Rest",
+    "LongRest": "Long Rest",
     "RestDice": "Rest Dice",
     "DicePrefix": "D",
     "Conditions": "Conditions",
@@ -420,6 +421,37 @@
       "ForClass": "Associated Class",
       "ForAttribute": "Associated Attribute"
     },
-    "ArmorType": "Armor Type"
+    "ArmorType": "Armor Type",
+    "Resources": "Resources",
+    "Resource": {
+      "ShowOnSheet": "Show on Sheet",
+      "Name": "Name",
+      "Style": "Style",
+      "Counter": "Counter",
+      "Single": "Single",
+      "Choice": "Choice",
+      "Value": "Value",
+      "Max": "Max",
+      "RechargeOn": "Modified on Rest",
+      "RechargeStyle": "Resting Effect",
+      "RechargeFormula": "Resting Formula",
+      "RechargeMessage": "Resting Message",
+      "OverfilledMessage": "Overfilled Warning",
+      "MaxFrom": "Max From",
+      "ValueFrom": "Value From",
+      "Manual": "Manual",
+      "Formula": "Formula",
+      "Fill": "Fill",
+      "Gain": "Gain",
+      "Set": "Set",
+      "Reminder": "Reminder",
+      "DropdownIdentifier": "Dropdown Identifier",
+      "AddOptionsTo": "Add To Different Dropdown (Optional)",
+      "DropdownOptions": "Dropdown Options",
+      "OnLongRest": "On Long Rest",
+      "OnShortRest": "On Any Rest",
+      "RegainAll": "Regain All",
+      "SetTo": "Set to"
+    }
   }
 }

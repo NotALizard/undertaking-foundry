@@ -1,0 +1,27 @@
+<div class="res-container fcol" data-item-id="{{_id}}">
+    <div class="res-slot res-border fcol">
+        <div class="res-buttons frow" {{#ifCond system.resource.rechargeOn 'notin' 'short,long'}}style="visibility: hidden;"{{/ifCond}}>
+            <p title="{{#switch system.resource.rechargeOn}}{{#case 'short'}}{{localize "undertaking.Resource.OnShortRest"}}{{/case}}{{#case 'long'}}{{localize "undertaking.Resource.OnLongRest"}}{{/case}}{{/switch}} : {{#switch system.resource.rechargeStyle}}{{#case 'fill'}}{{localize "undertaking.Resource.RegainAll"}}{{/case}}{{#case 'gain'}}{{localize "undertaking.Resource.Gain"}} {{system.resource.recharge}}{{/case}}{{#case 'set'}}{{localize "undertaking.Resource.SetTo"}} {{system.resource.recharge}}{{/case}}{{#case 'reminder'}}{{system.resource.rechargeMessage}}{{/case}}{{/switch}}"><i class="fa-solid {{#switch system.resource.rechargeOn}} 
+                    {{#case 'short'}}fa-sun{{/case}} 
+                    {{#case 'long'}}fa-moon{{/case}}
+                    {{#default}}fa-ban{{/default}}
+                {{/switch}}"></i> : {{#switch system.resource.rechargeStyle}} 
+                    {{#case 'fill'}}<i class="fa-solid fa-arrows-rotate"></i>{{/case}} 
+                    {{#case 'gain'}}{{#ifCond system.resource.recharge '>=' 0}}+{{/ifCond}}{{system.resource.recharge}}{{/case}}
+                    {{#case 'set'}}={{system.resource.recharge}}{{/case}}
+                    {{#case 'reminder'}}<i class="fa-solid fa-alarm-clock"></i>{{/case}}
+                    {{#default}}<i class="fa-solid fa-ban"></i>{{/default}}
+                {{/switch}}</p>
+        </div>
+        <div class="res-values frow">
+            {{#ifCond system.resource.style '==' 'counter'}}
+            <input class="res-control res-val" type="number" value="{{system.resource.value}}" placeholder="0" data-dtype="Number" />
+            <label>/</label>
+            {{/ifCond}}
+            <input class="res-control res-max" type="number" value="{{system.resource.max}}" placeholder="0" data-dtype="Number" {{#ifCond system.resource.valueFrom '!=' 'manual'}}disabled{{/ifCond}}/>
+        </div>
+    </div>
+    <div class="res-label frow">
+        <label class="res-name">{{system.resource.name}}</label> 
+    </div>
+</div>

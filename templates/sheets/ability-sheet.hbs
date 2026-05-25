@@ -4,10 +4,39 @@
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}"/></h1>
         <a class="item-to-chat chat-description" title="{{localize "undertaking.DescriptionToChat"}}"><i class="fas fa-comment"></i></a>
     </header>
+
+    {{!-- Item Sheet Navigation --}}
+    <nav class="sheet-navigation tabs" data-group="primary">
+        <a class="item active" data-tab="description">{{ localize "undertaking.Description" }}</a>
+        <a class="item" data-tab="details">{{ localize "undertaking.Details" }}</a>
+        <a class="item" data-tab="resources">{{ localize "undertaking.Resources" }}</a>
+    </nav>
+
     <section class="sheet-body other">
       {{!-- Description Tab --}}
       <div class="tab full-page flexrow active" data-group="primary" data-tab="description">
         {{editor descriptionHTML target="system.description.value" button=true editable=editable engine="prosemirror" collaborate=false}}
+      </div>
+
+      {{!-- Resources Tab --}}
+      <div class="tab full-page flexrow" data-group="primary" data-tab="details">
+        <input type="hidden" id="input-show-attack" name="system.showInAttacks" value="{{item.system.showInAttacks}}" data-dtype="Boolean">
+        <div class="fcol">
+          {{> "systems/undertaking/templates/partials/item/edit-attack.hbs"}}
+          <div class="item-row frow">
+            <div class="frow short">
+              <label>{{ localize "undertaking.ShowInAttacks" }}:</label>
+              <input type="checkbox" class="input-checkbox" data-for="#input-show-attack" {{#ifCond item.system.showInAttacks '==' true}}checked{{/ifCond}}/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {{!-- Resources Tab --}}
+      <div class="tab full-page flexrow" data-group="primary" data-tab="resources">
+        <div class="fcol">
+          {{> "systems/undertaking/templates/partials/item/edit-resource.hbs"}}
+        </div>
       </div>
     </section>
 </form>

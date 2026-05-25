@@ -14,6 +14,7 @@ export default class UndertakingActor extends Actor {
   }
 
   prepareDerivedData(){
+    super.prepareDerivedData();
     this._prepareCharacterData(this)
   }
 
@@ -250,14 +251,52 @@ export default class UndertakingActor extends Actor {
     let classes = this.items.filter(function (item) { return item.type == "class"});
     let levels = {};
     let casterLevel = 0;
+    let overallLevel = 0;
     for(let c of classes){
       levels[c.system.identifier] = c.system.levels;
+      overallLevel += c.system.levels;
       if(c.system.categorization.spellcaster.progression != 'none'){
         casterLevel += c.system.levels;
       }
     }
     levels.caster = casterLevel;
+    levels.level = overallLevel;
     return levels;
+  }
+
+  _getRollMods(){
+    let levels = this._getClassLevels();
+    let profBonus = Math.floor((levels.level + 7) / 4);
+    let attributes = {};
+
+    // Loop through attribute scores, and add their modifiers to our sheet output.
+    for (let [key, attribute] of Object.entries(this.system.attributes)) {
+      let mod = Math.floor((attribute.value - 10) / 2);
+      attributes[key] = mod;
+    }
+
+    // vital strike
+    let rogue = levels.rogue ? levels.rogue : 0;
+    let vitalLevels = rogue + Math.floor((levels.level - rogue) / 2);
+    let vital = 0;
+    if(vitalLevels >= 18){
+        vital = 10;
+    }
+    else if(vitalLevels >= 17){
+        vital = 9;
+    }
+    else{
+        vital = Math.ceil(vitalLevels / 2);
+    }
+
+    return {
+      ...levels,
+      ...attributes,
+      prof: profBonus,
+      pb: profBonus,
+      sneak: vital,
+      vital: vital
+    }
   }
 
   static migrateData(source){
