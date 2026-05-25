@@ -17,6 +17,23 @@
     "recharge": {
       "value": null,
       "charged": false
+    },
+    "resource": {
+      "showOnSheet": true,
+      "value": 0,
+      "style": "counter",
+      "name": "Spirit",
+      "valueFrom": "formula",
+      "maxFormula": "4+@prof+max(@int,@pre)",
+      "maxFlat": 1,
+      "rechargeOn": "short",
+      "rechargeStyle": "gain",
+      "rechargeFormula": "@prof",
+      "rechargeMessage": "Regain all on a Long Rest",
+      "overfilledMessage": "",
+      "dropdownIdentifier": "",
+      "addOptionsTo": "",
+      "dropdownOptions": []
     }
   },
   "folder": null,

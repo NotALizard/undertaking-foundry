@@ -12,6 +12,23 @@
         "type": {
             "value": "race",
             "subtype": "branch"
+        },
+        "resource": {
+            "showOnSheet": true,
+            "value": 0,
+            "style": "counter",
+            "name": "Stamina Reserve",
+            "valueFrom": "formula",
+            "maxFormula": "@prof",
+            "maxFlat": 0,
+            "rechargeOn": "long",
+            "rechargeStyle": "fill",
+            "rechargeFormula": "",
+            "rechargeMessage": "",
+            "overfilledMessage": "",
+            "dropdownIdentifier": "",
+            "addOptionsTo": "",
+            "dropdownOptions": []
         }
     },
     "effects": [],

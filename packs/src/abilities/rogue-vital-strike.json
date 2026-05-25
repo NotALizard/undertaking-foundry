@@ -17,7 +17,18 @@
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "actionType": "abil",
+    "damage": {
+        "parts": [
+            [
+                "@vitald6",
+                "weapon damage"
+            ]
+        ],
+        "versatile": ""
+    },
+    "showInAttacks": true
   },
   "folder": null,
   "_id": "1P8DJ5ZSPPJRMLWH"

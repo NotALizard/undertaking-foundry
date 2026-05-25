@@ -12,6 +12,23 @@
         "type": {
             "value": "race",
             "subtype": "branch"
+        },
+        "resource": {
+            "showOnSheet": true,
+            "value": 0,
+            "style": "counter",
+            "name": "Guidance",
+            "valueFrom": "manual",
+            "maxFormula": "",
+            "maxFlat": 1,
+            "rechargeOn": "short",
+            "rechargeStyle": "fill",
+            "rechargeFormula": "",
+            "rechargeMessage": "",
+            "overfilledMessage": "",
+            "dropdownIdentifier": "",
+            "addOptionsTo": "",
+            "dropdownOptions": []
         }
     },
     "effects": [],

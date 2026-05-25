@@ -17,6 +17,23 @@
     "recharge": {
       "value": null,
       "charged": false
+    },
+    "resource": {
+      "showOnSheet": true,
+      "value": 0,
+      "style": "counter",
+      "name": "Faith (d6)",
+      "valueFrom": "formula",
+      "maxFormula": "ceil(@cleric/2)+1",
+      "maxFlat": 0,
+      "rechargeOn": "long",
+      "rechargeStyle": "gain",
+      "rechargeFormula": "1",
+      "rechargeMessage": "",
+      "overfilledMessage": "Gain 1d6 temporary hit points.",
+      "dropdownIdentifier": "",
+      "addOptionsTo": "",
+      "dropdownOptions": []
     }
   },
   "folder": null,

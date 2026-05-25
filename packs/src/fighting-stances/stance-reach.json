@@ -12,6 +12,23 @@
     "type": {
       "value": "class",
       "subtype": "stance"
+    },
+    "resource": {
+      "showOnSheet": true,
+      "value": "",
+      "style": "choice",
+      "name": "Reach Stance",
+      "valueFrom": "manual",
+      "maxFormula": "",
+      "maxFlat": 0,
+      "rechargeOn": "none",
+      "rechargeStyle": "reminder",
+      "rechargeFormula": "",
+      "rechargeMessage": "",
+      "overfilledMessage": "",
+      "dropdownIdentifier": "",
+      "addOptionsTo": "fighting-stance",
+      "dropdownOptions": ["Reach Stance"]
     }
   },
   "effects": [],

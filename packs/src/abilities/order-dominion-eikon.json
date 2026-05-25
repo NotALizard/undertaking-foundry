@@ -17,6 +17,23 @@
     "recharge": {
       "value": null,
       "charged": false
+    },
+    "resource": {
+      "showOnSheet": true,
+      "value": "?",
+      "style": "single",
+      "name": "Eikon: Order",
+      "valueFrom": "manual",
+      "maxFormula": "",
+      "maxFlat": "?",
+      "rechargeOn": "none",
+      "rechargeStyle": "reminder",
+      "rechargeFormula": "",
+      "rechargeMessage": "",
+      "overfilledMessage": "",
+      "dropdownIdentifier": "",
+      "addOptionsTo": "",
+      "dropdownOptions": []
     }
   },
   "folder": null,

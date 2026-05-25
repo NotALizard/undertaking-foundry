@@ -12,6 +12,23 @@
         "type": {
             "value": "race",
             "subtype": "branch"
+        },
+        "resource": {
+            "showOnSheet": true,
+            "value": "New Moon",
+            "style": "choice",
+            "name": "Lunar Phase",
+            "valueFrom": "manual",
+            "maxFormula": "",
+            "maxFlat": 0,
+            "rechargeOn": "long",
+            "rechargeStyle": "reminder",
+            "rechargeFormula": "",
+            "rechargeMessage": "Swap phases",
+            "overfilledMessage": "",
+            "dropdownIdentifier": "zhier-lunar-cycle",
+            "addOptionsTo": "",
+            "dropdownOptions": ["New Moon", "Full Moon"]
         }
     },
     "effects": [],

@@ -71,6 +71,25 @@
     "recharge": {
       "value": null,
       "charged": false
+    },
+    "proficient": true,
+    "showInAttacks": true,
+    "resource": {
+      "showOnSheet": true,
+      "value": 0,
+      "style": "counter",
+      "name": "Elemental Spit",
+      "valueFrom": "formula",
+      "maxFormula": "@prof",
+      "maxFlat": 0,
+      "rechargeOn": "short",
+      "rechargeStyle": "fill",
+      "rechargeFormula": "",
+      "rechargeMessage": "",
+      "overfilledMessage": "",
+      "dropdownIdentifier": "",
+      "addOptionsTo": "",
+      "dropdownOptions": []
     }
   },
   "effects": [],

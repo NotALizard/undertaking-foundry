@@ -12,6 +12,23 @@
     "type": {
       "value": "race",
       "subtype": "branch"
+    },
+    "resource": {
+      "showOnSheet": true,
+      "value": 1,
+      "style": "counter",
+      "name": "Death Sting",
+      "valueFrom": "manual",
+      "maxFormula": "",
+      "maxFlat": 1,
+      "rechargeOn": "long",
+      "rechargeStyle": "reminder",
+      "rechargeFormula": "",
+      "rechargeMessage": "Must use a Long Rest Action to regrow stinger.",
+      "overfilledMessage": "",
+      "dropdownIdentifier": "",
+      "addOptionsTo": "",
+      "dropdownOptions": []
     }
   },
   "effects": [],

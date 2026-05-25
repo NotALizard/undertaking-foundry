@@ -17,6 +17,23 @@
     "recharge": {
       "value": null,
       "charged": false
+    },
+    "resource": {
+      "showOnSheet": true,
+      "value": "",
+      "style": "choice",
+      "name": "Clerical Approach",
+      "valueFrom": "manual",
+      "maxFormula": "",
+      "maxFlat": 0,
+      "rechargeOn": "long",
+      "rechargeStyle": "reminder",
+      "rechargeFormula": "",
+      "rechargeMessage": "Can be changed as a Long Rest action, but only once per month.",
+      "overfilledMessage": "",
+      "dropdownIdentifier": "clerical-approach",
+      "addOptionsTo": "",
+      "dropdownOptions": ["Exclusivism", "Inclusivism", "Pluralism", "Syncretism"]
     }
   },
   "folder": null,

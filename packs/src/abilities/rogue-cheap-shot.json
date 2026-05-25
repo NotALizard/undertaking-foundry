@@ -17,6 +17,23 @@
     "recharge": {
       "value": null,
       "charged": false
+    },
+    "resource": {
+      "showOnSheet": true,
+      "value": 0,
+      "style": "single",
+      "name": "Cheap Shot DC",
+      "valueFrom": "formula",
+      "maxFormula": "8+@prof+ceil(@vital/2)",
+      "maxFlat": 0,
+      "rechargeOn": "none",
+      "rechargeStyle": "reminder",
+      "rechargeFormula": "",
+      "rechargeMessage": "",
+      "overfilledMessage": "",
+      "dropdownIdentifier": "",
+      "addOptionsTo": "",
+      "dropdownOptions": []
     }
   },
   "folder": null,

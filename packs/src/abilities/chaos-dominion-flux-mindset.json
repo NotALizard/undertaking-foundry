@@ -17,6 +17,23 @@
     "recharge": {
       "value": null,
       "charged": false
+    },
+    "resource": {
+      "showOnSheet": true,
+      "value": "",
+      "style": "choice",
+      "name": "Flux Mindset",
+      "valueFrom": "manual",
+      "maxFormula": "",
+      "maxFlat": 0,
+      "rechargeOn": "short",
+      "rechargeStyle": "reminder",
+      "rechargeFormula": "",
+      "rechargeMessage": "Reroll every rest.",
+      "overfilledMessage": "",
+      "dropdownIdentifier": "flux-mindset",
+      "addOptionsTo": "",
+      "dropdownOptions": ["Athletics", "Acrobatics", "Stealth", "Sleight of Hand", "Arcana", "Craft", "Culture", "Investigation", "Nature", "Insight", "Instinct", "Medicine", "Perception", "Theology", "Deception", "Intimidation", "Perform", "Persuasion", "Trade Proficiency"]
     }
   },
   "folder": null,

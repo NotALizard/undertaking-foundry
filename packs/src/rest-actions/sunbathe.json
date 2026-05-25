@@ -1,0 +1,20 @@
+{
+    "name": "Sunbathe",
+    "type": "restAction",
+    "system": {
+        "origin": {
+            "type": "Race",
+            "name": "Solar Zhier"
+        },
+        "restType": "short",
+        "requirements": "None",
+        "summary": "Replenish half your Solar Surge charges and glow.",
+        "description": {
+            "value": "<p>Once per long rest, as a <em>Rest Action</em>, you can sunbathe in direct sunlight to soak up energy from the sun to regain expended Solar Surge charges equal to half your proficiency bonus. In addition, your fur begins to glow, shedding 10ft of dim light until you expend your last Solar Surge charge or get an hour into a long rest.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules"
+    },
+    "_id": "486ZS1ZZY5HJU1H5"
+}

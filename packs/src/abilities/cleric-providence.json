@@ -17,6 +17,23 @@
     "recharge": {
       "value": null,
       "charged": false
+    },
+    "resource": {
+      "showOnSheet": true,
+      "value": 0,
+      "style": "counter",
+      "name": "Providence",
+      "valueFrom": "manual",
+      "maxFormula": "",
+      "maxFlat": 1,
+      "rechargeOn": "long",
+      "rechargeStyle": "fill",
+      "rechargeFormula": "",
+      "rechargeMessage": "",
+      "overfilledMessage": "",
+      "dropdownIdentifier": "",
+      "addOptionsTo": "",
+      "dropdownOptions": []
     }
   },
   "folder": null,

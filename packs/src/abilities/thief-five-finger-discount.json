@@ -17,6 +17,23 @@
     "recharge": {
       "value": null,
       "charged": false
+    },
+    "resource": {
+      "showOnSheet": true,
+      "value": 5,
+      "style": "counter",
+      "name": "Fingers",
+      "valueFrom": "manual",
+      "maxFormula": "",
+      "maxFlat": 5,
+      "rechargeOn": "short",
+      "rechargeStyle": "fill",
+      "rechargeFormula": "",
+      "rechargeMessage": "",
+      "overfilledMessage": "",
+      "dropdownIdentifier": "",
+      "addOptionsTo": "",
+      "dropdownOptions": []
     }
   },
   "folder": null,

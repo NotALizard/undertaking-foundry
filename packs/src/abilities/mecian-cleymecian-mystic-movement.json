@@ -12,6 +12,23 @@
         "type": {
             "value": "race",
             "subtype": "branch"
+        },
+        "resource": {
+            "showOnSheet": true,
+            "value": 0,
+            "style": "counter",
+            "name": "Mystic Movement",
+            "valueFrom": "manual",
+            "maxFormula": "",
+            "maxFlat": 3,
+            "rechargeOn": "long",
+            "rechargeStyle": "fill",
+            "rechargeFormula": "",
+            "rechargeMessage": "",
+            "overfilledMessage": "",
+            "dropdownIdentifier": "",
+            "addOptionsTo": "",
+            "dropdownOptions": []
         }
     },
     "effects": [],

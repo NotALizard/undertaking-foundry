@@ -17,6 +17,23 @@
     "recharge": {
       "value": null,
       "charged": false
+    },
+    "resource": {
+      "showOnSheet": true,
+      "value": 0,
+      "style": "counter",
+      "name": "Heat",
+      "valueFrom": "formula",
+      "maxFormula": "5*@level",
+      "maxFlat": 0,
+      "rechargeOn": "short",
+      "rechargeStyle": "set",
+      "rechargeFormula": "0",
+      "rechargeMessage": "",
+      "overfilledMessage": "",
+      "dropdownIdentifier": "",
+      "addOptionsTo": "",
+      "dropdownOptions": []
     }
   },
   "folder": null,
