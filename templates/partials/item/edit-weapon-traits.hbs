@@ -1,0 +1,66 @@
+<div class="item-row fcol">
+    <input type="hidden" id="input-t-amm" name="system.properties.amm" value="{{item.system.properties.amm}}" data-dtype="Boolean">
+    <input type="hidden" id="input-t-fin" name="system.properties.fin" value="{{item.system.properties.fin}}" data-dtype="Boolean">
+    <input type="hidden" id="input-t-foc" name="system.properties.foc" value="{{item.system.properties.foc}}" data-dtype="Boolean">
+    <input type="hidden" id="input-t-hvy" name="system.properties.hvy" value="{{item.system.properties.hvy}}" data-dtype="Boolean">
+    <input type="hidden" id="input-t-lgt" name="system.properties.lgt" value="{{item.system.properties.lgt}}" data-dtype="Boolean">
+    <input type="hidden" id="input-t-lod" name="system.properties.lod" value="{{item.system.properties.lod}}" data-dtype="Boolean">
+    <input type="hidden" id="input-t-rch" name="system.properties.rch" value="{{item.system.properties.rch}}" data-dtype="Boolean">
+    <input type="hidden" id="input-t-spc" name="system.properties.spc" value="{{item.system.properties.spc}}" data-dtype="Boolean">
+    <input type="hidden" id="input-t-thr" name="system.properties.thr" value="{{item.system.properties.thr}}" data-dtype="Boolean">
+    <input type="hidden" id="input-t-two" name="system.properties.two" value="{{item.system.properties.two}}" data-dtype="Boolean">
+    <input type="hidden" id="input-t-una" name="system.properties.una" value="{{item.system.properties.una}}" data-dtype="Boolean">
+    <input type="hidden" id="input-t-ver" name="system.properties.ver" value="{{item.system.properties.ver}}" data-dtype="Boolean">
+    <input type="hidden" id="input-show-attack" name="system.showInAttacks" value="{{item.system.showInAttacks}}" data-dtype="Boolean">
+    <label>{{ localize "undertaking.Traits" }}:</label>
+    <div class="traits-grid">
+        <div class="frow traitrow">
+            <label>{{ localize "undertaking.WeaponTraits.amm" }}:</label>
+            <input type="checkbox" class="input-checkbox" data-for="#input-t-amm" {{#ifCond item.system.properties.amm '==' true}}checked{{/ifCond}}/>
+        </div>
+        <div class="frow traitrow">
+            <label>{{ localize "undertaking.WeaponTraits.fin" }}:</label>
+            <input type="checkbox" class="input-checkbox" data-for="#input-t-fin" {{#ifCond item.system.properties.fin '==' true}}checked{{/ifCond}}/>
+        </div>
+        <div class="frow traitrow">
+            <label>{{ localize "undertaking.WeaponTraits.foc" }}:</label>
+            <input type="checkbox" class="input-checkbox" data-for="#input-t-foc" {{#ifCond item.system.properties.foc '==' true}}checked{{/ifCond}}/>
+        </div>
+        <div class="frow traitrow">
+            <label>{{ localize "undertaking.WeaponTraits.hvy" }}:</label>
+            <input type="checkbox" class="input-checkbox" data-for="#input-t-hvy" {{#ifCond item.system.properties.hvy '==' true}}checked{{/ifCond}}/>
+        </div>
+        <div class="frow traitrow">
+            <label>{{ localize "undertaking.WeaponTraits.lgt" }}:</label>
+            <input type="checkbox" class="input-checkbox" data-for="#input-t-lgt" {{#ifCond item.system.properties.lgt '==' true}}checked{{/ifCond}}/>
+        </div>
+        <div class="frow traitrow">
+            <label>{{ localize "undertaking.WeaponTraits.lod" }}:</label>
+            <input type="checkbox" class="input-checkbox" data-for="#input-t-lod" {{#ifCond item.system.properties.lod '==' true}}checked{{/ifCond}}/>
+        </div>
+        <div class="frow traitrow">
+            <label>{{ localize "undertaking.WeaponTraits.rch" }}:</label>
+            <input type="checkbox" class="input-checkbox" data-for="#input-t-rch" {{#ifCond item.system.properties.rch '==' true}}checked{{/ifCond}}/>
+        </div>
+        <div class="frow traitrow">
+            <label>{{ localize "undertaking.WeaponTraits.spc" }}:</label>
+            <input type="checkbox" class="input-checkbox" data-for="#input-t-spc" {{#ifCond item.system.properties.spc '==' true}}checked{{/ifCond}}/>
+        </div>
+        <div class="frow traitrow">
+            <label>{{ localize "undertaking.WeaponTraits.thr" }}:</label>
+            <input type="checkbox" class="input-checkbox" data-for="#input-t-thr" {{#ifCond item.system.properties.thr '==' true}}checked{{/ifCond}}/>
+        </div>
+        <div class="frow traitrow">
+            <label>{{ localize "undertaking.WeaponTraits.two" }}:</label>
+            <input type="checkbox" class="input-checkbox" data-for="#input-t-two" {{#ifCond item.system.properties.two '==' true}}checked{{/ifCond}}/>
+        </div>
+        <div class="frow traitrow">
+            <label>{{ localize "undertaking.WeaponTraits.una" }}:</label>
+            <input type="checkbox" class="input-checkbox" data-for="#input-t-una" {{#ifCond item.system.properties.una '==' true}}checked{{/ifCond}}/>
+        </div>
+        <div class="frow traitrow">
+            <label>{{ localize "undertaking.WeaponTraits.ver" }}:</label>
+            <input type="checkbox" class="input-checkbox" data-for="#input-t-ver" {{#ifCond item.system.properties.ver '==' true}}checked{{/ifCond}}/>
+        </div>
+    </div>
+</div>

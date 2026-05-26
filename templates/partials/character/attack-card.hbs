@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="frow item-props long">
-            {{#ifCond type '==' 'weapon'}} 
+            {{#ifCond type 'in' 'weapon,ability'}} 
                 <p>{{#weaponTraits .}}{{/weaponTraits}}</p>
             {{/ifCond}}
             {{#ifCond type '==' 'spell'}} 

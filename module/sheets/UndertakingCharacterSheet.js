@@ -190,7 +190,6 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     this.quantityDeltas = [];
     this.quantityTimeout = null;
 
-    console.log(context);
     return context;
   }
 
@@ -199,7 +198,6 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     let hasIdentifyMagicItem = false;
     let hasPrepareMeal = false;
     for(let item of this.actor.items){
-      console.log(item);
       if(item.type == 'restAction' && item.system?.origin?.type == 'Basic' && item.name == 'Recover From Exhaustion'){
         hasRecoverFromExhaustion = true;
       }
@@ -643,26 +641,6 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     }
     
     await this.actor.rollInitiative({createCombatants: true, rerollInitiative: true, initiativeOptions: initiativeOptions});
-    /*
-    try{
-      let combat = game.combat;
-      let combatant = combat.getCombatantByActor(this.actor);
-      await combat.rollInitiative(combatant.id, {formula: formula});
-      return;
-    }
-    catch(err){
-      console.log(err);
-    }
-    
-    
-    let rollFormula = "1d20 + @bonus";
-    let rollData = {
-      bonus: this.actor.system.stats.init.total
-    };
-    
-    let rollResult = await new Roll(rollFormula, rollData).roll();
-    await rollResult.toMessage(messageData);
-    */
   }
 
   async _rollRestDie(die){
@@ -1027,7 +1005,6 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     let element = event.currentTarget;
     let itemId = element.closest(".item").dataset.itemId;
     let item = this.actor.items.get(itemId);
-    console.log(item);
     let newValue = !item.system.preparation.prepared;
 
     return item.update({["system.preparation.prepared"]: newValue});
@@ -1155,7 +1132,6 @@ export default class UndertakingCharacterSheet extends ActorSheet {
   }
 
   _changeResourceValue(event){
-    console.log("Changing resource value");
     const parent = event.currentTarget.closest(".res-container");
     const id = parent.dataset.itemId;
     const field = parent.querySelector('.res-val');
@@ -1166,7 +1142,6 @@ export default class UndertakingCharacterSheet extends ActorSheet {
   }
 
   _changeResourceMax(event){
-    console.log("Changing resource max");
     const parent = event.currentTarget.closest(".res-container");
     const id = parent.dataset.itemId;
     const field = parent.querySelector('.res-max');
@@ -1177,7 +1152,6 @@ export default class UndertakingCharacterSheet extends ActorSheet {
   }
 
   _changeResourceDropdown(event){
-    console.log("Changing resource dropdown");
     const parent = event.currentTarget.closest(".res-container");
     const id = parent.dataset.itemId;
     const field = parent.querySelector('.res-dropdown select');

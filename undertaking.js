@@ -19,6 +19,7 @@ async function preloadHandlebarsTemplates(){
     "systems/undertaking/templates/partials/character/ability-card.hbs",
     "systems/undertaking/templates/partials/character/spell-card.hbs",
     "systems/undertaking/templates/partials/item/edit-attack.hbs",
+    "systems/undertaking/templates/partials/item/edit-weapon-traits.hbs",
     "systems/undertaking/templates/partials/item/edit-resource.hbs",
     "systems/undertaking/templates/partials/character/trade-card.hbs",
     "systems/undertaking/templates/partials/character/rest-action-card.hbs",
@@ -172,7 +173,7 @@ Hooks.once("init",function(){
     if(item.system.range && (item.system.range.value > 0 || item.system.range.long > 0 )){
       props.push(`Range: ${item.system.range.value || 0} / ${item.system.range.long || 0} ${item.system.range.units ? item.system.range.units : ""}`);
     }
-    for (const [key, value] of Object.entries(item.system.properties)) {
+    for (const [key, value] of Object.entries(item.system.properties || [])) {
       if(value){
         switch(key){
           case 'ver':

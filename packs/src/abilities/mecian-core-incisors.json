@@ -1,10 +1,10 @@
 {
-    "name": "Horns",
+    "name": "Incisors",
     "type": "ability",
     "img": "icons/creatures/abilities/paw-print-tan.webp",
     "system": {
         "description": {
-            "value": "<p>You have a pair of large horns growing from your head. These function as a natural weapon that deals 1d8 piercing damage.</p>",
+            "value": "<p>You have large and powerful front teeth that can be used as natural weapons by biting into targets. These deal 1d4 piercing damage.<br />This replaces the mecian core ability &ldquo;Touch Telepathy.&rdquo;</p>",
             "chat": "",
             "unidentified": ""
         },
@@ -19,7 +19,7 @@
         "damage": {
             "parts": [
                 [
-                    "1d8 + @mod",
+                    "1d4 + @mod",
                     "piercing"
                 ]
             ],
@@ -35,5 +35,5 @@
         "default": 0
     },
     "flags": {},
-    "_id": "8PHJHUPTCSNNWE71"
+    "_id": "4SO9XWEFMEM0T29Z"
 }
