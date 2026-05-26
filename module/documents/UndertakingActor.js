@@ -1,5 +1,7 @@
 export default class UndertakingActor extends Actor {
 
+  
+
   prepareData(){
     // Prepare data for the actor. Calling the super version of this executes
     // the following, in order: data reset (to clear active effects),
@@ -311,5 +313,71 @@ export default class UndertakingActor extends Actor {
       }
     }
     return super.migrateData(source);
+  }
+
+  static _buildLegacyResourceItemData(oldResources, existingItems = []){
+    if(!oldResources) return [];
+
+    const migratedKeys = new Set(existingItems
+      .map(item => item?.flags?.undertaking?.migration?.legacyResourceKey)
+      .filter(Boolean));
+
+    const resourceItems = [];
+    for(let [key, resource] of Object.entries(oldResources)){
+      if(!resource || (!resource.label && !resource.value && !resource.max)) continue;
+      if(migratedKeys.has(key)) continue;
+
+      let resourceItemData = {
+        name: key + "." + (resource.label || "Legacy Resource"),
+        type: "ability",
+        flags: {
+          undertaking: {
+            migration: {
+              legacyResourceKey: key
+            }
+          }
+        },
+        system: {
+          description: {
+            "value": "<p>Migrated from old resources structure</p>",
+            "chat": "",
+            "unidentified": ""
+          },
+          "resource": {
+            "showOnSheet": true,
+            "value": resource.value || 0,
+            "style": resource.type == "target" ? "single" : "counter",
+            "name": resource.label || key,
+            "valueFrom": "manual",
+            "maxFormula": "",
+            "maxFlat": resource.max || 0,
+            "rechargeOn": resource.recharge == "LR" ? "long" : resource.recharge == "SR" ? "short" : "none",
+            "rechargeStyle": "fill",
+            "rechargeFormula": "",
+            "rechargeMessage": "",
+            "overfilledMessage": "",
+            "dropdownIdentifier": "",
+            "addOptionsTo": "",
+            "dropdownOptions": []
+          }
+        }
+      };
+      resourceItems.push(resourceItemData);
+    }
+
+    return resourceItems;
+  }
+
+  async migrateLegacyResourcesToEmbeddedItems(){
+    const oldResources = this.system?.resources;
+    if(!oldResources) return 0;
+
+    const resourceItems = this.constructor._buildLegacyResourceItemData(oldResources, this.items);
+    if(resourceItems.length > 0){
+      await this.createEmbeddedDocuments("Item", resourceItems);
+    }
+
+    await this.update({"system.-=resources": null});
+    return resourceItems.length;
   }
 }

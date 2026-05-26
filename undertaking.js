@@ -572,3 +572,23 @@ Hooks.once("init",function(){
 
   preloadHandlebarsTemplates();
 });
+
+Hooks.once("ready", async function(){
+  if(!game.user.isGM) return;
+
+  const legacyActors = game.actors.filter(actor => actor?.system?.hasOwnProperty("resources"));
+  if(legacyActors.length === 0) return;
+
+  console.warn(`Undertaking | Migrating legacy resources for ${legacyActors.length} actor(s)`);
+
+  for(let actor of legacyActors){
+    if(typeof actor.migrateLegacyResourcesToEmbeddedItems !== "function") continue;
+    try{
+      const created = await actor.migrateLegacyResourcesToEmbeddedItems();
+      console.warn(`Undertaking | Migrated ${created} legacy resource item(s) for actor ${actor.name}`);
+    }
+    catch(err){
+      console.error(`Undertaking | Failed legacy resource migration for actor ${actor.name}`, err);
+    }
+  }
+});
