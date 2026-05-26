@@ -2,7 +2,7 @@
   "id":"undertaking",
   "title":"Undertaking RPG",
   "description":"Core rules for the Undertaking system",
-  "version":"1.5.4",
+  "version":"1.6.0",
   "compatibility": {
     "minimum": "11",
     "verified": "11"
