@@ -4,7 +4,7 @@
     "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
     "system": {
         "description": {
-            "value": "<p>The feather muscles on your arms are more dexterous than most. You can hide up to four tiny items in your feathers, flexing your feather muscles to hold them in place. These small items can be no larger or heavier than two gold coins each. </p>",
+            "value": "<p>The feather muscles on your arms are more dexterous than most. You can hide up to four tiny items in your feathers, flexing your feather muscles to hold them in place. These small items can be no larger or heavier than two gold coins each.</p>",
             "chat": "",
             "unidentified": ""
         },
@@ -21,5 +21,5 @@
         "default": 0
     },
     "flags": {},
-    "_id": "CMXV21DFSWEDTHUC"
+    "_id": "41OWRYF6DHXJGP65"
 }

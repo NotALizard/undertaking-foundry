@@ -1,10 +1,10 @@
 {
-    "name": "High Altitude Adaption",
+    "name": "High Altitude Adaptation",
     "type": "ability",
     "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
     "system": {
         "description": {
-            "value": "<p>You are adapted to being above the clouds, and do not suffer adverse effects of being in those environments.</p>",
+            "value": "<p>You are adapted to being above the clouds, and do not suffer adverse effects of being in high altitude environments.</p>",
             "chat": "",
             "unidentified": ""
         },
@@ -21,5 +21,5 @@
         "default": 0
     },
     "flags": {},
-    "_id": "SWQIHGVCC7ULP8LY"
+    "_id": "2OKY1SZ7O07S1SLX"
 }

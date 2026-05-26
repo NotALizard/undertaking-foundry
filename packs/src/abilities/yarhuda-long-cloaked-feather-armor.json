@@ -1,0 +1,25 @@
+{
+    "name": "Feather Armor",
+    "type": "ability",
+    "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
+    "system": {
+        "description": {
+            "value": "<p><em>You can interlink your feather cloak to encase your upper body. </em><br />As a Minor Action, you encase your upper body with your feather cloak, and can release it as a Reaction or at the start of your turn as a non-action. Your armor-like feathers prevent you from using your arms, but shield your body from blows, giving you a +2 AC until the start of your next turn.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "K2QFFMREEEIYG061"
+}

@@ -4,7 +4,7 @@
   "img": "icons/creatures/eyes/human-single-blue.webp",
   "system": {
     "description": {
-      "value": "<p>While elves may be magical in nature, not all of them hinge their lifestyles on it.  Dawn elves, while they accept their Fey heritage, find that it is not a central part of who they are.  The world is too vast to spend one’s whole life focused on one’s origins and ancestry, and they intend to prove that.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Dawn elves do retain a few traces of their magical nature, but have left it to the wayside over the centuries.  It has dwindled in its intensity and left dawn elves to develop as a more physically powerful race.  <br>&nbsp;&nbsp;&nbsp;&nbsp;So instead of magic, dawn elves are built for exploring and traveling, having more endurance and a greater stride than Light and Dark Elves.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Compared to other elves, dawn elves are taller, slightly more muscular, and have sharper, more rugged features.  They find themselves more adept at moving around their environment and interacting with others rather than casting magic.  <br>&nbsp;&nbsp;&nbsp;&nbsp;Their skin color ranges across the shades of bronze and copper tones, with darker reds and browns as well.  They have eyes of brown, green, and hazel, tending towards darker hues, and hair that comes commonly in the colors of black or shades of green.</p>",
+      "value": "<p><strong>Compatibility: </strong>Hominid</p><p>While elves may be magical in nature, not all of them hinge their lifestyles on it. Dawn elves, while they accept their Fey heritage, find that it is not a central part of who they are. The world is too vast to spend one&rsquo;s whole life focused on one&rsquo;s origins and ancestry, and they intend to prove that.</p><p>Dawn elves do retain a few traces of their magical nature, but have left it to the wayside over the centuries. It has dwindled in its intensity and left dawn elves to develop as a more physically powerful race.</p><p>So instead of magic, dawn elves are built for exploring and traveling, having more endurance and a greater stride than Light and Dark Elves.</p><p>Compared to other elves, dawn elves are taller, slightly more muscular, and have sharper, more rugged features. They find themselves more adept at moving around their environment and interacting with others rather than casting magic.</p><p>Their skin color ranges across the shades of bronze and copper tones, with darker reds and browns as well. They have eyes of brown, green, and hazel, tending towards darker hues, and hair that comes commonly in the colors of black or shades of green.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -19,5 +19,5 @@
     "default": 0
   },
   "flags": {},
-  "_id": "Y2O2XJF9VIX3K9AR"
+  "_id": "LQ3BP9BGDKHVVAU9"
 }

@@ -1,10 +1,10 @@
 {
-    "name": "Short-Distance Flier",
+    "name": "Ingrown Feathercoat",
     "type": "ability",
     "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
     "system": {
         "description": {
-            "value": "<p>When flying via a racial trait, you must land at the end of your turn.</p>",
+            "value": "<p>Regardless of your core race, your body is covered in feathers with sharp quills pointing inward. <br />While not wearing armor, your AC is 11 + DEX. However, when you take bludgeoning damage, you gain 1 @Compendium[undertaking.conditions.R54LQEKSDXNQ3N75]{Bleeding}.</p>",
             "chat": "",
             "unidentified": ""
         },
@@ -21,5 +21,5 @@
         "default": 0
     },
     "flags": {},
-    "_id": "WTWPOB863L00CMJ6"
+    "_id": "3UCPWLYM1RPTF7G0"
 }

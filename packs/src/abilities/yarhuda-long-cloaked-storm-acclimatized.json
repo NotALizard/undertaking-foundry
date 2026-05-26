@@ -4,7 +4,7 @@
     "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
     "system": {
         "description": {
-            "value": "<p>Your Feather Cloak is weatherproof, and your talons are gripped, allowing you to be able to ignore penalties from heavy rain.</p>",
+            "value": "<p>Your talons are gripped, and your Feather Cloak is weatherproof while interlaced together. Taken together, you are able to ignore penalties caused by heavy rainfalls.</p>",
             "chat": "",
             "unidentified": ""
         },
@@ -21,5 +21,5 @@
         "default": 0
     },
     "flags": {},
-    "_id": "T3GAI02T73XXHXOT"
+    "_id": "MMK5HZ86R60JZPP8"
 }

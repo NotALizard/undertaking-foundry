@@ -1,0 +1,23 @@
+{
+    "name": "Red-quilled Yarhuda",
+    "type": "race",
+    "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
+    "system": {
+        "description": {
+            "value": "<p><strong>Compatibility: </strong>Avian</p><p>Red-quilled yahruda are best recognized for their ruffled appearance. Unlike the usually sleek feathers of their kin, the majority of red-quilled yahruda feathers are short and are naturally frilled, giving a spiked appearance. While soft along the barbs, the quill of their feathers are distinctly rigid as metal, and sharp as needles. Red-quill feathers are light, sharp, flexible, and come pre-feathered for launching, making them natural weapons for throwing or shooting. Using this to their advantage, cornered red-quills pluck their own feathers for use as weaponized darts, or kick up storms of molted feathers to slice into attackers. Feather plucking is painful, but having a weapon can be lifesaving when threatened.</p><p>&ldquo;Red-Quilled&rdquo; is a misnomer as a result of this all. Their feathers (including their quills) are not naturally red. However, they are often seen and depicted this way. While still attached, red-quill feathers retain their sharpness pointed inward. An awkward blow or fall can cause a yahruda&rsquo;s feathers to jam into itself to the point of drawing blood. This side effect can coat their feathers in streaks of red, especially in combat. Once molted, their sharpness remains for enough time after that creatures tend to injure themselves on the discarded feathers, staining them.</p><p>When not threatened, these feathers molt often. While they don&rsquo;t retain their durability for long, they are often quickly coated to preserve their strength and sharpness. Preserved feathers are typically turned into simple craft tools, carrying weapons, or, of course, high quality writing quills.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "portion": "branch",
+        "classDetails": "<p>Red-Quilled Yarhuda Traits</p><ul><li><strong>Attribute Increase: </strong>Your Constitution increases by 1.</li><li><strong>Weapon Proficiency:</strong> You have proficiency in Darts, Throwing Stars, Shortbows, Longbows.</li><li><strong>Ingrown Feathercoat:</strong> @Compendium[undertaking.abilities.3UCPWLYM1RPTF7G0]{Ingrown Feathercoat}</li><li><strong>Feather Ammo:</strong> @Compendium[undertaking.abilities.J87EQVE23I15QKP7]{Feather Ammo}</li><li><strong>Cutting Vortex:</strong> @Compendium[undertaking.abilities.BR6L3UTYD3ZJE70R]{Cutting Vortex}</li></ul>"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "F8OO07IR38BUIS3P"
+}

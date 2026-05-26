@@ -1,0 +1,42 @@
+{
+    "name": "Wicked Twister",
+    "type": "ability",
+    "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
+    "system": {
+        "description": {
+            "value": "<p>At 5th level, once per long rest when using <em>Wicked Wind</em>, you can create a brief but immediate twister centered on yourself. All other creatures targeted by <em>Wicked Wind</em> must also make a Strength (Save) check or be launched 10ft up and away. Creatures that are two sizes larger than you automatically succeed these save checks. <br />In addition, you can choose to let the twister&rsquo;s updraft take you, <strong>disengaging</strong> from all adjacent targets and launching 30ft feet upward and up to 15ft away.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        },
+        "resource": {
+            "showOnSheet": true,
+            "value": 0,
+            "style": "counter",
+            "name": "Wicked Twister",
+            "valueFrom": "manual",
+            "maxFormula": "",
+            "maxFlat": 1,
+            "rechargeOn": "long",
+            "rechargeStyle": "fill",
+            "rechargeFormula": "",
+            "rechargeMessage": "",
+            "overfilledMessage": "",
+            "dropdownIdentifier": "",
+            "addOptionsTo": "",
+            "dropdownOptions": []
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "RRQO09UI2NDO9B1H"
+}

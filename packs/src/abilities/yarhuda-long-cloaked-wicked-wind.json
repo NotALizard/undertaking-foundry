@@ -4,7 +4,7 @@
     "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
     "system": {
         "description": {
-            "value": "<p>When you take the Attack action on your turn, you can replace one of your attacks with a swirl of your extended and sharpened neck feathers that lifts you 5ft in the air before immediately dropping back down. When you do this, each creature within a 5ft radius must make a Dexterity saving throw of DC = 8 + your Constitution modifier + your proficiency bonus. On a failed save, a creature takes 1d8 slashing damage. On a successful save, it takes half as much damage. <br />This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).<br />You can use Wicked Wind a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>",
+            "value": "<p>In place of an attack action, you can twirl your extended flight feathers. When you do this, you fly up 5ft in the air and then each creature within a 5ft radius of you must make a Dexterity (Save) check of DC 8 + your Constitution Modifier + your Proficiency or be battered by the rapidly spinning propeller feathers. They take 1d8 + DEX slashing damage on failure, and half damage on success.<br />This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).<br />You can use Wicked Wind a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>",
             "chat": "",
             "unidentified": ""
         },
@@ -12,6 +12,23 @@
         "type": {
             "value": "race",
             "subtype": "branch"
+        },
+        "resource": {
+            "showOnSheet": true,
+            "value": 0,
+            "style": "counter",
+            "name": "Wicked Wind",
+            "valueFrom": "formula",
+            "maxFormula": "@prof",
+            "maxFlat": 0,
+            "rechargeOn": "long",
+            "rechargeStyle": "fill",
+            "rechargeFormula": "",
+            "rechargeMessage": "",
+            "overfilledMessage": "",
+            "dropdownIdentifier": "",
+            "addOptionsTo": "",
+            "dropdownOptions": []
         }
     },
     "effects": [],
@@ -21,5 +38,5 @@
         "default": 0
     },
     "flags": {},
-    "_id": "AE4EGB6H1CSLN85E"
+    "_id": "A1HHNTAMSEBG6SWJ"
 }

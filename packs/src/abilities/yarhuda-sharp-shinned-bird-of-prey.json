@@ -4,7 +4,7 @@
     "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
     "system": {
         "description": {
-            "value": "<p>You have long, sharp, curved talons on your hands and feet. These can be used as a natural weapon that deals 1d6 slashing damage.<br />When you succeed on a contested Grapple check against a creature, you may additionally deal the damage of your talon natural weapon, but as piercing damage instead.</p>",
+            "value": "<p>You have long, sharp, curved talons on your hands and feet. These can be used as a natural weapon that deals 1d6 slashing damage.<br />Each time you succeed on a contested Grapple check against a creature using your talon hands or talon feet, you may additionally deal the damage of your talon natural weapon to the creature as piercing damage.&nbsp;</p>",
             "chat": "",
             "unidentified": ""
         },
@@ -12,7 +12,21 @@
         "type": {
             "value": "race",
             "subtype": "branch"
-        }
+        },
+        "attribute": "str",
+        "actionType": "mwak",
+        "chatFlavor": "On a successful grapple check, you can deal your talon damage as piercing damage.",
+        "damage": {
+            "parts": [
+                [
+                    "1d6 + @mod",
+                    "slashing"
+                ]
+            ],
+            "versatile": ""
+        },
+        "proficient": true,
+        "showInAttacks": true
     },
     "effects": [],
     "folder": null,
@@ -21,5 +35,5 @@
         "default": 0
     },
     "flags": {},
-    "_id": "VHIDDMOZ69USKFHW"
+    "_id": "Z974RHMSIYX0FKXS"
 }

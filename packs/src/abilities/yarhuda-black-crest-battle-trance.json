@@ -1,0 +1,42 @@
+{
+    "name": "Battle Trance",
+    "type": "ability",
+    "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
+    "system": {
+        "description": {
+            "value": "<p>Once per long rest, as a minor action on your turn, you close your eyes and exhale, putting yourself into a state of self-induced hypnosis. Through a mental technique passed down through generations, you distance yourself from reality in preparation for the violence of combat. As you open your eyes again, you act purely on instinct, becoming @Compendium[undertaking.conditions.Y822OUCDEPAG0HS8]{Frenzied}.&nbsp;<br />You cannot exit the trance at will. However, at the end of each turn, you can make a DC 13 Wisdom (Save) check to end the frenzy. This check does not benefit from the <em>Calm Mind</em> racial trait.&nbsp;<br />Frenzied conditions entered this way do not break your spell concentration.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        },
+        "resource": {
+            "showOnSheet": true,
+            "value": 0,
+            "style": "counter",
+            "name": "Battle Trance",
+            "valueFrom": "manual",
+            "maxFormula": "",
+            "maxFlat": 1,
+            "rechargeOn": "long",
+            "rechargeStyle": "fill",
+            "rechargeFormula": "",
+            "rechargeMessage": "",
+            "overfilledMessage": "",
+            "dropdownIdentifier": "",
+            "addOptionsTo": "",
+            "dropdownOptions": []
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "XFRWBX2XUJX1F2YH"
+}

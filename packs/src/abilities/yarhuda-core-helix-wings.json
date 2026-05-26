@@ -4,7 +4,7 @@
     "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
     "system": {
         "description": {
-            "value": "<p>You have an array of strong feathers attached to a rotor-like hub beneath your neck. By flexing a core muscle, this hub can be rotated at extreme speed, with the angled feathers creating lift in a form akin to a helicopter. You have a flying speed of 25 feet. <br />To use this speed, you cannot be wearing medium or heavy armor.</p>",
+            "value": "<p><em>You have an array of strong feathers attached to a rotor-like hub beneath your neck. By flexing a core muscle, this can be rotated at extreme speed, with the angled feathers creating lift in a form akin to a helicopter. </em><br />You have a flying speed of 25 feet while not wearing medium or heavy armor.</p>",
             "chat": "",
             "unidentified": ""
         },
@@ -21,5 +21,5 @@
         "default": 0
     },
     "flags": {},
-    "_id": "KYSYXGJ0975JHGQV"
+    "_id": "H95D3RXCURCCV9WB"
 }

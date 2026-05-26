@@ -1,10 +1,10 @@
 {
-    "name": "Storm Starter",
+    "name": "Heavyweight Flier",
     "type": "ability",
     "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
     "system": {
         "description": {
-            "value": "<p>At 5th level, you can cast the @Compendium[undertaking.spells-level-2.UEGGABQ79I8A8CG5]{Twister} spell adjacent to you once per long rest. When cast this way, you automatically succeed the twister Strength (Save) check unless you choose to fail it.</p>",
+            "value": "<p>Your flying speed is not limited from wearing medium or heavy armor.</p>",
             "chat": "",
             "unidentified": ""
         },
@@ -21,5 +21,5 @@
         "default": 0
     },
     "flags": {},
-    "_id": "RR6BVPL9LOV2HAXV"
+    "_id": "4DHDW471AY0SUZCS"
 }

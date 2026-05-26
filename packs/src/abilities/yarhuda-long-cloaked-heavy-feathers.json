@@ -1,10 +1,10 @@
 {
-    "name": "Short-Distance Flier",
+    "name": "Heavy Feathers",
     "type": "ability",
     "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
     "system": {
         "description": {
-            "value": "<p>When flying via a racial trait, you must land at the end of your turn.</p>",
+            "value": "<p>Your feathers are long and heavier than they appear. <br />You weigh an additional 30-40lbs, and your wingspan is a 5ft radius.</p>",
             "chat": "",
             "unidentified": ""
         },
@@ -21,5 +21,5 @@
         "default": 0
     },
     "flags": {},
-    "_id": "WTWPOB863L00CMJ6"
+    "_id": "QG1RFBDIUXKGC0P2"
 }

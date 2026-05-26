@@ -1,0 +1,42 @@
+{
+    "name": "Cutting Vortex",
+    "type": "ability",
+    "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
+    "system": {
+        "description": {
+            "value": "<p>Once you reach 5th level, you gain the following racial trait.&nbsp;<br />Once per long rest, you can pluck a fistful of your feathers to take up to 5 chaos damage. You toss these into the air and give a harsh spin of your wings to create a 5ft twister adjacent to you. The vortex violently spins with sharpened feathers for 1 minute or until a large enough gust of wind can disperse it.&nbsp;<br />Any creature who moves into the vortex&rsquo;s space on their turn, or else starts their turn inside of it, takes 1d4 damage per chaos damage you took when initiating this ability, up to 5d4 damage.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        },
+        "resource": {
+            "showOnSheet": true,
+            "value": 0,
+            "style": "counter",
+            "name": "Cutting Vortex",
+            "valueFrom": "manual",
+            "maxFormula": "",
+            "maxFlat": 1,
+            "rechargeOn": "long",
+            "rechargeStyle": "fill",
+            "rechargeFormula": "",
+            "rechargeMessage": "",
+            "overfilledMessage": "",
+            "dropdownIdentifier": "",
+            "addOptionsTo": "",
+            "dropdownOptions": []
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "BR6L3UTYD3ZJE70R"
+}

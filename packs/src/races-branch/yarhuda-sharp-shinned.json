@@ -4,13 +4,13 @@
     "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
     "system": {
         "description": {
-            "value": "<p><strong>Compatibility: </strong>Avian</p><p>While all yarhuda have some form of natural talons, sharp-shinned yarhuda have talons of a much more intimidating size and curvature. While an obvious use for these claws are hunting and combat, sharp-shinned yarhuda tend to develop impressive finger control to match. Some use these skills to create, such as using their sharp talons and hardened hands for sculpting, whittling, and building. This increased hand dexterity has also spread to their arm feathers, allowing them some better control over them.</p><p>Sharp-Shinned Yarhuda are also some of the only yarhuda capable of wind dancing, which involves sharp-shinned holding colored dust under their feathers, releasing them during dances with swift movements to create vibrant wind-swept displays.</p>",
+            "value": "<p><strong>Compatibility: </strong>Avian</p><p>While all yarhuda have some form of natural talons for hands and feet, sharp-shinned yarhuda have sharpened talons of a much more intimidating size and curvature, up to double the length. While an obvious use for these claws are hunting and combat, sharp-shinned yarhuda tend to develop impressive finger control to match. Some develop their dexterity, using talons to create, sculpt, whittle, or build. Others use them for their more evolutionary intent, that of hunting and self-defense.</p><p>This increased dexterity also spreads to their arm feathers, giving them fine motor control over even their most under-grown feathers. This not only gives sharp-shins impressive flight control, but are some of the only yarhuda capable of wind dancing. This is done by pouring colored dust under their feathers. Holding it in place until a moment of dance that they choose to release it, allowing certain movements to be accented with vibrant winds.</p>",
             "chat": "",
             "unidentified": ""
         },
         "source": "Core Rules",
         "portion": "branch",
-        "classDetails": "<p>Sharp-Shinned Yarhuda Traits</p><ul><li><strong>Attribute Increase: </strong>Your Dexterity increases by 1.</li><li><strong>Trade Proficiency: </strong>You have proficiency in one of the following:</li><ul><li>The Art Trade (Sculpting, Whittling)</li><li>The Building Trade</li><li>The Entertainment Trade</li></ul><li><strong>Reduced Flying Speed: </strong>Your flying speed defined by your core race is reduced by 5 feet.<ul><li>If you have a flying speed of 0, reduce your ground speed by 5 feet instead.</li></ul></li><li><strong>Bird of Prey:</strong> @Compendium[undertaking.abilities.VHIDDMOZ69USKFHW]{Bird of Prey}</li><li><strong>Feather Pockets:</strong> @Compendium[undertaking.abilities.CMXV21DFSWEDTHUC]{Feather Pockets}</li></ul>"
+        "classDetails": "<p>Sharp-Shinned Yarhuda Traits</p><ul><li><strong>Attribute Increase: </strong>Your Dexterity increases by 1.</li><li><strong>Trade Proficiency: </strong>You have proficiency in one of the following:</li><ul><li>The Art Trade (Sculpting, Whittling)</li><li>The Building Trade</li><li>The Entertainment Trade</li></ul><li><strong>Reduced Flying Speed: </strong>Your flying speed defined by your core race is reduced by 5 feet.</li><li>If you have a flying speed of 0, reduce your ground speed by 5 feet instead.</li><li><strong>Bird of Prey:</strong> @Compendium[undertaking.abilities.Z974RHMSIYX0FKXS]{Bird of Prey}</li><li><strong>Feather Pockets:</strong> @Compendium[undertaking.abilities.41OWRYF6DHXJGP65]{Feather Pockets}</li></ul>"
     },
     "effects": [],
     "folder": null,
@@ -19,5 +19,5 @@
         "default": 0
     },
     "flags": {},
-    "_id": "HVVXEQCPPMMDH7SP"
+    "_id": "6IFI4XB5860XAGR5"
 }

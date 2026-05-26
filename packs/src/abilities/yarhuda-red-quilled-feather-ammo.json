@@ -1,0 +1,25 @@
+{
+    "name": "Feather Ammo",
+    "type": "ability",
+    "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
+    "system": {
+        "description": {
+            "value": "<p><em>Red-quilled yahruda feathers grow and molt rapidly, unlike the long-term feathers of other yahruda. They are also sharp, flexible, and tailed, making them perfect ranged weapons. </em><em><br /></em>For each long rest, you molt 4 feather needles (short, thin feathers) and 2 feather arrows (long, tailed feathers). Alternatively, you can forcibly pluck a number of your own feathers as a minor action, taking 1 chaos damage for every 2 feather needles or 1 feather arrow plucked. <br />Feather needles are equivalent to the Throwing Star weapon, and feather arrows are equivalent to arrows. Regardless, both types of feather ammo deal an additional +1 damage on hit. In addition, if feather ammo strikes a target the same turn that they're plucked (within 6 seconds), they deal an additional +1 damage. <br />Plucked feathers grow back over a long rest, and unused feather ammo soften into normal feathers, no longer being usable as weaponry.</p>",
+            "chat": "",
+            "unidentified": ""
+        },
+        "source": "Core Rules",
+        "type": {
+            "value": "race",
+            "subtype": "branch"
+        }
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_id": "J87EQVE23I15QKP7"
+}

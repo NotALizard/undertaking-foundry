@@ -1,10 +1,10 @@
 {
-    "name": "Feather Dart",
+    "name": "Steel-Barbs",
     "type": "ability",
     "img": "icons/creatures/birds/dove-pigeon-flying-white.webp",
     "system": {
         "description": {
-            "value": "<p>You grow 10 sharpened feather darts growing in your plume. As a minor action, you can pluck up to three of these, taking 1 hit point of damage for each. Each plucked feather is equivalent to the Dart weapon, but breaks after a single use.<br />Upon completing a long rest, any plucked feather darts grow back.</p>",
+            "value": "<p><em>Without the constant battering of wind, your feather barbs have grown steel-like in their complexion</em>. <br />The <em>Wicked Wind</em> trait&rsquo;s damage dice are increased from d8s to d10s. You also weigh a further 20-40lbs.</p>",
             "chat": "",
             "unidentified": ""
         },
@@ -21,5 +21,5 @@
         "default": 0
     },
     "flags": {},
-    "_id": "WHIWHF415AFOHZO3"
+    "_id": "PPM037YEDN1RJWOF"
 }
