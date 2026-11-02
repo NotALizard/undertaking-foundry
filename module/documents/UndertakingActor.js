@@ -312,6 +312,72 @@ export default class UndertakingActor extends Actor {
         source.system.stats.ac.equippedArmorId = null;
       }
     }
+
+    const expectedSpellFocus = {
+      amulet: 0,
+      grimoire: 0,
+      orb: 0,
+      spellstaff: 0,
+      wand: 0
+    };
+    const existingSpellFocus = source?.system?.traits?.weaponProf?.spellFocus || {};
+    const migratedSpellFocus = {
+      amulet: existingSpellFocus.amulet ?? expectedSpellFocus.amulet,
+      grimoire: existingSpellFocus.grimoire ?? expectedSpellFocus.grimoire,
+      orb: existingSpellFocus.orb ?? expectedSpellFocus.orb,
+      spellstaff: existingSpellFocus.spellstaff ?? expectedSpellFocus.spellstaff,
+      wand: existingSpellFocus.wand ?? expectedSpellFocus.wand
+    };
+    const spellFocusNeedsMigration = !source?.system?.traits?.weaponProf?.spellFocus ||
+      Object.keys(expectedSpellFocus).some(key => existingSpellFocus[key] === undefined);
+
+    if(spellFocusNeedsMigration){
+      console.warn(`Migrating actor ${source.name} to normalize spell focus proficiencies`);
+    }
+
+    const expectedSimpleM = {
+      club: 0,
+      dagger: 0,
+      greatclub: 0,
+      hammer: 0,
+      hatchet: 0,
+      javelin: 0,
+      mace: 0,
+      quarterstaff: 0,
+      scythe: 0,
+      sickle: 0,
+      spearlong: 0,
+      spear: 0,
+      unarmed: 0
+    };
+    const existingSimpleM = source?.system?.traits?.weaponProf?.simpleM || {};
+    const migratedSimpleM = {
+      club: existingSimpleM.club ?? expectedSimpleM.club,
+      dagger: existingSimpleM.dagger ?? expectedSimpleM.dagger,
+      greatclub: existingSimpleM.greatclub ?? expectedSimpleM.greatclub,
+      hammer: existingSimpleM.hammer ?? expectedSimpleM.hammer,
+      hatchet: existingSimpleM.hatchet ?? expectedSimpleM.hatchet,
+      javelin: existingSimpleM.javelin ?? expectedSimpleM.javelin,
+      mace: existingSimpleM.mace ?? expectedSimpleM.mace,
+      quarterstaff: existingSimpleM.quarterstaff ?? expectedSimpleM.quarterstaff,
+      scythe: existingSimpleM.scythe ?? expectedSimpleM.scythe,
+      sickle: existingSimpleM.sickle ?? expectedSimpleM.sickle,
+      spearlong: existingSimpleM.spearlong ?? expectedSimpleM.spearlong,
+      spear: existingSimpleM.spear ?? expectedSimpleM.spear,
+      unarmed: existingSimpleM.unarmed ?? expectedSimpleM.unarmed
+    };
+    const simpleMNeedsMigration = !source?.system?.traits?.weaponProf?.simpleM ||
+      Object.keys(expectedSimpleM).some(key => existingSimpleM[key] === undefined);
+    if(simpleMNeedsMigration){
+      console.warn(`Migrating actor ${source.name} to normalize simple melee proficiencies`);
+    }
+
+    source.system = source.system || {};
+    source.system.traits = source.system.traits || {};
+    source.system.traits.weaponProf = source.system.traits.weaponProf || {};
+    source.system.traits.weaponProf.simpleM = migratedSimpleM;
+    source.system.traits.weaponProf.spellFocus = migratedSpellFocus;
+
     return super.migrateData(source);
   }
 

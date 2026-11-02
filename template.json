@@ -501,6 +501,7 @@
             "quarterstaff": 0,
             "scythe": 0,
             "sickle": 0,
+            "spearlong": 0,
             "spear": 0,
             "unarmed": 0
           },
@@ -539,6 +540,13 @@
             "repeatingcrossbow": 0,
             "longbow": 0,
             "throwingstar": 0
+          },
+          "spellFocus": {
+            "amulet": 0,
+            "grimoire": 0,
+            "orb": 0,
+            "spellstaff": 0,
+            "wand": 0
           },
           "custom": ""
         },

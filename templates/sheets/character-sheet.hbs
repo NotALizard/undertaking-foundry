@@ -640,58 +640,69 @@
                         <div class="bio-block proficiencies">
                             <label>{{ localize "undertaking.Proficiencies" }}</label>
                             <div class="bio-border proficiencies padded" style="font-size: 12px;">
-                                {{#each actor.system.traits.armorProf.armor as | armor_val id |}}
+                                {{#each armorProfRows as | row |}}
                                     <div class="prof-row frow">
-                                        <input type="hidden" class="input-armor-prof" name="system.traits.armorProf.armor.{{id}}" value="{{armor_val}}" data-dtype="Number">
+                                        <input type="hidden" class="input-armor-prof" name="system.traits.armorProf.armor.{{row.id}}" value="{{row.value}}" data-dtype="Number">
                                         <div class="prof-radio-container frow">
-                                            <a class="profcheck armor-prof {{#ifCond armor_val '>=' 1}}checked{{/ifCond}}" id="{{id}}-prof"></a>
-                                            <a class="profcheck armor-savvy savvy {{#ifCond armor_val '>=' 2}}checked{{/ifCond}}" id="{{id}}-expert"></a>
+                                            <a class="profcheck armor-prof {{#ifCond row.value '>=' 1}}checked{{/ifCond}}" id="{{row.id}}-prof"></a>
+                                            <a class="profcheck armor-savvy savvy {{#ifCond row.value '>=' 2}}checked{{/ifCond}}" id="{{row.id}}-expert"></a>
                                         </div>
-                                        <div class="prof-name-container frow">{{#armor id}}{{/armor}}</div>
+                                        <div class="prof-name-container frow">{{#armor row.id}}{{/armor}}</div>
                                     </div>
                                 {{/each}}
                                 <br>
-                                {{#each actor.system.traits.weaponProf.simpleM as | weapon_val id |}}
+                                {{#each simpleMProfRows as | row |}}
                                     <div class="prof-row frow">
-                                        <input type="hidden" class="input-weapon-prof" name="system.traits.weaponProf.simpleM.{{id}}" value="{{weapon_val}}" data-dtype="Number">
+                                        <input type="hidden" class="input-weapon-prof" name="system.traits.weaponProf.simpleM.{{row.id}}" value="{{row.value}}" data-dtype="Number">
                                         <div class="prof-radio-container frow">
-                                            <a class="profcheck weapon-prof {{#ifCond weapon_val '>=' 1}}checked{{/ifCond}}" id="{{id}}-prof"></a>
-                                            <a class="profcheck weapon-savvy savvy {{#ifCond weapon_val '>=' 2}}checked{{/ifCond}}" id="{{id}}-expert"></a>
+                                            <a class="profcheck weapon-prof {{#ifCond row.value '>=' 1}}checked{{/ifCond}}" id="{{row.id}}-prof"></a>
+                                            <a class="profcheck weapon-savvy savvy {{#ifCond row.value '>=' 2}}checked{{/ifCond}}" id="{{row.id}}-expert"></a>
                                         </div>
-                                        <div class="prof-name-container frow">{{#weapon id 'simpleMelee'}}{{/weapon}}</div>
+                                        <div class="prof-name-container frow">{{#weapon row.id 'simpleMelee'}}{{/weapon}}</div>
                                     </div>
                                 {{/each}}
                                 <br>
-                                {{#each actor.system.traits.weaponProf.simpleR as | weapon_val id |}}
+                                {{#each simpleRProfRows as | row |}}
                                     <div class="prof-row frow">
-                                        <input type="hidden" class="input-weapon-prof" name="system.traits.weaponProf.simpleR.{{id}}" value="{{weapon_val}}" data-dtype="Number">
+                                        <input type="hidden" class="input-weapon-prof" name="system.traits.weaponProf.simpleR.{{row.id}}" value="{{row.value}}" data-dtype="Number">
                                         <div class="prof-radio-container frow">
-                                            <a class="profcheck weapon-prof {{#ifCond weapon_val '>=' 1}}checked{{/ifCond}}" id="{{id}}-prof"></a>
-                                            <a class="profcheck weapon-savvy savvy {{#ifCond weapon_val '>=' 2}}checked{{/ifCond}}" id="{{id}}-expert"></a>
+                                            <a class="profcheck weapon-prof {{#ifCond row.value '>=' 1}}checked{{/ifCond}}" id="{{row.id}}-prof"></a>
+                                            <a class="profcheck weapon-savvy savvy {{#ifCond row.value '>=' 2}}checked{{/ifCond}}" id="{{row.id}}-expert"></a>
                                         </div>
-                                        <div class="prof-name-container frow">{{#weapon id 'simpleRanged'}}{{/weapon}}</div>
+                                        <div class="prof-name-container frow">{{#weapon row.id 'simpleRanged'}}{{/weapon}}</div>
                                     </div>
                                 {{/each}}
                                 <br>
-                                {{#each actor.system.traits.weaponProf.martialM as | weapon_val id |}}
+                                {{#each martialMProfRows as | row |}}
                                     <div class="prof-row frow">
-                                        <input type="hidden" class="input-weapon-prof" name="system.traits.weaponProf.martialM.{{id}}" value="{{weapon_val}}" data-dtype="Number">
+                                        <input type="hidden" class="input-weapon-prof" name="system.traits.weaponProf.martialM.{{row.id}}" value="{{row.value}}" data-dtype="Number">
                                         <div class="prof-radio-container frow">
-                                            <a class="profcheck weapon-prof {{#ifCond weapon_val '>=' 1}}checked{{/ifCond}}" id="{{id}}-prof"></a>
-                                            <a class="profcheck weapon-savvy savvy {{#ifCond weapon_val '>=' 2}}checked{{/ifCond}}" id="{{id}}-expert"></a>
+                                            <a class="profcheck weapon-prof {{#ifCond row.value '>=' 1}}checked{{/ifCond}}" id="{{row.id}}-prof"></a>
+                                            <a class="profcheck weapon-savvy savvy {{#ifCond row.value '>=' 2}}checked{{/ifCond}}" id="{{row.id}}-expert"></a>
                                         </div>
-                                        <div class="prof-name-container frow">{{#weapon id 'martialMelee'}}{{/weapon}}</div>
+                                        <div class="prof-name-container frow">{{#weapon row.id 'martialMelee'}}{{/weapon}}</div>
                                     </div>
                                 {{/each}}
                                 <br>
-                                {{#each actor.system.traits.weaponProf.martialR as | weapon_val id |}}
+                                {{#each martialRProfRows as | row |}}
                                     <div class="prof-row frow">
-                                        <input type="hidden" class="input-weapon-prof" name="system.traits.weaponProf.martialR.{{id}}" value="{{weapon_val}}" data-dtype="Number">
+                                        <input type="hidden" class="input-weapon-prof" name="system.traits.weaponProf.martialR.{{row.id}}" value="{{row.value}}" data-dtype="Number">
                                         <div class="prof-radio-container frow">
-                                            <a class="profcheck weapon-prof {{#ifCond weapon_val '>=' 1}}checked{{/ifCond}}" id="{{id}}-prof"></a>
-                                            <a class="profcheck weapon-savvy savvy {{#ifCond weapon_val '>=' 2}}checked{{/ifCond}}" id="{{id}}-expert"></a>
+                                            <a class="profcheck weapon-prof {{#ifCond row.value '>=' 1}}checked{{/ifCond}}" id="{{row.id}}-prof"></a>
+                                            <a class="profcheck weapon-savvy savvy {{#ifCond row.value '>=' 2}}checked{{/ifCond}}" id="{{row.id}}-expert"></a>
                                         </div>
-                                        <div class="prof-name-container frow">{{#weapon id 'martialRanged'}}{{/weapon}}</div>
+                                        <div class="prof-name-container frow">{{#weapon row.id 'martialRanged'}}{{/weapon}}</div>
+                                    </div>
+                                {{/each}}
+                                <br>
+                                {{#each spellFocusProfRows as | row |}}
+                                    <div class="prof-row frow">
+                                        <input type="hidden" class="input-weapon-prof" name="system.traits.weaponProf.spellFocus.{{row.id}}" value="{{row.value}}" data-dtype="Number">
+                                        <div class="prof-radio-container frow">
+                                            <a class="profcheck weapon-prof {{#ifCond row.value '>=' 1}}checked{{/ifCond}}" id="{{row.id}}-prof"></a>
+                                            <a class="profcheck weapon-savvy savvy {{#ifCond row.value '>=' 2}}checked{{/ifCond}}" id="{{row.id}}-expert"></a>
+                                        </div>
+                                        <div class="prof-name-container frow">{{#weapon row.id 'spellFocus'}}{{/weapon}}</div>
                                     </div>
                                 {{/each}}
                             </div>

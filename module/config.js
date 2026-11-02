@@ -61,6 +61,7 @@ undertaking.simpleMelee = {
     quarterstaff: "undertaking.Weapons.Quarterstaff",
     scythe: "undertaking.Weapons.Scythe",
     sickle: "undertaking.Weapons.Sickle",
+    spearlong: "undertaking.Weapons.SpearLong",
     spear: "undertaking.Weapons.Spear",
     unarmed: "undertaking.Weapons.Unarmed"
 };
@@ -102,4 +103,12 @@ undertaking.martialRanged = {
     repeatingcrossbow: "undertaking.Weapons.RepeatingCrossbow",
     longbow: "undertaking.Weapons.Longbow",
     throwingstar: "undertaking.Weapons.ThrowingStar"
+};
+
+undertaking.spellFocus = {
+    amulet: "undertaking.Weapons.Amulet",
+    grimoire: "undertaking.Weapons.Grimoire",
+    orb: "undertaking.Weapons.Orb",
+    spellstaff: "undertaking.Weapons.Spellstaff",
+    wand: "undertaking.Weapons.Wand"
 };

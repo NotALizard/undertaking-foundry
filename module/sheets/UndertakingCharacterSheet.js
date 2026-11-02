@@ -46,6 +46,22 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     context.config = CONFIG.undertaking;
     const actor = context.actor;
 
+    // Preserve display order from config so migrated keys do not get appended at the end.
+    const toOrderedRows = (values, orderMap) => {
+      const order = Object.keys(orderMap || {});
+      return order.map(id => ({
+        id,
+        value: values?.[id] ?? 0
+      }));
+    };
+
+    context.armorProfRows = toOrderedRows(actor?.system?.traits?.armorProf?.armor, CONFIG.undertaking.armor);
+    context.simpleMProfRows = toOrderedRows(actor?.system?.traits?.weaponProf?.simpleM, CONFIG.undertaking.simpleMelee);
+    context.simpleRProfRows = toOrderedRows(actor?.system?.traits?.weaponProf?.simpleR, CONFIG.undertaking.simpleRanged);
+    context.martialMProfRows = toOrderedRows(actor?.system?.traits?.weaponProf?.martialM, CONFIG.undertaking.martialMelee);
+    context.martialRProfRows = toOrderedRows(actor?.system?.traits?.weaponProf?.martialR, CONFIG.undertaking.martialRanged);
+    context.spellFocusProfRows = toOrderedRows(actor?.system?.traits?.weaponProf?.spellFocus, CONFIG.undertaking.spellFocus);
+
     if(actor.type == 'npc'){
       if(!actor.system.description.value){
         actor.system.description.value = '&nbsp;';

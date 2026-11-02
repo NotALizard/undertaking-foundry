@@ -354,7 +354,8 @@
       "Quarterstaff": "Quarterstaff",
       "Scythe": "Scythe",
       "Sickle": "Sickle",
-      "Spear": "Spear",
+      "Spear": "Short Spear",
+      "SpearLong": "Long Spear",
       "Unarmed": "Unarmed",
       "LightCrossbow": "Light Crossbow",
       "Dart": "Dart",
@@ -385,7 +386,12 @@
       "HeavyCrossbow": "Heavy Crossbow",
       "RepeatingCrossbow": "Repeating Crossbow",
       "Longbow": "Longbow",
-      "ThrowingStar": "Throwing Star"
+      "ThrowingStar": "Throwing Star",
+      "Amulet": "Amulet",
+      "Grimoire": "Grimoire",
+      "Orb": "Orb",
+      "Spellstaff": "Spellstaff",
+      "Wand": "Wand"
     },
     "Summary": "Summary",
     "Requirements": "Requirements",
