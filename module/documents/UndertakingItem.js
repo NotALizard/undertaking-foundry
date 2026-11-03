@@ -187,8 +187,11 @@ export default class UndertakingItem extends Item {
         let attr = this.system.attribute;
         mod = this._getMod(owner, attr);
 
-        if(aType == "msak" || aType == "rsak" || this.system.proficient){
-            prof = owner.system.stats.profBonus;
+        if(aType == "msak" || aType == "rsak"){
+            prof = +(owner.system.stats?.mana?.useFocus ? owner.system.stats?.mana?.focus : 0);
+        }
+        else if(this.system.proficient){
+            prof = +(owner.system.stats?.profBonus);
         }
 
         
@@ -308,7 +311,7 @@ export default class UndertakingItem extends Item {
         const flavor = this.system.chatFlavor;
         let dc = "";
         let mod = 0;
-        let prof = 0;
+        let prof = +(owner.system.stats?.profBonus);
         let dcTot = 0;
         let bonus = 0;
         let attr = this.system.save.scaling;
@@ -341,9 +344,9 @@ export default class UndertakingItem extends Item {
                 case "spell":
                     mod = this._getSpellMod(owner);
             }
-            prof = owner.system.stats.profBonus;
             if(this.type == "spell"){
                 bonus = +(owner.system.bonuses.spell.dc) || 0;
+                prof = +(owner.system.stats.mana.useFocus ? owner.system.stats.mana.focus : 0);
             }
             dcTot = 8 + prof + mod + bonus;
         }

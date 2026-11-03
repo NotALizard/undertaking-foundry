@@ -181,7 +181,7 @@
                     <div class="res-equip-atk-col fcol">
                         <div class="res-equip-row frow">
                             <div class="res-col fcol">
-                                <div class="ac-init frow">
+                                <div class="ac-mana frow">
                                     <div class="ac-container fcol">
                                         <div class="total-ac">
                                             <label>{{ localize "undertaking.ArmorClass" }}</label>
@@ -206,12 +206,31 @@
                                             <div class="shield-bottom {{#ifCond actor.system.stats.ac.useShield '==' 1}}equipped{{/ifCond}}"></div>
                                         </div>
                                     </div>
-                                    <div class="initiative-container">
-                                        <label class="rollable" data-rolltype="initiative">{{ localize "undertaking.Initiative" }}</label>
-                                        <h4>{{numberFormat actor.system.stats.init.total decimals=0 sign=true}}</h4>
+                                    <div class="focus-container fcol">
+                                        <div class="focus-info fcol">
+                                            <input type="hidden" class="input-focus-equip" name="system.stats.mana.useFocus" value="{{actor.system.stats.mana.useFocus}}" data-dtype="Number">
+                                            <label>{{ localize "undertaking.Focus" }}</label>
+                                            <input name="system.stats.mana.focus" type="number" value="{{actor.system.stats.mana.focus}}" placeholder="{{actor.system.stats.profBonus}}" data-dtype="Number" />
+                                            <a class="focus-toggle {{#ifCond actor.system.stats.mana.useFocus '==' 1}}checked{{/ifCond}}"></a>
+                                        </div>
+                                        <div class="focus-vis fcol">
+                                            <div class="focus-top"></div>
+                                            <div class="focus-middle"></div>
+                                            <div class="focus-bottom {{#ifCond actor.system.stats.mana.useFocus '==' 1}}equipped{{/ifCond}}"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mana-container fcol">
+                                        <label>{{ localize "undertaking.Mana" }}</label>
+                                        <div class="mana-vals frow">
+                                            <input class="mana-val" id="mana-val" name="system.stats.mana.value" type="number" value="{{actor.system.stats.mana.value}}" placeholder="0" data-dtype="Number" />
+                                            <label class="mana-val divider">/</label>
+                                            <label class="mana-val">{{actor.system.stats.mana.max}}</label>
+                                        </div>
+                                        <label style="mana-charge">{{ localize "undertaking.ChargeLimit" }}: {{actor.system.stats.mana.chargeLimit.value}}</label>
+                                        <label>{{ localize "undertaking.ShortRest" }}: {{numberFormat actor.system.stats.mana.shortRestGain.value decimals=0 sign=true}}</label>
                                     </div>
                                 </div>
-                                <div class="hp-mana frow">
+                                <div class="hp-init frow">
                                     <div class="hp-death-container fcol">
                                         <div class="hp-container frow {{#ifCond actor.system.stats.hp.value '==' 0}}downed{{/ifCond}}">
                                             <div class="hp-current-col fcol">
@@ -249,15 +268,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="mana-container fcol">
-                                        <label>{{ localize "undertaking.Mana" }}</label>
-                                        <div class="mana-vals frow">
-                                            <input class="mana-val" id="mana-val" name="system.stats.mana.value" type="number" value="{{actor.system.stats.mana.value}}" placeholder="0" data-dtype="Number" />
-                                            <label class="mana-val divider">/</label>
-                                            <label class="mana-val">{{actor.system.stats.mana.max}}</label>
-                                        </div>
-                                        <label style="mana-charge">{{ localize "undertaking.ChargeLimit" }}: {{actor.system.stats.mana.chargeLimit.value}}</label>
-                                        <label>{{ localize "undertaking.ShortRest" }}: {{numberFormat actor.system.stats.mana.shortRestGain.value decimals=0 sign=true}}</label>
+                                    <div class="initiative-container">
+                                        <label class="rollable" data-rolltype="initiative">{{ localize "undertaking.Initiative" }}</label>
+                                        <h4>{{numberFormat actor.system.stats.init.total decimals=0 sign=true}}</h4>
                                     </div>
                                 </div>
                                 <div class="rest-dice frow">
@@ -791,11 +804,19 @@
                     <div class="caster-stat modifier fill-space">
                         <h4>{{localize "undertaking.Modifier"}}: {{numberFormat actor.system.stats.spellcastingAttribute.mod decimals=0 sign=true}}</h4>
                     </div>
-                    <div class="caster-stat attack-bonus fill-space">
-                        <h4>{{localize "undertaking.SpellAttack"}}: {{numberFormat actor.system.stats.spellcastingAttribute.attack decimals=0 sign=true}}</h4>
+                    <div class="caster-stat attack-bonus frow fill-space">
+                        <h4>{{localize "undertaking.SpellAttack"}}: </h4>
+                        <div class="fcol focus-stats">
+                            <p title='{{localize "undertaking.WithFocus"}}'>{{numberFormat actor.system.stats.spellcastingAttribute.attackWithFocus decimals=0 sign=true}}<i class="fas fa-wand-magic-sparkles"></i></p>
+                            <p title='{{localize "undertaking.WithoutFocus"}}'>{{numberFormat actor.system.stats.spellcastingAttribute.attackWithoutFocus decimals=0 sign=true}}<i class="fas fa-ban"></i></p>
+                        </div>
                     </div>
-                    <div class="caster-stat save-dc fill-space">
-                        <h4>{{localize "undertaking.SpellSaveDC"}}: {{numberFormat actor.system.stats.spellcastingAttribute.dc decimals=0 sign=false}}</h4>
+                    <div class="caster-stat save-dc frow fill-space">
+                        <h4>{{localize "undertaking.SpellSaveDC"}}: </h4>
+                        <div class="fcol focus-stats">
+                            <p title='{{localize "undertaking.WithFocus"}}'>{{numberFormat actor.system.stats.spellcastingAttribute.dcWithFocus decimals=0 sign=false}}<i class="fas fa-wand-magic-sparkles"></i></p>
+                            <p title='{{localize "undertaking.WithoutFocus"}}'>{{numberFormat actor.system.stats.spellcastingAttribute.dcWithoutFocus decimals=0 sign=false}}<i class="fas fa-ban"></i></p>
+                        </div>
                     </div>
                 </div>
                 <div class="cantrips-row frow">
@@ -973,7 +994,7 @@
                             <input name="system.stats.mana.bonus" type="number" placeholder="0" value="{{actor.system.stats.mana.bonus}}" data-dtype="Number" />
                         </div>
                         <div class="config-input frow">
-                            <label>Charge Limit Bonus</label>
+                            <label>Mana Limit Bonus</label>
                             <input name="system.stats.mana.chargeLimit.bonus" type="number" placeholder="0" value="{{actor.system.stats.mana.chargeLimit.bonus}}" data-dtype="Number" />
                         </div>
                         <div class="config-input frow">

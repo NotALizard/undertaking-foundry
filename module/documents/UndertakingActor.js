@@ -98,33 +98,8 @@ export default class UndertakingActor extends Actor {
     //calc spellcaster stats
     system.stats.mana.max = maxMana + system.stats.mana.bonus;
     let divisor = Number.isInteger(system.stats.mana.shortRestGain.divisor) ? system.stats.mana.shortRestGain.divisor : 2;
-    //system.stats.mana.shortRestGain.value = Math.ceil(casterLevel/divisor) + system.stats.mana.shortRestGain.bonus;
     system.stats.mana.shortRestGain.value = Math.ceil(maxMana/divisor) + system.stats.mana.shortRestGain.bonus;
-    let chargeLimit = 0;
-    if(false){
-      //reserved for legendary spells
-    }
-    else if(level >= 13 && casterLevel >= 12){
-      chargeLimit = 12;
-    }
-    else if(level >= 11 && casterLevel >= 10){
-      chargeLimit = 10;
-    }
-    else if(level >= 9 && casterLevel >= 8){
-      chargeLimit = 8;
-    }
-    else if(level >= 7 && casterLevel >= 6){
-      chargeLimit = 6;
-    }
-    else if(level >= 5 && casterLevel >= 4){
-      chargeLimit = 4;
-    }
-    else if(level >= 3 && casterLevel >= 2){
-      chargeLimit = 2;
-    }
-    else if(casterLevel >= 1){
-      chargeLimit = 1;
-    }
+    let chargeLimit = Math.max(1, casterLevel + Math.floor((level - casterLevel)/2) - 1);
     system.stats.mana.chargeLimit.value = chargeLimit + system.stats.mana.chargeLimit.bonus;
 
     //calc pb
@@ -167,8 +142,13 @@ export default class UndertakingActor extends Actor {
     catch(err){
       spellcastingAttribute = system.attributes['int'];
     }
-    spellcastingAttribute.attack = spellcastingAttribute.mod + system.stats.profBonus + system.bonuses.attack.spell.all.attack;
-    spellcastingAttribute.dc = 8 + spellcastingAttribute.mod + system.stats.profBonus + system.bonuses.spell.dc;
+    spellcastingAttribute.attack = spellcastingAttribute.mod + (system.stats.mana.useFocus ? system.stats.mana.focus : 0) + system.bonuses.attack.spell.all.attack;
+    spellcastingAttribute.attackWithFocus = spellcastingAttribute.mod + system.stats.mana.focus + system.bonuses.attack.spell.all.attack;
+    spellcastingAttribute.attackWithoutFocus = spellcastingAttribute.mod + system.bonuses.attack.spell.all.attack;
+
+    spellcastingAttribute.dc = 8 + spellcastingAttribute.mod + (system.stats.mana.useFocus ? system.stats.mana.focus : 0) + system.bonuses.spell.dc;
+    spellcastingAttribute.dcWithFocus = 8 + spellcastingAttribute.mod + system.stats.mana.focus + system.bonuses.spell.dc;
+    spellcastingAttribute.dcWithoutFocus = 8 + spellcastingAttribute.mod + system.bonuses.spell.dc;
     system.stats.spellcastingAttribute = spellcastingAttribute;
 
     // Loop through skills

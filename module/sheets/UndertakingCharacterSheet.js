@@ -463,6 +463,9 @@ export default class UndertakingCharacterSheet extends ActorSheet {
     html.find(".shield-toggle").on("click", event => {
       this._toggleShield(event);
     });
+    html.find(".focus-toggle").on("click", event => {
+      this._toggleFocus(event);
+    });
     html.find(".death-button.success").on("click", event => {
       this._addDeathSuccess(event);
     });
@@ -1055,6 +1058,20 @@ export default class UndertakingCharacterSheet extends ActorSheet {
   _toggleShield(event){
     const parent = event.currentTarget.closest(".shield-info");
     const field = parent.querySelector('.input-shield-equip');
+    const value = field.value;
+
+    if(value > 0){
+      field.value = 0;
+    }
+    else{
+      field.value = 1;
+    }
+    return this._onSubmit(event);
+  }
+
+  _toggleFocus(event){
+    const parent = event.currentTarget.closest(".focus-info");
+    const field = parent.querySelector('.input-focus-equip');
     const value = field.value;
 
     if(value > 0){

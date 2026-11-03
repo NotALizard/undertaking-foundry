@@ -330,7 +330,7 @@ a.profcheck.savvy {
     width:300px;
 }
 .ac-container {
-    width: 120px;
+    width: 100px;
     font-size: 12px;
     text-align: center;
     border-style: solid;
@@ -375,6 +375,7 @@ a.shield-toggle {
     border-radius: 25%;
     margin: auto;
     background: white;
+    margin-top: 3px;
 }
 a.shield-toggle.checked{
     background-color: var(--bg-blue);
@@ -390,6 +391,7 @@ a.shield-toggle.checked{
     border-radius: 6px;
     background: repeating-linear-gradient(45deg, var(--bg-gray),var(--bg-gray) 10px,white 10px,white 20px);
     z-index: 1;
+    pointer-events: none;
 }
 .shield-middle {
     width: 60px;
@@ -400,6 +402,7 @@ a.shield-toggle.checked{
     background: repeating-linear-gradient(45deg, var(--bg-gray) 16.5px,var(--bg-gray) 26.5px,white 26.5px,white 36.5px);
     z-index: 2;
     margin-top: -10px;
+    pointer-events: none;
 }
 .shield-bottom {
     width: 60px;
@@ -410,6 +413,7 @@ a.shield-toggle.checked{
     background: repeating-linear-gradient(45deg, var(--bg-gray) 15.5px,var(--bg-gray) 25.5px,white 25.5px,white 35.5px);
     z-index: 1;
     margin-top: -30px;
+    pointer-events: none;
 }
 .total-ac h4 {
     font-size: 44px;
@@ -417,8 +421,82 @@ a.shield-toggle.checked{
     margin-top: -4px;
 }
 .base-ac h4 {
-    font-size: 16px;
+    font-size: 12px;
     margin: 0;
+}
+.focus-container {
+    padding-top: 12px;
+    margin-left: auto;
+    margin-right: -10px;
+}
+.focus-info {
+    z-index: 3;
+    text-align: center;
+    width: 52px;
+    height: 60px;
+    padding-top: 4px;
+    margin-bottom: -60px;
+    font-size: 12px;
+}
+.focus-info input {
+    font-size: 24px;
+    border: none;
+    background: none;
+    padding-right: 0;
+}
+.focus-info input::placeholder {
+    color: #dd00004a;
+}
+a.focus-toggle {
+    width: 12px;
+    height: 12px;
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 25%;
+    margin: auto;
+    background: white;
+    margin-top: 3px;
+}
+a.focus-toggle.checked{
+    background-color: var(--bg-blue);
+}
+.focus-vis div.equipped{
+    background: white !important;
+}
+.focus-top {
+    margin-left: 10px;
+    width: 42px;
+    height: 47px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px 6px 6px 0px;
+    border-top: none;
+    border-left: none;
+    z-index: 3;
+    pointer-events: none;
+}
+.focus-middle {
+    margin-top: -3px;
+    width: 42px;
+    height: 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px 0px 0px 10px;
+    border-right: none;
+    z-index: 2;
+    pointer-events: none;
+}
+.focus-bottom {
+    margin-top: -64px;
+    width: 52px;
+    height: 64px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px 6px 6px 10px;
+    background: repeating-linear-gradient(45deg, var(--bg-gray) 15.5px, var(--bg-gray) 25.5px, white 25.5px, white 35.5px);
+    z-index: 1;
+    pointer-events: none;
 }
 .initiative-container {
     width: 100px;
@@ -481,11 +559,11 @@ a.shield-toggle.checked{
     width: 28px !important;
     max-width: none;
 }
-.hp-mana {
+.hp-init {
     margin-top:4px;
 }
 .hp-death-container {
-    width: 180px;
+    width: 188px;
     height: 94px;
     font-size: 12px;
     text-align: center;
@@ -564,7 +642,6 @@ i.death-button {
 }
 .mana-container {
     width: 100px;
-    margin-left: auto;
     font-size: 12px;
     text-align: center;
     border-style: solid;
@@ -1108,6 +1185,13 @@ input.spells-mana-val {
 }
 .caster-stats {
     margin-bottom: 3px;
+}
+.focus-stats p {
+    margin: 0px 6px;
+    font-size: 14px;
+}
+.focus-stats i {
+    margin-left: 2px;
 }
 .cantrips-row {
     margin: 2px;

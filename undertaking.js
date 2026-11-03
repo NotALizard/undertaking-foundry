@@ -255,8 +255,11 @@ Hooks.once("init",function(){
           mod = sheet.actor.system.attributes.pre.mod;
           break;
       }
-      if(aType == "msak" || aType == "rsak" || item.system.proficient){
-        prof = sheet.actor.system.stats.profBonus;
+      if(aType == "msak" || aType == "rsak"){
+        prof = +(sheet.actor.system.stats?.mana?.useFocus ? sheet.actor.system.stats?.mana?.focus : 0);
+      }
+      else if(item.system.proficient){
+        prof = +(sheet.actor.system.stats?.profBonus);
       }
 
       let bonus = 0;
@@ -287,7 +290,7 @@ Hooks.once("init",function(){
     let dc = "";
     if(item.system.save && item.system.save.attribute){
       let mod = 0;
-      let prof = 0;
+      let prof = +(sheet.actor.system.stats?.profBonus);
       let dcTot = 0;
       let bonus = 0;
       let attr = item.system.save.scaling;
@@ -325,8 +328,10 @@ Hooks.once("init",function(){
             mod = sheet.actor.system.attributes.pre.mod;
             break;
         }
-        prof = sheet.actor.system.stats.profBonus;
-        bonus = +(sheet.actor.system.bonuses.spell.dc) || 0;
+        if(item.type == "spell"){
+          prof = +(sheet.actor.system.stats?.mana?.useFocus ? sheet.actor.system.stats?.mana?.focus : 0);
+          bonus = +(sheet.actor.system.bonuses.spell.dc) || 0;
+        }
         dcTot = 8 + prof + mod + bonus;
       }
       dc = `DC ${dcTot} ${game.i18n.localize(`undertaking.AttributesAbbrev.${item.system.save.attribute}`)}`;

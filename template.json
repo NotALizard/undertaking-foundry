@@ -132,7 +132,8 @@
             "shortRestGain": {
               "bonus": 0,
               "divisor": 2
-            }
+            },
+            "useFocus": 1
           },
           "restDice":{
             "d4": {
